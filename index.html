@@ -15,8 +15,6 @@ body {
   background-color: #0b0e14;
   color: #e2e8f0;
 }
-
-/* Cartes au design éditorial moderne */
 .news-card {
   background-color: #121722;
   border: 1px solid #1e2638;
@@ -33,7 +31,6 @@ body {
 .news-card:active {
   transform: scale(0.99);
 }
-
 .filter-btn {
   background-color: #121722;
   border: 1px solid #1e2638;
@@ -55,7 +52,6 @@ body {
   color: #0b0e14;
   border-color: #ffffff;
 }
-
 .badge {
   display: inline-flex;
   align-items: center;
@@ -66,8 +62,6 @@ body {
   padding: 2px 8px;
   border-radius: 6px;
 }
-
-/* Modale de lecture */
 #modal-card {
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
 }
@@ -79,16 +73,24 @@ body {
 <header class="border-b border-[#1a2130] bg-[#0b0e14]/95 sticky top-0 z-30 backdrop-blur-md">
   <div class="max-w-[1920px] mx-auto px-4 sm:px-8 py-3.5 flex flex-wrap items-center justify-between gap-4">
     
-    <!-- Identité visuelle sobre -->
+    <!-- Logo Radar Vectoriel Épuré -->
     <div class="flex items-center gap-3">
-      <div class="w-8 h-8 rounded-lg bg-white flex items-center justify-center text-slate-950 font-black text-base">
-        R
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#1c2436] to-[#0e131d] border border-[#2b374e] flex items-center justify-center shadow-md">
+        <svg class="w-5 h-5 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10" stroke-opacity="0.3"></circle>
+          <path d="M12 2a10 10 0 0 1 10 10"></path>
+          <circle cx="12" cy="12" r="6" stroke-opacity="0.4"></circle>
+          <path d="M12 6a6 6 0 0 1 6 6"></path>
+          <circle cx="12" cy="12" r="2" fill="currentColor"></circle>
+          <line x1="12" y1="12" x2="19" y2="5" stroke="#38bdf8" stroke-width="2"></line>
+          <circle cx="19" cy="5" r="1.5" fill="#38bdf8"></circle>
+        </svg>
       </div>
       <div>
         <div class="flex items-center gap-2">
           <h1 class="text-lg font-bold tracking-tight text-white">ESPORT RADAR</h1>
           <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400"></span>DIRECT
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>DIRECT
           </span>
         </div>
         <p class="text-[11px] text-slate-500 font-medium">L'essentiel de l'actualité esport en continu</p>
@@ -133,14 +135,13 @@ body {
         </h2>
       </div>
 
-      <!-- Grille adaptative (1 col sur mobile, 2 à 3 col sur écran normal, 4 col sur grand 32") -->
+      <!-- Grille adaptative jusqu'à 4 colonnes sur écran large -->
       <div id="feed" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5"></div>
     </section>
 
-    <!-- COLONNE LATÉRALE (MERCATO & TOURNOIS) -->
+    <!-- COLONNE LATÉRALE -->
     <aside class="lg:col-span-4 xl:col-span-3 space-y-6">
 
-      <!-- Bloc Transferts -->
       <div class="bg-[#121722] border border-[#1e2638] rounded-xl p-4">
         <div class="flex items-center justify-between mb-3 border-b border-[#1c2436] pb-2.5">
           <h3 class="text-xs font-bold uppercase tracking-wider text-white flex items-center gap-2">
@@ -152,7 +153,6 @@ body {
         <div id="top" class="space-y-2.5"></div>
       </div>
 
-      <!-- Bloc Tournois -->
       <div class="bg-[#121722] border border-[#1e2638] rounded-xl p-4">
         <div class="flex items-center justify-between mb-3 border-b border-[#1c2436] pb-2.5">
           <h3 class="text-xs font-bold uppercase tracking-wider text-white flex items-center gap-2">
@@ -169,15 +169,14 @@ body {
   </div>
 </main>
 
-<!-- PIED DE PAGE -->
 <footer class="border-t border-[#182030] py-6 text-center text-xs text-slate-500 mt-auto bg-[#0b0e14]">
   <div class="max-w-[1920px] mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-    <p>Esport Radar — Agrégateur d'actualités compétitives en temps réel.</p>
-    <p class="text-slate-600">Articles et photographies sous droits réservés de leurs rédactions d'origine.</p>
+    <p>Esport Radar — Agrégateur d'actualités compétitives en continu.</p>
+    <p class="text-slate-600">Données et photographies issues des rédactions officielles partenaires.</p>
   </div>
 </footer>
 
-<!-- MODALE D'ARTICLE DÉTAILLÉ AU CLIC -->
+<!-- MODALE DE LECTURE -->
 <div id="modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 hidden bg-black/75 backdrop-blur-sm">
   <div id="modal-card" class="bg-[#121722] border border-[#27344e] rounded-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl scale-95 opacity-0">
     <div id="modal-body"></div>
@@ -186,12 +185,12 @@ body {
 
 <script>
 const G = {
-  lol: { n: 'League of Legends', s: 'LoL', c: '#d97706' },
-  val: { n: 'Valorant', s: 'Valorant', c: '#ef4444' },
-  cs2: { n: 'Counter-Strike 2', s: 'CS2', c: '#f59e0b' },
-  rl: { n: 'Rocket League', s: 'Rocket League', c: '#0284c7' },
-  dota: { n: 'Dota 2', s: 'Dota 2', c: '#8b5cf6' },
-  other: { n: 'Général', s: 'Esport', c: '#64748b' }
+  lol: { n: 'League of Legends', s: 'LoL', c: '#d97706', img: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80' },
+  val: { n: 'Valorant', s: 'Valorant', c: '#ef4444', img: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80' },
+  cs2: { n: 'Counter-Strike 2', s: 'CS2', c: '#f59e0b', img: 'https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?auto=format&fit=crop&w=800&q=80' },
+  rl: { n: 'Rocket League', s: 'Rocket League', c: '#0284c7', img: 'https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=800&q=80' },
+  dota: { n: 'Dota 2', s: 'Dota 2', c: '#8b5cf6', img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80' },
+  other: { n: 'Général', s: 'Esport', c: '#64748b', img: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80' }
 };
 
 const TYPES = {
@@ -211,16 +210,9 @@ const BD = {
   news: ['ACTU', 'bg-slate-700/30 text-slate-300 border border-slate-700']
 };
 
-const S = {
-  items: [],
-  g: 'all',
-  t: 'all',
-  q: '',
-  busy: false,
-  sync: 0
-};
+const S = { items: [], g: 'all', t: 'all', q: '', busy: false, sync: 0 };
 
-function $(id) { return document.getElementById(id); }
+function \$(id) { return document.getElementById(id); }
 function esc(s) {
   return String(s || '').replace(/[&<>"']/g, function(c) {
     return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
@@ -251,27 +243,20 @@ function badgeType(ty) {
   return '<span class="badge ' + b[1] + '">' + b[0] + '</span>';
 }
 
-/* CARTE DE L'ARTICLE DANS LA GRILLE */
 function card(i, k) {
   const g = G[i.game] || G.other;
-  const hasImg = i.image && /^https?:\/\//.test(i.image);
-
-  const imgHtml = hasImg ?
-    '<img src="' + esc(i.image) + '" alt="" loading="lazy" class="w-full h-44 object-cover group-hover:scale-102 transition-transform duration-300 bg-[#161c2b]">' :
-    '<div class="w-full h-44 bg-[#141926] flex flex-col items-center justify-center text-slate-600 gap-1">' +
-      '<i class="fa-solid fa-gamepad text-2xl text-slate-700"></i>' +
-      '<span class="text-[11px] font-semibold text-slate-500">' + esc(g.n) + '</span>' +
-    '</div>';
+  const imgSrc = (i.image && /^https?:\/\//.test(i.image)) ? i.image : g.img;
 
   return '<article class="news-card group flex flex-col justify-between" onclick="openModal(' + k + ')">' +
     '<div>' +
-      '<div class="relative overflow-hidden border-b border-[#1c2436]">' +
-        imgHtml +
+      '<div class="relative overflow-hidden border-b border-[#1c2436] h-44 bg-[#161c2b]">' +
+        '<img src="' + esc(imgSrc) + '" alt="" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">' +
+        '<div class="absolute inset-0 bg-gradient-to-t from-[#121722] via-transparent to-transparent opacity-80"></div>' +
         '<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">' +
           badgeGame(i.game) +
           badgeType(i.category) +
         '</div>' +
-        '<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/75 text-[10px] font-semibold text-slate-300 backdrop-blur-sm">' +
+        '<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/80 text-[10px] font-semibold text-slate-300 backdrop-blur-sm">' +
           esc(when(i.published)) +
         '</div>' +
       '</div>' +
@@ -290,35 +275,31 @@ function card(i, k) {
   '</article>';
 }
 
-/* OUVERTURE DE L'ARTICLE DANS LA MODALE */
 function openModal(index) {
   const v = vis();
   const item = v[index];
   if (!item) return;
 
   const g = G[item.game] || G.other;
-  let contextText = "Consultez l'article original de la rédaction pour découvrir tous les détails, déclarations et analyses approfondies.";
+  const imgSrc = (item.image && /^https?:\/\//.test(item.image)) ? item.image : g.img;
 
+  let contextText = "Consultez l'article complet de la rédaction d'origine pour approfondir l'analyse et découvrir les déclarations officielles.";
   if (item.category === 'official') {
-    contextText = "Cette annonce a été officiellement confirmée par la structure ou l'organisateur du tournoi. Les compositions d'équipes et signatures de contrats sont désormais validées.";
+    contextText = "Cette signature ou prolongation de contrat a été actée par la structure. Les compositions d'équipes sont validées pour les prochaines compétitions.";
   } else if (item.category === 'rumor') {
-    contextText = "Cette information constitue une rumeur de transfert ou une indiscrétion journalistique. L'officialisation dépend encore des négociations contractuelles en cours.";
+    contextText = "Cette annonce constitue une rumeur de transfert ou une indiscrétion de presse en attente d'officialisation par les clubs.";
   } else if (item.category === 'tournament') {
-    contextText = "Compétition esportive : qualifications, calendrier des matchs, résultats en direct ou sacre d'équipe.";
+    contextText = "Couverture des résultats de match, du tableau des playoffs ou du sacre d'équipe sur cette compétition majeure.";
   }
 
-  const imgHtml = item.image ?
-    '<div class="relative w-full h-64 overflow-hidden border-b border-[#1e2638]">' +
-      '<img src="' + esc(item.image) + '" alt="" class="w-full h-full object-cover">' +
-      '<div class="absolute top-3 right-3">' +
-        '<button onclick="closeModal()" class="w-8 h-8 rounded-full bg-black/70 hover:bg-black text-white flex items-center justify-center transition">' +
-          '<i class="fa-solid fa-xmark text-sm"></i>' +
-        '</button>' +
-      '</div>' +
-    '</div>' : '';
-
-  $('modal-body').innerHTML =
-    imgHtml +
+  \$('modal-body').innerHTML =
+    '<div class="relative w-full h-64 overflow-hidden border-b border-[#1e2638] bg-slate-900">' +
+      '<img src="' + esc(imgSrc) + '" alt="" class="w-full h-full object-cover">' +
+      '<div class="absolute inset-0 bg-gradient-to-t from-[#121722] via-transparent to-transparent"></div>' +
+      '<button onclick="closeModal()" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/75 hover:bg-black text-white flex items-center justify-center transition">' +
+        '<i class="fa-solid fa-xmark text-sm"></i>' +
+      '</button>' +
+    '</div>' +
     '<div class="p-6 space-y-4">' +
       '<div class="flex items-center gap-2">' +
         badgeGame(item.game) +
@@ -327,159 +308,4 @@ function openModal(index) {
       '</div>' +
       '<h2 class="text-xl font-bold text-white leading-snug">' + esc(item.title) + '</h2>' +
       '<div class="text-xs text-slate-400 flex items-center gap-2 border-b border-[#1c2436] pb-3">' +
-        '<span>Source : <strong class="text-slate-300">' + esc(item.source) + '</strong></span>' +
-        '<span>•</span>' +
-        '<span>Jeu : <strong class="text-slate-300">' + esc(g.n) + '</strong></span>' +
-      '</div>' +
-      '<p class="text-sm text-slate-300 leading-relaxed">' + contextText + '</p>' +
-      '<div class="pt-4 border-t border-[#1c2436] flex items-center justify-between gap-3">' +
-        '<button onclick="closeModal()" class="px-4 py-2 rounded-lg border border-[#27344e] text-xs font-semibold text-slate-300 hover:bg-[#1a2336] transition">' +
-          'Fermer' +
-        '</button>' +
-        '<a href="' + esc(item.url) + '" target="_blank" rel="noopener noreferrer" class="px-5 py-2 rounded-lg bg-white text-slate-950 font-bold text-xs hover:bg-slate-200 transition flex items-center gap-2">' +
-          'Lire sur ' + esc(item.source) + ' <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>' +
-        '</a>' +
-      '</div>' +
-    '</div>';
-
-  const modal = $('modal');
-  const card = $('modal-card');
-  modal.classList.remove('hidden');
-  setTimeout(function() {
-    card.classList.remove('scale-95', 'opacity-0');
-    card.classList.add('scale-100', 'opacity-100');
-  }, 10);
-}
-
-function closeModal() {
-  const card = $('modal-card');
-  card.classList.remove('scale-100', 'opacity-100');
-  card.classList.add('scale-95', 'opacity-0');
-  setTimeout(function() {
-    $('modal').classList.add('hidden');
-  }, 180);
-}
-
-$('modal').addEventListener('click', function(e) {
-  if (e.target === $('modal')) closeModal();
-});
-document.addEventListener('keydown', function(e) {
-  if (e.key === 'Escape' && !$('modal').classList.contains('hidden')) closeModal();
-});
-
-/* COLONNE LATÉRALE */
-function side() {
-  const mv = S.items.filter(function(i) { return i.category === 'official' || i.category === 'rumor'; }).slice(0, 5);
-  $('top').innerHTML = mv.length ? mv.map(function(i) {
-    const isRumor = i.category === 'rumor';
-    const tag = isRumor ? '<span class="text-amber-400 font-bold text-[10px]">RUMEUR</span>' : '<span class="text-emerald-400 font-bold text-[10px]">OFFICIEL</span>';
-    return '<a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="block p-2.5 rounded-lg bg-[#0e131d] hover:bg-[#161d2c] border border-[#1a2233] transition">' +
-      '<div class="flex items-center justify-between mb-1">' + tag + badgeGame(i.game) + '</div>' +
-      '<div class="text-xs font-semibold text-slate-200 line-clamp-2 leading-snug">' + esc(i.title) + '</div>' +
-      '<div class="text-[10px] text-slate-500 mt-1 flex items-center justify-between">' +
-        '<span>' + esc(i.source) + '</span>' +
-        '<span>' + esc(when(i.published)) + '</span>' +
-      '</div>' +
-    '</a>';
-  }).join('') : '<p class="text-xs text-slate-500 py-1">Aucun mouvement pour le moment.</p>';
-
-  const ch = S.items.filter(function(i) { return i.category === 'tournament'; }).slice(0, 4);
-  $('nx').innerHTML = ch.length ? ch.map(function(i) {
-    return '<a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="block p-2.5 rounded-lg bg-[#0e131d] hover:bg-[#161d2c] border border-[#1a2233] transition">' +
-      '<div class="flex items-center justify-between mb-1">' +
-        '<span class="text-yellow-400 font-bold text-[10px]"><i class="fa-solid fa-trophy mr-1"></i>TOURNOI</span>' +
-        badgeGame(i.game) +
-      '</div>' +
-      '<div class="text-xs font-semibold text-slate-200 line-clamp-2 leading-snug">' + esc(i.title) + '</div>' +
-      '<div class="text-[10px] text-slate-500 mt-1 flex items-center justify-between">' +
-        '<span>' + esc(i.source) + '</span>' +
-        '<span>' + esc(when(i.published)) + '</span>' +
-      '</div>' +
-    '</a>';
-  }).join('') : '<p class="text-xs text-slate-500 py-1">Aucun article de tournoi détecté.</p>';
-}
-
-function vis() {
-  const q = S.q.toLowerCase();
-  return S.items.filter(function(i) {
-    const gameMatch = (S.g === 'all' || i.game === S.g);
-    const typeMatch = (S.t === 'all' || i.category === S.t);
-    const searchMatch = !q || [i.title, i.source, (G[i.game] || G.other).n].join(' ').toLowerCase().includes(q);
-    return gameMatch && typeMatch && searchMatch;
-  });
-}
-
-function render() {
-  const v = vis();
-  $('cnt').textContent = '(' + v.length + ' article' + (v.length > 1 ? 's' : '') + ')';
-  
-  if (v.length) {
-    $('feed').innerHTML = v.map(card).join('');
-  } else {
-    $('feed').innerHTML = '<div class="col-span-full py-16 text-center text-slate-500 border border-dashed border-[#1e2638] rounded-xl">' +
-      '<i class="fa-regular fa-folder-open text-3xl mb-2 block text-slate-600"></i>' +
-      '<p class="text-sm font-semibold text-slate-400">Aucun article ne correspond aux filtres</p>' +
-      '<p class="text-xs mt-1">Sélectionnez un autre jeu ou réinitialisez la recherche.</p>' +
-    '</div>';
-  }
-  side();
-}
-
-function chips() {
-  const games = [['all', 'Tous les jeux']];
-  for (const k in G) {
-    if (k !== 'other') games.push([k, G[k].n]);
-  }
-  $('gf').innerHTML = games.map(function(pair) {
-    return '<button class="filter-btn" data-g="' + pair[0] + '" aria-pressed="' + (S.g === pair[0]) + '">' + esc(pair[1]) + '</button>';
-  }).join('');
-
-  const types = [];
-  for (const k in TYPES) {
-    types.push([k, TYPES[k]]);
-  }
-  $('tf').innerHTML = types.map(function(pair) {
-    return '<button class="filter-btn" data-t="' + pair[0] + '" aria-pressed="' + (S.t === pair[0]) + '">' + esc(pair[1]) + '</button>';
-  }).join('');
-}
-
-async function loadData() {
-  if (S.busy) return;
-  S.busy = true;
-  $('sp').classList.add('fa-spin');
-  try {
-    const r = await fetch('./data.json?t=' + Date.now());
-    if (!r.ok) throw new Error('HTTP ' + r.status);
-    const data = await r.json();
-    S.items = Array.isArray(data) ? data : [];
-    S.sync = Date.now();
-    $('sync').textContent = 'Dernière mise à jour : ' + new Date().toLocaleTimeString('fr-FR', { hour: '2-digit', minute: '2-digit' });
-  } catch (e) {
-    $('sync').textContent = 'Erreur lors de la synchronisation';
-  } finally {
-    S.busy = false;
-    $('sp').classList.remove('fa-spin');
-    render();
-  }
-}
-
-$('gf').addEventListener('click', function(e) {
-  const b = e.target.closest('[data-g]');
-  if (b) { S.g = b.dataset.g; chips(); render(); }
-});
-$('tf').addEventListener('click', function(e) {
-  const b = e.target.closest('[data-t]');
-  if (b) { S.t = b.dataset.t; chips(); render(); }
-});
-$('q').addEventListener('input', function(e) {
-  S.q = e.target.value.trim();
-  render();
-});
-$('rf').addEventListener('click', loadData);
-
-chips();
-render();
-loadData();
-</script>
-</body>
-</html>
+        '<span>Source : <strong class="text-slate-300">' + esc(item.source) +
