@@ -21,6 +21,7 @@ body{font-family:"DM Sans",system-ui,sans-serif;background:#0b0f19;background-im
 @keyframes bl{50%{opacity:.3}}
 @keyframes up{from{opacity:0;transform:translateY(8px)}}
 :focus-visible{outline:2px solid #22d3ee;outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
 <body class="text-slate-200 min-h-screen">
@@ -63,6 +64,7 @@ body{font-family:"DM Sans",system-ui,sans-serif;background:#0b0f19;background-im
       <div class="panel p-4">
         <h2 class="fh text-lg text-white mb-2"><i class="fa-solid fa-bolt text-yellow-300 mr-2"></i>Tournois & Grands chocs</h2>
         <div id="nx"></div>
+        <p class="text-xs text-slate-500 mt-3">Derniers articles sur les tournois et grands rendez-vous.</p>
       </div>
     </aside>
   </div>
@@ -71,126 +73,202 @@ body{font-family:"DM Sans",system-ui,sans-serif;background:#0b0f19;background-im
 <div id="toast" class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 hidden rounded-xl bg-[#1b2440] border border-violet-500/50 px-4 py-2 text-sm shadow-xl" role="status"></div>
 
 <script>
-const G={
-  lol:{n:'League of Legends',s:'LoL',c:'#c8aa6e'},
-  val:{n:'Valorant',s:'Valorant',c:'#ff4655'},
-  cs2:{n:'CS2',s:'CS2',c:'#f59e0b'},
-  rl:{n:'Rocket League',s:'Rocket League',c:'#38bdf8'},
-  dota:{n:'Dota 2',s:'Dota 2',c:'#a78bfa'},
-  other:{n:'Esport',s:'Esport',c:'#94a3b8'}
-};
-const TYPES={all:'Tous',official:'Transfert officiel',rumor:'Rumeur mercato',tournament:'Tournoi',patch:'Patch',news:'Actu générale'};
-const BD={
-  official:['OFFICIEL','bg-emerald-500/15 text-emerald-300 border-emerald-500/40'],
-  rumor:['RUMEUR','bg-amber-500/15 text-amber-300 border-amber-500/40'],
-  tournament:['TOURNOI','bg-yellow-500/15 text-yellow-300 border-yellow-500/40'],
-  patch:['PATCH','bg-sky-500/15 text-sky-300 border-sky-500/40'],
-  news:['ACTU','bg-violet-500/15 text-violet-300 border-violet-500/40']
+const G = {
+  lol: { n: 'League of Legends', s: 'LoL', c: '#c8aa6e' },
+  val: { n: 'Valorant', s: 'Valorant', c: '#ff4655' },
+  cs2: { n: 'CS2', s: 'CS2', c: '#f59e0b' },
+  rl: { n: 'Rocket League', s: 'Rocket League', c: '#38bdf8' },
+  dota: { n: 'Dota 2', s: 'Dota 2', c: '#a78bfa' },
+  other: { n: 'Esport', s: 'Esport', c: '#94a3b8' }
 };
 
-const EVERY=10*60*1000;
-const S={items:[],g:'all',t:'all',q:'',busy:false,last:Date.now(),sync:0,loaded:false,mode:'Chargement des données…'};
-const \$=id=>document.getElementById(id), p2=n=>String(n).padStart(2,'0');
-const esc=s=>String(s??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const TYPES = {
+  all: 'Tous',
+  official: 'Transfert officiel',
+  rumor: 'Rumeur mercato',
+  tournament: 'Tournoi',
+  patch: 'Patch',
+  news: 'Actu générale'
+};
 
-function when(ts){
-  const now=Date.now(),t=new Date(ts).getTime(),m=(now-t)/6e4,h=m/60,d=h/24;
-  if(isNaN(t))return"Récemment";
-  if(m<1)return"À l'instant";
-  if(m<60)return`Il y a ${Math.floor(m)} min`;
-  if(h<24)return`Il y a ${Math.floor(h)} h`;
-  if(d<2)return"Hier";
-  return`Il y a ${Math.floor(d)} jours`;
+const BD = {
+  official: ['OFFICIEL', 'bg-emerald-500/15 text-emerald-300 border-emerald-500/40'],
+  rumor: ['RUMEUR', 'bg-amber-500/15 text-amber-300 border-amber-500/40'],
+  tournament: ['TOURNOI', 'bg-yellow-500/15 text-yellow-300 border-yellow-500/40'],
+  patch: ['PATCH', 'bg-sky-500/15 text-sky-300 border-sky-500/40'],
+  news: ['ACTU', 'bg-violet-500/15 text-violet-300 border-violet-500/40']
+};
+
+const EVERY = 10 * 60 * 1000;
+const S = { items: [], g: 'all', t: 'all', q: '', busy: false, last: Date.now(), sync: 0, loaded: false, mode: 'Chargement des données...' };
+
+function $(id) { return document.getElementById(id); }
+function p2(n) { return String(n).padStart(2, '0'); }
+function esc(s) {
+  return String(s || '').replace(/[&<>"']/g, function(c) {
+    return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
+  });
 }
 
-const gb=(g,short)=>{const x=G[g]||G.other;return`<span class="bdg" style="color:${x.c};border-color:${x.c}55;background:${x.c}1f">${esc(short?x.s:x.n)}</span>`};
-function sb(ty){
-  const b=BD[ty]||BD.news;
-  return`<span class="bdg ${b[1]}">${b[0]}</span>`;
+function when(ts) {
+  const t = new Date(ts).getTime();
+  if (isNaN(t)) return "Récemment";
+  const now = Date.now();
+  const m = (now - t) / 60000;
+  const h = m / 60;
+  const d = h / 24;
+  if (m < 1) return "À l'instant";
+  if (m < 60) return "Il y a " + Math.floor(m) + " min";
+  if (h < 24) return "Il y a " + Math.floor(h) + " h";
+  if (d < 2) return "Hier";
+  return "Il y a " + Math.floor(d) + " jours";
 }
 
-function card(i,k){
-  const c=(G[i.game]||G.other).c;
-  const link=/^https?:\/\//.test(i.url||'')?`<a href="${esc(i.url)}" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-violet-300 hover:text-cyan-300">Lire l'article <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i></a>`:'';
-  const also=Array.isArray(i.also)&&i.also.length?`<p class="text-xs text-slate-500 mt-2">Aussi relayé par : ${esc(i.also.join(', '))}</p>`:'';
-  return`<article class="card p-5 mb-4" style="--g:${c};animation-delay:${Math.min(k,12)*30}ms">
-    <div class="flex flex-wrap items-center gap-2 mb-2">${gb(i.game)}${sb(i.category)}<span class="text-xs text-slate-500 ml-auto"><i class="fa-regular fa-clock mr-1"></i>${esc(when(i.published))}</span></div>
-    <h3 class="text-lg font-bold text-white leading-snug">${esc(i.title)}</h3>
-    ${also}
-    <div class="flex items-center justify-between mt-3 gap-3">
-      <span class="text-sm text-slate-400 min-w-0 truncate"><i class="fa-regular fa-newspaper mr-1.5 text-cyan-400"></i>${esc(i.source)}</span>
-      ${link}
-    </div></article>`;
+function gb(g, short) {
+  const x = G[g] || G.other;
+  return '<span class="bdg" style="color:' + x.c + ';border-color:' + x.c + '55;background:' + x.c + '1f">' + esc(short ? x.s : x.n) + '</span>';
 }
 
-const msg=(icon,t,sub)=>`<div class="panel p-8 text-center text-slate-400"><i class="fa-solid ${icon} text-3xl mb-3 block"></i><p class="text-white font-semibold">${esc(t)}</p>${sub?`<p class="text-sm mt-1">\${esc(sub)}</p>`:''}</div>`;
-
-function vis(){
-  const q=S.q.toLowerCase();
-  return S.items.filter(i=>(S.g==='all'||i.game===S.g)&&(S.t==='all'||i.category===S.t)&&(!q||[i.title,i.source,(G[i.game]||G.other).n].join(' ').toLowerCase().includes(q)));
+function sb(ty) {
+  const b = BD[ty] || BD.news;
+  return '<span class="bdg ' + b[1] + '">' + b[0] + '</span>';
 }
 
-function side(){
-  const mv=S.items.filter(i=>i.category==='official'||i.category==='rumor').slice(0,5);
-  \$('top').innerHTML=mv.length?mv.map(i=>`<tr class="border-t border-[#1e2740] first:border-0"><td class="py-2 pr-2"><a href="${esc(i.url)}" target="_blank" rel="noopener noreferrer" class="font-semibold text-white hover:text-cyan-300 leading-snug block">${esc(i.title)}</a><div class="text-xs text-slate-500 mt-0.5">${esc(i.source)} · ${esc(when(i.published))}</div></td><td class="py-2 text-right align-top">${gb(i.game,true)}</td></tr>`).join(''):`<tr><td class="text-slate-500 py-2">Aucun transfert récent détecté.</td></tr>`;
-  
-  const ch=S.items.filter(i=>i.category==='tournament').slice(0,4);
-  \$('nx').innerHTML=ch.length?ch.map(i=>`<div class="py-3 border-t border-[#1e2740] first:border-0"><div class="flex justify-between items-start gap-2"><a href="${esc(i.url)}" target="_blank" rel="noopener noreferrer" class="font-semibold text-white hover:text-cyan-300 leading-snug">${esc(i.title)}</a>${gb(i.game,true)}</div><div class="mt-1 text-xs text-slate-500"><i class="fa-regular fa-clock text-cyan-400 mr-1"></i>${esc(when(i.published))} · ${esc(i.source)}</div></div>`).join(''):`<p class="text-sm text-slate-500">Aucun tournoi détecté pour l'instant.</p>`;
+function card(i, k) {
+  const c = (G[i.game] || G.other).c;
+  const link = /^https?:\/\//.test(i.url || '') ? '<a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-violet-300 hover:text-cyan-300">Lire la source <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i></a>' : '';
+  const also = Array.isArray(i.also) && i.also.length ? '<p class="text-xs text-slate-500 mt-2">Aussi relayé par ' + esc(i.also.join(', ')) + '</p>' : '';
+  return '<article class="card p-5 mb-4" style="--g:' + c + ';animation-delay:' + (Math.min(k, 12) * 30) + 'ms">' +
+    '<div class="flex flex-wrap items-center gap-2 mb-2">' + gb(i.game) + sb(i.category) + '<span class="text-xs text-slate-500 ml-auto"><i class="fa-regular fa-clock mr-1"></i>' + esc(when(i.published)) + '</span></div>' +
+    '<h3 class="text-lg font-bold text-white leading-snug">' + esc(i.title) + '</h3>' +
+    also +
+    '<div class="flex items-center justify-between mt-3 gap-3"><span class="text-sm text-slate-400 min-w-0 truncate"><i class="fa-regular fa-newspaper mr-1.5 text-cyan-400"></i>' + esc(i.source) + '</span>' + link + '</div></article>';
 }
 
-function render(){
-  const v=vis();
-  \$('cnt').textContent=`${v.length} info${v.length>1?'s':''}`;
-  let h='';
-  if(v.length)h+=v.map(card).join('');
-  else if(!S.loaded)h+=msg('fa-satellite-dish fa-beat','Chargement des actus…');
-  else if(!S.items.length)h+=msg('fa-circle-info text-cyan-400','Aucune actualité disponible','Le fichier data.json est encore vide. Lance le workflow GitHub Actions pour faire le premier chargement !');
-  else h+=msg('fa-face-meh','Aucun article ne correspond','Change de filtre ou vide la recherche.');
-  \$('feed').innerHTML=h;
+function msg(icon, t, sub) {
+  return '<div class="panel p-8 text-center text-slate-400"><i class="fa-solid ' + icon + ' text-3xl mb-3 block"></i><p class="text-white font-semibold">' + esc(t) + '</p>' + (sub ? '<p class="text-sm mt-1">' + esc(sub) + '</p>' : '') + '</div>';
+}
+
+function vis() {
+  const q = S.q.toLowerCase();
+  return S.items.filter(function(i) {
+    const gameMatch = (S.g === 'all' || i.game === S.g);
+    const typeMatch = (S.t === 'all' || i.category === S.t);
+    const searchMatch = !q || [i.title, i.source, (G[i.game] || G.other).n].join(' ').toLowerCase().includes(q);
+    return gameMatch && typeMatch && searchMatch;
+  });
+}
+
+function side() {
+  const mv = S.items.filter(function(i) { return i.category === 'official' || i.category === 'rumor'; }).slice(0, 5);
+  $('top').innerHTML = mv.length ? mv.map(function(i) {
+    const label = i.category === 'rumor' ? 'Rumeur' : 'Officiel';
+    return '<tr class="border-t border-[#1e2740] first:border-0"><td class="py-2 pr-2"><a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="font-semibold text-white hover:text-cyan-300 leading-snug block">' + esc(i.title) + '</a><div class="text-xs text-slate-500 mt-0.5">' + label + ' · ' + esc(i.source) + ' · ' + esc(when(i.published)) + '</div></td><td class="py-2 text-right align-top">' + gb(i.game, true) + '</td></tr>';
+  }).join('') : '<tr><td class="text-slate-500 py-2">Aucun mouvement détecté pour le moment.</td></tr>';
+
+  const ch = S.items.filter(function(i) { return i.category === 'tournament'; }).slice(0, 4);
+  $('nx').innerHTML = ch.length ? ch.map(function(i) {
+    return '<div class="py-3 border-t border-[#1e2740] first:border-0"><div class="flex justify-between items-start gap-2"><a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="font-semibold text-white hover:text-cyan-300 leading-snug">' + esc(i.title) + '</a>' + gb(i.game, true) + '</div><div class="mt-1 text-xs text-slate-500"><i class="fa-regular fa-clock text-cyan-400 mr-1"></i>' + esc(when(i.published)) + ' · ' + esc(i.source) + '</div></div>';
+  }).join('') : '<p class="text-sm text-slate-500">Aucun tournoi détecté pour le moment.</p>';
+}
+
+function render() {
+  const v = vis();
+  $('cnt').textContent = v.length + ' info' + (v.length > 1 ? 's' : '');
+  let h = '';
+  if (v.length) {
+    h = v.map(card).join('');
+  } else if (!S.loaded) {
+    h = msg('fa-satellite-dish fa-beat', 'Chargement des données...');
+  } else if (!S.items.length) {
+    h = msg('fa-circle-info text-cyan-400', 'Aucune actualité disponible', 'Le fichier data.json est vide.');
+  } else {
+    h = msg('fa-face-meh', 'Aucun article ne correspond', 'Change de filtre ou vide la recherche.');
+  }
+  $('feed').innerHTML = h;
   side();
 }
 
-function chips(){
-  \$('gf').innerHTML=[['all','Tous les jeux'],...Object.entries(G).filter(([k])=>k!=='other').map(([k,v])=>[k,v.n])].map(([k,n])=>`<button class="chip" data-g="${k}" aria-pressed="${S.g===k}">${k!=='all'?`<span class="inline-block w-2 h-2 rounded-full mr-2" style="background:\${G[k].c}"></span>`:''}${esc(n)}</button>`).join('');
-  \$('tf').innerHTML=Object.entries(TYPES).map(([k,n])=>`<button class="chip" data-t="${k}" aria-pressed="${S.t===k}">${esc(n)}</button>`).join('');
+function chips() {
+  const games = [['all', 'Tous les jeux']];
+  for (const k in G) {
+    if (k !== 'other') games.push([k, G[k].n]);
+  }
+  $('gf').innerHTML = games.map(function(pair) {
+    const k = pair[0], n = pair[1];
+    const dot = k !== 'all' ? '<span class="inline-block w-2 h-2 rounded-full mr-2" style="background:' + G[k].c + '"></span>' : '';
+    return '<button class="chip" data-g="' + k + '" aria-pressed="' + (S.g === k) + '">' + dot + esc(n) + '</button>';
+  }).join('');
+
+  const types = [];
+  for (const k in TYPES) {
+    types.push([k, TYPES[k]]);
+  }
+  $('tf').innerHTML = types.map(function(pair) {
+    const k = pair[0], n = pair[1];
+    return '<button class="chip" data-t="' + k + '" aria-pressed="' + (S.t === k) + '">' + esc(n) + '</button>';
+  }).join('');
 }
 
-function toast(m){const t=\$('toast');t.textContent=m;t.classList.remove('hidden');clearTimeout(toast.h);toast.h=setTimeout(()=>t.classList.add('hidden'),3000)}
+function toast(m) {
+  const t = $('toast');
+  t.textContent = m;
+  t.classList.remove('hidden');
+  clearTimeout(toast.h);
+  toast.h = setTimeout(function() { t.classList.add('hidden'); }, 3000);
+}
 
-async function loadData(){
-  if(S.busy)return;
-  S.busy=true;S.last=Date.now();\$('sp').classList.add('fa-spin');
-  try{
-    const r=await fetch('./data.json?t='+Date.now());
-    if(!r.ok)throw new Error('Erreur HTTP '+r.status);
-    const data=await r.json();
-    S.items=Array.isArray(data)?data:[];
-    S.loaded=true;
-    S.sync=Date.now();
-    S.mode=`En ligne · ${S.items.length} articles disponibles`;
+async function loadData() {
+  if (S.busy) return;
+  S.busy = true;
+  S.last = Date.now();
+  $('sp').classList.add('fa-spin');
+  try {
+    const r = await fetch('./data.json?t=' + Date.now());
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    const data = await r.json();
+    S.items = Array.isArray(data) ? data : [];
+    S.loaded = true;
+    S.sync = Date.now();
+    S.mode = 'En ligne · ' + S.items.length + ' articles disponibles';
     toast('Données actualisées');
-  }catch(e){
-    S.loaded=true;
-    S.mode="Erreur de lecture de data.json";
+  } catch (e) {
+    S.loaded = true;
+    S.mode = 'Erreur lors du chargement de data.json';
     toast('Erreur de synchronisation');
-  }finally{
-    S.busy=false;\$('sp').classList.remove('fa-spin');render();
+  } finally {
+    S.busy = false;
+    $('sp').classList.remove('fa-spin');
+    render();
   }
 }
 
-$('gf').addEventListener('click',e=>{const b=e.target.closest('[data-g]');if(b){S.g=b.dataset.g;chips();render()}});$('tf').addEventListener('click',e=>{const b=e.target.closest('[data-t]');if(b){S.t=b.dataset.t;chips();render()}});
-$('q').addEventListener('input',e=>{S.q=e.target.value.trim();render()});$('rf').addEventListener('click',loadData);
+$('gf').addEventListener('click', function(e) {
+  const b = e.target.closest('[data-g]');
+  if (b) { S.g = b.dataset.g; chips(); render(); }
+});
+$('tf').addEventListener('click', function(e) {
+  const b = e.target.closest('[data-t]');
+  if (b) { S.t = b.dataset.t; chips(); render(); }
+});
+$('q').addEventListener('input', function(e) {
+  S.q = e.target.value.trim();
+  render();
+});
+$('rf').addEventListener('click', loadData);
 
-setInterval(()=>{
-  const s=Math.floor((Date.now()-S.sync)/1000);
-  \$('sync').textContent=S.sync?'Dernière synchro : '+(s<60?`il y a ${s} sec`:`il y a ${Math.floor(s/60)} min`):'Dernière synchro : en attente…';
-  \$('mode').textContent=S.mode;
-  const left=Math.max(0,Math.ceil((EVERY-(Date.now()-S.last))/1000));
-  $('cdn').textContent=$('auto').checked?`(${Math.floor(left/60)}:${p2(left%60)})`:'';
-  if(\$('auto').checked&&Date.now()-S.last>=EVERY)loadData();
-},1000);
+setInterval(function() {
+  const s = Math.floor((Date.now() - S.sync) / 1000);
+  $('sync').textContent = S.sync ? ('Dernière synchro : ' + (s < 60 ? (s + ' sec') : (Math.floor(s / 60) + ' min'))) : 'Dernière synchro : en attente…';
+  $('mode').textContent = S.mode;
+  const left = Math.max(0, Math.ceil((EVERY - (Date.now() - S.last)) / 1000));
+  $('cdn').textContent = $('auto').checked ? ('(' + Math.floor(left / 60) + ':' + p2(left % 60) + ')') : '';
+  if ($('auto').checked && (Date.now() - S.last >= EVERY)) loadData();
+}, 1000);
 
-chips();render();loadData();
+chips();
+render();
+loadData();
 </script>
 </body>
 </html>
