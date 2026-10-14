@@ -1,109 +1,317 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Esport Transfer & News Radar</title>
+<title>Esport Radar — Live Transferts & Actus</title>
 <script src="https://cdn.tailwindcss.com/3.4.17"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
 <style>
-body{font-family:"DM Sans",system-ui,sans-serif;background:#0b0f19;background-image:radial-gradient(800px 400px at 15% -10%,rgba(139,92,246,.18),transparent),radial-gradient(700px 400px at 100% 0,rgba(34,211,238,.12),transparent);background-attachment:fixed}
-.fh{font-family:"Chakra Petch","DM Sans",sans-serif}
-.card{background:#121829;border:1px solid #1e2740;border-left:4px solid var(--g);border-radius:16px;transition:box-shadow .25s,transform .25s;animation:up .35s both}
-.card:hover{box-shadow:0 0 0 1px var(--g),0 10px 30px -12px var(--g);transform:translateY(-2px)}
-.panel{background:#121829;border:1px solid #1e2740;border-radius:16px}
-.chip{border:1px solid #243049;background:#0f1525;border-radius:999px;padding:6px 14px;font-size:14px;color:#a8b3cf;transition:.2s;white-space:nowrap}
-.chip:hover{border-color:#8b5cf6;color:#fff}
-.chip[aria-pressed=true]{background:linear-gradient(90deg,#7c3aed,#06b6d4);border-color:transparent;color:#fff}
-.bdg{display:inline-block;font-size:12px;font-weight:700;border-radius:999px;padding:2px 10px;letter-spacing:.02em;border:1px solid}
-.live{animation:bl 1.4s infinite}
-@keyframes bl{50%{opacity:.3}}
-@keyframes up{from{opacity:0;transform:translateY(8px)}}
-:focus-visible{outline:2px solid #22d3ee;outline-offset:2px}
-@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+body {
+  font-family: "DM Sans", system-ui, sans-serif;
+  background: #070a13;
+  background-image: 
+    radial-gradient(1000px 500px at 10% -10%, rgba(124, 58, 237, 0.22), transparent),
+    radial-gradient(900px 500px at 90% 0%, rgba(6, 182, 212, 0.18), transparent),
+    radial-gradient(1200px 600px at 50% 100%, rgba(15, 23, 42, 0.8), transparent);
+  background-attachment: fixed;
+}
+.fh { font-family: "Chakra Petch", sans-serif; }
+
+/* Cartes immersives */
+.card-item {
+  background: #0f1629;
+  border: 1px solid #1c2640;
+  border-radius: 18px;
+  transition: transform 0.25s cubic-bezier(0.2, 0.8, 0.2, 1), box-shadow 0.25s ease, border-color 0.25s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+.card-item:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+  box-shadow: 0 12px 30px -10px var(--accent-glow), 0 0 0 1px var(--accent);
+}
+.card-item:active {
+  transform: translateY(-2px) scale(0.99);
+}
+
+.panel-card {
+  background: #0f1629;
+  border: 1px solid #1c2640;
+  border-radius: 18px;
+}
+
+/* Boutons filtres */
+.chip {
+  border: 1px solid #23304e;
+  background: #0d1322;
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #94a3b8;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+.chip:hover {
+  border-color: #8b5cf6;
+  color: #fff;
+  background: #141d33;
+}
+.chip[aria-pressed="true"] {
+  background: linear-gradient(135deg, #7c3aed, #06b6d4);
+  border-color: transparent;
+  color: #fff;
+  box-shadow: 0 4px 15px -3px rgba(124, 58, 237, 0.5);
+}
+
+.bdg {
+  display: inline-flex;
+  align-items: center;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  border-radius: 999px;
+  padding: 3px 10px;
+  border: 1px solid;
+}
+
+.live-pulse {
+  animation: pulse-ring 1.8s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+@keyframes pulse-ring {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.4; transform: scale(0.85); }
+}
+
+/* Modal animation */
+#modal-box {
+  transition: transform 0.25s ease-out, opacity 0.25s ease-out;
+}
 </style>
 </head>
-<body class="text-slate-200 min-h-screen">
-<header class="sticky top-0 z-30 backdrop-blur bg-[#0b0f19]/85 border-b border-[#1e2740]">
-  <div class="max-w-7xl mx-auto px-4 py-3 flex flex-wrap items-center gap-3">
+<body class="text-slate-200 min-h-screen flex flex-col antialiased selection:bg-cyan-500 selection:text-black">
+
+<!-- HEADER SUPÉRIEUR -->
+<header class="sticky top-0 z-30 backdrop-blur-xl bg-[#070a13]/85 border-b border-[#1c2640]">
+  <div class="max-w-[1900px] mx-auto px-4 sm:px-6 lg:px-10 py-3.5 flex flex-wrap items-center justify-between gap-4">
+    
+    <!-- Logo & Live indicator -->
     <div class="flex items-center gap-3">
-      <i class="fa-solid fa-satellite-dish text-cyan-400 text-xl"></i>
-      <h1 class="fh text-2xl font-bold tracking-wider text-white">ESPORT <span class="text-violet-400">RADAR</span></h1>
-      <span class="bdg bg-emerald-500/15 text-emerald-400 border-emerald-500/40 flex items-center gap-1.5"><span class="live w-2 h-2 rounded-full bg-emerald-400"></span>LIVE</span>
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-violet-600 to-cyan-400 flex items-center justify-center shadow-lg shadow-violet-500/25">
+        <i class="fa-solid fa-satellite-dish text-white text-lg"></i>
+      </div>
+      <div>
+        <div class="flex items-center gap-2">
+          <h1 class="fh text-2xl font-black tracking-wider text-white">ESPORT <span class="text-transparent bg-clip-text bg-gradient-to-r from-violet-400 to-cyan-400">RADAR</span></h1>
+          <span class="bdg bg-emerald-500/15 text-emerald-400 border-emerald-500/40 gap-1.5 py-0.5">
+            <span class="live-pulse w-2 h-2 rounded-full bg-emerald-400"></span>LIVE
+          </span>
+        </div>
+        <p class="text-[11px] text-slate-400 font-medium">Flux compétitif en direct · Agrégation automatisée</p>
+      </div>
     </div>
-    <div class="relative flex-1 min-w-[200px] md:max-w-md md:mx-auto">
-      <i class="fa-solid fa-magnifying-glass absolute left-3 top-1/2 -translate-y-1/2 text-slate-500"></i>
-      <input id="q" type="search" aria-label="Rechercher" placeholder="Joueur, équipe, mot-clé..." class="w-full rounded-xl bg-[#0f1525] border border-[#243049] pl-9 pr-3 py-2 placeholder-slate-500 focus:border-violet-500 outline-none">
+
+    <!-- Barre de recherche -->
+    <div class="relative flex-1 max-w-xl min-w-[260px]">
+      <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500"></i>
+      <input id="q" type="search" aria-label="Rechercher" placeholder="Rechercher un joueur, un tournoi, une équipe (ex: Vitality, Faker, VCT...)" class="w-full rounded-xl bg-[#0e1424] border border-[#23304e] pl-10 pr-4 py-2.5 text-sm placeholder-slate-500 text-white focus:border-cyan-400 focus:ring-1 focus:ring-cyan-400 outline-none transition">
     </div>
-    <div class="flex items-center gap-3 ml-auto">
-      <label class="flex items-center gap-2 text-sm cursor-pointer select-none">
+
+    <!-- Contrôles & Synchronisation -->
+    <div class="flex items-center gap-4">
+      <label class="flex items-center gap-2.5 text-xs text-slate-400 cursor-pointer select-none bg-[#0e1424] px-3 py-2 rounded-xl border border-[#23304e]">
         <input id="auto" type="checkbox" checked class="sr-only peer">
-        <span class="w-10 h-6 rounded-full bg-slate-700 peer-checked:bg-emerald-500 relative transition after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:w-5 after:h-5 after:rounded-full after:bg-white after:transition peer-checked:after:translate-x-4 peer-focus-visible:ring-2 peer-focus-visible:ring-cyan-400"></span>
-        <span>Auto 10 min <span id="cdn" class="text-slate-500"></span></span>
+        <span class="w-8 h-4.5 rounded-full bg-slate-700 peer-checked:bg-emerald-500 relative transition after:content-[''] after:absolute after:top-0.5 after:left-0.5 after:w-3.5 after:h-3.5 after:rounded-full after:bg-white after:transition peer-checked:after:translate-x-3.5"></span>
+        <span class="font-medium">Auto-sync <span id="cdn" class="text-cyan-400 font-mono"></span></span>
       </label>
-      <button id="rf" class="rounded-xl px-4 py-2 font-semibold text-white bg-gradient-to-r from-violet-600 to-cyan-500 hover:brightness-110 flex items-center gap-2"><i id="sp" class="fa-solid fa-rotate"></i>Actualiser</button>
+
+      <button id="rf" class="rounded-xl px-4 py-2.5 text-sm font-semibold text-white bg-gradient-to-r from-violet-600 via-indigo-600 to-cyan-500 hover:brightness-110 active:scale-95 transition flex items-center gap-2 shadow-lg shadow-indigo-600/25">
+        <i id="sp" class="fa-solid fa-rotate"></i>
+        <span>Actualiser</span>
+      </button>
     </div>
   </div>
-  <div class="max-w-7xl mx-auto px-4 pb-2 text-xs text-slate-500 flex flex-wrap gap-x-4"><span id="sync">Dernière synchro : en attente…</span><span id="mode"></span></div>
+
+  <!-- Barre d'état secondaire -->
+  <div class="max-w-[1900px] mx-auto px-4 sm:px-6 lg:px-10 pb-2.5 text-xs text-slate-500 flex flex-wrap items-center justify-between gap-2 border-t border-[#151c30]/50 pt-2">
+    <div class="flex items-center gap-4">
+      <span id="sync"><i class="fa-regular fa-clock mr-1 text-slate-600"></i>Synchronisation en cours…</span>
+      <span id="mode" class="text-slate-400"></span>
+    </div>
+    <div class="hidden sm:flex items-center gap-3 text-[11px] text-slate-500">
+      <span><i class="fa-solid fa-server mr-1 text-emerald-400"></i>GitHub Actions Engine</span>
+      <span>•</span>
+      <span>Google News Esport (FR)</span>
+    </div>
+  </div>
 </header>
 
-<main class="max-w-7xl mx-auto px-4 py-5">
-  <div class="flex flex-wrap gap-2 mb-3" id="gf" role="group" aria-label="Filtrer par jeu"></div>
-  <div class="flex flex-wrap gap-2 mb-5" id="tf" role="group" aria-label="Filtrer par type d'info"></div>
-  <div class="grid lg:grid-cols-12 gap-6">
-    <section class="lg:col-span-8">
-      <div class="flex items-center justify-between mb-3"><h2 class="fh text-lg text-white">Le flux</h2><span id="cnt" class="text-sm text-slate-500"></span></div>
-      <div id="feed" aria-live="polite"></div>
-    </section>
-    <aside class="lg:col-span-4 space-y-6">
-      <div class="panel p-4">
-        <h2 class="fh text-lg text-white mb-3"><i class="fa-solid fa-fire text-orange-400 mr-2"></i>Top mouvements mercato</h2>
-        <table class="w-full text-sm"><tbody id="top"></tbody></table>
+<!-- CONTENU PRINCIPAL (ADAPTÉ 32" ET ULTRA-LARGE) -->
+<main class="max-w-[1900px] w-full mx-auto px-4 sm:px-6 lg:px-10 py-6 flex-1">
+
+  <!-- FILTRES PAR JEU -->
+  <div class="mb-3">
+    <div class="text-xs uppercase tracking-wider text-slate-500 font-bold mb-2">Disciplines</div>
+    <div class="flex flex-wrap gap-2" id="gf" role="group"></div>
+  </div>
+
+  <!-- FILTRES PAR CATÉGORIE -->
+  <div class="mb-6">
+    <div class="text-xs uppercase tracking-wider text-slate-500 font-bold mb-2">Type d'information</div>
+    <div class="flex flex-wrap gap-2" id="tf" role="group"></div>
+  </div>
+
+  <!-- GRILLE RESPONSIVE LARGE -->
+  <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+    <!-- FLUX D'ACTUS PRINCIPAL -->
+    <section class="lg:col-span-8 xl:col-span-9">
+      <div class="flex items-center justify-between mb-4">
+        <h2 class="fh text-xl font-bold text-white tracking-wide flex items-center gap-2">
+          <i class="fa-solid fa-bolt-lightning text-cyan-400"></i>
+          Fil d'actualité en continu
+        </h2>
+        <span id="cnt" class="text-xs font-semibold px-2.5 py-1 rounded-md bg-[#131b2e] text-slate-400 border border-[#23304e]"></span>
       </div>
-      <div class="panel p-4">
-        <h2 class="fh text-lg text-white mb-2"><i class="fa-solid fa-bolt text-yellow-300 mr-2"></i>Tournois & Grands chocs</h2>
-        <div id="nx"></div>
-        <p class="text-xs text-slate-500 mt-3">Derniers articles sur les tournois et grands rendez-vous.</p>
+
+      <!-- Grille multi-colonnes pour les écrans larges -->
+      <div id="feed" class="grid grid-cols-1 md:grid-cols-2 2xl:grid-cols-3 gap-6" aria-live="polite"></div>
+    </section>
+
+    <!-- COLONNE LATÉRALE / WIDGETS -->
+    <aside class="lg:col-span-4 xl:col-span-3 space-y-6">
+
+      <!-- Widget Mercato / Transferts -->
+      <div class="panel-card p-5">
+        <div class="flex items-center justify-between mb-3 border-b border-[#1c2640] pb-3">
+          <h2 class="fh text-base font-bold text-white flex items-center gap-2">
+            <i class="fa-solid fa-fire-flame-curved text-orange-400 text-lg"></i>
+            Radar Mercato
+          </h2>
+          <span class="text-[11px] text-slate-500 uppercase tracking-wider font-semibold">Transferts & Rumeurs</span>
+        </div>
+        <div id="top" class="space-y-3"></div>
+      </div>
+
+      <!-- Widget Tournois & Chocs -->
+      <div class="panel-card p-5">
+        <div class="flex items-center justify-between mb-3 border-b border-[#1c2640] pb-3">
+          <h2 class="fh text-base font-bold text-white flex items-center gap-2">
+            <i class="fa-solid fa-trophy text-yellow-400 text-lg"></i>
+            Grands Rendez-vous
+          </h2>
+          <span class="text-[11px] text-slate-500 uppercase tracking-wider font-semibold">Tournois</span>
+        </div>
+        <div id="nx" class="space-y-3"></div>
+      </div>
+
+      <!-- Astuce / Info widget -->
+      <div class="panel-card p-5 bg-gradient-to-br from-[#0f1629] to-[#141b30] border-violet-500/30">
+        <div class="flex items-start gap-3">
+          <i class="fa-solid fa-circle-info text-cyan-400 text-base mt-0.5"></i>
+          <div>
+            <h4 class="text-sm font-bold text-white">Astuce de navigation</h4>
+            <p class="text-xs text-slate-400 leading-relaxed mt-1">
+              Clique sur n'importe quel article pour ouvrir son décryptage complet et découvrir les rédactions qui couvrent l'événement.
+            </p>
+          </div>
+        </div>
       </div>
     </aside>
+
   </div>
-  <p class="text-xs text-slate-600 mt-8">Articles synchronisés automatiquement toutes les heures par GitHub Actions depuis Google Actualités.</p>
 </main>
-<div id="toast" class="fixed bottom-4 left-1/2 -translate-x-1/2 z-40 hidden rounded-xl bg-[#1b2440] border border-violet-500/50 px-4 py-2 text-sm shadow-xl" role="status"></div>
+
+<!-- PIED DE PAGE -->
+<footer class="mt-auto border-t border-[#1c2640] bg-[#070a13]/90 py-6 text-center text-xs text-slate-500">
+  <div class="max-w-[1900px] mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4">
+    <p>Esport Radar — Tableau de bord autonome propulsé par GitHub Actions & Google News.</p>
+    <p class="text-slate-600">Données issues de flux officiels. Les marques et logos appartiennent à leurs éditeurs respectifs.</p>
+  </div>
+</footer>
+
+<!-- MODAL / VOLET DE LECTURE DÉTAILLÉ -->
+<div id="modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 hidden bg-black/80 backdrop-blur-md transition-opacity duration-300">
+  <div id="modal-box" class="panel-card w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl border-[#2a385c] transform scale-95 opacity-0">
+    <div id="modal-content"></div>
+  </div>
+</div>
+
+<!-- TOAST NOTIFICATION -->
+<div id="toast" class="fixed bottom-6 right-6 z-40 hidden rounded-xl bg-[#141d33] border border-cyan-500/40 px-5 py-3 text-sm font-medium text-cyan-200 shadow-2xl flex items-center gap-3"></div>
 
 <script>
+/* Configuration thématique des jeux avec bannières stylisées */
 const G = {
-  lol: { n: 'League of Legends', s: 'LoL', c: '#c8aa6e' },
-  val: { n: 'Valorant', s: 'Valorant', c: '#ff4655' },
-  cs2: { n: 'CS2', s: 'CS2', c: '#f59e0b' },
-  rl: { n: 'Rocket League', s: 'Rocket League', c: '#38bdf8' },
-  dota: { n: 'Dota 2', s: 'Dota 2', c: '#a78bfa' },
-  other: { n: 'Esport', s: 'Esport', c: '#94a3b8' }
+  val: {
+    n: 'Valorant', s: 'Valorant', c: '#ff4655', glow: 'rgba(255,70,85,0.3)',
+    img: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80',
+    desc: 'Circuit compétitif VCT, transferts des équipes EMEA/Americas et mises à jour du jeu de tir tactique de Riot Games.'
+  },
+  lol: {
+    n: 'League of Legends', s: 'LoL', c: '#c8aa6e', glow: 'rgba(200,170,110,0.3)',
+    img: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80',
+    desc: 'Scène professionnelle League of Legends : Worlds, LEC, LCK, LFL et mercato mondial des champions.'
+  },
+  cs2: {
+    n: 'Counter-Strike 2', s: 'CS2', c: '#f59e0b', glow: 'rgba(245,158,11,0.3)',
+    img: 'https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?auto=format&fit=crop&w=800&q=80',
+    desc: 'Majors Valve, classements ESL/HLTV et actualité du FPS tactique de référence.'
+  },
+  rl: {
+    n: 'Rocket League', s: 'Rocket League', c: '#38bdf8', glow: 'rgba(56,189,248,0.3)',
+    img: 'https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=800&q=80',
+    desc: 'Championnats RLCS, acrobaties supersoniques et actualité compétitive du football sur roues de Psyonix.'
+  },
+  dota: {
+    n: 'Dota 2', s: 'Dota 2', c: '#a78bfa', glow: 'rgba(167,139,250,0.3)',
+    img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80',
+    desc: 'The International, circuits DPC et stratégies MOBA ultra-compétitives.'
+  },
+  other: {
+    n: 'Esport Général', s: 'Esport', c: '#06b6d4', glow: 'rgba(6,182,212,0.3)',
+    img: 'https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80',
+    desc: 'Actualité généraliste du sport électronique, annonces économiques, clubs et événements majeurs.'
+  }
 };
 
 const TYPES = {
-  all: 'Tous',
+  all: 'Tous les types',
   official: 'Transfert officiel',
   rumor: 'Rumeur mercato',
-  tournament: 'Tournoi',
-  patch: 'Patch',
+  tournament: 'Tournois',
+  patch: 'Patch note',
   news: 'Actu générale'
 };
 
 const BD = {
-  official: ['OFFICIEL', 'bg-emerald-500/15 text-emerald-300 border-emerald-500/40'],
-  rumor: ['RUMEUR', 'bg-amber-500/15 text-amber-300 border-amber-500/40'],
-  tournament: ['TOURNOI', 'bg-yellow-500/15 text-yellow-300 border-yellow-500/40'],
-  patch: ['PATCH', 'bg-sky-500/15 text-sky-300 border-sky-500/40'],
-  news: ['ACTU', 'bg-violet-500/15 text-violet-300 border-violet-500/40']
+  official: ['OFFICIEL', 'bg-emerald-500/20 text-emerald-300 border-emerald-500/50'],
+  rumor: ['RUMEUR', 'bg-amber-500/20 text-amber-300 border-amber-500/50'],
+  tournament: ['TOURNOI', 'bg-yellow-500/20 text-yellow-300 border-yellow-500/50'],
+  patch: ['PATCH', 'bg-sky-500/20 text-sky-300 border-sky-500/50'],
+  news: ['ACTU', 'bg-violet-500/20 text-violet-300 border-violet-500/50']
 };
 
 const EVERY = 10 * 60 * 1000;
-const S = { items: [], g: 'all', t: 'all', q: '', busy: false, last: Date.now(), sync: 0, loaded: false, mode: 'Chargement des données...' };
+const S = {
+  items: [],
+  g: 'all',
+  t: 'all',
+  q: '',
+  busy: false,
+  last: Date.now(),
+  sync: 0,
+  loaded: false,
+  mode: 'Synchronisation...'
+};
 
 function $(id) { return document.getElementById(id); }
 function p2(n) { return String(n).padStart(2, '0'); }
+
 function esc(s) {
   return String(s || '').replace(/[&<>"']/g, function(c) {
     return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c];
@@ -134,19 +342,165 @@ function sb(ty) {
   return '<span class="bdg ' + b[1] + '">' + b[0] + '</span>';
 }
 
+/* CARTE D'ARTICLE DANS LE FLUX */
 function card(i, k) {
-  const c = (G[i.game] || G.other).c;
-  const link = /^https?:\/\//.test(i.url || '') ? '<a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="text-sm font-semibold text-violet-300 hover:text-cyan-300">Lire la source <i class="fa-solid fa-arrow-up-right-from-square text-xs ml-1"></i></a>' : '';
-  const also = Array.isArray(i.also) && i.also.length ? '<p class="text-xs text-slate-500 mt-2">Aussi relayé par ' + esc(i.also.join(', ')) + '</p>' : '';
-  return '<article class="card p-5 mb-4" style="--g:' + c + ';animation-delay:' + (Math.min(k, 12) * 30) + 'ms">' +
-    '<div class="flex flex-wrap items-center gap-2 mb-2">' + gb(i.game) + sb(i.category) + '<span class="text-xs text-slate-500 ml-auto"><i class="fa-regular fa-clock mr-1"></i>' + esc(when(i.published)) + '</span></div>' +
-    '<h3 class="text-lg font-bold text-white leading-snug">' + esc(i.title) + '</h3>' +
-    also +
-    '<div class="flex items-center justify-between mt-3 gap-3"><span class="text-sm text-slate-400 min-w-0 truncate"><i class="fa-regular fa-newspaper mr-1.5 text-cyan-400"></i>' + esc(i.source) + '</span>' + link + '</div></article>';
+  const gInfo = G[i.game] || G.other;
+  const accent = gInfo.c;
+  const glow = gInfo.glow;
+  const image = gInfo.img;
+
+  return '<article class="card-item group flex flex-col justify-between" style="--accent:' + accent + ';--accent-glow:' + glow + ';" onclick="openDetail(' + k + ')">' +
+    '<div>' +
+      '<div class="relative h-44 w-full overflow-hidden bg-slate-900">' +
+        '<img src="' + image + '" alt="' + esc(gInfo.n) + '" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100">' +
+        '<div class="absolute inset-0 bg-gradient-to-t from-[#0f1629] via-[#0f1629]/40 to-transparent"></div>' +
+        '<div class="absolute top-3 left-3 flex flex-wrap gap-2">' + gb(i.game) + sb(i.category) + '</div>' +
+        '<div class="absolute bottom-2.5 right-3 text-[11px] text-slate-300 font-medium bg-black/60 backdrop-blur-md px-2.5 py-1 rounded-md border border-white/10">' +
+          '<i class="fa-regular fa-clock mr-1 text-cyan-400"></i>' + esc(when(i.published)) +
+        '</div>' +
+      '</div>' +
+      '<div class="p-5">' +
+        '<h3 class="fh text-lg font-bold text-white group-hover:text-cyan-300 leading-snug line-clamp-2 transition-colors mb-2.5">' +
+          esc(i.title) +
+        '</h3>' +
+        '<p class="text-xs text-slate-400 line-clamp-2 leading-relaxed mb-4">' +
+          (Array.isArray(i.also) && i.also.length ? 'Information suivie et également couverte par ' + esc(i.also.join(', ')) + '.' : gInfo.desc) +
+        '</p>' +
+      '</div>' +
+    '</div>' +
+    '<div class="px-5 pb-5 pt-0 flex items-center justify-between border-t border-[#1c2640]/70 pt-3 text-xs">' +
+      '<span class="text-slate-400 truncate max-w-[180px] flex items-center gap-1.5">' +
+        '<i class="fa-regular fa-newspaper text-cyan-400"></i>' + esc(i.source) +
+      '</span>' +
+      '<span class="text-violet-400 group-hover:text-cyan-300 font-semibold flex items-center gap-1 transition-colors">' +
+        'Lire le décryptage <i class="fa-solid fa-chevron-right text-[10px]"></i>' +
+      '</span>' +
+    '</div>' +
+  '</article>';
 }
 
-function msg(icon, t, sub) {
-  return '<div class="panel p-8 text-center text-slate-400"><i class="fa-solid ' + icon + ' text-3xl mb-3 block"></i><p class="text-white font-semibold">' + esc(t) + '</p>' + (sub ? '<p class="text-sm mt-1">' + esc(sub) + '</p>' : '') + '</div>';
+/* MODAL DE LECTURE DÉTAILLÉ */
+function openDetail(index) {
+  const v = vis();
+  const item = v[index];
+  if (!item) return;
+
+  const gInfo = G[item.game] || G.other;
+  const cat = item.category;
+
+  let explanation = '';
+  if (cat === 'official') {
+    explanation = "Ce mouvement a été officialisé par les structures concernées. Les signatures, prolongations de contrats ou libérations de joueurs redéfinissent la composition des équipes pour les prochains tournois majeurs.";
+  } else if (cat === 'rumor') {
+    explanation = "Cette information constitue une rumeur de mercato ou une fuite issue de sources journalistiques spécialisées. Tant que les organisations n'ont pas publié de communiqué officiel, des modifications contractuelles peuvent encore intervenir.";
+  } else if (cat === 'tournament') {
+    explanation = "Cet article fait le point sur les résultats, qualifications ou temps forts d'une compétition officielle. Consultez le récapitulatif pour connaître les classements et les équipes en lice.";
+  } else if (cat === 'patch') {
+    explanation = "Mise à jour d'équilibrage ou correctif technique déployé par l'éditeur. Les ajustements sur les champions, armes, cartes ou mécaniques de jeu influencent directement la méta professionnelle.";
+  } else {
+    explanation = "Actualité générale sur la scène compétitive, les déclarations de joueurs, l'organisation des ligues régionales ou les coulisses des structures esport.";
+  }
+
+  const alsoHtml = Array.isArray(item.also) && item.also.length ?
+    '<div class="mt-4 p-3.5 rounded-xl bg-[#090d18] border border-[#1f2b48] text-xs text-slate-300">' +
+      '<span class="font-bold text-white block mb-1"><i class="fa-solid fa-network-wired text-cyan-400 mr-1.5"></i>Également relayé par :</span>' +
+      esc(item.also.join(' · ')) +
+    '</div>' : '';
+
+  $('modal-content').innerHTML =
+    '<div class="relative h-56 sm:h-64 overflow-hidden">' +
+      '<img src="' + gInfo.img + '" alt="" class="w-full h-full object-cover opacity-60">' +
+      '<div class="absolute inset-0 bg-gradient-to-t from-[#0f1629] via-[#0f1629]/60 to-transparent"></div>' +
+      '<button onclick="closeDetail()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/60 text-white hover:bg-white hover:text-black transition flex items-center justify-center backdrop-blur-md">' +
+        '<i class="fa-solid fa-xmark"></i>' +
+      '</button>' +
+      '<div class="absolute bottom-4 left-6 right-6 flex flex-wrap gap-2 items-center">' +
+        gb(item.game) + sb(item.category) +
+        '<span class="text-xs text-slate-300 ml-auto bg-black/50 px-2.5 py-1 rounded-md border border-white/10">' +
+          '<i class="fa-regular fa-clock mr-1 text-cyan-400"></i>' + esc(when(item.published)) +
+        '</span>' +
+      '</div>' +
+    '</div>' +
+    '<div class="p-6 sm:p-8 space-y-6">' +
+      '<div>' +
+        '<h2 class="fh text-2xl sm:text-3xl font-black text-white leading-tight mb-3">' + esc(item.title) + '</h2>' +
+        '<div class="flex items-center gap-3 text-xs text-slate-400 border-b border-[#1c2640] pb-4">' +
+          '<span><i class="fa-regular fa-newspaper text-cyan-400 mr-1"></i>Source : <strong class="text-white">' + esc(item.source) + '</strong></span>' +
+          '<span>•</span>' +
+          '<span>Discipline : <strong class="text-white">' + esc(gInfo.n) + '</strong></span>' +
+        '</div>' +
+      '</div>' +
+      '<div class="space-y-3">' +
+        '<h3 class="fh text-sm font-bold uppercase tracking-wider text-cyan-400">Contexte & Analyse</h3>' +
+        '<p class="text-slate-300 text-sm leading-relaxed">' + explanation + '</p>' +
+        alsoHtml +
+      '</div>' +
+      '<div class="pt-4 border-t border-[#1c2640] flex flex-wrap items-center justify-between gap-4">' +
+        '<button onclick="closeDetail()" class="px-5 py-2.5 rounded-xl border border-[#23304e] text-sm font-semibold text-slate-300 hover:bg-[#151f38] transition">' +
+          'Fermer' +
+        '</button>' +
+        '<a href="' + esc(item.url) + '" target="_blank" rel="noopener noreferrer" class="px-6 py-2.5 rounded-xl bg-gradient-to-r from-violet-600 to-cyan-500 text-white font-bold text-sm hover:brightness-110 active:scale-95 transition flex items-center gap-2 shadow-lg shadow-cyan-500/20">' +
+          'Lire l\'article complet sur ' + esc(item.source) +
+          '<i class="fa-solid fa-arrow-up-right-from-square text-xs"></i>' +
+        '</a>' +
+      '</div>' +
+    '</div>';
+
+  const modal = $('modal');
+  const box = $('modal-box');
+  modal.classList.remove('hidden');
+  setTimeout(function() {
+    box.classList.remove('scale-95', 'opacity-0');
+    box.classList.add('scale-100', 'opacity-100');
+  }, 10);
+}
+
+function closeDetail() {
+  const box = $('modal-box');
+  box.classList.remove('scale-100', 'opacity-100');
+  box.classList.add('scale-95', 'opacity-0');
+  setTimeout(function() {
+    $('modal').classList.add('hidden');
+  }, 200);
+}
+
+$('modal').addEventListener('click', function(e) {
+  if (e.target === $('modal')) closeDetail();
+});
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape' && !$('modal').classList.contains('hidden')) closeDetail();
+});
+
+/* WIDGETS LATÉRAUX */
+function side() {
+  const mv = S.items.filter(function(i) { return i.category === 'official' || i.category === 'rumor'; }).slice(0, 5);
+  $('top').innerHTML = mv.length ? mv.map(function(i) {
+    const isRumor = i.category === 'rumor';
+    const tag = isRumor ? '<span class="text-amber-400 font-bold text-[10px]">RUMEUR</span>' : '<span class="text-emerald-400 font-bold text-[10px]">OFFICIEL</span>';
+    return '<a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="block p-3 rounded-xl bg-[#0a0f1c] hover:bg-[#131b30] border border-[#1a233b] transition group">' +
+      '<div class="flex items-center justify-between gap-2 mb-1">' + tag + gb(i.game, true) + '</div>' +
+      '<div class="text-xs font-semibold text-white group-hover:text-cyan-300 leading-snug line-clamp-2">' + esc(i.title) + '</div>' +
+      '<div class="text-[10px] text-slate-500 mt-1 flex items-center justify-between">' +
+        '<span>' + esc(i.source) + '</span>' +
+        '<span>' + esc(when(i.published)) + '</span>' +
+      '</div>' +
+    '</a>';
+  }).join('') : '<p class="text-xs text-slate-500 py-2">Aucun mouvement mercato récent détecté.</p>';
+
+  const ch = S.items.filter(function(i) { return i.category === 'tournament'; }).slice(0, 4);
+  $('nx').innerHTML = ch.length ? ch.map(function(i) {
+    return '<a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="block p-3 rounded-xl bg-[#0a0f1c] hover:bg-[#131b30] border border-[#1a233b] transition group">' +
+      '<div class="flex items-center justify-between gap-2 mb-1">' +
+        '<span class="text-yellow-400 font-bold text-[10px]"><i class="fa-solid fa-trophy mr-1"></i>TOURNOI</span>' +
+        gb(i.game, true) +
+      '</div>' +
+      '<div class="text-xs font-semibold text-white group-hover:text-cyan-300 leading-snug line-clamp-2">' + esc(i.title) + '</div>' +
+      '<div class="text-[10px] text-slate-500 mt-1 flex items-center justify-between">' +
+        '<span>' + esc(i.source) + '</span>' +
+        '<span>' + esc(when(i.published)) + '</span>' +
+      '</div>' +
+    '</a>';
+  }).join('') : '<p class="text-xs text-slate-500 py-2">Aucun tournoi détecté dans le flux.</p>';
 }
 
 function vis() {
@@ -159,33 +513,30 @@ function vis() {
   });
 }
 
-function side() {
-  const mv = S.items.filter(function(i) { return i.category === 'official' || i.category === 'rumor'; }).slice(0, 5);
-  $('top').innerHTML = mv.length ? mv.map(function(i) {
-    const label = i.category === 'rumor' ? 'Rumeur' : 'Officiel';
-    return '<tr class="border-t border-[#1e2740] first:border-0"><td class="py-2 pr-2"><a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="font-semibold text-white hover:text-cyan-300 leading-snug block">' + esc(i.title) + '</a><div class="text-xs text-slate-500 mt-0.5">' + label + ' · ' + esc(i.source) + ' · ' + esc(when(i.published)) + '</div></td><td class="py-2 text-right align-top">' + gb(i.game, true) + '</td></tr>';
-  }).join('') : '<tr><td class="text-slate-500 py-2">Aucun mouvement détecté pour le moment.</td></tr>';
-
-  const ch = S.items.filter(function(i) { return i.category === 'tournament'; }).slice(0, 4);
-  $('nx').innerHTML = ch.length ? ch.map(function(i) {
-    return '<div class="py-3 border-t border-[#1e2740] first:border-0"><div class="flex justify-between items-start gap-2"><a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="font-semibold text-white hover:text-cyan-300 leading-snug">' + esc(i.title) + '</a>' + gb(i.game, true) + '</div><div class="mt-1 text-xs text-slate-500"><i class="fa-regular fa-clock text-cyan-400 mr-1"></i>' + esc(when(i.published)) + ' · ' + esc(i.source) + '</div></div>';
-  }).join('') : '<p class="text-sm text-slate-500">Aucun tournoi détecté pour le moment.</p>';
-}
-
 function render() {
   const v = vis();
-  $('cnt').textContent = v.length + ' info' + (v.length > 1 ? 's' : '');
-  let h = '';
+  $('cnt').textContent = v.length + ' article' + (v.length > 1 ? 's' : '');
+  
   if (v.length) {
-    h = v.map(card).join('');
+    $('feed').innerHTML = v.map(card).join('');
   } else if (!S.loaded) {
-    h = msg('fa-satellite-dish fa-beat', 'Chargement des données...');
+    $('feed').innerHTML = '<div class="col-span-full panel-card p-12 text-center text-slate-400">' +
+      '<i class="fa-solid fa-satellite-dish fa-beat text-4xl text-cyan-400 mb-3 block"></i>' +
+      '<p class="text-white font-bold">Récupération des données en direct...</p>' +
+    '</div>';
   } else if (!S.items.length) {
-    h = msg('fa-circle-info text-cyan-400', 'Aucune actualité disponible', 'Le fichier data.json est vide.');
+    $('feed').innerHTML = '<div class="col-span-full panel-card p-12 text-center text-slate-400">' +
+      '<i class="fa-solid fa-inbox text-4xl text-violet-400 mb-3 block"></i>' +
+      '<p class="text-white font-bold">data.json est vide</p>' +
+      '<p class="text-xs mt-1">Lancez le workflow GitHub Actions pour récupérer les articles.</p>' +
+    '</div>';
   } else {
-    h = msg('fa-face-meh', 'Aucun article ne correspond', 'Change de filtre ou vide la recherche.');
+    $('feed').innerHTML = '<div class="col-span-full panel-card p-12 text-center text-slate-400">' +
+      '<i class="fa-solid fa-filter-circle-xmark text-4xl text-slate-600 mb-3 block"></i>' +
+      '<p class="text-white font-bold">Aucun article ne correspond à votre filtre</p>' +
+      '<p class="text-xs mt-1">Essayez un autre jeu ou réinitialisez la recherche.</p>' +
+    '</div>';
   }
-  $('feed').innerHTML = h;
   side();
 }
 
@@ -196,7 +547,7 @@ function chips() {
   }
   $('gf').innerHTML = games.map(function(pair) {
     const k = pair[0], n = pair[1];
-    const dot = k !== 'all' ? '<span class="inline-block w-2 h-2 rounded-full mr-2" style="background:' + G[k].c + '"></span>' : '';
+    const dot = k !== 'all' ? '<span class="inline-block w-2.5 h-2.5 rounded-full mr-2" style="background:' + G[k].c + '"></span>' : '';
     return '<button class="chip" data-g="' + k + '" aria-pressed="' + (S.g === k) + '">' + dot + esc(n) + '</button>';
   }).join('');
 
@@ -212,7 +563,7 @@ function chips() {
 
 function toast(m) {
   const t = $('toast');
-  t.textContent = m;
+  t.innerHTML = '<i class="fa-solid fa-circle-check text-cyan-400"></i><span>' + esc(m) + '</span>';
   t.classList.remove('hidden');
   clearTimeout(toast.h);
   toast.h = setTimeout(function() { t.classList.add('hidden'); }, 3000);
@@ -230,12 +581,12 @@ async function loadData() {
     S.items = Array.isArray(data) ? data : [];
     S.loaded = true;
     S.sync = Date.now();
-    S.mode = 'En ligne · ' + S.items.length + ' articles disponibles';
-    toast('Données actualisées');
+    S.mode = S.items.length + ' articles indexés';
+    toast('Flux synchronisé');
   } catch (e) {
     S.loaded = true;
-    S.mode = 'Erreur lors du chargement de data.json';
-    toast('Erreur de synchronisation');
+    S.mode = 'Erreur de lecture data.json';
+    toast('Erreur de mise à jour');
   } finally {
     S.busy = false;
     $('sp').classList.remove('fa-spin');
@@ -243,6 +594,7 @@ async function loadData() {
   }
 }
 
+/* ÉVÉNEMENTS */
 $('gf').addEventListener('click', function(e) {
   const b = e.target.closest('[data-g]');
   if (b) { S.g = b.dataset.g; chips(); render(); }
@@ -259,7 +611,7 @@ $('rf').addEventListener('click', loadData);
 
 setInterval(function() {
   const s = Math.floor((Date.now() - S.sync) / 1000);
-  $('sync').textContent = S.sync ? ('Dernière synchro : ' + (s < 60 ? (s + ' sec') : (Math.floor(s / 60) + ' min'))) : 'Dernière synchro : en attente…';
+  $('sync').innerHTML = S.sync ? '<i class="fa-regular fa-clock mr-1 text-slate-500"></i>Dernière synchro : ' + (s < 60 ? (s + ' sec') : (Math.floor(s / 60) + ' min')) : 'Dernière synchro : en attente…';
   $('mode').textContent = S.mode;
   const left = Math.max(0, Math.ceil((EVERY - (Date.now() - S.last)) / 1000));
   $('cdn').textContent = $('auto').checked ? ('(' + Math.floor(left / 60) + ':' + p2(left % 60) + ')') : '';
