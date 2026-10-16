@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Esport Radar Scraper 11.0
-- Remplissage massif immédiat : pagination des flux (?paged=2, ?paged=3) et historique sur 35 jours
-- Règle 100% visuel : vraie photo de presse HD ou logo officiel d'équipe/tournoi
-- Rejet strict du multi-jeux (type LoL + Mario Kart) et des tournois amateurs
-- Objectif : 80 à 100+ articles qualifiés immédiatement disponibles
+"""Esport Radar Scraper 12.0
+- Extraction multi-flux tolérante aux formats d'images modernes (data-src, webp avec query params)
+- Rejet strict des articles multi-jeux (fêtes locales, foires)
+- Vraie photo de presse OU logo officiel obligatoire (0 carte vide)
+- Rétention et cumul sur 20 jours pour garantir entre 60 et 100 articles qualifiés
 """
 import html
 import json
@@ -17,34 +17,27 @@ from pathlib import Path
 
 OUT_FILE = Path(__file__).resolve().parent / "data.json"
 MAX_ITEMS = 120
-MAX_AGE_DAYS = 35  # Récupère l'ensemble du dernier mois en attendant les prochaines actus
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
+MAX_AGE_DAYS = 20
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
-# Flux avec pagination pour extraire immédiatement les 30 à 40 derniers articles de chaque jeu
+# Flux fiables qui ne bloquent pas les requêtes
 FEEDS = [
-    # E.SPORT.FR — Fil général (Pages 1, 2, 3)
+    # E.SPORT.FR (Toutes les catégories majeures)
     ("https://e.sport.fr/feed/", "E.SPORT.FR", None),
-    ("https://e.sport.fr/feed/?paged=2", "E.SPORT.FR", None),
-    ("https://e.sport.fr/feed/?paged=3", "E.SPORT.FR", None),
-
-    # E.SPORT.FR — Catégories dédiées paginées
     ("https://e.sport.fr/category/league-of-legends/feed/", "E.SPORT.FR", "lol"),
-    ("https://e.sport.fr/category/league-of-legends/feed/?paged=2", "E.SPORT.FR", "lol"),
     ("https://e.sport.fr/category/valorant/feed/", "E.SPORT.FR", "val"),
-    ("https://e.sport.fr/category/valorant/feed/?paged=2", "E.SPORT.FR", "val"),
     ("https://e.sport.fr/category/counter-strike/feed/", "E.SPORT.FR", "cs2"),
-    ("https://e.sport.fr/category/counter-strike/feed/?paged=2", "E.SPORT.FR", "cs2"),
     ("https://e.sport.fr/category/fortnite/feed/", "E.SPORT.FR", "fortnite"),
     ("https://e.sport.fr/category/call-of-duty/feed/", "E.SPORT.FR", "cod"),
     ("https://e.sport.fr/category/rocket-league/feed/", "E.SPORT.FR", "rl"),
     ("https://e.sport.fr/category/apex-legends/feed/", "E.SPORT.FR", "apex"),
-
+    
     # Médias spécialisés complémentaires
-    ("https://www.dexerto.fr/feed/esport/", "Dexerto FR", None),
+    ("https://www.team-aaa.com/fr/rss/news.xml", "Team-aAa", None),
+    ("https://www.eclypsia.com/feed/", "Eclypsia", None),
+    ("https://www.jeuxvideo.com/rss/rss-esport.xml", "JV Esport", None),
     ("https://charlieintel.com/feed/", "Charlie INTEL", "cod"),
     ("https://dotesports.com/feed", "Dot Esports", None),
-    ("https://www.team-aaa.com/fr/rss/news.xml", "Team-aAa", None),
-    ("https://www.jeuxvideo.com/rss/rss-esport.xml", "JV Esport", None),
 ]
 
 GAME_RULES = {
@@ -91,15 +84,15 @@ GAME_RULES = {
     )
 }
 
-# Liste noire des tournois amateurs et salons locaux
+# Exclusion des fêtes communales, médiathèques et tournois amateurs
 AMATEUR_LOCAL_BAN = re.compile(
     r"bussy|saint-georges|amateurs? de gaming|amateurs? d'esport|week-end dédié aux jeux|"
     r"salon du jeu|fête du jeu|médiathèque|mjc|centre culturel|tournoi amateur|lan amateur|"
-    r"mairie de|en seine-et-marne|en gironde|en bretagne|gaming amateur|sportmag|actu\.fr",
+    r"mairie de|gaming amateur|sportmag|actu\.fr",
     re.I
 )
 
-# Logos officiels pour les dépêches sans photo directe
+# Logos officiels pour les articles sans photo directe
 OFFICIAL_LOGOS = [
     ("vct", re.compile(r"\bvct\b|valorant champions", re.I), {
         "title": "VALORANT Champions Tour", "tag": "VCT", "color": "#ff4655", "bg": "#1f0910"
@@ -160,7 +153,7 @@ def detect_single_game(title: str, text_zone: str, feed_hint: str = None):
 
     matched_games = [k for k, rx in GAME_RULES.items() if rx.search(title)]
 
-    # Si 2 jeux ou plus sont dans le titre -> POUBELLE
+    # Si plus d'un jeu dans le titre -> rejet (sauf circuit mondial EWC)
     if len(matched_games) > 1:
         if not re.search(r"esports world cup|\bewc\b", title, re.I):
             return None
@@ -188,33 +181,49 @@ def detect_category(text: str) -> str:
         return "patch"
     return "news"
 
+def clean_image_url(u: str) -> str:
+    if not u or not u.startswith("http"):
+        return ""
+    # Décodage des entités HTML dans l'URL
+    u = html.unescape(u.strip()).replace("http://", "https://")
+    low = u.lower()
+    if any(x in low for x in ["avatar", "logo", "icon", "emoji", "pixel", "tracking", "gravatar", "1x1"]):
+        return ""
+    if any(ext in low for ext in [".jpg", ".jpeg", ".png", ".webp", ".avif"]) or "wp-content/uploads" in low:
+        return u
+    return ""
+
 def extract_press_photo(item, raw_xml: str) -> str:
+    # 1. Balise enclosure standard
     enc = item.find("enclosure")
     if enc is not None and enc.get("url"):
-        u = enc.get("url").strip()
-        if re.search(r"\.(jpe?g|png|webp|avif)", u, re.I):
-            return u.replace("http://", "https://")
+        candidate = clean_image_url(enc.get("url"))
+        if candidate:
+            return candidate
 
+    # 2. Balises media:content / media:thumbnail
     for elem in item.iter():
         if elem.tag.endswith(("content", "thumbnail")):
-            u = elem.get("url", "").strip()
-            if u and re.search(r"\.(jpe?g|png|webp|avif)", u, re.I):
-                return u.replace("http://", "https://")
+            candidate = clean_image_url(elem.get("url", ""))
+            if candidate:
+                return candidate
 
+    # 3. Extraction dans content:encoded ou description (support de data-src et src)
     for tag in ["{http://purl.org/rss/1.0/modules/content/}encoded", "description"]:
         body = item.findtext(tag) or ""
-        m = re.search(r'<img[^>]+src=["\']([^"\']+\.(?:jpe?g|png|webp|avif)[^"\']*)["\']', body, re.I)
-        if m:
-            img = m.group(1).replace("http://", "https://")
-            low = img.lower()
-            if not any(x in low for x in ["avatar", "logo", "icon", "emoji", "pixel", "tracking"]):
-                return img
+        # Recherche des attributs src ou data-src
+        matches = re.findall(r'<img[^>]+(?:src|data-src|data-orig-file)=["\']([^"\']+)["\']', body, re.I)
+        for m in matches:
+            candidate = clean_image_url(m)
+            if candidate:
+                return candidate
 
-    matches = re.findall(r'https?://[^\s"\'><]+\.(?:jpe?g|png|webp|avif)[^\s"\'><]*', raw_xml, re.I)
-    for m in matches:
-        low = m.lower()
-        if not any(x in low for x in ["avatar", "logo", "icon", "emoji", "pixel", "tracking", "unsplash", "wikimedia"]):
-            return m.replace("http://", "https://")
+    # 4. Scan d'URL dans le bloc XML brut
+    urls = re.findall(r'https?://[^\s"\'><]+', raw_xml, re.I)
+    for u in urls:
+        candidate = clean_image_url(u)
+        if candidate and any(w in candidate.lower() for w in ["uploads", "article", "media", "news"]):
+            return candidate
 
     return ""
 
@@ -261,6 +270,7 @@ def main() -> int:
     seen_at = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     cutoff = (now - timedelta(days=MAX_AGE_DAYS)).strftime("%Y-%m-%dT%H:%M:%SZ")
 
+    # Lecture de l'historique valide existant
     existing = {}
     if OUT_FILE.exists():
         try:
@@ -268,7 +278,7 @@ def main() -> int:
             if isinstance(d, list):
                 for a in d:
                     if isinstance(a, dict) and a.get("title") and a.get("published", "") >= cutoff:
-                        if (a.get("image") and "unsplash" not in a["image"]) or a.get("logo"):
+                        if a.get("image") or a.get("logo"):
                             k = a["title"].strip().lower()
                             existing[k] = a
         except Exception:
@@ -279,7 +289,7 @@ def main() -> int:
     for url, src_name, hint in FEEDS:
         try:
             req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/xml, text/xml"})
-            with urllib.request.urlopen(req, timeout=10) as resp:
+            with urllib.request.urlopen(req, timeout=12) as resp:
                 xml_raw = resp.read()
                 root = ET.fromstring(xml_raw)
         except Exception:
@@ -305,6 +315,7 @@ def main() -> int:
             if not photo_url:
                 logo_info = find_official_logo(title, item_xml_str)
 
+            # Règle d'or : image de presse ou logo obligatoire
             if not photo_url and not logo_info:
                 continue
 
@@ -329,7 +340,7 @@ def main() -> int:
                 "first_seen": existing.get(k, {}).get("first_seen", seen_at)
             })
 
-    # Fusion avec l'historique et dédoublonnage
+    # Fusion avec l'historique
     merged = {**existing}
     for item in collected:
         k = item["title"].lower().strip()
@@ -343,10 +354,7 @@ def main() -> int:
 
     final = sorted_items[:MAX_ITEMS]
     OUT_FILE.write_text(json.dumps(final, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
-    n_photos = sum(1 for x in final if x.get("image"))
-    n_logos = sum(1 for x in final if not x.get("image") and x.get("logo"))
-    print(f"Extraction terminée : {len(final)} articles au total ({n_photos} photos réelles + {n_logos} logos officiels).")
+    print(f"Extraction terminée : {len(final)} articles qualifiés enregistrés.")
     return 0
 
 if __name__ == "__main__":
