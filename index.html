@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
 body {
   font-family: "Plus Jakarta Sans", system-ui, sans-serif;
@@ -226,6 +226,7 @@ function badgeType(ty) {
   return '<span class="badge ' + b[1] + '">' + b[0] + '</span>';
 }
 
+/* RENDU DU HEADER : VRAIE PHOTO OU CARTE BROADCAST NEXT-GEN */
 function renderCardHeader(i) {
   var g = G[i.game] || G.lol;
 
@@ -244,24 +245,30 @@ function renderCardHeader(i) {
   }
 
   var l = i.logo || { title: g.n, tag: g.s, color: g.c, bg: "#161e30" };
-  var accentColor = l.color || g.c;
-  var tagText = l.tag || g.s;
-  var titleText = l.title || g.n;
+  var accent = l.color || g.c;
+  var bg = l.bg || "#161e30";
+  var tag = l.tag || g.s;
+  var title = l.title || g.n;
 
-  return '<div class="relative overflow-hidden border-b border-[#1a2336] h-48 flex flex-col justify-between p-4 bg-[#0a0e17] select-none">' +
-    '<div class="absolute inset-x-0 top-0 h-1 opacity-70" style="background-color:' + accentColor + '"></div>' +
+  return '<div class="relative overflow-hidden border-b border-[#1a2336] h-48 flex flex-col justify-between p-4 select-none" style="background: radial-gradient(circle at 50% 30%, ' + bg + ' 0%, #080b11 92%);">' +
+    '<div class="absolute inset-0 opacity-[0.07] pointer-events-none" style="background-image: repeating-linear-gradient(45deg, #ffffff 0, #ffffff 1px, transparent 0, transparent 10px);"></div>' +
+    '<div class="absolute -right-4 -bottom-6 pointer-events-none overflow-hidden opacity-[0.08] select-none">' +
+      '<span class="text-8xl font-black uppercase tracking-tighter" style="color:' + accent + ';">' + esc(tag) + '</span>' +
+    '</div>' +
     '<div class="flex items-center justify-between relative z-10">' +
       '<div class="flex items-center gap-1.5">' +
         badgeGame(i.game) +
         badgeType(i.category) +
       '</div>' +
-      '<div class="px-2 py-0.5 rounded bg-[#121929] text-[10px] font-medium text-slate-400 border border-[#1e293b]">' +
+      '<div class="px-2 py-0.5 rounded bg-black/70 text-[10px] font-semibold text-slate-300 border border-white/10 backdrop-blur-sm">' +
         esc(when(i.published)) +
       '</div>' +
     '</div>' +
     '<div class="relative z-10 flex flex-col items-center justify-center my-auto text-center">' +
-      '<span class="text-xs font-mono font-bold tracking-widest px-3 py-1 rounded bg-[#101726] border border-[#1e2a42] text-slate-200 uppercase mb-1.5">' + esc(tagText) + '</span>' +
-      '<span class="text-[11px] font-bold text-slate-400 uppercase tracking-wide">' + esc(titleText) + '</span>' +
+      '<div class="inline-flex items-center justify-center px-4 py-2 rounded-xl border backdrop-blur-md mb-2 shadow-2xl group-hover:scale-105 transition-transform duration-300" style="background-color:' + accent + '15; border-color:' + accent + '60; box-shadow: 0 0 30px ' + accent + '35;">' +
+        '<span class="text-xl font-black tracking-wider uppercase text-white drop-shadow-md">' + esc(tag) + '</span>' +
+      '</div>' +
+      '<span class="text-[11px] font-extrabold uppercase tracking-[0.2em] text-slate-200 drop-shadow">' + esc(title) + '</span>' +
     '</div>' +
   '</div>';
 }
