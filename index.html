@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="referrer" content="no-referrer">
-<title>Esport Radar — Le fil d'actualité compétitif</title>
+<title>Esport Radar — Fil d'actualité compétitif</title>
 <script src="https://cdn.tailwindcss.com/3.4.17"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,22 +27,18 @@ body {
 .news-card:hover {
   transform: translateY(-4px);
   border-color: #334260;
-  box-shadow: 0 16px 32px -12px rgba(0, 0, 0, 0.65);
+  box-shadow: 0 16px 32px -12px rgba(0, 0, 0, 0.6);
 }
 .news-card:active {
   transform: scale(0.99);
-}
-.entity-pattern {
-  background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 1px);
-  background-size: 16px 16px;
 }
 .filter-btn {
   background-color: #0e131f;
   border: 1px solid #1a2336;
   color: #94a3b8;
-  padding: 6px 14px;
+  padding: 7px 16px;
   border-radius: 999px;
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
   transition: all 0.15s ease;
   white-space: nowrap;
@@ -56,7 +52,7 @@ body {
   background-color: #f8fafc;
   color: #080b11;
   border-color: #f8fafc;
-  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.18);
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
 }
 .badge {
   display: inline-flex;
@@ -65,11 +61,11 @@ body {
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 3px 8px;
+  padding: 3px 9px;
   border-radius: 6px;
 }
 #modal-card {
-  transition: transform 0.22s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.22s ease;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
 }
 </style>
 </head>
@@ -96,13 +92,13 @@ body {
             <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>EN DIRECT
           </span>
         </div>
-        <p class="text-[11px] text-slate-500 font-medium">L'actualité compétitive vérifiée par discipline</p>
+        <p class="text-[11px] text-slate-500 font-medium">L'actualité compétitive mondiale vérifiée</p>
       </div>
     </div>
 
     <div class="relative flex-1 max-w-xl min-w-[240px]">
       <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500 text-xs"></i>
-      <input id="q" type="search" placeholder="Rechercher un club (KC, Vitality, T1), un joueur, un tournoi..." class="w-full rounded-xl bg-[#0e131f] border border-[#1a2336] pl-9 pr-4 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-slate-400 transition">
+      <input id="q" type="search" placeholder="Rechercher une équipe, un joueur, une compétition..." class="w-full rounded-xl bg-[#0e131f] border border-[#1a2336] pl-9 pr-4 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-slate-400 transition">
     </div>
 
     <div class="flex items-center gap-3">
@@ -116,7 +112,7 @@ body {
 </header>
 
 <main class="max-w-[1920px] w-full mx-auto px-4 sm:px-8 py-6 flex-1">
-  <div class="space-y-2.5 mb-6 pb-5 border-b border-[#161e30]">
+  <div class="space-y-3 mb-6 pb-5 border-b border-[#161e30]">
     <div class="flex flex-wrap items-center gap-2" id="gf"></div>
     <div class="flex flex-wrap items-center gap-2" id="tf"></div>
   </div>
@@ -125,10 +121,10 @@ body {
     <section class="lg:col-span-8 xl:col-span-9">
       <div class="flex items-center justify-between mb-4">
         <h2 class="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-2">
-          Flux des publications <span id="cnt" class="text-slate-500 lowercase"></span>
+          Flux d'actualité en continu <span id="cnt" class="text-slate-500 lowercase"></span>
         </h2>
       </div>
-      <div id="feed" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5"></div>
+      <div id="feed" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6"></div>
     </section>
 
     <aside class="lg:col-span-4 xl:col-span-3 space-y-6">
@@ -147,9 +143,9 @@ body {
         <div class="flex items-center justify-between mb-4 border-b border-[#161e30] pb-3">
           <h3 class="text-xs font-bold uppercase tracking-wider text-white flex items-center gap-2">
             <i class="fa-solid fa-trophy text-yellow-400"></i>
-            Tournois & Compétitions
+            Compétitions du moment
           </h3>
-          <span class="text-[10px] text-slate-500 font-semibold uppercase">En direct</span>
+          <span class="text-[10px] text-slate-500 font-semibold uppercase">Tournois</span>
         </div>
         <div id="nx" class="space-y-3"></div>
       </div>
@@ -159,12 +155,12 @@ body {
 
 <footer class="border-t border-[#161e30] py-6 text-center text-xs text-slate-500 mt-auto bg-[#080b11]">
   <div class="max-w-[1920px] mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-    <p>Esport Radar — Agrégateur d'actualités compétitives vérifiées par jeu.</p>
-    <p class="text-slate-600">Photographies officielles des rédactions • Bannières d'entités & Dépêches temps réel.</p>
+    <p>Esport Radar — Agrégation d'actualités esport en temps réel.</p>
+    <p class="text-slate-600">Photographies de presse officielles sous droits de leurs rédactions respectives.</p>
   </div>
 </footer>
 
-<!-- MODALE D'ARTICLE DÉTAILLÉ -->
+<!-- MODALE D'ARTICLE COMPLÈTE & DÉROULABLE -->
 <div id="modal" class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 hidden bg-black/85 backdrop-blur-md">
   <div id="modal-card" class="bg-[#0e131f] border border-[#222d44] rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl scale-95 opacity-0">
     <div id="modal-body"></div>
@@ -173,22 +169,19 @@ body {
 
 <script>
 var G = {
-  lol: { n: "League of Legends", s: "LoL", c: "#eab308", bg: "linear-gradient(135deg, #241c06 0%, #0a0e17 100%)" },
-  val: { n: "Valorant", s: "Valorant", c: "#f43f5e", bg: "linear-gradient(135deg, #290911 0%, #0a0e17 100%)" },
-  cs2: { n: "Counter-Strike 2", s: "CS2", c: "#f59e0b", bg: "linear-gradient(135deg, #261705 0%, #0a0e17 100%)" },
-  fortnite: { n: "Fortnite", s: "Fortnite", c: "#a855f7", bg: "linear-gradient(135deg, #1f0933 0%, #0a0e17 100%)" },
-  cod: { n: "Call of Duty", s: "Call of Duty", c: "#84cc16", bg: "linear-gradient(135deg, #162405 0%, #0a0e17 100%)" },
-  rl: { n: "Rocket League", s: "Rocket League", c: "#0ea5e9", bg: "linear-gradient(135deg, #061f33 0%, #0a0e17 100%)" },
-  r6: { n: "Rainbow Six Siege", s: "R6 Siege", c: "#38bdf8", bg: "linear-gradient(135deg, #081d2e 0%, #0a0e17 100%)" },
-  apex: { n: "Apex Legends", s: "Apex", c: "#ea580c", bg: "linear-gradient(135deg, #291005 0%, #0a0e17 100%)" },
-  eafc: { n: "EA Sports FC", s: "EA FC", c: "#10b981", bg: "linear-gradient(135deg, #05261b 0%, #0a0e17 100%)" },
-  fgc: { n: "Versus Fighting", s: "FGC / Combat", c: "#ec4899", bg: "linear-gradient(135deg, #29081c 0%, #0a0e17 100%)" },
-  ow2: { n: "Overwatch 2", s: "Overwatch 2", c: "#fb923c", bg: "linear-gradient(135deg, #291405 0%, #0a0e17 100%)" },
-  dota: { n: "Dota 2", s: "Dota 2", c: "#6366f1", bg: "linear-gradient(135deg, #111236 0%, #0a0e17 100%)" }
+  lol: { n: "League of Legends", s: "LoL", c: "#eab308" },
+  val: { n: "Valorant", s: "Valorant", c: "#f43f5e" },
+  cs2: { n: "Counter-Strike 2", s: "CS2", c: "#f59e0b" },
+  fortnite: { n: "Fortnite", s: "Fortnite", c: "#a855f7" },
+  cod: { n: "Call of Duty", s: "Call of Duty", c: "#84cc16" },
+  rl: { n: "Rocket League", s: "Rocket League", c: "#0ea5e9" },
+  r6: { n: "Rainbow Six", s: "R6 Siege", c: "#38bdf8" },
+  apex: { n: "Apex Legends", s: "Apex", c: "#ea580c" },
+  eafc: { n: "EA Sports FC", s: "EA FC", c: "#10b981" }
 };
 
 var TYPES = {
-  all: "Toutes les actus",
+  all: "Toutes les actualités",
   official: "Transferts officiels",
   rumor: "Rumeurs mercato",
   tournament: "Tournois & Résultats",
@@ -197,14 +190,14 @@ var TYPES = {
 };
 
 var BD = {
-  official: ["OFFICIEL", "bg-emerald-500/15 text-emerald-400 border border-emerald-500/30"],
-  rumor: ["RUMEUR", "bg-amber-500/15 text-amber-400 border border-amber-500/30"],
-  tournament: ["TOURNOI", "bg-yellow-500/15 text-yellow-400 border border-yellow-500/30"],
-  patch: ["PATCH", "bg-sky-500/15 text-sky-400 border border-sky-500/30"],
-  news: ["ACTU", "bg-slate-700/40 text-slate-300 border border-slate-600/50"]
+  official: ["OFFICIEL", "bg-emerald-500/10 text-emerald-400 border border-emerald-500/30"],
+  rumor: ["RUMEUR", "bg-amber-500/10 text-amber-400 border border-amber-500/30"],
+  tournament: ["TOURNOI", "bg-yellow-500/10 text-yellow-400 border border-yellow-500/30"],
+  patch: ["PATCH", "bg-sky-500/10 text-sky-400 border border-sky-500/30"],
+  news: ["ACTU", "bg-slate-700/30 text-slate-300 border border-slate-700"]
 };
 
-var S = { items: [], g: "all", t: "all", q: "", busy: false };
+var S = { items: [], g: "all", t: "all", q: "", busy: false, sync: 0 };
 
 function $(id) { return document.getElementById(id); }
 
@@ -230,7 +223,7 @@ function when(ts) {
 function badgeGame(g) {
   var x = G[g];
   if (!x) return "";
-  return '<span class="badge" style="background-color:' + x.c + '20;color:' + x.c + ';border:1px solid ' + x.c + '45">' + esc(x.s) + '</span>';
+  return '<span class="badge" style="background-color:' + x.c + '18;color:' + x.c + ';border:1px solid ' + x.c + '40">' + esc(x.s) + '</span>';
 }
 
 function badgeType(ty) {
@@ -238,127 +231,40 @@ function badgeType(ty) {
   return '<span class="badge ' + b[1] + '">' + b[0] + '</span>';
 }
 
-/* RENDU BANNIÈRE ENTITÉ (NIVEAU 2) */
-function renderEntityHeader(i) {
-  var g = G[i.game] || G.lol;
-  var ent = i.entity || { code: g.s, name: g.n, sub: "Circuit Compétitif Officiel", color: g.c, bg: g.bg };
-
-  return '<div class="relative overflow-hidden border-b border-[#1a2336] h-44 flex flex-col justify-between p-4 entity-pattern" style="background:' + ent.bg + '">' +
-    '<div class="absolute -right-3 -bottom-5 text-[82px] font-black tracking-tighter select-none pointer-events-none opacity-10" style="color:' + ent.color + '">' +
-      esc(ent.code) +
-    '</div>' +
-    '<div class="flex items-center justify-between relative z-10">' +
-      '<div class="flex items-center gap-1.5">' +
-        badgeGame(i.game) +
-        badgeType(i.category) +
-      '</div>' +
-      '<span class="px-2 py-0.5 rounded bg-black/60 text-[10px] font-semibold text-slate-300 border border-white/10">' +
-        esc(when(i.published)) +
-      '</span>' +
-    '</div>' +
-    '<div class="relative z-10 flex items-center gap-3 mt-auto pt-2">' +
-      '<div class="w-11 h-11 rounded-xl flex items-center justify-center font-black text-sm tracking-tight shadow-lg border" style="background-color:#080b11cc;color:' + ent.color + ';border-color:' + ent.color + '50">' +
-        esc(ent.code) +
-      '</div>' +
-      '<div>' +
-        '<div class="text-xs font-extrabold uppercase tracking-wider text-white">' + esc(ent.name) + '</div>' +
-        '<div class="text-[10px] font-medium text-slate-400">' + esc(ent.sub) + '</div>' +
-      '</div>' +
-    '</div>' +
-  '</div>';
-}
-
-/* RENDU CARTE SELON LES 3 NIVEAUX (WATERFALL) */
+/* CARTE MAGAZINE COMPLÈTE AVEC VRAIE PHOTO */
 function card(i, k) {
-  var g = G[i.game] || G.lol;
   var previewText = i.content ? i.content.split("\n\n")[0] : "";
 
-  // NIVEAU 1 : VRAIE PHOTO DE PRESSE
-  if (i.tier === "photo" && i.image) {
-    return '<article class="news-card group flex flex-col justify-between" onclick="openModal(' + k + ')">' +
-      '<div>' +
-        '<div class="relative overflow-hidden border-b border-[#1a2336] h-48 bg-[#0a0e17]">' +
-          '<img src="' + esc(i.image) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.outerHTML=window.fallbackHeader(' + k + ')" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">' +
-          '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent opacity-90"></div>' +
-          '<div class="absolute top-3 left-3 flex items-center gap-1.5">' +
-            badgeGame(i.game) +
-            badgeType(i.category) +
-          '</div>' +
-          '<div class="absolute bottom-2.5 right-3 px-2 py-0.5 rounded bg-black/80 text-[10px] font-semibold text-slate-300 backdrop-blur-sm">' +
-            esc(when(i.published)) +
-          '</div>' +
-        '</div>' +
-        '<div class="p-4">' +
-          '<h3 class="text-sm font-bold text-white group-hover:text-slate-200 leading-snug line-clamp-2 mb-2">' +
-            esc(i.title) +
-          '</h3>' +
-          (previewText ? '<p class="text-xs text-slate-400 line-clamp-2 leading-relaxed">' + esc(previewText) + '</p>' : '') +
-        '</div>' +
-      '</div>' +
-      '<div class="p-4 pt-0 flex items-center justify-between text-xs text-slate-500 border-t border-[#161e30] pt-3 mt-1">' +
-        '<span class="truncate max-w-[170px] font-medium text-slate-400">' + esc(i.source) + '</span>' +
-        '<span class="text-slate-400 group-hover:text-white font-semibold text-[11px] flex items-center gap-1 transition-colors">' +
-          'Lire <i class="fa-solid fa-chevron-right text-[9px]"></i>' +
-        '</span>' +
-      '</div>' +
-    '</article>';
-  }
-
-  // NIVEAU 2 : CARTE ENTITÉ OFFICIELLE (ÉQUIPE / COMPÉTITION)
-  if (i.tier === "entity" || i.entity) {
-    return '<article class="news-card group flex flex-col justify-between" onclick="openModal(' + k + ')">' +
-      '<div>' +
-        renderEntityHeader(i) +
-        '<div class="p-4">' +
-          '<h3 class="text-sm font-bold text-white group-hover:text-slate-200 leading-snug line-clamp-3 mb-2">' +
-            esc(i.title) +
-          '</h3>' +
-          (previewText ? '<p class="text-xs text-slate-400 line-clamp-2 leading-relaxed">' + esc(previewText) + '</p>' : '') +
-        '</div>' +
-      '</div>' +
-      '<div class="p-4 pt-0 flex items-center justify-between text-xs text-slate-500 border-t border-[#161e30] pt-3 mt-1">' +
-        '<span class="truncate max-w-[170px] font-medium text-slate-400">' + esc(i.source) + '</span>' +
-        '<span class="text-slate-400 group-hover:text-white font-semibold text-[11px] flex items-center gap-1 transition-colors">' +
-          'Détails <i class="fa-solid fa-chevron-right text-[9px]"></i>' +
-        '</span>' +
-      '</div>' +
-    '</article>';
-  }
-
-  // NIVEAU 3 : CARTE DÉPÊCHE / FLASH INFO (ZÉRO IMAGE FORCÉE)
-  return '<article class="news-card group flex flex-col justify-between relative" style="border-top: 3px solid ' + g.c + '" onclick="openModal(' + k + ')">' +
-    '<div class="p-5">' +
-      '<div class="flex items-center justify-between gap-2 mb-3">' +
-        '<div class="flex items-center gap-1.5">' +
+  return '<article class="news-card group flex flex-col justify-between" onclick="openModal(' + k + ')">' +
+    '<div>' +
+      '<div class="relative overflow-hidden border-b border-[#1a2336] h-48 bg-[#0a0e17]">' +
+        '<img src="' + esc(i.image) + '" alt="" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">' +
+        '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent opacity-90"></div>' +
+        '<div class="absolute top-3 left-3 flex items-center gap-1.5">' +
           badgeGame(i.game) +
           badgeType(i.category) +
         '</div>' +
-        '<span class="text-[11px] font-semibold text-slate-400 flex items-center gap-1">' +
-          '<i class="fa-solid fa-bolt text-[10px]" style="color:' + g.c + '"></i>' + esc(when(i.published)) +
-        '</span>' +
+        '<div class="absolute bottom-2.5 right-3 px-2 py-0.5 rounded bg-black/80 text-[10px] font-semibold text-slate-300 backdrop-blur-sm">' +
+          esc(when(i.published)) +
+        '</div>' +
       '</div>' +
-      '<div class="text-[10px] font-bold uppercase tracking-widest text-slate-500 mb-1.5">Dépêche • ' + esc(g.n) + '</div>' +
-      '<h3 class="text-base font-extrabold text-white group-hover:text-slate-200 leading-snug mb-3">' +
-        esc(i.title) +
-      '</h3>' +
-      (previewText ? '<p class="text-xs text-slate-400 line-clamp-4 leading-relaxed">' + esc(previewText) + '</p>' : '<p class="text-xs text-slate-500 leading-relaxed">Flash d&#39;information publié par la rédaction de ' + esc(i.source) + '.</p>') +
+      '<div class="p-4">' +
+        '<h3 class="text-sm font-bold text-white group-hover:text-slate-200 leading-snug line-clamp-2 mb-2">' +
+          esc(i.title) +
+        '</h3>' +
+        (previewText ? '<p class="text-xs text-slate-400 line-clamp-2 leading-relaxed">' + esc(previewText) + '</p>' : '') +
+      '</div>' +
     '</div>' +
     '<div class="p-4 pt-0 flex items-center justify-between text-xs text-slate-500 border-t border-[#161e30] pt-3 mt-1">' +
-      '<span class="truncate max-w-[170px] font-semibold text-slate-300">' + esc(i.source) + '</span>' +
+      '<span class="truncate max-w-[170px] font-medium">' + esc(i.source) + '</span>' +
       '<span class="text-slate-400 group-hover:text-white font-semibold text-[11px] flex items-center gap-1 transition-colors">' +
-        'Ouvrir <i class="fa-solid fa-chevron-right text-[9px]"></i>' +
+        'Lire l&#39;article <i class="fa-solid fa-chevron-right text-[9px]"></i>' +
       '</span>' +
     '</div>' +
   '</article>';
 }
 
-window.fallbackHeader = function(k) {
-  var item = vis()[k];
-  if (!item) return "";
-  return renderEntityHeader(item);
-};
-
-/* OUVERTURE DE LA FICHE D'ARTICLE COMPLÈTE */
+/* OUVERTURE DE L'ARTICLE COMPLET */
 function openModal(index) {
   var v = vis();
   var item = v[index];
@@ -368,16 +274,6 @@ function openModal(index) {
   var paragraphs = (item.content || "").split("\n\n").filter(function(p) { return p.trim().length > 0; }).map(function(p) {
     return '<p class="text-slate-200 text-sm sm:text-base leading-relaxed mb-4">' + esc(p) + '</p>';
   }).join("");
-
-  var visualBanner = "";
-  if (item.tier === "photo" && item.image) {
-    visualBanner = '<div class="relative w-full h-72 sm:h-96 overflow-hidden bg-[#0a0e17] border-b border-[#1a2336]">' +
-      '<img src="' + esc(item.image) + '" alt="" referrerpolicy="no-referrer" class="w-full h-full object-cover">' +
-      '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent"></div>' +
-    '</div>';
-  } else {
-    visualBanner = renderEntityHeader(item);
-  }
 
   $("modal-body").innerHTML =
     '<div class="sticky top-0 z-20 bg-[#0e131f]/95 backdrop-blur-md border-b border-[#1a2336] px-6 py-3.5 flex items-center justify-between">' +
@@ -390,12 +286,15 @@ function openModal(index) {
         '<i class="fa-solid fa-xmark text-sm"></i>' +
       '</button>' +
     '</div>' +
-    visualBanner +
+    '<div class="relative w-full h-72 sm:h-96 overflow-hidden bg-[#0a0e17] border-b border-[#1a2336]">' +
+      '<img src="' + esc(item.image) + '" alt="" referrerpolicy="no-referrer" class="w-full h-full object-cover">' +
+      '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent"></div>' +
+    '</div>' +
     '<div class="p-6 sm:p-8 space-y-6">' +
       '<div>' +
         '<h2 class="text-xl sm:text-2xl font-extrabold text-white leading-tight mb-3">' + esc(item.title) + '</h2>' +
         '<div class="flex flex-wrap items-center gap-3 text-xs text-slate-400 border-b border-[#1a2336] pb-4">' +
-          '<span>Média : <strong class="text-white">' + esc(item.source) + '</strong></span>' +
+          '<span>Source : <strong class="text-white">' + esc(item.source) + '</strong></span>' +
           '<span>•</span>' +
           '<span>Publié il y a ' + esc(when(item.published)) + '</span>' +
           '<span>•</span>' +
@@ -403,14 +302,14 @@ function openModal(index) {
         '</div>' +
       '</div>' +
       '<div class="prose prose-invert max-w-none">' +
-        (paragraphs || '<p class="text-slate-300 text-sm leading-relaxed">Cette dépêche a été publiée par la rédaction de <strong>' + esc(item.source) + '</strong>. Cliquez sur le bouton ci-dessous pour lire le développement complet directement sur le média source.</p>') +
+        (paragraphs || '<p class="text-slate-300 text-sm leading-relaxed">Découvrez les détails complets de cette annonce directement sur le média officiel ci-dessous.</p>') +
       '</div>' +
       '<div class="pt-5 border-t border-[#1a2336] flex flex-wrap items-center justify-between gap-4">' +
         '<button onclick="closeModal()" class="px-5 py-2.5 rounded-xl border border-[#243048] text-xs font-semibold text-slate-300 hover:bg-[#141b2b] transition">' +
           '← Retour au flux' +
         '</button>' +
         '<a href="' + esc(item.url) + '" target="_blank" rel="noopener noreferrer" class="px-6 py-2.5 rounded-xl bg-white text-slate-950 font-bold text-xs hover:bg-slate-200 active:scale-95 transition flex items-center gap-2 shadow-lg">' +
-          'Lire l&#39;article complet sur ' + esc(item.source) + ' <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>' +
+          'Lire l&#39;article original sur ' + esc(item.source) + ' <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>' +
         '</a>' +
       '</div>' +
     '</div>';
@@ -435,7 +334,7 @@ $("modal").addEventListener("click", function(e) { if (e.target === $("modal")) 
 document.addEventListener("keydown", function(e) { if (e.key === "Escape" && !$("modal").classList.contains("hidden")) closeModal(); });
 
 function side() {
-  var mv = S.items.filter(function(i) { return i.category === "official" || i.category === "rumor"; }).slice(0, 6);
+  var mv = S.items.filter(function(i) { return i.category === "official" || i.category === "rumor"; }).slice(0, 5);
   $("top").innerHTML = mv.length ? mv.map(function(i) {
     var isRumor = i.category === "rumor";
     var tag = isRumor ? '<span class="text-amber-400 font-bold text-[10px]">RUMEUR</span>' : '<span class="text-emerald-400 font-bold text-[10px]">OFFICIEL</span>';
@@ -447,9 +346,9 @@ function side() {
         '<span>' + esc(when(i.published)) + '</span>' +
       '</div>' +
     '</a>';
-  }).join("") : '<p class="text-xs text-slate-500 py-1">Aucun mouvement détecté.</p>';
+  }).join("") : '<p class="text-xs text-slate-500 py-1">Aucun mouvement pour le moment.</p>';
 
-  var ch = S.items.filter(function(i) { return i.category === "tournament"; }).slice(0, 5);
+  var ch = S.items.filter(function(i) { return i.category === "tournament"; }).slice(0, 4);
   $("nx").innerHTML = ch.length ? ch.map(function(i) {
     return '<a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="block p-3 rounded-xl bg-[#0a0e17] hover:bg-[#141b2b] border border-[#161e30] transition">' +
       '<div class="flex items-center justify-between mb-1.5">' +
@@ -462,7 +361,7 @@ function side() {
         '<span>' + esc(when(i.published)) + '</span>' +
       '</div>' +
     '</a>';
-  }).join("") : '<p class="text-xs text-slate-500 py-1">Aucune compétition détectée.</p>';
+  }).join("") : '<p class="text-xs text-slate-500 py-1">Aucune actualité de tournoi détectée.</p>';
 }
 
 function vis() {
@@ -471,7 +370,7 @@ function vis() {
     if (!G[i.game]) return false;
     var gameMatch = (S.g === "all" || i.game === S.g);
     var typeMatch = (S.t === "all" || i.category === S.t);
-    var searchMatch = !q || [i.title, i.source, G[i.game].n, (i.entity ? i.entity.name : "")].join(" ").toLowerCase().includes(q);
+    var searchMatch = !q || [i.title, i.source, G[i.game].n].join(" ").toLowerCase().includes(q);
     return gameMatch && typeMatch && searchMatch;
   });
 }
@@ -484,7 +383,7 @@ function render() {
   } else {
     $("feed").innerHTML = '<div class="col-span-full py-20 text-center text-slate-500 border border-dashed border-[#1a2336] rounded-2xl">' +
       '<i class="fa-regular fa-folder-open text-3xl mb-2 block text-slate-600"></i>' +
-      '<p class="text-sm font-semibold text-slate-400">Aucun article pour ce filtre actuellement</p>' +
+      '<p class="text-sm font-semibold text-slate-400">Aucun article ne correspond aux filtres</p>' +
     '</div>';
   }
   side();
@@ -521,7 +420,8 @@ async function loadData() {
     var r = await fetch("./data.json?t=" + Date.now());
     if (!r.ok) throw new Error("Erreur HTTP " + r.status);
     var data = await r.json();
-    S.items = Array.isArray(data) ? data.filter(function(i) { return G[i.game]; }) : [];
+    S.items = Array.isArray(data) ? data.filter(function(i) { return G[i.game] && i.image; }) : [];
+    S.sync = Date.now();
     $("sync").textContent = "Dernière synchro : " + new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
   } catch (e) {
     $("sync").textContent = "Erreur de chargement";
