@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Esport Radar Scraper 21.0
-- Vraie photo de presse prioritaire
-- Carte Broadcast Esport dynamique avec couleurs et tags officiels pour les actus sans photo (VLR, Dust2)
-- Tri chirurgical des catégories basé sur le titre (les résultats de match vont dans Tournois)
-- Dédoublonnage par URL unique (0 clone)
+"""Esport Radar Scraper 22.0
 - 6 disciplines majeures exclusives (LoL, Valorant, CS2, Fortnite, CoD, Rocket League)
+- Fallback automatique ligue majeure : 0 article jeté, chaque dépêche a son identité broadcast
+- Dédoublonnage strict par URL canonique (0 clone)
+- Détection ultra-précise des tournois, transferts, rumeurs et patchs
+- Aucune fausse image HTML admise
 """
 import html
 import json
@@ -18,11 +18,10 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 OUT_FILE = Path(__file__).resolve().parent / "data.json"
-MAX_ITEMS = 160
+MAX_ITEMS = 180
 MAX_AGE_DAYS = 40
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
-# Flux spécialisés
 FEEDS = [
     # 1. LEAGUE OF LEGENDS
     ("https://www.invenglobal.com/feed/atom", "Inven Global", "lol"),
@@ -121,63 +120,52 @@ GUIDE_AND_AMATEUR_BAN = re.compile(
     re.I
 )
 
-# Identités visuelles broadcast pour les articles sans photo
-OFFICIAL_IDENTITIES = [
-    # CIRCUITS & COMPÉTITIONS
-    ("vct", re.compile(r"\bvct\b|valorant champions|shanghai|masters", re.I), {
-        "title": "VALORANT Champions Tour", "tag": "VCT", "color": "#ff4655", "bg": "#3d0a14"
-    }),
-    ("worlds", re.compile(r"\bworlds\b|world championship|mondiaux", re.I), {
-        "title": "LoL World Championship", "tag": "WORLDS", "color": "#c89b3c", "bg": "#332204"
-    }),
-    ("lec", re.compile(r"\blec\b", re.I), {
-        "title": "League of Legends EMEA", "tag": "LEC", "color": "#00c8c8", "bg": "#022929"
-    }),
-    ("lfl", re.compile(r"\blfl\b", re.I), {
-        "title": "Ligue Française de LoL", "tag": "LFL", "color": "#3b82f6", "bg": "#091e42"
-    }),
-    ("cs2_major", re.compile(r"major|iem katowice|iem cologne|blast premier", re.I), {
-        "title": "Counter-Strike 2 Major", "tag": "CS2", "color": "#f59e0b", "bg": "#361e03"
-    }),
-    ("fncs", re.compile(r"\bfncs\b", re.I), {
-        "title": "Fortnite Champion Series", "tag": "FNCS", "color": "#a855f7", "bg": "#2e084d"
-    }),
-    ("rlcs", re.compile(r"\brlcs\b", re.I), {
-        "title": "Rocket League Championship", "tag": "RLCS", "color": "#0ea5e9", "bg": "#04243d"
-    }),
-
-    # CLUBS ET STRUCTURES PRO
+# Identités visuelles d'équipes et circuits spécifiques
+SPECIFIC_IDENTITIES = [
     ("100t", re.compile(r"100 thieves|\b100t\b", re.I), {
-        "title": "100 Thieves", "tag": "100T", "color": "#ef4444", "bg": "#380606"
+        "title": "100 Thieves", "tag": "100T", "color": "#ef4444", "bg": "#3d0606"
     }),
     ("kc", re.compile(r"karmine corp|\bkarmine\b|\bkcorp\b|\bkc\b", re.I), {
         "title": "Karmine Corp", "tag": "KC", "color": "#38bdf8", "bg": "#082142"
     }),
     ("vit", re.compile(r"vitality|team vitality|\bvit\b", re.I), {
-        "title": "Team Vitality", "tag": "VIT", "color": "#facc15", "bg": "#3b3002"
+        "title": "Team Vitality", "tag": "VIT", "color": "#facc15", "bg": "#3d3002"
     }),
     ("m8", re.compile(r"gentle mates|\bm8\b", re.I), {
         "title": "Gentle Mates", "tag": "M8", "color": "#f472b6", "bg": "#3d082b"
     }),
     ("loud", re.compile(r"\bloud\b", re.I), {
-        "title": "LOUD Esports", "tag": "LOUD", "color": "#22c55e", "bg": "#062b11"
+        "title": "LOUD Esports", "tag": "LOUD", "color": "#22c55e", "bg": "#062e12"
     }),
     ("g2", re.compile(r"\bg2 esports\b|\bg2\b", re.I), {
         "title": "G2 Esports", "tag": "G2", "color": "#ef4444", "bg": "#380606"
     }),
     ("fnc", re.compile(r"\bfnatic\b|\bfnc\b", re.I), {
-        "title": "Fnatic", "tag": "FNC", "color": "#fb923c", "bg": "#3b1602"
-    }),
-    ("sly", re.compile(r"\bsolary\b|\bsly\b", re.I), {
-        "title": "Solary", "tag": "SLY", "color": "#fb923c", "bg": "#3b1602"
+        "title": "Fnatic", "tag": "FNC", "color": "#fb923c", "bg": "#3d1602"
     }),
     ("t1", re.compile(r"\bt1\b|\bfaker\b", re.I), {
-        "title": "T1 Esports", "tag": "T1", "color": "#e11d48", "bg": "#360511"
+        "title": "T1 Esports", "tag": "T1", "color": "#e11d48", "bg": "#3b0511"
     }),
     ("navi", re.compile(r"\bnavi\b|natus vincere", re.I), {
         "title": "Natus Vincere", "tag": "NAVI", "color": "#facc15", "bg": "#3b3002"
     }),
+    ("c9", re.compile(r"cloud9|\bc9\b", re.I), {
+        "title": "Cloud9", "tag": "C9", "color": "#0ea5e9", "bg": "#032442"
+    }),
+    ("furia", re.compile(r"\bfuria\b", re.I), {
+        "title": "FURIA Esports", "tag": "FURIA", "color": "#cbd5e1", "bg": "#1e293b"
+    }),
 ]
+
+# Fallbacks majeurs par discipline : garantit un rendu professionnel quoi qu'il arrive
+GAME_CIRCUIT_FALLBACKS = {
+    "lol": { "title": "League of Legends Pro", "tag": "LOL ESPORT", "color": "#c89b3c", "bg": "#2e2104" },
+    "val": { "title": "VALORANT Champions Tour", "tag": "VCT", "color": "#ff4655", "bg": "#3d0a14" },
+    "cs2": { "title": "Counter-Strike 2 Circuit", "tag": "CS2 PRO", "color": "#f59e0b", "bg": "#382003" },
+    "fortnite": { "title": "Fortnite Champion Series", "tag": "FNCS", "color": "#a855f7", "bg": "#2e084d" },
+    "cod": { "title": "Call of Duty League", "tag": "CDL", "color": "#84cc16", "bg": "#1b2e04" },
+    "rl": { "title": "Rocket League Championship", "tag": "RLCS", "color": "#0ea5e9", "bg": "#04243d" }
+}
 
 def clean_text(raw_html: str) -> str:
     text = re.sub(r'<(script|style)[^>]*>.*?</\1>', '', raw_html or "", flags=re.DOTALL | re.IGNORECASE)
@@ -227,9 +215,9 @@ def detect_category_strict(title: str, body: str) -> str:
         return "tournament"
 
     first_p = body.split("\n\n")[0].lower() if body else ""
-    if re.search(r"advance to semifinals|secured victory|took down|eliminated from|defeated", first_p):
+    if re.search(r"advance to semifinals|secured victory|took down|eliminated from|defeated|punches ticket", first_p):
         return "tournament"
-    if re.search(r"officially announced the signing|parted ways with|announced departure", first_p):
+    if re.search(r"officially announced the signing|parted ways with|announced departure|signed a contract", first_p):
         return "official"
 
     return "news"
@@ -285,14 +273,13 @@ def extract_press_photo(item, raw_xml: str) -> str:
 
     return ""
 
-def find_broadcast_identity(title: str, text_zone: str):
-    for _, rx, data in OFFICIAL_IDENTITIES:
-        if rx.search(title):
+def get_visual_identity(title: str, text_zone: str, game: str):
+    # Cherche une équipe reconnue
+    for _, rx, data in SPECIFIC_IDENTITIES:
+        if rx.search(title) or rx.search(text_zone[:200]):
             return data
-    for _, rx, data in OFFICIAL_IDENTITIES:
-        if rx.search(text_zone[:200]):
-            return data
-    return None
+    # Sinon attribue l'identité du circuit majeur correspondant
+    return GAME_CIRCUIT_FALLBACKS.get(game, { "title": "Esport Compétitif", "tag": "ESPORT", "color": "#38bdf8", "bg": "#0e1e38" })
 
 def extract_article_body(item, title: str) -> list:
     raw_content = item.findtext("{http://purl.org/rss/1.0/modules/content/}encoded") or ""
@@ -338,11 +325,10 @@ def main() -> int:
                         img = a.get("image", "")
                         if img and not clean_image_url(img):
                             a["image"] = ""
-                            if not a.get("logo"):
-                                a["logo"] = find_broadcast_identity(a["title"], a.get("content", ""))
-                        if a.get("image") or a.get("logo"):
-                            ukey = normalize_url(a.get("url", a["title"]))
-                            existing[ukey] = a
+                        if not a.get("image") and not a.get("logo"):
+                            a["logo"] = get_visual_identity(a["title"], a.get("content", ""), a["game"])
+                        ukey = normalize_url(a.get("url", a["title"]))
+                        existing[ukey] = a
         except Exception:
             pass
 
@@ -375,11 +361,7 @@ def main() -> int:
             photo_url = extract_press_photo(it, item_xml_str)
             logo_info = None
             if not photo_url:
-                logo_info = find_broadcast_identity(title, item_xml_str)
-
-            # Doit impérativement avoir une photo OU une identité d'équipe/circuit reconnue
-            if not photo_url and not logo_info:
-                continue
+                logo_info = get_visual_identity(title, item_xml_str, game)
 
             pub = parse_date(it.findtext("pubDate") or "")
             if pub < cutoff:
@@ -416,7 +398,7 @@ def main() -> int:
     final_selection = []
     for g, items in by_game.items():
         items_sorted = sorted(items, key=lambda x: x.get("published", ""), reverse=True)
-        final_selection.extend(items_sorted[:20])
+        final_selection.extend(items_sorted[:22])
 
     remaining = [i for i in merged.values() if i not in final_selection]
     remaining_sorted = sorted(remaining, key=lambda x: x.get("published", ""), reverse=True)
@@ -426,7 +408,7 @@ def main() -> int:
 
     OUT_FILE.write_text(json.dumps(final, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     stats = {g: sum(1 for x in final if x["game"] == g) for g in GAME_RULES}
-    print(f"Extraction terminée : {len(final)} articles enregistrés.")
+    print(f"Extraction terminée : {len(final)} articles qualifiés.")
     print(f"Détail par jeu : {stats}")
     return 0
 
