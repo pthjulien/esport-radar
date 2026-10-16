@@ -23,7 +23,8 @@
       "title": "100 Thieves",
       "tag": "100T",
       "color": "#ef4444",
-      "bg": "#240606"
+      "bg": "#330808",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/100_Thieves_logo.svg/512px-100_Thieves_logo.svg.png"
     },
     "content": "100T are increasing their Major chances with each win.",
     "first_seen": "2026-10-16T23:12:25Z"
@@ -76,7 +77,8 @@
       "title": "VALORANT Champions Tour",
       "tag": "VCT",
       "color": "#ff4655",
-      "bg": "#1f0910"
+      "bg": "#330a13",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Valorant_Champions_Tour_logo.svg/512px-Valorant_Champions_Tour_logo.svg.png"
     },
     "content": "100 Thieves take down G2, setting up a lower final match against Team Vitality.",
     "first_seen": "2026-10-16T22:56:57Z"
@@ -159,7 +161,8 @@
       "title": "VALORANT Champions Tour",
       "tag": "VCT",
       "color": "#ff4655",
-      "bg": "#1f0910"
+      "bg": "#330a13",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Valorant_Champions_Tour_logo.svg/512px-Valorant_Champions_Tour_logo.svg.png"
     },
     "content": "Don't check what year it is: LOUD is in the Champions Grand Final.",
     "first_seen": "2026-10-16T22:56:57Z"
@@ -308,7 +311,8 @@
       "title": "VALORANT Champions Tour",
       "tag": "VCT",
       "color": "#ff4655",
-      "bg": "#1f0910"
+      "bg": "#330a13",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Valorant_Champions_Tour_logo.svg/512px-Valorant_Champions_Tour_logo.svg.png"
     },
     "content": "The 2027 VCT host locations have been revealed.",
     "first_seen": "2026-10-16T22:56:57Z"
@@ -508,10 +512,11 @@
     "category": "news",
     "image": "",
     "logo": {
-      "title": "T1 Esports",
-      "tag": "T1",
-      "color": "#e11d48",
-      "bg": "#26050e"
+      "title": "G2 Esports",
+      "tag": "G2",
+      "color": "#ef4444",
+      "bg": "#380606",
+      "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/G2_Esports_logo.svg/512px-G2_Esports_logo.svg.png"
     },
     "content": "",
     "first_seen": "2026-10-16T22:56:57Z"
@@ -528,7 +533,8 @@
       "title": "100 Thieves",
       "tag": "100T",
       "color": "#ef4444",
-      "bg": "#240606"
+      "bg": "#330808",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/100_Thieves_logo.svg/512px-100_Thieves_logo.svg.png"
     },
     "content": "100 Thieves continue their lower-bracket run. NRG wave goodbye to Shanghai.",
     "first_seen": "2026-10-16T22:56:57Z"
@@ -593,7 +599,8 @@
       "title": "Team Vitality",
       "tag": "VIT",
       "color": "#facc15",
-      "bg": "#261f03"
+      "bg": "#3b3002",
+      "icon": "https://upload.wikimedia.org/wikipedia/fr/thumb/5/52/Team_Vitality_2020_Logo.svg/512px-Team_Vitality_2020_Logo.svg.png"
     },
     "content": "EMEA's last hope enters the top three in Shanghai.",
     "first_seen": "2026-10-16T22:56:57Z"
@@ -622,7 +629,8 @@
       "title": "LOUD Esports",
       "tag": "LOUD",
       "color": "#22c55e",
-      "bg": "#05200e"
+      "bg": "#062b11",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/LOUD_logo.svg/512px-LOUD_logo.svg.png"
     },
     "content": "",
     "first_seen": "2026-10-16T22:56:57Z"
@@ -657,7 +665,8 @@
       "title": "VALORANT Champions Tour",
       "tag": "VCT",
       "color": "#ff4655",
-      "bg": "#1f0910"
+      "bg": "#330a13",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Valorant_Champions_Tour_logo.svg/512px-Valorant_Champions_Tour_logo.svg.png"
     },
     "content": "The Thieves snatch a win against Nongshim RedForce. The loss sends Nongshim packing.",
     "first_seen": "2026-10-16T22:56:57Z"
@@ -674,7 +683,8 @@
       "title": "T1 Esports",
       "tag": "T1",
       "color": "#e11d48",
-      "bg": "#26050e"
+      "bg": "#360511",
+      "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/T1_logo.svg/512px-T1_logo.svg.png"
     },
     "content": "T1 comes back from the dead to send the dinos into extinction.",
     "first_seen": "2026-10-16T22:56:57Z"
