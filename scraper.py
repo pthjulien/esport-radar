@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Esport Radar Scraper 22.0
-- 6 disciplines majeures exclusives (LoL, Valorant, CS2, Fortnite, CoD, Rocket League)
-- Fallback automatique ligue majeure : 0 article jeté, chaque dépêche a son identité broadcast
-- Dédoublonnage strict par URL canonique (0 clone)
-- Détection ultra-précise des tournois, transferts, rumeurs et patchs
-- Aucune fausse image HTML admise
+"""Esport Radar Scraper 23.0
+- Réseau étendu de plus de 40 flux spécialisés (FR & International)
+- 6 disciplines majeures (LoL, Valorant, CS2, Fortnite, CoD, Rocket League)
+- Capacité augmentée à 220 articles avec réserve minimale par jeu
+- Vraie photo de presse ou habillage broadcast haute fidélité automatique
+- Tri chirurgical des catégories basé sur le titre
 """
 import html
 import json
@@ -18,64 +18,80 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 OUT_FILE = Path(__file__).resolve().parent / "data.json"
-MAX_ITEMS = 180
+MAX_ITEMS = 220
 MAX_AGE_DAYS = 40
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
+# Réseau massif de flux d'actualités esport
 FEEDS = [
-    # 1. LEAGUE OF LEGENDS
+    # --- 1. LEAGUE OF LEGENDS ---
     ("https://www.invenglobal.com/feed/atom", "Inven Global", "lol"),
     ("https://e.sport.fr/category/league-of-legends/feed/", "E.SPORT.FR", "lol"),
     ("https://e.sport.fr/category/league-of-legends/feed/?paged=2", "E.SPORT.FR", "lol"),
     ("https://e.sport.fr/category/league-of-legends/feed/?paged=3", "E.SPORT.FR", "lol"),
+    ("https://e.sport.fr/category/league-of-legends/feed/?paged=4", "E.SPORT.FR", "lol"),
     ("https://www.dexerto.fr/league-of-legends/feed/", "Dexerto FR", "lol"),
+    ("https://www.dexerto.com/league-of-legends/feed/", "Dexerto US", "lol"),
     ("https://dotesports.com/league-of-legends/feed", "Dot Esports", "lol"),
-    ("https://esports.gg/feed/", "Esports.gg", None),
+    ("https://blix.gg/feed/", "BLIX", "lol"),
 
-    # 2. VALORANT
+    # --- 2. VALORANT ---
     ("https://vlr.gg/rss", "VLR.gg", "val"),
     ("https://e.sport.fr/category/valorant/feed/", "E.SPORT.FR", "val"),
     ("https://e.sport.fr/category/valorant/feed/?paged=2", "E.SPORT.FR", "val"),
     ("https://e.sport.fr/category/valorant/feed/?paged=3", "E.SPORT.FR", "val"),
+    ("https://e.sport.fr/category/valorant/feed/?paged=4", "E.SPORT.FR", "val"),
     ("https://www.dexerto.fr/valorant/feed/", "Dexerto FR", "val"),
+    ("https://www.dexerto.com/valorant/feed/", "Dexerto US", "val"),
     ("https://dotesports.com/valorant/feed", "Dot Esports", "val"),
+    ("https://www.talkesport.com/feed/", "TalkEsport", "val"),
 
-    # 3. COUNTER-STRIKE 2
+    # --- 3. COUNTER-STRIKE 2 ---
     ("https://www.hltv.org/rss/news", "HLTV", "cs2"),
     ("https://www.dust2.us/rss", "Dust2", "cs2"),
     ("https://pley.gg/feed", "Pley.gg", "cs2"),
     ("https://www.fragster.com/feed/", "Fragster", "cs2"),
     ("https://e.sport.fr/category/counter-strike/feed/", "E.SPORT.FR", "cs2"),
     ("https://e.sport.fr/category/counter-strike/feed/?paged=2", "E.SPORT.FR", "cs2"),
+    ("https://e.sport.fr/category/counter-strike/feed/?paged=3", "E.SPORT.FR", "cs2"),
     ("https://dotesports.com/counter-strike/feed", "Dot Esports", "cs2"),
+    ("https://www.dexerto.com/csgo/feed/", "Dexerto CS2", "cs2"),
     ("https://www.team-aaa.com/fr/rss/news.xml", "Team-aAa", "cs2"),
 
-    # 4. FORTNITE & FNCS
+    # --- 4. FORTNITE & FNCS ---
     ("https://fortniteinsider.com/feed/", "Fortnite Insider", "fortnite"),
     ("https://www.ggrecon.com/rss/", "GGRecon", "fortnite"),
     ("https://e.sport.fr/category/fortnite/feed/", "E.SPORT.FR", "fortnite"),
     ("https://e.sport.fr/category/fortnite/feed/?paged=2", "E.SPORT.FR", "fortnite"),
+    ("https://e.sport.fr/category/fortnite/feed/?paged=3", "E.SPORT.FR", "fortnite"),
     ("https://www.dexerto.fr/fortnite/feed/", "Dexerto FR", "fortnite"),
+    ("https://www.dexerto.com/fortnite/feed/", "Dexerto US", "fortnite"),
     ("https://dotesports.com/fortnite/feed", "Dot Esports", "fortnite"),
 
-    # 5. CALL OF DUTY & WARZONE
+    # --- 5. CALL OF DUTY & WARZONE ---
     ("https://charlieintel.com/feed/", "Charlie INTEL", "cod"),
+    ("https://charlieintel.com/category/call-of-duty/feed/", "Charlie INTEL CoD", "cod"),
     ("https://www.theloadout.com/feed", "The Loadout", "cod"),
     ("https://e.sport.fr/category/call-of-duty/feed/", "E.SPORT.FR", "cod"),
     ("https://e.sport.fr/category/call-of-duty/feed/?paged=2", "E.SPORT.FR", "cod"),
+    ("https://e.sport.fr/category/call-of-duty/feed/?paged=3", "E.SPORT.FR", "cod"),
     ("https://www.dexerto.fr/call-of-duty/feed/", "Dexerto FR", "cod"),
+    ("https://www.dexerto.com/call-of-duty/feed/", "Dexerto US", "cod"),
     ("https://dotesports.com/call-of-duty/feed", "Dot Esports", "cod"),
 
-    # 6. ROCKET LEAGUE
+    # --- 6. ROCKET LEAGUE ---
     ("https://rocket-league.com/news/rss", "RL Garage", "rl"),
     ("https://e.sport.fr/category/rocket-league/feed/", "E.SPORT.FR", "rl"),
     ("https://e.sport.fr/category/rocket-league/feed/?paged=2", "E.SPORT.FR", "rl"),
     ("https://e.sport.fr/category/rocket-league/feed/?paged=3", "E.SPORT.FR", "rl"),
     ("https://dotesports.com/rocket-league/feed", "Dot Esports", "rl"),
 
-    # GÉNÉRALISTES D'APPUI
+    # --- 7. HUBS ET CIRCUITS MULTI-DISCIPLINES ---
+    ("https://esportsinsider.com/feed", "Esports Insider", None),
+    ("https://esports.gg/feed/", "Esports.gg", None),
     ("https://e.sport.fr/feed/", "E.SPORT.FR", None),
     ("https://e.sport.fr/feed/?paged=2", "E.SPORT.FR", None),
+    ("https://e.sport.fr/feed/?paged=3", "E.SPORT.FR", None),
     ("https://www.jeuxvideo.com/rss/rss-esport.xml", "JV Esport", None),
 ]
 
@@ -120,7 +136,6 @@ GUIDE_AND_AMATEUR_BAN = re.compile(
     re.I
 )
 
-# Identités visuelles d'équipes et circuits spécifiques
 SPECIFIC_IDENTITIES = [
     ("100t", re.compile(r"100 thieves|\b100t\b", re.I), {
         "title": "100 Thieves", "tag": "100T", "color": "#ef4444", "bg": "#3d0606"
@@ -157,7 +172,6 @@ SPECIFIC_IDENTITIES = [
     }),
 ]
 
-# Fallbacks majeurs par discipline : garantit un rendu professionnel quoi qu'il arrive
 GAME_CIRCUIT_FALLBACKS = {
     "lol": { "title": "League of Legends Pro", "tag": "LOL ESPORT", "color": "#c89b3c", "bg": "#2e2104" },
     "val": { "title": "VALORANT Champions Tour", "tag": "VCT", "color": "#ff4655", "bg": "#3d0a14" },
@@ -274,11 +288,9 @@ def extract_press_photo(item, raw_xml: str) -> str:
     return ""
 
 def get_visual_identity(title: str, text_zone: str, game: str):
-    # Cherche une équipe reconnue
     for _, rx, data in SPECIFIC_IDENTITIES:
         if rx.search(title) or rx.search(text_zone[:200]):
             return data
-    # Sinon attribue l'identité du circuit majeur correspondant
     return GAME_CIRCUIT_FALLBACKS.get(game, { "title": "Esport Compétitif", "tag": "ESPORT", "color": "#38bdf8", "bg": "#0e1e38" })
 
 def extract_article_body(item, title: str) -> list:
@@ -396,9 +408,10 @@ def main() -> int:
             by_game[g].append(item)
 
     final_selection = []
+    # Assure au moins 25 articles récents par discipline
     for g, items in by_game.items():
         items_sorted = sorted(items, key=lambda x: x.get("published", ""), reverse=True)
-        final_selection.extend(items_sorted[:22])
+        final_selection.extend(items_sorted[:28])
 
     remaining = [i for i in merged.values() if i not in final_selection]
     remaining_sorted = sorted(remaining, key=lambda x: x.get("published", ""), reverse=True)
@@ -408,7 +421,7 @@ def main() -> int:
 
     OUT_FILE.write_text(json.dumps(final, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     stats = {g: sum(1 for x in final if x["game"] == g) for g in GAME_RULES}
-    print(f"Extraction terminée : {len(final)} articles qualifiés.")
+    print(f"Extraction terminée : {len(final)} articles enregistrés.")
     print(f"Détail par jeu : {stats}")
     return 0
 
