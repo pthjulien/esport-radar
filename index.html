@@ -3,7 +3,6 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="referrer" content="no-referrer">
 <title>Esport Radar — Fil d'actualité compétitif</title>
 <script src="https://cdn.tailwindcss.com/3.4.17"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -167,7 +166,6 @@ body {
 </div>
 
 <script>
-// Les 6 jeux phares exclusivement conservés
 var G = {
   lol: { n: "League of Legends", s: "LoL", c: "#eab308" },
   val: { n: "Valorant", s: "Valorant", c: "#f43f5e" },
@@ -233,7 +231,7 @@ function renderCardHeader(i) {
 
   if (i.image) {
     return '<div class="relative overflow-hidden border-b border-[#1a2336] h-48 bg-[#0a0e17]">' +
-      '<img src="' + esc(i.image) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.style.display=\'none\'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">' +
+      '<img src="' + esc(i.image) + '" alt="" loading="lazy" onerror="this.style.opacity=\'0\'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">' +
       '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent opacity-90"></div>' +
       '<div class="absolute top-3 left-3 flex items-center gap-1.5">' +
         badgeGame(i.game) +
@@ -246,7 +244,8 @@ function renderCardHeader(i) {
   }
 
   var l = i.logo || {};
-  var logoImg = l.icon ? '<img src="' + esc(l.icon) + '" alt="' + esc(l.title || "") + '" class="h-16 w-auto max-w-[120px] object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)] group-hover:scale-110 transition-transform duration-300">' : '<span class="text-2xl font-black" style="color:' + (l.color || "#38bdf8") + '">' + esc(l.tag || "ESPORT") + '</span>';
+  // Si le logo échoue, on masque l'élément pour éviter le pictogramme d'image brisée
+  var logoImg = l.icon ? '<img src="' + esc(l.icon) + '" alt="" onerror="this.style.display=\'none\'" class="h-16 w-auto max-w-[120px] object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)] group-hover:scale-110 transition-transform duration-300">' : '';
 
   return '<div class="relative overflow-hidden border-b border-[#1a2336] h-48 flex flex-col justify-between p-4" style="background: radial-gradient(circle at center, ' + (l.bg || "#141b2b") + ' 0%, #080b11 100%)">' +
     '<div class="flex items-center justify-between relative z-10">' +
@@ -260,7 +259,7 @@ function renderCardHeader(i) {
     '</div>' +
     '<div class="relative z-10 flex flex-col items-center justify-center my-auto">' +
       logoImg +
-      '<span class="text-xs font-extrabold uppercase tracking-wider text-slate-300 mt-2.5 drop-shadow-sm">' + esc(l.title || "") + '</span>' +
+      '<span class="text-xs font-extrabold uppercase tracking-wider text-slate-200 mt-2.5 drop-shadow-sm">' + esc(l.title || "") + '</span>' +
     '</div>' +
   '</div>';
 }
@@ -300,7 +299,7 @@ function openModal(index) {
   var modalBanner = "";
   if (item.image) {
     modalBanner = '<div class="relative w-full h-72 sm:h-96 overflow-hidden bg-[#0a0e17] border-b border-[#1a2336]">' +
-      '<img src="' + esc(item.image) + '" alt="" referrerpolicy="no-referrer" class="w-full h-full object-cover">' +
+      '<img src="' + esc(item.image) + '" alt="" onerror="this.style.opacity=\'0\'" class="w-full h-full object-cover">' +
       '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent"></div>' +
     '</div>';
   } else {
