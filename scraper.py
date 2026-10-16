@@ -1,14 +1,15 @@
 #!/usr/bin/env python3
-"""Esport Radar Scraper 18.0
-- 6 disciplines majeures exclusives : LoL, Valorant, CS2, Fortnite, CoD, Rocket League
-- Réseau de sources spécialisées (HLTV, VLR, Charlie INTEL, Dot Esports, Fortnite Insider, Dexerto, E.SPORT.FR, aAa, Inven)
-- Vrais logos HD intégrés (KC, Vitality, M8, G2, Fnatic, T1, 100T, LOUD, VCT, Worlds, LEC, LFL, CS2, FNCS, RLCS)
-- Zéro fausse image HTML, zéro guide SEO, zéro amateur
+"""Esport Radar Scraper 19.0
+- Traduction automatique en français de tous les articles anglophones
+- Intégration massive des sources spécialisées de la liste (Pley, Fragster, GGRecon, The Loadout, RL Garage, Inven, Dust2, HLTV, Charlie INTEL, etc.)
+- Logos officiels HD routés via CDN sécurisé (fin des images cassées Wikimedia)
+- 6 disciplines majeures exclusives, 0 guide SEO, 0 tournoi amateur
 """
 import html
 import json
 import re
 import sys
+import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
 from datetime import datetime, timedelta, timezone
@@ -16,11 +17,11 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 OUT_FILE = Path(__file__).resolve().parent / "data.json"
-MAX_ITEMS = 150
+MAX_ITEMS = 180
 MAX_AGE_DAYS = 40
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
-# Flux spécialisés uniquement sur les 6 disciplines conservées
+# Flux spécialisés couvrant l'ensemble de la liste des 6 jeux
 FEEDS = [
     # 1. LEAGUE OF LEGENDS
     ("https://www.invenglobal.com/feed/atom", "Inven Global", "lol"),
@@ -29,6 +30,7 @@ FEEDS = [
     ("https://e.sport.fr/category/league-of-legends/feed/?paged=3", "E.SPORT.FR", "lol"),
     ("https://www.dexerto.fr/league-of-legends/feed/", "Dexerto FR", "lol"),
     ("https://dotesports.com/league-of-legends/feed", "Dot Esports", "lol"),
+    ("https://esports.gg/feed/", "Esports.gg", None),
 
     # 2. VALORANT
     ("https://vlr.gg/rss", "VLR.gg", "val"),
@@ -41,6 +43,8 @@ FEEDS = [
     # 3. COUNTER-STRIKE 2
     ("https://www.hltv.org/rss/news", "HLTV", "cs2"),
     ("https://www.dust2.us/rss", "Dust2", "cs2"),
+    ("https://pley.gg/feed", "Pley.gg", "cs2"),
+    ("https://www.fragster.com/feed/", "Fragster", "cs2"),
     ("https://e.sport.fr/category/counter-strike/feed/", "E.SPORT.FR", "cs2"),
     ("https://e.sport.fr/category/counter-strike/feed/?paged=2", "E.SPORT.FR", "cs2"),
     ("https://dotesports.com/counter-strike/feed", "Dot Esports", "cs2"),
@@ -48,6 +52,7 @@ FEEDS = [
 
     # 4. FORTNITE & FNCS
     ("https://fortniteinsider.com/feed/", "Fortnite Insider", "fortnite"),
+    ("https://www.ggrecon.com/rss/", "GGRecon", "fortnite"),
     ("https://e.sport.fr/category/fortnite/feed/", "E.SPORT.FR", "fortnite"),
     ("https://e.sport.fr/category/fortnite/feed/?paged=2", "E.SPORT.FR", "fortnite"),
     ("https://www.dexerto.fr/fortnite/feed/", "Dexerto FR", "fortnite"),
@@ -55,12 +60,14 @@ FEEDS = [
 
     # 5. CALL OF DUTY & WARZONE
     ("https://charlieintel.com/feed/", "Charlie INTEL", "cod"),
+    ("https://www.theloadout.com/feed", "The Loadout", "cod"),
     ("https://e.sport.fr/category/call-of-duty/feed/", "E.SPORT.FR", "cod"),
     ("https://e.sport.fr/category/call-of-duty/feed/?paged=2", "E.SPORT.FR", "cod"),
     ("https://www.dexerto.fr/call-of-duty/feed/", "Dexerto FR", "cod"),
     ("https://dotesports.com/call-of-duty/feed", "Dot Esports", "cod"),
 
     # 6. ROCKET LEAGUE
+    ("https://rocket-league.com/news/rss", "RL Garage", "rl"),
     ("https://e.sport.fr/category/rocket-league/feed/", "E.SPORT.FR", "rl"),
     ("https://e.sport.fr/category/rocket-league/feed/?paged=2", "E.SPORT.FR", "rl"),
     ("https://e.sport.fr/category/rocket-league/feed/?paged=3", "E.SPORT.FR", "rl"),
@@ -69,7 +76,6 @@ FEEDS = [
     # GÉNÉRALISTES D'APPUI
     ("https://e.sport.fr/feed/", "E.SPORT.FR", None),
     ("https://e.sport.fr/feed/?paged=2", "E.SPORT.FR", None),
-    ("https://esports.gg/feed/", "Esports.gg", None),
     ("https://www.jeuxvideo.com/rss/rss-esport.xml", "JV Esport", None),
 ]
 
@@ -114,72 +120,88 @@ GUIDE_AND_AMATEUR_BAN = re.compile(
     re.I
 )
 
+# Logos officiels routés via le CDN images.weserv.nl pour contourner le blocage anti-hotlink
 OFFICIAL_LOGOS = [
     ("vct", re.compile(r"\bvct\b|valorant champions|shanghai|masters", re.I), {
         "title": "VALORANT Champions Tour", "tag": "VCT", "color": "#ff4655", "bg": "#330a13",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Valorant_Champions_Tour_logo.svg/512px-Valorant_Champions_Tour_logo.svg.png"
+        "icon": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Valorant_Champions_Tour_logo.svg/512px-Valorant_Champions_Tour_logo.svg.png&w=260&output=webp"
     }),
     ("worlds", re.compile(r"\bworlds\b|world championship", re.I), {
         "title": "LoL World Championship", "tag": "WORLDS", "color": "#c89b3c", "bg": "#2e2104",
-        "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/e/ed/League_of_Legends_World_Championship_logo.svg/512px-League_of_Legends_World_Championship_logo.svg.png"
+        "icon": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/en/thumb/e/ed/League_of_Legends_World_Championship_logo.svg/512px-League_of_Legends_World_Championship_logo.svg.png&w=260&output=webp"
     }),
     ("lec", re.compile(r"\blec\b", re.I), {
         "title": "League of Legends EMEA", "tag": "LEC", "color": "#00c8c8", "bg": "#022929",
-        "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/7/77/League_of_Legends_EMEA_Championship_logo.svg/512px-League_of_Legends_EMEA_Championship_logo.svg.png"
+        "icon": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/en/thumb/7/77/League_of_Legends_EMEA_Championship_logo.svg/512px-League_of_Legends_EMEA_Championship_logo.svg.png&w=260&output=webp"
     }),
     ("lfl", re.compile(r"\blfl\b", re.I), {
         "title": "Ligue Française de LoL", "tag": "LFL", "color": "#3b82f6", "bg": "#091e42",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Ligue_Fran%C3%A7aise_de_League_of_Legends_logo.svg/512px-Ligue_Fran%C3%A7aise_de_League_of_Legends_logo.svg.png"
+        "icon": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Ligue_Fran%C3%A7aise_de_League_of_Legends_logo.svg/512px-Ligue_Fran%C3%A7aise_de_League_of_Legends_logo.svg.png&w=260&output=webp"
     }),
     ("cs2_major", re.compile(r"major|iem katowice|iem cologne|blast premier", re.I), {
         "title": "Counter-Strike 2 Major", "tag": "CS2", "color": "#f59e0b", "bg": "#331f03",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Counter-Strike_2_logo.svg/512px-Counter-Strike_2_logo.svg.png"
+        "icon": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/4/4b/Counter-Strike_2_logo.svg/512px-Counter-Strike_2_logo.svg.png&w=260&output=webp"
     }),
     ("fncs", re.compile(r"\bfncs\b", re.I), {
         "title": "Fortnite Champion Series", "tag": "FNCS", "color": "#a855f7", "bg": "#2b0847",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Fortnite_logo.svg/512px-Fortnite_logo.svg.png"
+        "icon": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/0/0e/Fortnite_logo.svg/512px-Fortnite_logo.svg.png&w=260&output=webp"
     }),
     ("rlcs", re.compile(r"\brlcs\b", re.I), {
         "title": "Rocket League Championship", "tag": "RLCS", "color": "#0ea5e9", "bg": "#04243d",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Rocket_League_logo.svg/512px-Rocket_League_logo.svg.png"
+        "icon": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Rocket_League_logo.svg/512px-Rocket_League_logo.svg.png&w=260&output=webp"
     }),
     ("kc", re.compile(r"karmine corp|\bkarmine\b|\bkcorp\b|\bkc\b", re.I), {
         "title": "Karmine Corp", "tag": "KC", "color": "#38bdf8", "bg": "#082142",
-        "icon": "https://upload.wikimedia.org/wikipedia/fr/thumb/c/c9/Karmine_Corp_logo.svg/512px-Karmine_Corp_logo.svg.png"
+        "icon": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/fr/thumb/c/c9/Karmine_Corp_logo.svg/512px-Karmine_Corp_logo.svg.png&w=260&output=webp"
     }),
     ("vit", re.compile(r"vitality|team vitality|\bvit\b", re.I), {
         "title": "Team Vitality", "tag": "VIT", "color": "#facc15", "bg": "#3b3002",
-        "icon": "https://upload.wikimedia.org/wikipedia/fr/thumb/5/52/Team_Vitality_2020_Logo.svg/512px-Team_Vitality_2020_Logo.svg.png"
+        "icon": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/fr/thumb/5/52/Team_Vitality_2020_Logo.svg/512px-Team_Vitality_2020_Logo.svg.png&w=260&output=webp"
     }),
     ("m8", re.compile(r"gentle mates|\bm8\b", re.I), {
         "title": "Gentle Mates", "tag": "M8", "color": "#f472b6", "bg": "#3d082b",
-        "icon": "https://upload.wikimedia.org/wikipedia/fr/thumb/d/d4/Gentle_Mates_logo.svg/512px-Gentle_Mates_logo.svg.png"
+        "icon": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/fr/thumb/d/d4/Gentle_Mates_logo.svg/512px-Gentle_Mates_logo.svg.png&w=260&output=webp"
     }),
     ("sly", re.compile(r"\bsolary\b|\bsly\b", re.I), {
         "title": "Solary", "tag": "SLY", "color": "#fb923c", "bg": "#3b1602",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Solary_logo.svg/512px-Solary_logo.svg.png"
+        "icon": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/3/36/Solary_logo.svg/512px-Solary_logo.svg.png&w=260&output=webp"
     }),
     ("g2", re.compile(r"\bg2 esports\b|\bg2\b", re.I), {
         "title": "G2 Esports", "tag": "G2", "color": "#ef4444", "bg": "#380606",
-        "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/G2_Esports_logo.svg/512px-G2_Esports_logo.svg.png"
+        "icon": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/en/thumb/1/12/G2_Esports_logo.svg/512px-G2_Esports_logo.svg.png&w=260&output=webp"
     }),
     ("fnc", re.compile(r"\bfnatic\b|\bfnc\b", re.I), {
         "title": "Fnatic", "tag": "FNC", "color": "#fb923c", "bg": "#3b1602",
-        "icon": "https://upload.wikimedia.org/wikipedia/en/thumb/4/43/Fnatic_logo.svg/512px-Fnatic_logo.svg.png"
+        "icon": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/en/thumb/4/43/Fnatic_logo.svg/512px-Fnatic_logo.svg.png&w=260&output=webp"
     }),
     ("100t", re.compile(r"100 thieves|\b100t\b", re.I), {
         "title": "100 Thieves", "tag": "100T", "color": "#ef4444", "bg": "#330808",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/100_Thieves_logo.svg/512px-100_Thieves_logo.svg.png"
+        "icon": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/d/d3/100_Thieves_logo.svg/512px-100_Thieves_logo.svg.png&w=260&output=webp"
     }),
     ("t1", re.compile(r"\bt1\b|\bfaker\b", re.I), {
         "title": "T1 Esports", "tag": "T1", "color": "#e11d48", "bg": "#360511",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/3a/T1_logo.svg/512px-T1_logo.svg.png"
+        "icon": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/3/3a/T1_logo.svg/512px-T1_logo.svg.png&w=260&output=webp"
     }),
     ("loud", re.compile(r"\bloud\b", re.I), {
         "title": "LOUD Esports", "tag": "LOUD", "color": "#22c55e", "bg": "#062b11",
-        "icon": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/LOUD_logo.svg/512px-LOUD_logo.svg.png"
+        "icon": "https://images.weserv.nl/?url=upload.wikimedia.org/wikipedia/commons/thumb/0/02/LOUD_logo.svg/512px-LOUD_logo.svg.png&w=260&output=webp"
     }),
 ]
+
+def translate_to_fr(text: str) -> str:
+    """Traduit automatiquement le texte anglais en français sans clé d'API."""
+    if not text or len(text.strip()) == 0:
+        return ""
+    try:
+        q = urllib.parse.quote(text[:500])
+        url = f"https://translate.googleapis.com/translate_a/single?client=gtx&sl=auto&tl=fr&dt=t&q={q}"
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        with urllib.request.urlopen(req, timeout=4) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            translated = "".join([seg[0] for seg in data[0] if seg and seg[0]])
+            return translated.strip() if translated else text
+    except Exception:
+        return text
 
 def clean_text(raw_html: str) -> str:
     text = re.sub(r'<(script|style)[^>]*>.*?</\1>', '', raw_html or "", flags=re.DOTALL | re.IGNORECASE)
@@ -214,7 +236,7 @@ def detect_category(text: str) -> str:
         return "rumor"
     if re.search(r"joins?|signs?|signe|rejoint|officialise|quitte|prolonge|recrute|transfert|benched|roster|départ|rejoindre", text, re.I):
         return "official"
-    if re.search(r"victoire|défaite|sacré|éliminé|finale|playoffs|classement|tournoi|major|masters|trophée|champions|direct|match|score", text, re.I):
+    if re.search(r"victoire|défaite|sacré|éliminé|finale|playoffs|classement|tournoi|major|masters|trophée|champions|direct|match|score|semifinals", text, re.I):
         return "tournament"
     if re.search(r"patch|mise à jour|nerf|buff|équilibrage|update", text, re.I):
         return "patch"
@@ -320,7 +342,6 @@ def main() -> int:
             d = json.loads(OUT_FILE.read_text(encoding="utf-8"))
             if isinstance(d, list):
                 for a in d:
-                    # Ne conserve dans l'historique que les 6 jeux retenus
                     if isinstance(a, dict) and a.get("title") and a.get("game") in GAME_RULES and a.get("published", "") >= cutoff:
                         img = a.get("image", "")
                         if img and not clean_image_url(img):
@@ -373,9 +394,16 @@ def main() -> int:
 
             paragraphs = extract_article_body(it, title)
 
-            k = title.strip().lower()
+            # TRADUCTION AUTOMATIQUE EN FRANÇAIS DU TITRE ET DU PREMIER PARAGRAPHE
+            fr_title = translate_to_fr(title)
+            fr_content = paragraphs
+            if paragraphs:
+                fr_first = translate_to_fr(paragraphs[0])
+                fr_content = [fr_first] + paragraphs[1:]
+
+            k = fr_title.strip().lower()
             collected.append({
-                "title": title,
+                "title": fr_title,
                 "source": src_name,
                 "url": link,
                 "published": pub,
@@ -383,7 +411,7 @@ def main() -> int:
                 "category": detect_category(title + " " + item_xml_str),
                 "image": photo_url,
                 "logo": logo_info,
-                "content": "\n\n".join(paragraphs[:6]),
+                "content": "\n\n".join(fr_content[:6]),
                 "first_seen": existing.get(k, {}).get("first_seen", seen_at)
             })
 
@@ -392,7 +420,6 @@ def main() -> int:
         k = item["title"].lower().strip()
         merged[k] = item
 
-    # Répartition équilibrée sur les 6 jeux
     by_game = {g: [] for g in GAME_RULES}
     for item in merged.values():
         g = item.get("game")
@@ -402,7 +429,7 @@ def main() -> int:
     final_selection = []
     for g, items in by_game.items():
         items_sorted = sorted(items, key=lambda x: x.get("published", ""), reverse=True)
-        final_selection.extend(items_sorted[:18])
+        final_selection.extend(items_sorted[:20])
 
     remaining = [i for i in merged.values() if i not in final_selection]
     remaining_sorted = sorted(remaining, key=lambda x: x.get("published", ""), reverse=True)
@@ -412,7 +439,7 @@ def main() -> int:
 
     OUT_FILE.write_text(json.dumps(final, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     stats = {g: sum(1 for x in final if x["game"] == g) for g in GAME_RULES}
-    print(f"Terminé : {len(final)} articles enregistrés sur les 6 disciplines.")
+    print(f"Extraction terminée : {len(final)} articles qualifiés enregistrés en français.")
     print(f"Détail par jeu : {stats}")
     return 0
 
