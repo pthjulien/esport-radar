@@ -3,6 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="referrer" content="no-referrer">
 <title>Esport Radar — Fil d'actualité compétitif</title>
 <script src="https://cdn.tailwindcss.com/3.4.17"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
@@ -166,6 +167,8 @@ body {
 </div>
 
 <script>
+var DEFAULT_IMG = "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80";
+
 var G = {
   lol: { n: "League of Legends", s: "LoL", c: "#d97706" },
   val: { n: "Valorant", s: "Valorant", c: "#ef4444" },
@@ -226,13 +229,13 @@ function badgeType(ty) {
 }
 
 function card(i, k) {
-  var imgSrc = i.image || "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/2019_League_of_Legends_World_Championship_Final.jpg/1200px-2019_League_of_Legends_World_Championship_Final.jpg";
+  var imgSrc = i.image || DEFAULT_IMG;
   var previewText = i.content ? i.content.split("\n\n")[0] : "";
 
   return '<article class="news-card group flex flex-col justify-between" onclick="openModal(' + k + ')">' +
     '<div>' +
-      '<div class="relative overflow-hidden border-b border-[#1c2438] h-48 bg-slate-900">' +
-        '<img src="' + esc(imgSrc) + '" alt="" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">' +
+      '<div class="relative overflow-hidden border-b border-[#1c2438] h-48 bg-[#0c1018]">' +
+        '<img src="' + esc(imgSrc) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src=\'' + DEFAULT_IMG + '\';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">' +
         '<div class="absolute inset-0 bg-gradient-to-t from-[#101522] via-transparent to-transparent opacity-90"></div>' +
         '<div class="absolute top-3 left-3 flex items-center gap-1.5">' +
           badgeGame(i.game) +
@@ -266,15 +269,15 @@ function openModal(index) {
   if (!item) return;
 
   var g = G[item.game] || G.other;
-  var imgSrc = item.image || "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/2019_League_of_Legends_World_Championship_Final.jpg/1200px-2019_League_of_Legends_World_Championship_Final.jpg";
+  var imgSrc = item.image || DEFAULT_IMG;
 
   var paragraphs = (item.content || "").split("\n\n").map(function(p) {
     return '<p class="text-slate-300 text-sm leading-relaxed mb-3.5">' + esc(p) + '</p>';
   }).join("");
 
   $("modal-body").innerHTML =
-    '<div class="relative w-full h-72 sm:h-80 overflow-hidden bg-slate-900">' +
-      '<img src="' + esc(imgSrc) + '" alt="" class="w-full h-full object-cover">' +
+    '<div class="relative w-full h-72 sm:h-80 overflow-hidden bg-[#0c1018]">' +
+      '<img src="' + esc(imgSrc) + '" alt="" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src=\'' + DEFAULT_IMG + '\';" class="w-full h-full object-cover">' +
       '<div class="absolute inset-0 bg-gradient-to-t from-[#101522] via-[#101522]/40 to-transparent"></div>' +
       '<button onclick="closeModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/75 hover:bg-black text-white flex items-center justify-center transition backdrop-blur-sm">' +
         '<i class="fa-solid fa-xmark text-sm"></i>' +
