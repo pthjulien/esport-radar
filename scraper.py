@@ -1,8 +1,11 @@
 #!/usr/bin/env python3
-"""Esport Radar Scraper — Breaking News & Vraies photos de presse
-Sources : E.SPORT.FR, Dexerto, Charlie INTEL, Dot Esports, Esports Insider, aAa, JV.
-Règle stricte : 100% de vraies photos, articles récents (7 jours), vrais paragraphes complets.
+"""Esport Radar Scraper 9.0 — Architecture Waterfall (3 Niveaux) & Tri Strict
+- Niveau 1 : Vraie photo de presse HD (via API WordPress JSON & Media RSS)
+- Niveau 2 : Identité visuelle officielle d'Équipe ou de Tournoi (KC, Vitality, M8, T1, Worlds, VCT...)
+- Niveau 3 : Carte éditoriale "Flash Info / Dépêche" sans image artificielle
+- Filtrage strict : 12 disciplines esportives. Tout article hors-sujet est rejeté.
 """
+import concurrent.futures
 import html
 import json
 import re
@@ -14,40 +17,170 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 OUT_FILE = Path(__file__).resolve().parent / "data.json"
-MAX_ITEMS = 75
-MAX_AGE_DAYS = 7  # Focus exclusif sur l'actualité brûlante
-USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36"
+MAX_ITEMS = 120
+MAX_AGE_DAYS = 10
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
 
-# Flux spécialisés fournissant des photos officielles et des articles rédigés
-FEEDS = [
-    # Actu générale & Scène française
-    ("https://e.sport.fr/feed/", "E.SPORT.FR"),
-    ("https://e.sport.fr/category/league-of-legends/feed/", "E.SPORT.FR"),
-    ("https://e.sport.fr/category/valorant/feed/", "E.SPORT.FR"),
-    ("https://e.sport.fr/category/counter-strike/feed/", "E.SPORT.FR"),
-    ("https://e.sport.fr/category/fortnite/feed/", "E.SPORT.FR"),
-    ("https://e.sport.fr/category/call-of-duty/feed/", "E.SPORT.FR"),
-    ("https://e.sport.fr/category/rocket-league/feed/", "E.SPORT.FR"),
-    ("https://e.sport.fr/category/apex-legends/feed/", "E.SPORT.FR"),
-    ("https://www.dexerto.fr/feed/esport/", "Dexerto FR"),
-    ("https://www.team-aaa.com/fr/rss/news.xml", "Team-aAa"),
-    ("https://www.jeuxvideo.com/rss/rss-esport.xml", "JV Esport"),
-    
-    # Leaders mondiaux du breaking news & transferts
-    ("https://charlieintel.com/feed/", "Charlie INTEL"),
-    ("https://dotesports.com/feed", "Dot Esports"),
-    ("https://esportsinsider.com/feed", "Esports Insider"),
+# 1. APIs WordPress REST (Récupèrent jusqu'à 30 articles complets d'un coup avec vraie photo HD)
+WP_APIS = [
+    ("https://e.sport.fr/wp-json/wp/v2/posts?_embed&per_page=40", "E.SPORT.FR", None),
+    ("https://www.eclypsia.com/wp-json/wp/v2/posts?_embed&per_page=25", "Eclypsia", None),
+    ("https://dotesports.com/wp-json/wp/v2/posts?_embed&per_page=30", "Dot Esports", None),
+    ("https://esportsinsider.com/wp-json/wp/v2/posts?_embed&per_page=25", "Esports Insider", None),
+    ("https://charlieintel.com/wp-json/wp/v2/posts?_embed&per_page=25", "Charlie INTEL", None),
 ]
 
-GAME_PATTERNS = [
-    ("fortnite", re.compile(r"fortnite|\bfncs\b", re.I)),
-    ("cod", re.compile(r"call of duty|\bcod\b|\bcdl\b|warzone|black ops|modern warfare", re.I)),
-    ("apex", re.compile(r"apex legends|\balgs\b|\bapex\b", re.I)),
-    ("val", re.compile(r"valorant|\bvct\b|champions|masters", re.I)),
-    ("lol", re.compile(r"league of legends|\blol\b|\blec\b|\blck\b|\blfl\b|worlds|\blcs\b|\blpl\b", re.I)),
-    ("cs2", re.compile(r"counter-strike|\bcs2\b|\bcs:go\b|\bcsgo\b|major|iem|blast|\bhl\b", re.I)),
-    ("rl", re.compile(r"rocket league|\brlcs\b", re.I)),
-    ("dota", re.compile(r"dota|international", re.I)),
+# 2. Flux RSS spécialisés (Médias avec photos + Dépêches rapides par jeu)
+RSS_FEEDS = [
+    ("https://e.sport.fr/feed/", "E.SPORT.FR", None),
+    ("https://e.sport.fr/category/league-of-legends/feed/", "E.SPORT.FR", "lol"),
+    ("https://e.sport.fr/category/valorant/feed/", "E.SPORT.FR", "val"),
+    ("https://e.sport.fr/category/counter-strike/feed/", "E.SPORT.FR", "cs2"),
+    ("https://e.sport.fr/category/fortnite/feed/", "E.SPORT.FR", "fortnite"),
+    ("https://e.sport.fr/category/call-of-duty/feed/", "E.SPORT.FR", "cod"),
+    ("https://e.sport.fr/category/rocket-league/feed/", "E.SPORT.FR", "rl"),
+    ("https://e.sport.fr/category/apex-legends/feed/", "E.SPORT.FR", "apex"),
+    ("https://www.dexerto.fr/feed/esport/", "Dexerto FR", None),
+    ("https://www.team-aaa.com/fr/rss/news.xml", "Team-aAa", None),
+    ("https://www.jeuxvideo.com/rss/rss-esport.xml", "JV Esport", None),
+    # Flux de dépêches ciblés par jeu (utiliseront le Niveau 2 Entité ou Niveau 3 Dépêche si pas de photo)
+    ("https://news.google.com/rss/search?q=esport+\"league+of+legends\"+OR+LEC+OR+LFL+OR+LCK&hl=fr&gl=FR&ceid=FR:fr", "Google News", "lol"),
+    ("https://news.google.com/rss/search?q=esport+valorant+OR+VCT&hl=fr&gl=FR&ceid=FR:fr", "Google News", "val"),
+    ("https://news.google.com/rss/search?q=esport+\"counter-strike\"+OR+CS2+OR+HLTV&hl=fr&gl=FR&ceid=FR:fr", "Google News", "cs2"),
+    ("https://news.google.com/rss/search?q=esport+fortnite+OR+FNCS&hl=fr&gl=FR&ceid=FR:fr", "Google News", "fortnite"),
+    ("https://news.google.com/rss/search?q=esport+\"call+of+duty\"+OR+CDL+OR+warzone&hl=fr&gl=FR&ceid=FR:fr", "Google News", "cod"),
+    ("https://news.google.com/rss/search?q=esport+\"rocket+league\"+OR+RLCS&hl=fr&gl=FR&ceid=FR:fr", "Google News", "rl"),
+    ("https://news.google.com/rss/search?q=esport+\"rainbow+six\"+OR+\"r6+siege\"+OR+\"six+invitational\"&hl=fr&gl=FR&ceid=FR:fr", "Google News", "r6"),
+    ("https://news.google.com/rss/search?q=esport+\"street+fighter+6\"+OR+\"tekken+8\"+OR+EVO+OR+glutonny&hl=fr&gl=FR&ceid=FR:fr", "Google News", "fgc"),
+    ("https://news.google.com/rss/search?q=esport+\"ea+sports+fc\"+OR+eLigue1+OR+\"fc+26\"+OR+\"fc+27\"&hl=fr&gl=FR&ceid=FR:fr", "Google News", "eafc"),
+]
+
+IGNORED_DOMAINS = ["flashscore", "sofascore", "livescore", "matchendirect", "scorebing", "betclic", "winamax", "unibet"]
+
+# Règles strictes et sans ambiguïté pour chaque jeu
+GAME_RULES = {
+    "lol": re.compile(
+        r"league of legends|\blol\b|\blec\b|\blfl\b|\blck\b|\blpl\b|\blcs\b|\blta\b|"
+        r"worlds 202\d|msi 202\d|summoner's rift|faille de l'invocateur|emea masters|"
+        r"\bfaker\b|\byike\b|\bcaliste\b|\bcaps\b|\bhans sama\b|\btargamas\b|\bcanna\b|\bchovy\b|\bkeria\b",
+        re.I
+    ),
+    "val": re.compile(
+        r"valorant|\bvct\b|valorant champions|vct emea|vct americas|vct pacific|vct cn|"
+        r"game changers|\btenz\b|\bnats\b|\bboaster\b|\baspas\b|\bzmjjkk\b|\bchronicle\b|\bderke\b|\bsuygetsu\b|\bmagnum\b",
+        re.I
+    ),
+    "cs2": re.compile(
+        r"counter-strike|\bcs2\b|\bcs:go\b|\bcsgo\b|\bhltv\b|iem katowice|iem cologne|iem rio|iem dallas|"
+        r"esl pro league|pgl major|blast premier|\bzywoo\b|\bs1mple\b|\bdonk\b|\bm0nesy\b|\bapex\b.*vitality|\bniko\b|\bropz\b|\bsiuhy\b|\bhooxi\b",
+        re.I
+    ),
+    "fortnite": re.compile(
+        r"fortnite|\bfncs\b|cash cup|unreal ranked|\bbugha\b|\bmongraal\b|\bmrsavage\b|\bmalibuca\b|\bmerstach\b|\bpeterbot\b",
+        re.I
+    ),
+    "cod": re.compile(
+        r"call of duty|\bcod\b|\bcdl\b|cod league|warzone|black ops 6|black ops 7|modern warfare|"
+        r"optic texas|atlanta faze|la thieves|\bhydra\b|\bshotzzy\b|\bscrap\b|\bscump\b|\bdashy\b",
+        re.I
+    ),
+    "rl": re.compile(
+        r"rocket league|\brlcs\b|\bvatira\b|\bmonkey m00n\b|\bmonkey moon\b|\bdralii\b|\batow\b|\bexotiik\b|\bradosin\b|\balpha54\b|\bjuicy\b",
+        re.I
+    ),
+    "r6": re.compile(
+        r"rainbow six|\br6 siege\b|\br6s\b|six invitational|blast r6|siege x|\bshaiiko\b|\blikefac\b|\bbriD\b|\byuzus\b",
+        re.I
+    ),
+    "apex": re.compile(
+        r"apex legends|\balgs\b|\bimperialhal\b|\bgenburten\b|\bzer0\b.*apex",
+        re.I
+    ),
+    "eafc": re.compile(
+        r"ea sports fc|\bea fc\b|\bfc 25\b|\bfc 26\b|\bfc 27\b|\beligue\s?1\b|futchamps|fc pro|\bverjgang\b|\btekkez\b|\brocky\b.*fifa",
+        re.I
+    ),
+    "fgc": re.compile(
+        r"street fighter|\bsf6\b|tekken 8|\btekken\b|\bevo 202\d\b|guilty gear|super smash bros|smash ultimate|mortal kombat|"
+        r"\bglutonny\b|\bluffy\b|\bkayane\b|\barslan ash\b|\bmenaRD\b|\bpunk\b.*sf6|\bsonicfox\b",
+        re.I
+    ),
+    "ow2": re.compile(
+        r"overwatch|\bow2\b|\bowcs\b|overwatch champions series",
+        re.I
+    ),
+    "dota": re.compile(
+        r"dota 2|\bdota\b|the international 202\d|\bti1[345]\b|riyadh masters dota",
+        re.I
+    ),
+}
+
+# Sujets non-esport à bannir même si un mot-clé est proche
+NON_ESPORT_BAN = re.compile(
+    r"code promo|bon plan|soldes amazon|black friday|forfait mobile|film netflix|série tv|"
+    r"astrologie|horoscope|recette de cuisine|voiture électrique|crypto|bitcoin|casino en ligne",
+    re.I
+)
+
+# Dictionnaire d'Entités Officielles (Niveau 2 : Équipes & Grands Circuits)
+ENTITIES = [
+    ("kc", re.compile(r"karmine corp|\bkarmine\b|\bkcorp\b|\bkc\b", re.I), {
+        "code": "KC", "name": "Karmine Corp", "sub": "Blue Wall • Structure Esport", "color": "#38bdf8", "bg": "linear-gradient(135deg, #071936 0%, #090d16 100%)"
+    }),
+    ("vit", re.compile(r"vitality|team vitality|\bvit\b", re.I), {
+        "code": "VIT", "name": "Team Vitality", "sub": "V for Victory • Structure Esport", "color": "#facc15", "bg": "linear-gradient(135deg, #2b2205 0%, #090d16 100%)"
+    }),
+    ("m8", re.compile(r"gentle mates|\bm8\b|gentlemates", re.I), {
+        "code": "M8", "name": "Gentle Mates", "sub": "Structure Esport Officielle", "color": "#f472b6", "bg": "linear-gradient(135deg, #2d0e24 0%, #090d16 100%)"
+    }),
+    ("sly", re.compile(r"\bsolary\b|\bsly\b", re.I), {
+        "code": "SLY", "name": "Solary", "sub": "Team d'Amis • Structure Esport", "color": "#fb923c", "bg": "linear-gradient(135deg, #2e1605 0%, #090d16 100%)"
+    }),
+    ("bds", re.compile(r"team bds|\bbds\b", re.I), {
+        "code": "BDS", "name": "Team BDS", "sub": "Challenge The Game • Structure Esport", "color": "#22d3ee", "bg": "linear-gradient(135deg, #072235 0%, #090d16 100%)"
+    }),
+    ("jl", re.compile(r"\bjoblife\b", re.I), {
+        "code": "JL", "name": "Joblife", "sub": "Structure Esport Officielle", "color": "#34d399", "bg": "linear-gradient(135deg, #06291f 0%, #090d16 100%)"
+    }),
+    ("g2", re.compile(r"\bg2 esports\b|\bg2\b", re.I), {
+        "code": "G2", "name": "G2 Esports", "sub": "G2 Army • Structure Internationale", "color": "#f87171", "bg": "linear-gradient(135deg, #2d0a0e 0%, #090d16 100%)"
+    }),
+    ("fnc", re.compile(r"\bfnatic\b|\bfnc\b", re.I), {
+        "code": "FNC", "name": "Fnatic", "sub": "Always Fnatic • Structure Internationale", "color": "#fb923c", "bg": "linear-gradient(135deg, #2e1304 0%, #090d16 100%)"
+    }),
+    ("t1", re.compile(r"\bt1\b|\bfaker\b", re.I), {
+        "code": "T1", "name": "T1 Esports", "sub": "LCK & International Dynasty", "color": "#e11d48", "bg": "linear-gradient(135deg, #2e0711 0%, #090d16 100%)"
+    }),
+    ("tl", re.compile(r"team liquid|\bliquid\b", re.I), {
+        "code": "TL", "name": "Team Liquid", "sub": "Structure Internationale", "color": "#60a5fa", "bg": "linear-gradient(135deg, #0b1c38 0%, #090d16 100%)"
+    }),
+    ("c9", re.compile(r"cloud9|\bc9\b", re.I), {
+        "code": "C9", "name": "Cloud9", "sub": "Structure Nord-Américaine", "color": "#38bdf8", "bg": "linear-gradient(135deg, #072238 0%, #090d16 100%)"
+    }),
+    ("100t", re.compile(r"100 thieves|\b100t\b", re.I), {
+        "code": "100T", "name": "100 Thieves", "sub": "Structure Nord-Américaine", "color": "#ef4444", "bg": "linear-gradient(135deg, #2b0808 0%, #090d16 100%)"
+    }),
+    ("navi", re.compile(r"natus vincere|\bnavi\b", re.I), {
+        "code": "NAVI", "name": "Natus Vincere", "sub": "Born to Win • Structure Esport", "color": "#facc15", "bg": "linear-gradient(135deg, #292404 0%, #090d16 100%)"
+    }),
+    ("faze", re.compile(r"faze clan|\bfaze\b", re.I), {
+        "code": "FAZE", "name": "FaZe Clan", "sub": "FaZe Up • Structure Internationale", "color": "#ef4444", "bg": "linear-gradient(135deg, #2b0707 0%, #090d16 100%)"
+    }),
+    ("worlds", re.compile(r"\bworlds\b|world championship", re.I), {
+        "code": "WORLDS", "name": "League of Legends Worlds", "sub": "Championnat du Monde Officiel", "color": "#eab308", "bg": "linear-gradient(135deg, #1f1705 0%, #090d16 100%)"
+    }),
+    ("vct", re.compile(r"\bvct\b|valorant champions", re.I), {
+        "code": "VCT", "name": "Valorant Champions Tour", "sub": "Circuit Officiel Riot Games", "color": "#f43f5e", "bg": "linear-gradient(135deg, #2b0912 0%, #090d16 100%)"
+    }),
+    ("rlcs", re.compile(r"\brlcs\b", re.I), {
+        "code": "RLCS", "name": "Rocket League Championship Series", "sub": "Circuit Mondial Officiel", "color": "#0ea5e9", "bg": "linear-gradient(135deg, #071f33 0%, #090d16 100%)"
+    }),
+    ("fncs", re.compile(r"\bfncs\b", re.I), {
+        "code": "FNCS", "name": "Fortnite Champion Series", "sub": "Circuit Compétitif Epic Games", "color": "#a855f7", "bg": "linear-gradient(135deg, #210936 0%, #090d16 100%)"
+    }),
+    ("cdl", re.compile(r"\bcdl\b|call of duty league", re.I), {
+        "code": "CDL", "name": "Call of Duty League", "sub": "Circuit Franchise Officiel", "color": "#84cc16", "bg": "linear-gradient(135deg, #172606 0%, #090d16 100%)"
+    }),
 ]
 
 def clean_text(raw_html: str) -> str:
@@ -56,158 +189,18 @@ def clean_text(raw_html: str) -> str:
     text = html.unescape(text)
     return re.sub(r'\s+', ' ', text).strip()
 
-def detect_game(text: str) -> str:
-    for key, rx in GAME_PATTERNS:
-        if rx.search(text):
-            return key
-    return "other"
+def detect_game_strict(title: str, categories_str: str, lead_text: str, feed_hint: str = None):
+    """Attribue le jeu avec précision en priorisant le Titre et les Catégories.
+    Retourne None si l'article ne correspond à aucun de nos 12 jeux esport.
+    """
+    if NON_ESPORT_BAN.search(title):
+        return None
 
-def detect_category(text: str) -> str:
-    if re.search(r"rumou?rs?|rumeurs?|leak|fuite|selon|serait|pourrait|aurait|piste|courtise", text, re.I):
-        return "rumor"
-    if re.search(r"joins?|signs?|signe|rejoint|officialise|quitte|prolonge|recrute|transfert|benched|roster|départ|rejoindre", text, re.I):
-        return "official"
-    if re.search(r"victoire|défaite|sacré|éliminé|finale|playoffs|classement|tournoi|major|masters|trophée|champions|direct|match|score", text, re.I):
-        return "tournament"
-    if re.search(r"patch|mise à jour|nerf|buff|équilibrage|update", text, re.I):
-        return "patch"
-    return "news"
+    scores = {k: 0 for k in GAME_RULES}
 
-def extract_real_image(item, raw_item_xml: str) -> str:
-    """Extrait exclusivement les vraies photos de presse (JPEG/PNG/WEBP)."""
-    # 1. Balise enclosure standard
-    enc = item.find("enclosure")
-    if enc is not None and enc.get("url"):
-        u = enc.get("url").strip()
-        if re.search(r"\.(jpe?g|png|webp|avif)", u, re.I):
-            return u.replace("http://", "https://")
-
-    # 2. Balise media:content / media:thumbnail
-    for elem in item.iter():
-        if elem.tag.endswith(("content", "thumbnail")):
-            u = elem.get("url", "").strip()
-            if u and re.search(r"\.(jpe?g|png|webp|avif)", u, re.I):
-                return u.replace("http://", "https://")
-
-    # 3. Image insérée dans le corps journalistique
-    for tag in ["{http://purl.org/rss/1.0/modules/content/}encoded", "description"]:
-        body = item.findtext(tag) or ""
-        m = re.search(r'<img[^>]+src=["\']([^"\']+\.(?:jpe?g|png|webp|avif)[^"\']*)["\']', body, re.I)
-        if m:
-            img = m.group(1).replace("http://", "https://")
-            low = img.lower()
-            if not any(x in low for x in ["avatar", "logo", "icon", "emoji", "pixel"]):
-                return img
-
-    # 4. Scan brut du XML de l'article
-    matches = re.findall(r'https?://[^\s"\'><]+\.(?:jpe?g|png|webp|avif)[^\s"\'><]*', raw_item_xml, re.I)
-    for m in matches:
-        low = m.lower()
-        if not any(x in low for x in ["avatar", "logo", "icon", "emoji", "tracking"]):
-            return m.replace("http://", "https://")
-
-    return ""
-
-def extract_full_text(item, title: str) -> list:
-    """Extrait les véritables paragraphes rédigés par les journalistes."""
-    raw_content = item.findtext("{http://purl.org/rss/1.0/modules/content/}encoded") or ""
-    raw_desc = item.findtext("description") or ""
-
-    paragraphs = []
-    # Découpage des vrais blocs <p> de l'article
-    p_tags = re.findall(r'<p[^>]*>(.*?)</p>', raw_content or raw_desc, flags=re.DOTALL | re.IGNORECASE)
-    for p in p_tags:
-        cleaned = clean_text(p)
-        if len(cleaned) > 40:
-            low = cleaned.lower()
-            if not low.startswith(("à lire aussi", "lire aussi", "source :", "crédit :", "cet article", "the post")):
-                paragraphs.append(cleaned)
-
-    # Repli sur la description si pas de balises <p>
-    if not paragraphs:
-        cleaned_desc = clean_text(raw_desc)
-        if len(cleaned_desc) > 30 and cleaned_desc.lower() not in title.lower():
-            paragraphs.append(cleaned_desc)
-
-    return paragraphs
-
-def parse_date(date_str: str) -> str:
-    try:
-        dt = parsedate_to_datetime(date_str)
-        if dt.tzinfo is None:
-            dt = dt.replace(tzinfo=timezone.utc)
-        return dt.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-    except Exception:
-        return datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
-
-def main() -> int:
-    now = datetime.now(timezone.utc)
-    cutoff = (now - timedelta(days=MAX_AGE_DAYS)).strftime("%Y-%m-%dT%H:%M:%SZ")
-    collected = []
-
-    for url, src_name in FEEDS:
-        try:
-            req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/xml, text/xml"})
-            with urllib.request.urlopen(req, timeout=10) as resp:
-                xml_raw = resp.read()
-                root = ET.fromstring(xml_raw)
-        except Exception:
-            continue
-
-        for it in root.iter("item"):
-            title = html.unescape((it.findtext("title") or "").strip())
-            link = (it.findtext("link") or "").strip()
-            if not title or not link.startswith("http"):
-                continue
-
-            pub = parse_date(it.findtext("pubDate") or "")
-            # On ignore immédiatement les articles de plus de 7 jours pour garder du direct
-            if pub < cutoff:
-                continue
-
-            try:
-                item_xml_str = ET.tostring(it, encoding="utf-8").decode("utf-8", errors="ignore")
-            except Exception:
-                item_xml_str = ""
-
-            # FILTRE STRICT : Pas de vraie photo = article rejeté
-            img = extract_real_image(it, item_xml_str)
-            if not img or "unsplash" in img or "wikimedia" in img:
-                continue
-
-            game = detect_game(title + " " + item_xml_str + " " + url)
-            category = detect_category(title + " " + item_xml_str)
-            paragraphs = extract_full_text(it, title)
-
-            collected.append({
-                "title": title,
-                "source": src_name,
-                "url": link,
-                "published": pub,
-                "game": game,
-                "category": category,
-                "image": img,
-                "content": "\n\n".join(paragraphs)
-            })
-
-    # Dédoublonnage par titre
-    unique = {}
-    for item in collected:
-        k = item["title"].lower().strip()
-        if k not in unique:
-            unique[k] = item
-
-    # Tri du plus récent au plus ancien
-    sorted_items = sorted(
-        unique.values(),
-        key=lambda x: x.get("published", ""),
-        reverse=True
-    )
-
-    final = sorted_items[:MAX_ITEMS]
-    OUT_FILE.write_text(json.dumps(final, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Extraction réussie : {len(final)} actus chaudes avec vraies photos de presse.")
-    return 0
-
-if __name__ == "__main__":
-    sys.exit(main())
+    # 1. Analyse du titre et des catégories (Poids fort : +12 points)
+    header_zone = f"{title} {categories_str}"
+    for game_key, rx in GAME_RULES.items():
+        matches = rx.findall(header_zone)
+        if matches:
+            scores[game_key] += 12 * len(matches)
