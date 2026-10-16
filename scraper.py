@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Esport Radar Scraper 13.0
-- Quota garanti : au moins 10 articles récents par discipline esport
-- Rétention stricte : 45 jours max (aucune vieille actu périmée)
-- 100% visuel : vraie photo de presse ou logo officiel détouré (0 carte vide)
-- Anti multi-jeux et anti-salons municipaux conservé
+"""Esport Radar Scraper 15.0
+- Réseau étendu de flux spécialisés mondiaux et français (VLR.gg, HLTV, Charlie INTEL, Dot Esports, Fortnite Insider, E.SPORT.FR, Dexerto, aAa)
+- Pagination profonde sur les catégories pour un catalogue initial massif (150+ articles)
+- Quota équilibré par jeu : réserve garantie sur chaque discipline
+- 100% visuel : vraie photo de presse HD ou logo officiel d'équipe/tournoi (0 carte vide)
+- Filtre anti multi-jeux et anti-tournois municipaux / amateurs
 """
 import html
 import json
@@ -16,65 +17,74 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 OUT_FILE = Path(__file__).resolve().parent / "data.json"
-TARGET_PER_GAME = 12   # Vise au moins 10 à 12 articles par jeu
-MAX_AGE_DAYS = 45      # Fraîcheur garantie : interdit tout ce qui dépasse 1 mois et demi
+MAX_ITEMS = 160
+MAX_AGE_DAYS = 40
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
-# Flux spécialisés et ciblés par discipline
+# Flux spécialisés et paginés par discipline
 FEEDS = [
-    # League of Legends
-    ("https://e.sport.fr/category/league-of-legends/feed/", "E.SPORT.FR", "lol"),
-    ("https://e.sport.fr/category/league-of-legends/feed/?paged=2", "E.SPORT.FR", "lol"),
-    ("https://www.dexerto.fr/league-of-legends/feed/", "Dexerto FR", "lol"),
-    ("https://dotesports.com/league-of-legends/feed", "Dot Esports", "lol"),
-
-    # Valorant
+    # 1. VALORANT (VLR.gg = référence mondiale + E.SPORT.FR + Dexerto)
+    ("https://vlr.gg/rss", "VLR.gg", "val"),
     ("https://e.sport.fr/category/valorant/feed/", "E.SPORT.FR", "val"),
     ("https://e.sport.fr/category/valorant/feed/?paged=2", "E.SPORT.FR", "val"),
+    ("https://e.sport.fr/category/valorant/feed/?paged=3", "E.SPORT.FR", "val"),
     ("https://www.dexerto.fr/valorant/feed/", "Dexerto FR", "val"),
     ("https://dotesports.com/valorant/feed", "Dot Esports", "val"),
 
-    # Counter-Strike 2
+    # 2. COUNTER-STRIKE 2 (HLTV.org = N°1 mondial absolu + aAa + Dot Esports)
+    ("https://www.hltv.org/rss/news", "HLTV", "cs2"),
     ("https://e.sport.fr/category/counter-strike/feed/", "E.SPORT.FR", "cs2"),
     ("https://e.sport.fr/category/counter-strike/feed/?paged=2", "E.SPORT.FR", "cs2"),
     ("https://dotesports.com/counter-strike/feed", "Dot Esports", "cs2"),
     ("https://www.team-aaa.com/fr/rss/news.xml", "Team-aAa", "cs2"),
 
-    # Fortnite
+    # 3. CALL OF DUTY & WARZONE (Charlie INTEL = référence N°1 + Dexerto)
+    ("https://charlieintel.com/feed/", "Charlie INTEL", "cod"),
+    ("https://e.sport.fr/category/call-of-duty/feed/", "E.SPORT.FR", "cod"),
+    ("https://e.sport.fr/category/call-of-duty/feed/?paged=2", "E.SPORT.FR", "cod"),
+    ("https://www.dexerto.fr/call-of-duty/feed/", "Dexerto FR", "cod"),
+    ("https://dotesports.com/call-of-duty/feed", "Dot Esports", "cod"),
+
+    # 4. FORTNITE & FNCS (Fortnite Insider + Dot Esports + Dexerto)
+    ("https://fortniteinsider.com/feed/", "Fortnite Insider", "fortnite"),
     ("https://e.sport.fr/category/fortnite/feed/", "E.SPORT.FR", "fortnite"),
     ("https://e.sport.fr/category/fortnite/feed/?paged=2", "E.SPORT.FR", "fortnite"),
     ("https://www.dexerto.fr/fortnite/feed/", "Dexerto FR", "fortnite"),
     ("https://dotesports.com/fortnite/feed", "Dot Esports", "fortnite"),
 
-    # Call of Duty / Warzone
-    ("https://e.sport.fr/category/call-of-duty/feed/", "E.SPORT.FR", "cod"),
-    ("https://charlieintel.com/feed/", "Charlie INTEL", "cod"),
-    ("https://www.dexerto.fr/call-of-duty/feed/", "Dexerto FR", "cod"),
-    ("https://dotesports.com/call-of-duty/feed", "Dot Esports", "cod"),
-
-    # Rocket League
+    # 5. ROCKET LEAGUE (Dot Esports RL + E.SPORT.FR paginé)
+    ("https://dotesports.com/rocket-league/feed", "Dot Esports", "rl"),
     ("https://e.sport.fr/category/rocket-league/feed/", "E.SPORT.FR", "rl"),
     ("https://e.sport.fr/category/rocket-league/feed/?paged=2", "E.SPORT.FR", "rl"),
-    ("https://dotesports.com/rocket-league/feed", "Dot Esports", "rl"),
+    ("https://e.sport.fr/category/rocket-league/feed/?paged=3", "E.SPORT.FR", "rl"),
 
-    # Rainbow Six Siege
+    # 6. RAINBOW SIX SIEGE (Dot Esports R6 + E.SPORT.FR)
+    ("https://dotesports.com/rainbow-six/feed", "Dot Esports", "r6"),
     ("https://e.sport.fr/category/rainbow-six/feed/", "E.SPORT.FR", "r6"),
     ("https://e.sport.fr/category/rainbow-six-siege/feed/", "E.SPORT.FR", "r6"),
-    ("https://dotesports.com/rainbow-six/feed", "Dot Esports", "r6"),
 
-    # Apex Legends
+    # 7. APEX LEGENDS (Dot Esports Apex + Dexerto + E.SPORT.FR)
+    ("https://dotesports.com/apex-legends/feed", "Dot Esports", "apex"),
+    ("https://www.dexerto.fr/apex-legends/feed/", "Dexerto FR", "apex"),
     ("https://e.sport.fr/category/apex-legends/feed/", "E.SPORT.FR", "apex"),
     ("https://e.sport.fr/category/apex-legends/feed/?paged=2", "E.SPORT.FR", "apex"),
-    ("https://www.dexerto.fr/apex-legends/feed/", "Dexerto FR", "apex"),
-    ("https://dotesports.com/apex-legends/feed", "Dot Esports", "apex"),
 
-    # EA Sports FC
+    # 8. LEAGUE OF LEGENDS (E.SPORT.FR paginé + Dexerto + Dot Esports)
+    ("https://e.sport.fr/category/league-of-legends/feed/", "E.SPORT.FR", "lol"),
+    ("https://e.sport.fr/category/league-of-legends/feed/?paged=2", "E.SPORT.FR", "lol"),
+    ("https://e.sport.fr/category/league-of-legends/feed/?paged=3", "E.SPORT.FR", "lol"),
+    ("https://www.dexerto.fr/league-of-legends/feed/", "Dexerto FR", "lol"),
+    ("https://dotesports.com/league-of-legends/feed", "Dot Esports", "lol"),
+
+    # 9. EA SPORTS FC (Dexerto FC + E.SPORT.FR)
+    ("https://www.dexerto.fr/ea-sports-fc/feed/", "Dexerto FR", "eafc"),
     ("https://e.sport.fr/category/ea-sports-fc/feed/", "E.SPORT.FR", "eafc"),
     ("https://e.sport.fr/category/fifa/feed/", "E.SPORT.FR", "eafc"),
-    ("https://www.dexerto.fr/ea-sports-fc/feed/", "Dexerto FR", "eafc"),
 
-    # Fil généraliste de secours
+    # 10. Fil généraliste & Scène internationale
     ("https://e.sport.fr/feed/", "E.SPORT.FR", None),
+    ("https://e.sport.fr/feed/?paged=2", "E.SPORT.FR", None),
+    ("https://esportsinsider.com/feed", "Esports Insider", None),
     ("https://www.jeuxvideo.com/rss/rss-esport.xml", "JV Esport", None),
 ]
 
@@ -82,12 +92,12 @@ GAME_RULES = {
     "lol": re.compile(
         r"league of legends|\blol\b|\blec\b|\blfl\b|\blck\b|\blpl\b|\blcs\b|"
         r"worlds 202\d|msi 202\d|summoner'?s rift|faille de l'invocateur|emea masters|"
-        r"\bfaker\b|\byike\b|\bcaliste\b|\bcaps\b|\bhans sama\b|\btargamas\b|\bchovy\b|\bkeria\b",
+        r"\bfaker\b|\byike\b|\bcaliste\b|\bcaps\b|\bhans sama\b|\btargamas\b|\bchovy\b|\bkeria\b|\bwooloo\b",
         re.I
     ),
     "val": re.compile(
         r"valorant|\bvct\b|valorant champions|vct emea|vct americas|vct pacific|vct cn|"
-        r"game changers|\btenz\b|\bnats\b|\bboaster\b|\baspas\b|\bzmjjkk\b|\bderke\b|\bsuygetsu\b|\bmagnum\b",
+        r"game changers|\btenz\b|\bnats\b|\bboaster\b|\baspas\b|\bzmjjkk\b|\bderke\b|\bsuygetsu\b|\bmagnum\b|\banonimotum\b",
         re.I
     ),
     "cs2": re.compile(
@@ -105,7 +115,7 @@ GAME_RULES = {
         re.I
     ),
     "rl": re.compile(
-        r"rocket league|\brlcs\b|\bvatira\b|\bmonkey m00n\b|\bmonkey moon\b|\bdralii\b|\batow\b|\bexotiik\b|\balpha54\b",
+        r"rocket league|\brlcs\b|\bvatira\b|\bmonkey m00n\b|\bmonkey moon\b|\bdralii\b|\batow\b|\bexotiik\b|\balpha54\b|\bshiftrle\b",
         re.I
     ),
     "r6": re.compile(
@@ -122,6 +132,7 @@ GAME_RULES = {
     )
 }
 
+# Liste noire anti-amateurs, médiathèques et tournois communaux
 AMATEUR_LOCAL_BAN = re.compile(
     r"bussy|saint-georges|amateurs? de gaming|amateurs? d'esport|week-end dédié aux jeux|"
     r"salon du jeu|fête du jeu|médiathèque|mjc|centre culturel|tournoi amateur|lan amateur|"
@@ -129,6 +140,7 @@ AMATEUR_LOCAL_BAN = re.compile(
     re.I
 )
 
+# Logos officiels pour les dépêches sans photo directe
 OFFICIAL_LOGOS = [
     ("vct", re.compile(r"\bvct\b|valorant champions", re.I), {
         "title": "VALORANT Champions Tour", "tag": "VCT", "color": "#ff4655", "bg": "#1f0910"
@@ -189,6 +201,7 @@ def detect_single_game(title: str, text_zone: str, feed_hint: str = None):
 
     matched_games = [k for k, rx in GAME_RULES.items() if rx.search(title)]
 
+    # Si 2 jeux ou plus dans le titre -> POUBELLE (sauf EWC)
     if len(matched_games) > 1:
         if not re.search(r"esports world cup|\bewc\b", title, re.I):
             return None
@@ -223,23 +236,26 @@ def clean_image_url(u: str) -> str:
     low = u.lower()
     if any(x in low for x in ["avatar", "logo", "icon", "emoji", "pixel", "tracking", "gravatar", "1x1"]):
         return ""
-    if any(ext in low for ext in [".jpg", ".jpeg", ".png", ".webp", ".avif"]) or "wp-content/uploads" in low:
+    if any(ext in low for ext in [".jpg", ".jpeg", ".png", ".webp", ".avif"]) or "uploads" in low or "hltv.org" in low or "vlr.gg" in low:
         return u
     return ""
 
 def extract_press_photo(item, raw_xml: str) -> str:
+    # 1. Enclosure standard
     enc = item.find("enclosure")
     if enc is not None and enc.get("url"):
         candidate = clean_image_url(enc.get("url"))
         if candidate:
             return candidate
 
+    # 2. Balises media:content / media:thumbnail
     for elem in item.iter():
         if elem.tag.endswith(("content", "thumbnail")):
             candidate = clean_image_url(elem.get("url", ""))
             if candidate:
                 return candidate
 
+    # 3. Extraction dans content:encoded ou description
     for tag in ["{http://purl.org/rss/1.0/modules/content/}encoded", "description"]:
         body = item.findtext(tag) or ""
         matches = re.findall(r'<img[^>]+(?:src|data-src|data-orig-file)=["\']([^"\']+)["\']', body, re.I)
@@ -248,10 +264,11 @@ def extract_press_photo(item, raw_xml: str) -> str:
             if candidate:
                 return candidate
 
+    # 4. Scan brut
     urls = re.findall(r'https?://[^\s"\'><]+', raw_xml, re.I)
     for u in urls:
         candidate = clean_image_url(u)
-        if candidate and any(w in candidate.lower() for w in ["uploads", "article", "media", "news"]):
+        if candidate and any(w in candidate.lower() for w in ["uploads", "article", "media", "news", "hltv", "vlr"]):
             return candidate
 
     return ""
@@ -299,7 +316,7 @@ def main() -> int:
     seen_at = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     cutoff = (now - timedelta(days=MAX_AGE_DAYS)).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    # Lecture de l'historique valide existant (< 45 jours)
+    # Lecture de l'historique valide existant (< 40 jours)
     existing = {}
     if OUT_FILE.exists():
         try:
@@ -349,11 +366,9 @@ def main() -> int:
                 continue
 
             pub = parse_date(it.findtext("pubDate") or "")
-            # Rejette systématiquement tout article de plus de 45 jours
             if pub < cutoff:
                 continue
 
-            cat = detect_category(title + " " + item_xml_str)
             paragraphs = extract_article_body(it, title)
 
             k = title.strip().lower()
@@ -363,7 +378,7 @@ def main() -> int:
                 "url": link,
                 "published": pub,
                 "game": game,
-                "category": cat,
+                "category": detect_category(title + " " + item_xml_str),
                 "image": photo_url,
                 "logo": logo_info,
                 "content": "\n\n".join(paragraphs[:6]),
@@ -376,7 +391,7 @@ def main() -> int:
         k = item["title"].lower().strip()
         merged[k] = item
 
-    # REPARTITION ÉQUILIBRÉE : Garantir au moins 10-12 articles par jeu
+    # Répartition équilibrée : réserve garantie de 12 à 15 articles par jeu
     by_game = {g: [] for g in GAME_RULES}
     for item in merged.values():
         g = item.get("game")
@@ -384,24 +399,22 @@ def main() -> int:
             by_game[g].append(item)
 
     final_selection = []
-    # 1. Sélectionne les plus récents de chaque jeu
+    # 1. Sélectionne les plus récents de chaque jeu en priorité
     for g, items in by_game.items():
         items_sorted = sorted(items, key=lambda x: x.get("published", ""), reverse=True)
-        final_selection.extend(items_sorted[:TARGET_PER_GAME])
+        final_selection.extend(items_sorted[:14])
 
-    # 2. Complète avec les autres actus les plus fraîches jusqu'à 120 articles
+    # 2. Complète avec les actus les plus fraîches jusqu'à 160 articles
     remaining = [i for i in merged.values() if i not in final_selection]
     remaining_sorted = sorted(remaining, key=lambda x: x.get("published", ""), reverse=True)
-    final_selection.extend(remaining_sorted[:max(0, 120 - len(final_selection))])
+    final_selection.extend(remaining_sorted[:max(0, MAX_ITEMS - len(final_selection))])
 
-    # Tri global chronologique final
     final = sorted(final_selection, key=lambda x: x.get("published", ""), reverse=True)
 
     OUT_FILE.write_text(json.dumps(final, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-
     stats = {g: sum(1 for x in final if x["game"] == g) for g in GAME_RULES}
     print(f"Extraction terminée : {len(final)} articles au total.")
-    print(f"Détail par jeu : {stats}")
+    print(f"Répartition par jeu : {stats}")
     return 0
 
 if __name__ == "__main__":
