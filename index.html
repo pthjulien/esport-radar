@@ -13,12 +13,12 @@
 <style>
 body {
   font-family: "Plus Jakarta Sans", system-ui, sans-serif;
-  background-color: #090c12;
+  background-color: #080b11;
   color: #e2e8f0;
 }
 .news-card {
-  background-color: #101522;
-  border: 1px solid #1c2438;
+  background-color: #0e131f;
+  border: 1px solid #1a2336;
   border-radius: 14px;
   overflow: hidden;
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease, box-shadow 0.2s ease;
@@ -26,15 +26,15 @@ body {
 }
 .news-card:hover {
   transform: translateY(-4px);
-  border-color: #33415e;
+  border-color: #334260;
   box-shadow: 0 16px 32px -12px rgba(0, 0, 0, 0.6);
 }
 .news-card:active {
   transform: scale(0.99);
 }
 .filter-btn {
-  background-color: #101522;
-  border: 1px solid #1c2438;
+  background-color: #0e131f;
+  border: 1px solid #1a2336;
   color: #94a3b8;
   padding: 7px 16px;
   border-radius: 999px;
@@ -44,13 +44,13 @@ body {
   white-space: nowrap;
 }
 .filter-btn:hover {
-  background-color: #172033;
+  background-color: #161e30;
   color: #ffffff;
   border-color: #2b3956;
 }
 .filter-btn[aria-pressed="true"] {
   background-color: #f8fafc;
-  color: #090c12;
+  color: #080b11;
   border-color: #f8fafc;
   box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
 }
@@ -71,10 +71,10 @@ body {
 </head>
 <body class="min-h-screen flex flex-col antialiased selection:bg-slate-700 selection:text-white">
 
-<header class="border-b border-[#182032] bg-[#090c12]/95 sticky top-0 z-30 backdrop-blur-md">
+<header class="border-b border-[#161e30] bg-[#080b11]/95 sticky top-0 z-30 backdrop-blur-md">
   <div class="max-w-[1920px] mx-auto px-4 sm:px-8 py-3.5 flex flex-wrap items-center justify-between gap-4">
     <div class="flex items-center gap-3">
-      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#1c2438] to-[#0c1018] border border-[#2b3956] flex items-center justify-center shadow-lg">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#1a2336] to-[#0a0e17] border border-[#26344e] flex items-center justify-center shadow-lg">
         <svg class="w-5 h-5 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="10" stroke-opacity="0.3"></circle>
           <path d="M12 2a10 10 0 0 1 10 10"></path>
@@ -98,12 +98,12 @@ body {
 
     <div class="relative flex-1 max-w-xl min-w-[240px]">
       <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500 text-xs"></i>
-      <input id="q" type="search" placeholder="Rechercher une équipe, un joueur, une compétition..." class="w-full rounded-xl bg-[#101522] border border-[#1c2438] pl-9 pr-4 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-slate-400 transition">
+      <input id="q" type="search" placeholder="Rechercher une équipe, un joueur, une compétition..." class="w-full rounded-xl bg-[#0e131f] border border-[#1a2336] pl-9 pr-4 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-slate-400 transition">
     </div>
 
     <div class="flex items-center gap-3">
       <span id="sync" class="text-[11px] text-slate-500 hidden sm:inline">Synchronisation…</span>
-      <button id="rf" class="px-4 py-2 rounded-xl bg-[#151c2d] hover:bg-[#1c253d] active:scale-95 text-white text-xs font-semibold border border-[#26334f] flex items-center gap-2 transition">
+      <button id="rf" class="px-4 py-2 rounded-xl bg-[#141b2b] hover:bg-[#1b2438] active:scale-95 text-white text-xs font-semibold border border-[#243048] flex items-center gap-2 transition">
         <i id="sp" class="fa-solid fa-rotate text-[11px]"></i>
         <span>Actualiser</span>
       </button>
@@ -112,7 +112,7 @@ body {
 </header>
 
 <main class="max-w-[1920px] w-full mx-auto px-4 sm:px-8 py-6 flex-1">
-  <div class="space-y-3 mb-6 pb-5 border-b border-[#182032]">
+  <div class="space-y-3 mb-6 pb-5 border-b border-[#161e30]">
     <div class="flex flex-wrap items-center gap-2" id="gf"></div>
     <div class="flex flex-wrap items-center gap-2" id="tf"></div>
   </div>
@@ -121,15 +121,15 @@ body {
     <section class="lg:col-span-8 xl:col-span-9">
       <div class="flex items-center justify-between mb-4">
         <h2 class="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-2">
-          Flux continu <span id="cnt" class="text-slate-500 lowercase"></span>
+          Flux d'actualité en continu <span id="cnt" class="text-slate-500 lowercase"></span>
         </h2>
       </div>
       <div id="feed" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6"></div>
     </section>
 
     <aside class="lg:col-span-4 xl:col-span-3 space-y-6">
-      <div class="bg-[#101522] border border-[#1c2438] rounded-2xl p-5">
-        <div class="flex items-center justify-between mb-4 border-b border-[#182032] pb-3">
+      <div class="bg-[#0e131f] border border-[#1a2336] rounded-2xl p-5">
+        <div class="flex items-center justify-between mb-4 border-b border-[#161e30] pb-3">
           <h3 class="text-xs font-bold uppercase tracking-wider text-white flex items-center gap-2">
             <i class="fa-solid fa-arrow-right-arrow-left text-amber-400"></i>
             Transferts & Mercato
@@ -139,8 +139,8 @@ body {
         <div id="top" class="space-y-3"></div>
       </div>
 
-      <div class="bg-[#101522] border border-[#1c2438] rounded-2xl p-5">
-        <div class="flex items-center justify-between mb-4 border-b border-[#182032] pb-3">
+      <div class="bg-[#0e131f] border border-[#1a2336] rounded-2xl p-5">
+        <div class="flex items-center justify-between mb-4 border-b border-[#161e30] pb-3">
           <h3 class="text-xs font-bold uppercase tracking-wider text-white flex items-center gap-2">
             <i class="fa-solid fa-trophy text-yellow-400"></i>
             Compétitions en cours
@@ -153,21 +153,22 @@ body {
   </div>
 </main>
 
-<footer class="border-t border-[#182032] py-6 text-center text-xs text-slate-500 mt-auto bg-[#090c12]">
+<footer class="border-t border-[#161e30] py-6 text-center text-xs text-slate-500 mt-auto bg-[#080b11]">
   <div class="max-w-[1920px] mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
     <p>Esport Radar — Agrégation d'actualités esport en temps réel.</p>
-    <p class="text-slate-600">Photographies sous droits de leurs éditeurs et rédactions respectives.</p>
+    <p class="text-slate-600">Photographies sous droits réservés de leurs rédactions et éditeurs respectifs.</p>
   </div>
 </footer>
 
-<div id="modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 hidden bg-black/80 backdrop-blur-md">
-  <div id="modal-card" class="bg-[#101522] border border-[#243049] rounded-2xl w-full max-w-3xl max-h-[92vh] overflow-y-auto shadow-2xl scale-95 opacity-0">
+<!-- MODALE D'ARTICLE COMPLÈTE & DÉROULABLE -->
+<div id="modal" class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 hidden bg-black/85 backdrop-blur-md">
+  <div id="modal-card" class="bg-[#0e131f] border border-[#222d44] rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl scale-95 opacity-0">
     <div id="modal-body"></div>
   </div>
 </div>
 
 <script>
-var DEFAULT_IMG = "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1200&q=80";
+var DEFAULT_IMG = "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80";
 
 var G = {
   lol: { n: "League of Legends", s: "LoL", c: "#d97706" },
@@ -184,7 +185,7 @@ var TYPES = {
   rumor: "Rumeurs mercato",
   tournament: "Tournois & Résultats",
   patch: "Patchs & Équilibrages",
-  news: "Analyses & Déclarations"
+  news: "Analyses & Brèves"
 };
 
 var BD = {
@@ -234,9 +235,9 @@ function card(i, k) {
 
   return '<article class="news-card group flex flex-col justify-between" onclick="openModal(' + k + ')">' +
     '<div>' +
-      '<div class="relative overflow-hidden border-b border-[#1c2438] h-48 bg-[#0c1018]">' +
+      '<div class="relative overflow-hidden border-b border-[#1a2336] h-48 bg-[#0a0e17]">' +
         '<img src="' + esc(imgSrc) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src=\'' + DEFAULT_IMG + '\';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">' +
-        '<div class="absolute inset-0 bg-gradient-to-t from-[#101522] via-transparent to-transparent opacity-90"></div>' +
+        '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent opacity-90"></div>' +
         '<div class="absolute top-3 left-3 flex items-center gap-1.5">' +
           badgeGame(i.game) +
           badgeType(i.category) +
@@ -254,10 +255,10 @@ function card(i, k) {
         '</p>' +
       '</div>' +
     '</div>' +
-    '<div class="p-4 pt-0 flex items-center justify-between text-xs text-slate-500 border-t border-[#182032] pt-3 mt-1">' +
+    '<div class="p-4 pt-0 flex items-center justify-between text-xs text-slate-500 border-t border-[#161e30] pt-3 mt-1">' +
       '<span class="truncate max-w-[170px] font-medium">' + esc(i.source) + '</span>' +
       '<span class="text-slate-400 group-hover:text-white font-semibold text-[11px] flex items-center gap-1 transition-colors">' +
-        'Détails <i class="fa-solid fa-chevron-right text-[9px]"></i>' +
+        'Lire l&#39;article <i class="fa-solid fa-chevron-right text-[9px]"></i>' +
       '</span>' +
     '</div>' +
   '</article>';
@@ -272,42 +273,59 @@ function openModal(index) {
   var imgSrc = item.image || DEFAULT_IMG;
 
   var paragraphs = (item.content || "").split("\n\n").map(function(p) {
-    return '<p class="text-slate-300 text-sm leading-relaxed mb-3.5">' + esc(p) + '</p>';
+    return '<p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">' + esc(p) + '</p>';
   }).join("");
 
+  var highlightsHtml = "";
+  if (Array.isArray(item.highlights) && item.highlights.length) {
+    highlightsHtml = '<div class="bg-[#141b2b] border border-[#222d44] rounded-xl p-4 sm:p-5 mb-6">' +
+      '<div class="text-xs font-bold uppercase tracking-wider text-cyan-400 mb-2 flex items-center gap-2">' +
+        '<i class="fa-solid fa-bolt text-xs"></i> L&#39;essentiel en un clin d&#39;œil' +
+      '</div>' +
+      '<ul class="space-y-1.5 text-xs sm:text-sm text-slate-200">' +
+        item.highlights.map(function(h) {
+          return '<li class="flex items-start gap-2"><span class="text-cyan-400 font-bold">•</span><span>' + esc(h) + '</span></li>';
+        }).join("") +
+      '</ul>' +
+    '</div>';
+  }
+
   $("modal-body").innerHTML =
-    '<div class="relative w-full h-72 sm:h-80 overflow-hidden bg-[#0c1018]">' +
-      '<img src="' + esc(imgSrc) + '" alt="" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src=\'' + DEFAULT_IMG + '\';" class="w-full h-full object-cover">' +
-      '<div class="absolute inset-0 bg-gradient-to-t from-[#101522] via-[#101522]/40 to-transparent"></div>' +
-      '<button onclick="closeModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/75 hover:bg-black text-white flex items-center justify-center transition backdrop-blur-sm">' +
-        '<i class="fa-solid fa-xmark text-sm"></i>' +
-      '</button>' +
-      '<div class="absolute bottom-4 left-6 right-6 flex items-center gap-2">' +
+    '<div class="sticky top-0 z-20 bg-[#0e131f]/90 backdrop-blur-md border-b border-[#1a2336] px-6 py-3.5 flex items-center justify-between">' +
+      '<div class="flex items-center gap-2">' +
         badgeGame(item.game) +
         badgeType(item.category) +
-        '<span class="text-xs text-slate-300 ml-auto bg-black/60 px-2.5 py-1 rounded-md backdrop-blur-sm border border-white/10">' +
-          '<i class="fa-regular fa-clock mr-1 text-cyan-400"></i>' + esc(when(item.published)) +
-        '</span>' +
+        '<span class="text-xs text-slate-400 ml-2 hidden sm:inline"><i class="fa-regular fa-clock mr-1 text-slate-500"></i>Lecture 3 min</span>' +
       '</div>' +
+      '<button onclick="closeModal()" class="w-8 h-8 rounded-lg bg-[#141b2b] hover:bg-[#1f2940] text-slate-300 hover:text-white flex items-center justify-center transition">' +
+        '<i class="fa-solid fa-xmark text-sm"></i>' +
+      '</button>' +
     '</div>' +
-    '<div class="p-6 sm:p-8 space-y-5">' +
+    '<div class="relative w-full h-72 sm:h-96 overflow-hidden bg-[#0a0e17]">' +
+      '<img src="' + esc(imgSrc) + '" alt="" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src=\'' + DEFAULT_IMG + '\';" class="w-full h-full object-cover">' +
+      '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent"></div>' +
+    '</div>' +
+    '<div class="p-6 sm:p-10 space-y-6 -mt-10 relative z-10">' +
       '<div>' +
-        '<h2 class="text-xl sm:text-2xl font-black text-white leading-tight mb-2.5">' + esc(item.title) + '</h2>' +
-        '<div class="flex items-center gap-3 text-xs text-slate-400 border-b border-[#1c2438] pb-4">' +
-          '<span>Source : <strong class="text-slate-200">' + esc(item.source) + '</strong></span>' +
+        '<h2 class="text-2xl sm:text-3xl font-extrabold text-white leading-tight mb-3">' + esc(item.title) + '</h2>' +
+        '<div class="flex flex-wrap items-center gap-3 text-xs text-slate-400 border-b border-[#1a2336] pb-4">' +
+          '<span>Par la rédaction de <strong class="text-white">' + esc(item.source) + '</strong></span>' +
           '<span>•</span>' +
-          '<span>Discipline : <strong class="text-slate-200">' + esc(g.n) + '</strong></span>' +
+          '<span>Publié ' + esc(when(item.published)) + '</span>' +
+          '<span>•</span>' +
+          '<span>Discipline : <strong class="text-white">' + esc(g.n) + '</strong></span>' +
         '</div>' +
       '</div>' +
-      '<div class="prose prose-invert max-w-none">' +
+      highlightsHtml +
+      '<div class="prose prose-invert max-w-none text-slate-300">' +
         paragraphs +
       '</div>' +
-      '<div class="pt-5 border-t border-[#1c2438] flex flex-wrap items-center justify-between gap-4">' +
-        '<button onclick="closeModal()" class="px-5 py-2.5 rounded-xl border border-[#2b3956] text-xs font-semibold text-slate-300 hover:bg-[#172033] transition">' +
-          'Retour au flux' +
+      '<div class="pt-6 border-t border-[#1a2336] flex flex-wrap items-center justify-between gap-4 mt-8">' +
+        '<button onclick="closeModal()" class="px-5 py-2.5 rounded-xl border border-[#243048] text-xs font-semibold text-slate-300 hover:bg-[#141b2b] transition">' +
+          '← Retour au flux' +
         '</button>' +
         '<a href="' + esc(item.url) + '" target="_blank" rel="noopener noreferrer" class="px-6 py-2.5 rounded-xl bg-white text-slate-950 font-bold text-xs hover:bg-slate-200 active:scale-95 transition flex items-center gap-2 shadow-lg shadow-white/10">' +
-          'Lire l&#39;article original sur ' + esc(item.source) + ' <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>' +
+          'Consulter l&#39;article original sur ' + esc(item.source) + ' <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>' +
         '</a>' +
       '</div>' +
     '</div>';
@@ -336,7 +354,7 @@ function side() {
   $("top").innerHTML = mv.length ? mv.map(function(i) {
     var isRumor = i.category === "rumor";
     var tag = isRumor ? '<span class="text-amber-400 font-bold text-[10px]">RUMEUR</span>' : '<span class="text-emerald-400 font-bold text-[10px]">OFFICIEL</span>';
-    return '<a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="block p-3 rounded-xl bg-[#0c1018] hover:bg-[#161d2b] border border-[#182032] transition">' +
+    return '<a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="block p-3 rounded-xl bg-[#0a0e17] hover:bg-[#141b2b] border border-[#161e30] transition">' +
       '<div class="flex items-center justify-between mb-1.5">' + tag + badgeGame(i.game) + '</div>' +
       '<div class="text-xs font-semibold text-slate-200 line-clamp-2 leading-snug">' + esc(i.title) + '</div>' +
       '<div class="text-[10px] text-slate-500 mt-1.5 flex items-center justify-between">' +
@@ -348,7 +366,7 @@ function side() {
 
   var ch = S.items.filter(function(i) { return i.category === "tournament"; }).slice(0, 4);
   $("nx").innerHTML = ch.length ? ch.map(function(i) {
-    return '<a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="block p-3 rounded-xl bg-[#0c1018] hover:bg-[#161d2b] border border-[#182032] transition">' +
+    return '<a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="block p-3 rounded-xl bg-[#0a0e17] hover:bg-[#141b2b] border border-[#161e30] transition">' +
       '<div class="flex items-center justify-between mb-1.5">' +
         '<span class="text-yellow-400 font-bold text-[10px]"><i class="fa-solid fa-trophy mr-1"></i>TOURNOI</span>' +
         badgeGame(i.game) +
@@ -378,7 +396,7 @@ function render() {
   if (v.length) {
     $("feed").innerHTML = v.map(card).join("");
   } else {
-    $("feed").innerHTML = '<div class="col-span-full py-20 text-center text-slate-500 border border-dashed border-[#1c2438] rounded-2xl">' +
+    $("feed").innerHTML = '<div class="col-span-full py-20 text-center text-slate-500 border border-dashed border-[#1a2336] rounded-2xl">' +
       '<i class="fa-regular fa-folder-open text-3xl mb-2 block text-slate-600"></i>' +
       '<p class="text-sm font-semibold text-slate-400">Aucun article ne correspond aux filtres</p>' +
     '</div>';
