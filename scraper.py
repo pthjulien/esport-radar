@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Esport Radar Scraper — Tri Strict & Vraies Photos
-- 9 disciplines esport exclusives (LoL, Valorant, CS2, Fortnite, CoD, RL, R6, Apex, EA FC)
-- Rejet automatique de tout article sans vraie photo de presse
-- Rejet automatique de tout article hors-sujet
-- Cumul d'historique sur 14 jours pour garantir un volume de 50+ articles
+"""Esport Radar Scraper 10.0
+- Rejet strict des articles multi-jeux (ex: LoL + FC 27 + Mario Kart) et tournois amateurs
+- Règle 100% visuel : vraie photo de presse OU logo officiel d'équipe/tournoi
+- Si aucune image/logo n'existe : article supprimé (0 carte texte)
+- Cumul d'historique propre sur 14 jours
 """
 import html
 import json
@@ -16,13 +16,13 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 OUT_FILE = Path(__file__).resolve().parent / "data.json"
-MAX_ITEMS = 120
+MAX_ITEMS = 100
 MAX_AGE_DAYS = 14
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
 
-# Flux spécialisés fournissant les photos officielles de presse
+# Flux spécialisés fournissant du contenu esport vérifié
 FEEDS = [
-    # E.SPORT.FR (Flux général + catégories dédiées)
+    # E.SPORT.FR (Général + Catégories dédiées)
     ("https://e.sport.fr/feed/", "E.SPORT.FR", None),
     ("https://e.sport.fr/category/league-of-legends/feed/", "E.SPORT.FR", "lol"),
     ("https://e.sport.fr/category/valorant/feed/", "E.SPORT.FR", "val"),
@@ -32,7 +32,7 @@ FEEDS = [
     ("https://e.sport.fr/category/rocket-league/feed/", "E.SPORT.FR", "rl"),
     ("https://e.sport.fr/category/apex-legends/feed/", "E.SPORT.FR", "apex"),
     
-    # Médias spécialisés complémentaires avec photos HD
+    # Médias spécialisés complémentaires
     ("https://www.dexerto.fr/feed/esport/", "Dexerto FR", None),
     ("https://charlieintel.com/feed/", "Charlie INTEL", "cod"),
     ("https://dotesports.com/feed", "Dot Esports", None),
@@ -40,7 +40,7 @@ FEEDS = [
     ("https://www.jeuxvideo.com/rss/rss-esport.xml", "JV Esport", None),
 ]
 
-# Règles strictes par discipline : chaque jeu a son vocabulaire exclusif
+# Règles strictes par discipline
 GAME_RULES = {
     "lol": re.compile(
         r"league of legends|\blol\b|\blec\b|\blfl\b|\blck\b|\blpl\b|\blcs\b|"
@@ -85,12 +85,65 @@ GAME_RULES = {
     )
 }
 
-# Sujets à éliminer d'office (non-esport, promotions, guides)
-BAN_KEYWORDS = re.compile(
-    r"code promo|bon plan|soldes|forfait mobile|série tv|film netflix|anime|manga|"
-    r"carte graphique|processeur|setup|guide d'achat|gta 6|playstation 5|xbox series",
+# Liste noire des tournois amateurs, salons locaux et fêtes municipales
+AMATEUR_LOCAL_BAN = re.compile(
+    r"bussy|saint-georges|amateurs? de gaming|amateurs? d'esport|week-end dédié aux jeux|"
+    r"salon du jeu|fête du jeu|médiathèque|mjc|centre culturel|tournoi amateur|lan amateur|"
+    r"mairie de|en seine-et-marne|en gironde|en bretagne|gaming amateur|sportmag|actu\.fr",
     re.I
 )
+
+# Logos officiels pour les articles sans photo de presse directe
+OFFICIAL_LOGOS = [
+    # Compétitions majeures
+    ("vct", re.compile(r"\bvct\b|valorant champions", re.I), {
+        "title": "VALORANT Champions Tour", "tag": "VCT", "color": "#ff4655", "bg": "#1f0910"
+    }),
+    ("worlds", re.compile(r"\bworlds\b|world championship", re.I), {
+        "title": "LoL World Championship", "tag": "WORLDS", "color": "#c89b3c", "bg": "#1c1404"
+    }),
+    ("lec", re.compile(r"\blec\b", re.I), {
+        "title": "League of Legends EMEA", "tag": "LEC", "color": "#00c8c8", "bg": "#031c1c"
+    }),
+    ("lfl", re.compile(r"\blfl\b", re.I), {
+        "title": "Ligue Française de LoL", "tag": "LFL", "color": "#3b82f6", "bg": "#071630"
+    }),
+    ("cs2_major", re.compile(r"major|iem katowice|iem cologne|blast premier", re.I), {
+        "title": "Counter-Strike 2 Major", "tag": "CS2 MAJOR", "color": "#f59e0b", "bg": "#211404"
+    }),
+    ("fncs", re.compile(r"\bfncs\b", re.I), {
+        "title": "Fortnite Champion Series", "tag": "FNCS", "color": "#a855f7", "bg": "#1c072e"
+    }),
+    ("cdl", re.compile(r"\bcdl\b|call of duty league", re.I), {
+        "title": "Call of Duty League", "tag": "CDL", "color": "#84cc16", "bg": "#121f03"
+    }),
+    ("rlcs", re.compile(r"\brlcs\b", re.I), {
+        "title": "Rocket League Championship Series", "tag": "RLCS", "color": "#0ea5e9", "bg": "#041829"
+    }),
+    
+    # Équipes et structures officielles
+    ("kc", re.compile(r"karmine corp|\bkarmine\b|\bkcorp\b|\bkc\b", re.I), {
+        "title": "Karmine Corp", "tag": "KC", "color": "#38bdf8", "bg": "#05182e"
+    }),
+    ("vit", re.compile(r"vitality|team vitality|\bvit\b", re.I), {
+        "title": "Team Vitality", "tag": "VIT", "color": "#facc15", "bg": "#261f03"
+    }),
+    ("m8", re.compile(r"gentle mates|\bm8\b", re.I), {
+        "title": "Gentle Mates", "tag": "M8", "color": "#f472b6", "bg": "#26061c"
+    }),
+    ("sly", re.compile(r"\bsolary\b|\bsly\b", re.I), {
+        "title": "Solary", "tag": "SLY", "color": "#fb923c", "bg": "#261103"
+    }),
+    ("t1", re.compile(r"\bt1\b|\bfaker\b", re.I), {
+        "title": "T1 Esports", "tag": "T1", "color": "#e11d48", "bg": "#26050e"
+    }),
+    ("g2", re.compile(r"\bg2 esports\b|\bg2\b", re.I), {
+        "title": "G2 Esports", "tag": "G2", "color": "#ef4444", "bg": "#240606"
+    }),
+    ("fnc", re.compile(r"\bfnatic\b|\bfnc\b", re.I), {
+        "title": "Fnatic", "tag": "FNC", "color": "#fb923c", "bg": "#261003"
+    }),
+]
 
 def clean_text(raw_html: str) -> str:
     text = re.sub(r'<(script|style)[^>]*>.*?</\1>', '', raw_html or "", flags=re.DOTALL | re.IGNORECASE)
@@ -98,32 +151,39 @@ def clean_text(raw_html: str) -> str:
     text = html.unescape(text)
     return re.sub(r'\s+', ' ', text).strip()
 
-def detect_game_strict(title: str, text_zone: str, feed_hint: str = None):
-    """Détecte le jeu avec certitude. Retourne None si hors-sujet."""
-    if BAN_KEYWORDS.search(title):
+def detect_single_game(title: str, text_zone: str, feed_hint: str = None):
+    """
+    Règle anti multi-jeux :
+    Si l'article mentionne 2 jeux ou plus dans son titre, il est supprimé.
+    """
+    if AMATEUR_LOCAL_BAN.search(title + " " + text_zone[:200]):
         return None
 
-    scores = {k: 0 for k in GAME_RULES}
-
-    # 1. Analyse prioritaire du titre (+10 pts)
-    for k, rx in GAME_RULES.items():
+    # Comptage des jeux distincts mentionnés dans le titre
+    matched_games_in_title = []
+    for game_key, rx in GAME_RULES.items():
         if rx.search(title):
-            scores[k] += 10
+            matched_games_in_title.append(game_key)
 
-    # 2. Analyse du début de description (+3 pts)
-    for k, rx in GAME_RULES.items():
+    # Si 2 jeux ou plus sont dans le titre (ex: LoL, FC 27, Mario Kart) -> POUBELLE
+    if len(matched_games_in_title) > 1:
+        # Exception uniquement pour la Coupe du Monde des clubs (EWC)
+        if not re.search(r"esports world cup|\bewc\b", title, re.I):
+            return None
+
+    # Si un jeu unique est trouvé dans le titre, c'est le bon
+    if len(matched_games_in_title) == 1:
+        return matched_games_in_title[0]
+
+    # Sinon, analyse du flux dédié ou du début de texte
+    if feed_hint and feed_hint in GAME_RULES:
+        return feed_hint
+
+    for game_key, rx in GAME_RULES.items():
         if rx.search(text_zone[:250]):
-            scores[k] += 3
+            return game_key
 
-    # 3. Indice du flux dédié (+4 pts si aucun conflit)
-    if feed_hint and feed_hint in scores:
-        scores[feed_hint] += 4
-
-    best = max(scores, key=scores.get)
-    # Si le score est nul, l'article n'appartient à aucun de nos jeux esport -> on l'élimine
-    if scores[best] <= 0:
-        return None
-    return best
+    return None
 
 def detect_category(text: str) -> str:
     if re.search(r"rumou?rs?|rumeurs?|leak|fuite|selon|serait|pourrait|aurait|piste|courtise", text, re.I):
@@ -136,23 +196,20 @@ def detect_category(text: str) -> str:
         return "patch"
     return "news"
 
-def extract_real_press_image(item, raw_item_xml: str) -> str:
-    """Extrait uniquement les vraies photos de presse en haute définition."""
-    # 1. Enclosure
+def extract_press_photo(item, raw_xml: str) -> str:
+    """Extrait la vraie photo de presse haute définition."""
     enc = item.find("enclosure")
     if enc is not None and enc.get("url"):
         u = enc.get("url").strip()
         if re.search(r"\.(jpe?g|png|webp|avif)", u, re.I):
             return u.replace("http://", "https://")
 
-    # 2. Media content / thumbnail
     for elem in item.iter():
         if elem.tag.endswith(("content", "thumbnail")):
             u = elem.get("url", "").strip()
             if u and re.search(r"\.(jpe?g|png|webp|avif)", u, re.I):
                 return u.replace("http://", "https://")
 
-    # 3. Première balise <img> dans le corps d'article
     for tag in ["{http://purl.org/rss/1.0/modules/content/}encoded", "description"]:
         body = item.findtext(tag) or ""
         m = re.search(r'<img[^>]+src=["\']([^"\']+\.(?:jpe?g|png|webp|avif)[^"\']*)["\']', body, re.I)
@@ -162,8 +219,7 @@ def extract_real_press_image(item, raw_item_xml: str) -> str:
             if not any(x in low for x in ["avatar", "logo", "icon", "emoji", "pixel", "tracking"]):
                 return img
 
-    # 4. Scan du bloc XML
-    matches = re.findall(r'https?://[^\s"\'><]+\.(?:jpe?g|png|webp|avif)[^\s"\'><]*', raw_item_xml, re.I)
+    matches = re.findall(r'https?://[^\s"\'><]+\.(?:jpe?g|png|webp|avif)[^\s"\'><]*', raw_xml, re.I)
     for m in matches:
         low = m.lower()
         if not any(x in low for x in ["avatar", "logo", "icon", "emoji", "pixel", "tracking", "unsplash", "wikimedia"]):
@@ -171,8 +227,17 @@ def extract_real_press_image(item, raw_item_xml: str) -> str:
 
     return ""
 
+def find_official_logo(title: str, text_zone: str):
+    """Trouve un logo de compétition ou d'équipe officiel."""
+    for _, rx, data in OFFICIAL_LOGOS:
+        if rx.search(title):
+            return data
+    for _, rx, data in OFFICIAL_LOGOS:
+        if rx.search(text_zone[:200]):
+            return data
+    return None
+
 def extract_article_body(item, title: str) -> list:
-    """Extrait les vrais paragraphes journalistiques écrits par la rédaction."""
     raw_content = item.findtext("{http://purl.org/rss/1.0/modules/content/}encoded") or ""
     raw_desc = item.findtext("description") or ""
 
@@ -206,16 +271,16 @@ def main() -> int:
     seen_at = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     cutoff = (now - timedelta(days=MAX_AGE_DAYS)).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    # 1. Récupération de l'historique valide existant (pour cumuler et conserver du volume)
+    # Lecture de l'historique
     existing = {}
     if OUT_FILE.exists():
         try:
             d = json.loads(OUT_FILE.read_text(encoding="utf-8"))
             if isinstance(d, list):
                 for a in d:
-                    if isinstance(a, dict) and a.get("title") and a.get("image") and a.get("published", "") >= cutoff:
-                        # On ne garde que les articles avec une vraie image (pas d'unsplash/wikimedia)
-                        if "unsplash" not in a["image"] and "wikimedia" not in a["image"]:
+                    if isinstance(a, dict) and a.get("title") and a.get("published", "") >= cutoff:
+                        # Si l'article avait une photo ou un logo valide, on le garde
+                        if (a.get("image") and "unsplash" not in a["image"]) or a.get("logo"):
                             k = a["title"].strip().lower()
                             existing[k] = a
         except Exception:
@@ -223,7 +288,6 @@ def main() -> int:
 
     collected = []
 
-    # 2. Moissonnage de tous les flux
     for url, src_name, hint in FEEDS:
         try:
             req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/xml, text/xml"})
@@ -244,14 +308,19 @@ def main() -> int:
             except Exception:
                 item_xml_str = ""
 
-            # FILTRE 1 : L'article DOIT avoir une vraie photo de presse
-            img = extract_real_press_image(it, item_xml_str)
-            if not img:
+            # FILTRE 1 : Détection stricte d'un jeu unique (élimine les multi-jeux type Bussy)
+            game = detect_single_game(title, item_xml_str, hint)
+            if not game:
                 continue
 
-            # FILTRE 2 : L'article DOIT correspondre strictement à l'un de nos jeux
-            game = detect_game_strict(title, item_xml_str, hint)
-            if not game:
+            # FILTRE 2 : Photo de presse OU Logo officiel (si aucun des deux -> SUPPRIMÉ)
+            photo_url = extract_press_photo(it, item_xml_str)
+            logo_info = None
+            if not photo_url:
+                logo_info = find_official_logo(title, item_xml_str)
+
+            # RÈGLE D'OR : Pas de photo ET pas de logo = ON NE PREND PAS
+            if not photo_url and not logo_info:
                 continue
 
             cat = detect_category(title + " " + item_xml_str)
@@ -269,18 +338,18 @@ def main() -> int:
                 "published": pub,
                 "game": game,
                 "category": cat,
-                "image": img,
+                "image": photo_url,
+                "logo": logo_info,
                 "content": "\n\n".join(paragraphs[:6]),
                 "first_seen": existing.get(k, {}).get("first_seen", seen_at)
             })
 
-    # 3. Fusion des nouveaux articles avec l'historique
+    # Fusion avec l'historique
     merged = {**existing}
     for item in collected:
         k = item["title"].lower().strip()
         merged[k] = item
 
-    # 4. Tri chronologique
     sorted_items = sorted(
         merged.values(),
         key=lambda x: x.get("published", ""),
@@ -289,7 +358,10 @@ def main() -> int:
 
     final = sorted_items[:MAX_ITEMS]
     OUT_FILE.write_text(json.dumps(final, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    print(f"Extraction terminée : {len(final)} articles réels avec vraies photos et jeux validés.")
+    
+    n_photos = sum(1 for x in final if x.get("image"))
+    n_logos = sum(1 for x in final if not x.get("image") and x.get("logo"))
+    print(f"Terminé : {len(final)} articles enregistrés ({n_photos} photos réelles + {n_logos} logos officiels. 0 carte texte).")
     return 0
 
 if __name__ == "__main__":
