@@ -162,20 +162,21 @@ body {
 
 <!-- MODALE D'ARTICLE COMPLÈTE & DÉROULABLE -->
 <div id="modal" class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 hidden bg-black/85 backdrop-blur-md">
-  <div id="modal-card" class="bg-[#0e131f] border border-[#222d44] rounded-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto shadow-2xl scale-95 opacity-0">
+  <div id="modal-card" class="bg-[#0e131f] border border-[#222d44] rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl scale-95 opacity-0">
     <div id="modal-body"></div>
   </div>
 </div>
 
 <script>
-var DEFAULT_IMG = "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=1200&q=80";
-
 var G = {
   lol: { n: "League of Legends", s: "LoL", c: "#d97706" },
   val: { n: "Valorant", s: "Valorant", c: "#ef4444" },
   cs2: { n: "Counter-Strike 2", s: "CS2", c: "#f59e0b" },
+  fortnite: { n: "Fortnite", s: "Fortnite", c: "#a855f7" },
+  cod: { n: "Call of Duty", s: "CoD", c: "#84cc16" },
+  apex: { n: "Apex Legends", s: "Apex", c: "#ea580c" },
   rl: { n: "Rocket League", s: "Rocket League", c: "#0284c7" },
-  dota: { n: "Dota 2", s: "Dota 2", c: "#8b5cf6" },
+  dota: { n: "Dota 2", s: "Dota 2", c: "#6366f1" },
   other: { n: "Général", s: "Esport", c: "#64748b" }
 };
 
@@ -230,13 +231,12 @@ function badgeType(ty) {
 }
 
 function card(i, k) {
-  var imgSrc = i.image || DEFAULT_IMG;
   var previewText = i.content ? i.content.split("\n\n")[0] : "";
 
   return '<article class="news-card group flex flex-col justify-between" onclick="openModal(' + k + ')">' +
     '<div>' +
       '<div class="relative overflow-hidden border-b border-[#1a2336] h-48 bg-[#0a0e17]">' +
-        '<img src="' + esc(imgSrc) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src=\'' + DEFAULT_IMG + '\';" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">' +
+        '<img src="' + esc(i.image) + '" alt="" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">' +
         '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent opacity-90"></div>' +
         '<div class="absolute top-3 left-3 flex items-center gap-1.5">' +
           badgeGame(i.game) +
@@ -270,39 +270,23 @@ function openModal(index) {
   if (!item) return;
 
   var g = G[item.game] || G.other;
-  var imgSrc = item.image || DEFAULT_IMG;
-
-  var paragraphs = (item.content || "").split("\n\n").map(function(p) {
+  var paragraphs = (item.content || "").split("\n\n").filter(function(p) { return p.trim().length > 0; }).map(function(p) {
     return '<p class="text-slate-300 text-sm sm:text-base leading-relaxed mb-4">' + esc(p) + '</p>';
   }).join("");
-
-  var highlightsHtml = "";
-  if (Array.isArray(item.highlights) && item.highlights.length) {
-    highlightsHtml = '<div class="bg-[#141b2b] border border-[#222d44] rounded-xl p-4 sm:p-5 mb-6">' +
-      '<div class="text-xs font-bold uppercase tracking-wider text-cyan-400 mb-2 flex items-center gap-2">' +
-        '<i class="fa-solid fa-bolt text-xs"></i> L&#39;essentiel en un clin d&#39;œil' +
-      '</div>' +
-      '<ul class="space-y-1.5 text-xs sm:text-sm text-slate-200">' +
-        item.highlights.map(function(h) {
-          return '<li class="flex items-start gap-2"><span class="text-cyan-400 font-bold">•</span><span>' + esc(h) + '</span></li>';
-        }).join("") +
-      '</ul>' +
-    '</div>';
-  }
 
   $("modal-body").innerHTML =
     '<div class="sticky top-0 z-20 bg-[#0e131f]/90 backdrop-blur-md border-b border-[#1a2336] px-6 py-3.5 flex items-center justify-between">' +
       '<div class="flex items-center gap-2">' +
         badgeGame(item.game) +
         badgeType(item.category) +
-        '<span class="text-xs text-slate-400 ml-2 hidden sm:inline"><i class="fa-regular fa-clock mr-1 text-slate-500"></i>Lecture 3 min</span>' +
+        '<span class="text-xs text-slate-400 ml-2 hidden sm:inline"><i class="fa-regular fa-clock mr-1 text-slate-500"></i>Lecture 2 min</span>' +
       '</div>' +
       '<button onclick="closeModal()" class="w-8 h-8 rounded-lg bg-[#141b2b] hover:bg-[#1f2940] text-slate-300 hover:text-white flex items-center justify-center transition">' +
         '<i class="fa-solid fa-xmark text-sm"></i>' +
       '</button>' +
     '</div>' +
     '<div class="relative w-full h-72 sm:h-96 overflow-hidden bg-[#0a0e17]">' +
-      '<img src="' + esc(imgSrc) + '" alt="" referrerpolicy="no-referrer" onerror="this.onerror=null;this.src=\'' + DEFAULT_IMG + '\';" class="w-full h-full object-cover">' +
+      '<img src="' + esc(item.image) + '" alt="" referrerpolicy="no-referrer" class="w-full h-full object-cover">' +
       '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent"></div>' +
     '</div>' +
     '<div class="p-6 sm:p-10 space-y-6 -mt-10 relative z-10">' +
@@ -316,9 +300,8 @@ function openModal(index) {
           '<span>Discipline : <strong class="text-white">' + esc(g.n) + '</strong></span>' +
         '</div>' +
       '</div>' +
-      highlightsHtml +
       '<div class="prose prose-invert max-w-none text-slate-300">' +
-        paragraphs +
+        (paragraphs || '<p class="text-slate-400 text-sm">Découvrez l&#39;intégralité de ce reportage et les déclarations officielles sur le site de la rédaction.</p>') +
       '</div>' +
       '<div class="pt-6 border-t border-[#1a2336] flex flex-wrap items-center justify-between gap-4 mt-8">' +
         '<button onclick="closeModal()" class="px-5 py-2.5 rounded-xl border border-[#243048] text-xs font-semibold text-slate-300 hover:bg-[#141b2b] transition">' +
