@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Esport Radar — Le fil d'info compétitif</title>
+<title>Esport Radar — Fil d'actualité compétitif</title>
 <script src="https://cdn.tailwindcss.com/3.4.17"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -12,46 +12,50 @@
 <style>
 body {
   font-family: "Plus Jakarta Sans", system-ui, sans-serif;
-  background-color: #0b0e14;
+  background-color: #090c12;
   color: #e2e8f0;
 }
+
 .news-card {
-  background-color: #121722;
-  border: 1px solid #1e2638;
-  border-radius: 12px;
+  background-color: #101522;
+  border: 1px solid #1c2438;
+  border-radius: 14px;
   overflow: hidden;
-  transition: all 0.2s ease;
+  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
 }
 .news-card:hover {
-  transform: translateY(-3px);
-  border-color: #3b4764;
-  box-shadow: 0 10px 25px -10px rgba(0, 0, 0, 0.5);
+  transform: translateY(-4px);
+  border-color: #33415e;
+  box-shadow: 0 16px 32px -12px rgba(0, 0, 0, 0.6);
 }
 .news-card:active {
   transform: scale(0.99);
 }
+
 .filter-btn {
-  background-color: #121722;
-  border: 1px solid #1e2638;
+  background-color: #101522;
+  border: 1px solid #1c2438;
   color: #94a3b8;
-  padding: 6px 14px;
-  border-radius: 8px;
+  padding: 7px 16px;
+  border-radius: 999px;
   font-size: 13px;
   font-weight: 600;
   transition: all 0.15s ease;
   white-space: nowrap;
 }
 .filter-btn:hover {
-  background-color: #1b2334;
+  background-color: #172033;
   color: #ffffff;
-  border-color: #2e3b55;
+  border-color: #2b3956;
 }
 .filter-btn[aria-pressed="true"] {
-  background-color: #ffffff;
-  color: #0b0e14;
-  border-color: #ffffff;
+  background-color: #f8fafc;
+  color: #090c12;
+  border-color: #f8fafc;
+  box-shadow: 0 2px 10px rgba(255, 255, 255, 0.2);
 }
+
 .badge {
   display: inline-flex;
   align-items: center;
@@ -59,20 +63,24 @@ body {
   font-weight: 700;
   letter-spacing: 0.05em;
   text-transform: uppercase;
-  padding: 2px 8px;
+  padding: 3px 9px;
   border-radius: 6px;
 }
+
 #modal-card {
-  transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.2s ease;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.25s ease;
 }
 </style>
 </head>
 <body class="min-h-screen flex flex-col antialiased selection:bg-slate-700 selection:text-white">
 
-<header class="border-b border-[#1a2130] bg-[#0b0e14]/95 sticky top-0 z-30 backdrop-blur-md">
+<!-- EN-TÊTE ÉDITORIAL -->
+<header class="border-b border-[#182032] bg-[#090c12]/95 sticky top-0 z-30 backdrop-blur-md">
   <div class="max-w-[1920px] mx-auto px-4 sm:px-8 py-3.5 flex flex-wrap items-center justify-between gap-4">
+    
+    <!-- Logo Vectoriel Radar -->
     <div class="flex items-center gap-3">
-      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#1c2436] to-[#0e131d] border border-[#2b374e] flex items-center justify-center shadow-md">
+      <div class="w-10 h-10 rounded-xl bg-gradient-to-br from-[#1c2438] to-[#0c1018] border border-[#2b3956] flex items-center justify-center shadow-lg">
         <svg class="w-5 h-5 text-cyan-400" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
           <circle cx="12" cy="12" r="10" stroke-opacity="0.3"></circle>
           <path d="M12 2a10 10 0 0 1 10 10"></path>
@@ -85,110 +93,119 @@ body {
       </div>
       <div>
         <div class="flex items-center gap-2">
-          <h1 class="text-lg font-bold tracking-tight text-white">ESPORT RADAR</h1>
+          <h1 class="text-lg font-extrabold tracking-tight text-white">ESPORT RADAR</h1>
           <span class="inline-flex items-center gap-1.5 px-2 py-0.5 rounded text-[10px] font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20">
-            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>DIRECT
+            <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>EN DIRECT
           </span>
         </div>
-        <p class="text-[11px] text-slate-500 font-medium">L'essentiel de l'actualité esport en continu</p>
+        <p class="text-[11px] text-slate-500 font-medium">L'actualité esportive mondiale centralisée</p>
       </div>
     </div>
 
-    <div class="relative flex-1 max-w-lg min-w-[240px]">
+    <!-- Barre de recherche -->
+    <div class="relative flex-1 max-w-xl min-w-[240px]">
       <i class="fa-solid fa-magnifying-glass absolute left-3.5 top-1/2 -translate-y-1/2 text-slate-500 text-xs"></i>
-      <input id="q" type="search" placeholder="Rechercher une équipe, un joueur, un tournoi..." class="w-full rounded-lg bg-[#121722] border border-[#1e2638] pl-9 pr-3 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-slate-400 transition">
+      <input id="q" type="search" placeholder="Rechercher une équipe, un joueur, une compétition..." class="w-full rounded-xl bg-[#101522] border border-[#1c2438] pl-9 pr-4 py-2 text-xs text-white placeholder-slate-500 focus:outline-none focus:border-slate-400 transition">
     </div>
 
+    <!-- Rafraîchissement -->
     <div class="flex items-center gap-3">
-      <span id="sync" class="text-[11px] text-slate-500 hidden sm:inline">Dernière mise à jour : synchronisation…</span>
-      <button id="rf" class="px-3.5 py-2 rounded-lg bg-[#182030] hover:bg-[#202b40] active:scale-95 text-white text-xs font-semibold border border-[#27344e] flex items-center gap-2 transition">
+      <span id="sync" class="text-[11px] text-slate-500 hidden sm:inline">Synchronisation…</span>
+      <button id="rf" class="px-4 py-2 rounded-xl bg-[#151c2d] hover:bg-[#1c253d] active:scale-95 text-white text-xs font-semibold border border-[#26334f] flex items-center gap-2 transition">
         <i id="sp" class="fa-solid fa-rotate text-[11px]"></i>
         <span>Actualiser</span>
       </button>
     </div>
+
   </div>
 </header>
 
+<!-- ZONE PRINCIPALE (OPTIMISÉE 32" ET HAUTE RÉSOLUTION) -->
 <main class="max-w-[1920px] w-full mx-auto px-4 sm:px-8 py-6 flex-1">
-  <div class="space-y-3 mb-6 pb-5 border-b border-[#182030]">
+
+  <!-- FILTRES -->
+  <div class="space-y-3 mb-6 pb-5 border-b border-[#182032]">
     <div class="flex flex-wrap items-center gap-2" id="gf"></div>
     <div class="flex flex-wrap items-center gap-2" id="tf"></div>
   </div>
 
   <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start">
+
+    <!-- COLONNE PRINCIPALE DES ARTICLES -->
     <section class="lg:col-span-8 xl:col-span-9">
       <div class="flex items-center justify-between mb-4">
-        <h2 class="text-sm font-bold uppercase tracking-wider text-slate-400 flex items-center gap-2">
-          Fil des publications <span id="cnt" class="text-xs font-semibold text-slate-500 lowercase"></span>
+        <h2 class="text-xs font-bold uppercase tracking-wider text-slate-400 flex items-center gap-2">
+          Flux continu <span id="cnt" class="text-slate-500 lowercase"></span>
         </h2>
       </div>
-      <div id="feed" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-5"></div>
+
+      <!-- Grille adaptative 1 à 4 colonnes -->
+      <div id="feed" class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 gap-6"></div>
     </section>
 
+    <!-- COLONNE LATÉRALE -->
     <aside class="lg:col-span-4 xl:col-span-3 space-y-6">
-      <div class="bg-[#121722] border border-[#1e2638] rounded-xl p-4">
-        <div class="flex items-center justify-between mb-3 border-b border-[#1c2436] pb-2.5">
+
+      <!-- Mercato -->
+      <div class="bg-[#101522] border border-[#1c2438] rounded-2xl p-5">
+        <div class="flex items-center justify-between mb-4 border-b border-[#182032] pb-3">
           <h3 class="text-xs font-bold uppercase tracking-wider text-white flex items-center gap-2">
             <i class="fa-solid fa-arrow-right-arrow-left text-amber-400"></i>
             Transferts & Mercato
           </h3>
-          <span class="text-[10px] text-slate-500 font-semibold">Récent</span>
+          <span class="text-[10px] text-slate-500 font-semibold uppercase">Officiel & Rumeurs</span>
         </div>
-        <div id="top" class="space-y-2.5"></div>
+        <div id="top" class="space-y-3"></div>
       </div>
 
-      <div class="bg-[#121722] border border-[#1e2638] rounded-xl p-4">
-        <div class="flex items-center justify-between mb-3 border-b border-[#1c2436] pb-2.5">
+      <!-- Tournois -->
+      <div class="bg-[#101522] border border-[#1c2438] rounded-2xl p-5">
+        <div class="flex items-center justify-between mb-4 border-b border-[#182032] pb-3">
           <h3 class="text-xs font-bold uppercase tracking-wider text-white flex items-center gap-2">
             <i class="fa-solid fa-trophy text-yellow-400"></i>
-            Tournois majeurs
+            Compétitions en cours
           </h3>
-          <span class="text-[10px] text-slate-500 font-semibold">Compétitions</span>
+          <span class="text-[10px] text-slate-500 font-semibold uppercase">Majeurs</span>
         </div>
-        <div id="nx" class="space-y-2.5"></div>
+        <div id="nx" class="space-y-3"></div>
       </div>
+
     </aside>
+
   </div>
 </main>
 
-<footer class="border-t border-[#182030] py-6 text-center text-xs text-slate-500 mt-auto bg-[#0b0e14]">
+<footer class="border-t border-[#182032] py-6 text-center text-xs text-slate-500 mt-auto bg-[#090c12]">
   <div class="max-w-[1920px] mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-    <p>Esport Radar — Agrégateur d'actualités compétitives en continu.</p>
-    <p class="text-slate-600">Données et photographies issues des rédactions officielles partenaires.</p>
+    <p>Esport Radar — Système d'agrégation d'actualités esport en temps réel.</p>
+    <p class="text-slate-600">Photographies sous droits de leurs éditeurs et rédactions respectives.</p>
   </div>
 </footer>
 
-<div id="modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 hidden bg-black/75 backdrop-blur-sm">
-  <div id="modal-card" class="bg-[#121722] border border-[#27344e] rounded-xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl scale-95 opacity-0">
+<!-- MODALE D'ARTICLE DÉTAILLÉ AU CLIC -->
+<div id="modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 sm:p-6 hidden bg-black/80 backdrop-blur-md">
+  <div id="modal-card" class="bg-[#101522] border border-[#243049] rounded-2xl w-full max-w-3xl max-h-[92vh] overflow-y-auto shadow-2xl scale-95 opacity-0">
     <div id="modal-body"></div>
   </div>
 </div>
 
 <script>
-window.onerror = function(msg, url, line) {
-  var el = document.getElementById("feed");
-  if (el) {
-    el.innerHTML = '<div class="col-span-full p-6 bg-red-950/40 border border-red-500/50 rounded-xl text-red-200 text-sm"><strong>Erreur JavaScript (ligne ' + line + ') :</strong><br>' + msg + '</div>';
-  }
-  return false;
-};
-
 var G = {
-  lol: { n: "League of Legends", s: "LoL", c: "#d97706", img: "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80" },
-  val: { n: "Valorant", s: "Valorant", c: "#ef4444", img: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" },
-  cs2: { n: "Counter-Strike 2", s: "CS2", c: "#f59e0b", img: "https://images.unsplash.com/photo-1579373903781-fd5c0c30c4cd?auto=format&fit=crop&w=800&q=80" },
-  rl: { n: "Rocket League", s: "Rocket League", c: "#0284c7", img: "https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=800&q=80" },
-  dota: { n: "Dota 2", s: "Dota 2", c: "#8b5cf6", img: "https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=800&q=80" },
-  other: { n: "Général", s: "Esport", c: "#64748b", img: "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80" }
+  lol: { n: "League of Legends", s: "LoL", c: "#d97706" },
+  val: { n: "Valorant", s: "Valorant", c: "#ef4444" },
+  cs2: { n: "Counter-Strike 2", s: "CS2", c: "#f59e0b" },
+  rl: { n: "Rocket League", s: "Rocket League", c: "#0284c7" },
+  dota: { n: "Dota 2", s: "Dota 2", c: "#8b5cf6" },
+  other: { n: "Général", s: "Esport", c: "#64748b" }
 };
 
 var TYPES = {
   all: "Toutes les actualités",
   official: "Transferts officiels",
   rumor: "Rumeurs mercato",
-  tournament: "Tournois",
-  patch: "Patchs",
-  news: "Articles & Brèves"
+  tournament: "Tournois & Résultats",
+  patch: "Patchs & Équilibrages",
+  news: "Analyses & Déclarations"
 };
 
 var BD = {
@@ -232,82 +249,87 @@ function badgeType(ty) {
   return '<span class="badge ' + b[1] + '">' + b[0] + '</span>';
 }
 
+/* CARTE DE FLUX D'ACTUALITÉ */
 function card(i, k) {
-  var g = G[i.game] || G.other;
-  var imgSrc = (i.image && /^https?:\/\//.test(i.image)) ? i.image : g.img;
+  var imgSrc = i.image || "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80";
 
   return '<article class="news-card group flex flex-col justify-between" onclick="openModal(' + k + ')">' +
     '<div>' +
-      '<div class="relative overflow-hidden border-b border-[#1c2436] h-44 bg-[#161c2b]">' +
-        '<img src="' + esc(imgSrc) + '" alt="" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300">' +
-        '<div class="absolute inset-0 bg-gradient-to-t from-[#121722] via-transparent to-transparent opacity-80"></div>' +
-        '<div class="absolute top-2.5 left-2.5 flex items-center gap-1.5">' +
+      '<div class="relative overflow-hidden border-b border-[#1c2438] h-48 bg-slate-900">' +
+        '<img src="' + esc(imgSrc) + '" alt="" loading="lazy" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">' +
+        '<div class="absolute inset-0 bg-gradient-to-t from-[#101522] via-transparent to-transparent opacity-90"></div>' +
+        '<div class="absolute top-3 left-3 flex items-center gap-1.5">' +
           badgeGame(i.game) +
           badgeType(i.category) +
         '</div>' +
-        '<div class="absolute bottom-2 right-2 px-2 py-0.5 rounded bg-black/80 text-[10px] font-semibold text-slate-300 backdrop-blur-sm">' +
+        '<div class="absolute bottom-2.5 right-3 px-2 py-0.5 rounded bg-black/80 text-[10px] font-semibold text-slate-300 backdrop-blur-sm">' +
           esc(when(i.published)) +
         '</div>' +
       '</div>' +
       '<div class="p-4">' +
-        '<h3 class="text-sm font-bold text-white group-hover:text-slate-200 leading-snug line-clamp-3 mb-2">' +
+        '<h3 class="text-sm font-bold text-white group-hover:text-slate-200 leading-snug line-clamp-2 mb-2">' +
           esc(i.title) +
         '</h3>' +
+        '<p class="text-xs text-slate-400 line-clamp-2 leading-relaxed">' +
+          esc(i.content ? i.content.split("\n\n")[0] : "") +
+        '</p>' +
       '</div>' +
     '</div>' +
-    '<div class="p-4 pt-0 flex items-center justify-between text-xs text-slate-500 border-t border-[#182030] pt-2.5 mt-2">' +
-      '<span class="truncate max-w-[180px] font-medium">' + esc(i.source) + '</span>' +
+    '<div class="p-4 pt-0 flex items-center justify-between text-xs text-slate-500 border-t border-[#182032] pt-3 mt-1">' +
+      '<span class="truncate max-w-[170px] font-medium">' + esc(i.source) + '</span>' +
       '<span class="text-slate-400 group-hover:text-white font-semibold text-[11px] flex items-center gap-1 transition-colors">' +
-        'Lire <i class="fa-solid fa-arrow-right text-[9px]"></i>' +
+        'Détails <i class="fa-solid fa-chevron-right text-[9px]"></i>' +
       '</span>' +
     '</div>' +
   '</article>';
 }
 
+/* OUVERTURE DU RÉSUMÉ DÉTAILLÉ */
 function openModal(index) {
   var v = vis();
   var item = v[index];
   if (!item) return;
 
   var g = G[item.game] || G.other;
-  var imgSrc = (item.image && /^https?:\/\//.test(item.image)) ? item.image : g.img;
+  var imgSrc = item.image || "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1200&q=80";
 
-  var contextText = "Consultez l'article complet de la rédaction d'origine pour approfondir l'analyse et découvrir les déclarations officielles.";
-  if (item.category === "official") {
-    contextText = "Cette signature ou prolongation de contrat a été actée par la structure. Les compositions d'équipes sont validées pour les prochaines compétitions.";
-  } else if (item.category === "rumor") {
-    contextText = "Cette annonce constitue une rumeur de transfert ou une indiscrétion de presse en attente d'officialisation par les clubs.";
-  } else if (item.category === "tournament") {
-    contextText = "Couverture des résultats de match, du tableau des playoffs ou du sacre d'équipe sur cette compétition majeure.";
-  }
+  var paragraphs = (item.content || "").split("\n\n").map(function(p) {
+    return '<p class="text-slate-300 text-sm leading-relaxed mb-3">' + esc(p) + '</p>';
+  }).join("");
 
   $("modal-body").innerHTML =
-    '<div class="relative w-full h-64 overflow-hidden border-b border-[#1e2638] bg-slate-900">' +
+    '<div class="relative w-full h-72 sm:h-80 overflow-hidden bg-slate-900">' +
       '<img src="' + esc(imgSrc) + '" alt="" class="w-full h-full object-cover">' +
-      '<div class="absolute inset-0 bg-gradient-to-t from-[#121722] via-transparent to-transparent"></div>' +
-      '<button onclick="closeModal()" class="absolute top-3 right-3 w-8 h-8 rounded-full bg-black/75 hover:bg-black text-white flex items-center justify-center transition">' +
+      '<div class="absolute inset-0 bg-gradient-to-t from-[#101522] via-[#101522]/40 to-transparent"></div>' +
+      '<button onclick="closeModal()" class="absolute top-4 right-4 w-9 h-9 rounded-full bg-black/75 hover:bg-black text-white flex items-center justify-center transition backdrop-blur-sm">' +
         '<i class="fa-solid fa-xmark text-sm"></i>' +
       '</button>' +
-    '</div>' +
-    '<div class="p-6 space-y-4">' +
-      '<div class="flex items-center gap-2">' +
+      '<div class="absolute bottom-4 left-6 right-6 flex items-center gap-2">' +
         badgeGame(item.game) +
         badgeType(item.category) +
-        '<span class="text-xs text-slate-500 ml-auto font-medium">Publié il y a ' + esc(when(item.published)) + '</span>' +
+        '<span class="text-xs text-slate-300 ml-auto bg-black/60 px-2.5 py-1 rounded-md backdrop-blur-sm border border-white/10">' +
+          '<i class="fa-regular fa-clock mr-1 text-cyan-400"></i>' + esc(when(item.published)) +
+        '</span>' +
       '</div>' +
-      '<h2 class="text-xl font-bold text-white leading-snug">' + esc(item.title) + '</h2>' +
-      '<div class="text-xs text-slate-400 flex items-center gap-2 border-b border-[#1c2436] pb-3">' +
-        '<span>Source : <strong class="text-slate-300">' + esc(item.source) + '</strong></span>' +
-        '<span>•</span>' +
-        '<span>Discipline : <strong class="text-slate-300">' + esc(g.n) + '</strong></span>' +
+    '</div>' +
+    '<div class="p-6 sm:p-8 space-y-5">' +
+      '<div>' +
+        '<h2 class="text-xl sm:text-2xl font-black text-white leading-tight mb-2.5">' + esc(item.title) + '</h2>' +
+        '<div class="flex items-center gap-3 text-xs text-slate-400 border-b border-[#1c2438] pb-4">' +
+          '<span>Source : <strong class="text-slate-200">' + esc(item.source) + '</strong></span>' +
+          '<span>•</span>' +
+          '<span>Discipline : <strong class="text-slate-200">' + esc(g.n) + '</strong></span>' +
+        '</div>' +
       '</div>' +
-      '<p class="text-sm text-slate-300 leading-relaxed">' + contextText + '</p>' +
-      '<div class="pt-4 border-t border-[#1c2436] flex items-center justify-between gap-3">' +
-        '<button onclick="closeModal()" class="px-4 py-2 rounded-lg border border-[#27344e] text-xs font-semibold text-slate-300 hover:bg-[#1a2336] transition">' +
-          'Fermer' +
+      '<div class="prose prose-invert max-w-none">' +
+        paragraphs +
+      '</div>' +
+      '<div class="pt-5 border-t border-[#1c2438] flex flex-wrap items-center justify-between gap-4">' +
+        '<button onclick="closeModal()" class="px-5 py-2.5 rounded-xl border border-[#2b3956] text-xs font-semibold text-slate-300 hover:bg-[#172033] transition">' +
+          'Retour au flux' +
         '</button>' +
-        '<a href="' + esc(item.url) + '" target="_blank" rel="noopener noreferrer" class="px-5 py-2 rounded-lg bg-white text-slate-950 font-bold text-xs hover:bg-slate-200 transition flex items-center gap-2">' +
-          'Lire l&#39;article sur ' + esc(item.source) + ' <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>' +
+        '<a href="' + esc(item.url) + '" target="_blank" rel="noopener noreferrer" class="px-6 py-2.5 rounded-xl bg-white text-slate-950 font-bold text-xs hover:bg-slate-200 active:scale-95 transition flex items-center gap-2 shadow-lg shadow-white/10">' +
+          'Lire l&#39;article complet sur ' + esc(item.source) + ' <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>' +
         '</a>' +
       '</div>' +
     '</div>';
@@ -336,10 +358,10 @@ function side() {
   $("top").innerHTML = mv.length ? mv.map(function(i) {
     var isRumor = i.category === "rumor";
     var tag = isRumor ? '<span class="text-amber-400 font-bold text-[10px]">RUMEUR</span>' : '<span class="text-emerald-400 font-bold text-[10px]">OFFICIEL</span>';
-    return '<a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="block p-2.5 rounded-lg bg-[#0e131d] hover:bg-[#161d2c] border border-[#1a2233] transition">' +
-      '<div class="flex items-center justify-between mb-1">' + tag + badgeGame(i.game) + '</div>' +
+    return '<a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="block p-3 rounded-xl bg-[#0c1018] hover:bg-[#161d2b] border border-[#182032] transition">' +
+      '<div class="flex items-center justify-between mb-1.5">' + tag + badgeGame(i.game) + '</div>' +
       '<div class="text-xs font-semibold text-slate-200 line-clamp-2 leading-snug">' + esc(i.title) + '</div>' +
-      '<div class="text-[10px] text-slate-500 mt-1 flex items-center justify-between">' +
+      '<div class="text-[10px] text-slate-500 mt-1.5 flex items-center justify-between">' +
         '<span>' + esc(i.source) + '</span>' +
         '<span>' + esc(when(i.published)) + '</span>' +
       '</div>' +
@@ -348,18 +370,18 @@ function side() {
 
   var ch = S.items.filter(function(i) { return i.category === "tournament"; }).slice(0, 4);
   $("nx").innerHTML = ch.length ? ch.map(function(i) {
-    return '<a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="block p-2.5 rounded-lg bg-[#0e131d] hover:bg-[#161d2c] border border-[#1a2233] transition">' +
-      '<div class="flex items-center justify-between mb-1">' +
+    return '<a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="block p-3 rounded-xl bg-[#0c1018] hover:bg-[#161d2b] border border-[#182032] transition">' +
+      '<div class="flex items-center justify-between mb-1.5">' +
         '<span class="text-yellow-400 font-bold text-[10px]"><i class="fa-solid fa-trophy mr-1"></i>TOURNOI</span>' +
         badgeGame(i.game) +
       '</div>' +
       '<div class="text-xs font-semibold text-slate-200 line-clamp-2 leading-snug">' + esc(i.title) + '</div>' +
-      '<div class="text-[10px] text-slate-500 mt-1 flex items-center justify-between">' +
+      '<div class="text-[10px] text-slate-500 mt-1.5 flex items-center justify-between">' +
         '<span>' + esc(i.source) + '</span>' +
         '<span>' + esc(when(i.published)) + '</span>' +
       '</div>' +
     '</a>';
-  }).join("") : '<p class="text-xs text-slate-500 py-1">Aucun article de tournoi détecté.</p>';
+  }).join("") : '<p class="text-xs text-slate-500 py-1">Aucune actualité de tournoi détectée.</p>';
 }
 
 function vis() {
@@ -378,7 +400,7 @@ function render() {
   if (v.length) {
     $("feed").innerHTML = v.map(card).join("");
   } else {
-    $("feed").innerHTML = '<div class="col-span-full py-16 text-center text-slate-500 border border-dashed border-[#1e2638] rounded-xl">' +
+    $("feed").innerHTML = '<div class="col-span-full py-20 text-center text-slate-500 border border-dashed border-[#1c2438] rounded-2xl">' +
       '<i class="fa-regular fa-folder-open text-3xl mb-2 block text-slate-600"></i>' +
       '<p class="text-sm font-semibold text-slate-400">Aucun article ne correspond aux filtres</p>' +
     '</div>';
@@ -414,10 +436,9 @@ async function loadData() {
     var data = await r.json();
     S.items = Array.isArray(data) ? data : [];
     S.sync = Date.now();
-    $("sync").textContent = "Dernière mise à jour : " + new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
+    $("sync").textContent = "Dernière synchro : " + new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
   } catch (e) {
-    $("sync").textContent = "Erreur de chargement de data.json";
-    $("feed").innerHTML = '<div class="col-span-full p-6 bg-amber-950/40 border border-amber-500/50 rounded-xl text-amber-200 text-sm"><strong>Impossible de lire data.json :</strong> ' + esc(e.message) + '</div>';
+    $("sync").textContent = "Erreur de chargement";
   } finally {
     S.busy = false;
     $("sp").classList.remove("fa-spin");
