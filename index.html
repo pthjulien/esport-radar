@@ -177,17 +177,17 @@ var G = {
 
 var TYPES = {
   all: "Toutes les actualités",
+  tournament: "Tournois & Résultats",
   official: "Transferts officiels",
   rumor: "Rumeurs mercato",
-  tournament: "Tournois & Résultats",
   patch: "Patchs & Mises à jour",
   news: "Autre"
 };
 
 var BD = {
+  tournament: ["TOURNOI", "bg-yellow-500/10 text-yellow-400 border border-yellow-500/30"],
   official: ["OFFICIEL", "bg-emerald-500/10 text-emerald-400 border border-emerald-500/30"],
   rumor: ["RUMEUR", "bg-amber-500/10 text-amber-400 border border-amber-500/30"],
-  tournament: ["TOURNOI", "bg-yellow-500/10 text-yellow-400 border border-yellow-500/30"],
   patch: ["PATCH", "bg-sky-500/10 text-sky-400 border border-sky-500/30"],
   news: ["AUTRE", "bg-slate-700/30 text-slate-300 border border-slate-700"]
 };
@@ -226,50 +226,22 @@ function badgeType(ty) {
   return '<span class="badge ' + b[1] + '">' + b[0] + '</span>';
 }
 
-function renderCardHeader(i) {
-  var g = G[i.game] || G.lol;
-
-  if (i.image) {
-    return '<div class="relative overflow-hidden border-b border-[#1a2336] h-48 bg-[#0a0e17]">' +
-      '<img src="' + esc(i.image) + '" alt="" loading="lazy" onerror="this.style.opacity=\'0\'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">' +
-      '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent opacity-90"></div>' +
-      '<div class="absolute top-3 left-3 flex items-center gap-1.5">' +
-        badgeGame(i.game) +
-        badgeType(i.category) +
-      '</div>' +
-      '<div class="absolute bottom-2.5 right-3 px-2 py-0.5 rounded bg-black/80 text-[10px] font-semibold text-slate-300 backdrop-blur-sm">' +
-        esc(when(i.published)) +
-      '</div>' +
-    '</div>';
-  }
-
-  var l = i.logo || {};
-  // Si le logo échoue, on masque l'élément pour éviter le pictogramme d'image brisée
-  var logoImg = l.icon ? '<img src="' + esc(l.icon) + '" alt="" onerror="this.style.display=\'none\'" class="h-16 w-auto max-w-[120px] object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)] group-hover:scale-110 transition-transform duration-300">' : '';
-
-  return '<div class="relative overflow-hidden border-b border-[#1a2336] h-48 flex flex-col justify-between p-4" style="background: radial-gradient(circle at center, ' + (l.bg || "#141b2b") + ' 0%, #080b11 100%)">' +
-    '<div class="flex items-center justify-between relative z-10">' +
-      '<div class="flex items-center gap-1.5">' +
-        badgeGame(i.game) +
-        badgeType(i.category) +
-      '</div>' +
-      '<div class="px-2 py-0.5 rounded bg-black/60 text-[10px] font-semibold text-slate-300 border border-white/10">' +
-        esc(when(i.published)) +
-      '</div>' +
-    '</div>' +
-    '<div class="relative z-10 flex flex-col items-center justify-center my-auto">' +
-      logoImg +
-      '<span class="text-xs font-extrabold uppercase tracking-wider text-slate-200 mt-2.5 drop-shadow-sm">' + esc(l.title || "") + '</span>' +
-    '</div>' +
-  '</div>';
-}
-
 function card(i, k) {
   var previewText = i.content ? i.content.split("\n\n")[0] : "";
 
   return '<article class="news-card group flex flex-col justify-between" onclick="openModal(' + k + ')">' +
     '<div>' +
-      renderCardHeader(i) +
+      '<div class="relative overflow-hidden border-b border-[#1a2336] h-48 bg-[#0a0e17]">' +
+        '<img src="' + esc(i.image) + '" alt="" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">' +
+        '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent opacity-90"></div>' +
+        '<div class="absolute top-3 left-3 flex items-center gap-1.5">' +
+          badgeGame(i.game) +
+          badgeType(i.category) +
+        '</div>' +
+        '<div class="absolute bottom-2.5 right-3 px-2 py-0.5 rounded bg-black/80 text-[10px] font-semibold text-slate-300 backdrop-blur-sm">' +
+          esc(when(i.published)) +
+        '</div>' +
+      '</div>' +
       '<div class="p-4">' +
         '<h3 class="text-sm font-bold text-white group-hover:text-slate-200 leading-snug line-clamp-2 mb-2">' +
           esc(i.title) +
@@ -296,16 +268,6 @@ function openModal(index) {
     return '<p class="text-slate-200 text-sm sm:text-base leading-relaxed mb-4">' + esc(p) + '</p>';
   }).join("");
 
-  var modalBanner = "";
-  if (item.image) {
-    modalBanner = '<div class="relative w-full h-72 sm:h-96 overflow-hidden bg-[#0a0e17] border-b border-[#1a2336]">' +
-      '<img src="' + esc(item.image) + '" alt="" onerror="this.style.opacity=\'0\'" class="w-full h-full object-cover">' +
-      '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent"></div>' +
-    '</div>';
-  } else {
-    modalBanner = renderCardHeader(item);
-  }
-
   $("modal-body").innerHTML =
     '<div class="sticky top-0 z-20 bg-[#0e131f]/95 backdrop-blur-md border-b border-[#1a2336] px-6 py-3.5 flex items-center justify-between">' +
       '<div class="flex items-center gap-2">' +
@@ -317,7 +279,10 @@ function openModal(index) {
         '<i class="fa-solid fa-xmark text-sm"></i>' +
       '</button>' +
     '</div>' +
-    modalBanner +
+    '<div class="relative w-full h-72 sm:h-96 overflow-hidden bg-[#0a0e17] border-b border-[#1a2336]">' +
+      '<img src="' + esc(item.image) + '" alt="" referrerpolicy="no-referrer" class="w-full h-full object-cover">' +
+      '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent"></div>' +
+    '</div>' +
     '<div class="p-6 sm:p-8 space-y-6">' +
       '<div>' +
         '<h2 class="text-xl sm:text-2xl font-extrabold text-white leading-tight mb-3">' + esc(item.title) + '</h2>' +
@@ -448,7 +413,7 @@ async function loadData() {
     var r = await fetch("./data.json?t=" + Date.now());
     if (!r.ok) throw new Error("Erreur HTTP " + r.status);
     var data = await r.json();
-    S.items = Array.isArray(data) ? data.filter(function(i) { return G[i.game] && (i.image || i.logo); }) : [];
+    S.items = Array.isArray(data) ? data.filter(function(i) { return G[i.game] && i.image; }) : [];
     S.sync = Date.now();
     $("sync").textContent = "Dernière synchro : " + new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
   } catch (e) {
