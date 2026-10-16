@@ -1,5 +1,25 @@
 [
   {
+    "title": "Champions 2026 : 100 Thieves – G2 en direct",
+    "source": "E.SPORT.FR",
+    "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQQTVJZGJqZWNScTQwZEJvYmpLSUZoalhPZ0RVSUJtWlpoazJ6dU9zZl9iYlpwN3hXMDFGNm5ic0pJaEZ2WFR0MkdwenRSLVVZM0J1MG54dDlYVlEtTU1hZGtNempFOGhCd0Q0TElQUS1vTFNfRjJSSElDcTlBaTRINF9kSdIBiAFBVV95cUxQQ3J4amhSM0Fmd0hkVkF3a0swYk5lam1CZ3hkTlpJU2RWeThURHZCYXlET0ttT2NyamgyYUNCY01oWUUxS2h5Znh3NnJUZFg5Z0M2VGNXZmFGMFY3cWcydm1HNVNaZy1xQWVWZnhXa01Vcmc3bGRfUmR4eWZnZWRFRGs2QS0yWkRO?oc=5",
+    "published": "2026-10-16T08:45:00Z",
+    "game": "val",
+    "category": "tournament",
+    "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80",
+    "first_seen": "2026-10-14T10:34:08Z"
+  },
+  {
+    "title": "Worlds 2026 : MVK Esports humilie FURIA et valide son ticket pour le deuxième tour du Play-In",
+    "source": "Team-aAa",
+    "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxOY2IxZGZWYXpyMlpsWmd4QUtqZTNEcUdFZ0diMTBpSDRnN21MWXB6TFJ6ZXJkVDc1eWNfdFVHYjVuUlJ0MVFOZERUQkRIRzRyRTR0cW82d2ROVHBzV283YlMtblZkNU9rdEJhZlo5YXcwQ2hxanVCQXA3bTh5UUJzR0lFazNNa3hwUXJvNkZFT0RuRlNsMlZtaE1RU0ZWTUlJMm9aMFVnalV3SmNSbWtfd3ByVTV1cXMtakxuaDVreEpnYUcyOHdUMXRpVUUwc0NsRXc?oc=5",
+    "published": "2026-10-16T08:37:55Z",
+    "game": "lol",
+    "category": "tournament",
+    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80",
+    "first_seen": "2026-10-16T09:40:35Z"
+  },
+  {
     "title": "Qui est « Caliste », le prodige français de Karmine Corp sur « League of Legends » qui rêve des sommets",
     "source": "Yahoo Actualités",
     "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNMjNCd205VU9LbzJTWXJhdnRPaWFwanpZZVpSRENVZnh4TjV0MWVUUno3LVBhZG9SLXkyNk83UVBTZFlISTQ1aW9JSHhXZHNGTF9CU19kTTVKSXhkdHNVeDM0c1V1UEl6OG9HX19OQkh3T0lod3pRN0E0UGhOWWthVWhsTDB1M1VrV0Qw?oc=5",
@@ -8,6 +28,16 @@
     "category": "news",
     "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80",
     "first_seen": "2026-10-16T08:43:06Z"
+  },
+  {
+    "title": "Qui est « Caliste », le prodige français de Karmine Corp sur « League of Legends » qui rêve des sommets ?",
+    "source": "20 Minutes",
+    "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOc1hselc5V0NjVnEyd2NwRzlKMVFQUDJjc2V6YjZQZUFUQlNJU3J2dUk2TG1UR2N4YkN0RTBoalY5LWE0dGYzdFhqUExPRms1OV9GbTl5QzVyN1YyT3paTEhCRGN4VG5tbGFrbW5rUzUwYi1mUlVURy13bEhwS1RiYzRJU2J0WVBxdkpKa3A3ZHVjN3EwT0JFVDJnNmVodjZHOHZaYV9xV251RS13emtBblBkZW1hbi1admVRVE5jSzJMdzhoMmtF?oc=5",
+    "published": "2026-10-16T08:02:00Z",
+    "game": "lol",
+    "category": "news",
+    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80",
+    "first_seen": "2026-10-16T09:40:35Z"
   },
   {
     "title": "Lire la forme d’une équipe CS2 avant un grand tournoi",
@@ -730,16 +760,6 @@
     "first_seen": "2026-10-14T10:34:08Z"
   },
   {
-    "title": "Esport - League of Legends : La LFL en force aux EMEA Masters Summer : Sports - Orange - Sports",
-    "source": "Sports - Orange",
-    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQS1BnNnNrdW1VTnBxOWlieW90VjBXWDNUS09iaFZSMklrRXQwQVBWb3AteUNralczS0xDaEtfU3NINnRGenRMVkRNQTFKQmk0Qkgza0hBeE5YN2g0Y3hSbzJFWmxzbU1hZjZGaXp3X2ljNWprQlFvUkRadlZhR3pOcUloTmdpMXgwSy0wdmRTUG1TOURyM1ZQRWJEVTBIYzdCeXhXMG5oTmpoeEFQRnRZWFhWQTM5SDFkRkJSbG1YN1IyaXpNWXpEVER1ZVZDM2NzQWI00gHSAUFVX3lxTE50YzFDZVY3TlFORm9PbzRzbVZ4NVVWenJXWW8yb1hERTZrUHBNWmZVeE5jN3ZCNzRya3gtTWJqRXQyaXlmUEF5Tnh1MkItZHQ5ZUtLb0YxcS1lVC1WZWN6NEhyNTdUbWdkVThWN2JZSlZKeHlmcE5GekRqNERSaWRTaEV4c0tIZkp6eVI2MUVCVE10cWE3T3VOMFlEQnVSZHVtXzhKZlk5czlQaEJFUzNidE9RckNnQVlERl9iOEo3c1ZxbEVCSU9GQUFuQlZ4cUFPdw?oc=5",
-    "published": "2026-10-08T13:27:00Z",
-    "game": "lol",
-    "category": "tournament",
-    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80",
-    "first_seen": "2026-10-14T10:34:08Z"
-  },
-  {
     "title": "Champions 2026 : Vitality – NS RedForce en direct",
     "source": "E.SPORT.FR",
     "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQSHh3Uk42dm9Ca2ZsNGpaNU9sSy1pU3JCRlo4Y1Z1SDhFcEpzc3prUUxvUmNaTWN1V0lveXF0alItTWRQTmhjcUFKTGJ5Q29MQjdHQmRGYmE3eHBQZWFpQTdLWGF3VzFzUWd1bVpfdkMzRUxuRjdqcTk2Ry1kdUhMaWFvbGIzby010gGOAUFVX3lxTFAyTU01emF6Xzc0Z2JYT1NLM3h4UXpyV0RlN2d2S0hqakN2M2lQMkpCZGJneGRaenJFVmU4TThjVml3Ujl5RW8xamJScFZpX19wQWVNNFBkdUt1TGZhdFNIalFELWVwaXczZHF3YXdQMlNWTTRjazZPTV93NHZPNXlXS2U1REhrVEJ3c0tNVUE?oc=5",
@@ -780,16 +800,6 @@
     "first_seen": "2026-10-14T10:34:08Z"
   },
   {
-    "title": "Champions 2026 : 100 Thieves – G2 en direct",
-    "source": "E.SPORT.FR",
-    "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQYlNpZC1IRkoyZk9UVm1keVRNSVp3N0VoazY1Nm1lbHBfa3JBT2hxTW56OFV0MjJnQVRUdmEtcUpMZ0hFOG83X1d6bmU2Vk03SjVNR0pxdWU0dTI5Mm5Kek9TTHdraWRFQUdiUkRuXzJEVUYzQzhCUWxpZFZkZ1JhR9IBhgFBVV95cUxQN3dWNThUZ0dJUmFCc1BQaC1CME5yVWl2dWZiV0VVekVybV83eU1CNlJqREJQU2hDNkJiSFFLV3NmNmJqY2pxTXZBUWlOZDB6S2ZhWlJqNG5DanF5cllnVUtSc2kySHpvM1VXN25JLTdKLVc4YnJsZTBDVG9RSzM1bmZBWGI2dw?oc=5",
-    "published": "2026-10-08T08:50:00Z",
-    "game": "val",
-    "category": "tournament",
-    "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80",
-    "first_seen": "2026-10-14T10:34:08Z"
-  },
-  {
     "title": "Treillis, manettes et « Rocket League »… Les forces armées militaires ont aussi leur propre compétition Esport",
     "source": "Yahoo Actualités",
     "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOZEFCR1JSOUx1WXA0RGpRVVlEZzhseDBWTERnWS0ydU9nVElfTURaLWRvUTFSclMyay1xNmQxZGtyUC1RakhtZ3g2bzlyQ3NqRmllQzQ3a3ItOXcyZV9XcXFaUC1rTlJIWEI3VHd2aFZiLThOYmoycWV0Wk5lcmxYb2xjaG5SZw?oc=5",
@@ -810,10 +820,10 @@
     "first_seen": "2026-10-14T10:34:08Z"
   },
   {
-    "title": "Mercato LoL : Ici Japon Corp. Esport met fin à ses activités et libère son slot en LFL",
-    "source": "Team-aAa",
-    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOekZrQjdjcFd4MFdpakkzM1VySE00M3BEZ1pTZl83V01UNkJVVUl4cGNVZ0hVNmZQZ2Z1elFMSGYxdkFINVQ1X3Q2RGNpbjRXNExyMXRFWXdJZGhMdFBzeWNyZmxZWGx2c1ZuSVJiY1l2Q0V2RmlMU1ExYXdwWEZvU056Z05fYTlEd1k4dVp3eFhhMjF6QUVvSHR3WXo5emFyV1lTS19BbHZhYUd1akx6VS1oTWhMYzg?oc=5",
-    "published": "2026-10-07T12:21:05Z",
+    "title": "Esport - League of Legends : La LFL en force aux EMEA Masters Summer : Sports - Orange - Sports",
+    "source": "Sports - Orange",
+    "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQS1BnNnNrdW1VTnBxOWlieW90VjBXWDNUS09iaFZSMklrRXQwQVBWb3AteUNralczS0xDaEtfU3NINnRGenRMVkRNQTFKQmk0Qkgza0hBeE5YN2g0Y3hSbzJFWmxzbU1hZjZGaXp3X2ljNWprQlFvUkRadlZhR3pOcUloTmdpMXgwSy0wdmRTUG1TOURyM1ZQRWJEVTBIYzdCeXhXMG5oTmpoeEFQRnRZWFhWQTM5SDFkRkJSbG1YN1IyaXpNWXpEVER1ZVZDM2NzQWI00gHSAUFVX3lxTE50YzFDZVY3TlFORm9PbzRzbVZ4NVVWenJXWW8yb1hERTZrUHBNWmZVeE5jN3ZCNzRya3gtTWJqRXQyaXlmUEF5Tnh1MkItZHQ5ZUtLb0YxcS1lVC1WZWN6NEhyNTdUbWdkVThWN2JZSlZKeHlmcE5GekRqNERSaWRTaEV4c0tIZkp6eVI2MUVCVE10cWE3T3VOMFlEQnVSZHVtXzhKZlk5czlQaEJFUzNidE9RckNnQVlERl9iOEo3c1ZxbEVCSU9GQUFuQlZ4cUFPdw?oc=5",
+    "published": "2026-10-08T07:00:00Z",
     "game": "lol",
     "category": "tournament",
     "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80",
@@ -837,6 +847,16 @@
     "game": "val",
     "category": "tournament",
     "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80",
+    "first_seen": "2026-10-14T10:34:08Z"
+  },
+  {
+    "title": "Mercato LoL : Ici Japon Corp. Esport met fin à ses activités et libère son slot en LFL",
+    "source": "Team-aAa",
+    "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOekZrQjdjcFd4MFdpakkzM1VySE00M3BEZ1pTZl83V01UNkJVVUl4cGNVZ0hVNmZQZ2Z1elFMSGYxdkFINVQ1X3Q2RGNpbjRXNExyMXRFWXdJZGhMdFBzeWNyZmxZWGx2c1ZuSVJiY1l2Q0V2RmlMU1ExYXdwWEZvU056Z05fYTlEd1k4dVp3eFhhMjF6QUVvSHR3WXo5emFyV1lTS19BbHZhYUd1akx6VS1oTWhMYzg?oc=5",
+    "published": "2026-10-07T07:00:00Z",
+    "game": "lol",
+    "category": "tournament",
+    "image": "https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=800&q=80",
     "first_seen": "2026-10-14T10:34:08Z"
   },
   {
@@ -1478,25 +1498,5 @@
     "category": "tournament",
     "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80",
     "first_seen": "2026-10-14T12:49:24Z"
-  },
-  {
-    "title": "Esport - Rocket League : Les clubs français assurent : Sports - Orange - Sports",
-    "source": "Sports - Orange",
-    "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPdTVxQTBma2tUMXRXN2ZZUFIwYVBhd2hMT3YzLVMtQWpXc2M3dUVMdXRQa2drQ0VtcTdsR1NERjQxaGR5QmRZMjVlVG1nZWp3TmVEV2QxVWJoM3M5QWtkenZwZkxKSmhwNFFGbUR3OWJZdVMyMng5SkF1WTJGZVhVSzFWVmJPWE05Y1M0bkR0UXdNaHBGUnVUVmQyR2ZRTVYyc2laWWxSZzluYlp6cUZJb2pmalhDMVl4MlFnekFR0gG8AUFVX3lxTE8tVno0UmZYN3NDekkyYzh4d1ZFc3JpdGh1Y3R0UTNSck5DTFBvYXBTVnlralZZTkM4QTN4RWhqb2Z6WEs3Y3lOQmlnUU1lM3g3bjVqVTZpN1ZQbFVsRkJEZEY2V1BfQ2xLZ29SRVdyVjRsOHdVb0lnN2VWY0dCX2JwQ2otZ2E4bXl5VWM4OG9jbGJvb0pWTW9aNHFJeUJ1Y1J2c0IzaU0tWHFkMENnbVRpT3lSQWUzbHFrWDFQ?oc=5",
-    "published": "2026-09-18T07:00:00Z",
-    "game": "rl",
-    "category": "news",
-    "image": "https://images.unsplash.com/photo-1563089145-599997674d42?auto=format&fit=crop&w=800&q=80",
-    "first_seen": "2026-10-14T10:34:08Z"
-  },
-  {
-    "title": "Champions Shanghai - Produits dérivés",
-    "source": "VALORANT",
-    "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOU01OSGRYdVJPRU5IalhNYndna24wd09tRmItdW1DYk5MdzltUm43V0xnR09YRmhNSEFaU2xkbE8teHVOdVBmZjNvMWtXR0oxYjJVNHhJYVpxZDRBWk95MngxcEZINl9Tc3RTNHhqazRzX3kxUTVYN29ORjhiVHJDMTFTb25SZWVoR1E?oc=5",
-    "published": "2026-09-17T07:00:00Z",
-    "game": "val",
-    "category": "tournament",
-    "image": "https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=800&q=80",
-    "first_seen": "2026-10-14T10:34:08Z"
   }
 ]
