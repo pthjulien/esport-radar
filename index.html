@@ -160,7 +160,6 @@ body {
   </div>
 </footer>
 
-<!-- MODALE D'ARTICLE COMPLÈTE & DÉROULABLE -->
 <div id="modal" class="fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-6 hidden bg-black/85 backdrop-blur-md">
   <div id="modal-card" class="bg-[#0e131f] border border-[#222d44] rounded-2xl w-full max-w-3xl max-h-[90vh] overflow-y-auto shadow-2xl scale-95 opacity-0">
     <div id="modal-body"></div>
@@ -231,23 +230,56 @@ function badgeType(ty) {
   return '<span class="badge ' + b[1] + '">' + b[0] + '</span>';
 }
 
-/* CARTE MAGAZINE COMPLÈTE AVEC VRAIE PHOTO */
+/* RENDU DU HEADER VISUEL : VRAIE PHOTO OU LOGO OFFICIEL */
+function renderCardHeader(i) {
+  var g = G[i.game] || G.lol;
+
+  // CAS 1 : Vraie photo de presse
+  if (i.image) {
+    return '<div class="relative overflow-hidden border-b border-[#1a2336] h-48 bg-[#0a0e17]">' +
+      '<img src="' + esc(i.image) + '" alt="" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">' +
+      '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent opacity-90"></div>' +
+      '<div class="absolute top-3 left-3 flex items-center gap-1.5">' +
+        badgeGame(i.game) +
+        badgeType(i.category) +
+      '</div>' +
+      '<div class="absolute bottom-2.5 right-3 px-2 py-0.5 rounded bg-black/80 text-[10px] font-semibold text-slate-300 backdrop-blur-sm">' +
+        esc(when(i.published)) +
+      '</div>' +
+    '</div>';
+  }
+
+  // CAS 2 : Logo officiel HD détouré sur bannière de club/tournoi
+  var l = i.logo;
+  return '<div class="relative overflow-hidden border-b border-[#1a2336] h-48 flex flex-col justify-between p-4" style="background:linear-gradient(135deg, ' + l.bg + ' 0%, #080b11 100%)">' +
+    '<div class="absolute right-2 -bottom-4 text-7xl font-black opacity-10 select-none tracking-tighter" style="color:' + l.color + '">' + esc(l.tag) + '</div>' +
+    '<div class="flex items-center justify-between relative z-10">' +
+      '<div class="flex items-center gap-1.5">' +
+        badgeGame(i.game) +
+        badgeType(i.category) +
+      '</div>' +
+      '<div class="px-2 py-0.5 rounded bg-black/60 text-[10px] font-semibold text-slate-300 border border-white/10">' +
+        esc(when(i.published)) +
+      '</div>' +
+    '</div>' +
+    '<div class="relative z-10 flex items-center gap-3 my-auto">' +
+      '<div class="w-12 h-12 rounded-xl flex items-center justify-center font-black text-sm tracking-wider shadow-lg border" style="background:#080b11dd;color:' + l.color + ';border-color:' + l.color + '50">' +
+        esc(l.tag) +
+      '</div>' +
+      '<div>' +
+        '<div class="text-xs font-black uppercase tracking-wider text-white">' + esc(l.title) + '</div>' +
+        '<div class="text-[10px] font-semibold text-slate-400">Actualité Officielle</div>' +
+      '</div>' +
+    '</div>' +
+  '</div>';
+}
+
 function card(i, k) {
   var previewText = i.content ? i.content.split("\n\n")[0] : "";
 
   return '<article class="news-card group flex flex-col justify-between" onclick="openModal(' + k + ')">' +
     '<div>' +
-      '<div class="relative overflow-hidden border-b border-[#1a2336] h-48 bg-[#0a0e17]">' +
-        '<img src="' + esc(i.image) + '" alt="" loading="lazy" referrerpolicy="no-referrer" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">' +
-        '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent opacity-90"></div>' +
-        '<div class="absolute top-3 left-3 flex items-center gap-1.5">' +
-          badgeGame(i.game) +
-          badgeType(i.category) +
-        '</div>' +
-        '<div class="absolute bottom-2.5 right-3 px-2 py-0.5 rounded bg-black/80 text-[10px] font-semibold text-slate-300 backdrop-blur-sm">' +
-          esc(when(i.published)) +
-        '</div>' +
-      '</div>' +
+      renderCardHeader(i) +
       '<div class="p-4">' +
         '<h3 class="text-sm font-bold text-white group-hover:text-slate-200 leading-snug line-clamp-2 mb-2">' +
           esc(i.title) +
@@ -264,7 +296,6 @@ function card(i, k) {
   '</article>';
 }
 
-/* OUVERTURE DE L'ARTICLE COMPLET */
 function openModal(index) {
   var v = vis();
   var item = v[index];
@@ -274,6 +305,16 @@ function openModal(index) {
   var paragraphs = (item.content || "").split("\n\n").filter(function(p) { return p.trim().length > 0; }).map(function(p) {
     return '<p class="text-slate-200 text-sm sm:text-base leading-relaxed mb-4">' + esc(p) + '</p>';
   }).join("");
+
+  var modalBanner = "";
+  if (item.image) {
+    modalBanner = '<div class="relative w-full h-72 sm:h-96 overflow-hidden bg-[#0a0e17] border-b border-[#1a2336]">' +
+      '<img src="' + esc(item.image) + '" alt="" referrerpolicy="no-referrer" class="w-full h-full object-cover">' +
+      '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent"></div>' +
+    '</div>';
+  } else {
+    modalBanner = renderCardHeader(item);
+  }
 
   $("modal-body").innerHTML =
     '<div class="sticky top-0 z-20 bg-[#0e131f]/95 backdrop-blur-md border-b border-[#1a2336] px-6 py-3.5 flex items-center justify-between">' +
@@ -286,10 +327,7 @@ function openModal(index) {
         '<i class="fa-solid fa-xmark text-sm"></i>' +
       '</button>' +
     '</div>' +
-    '<div class="relative w-full h-72 sm:h-96 overflow-hidden bg-[#0a0e17] border-b border-[#1a2336]">' +
-      '<img src="' + esc(item.image) + '" alt="" referrerpolicy="no-referrer" class="w-full h-full object-cover">' +
-      '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent"></div>' +
-    '</div>' +
+    modalBanner +
     '<div class="p-6 sm:p-8 space-y-6">' +
       '<div>' +
         '<h2 class="text-xl sm:text-2xl font-extrabold text-white leading-tight mb-3">' + esc(item.title) + '</h2>' +
@@ -420,7 +458,8 @@ async function loadData() {
     var r = await fetch("./data.json?t=" + Date.now());
     if (!r.ok) throw new Error("Erreur HTTP " + r.status);
     var data = await r.json();
-    S.items = Array.isArray(data) ? data.filter(function(i) { return G[i.game] && i.image; }) : [];
+    // Ne charge QUE les articles qui ont soit une photo réelle, soit un logo officiel
+    S.items = Array.isArray(data) ? data.filter(function(i) { return G[i.game] && (i.image || i.logo); }) : [];
     S.sync = Date.now();
     $("sync").textContent = "Dernière synchro : " + new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
   } catch (e) {
