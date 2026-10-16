@@ -80,7 +80,7 @@ body {
           <path d="M12 2a10 10 0 0 1 10 10"></path>
           <circle cx="12" cy="12" r="6" stroke-opacity="0.4"></circle>
           <path d="M12 6a6 6 0 0 1 6 6"></path>
-          <circle cx="12" cy="12" r="2" fill="currentColor"></circle>
+          <circle cx="12" cy="2" fill="currentColor"></circle>
           <line x1="12" y1="12" x2="19" y2="5" stroke="#38bdf8" stroke-width="2"></line>
           <circle cx="19" cy="5" r="1.5" fill="#38bdf8"></circle>
         </svg>
@@ -167,16 +167,14 @@ body {
 </div>
 
 <script>
+// Les 6 jeux phares exclusivement conservés
 var G = {
   lol: { n: "League of Legends", s: "LoL", c: "#eab308" },
   val: { n: "Valorant", s: "Valorant", c: "#f43f5e" },
   cs2: { n: "Counter-Strike 2", s: "CS2", c: "#f59e0b" },
   fortnite: { n: "Fortnite", s: "Fortnite", c: "#a855f7" },
   cod: { n: "Call of Duty", s: "Call of Duty", c: "#84cc16" },
-  rl: { n: "Rocket League", s: "Rocket League", c: "#0ea5e9" },
-  r6: { n: "Rainbow Six", s: "R6 Siege", c: "#38bdf8" },
-  apex: { n: "Apex Legends", s: "Apex", c: "#ea580c" },
-  eafc: { n: "EA Sports FC", s: "EA FC", c: "#10b981" }
+  rl: { n: "Rocket League", s: "Rocket League", c: "#0ea5e9" }
 };
 
 var TYPES = {
@@ -185,7 +183,7 @@ var TYPES = {
   rumor: "Rumeurs mercato",
   tournament: "Tournois & Résultats",
   patch: "Patchs & Mises à jour",
-  news: "Analyses & Interviews"
+  news: "Autre"
 };
 
 var BD = {
@@ -193,7 +191,7 @@ var BD = {
   rumor: ["RUMEUR", "bg-amber-500/10 text-amber-400 border border-amber-500/30"],
   tournament: ["TOURNOI", "bg-yellow-500/10 text-yellow-400 border border-yellow-500/30"],
   patch: ["PATCH", "bg-sky-500/10 text-sky-400 border border-sky-500/30"],
-  news: ["ACTU", "bg-slate-700/30 text-slate-300 border border-slate-700"]
+  news: ["AUTRE", "bg-slate-700/30 text-slate-300 border border-slate-700"]
 };
 
 var S = { items: [], g: "all", t: "all", q: "", busy: false, sync: 0 };
@@ -230,11 +228,9 @@ function badgeType(ty) {
   return '<span class="badge ' + b[1] + '">' + b[0] + '</span>';
 }
 
-/* RENDU DU HEADER : VRAIE PHOTO OU VRAI LOGO HD DÉTOURÉ */
 function renderCardHeader(i) {
   var g = G[i.game] || G.lol;
 
-  // CAS 1 : Vraie photo de presse
   if (i.image) {
     return '<div class="relative overflow-hidden border-b border-[#1a2336] h-48 bg-[#0a0e17]">' +
       '<img src="' + esc(i.image) + '" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.parentElement.style.display=\'none\'" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">' +
@@ -249,7 +245,6 @@ function renderCardHeader(i) {
     '</div>';
   }
 
-  // CAS 2 : Vrai logo officiel détouré sur fond aux couleurs du club
   var l = i.logo || {};
   var logoImg = l.icon ? '<img src="' + esc(l.icon) + '" alt="' + esc(l.title || "") + '" class="h-16 w-auto max-w-[120px] object-contain drop-shadow-[0_4px_12px_rgba(0,0,0,0.8)] group-hover:scale-110 transition-transform duration-300">' : '<span class="text-2xl font-black" style="color:' + (l.color || "#38bdf8") + '">' + esc(l.tag || "ESPORT") + '</span>';
 
