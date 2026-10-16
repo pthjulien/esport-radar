@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Esport Radar Scraper 20.0
-- Règle 100% photo de presse : rejet strict de tout article sans vraie photo (0 carte vide)
-- Dédoublonnage par URL unique (nettoie les doublons de traduction)
+"""Esport Radar Scraper 21.0
+- Vraie photo de presse prioritaire
+- Carte Broadcast Esport dynamique avec couleurs et tags officiels pour les actus sans photo (VLR, Dust2)
 - Tri chirurgical des catégories basé sur le titre (les résultats de match vont dans Tournois)
-- 6 disciplines phares (LoL, Valorant, CS2, Fortnite, CoD, Rocket League)
+- Dédoublonnage par URL unique (0 clone)
+- 6 disciplines majeures exclusives (LoL, Valorant, CS2, Fortnite, CoD, Rocket League)
 """
 import html
 import json
@@ -17,11 +18,11 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 OUT_FILE = Path(__file__).resolve().parent / "data.json"
-MAX_ITEMS = 150
+MAX_ITEMS = 160
 MAX_AGE_DAYS = 40
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
-# Flux spécialisés fournissant des photos officielles de presse
+# Flux spécialisés
 FEEDS = [
     # 1. LEAGUE OF LEGENDS
     ("https://www.invenglobal.com/feed/atom", "Inven Global", "lol"),
@@ -33,6 +34,7 @@ FEEDS = [
     ("https://esports.gg/feed/", "Esports.gg", None),
 
     # 2. VALORANT
+    ("https://vlr.gg/rss", "VLR.gg", "val"),
     ("https://e.sport.fr/category/valorant/feed/", "E.SPORT.FR", "val"),
     ("https://e.sport.fr/category/valorant/feed/?paged=2", "E.SPORT.FR", "val"),
     ("https://e.sport.fr/category/valorant/feed/?paged=3", "E.SPORT.FR", "val"),
@@ -41,6 +43,7 @@ FEEDS = [
 
     # 3. COUNTER-STRIKE 2
     ("https://www.hltv.org/rss/news", "HLTV", "cs2"),
+    ("https://www.dust2.us/rss", "Dust2", "cs2"),
     ("https://pley.gg/feed", "Pley.gg", "cs2"),
     ("https://www.fragster.com/feed/", "Fragster", "cs2"),
     ("https://e.sport.fr/category/counter-strike/feed/", "E.SPORT.FR", "cs2"),
@@ -118,6 +121,64 @@ GUIDE_AND_AMATEUR_BAN = re.compile(
     re.I
 )
 
+# Identités visuelles broadcast pour les articles sans photo
+OFFICIAL_IDENTITIES = [
+    # CIRCUITS & COMPÉTITIONS
+    ("vct", re.compile(r"\bvct\b|valorant champions|shanghai|masters", re.I), {
+        "title": "VALORANT Champions Tour", "tag": "VCT", "color": "#ff4655", "bg": "#3d0a14"
+    }),
+    ("worlds", re.compile(r"\bworlds\b|world championship|mondiaux", re.I), {
+        "title": "LoL World Championship", "tag": "WORLDS", "color": "#c89b3c", "bg": "#332204"
+    }),
+    ("lec", re.compile(r"\blec\b", re.I), {
+        "title": "League of Legends EMEA", "tag": "LEC", "color": "#00c8c8", "bg": "#022929"
+    }),
+    ("lfl", re.compile(r"\blfl\b", re.I), {
+        "title": "Ligue Française de LoL", "tag": "LFL", "color": "#3b82f6", "bg": "#091e42"
+    }),
+    ("cs2_major", re.compile(r"major|iem katowice|iem cologne|blast premier", re.I), {
+        "title": "Counter-Strike 2 Major", "tag": "CS2", "color": "#f59e0b", "bg": "#361e03"
+    }),
+    ("fncs", re.compile(r"\bfncs\b", re.I), {
+        "title": "Fortnite Champion Series", "tag": "FNCS", "color": "#a855f7", "bg": "#2e084d"
+    }),
+    ("rlcs", re.compile(r"\brlcs\b", re.I), {
+        "title": "Rocket League Championship", "tag": "RLCS", "color": "#0ea5e9", "bg": "#04243d"
+    }),
+
+    # CLUBS ET STRUCTURES PRO
+    ("100t", re.compile(r"100 thieves|\b100t\b", re.I), {
+        "title": "100 Thieves", "tag": "100T", "color": "#ef4444", "bg": "#380606"
+    }),
+    ("kc", re.compile(r"karmine corp|\bkarmine\b|\bkcorp\b|\bkc\b", re.I), {
+        "title": "Karmine Corp", "tag": "KC", "color": "#38bdf8", "bg": "#082142"
+    }),
+    ("vit", re.compile(r"vitality|team vitality|\bvit\b", re.I), {
+        "title": "Team Vitality", "tag": "VIT", "color": "#facc15", "bg": "#3b3002"
+    }),
+    ("m8", re.compile(r"gentle mates|\bm8\b", re.I), {
+        "title": "Gentle Mates", "tag": "M8", "color": "#f472b6", "bg": "#3d082b"
+    }),
+    ("loud", re.compile(r"\bloud\b", re.I), {
+        "title": "LOUD Esports", "tag": "LOUD", "color": "#22c55e", "bg": "#062b11"
+    }),
+    ("g2", re.compile(r"\bg2 esports\b|\bg2\b", re.I), {
+        "title": "G2 Esports", "tag": "G2", "color": "#ef4444", "bg": "#380606"
+    }),
+    ("fnc", re.compile(r"\bfnatic\b|\bfnc\b", re.I), {
+        "title": "Fnatic", "tag": "FNC", "color": "#fb923c", "bg": "#3b1602"
+    }),
+    ("sly", re.compile(r"\bsolary\b|\bsly\b", re.I), {
+        "title": "Solary", "tag": "SLY", "color": "#fb923c", "bg": "#3b1602"
+    }),
+    ("t1", re.compile(r"\bt1\b|\bfaker\b", re.I), {
+        "title": "T1 Esports", "tag": "T1", "color": "#e11d48", "bg": "#360511"
+    }),
+    ("navi", re.compile(r"\bnavi\b|natus vincere", re.I), {
+        "title": "Natus Vincere", "tag": "NAVI", "color": "#facc15", "bg": "#3b3002"
+    }),
+]
+
 def clean_text(raw_html: str) -> str:
     text = re.sub(r'<(script|style)[^>]*>.*?</\1>', '', raw_html or "", flags=re.DOTALL | re.IGNORECASE)
     text = re.sub(r'<[^>]+>', ' ', text)
@@ -125,7 +186,6 @@ def clean_text(raw_html: str) -> str:
     return re.sub(r'\s+', ' ', text).strip()
 
 def normalize_url(url: str) -> str:
-    """Normalise l'URL pour empêcher tout doublon technique ou linguistique."""
     u = re.sub(r'https?://(www\.)?', '', url.strip().lower())
     return u.split('?')[0].rstrip('/')
 
@@ -152,26 +212,20 @@ def detect_single_game(title: str, text_zone: str, feed_hint: str = None):
     return None
 
 def detect_category_strict(title: str, body: str) -> str:
-    """Analyse chirurgicale basée sur le titre pour ne jamais confondre un match avec 'autre'."""
     t = title.lower()
 
-    # 1. Patch notes & Mises à jour
     if re.search(r"\bpatch\b|mise à jour|nerf|buff|hotfix|notes de patch|update \d|\bnotes\b", t):
         return "patch"
 
-    # 2. Rumeurs mercato
     if re.search(r"\brumou?rs?\b|rumeurs?|\bleak\b|fuite|selon|serait|pourrait|aurait|piste|courtise|exploring options|target|in talks", t):
         return "rumor"
 
-    # 3. Transferts officiels (signatures, départs stricts)
     if re.search(r"\bsigns?\b|\bsigne\b|\brejoint\b|\bjoined\b|\bofficialise\b|\bquitte\b|\bleaves\b|parted ways|\bprolonge\b|\brecrute\b|\btransfert\b|\bbenched\b|\broster\b|départ|\brelease\b|\bacquires?\b|banc de touche", t):
         return "official"
 
-    # 4. Tournois & Résultats de match (victoires, qualifications, scores)
     if re.search(r"victoire|défaite|sacré|éliminé|finale|semifinal|demi-finale|quart|playoff|classement|tournoi|tournament|major|masters|trophée|champions|direct|match|score|\bvs\b|sweep|advance|beat\b|beats\b|win over|takes? down|qualifi|bracket|standings", t):
         return "tournament"
 
-    # 5. Détection secondaire dans le premier paragraphe si le titre est neutre
     first_p = body.split("\n\n")[0].lower() if body else ""
     if re.search(r"advance to semifinals|secured victory|took down|eliminated from|defeated", first_p):
         return "tournament"
@@ -231,6 +285,15 @@ def extract_press_photo(item, raw_xml: str) -> str:
 
     return ""
 
+def find_broadcast_identity(title: str, text_zone: str):
+    for _, rx, data in OFFICIAL_IDENTITIES:
+        if rx.search(title):
+            return data
+    for _, rx, data in OFFICIAL_IDENTITIES:
+        if rx.search(text_zone[:200]):
+            return data
+    return None
+
 def extract_article_body(item, title: str) -> list:
     raw_content = item.findtext("{http://purl.org/rss/1.0/modules/content/}encoded") or ""
     raw_desc = item.findtext("description") or ""
@@ -265,16 +328,19 @@ def main() -> int:
     seen_at = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     cutoff = (now - timedelta(days=MAX_AGE_DAYS)).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    # Lecture de l'historique et purge immédiate des faux logos et des doublons
     existing = {}
     if OUT_FILE.exists():
         try:
             d = json.loads(OUT_FILE.read_text(encoding="utf-8"))
             if isinstance(d, list):
                 for a in d:
-                    # Ne conserve que les articles avec une VRAIE photo de presse
-                    if isinstance(a, dict) and a.get("title") and a.get("image") and a.get("game") in GAME_RULES and a.get("published", "") >= cutoff:
-                        if clean_image_url(a["image"]):
+                    if isinstance(a, dict) and a.get("title") and a.get("game") in GAME_RULES and a.get("published", "") >= cutoff:
+                        img = a.get("image", "")
+                        if img and not clean_image_url(img):
+                            a["image"] = ""
+                            if not a.get("logo"):
+                                a["logo"] = find_broadcast_identity(a["title"], a.get("content", ""))
+                        if a.get("image") or a.get("logo"):
                             ukey = normalize_url(a.get("url", a["title"]))
                             existing[ukey] = a
         except Exception:
@@ -306,9 +372,13 @@ def main() -> int:
             if not game:
                 continue
 
-            # RÈGLE D'OR : Vraie photo de presse OBLIGATOIRE (si pas d'image -> SUPPRIMÉ)
             photo_url = extract_press_photo(it, item_xml_str)
+            logo_info = None
             if not photo_url:
+                logo_info = find_broadcast_identity(title, item_xml_str)
+
+            # Doit impérativement avoir une photo OU une identité d'équipe/circuit reconnue
+            if not photo_url and not logo_info:
                 continue
 
             pub = parse_date(it.findtext("pubDate") or "")
@@ -327,17 +397,16 @@ def main() -> int:
                 "game": game,
                 "category": detect_category_strict(title, content_text),
                 "image": photo_url,
+                "logo": logo_info,
                 "content": content_text,
                 "first_seen": existing.get(ukey, {}).get("first_seen", seen_at)
             })
 
-    # Fusion basée sur l'URL unique (élimine tous les doublons de traduction)
     merged = {**existing}
     for item in collected:
         ukey = normalize_url(item["url"])
         merged[ukey] = item
 
-    # Répartition équilibrée par discipline
     by_game = {g: [] for g in GAME_RULES}
     for item in merged.values():
         g = item.get("game")
@@ -347,7 +416,7 @@ def main() -> int:
     final_selection = []
     for g, items in by_game.items():
         items_sorted = sorted(items, key=lambda x: x.get("published", ""), reverse=True)
-        final_selection.extend(items_sorted[:18])
+        final_selection.extend(items_sorted[:20])
 
     remaining = [i for i in merged.values() if i not in final_selection]
     remaining_sorted = sorted(remaining, key=lambda x: x.get("published", ""), reverse=True)
@@ -357,8 +426,8 @@ def main() -> int:
 
     OUT_FILE.write_text(json.dumps(final, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     stats = {g: sum(1 for x in final if x["game"] == g) for g in GAME_RULES}
-    print(f"Extraction terminée : {len(final)} articles avec photos réelles enregistrés.")
-    print(f"Répartition par jeu : {stats}")
+    print(f"Extraction terminée : {len(final)} articles enregistrés.")
+    print(f"Détail par jeu : {stats}")
     return 0
 
 if __name__ == "__main__":
