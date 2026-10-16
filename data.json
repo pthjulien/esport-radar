@@ -7,8 +7,26 @@
     "game": "lol",
     "category": "tournament",
     "image": "https://e.sport.fr/wp-content/uploads/2026/08/Cloud9_Thanatos_at_LCS_2026_Spring-1024x732.jpg",
+    "logo": null,
     "content": "Pour suivre le match Cloud9 – FURIA en direct, rendez-vous sur le lien ci-dessous :",
     "first_seen": "2026-10-16T23:33:04Z"
+  },
+  {
+    "title": "100 Thieves advance to semifinals at Stake Pulse Beat III after commanding win over Sangal",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/78966/100-thieves-advance-to-semifinals-at-stake-pulse-beat-iii-after-commanding-win-over-sangal",
+    "published": "2026-10-16T20:02:00Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "100 Thieves",
+      "tag": "100T",
+      "color": "#ef4444",
+      "bg": "#380606"
+    },
+    "content": "100T are increasing their Major chances with each win.",
+    "first_seen": "2026-10-16T23:44:55Z"
   },
   {
     "title": "The ultimate list of all Rocket League crossovers (2026, updated)",
@@ -18,6 +36,7 @@
     "game": "rl",
     "category": "news",
     "image": "https://media.esports.gg/uploads/2021/05/Rocket-League-ranks-6-640x360.avif",
+    "logo": null,
     "content": "Since its release in 2015, Rocket League has hosted multiple collaboration events with other games and popular series — almost countless.\n\nThe range of crossovers is truly impressive, from something very logical like Hot Wheels to something pretty unique like Hatsune Miku.\n\nTrack every Rocket League crossover in this guide. We explain the basics and highlight essential details of these events.\n\nCollaboration events with other franchises add various cosmetic items to Rocket League.\n\nWhen an event is active, Rocket League suggests purchasing bundles and winning free items.\n\nCrossover events are time-limited in Rocket League. However, car and cosmetic bundles frequently return to the item shop.",
     "first_seen": "2026-10-16T23:33:04Z"
   },
@@ -29,6 +48,7 @@
     "game": "lol",
     "category": "tournament",
     "image": "https://e.sport.fr/wp-content/uploads/2026/08/image_processing20260627-1-hhnwts-1024x683.webp",
+    "logo": null,
     "content": "Pour suivre le match Karmine Corp – MVK Esports en direct, rendez-vous sur l’un des liens ci-dessous :",
     "first_seen": "2026-10-16T23:33:04Z"
   },
@@ -40,8 +60,77 @@
     "game": "fortnite",
     "category": "official",
     "image": "https://e.sport.fr/wp-content/uploads/2026/05/Falcons_Peterbot_at_the_FNCS_2025_Global_Championship-1024x683.jpg",
+    "logo": null,
     "content": "C’est l’un des premiers gros coups du mercato Fortnite pour 2027. L’Américain Peter « Peterbot » Kata, sacré champion du monde FNCS en 2024, va unir ses forces avec le Roumain Oltean « shxrk » Ștefan et le Slovène Tin « t3eny » Popovic, tous deux sous contrat avec Aurora Gaming. Un rapprochement qui n’était pas forcément attendu, puisque shxrk et t3eny semblaient initialement partis pour poursuivre leur aventure avec Swizzy. Mais ce dernier ne fera finalement pas partie du trio, ouvrant la porte à l’arrivée de l’une des plus grandes stars de la scène compétitive.\n\nCe changement représente un véritable tournant pour les deux vice-champions du monde. Après avoir brillé sur la scène internationale en 2026, shxrk et t3eny tenteront désormais de franchir la dernière marche avec Peterbot. Sur le papier, l’association réunit trois joueurs capables de rivaliser avec les meilleurs, mais leur complémentarité reste à démontrer. L’arrivée d’une nouvelle personnalité au sein d’un duo déjà bien établi pourrait notamment nécessiter quelques ajustements dans leur manière de jouer.\n\nSi certains observateurs s’interrogent sur la capacité des trois joueurs à évoluer ensemble, Clix ne partage pas ces inquiétudes. Le streamer et joueur américain s’est montré particulièrement enthousiaste à l’annonce de cette association. « Je ne vois pas comment ce trio pourrait ne pas fonctionner. Les trois sont capables de s’adapter les uns aux autres » , a-t-il déclaré.\n\nDe son côté, Swizzy pourrait également retrouver une équipe de premier plan. Double champion du monde en titre, il serait désormais susceptible de rejoindre Vic0 et Malibuca, une autre association qui pourrait faire parler d’elle lors des prochaines FNCS. Cette piste reste toutefois à confirmer.\n\nAvec Peterbot, shxrk et t3eny réunis sous les mêmes couleurs, la saison 2027 de Fortnite s’annonce déjà particulièrement intéressante. Reste à voir si ce trio parviendra à transformer son immense potentiel individuel en résultats collectifs, avec un objectif évident : décrocher le titre mondial.\n\nPETERBOT REJOINT SHXRK ET T3ENY POUR LES FNCS TRIO C’EST QUOI CE RETOURNEMENT DE SITUATION ??? Shxrk vient d’annoncer que Swizzy ne jouera PLUS avec eux… ET C’EST PETERBOT QUI LE REMPLACE PETERBOT SHXRK T3ENY pic.twitter.com/Z38Dupom67",
     "first_seen": "2026-10-16T16:01:01Z"
+  },
+  {
+    "title": "100 Thieves rob G2 of Champions Shanghai dreams",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/774395/100-thieves-rob-g2-of-champions-shanghai-dreams",
+    "published": "2026-10-16T14:53:10Z",
+    "game": "val",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "100 Thieves take down G2, setting up a lower final match against Team Vitality.",
+    "first_seen": "2026-10-16T23:44:55Z"
+  },
+  {
+    "title": "VCT EMEA 2027 opens direct qualification path for aspiring teams",
+    "source": "Fragster",
+    "url": "https://www.fragster.com/vct-emea-2027-kickoff-qualifiers/",
+    "published": "2026-10-16T14:14:30Z",
+    "game": "val",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Riot Games has revealed the full structure for the VCT EMEA 2027 Kickoff qualifiers, creating a new route for non-partner teams to compete directly against established VALORANT organizations.\n\nOpen qualification begins in November across Europe, Türkiye and MENA. Four teams will eventually earn places at the VCT EMEA Kickoff 2027, where they will join eight partner organizations in a 12-team field.\n\nThe biggest change is the number of opportunities available outside the partnership system.\n\nTwo European teams will qualify for the Kickoff, while Türkiye and MENA receive one slot each. Every region will run two qualifier stages, giving teams another opportunity if their first attempt ends early.\n\nEach region then uses its own playoff structure to determine which teams advance to the VCT EMEA Kickoff.\n\nFor Europe, the top four teams from each qualifier advance to a 16-team playoff. Eight additional non-partner teams will receive direct invitations based on their competitive status and results during 2026.",
+    "first_seen": "2026-10-16T23:44:55Z"
+  },
+  {
+    "title": "G2 vs NAVI headlines PGL Masters Bucharest 2026 opening round",
+    "source": "Fragster",
+    "url": "https://www.fragster.com/pgl-masters-bucharest-2026-opening-matches/",
+    "published": "2026-10-16T14:09:54Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "PGL has revealed the opening matchups for PGL Masters Bucharest 2026, setting up several high-profile Counter-Strike 2 clashes immediately on the first day. The $1.25 million tournament begins on October 24 and features 16 teams competing through a Swiss group stage before eight advance to the playoffs.\n\nG2 against Natus Vincere stands out as one of the biggest opening encounters, while Aurora will meet The MongolZ in another important matchup. Spirit, Vitality, MOUZ and FURIA are also among the teams beginning their campaigns on the opening day.\n\nAll 16 teams will play their first best-of-three series on October 24.\n\nAurora and The MongolZ will begin the action alongside FUT and TYLOO. Spirit then face BETBOOM, while MOUZ meet Liquid in the second time slot.\n\nThe afternoon schedule features Vitality against 9z and Legacy against Nemiga before the day closes with G2 against NAVI and FURIA against DENDELE.\n\nThe Swiss format means these opening results will immediately influence each team’s route through the group stage. Three victories are required to reach the playoffs, while three defeats result in elimination.",
+    "first_seen": "2026-10-16T23:44:55Z"
+  },
+  {
+    "title": "Inner Circle promote stikle- as Major hopes enter decisive stage",
+    "source": "Fragster",
+    "url": "https://www.fragster.com/stikle-inner-circle-head-coach/",
+    "published": "2026-10-16T14:02:02Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2 Major",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#361e03"
+    },
+    "content": "Inner Circle have changed their Counter-Strike 2 coaching structure at a critical point in their season. Klesti “stikle-” Kola has stepped up from assistant coach to head coach for the team’s upcoming events, while Dmytro “jR” Chervak moves into a management role within the organization.\n\nThe switch arrives with Inner Circle still fighting for a potential place at the PGL Major Singapore 2026. Their recent results have made that route significantly more difficult, putting additional pressure on the upcoming Stake Ranked events.\n\njR’s move ends a roughly year-long spell as Inner Circle’s head coach. During that period, the Ukrainian roster developed into a team capable of competing inside the upper part of the Valve Regional Standings.\n\nOne of the biggest moments of his tenure came when Inner Circle won the first Super DraculaN tournament. That result helped move the team firmly into the conversation for a Singapore Major invitation.\n\nHowever, their position has weakened following more recent results.\n\nInner Circle finished 9th-12th at Stake Pulse Beat III after suffering defeats against Ninjas in Pyjamas and Sangal. Their recent event history also includes a 3rd-4th finish at Logitech G Play Connect 2026 and 5th-6th in the PGL Masters Bucharest Europe Closed Qualifier.",
+    "first_seen": "2026-10-16T23:44:55Z"
   },
   {
     "title": "Yike révèle le secret du comeback de la Karmine Corp",
@@ -51,6 +140,7 @@
     "game": "lol",
     "category": "news",
     "image": "https://e.sport.fr/wp-content/uploads/2026/10/0d615-1024x683.jpg",
+    "logo": null,
     "content": "La Karmine Corp a réussi son entrée aux Worlds 2026, mais elle s’est fait très peur. Bousculés par Cloud9, les Français ont dû revenir au score à deux reprises pour finalement s’imposer au terme de cinq manches. Une victoire arrachée au mental, comme l’a expliqué Martin « Yike » Sundelin dans un entretien accordé à L’Équipe . Le jungler suédois reconnaît notamment les difficultés rencontrées en début de partie, face à des Américains mieux préparés et particulièrement agressifs. « Tout le match a été assez bordélique » , admet-il, conscient que la KC devra rapidement corriger ses erreurs.\n\nMais cette rencontre a surtout permis de mesurer les progrès réalisés depuis la lourde défaite contre Movistar KOI (0-3), lors des playoffs du LEC. Après cette élimination, les joueurs avaient longuement échangé sur leur fonctionnement collectif et leur capacité à réagir dans les moments difficiles. « Ces dernières semaines, nous avions beaucoup parlé de notre gestion des défaites, nous voulions vraiment progresser là-dessus » , raconte Yike. Un travail poursuivi lors du bootcamp en Corée du Sud, où chacun a été invité à prendre davantage ses responsabilités.\n\nC'EST NOTRE DRAGON, TRIPLE KILL POUR NOUS #KCORP pic.twitter.com/k8P3dvxrFV\n\nFace à Cloud9, ces efforts ont visiblement porté leurs fruits. Malgré deux manches perdues de manière inquiétante, la Karmine Corp n’a jamais abandonné. « Même après nos manches perdues, on a réussi à revenir au mental, en gardant nos têtes hautes » , souligne le Suédois. Un changement d’attitude qu’il considère comme l’une des principales raisons de cette victoire. Yike insiste également sur le rôle de Reapered, particulièrement actif entre les parties pour identifier les problèmes et ajuster le plan de jeu. Le jungler estime que le coaching staff a beaucoup mieux géré ces moments que lors de la défaite contre KOI, permettant aux joueurs de rester concentrés malgré les difficultés.\n\nTout n’est cependant pas réglé. Le Suédois reconnaît que la pression a pesé sur les premières manches et regrette son propre manque d’initiative, notamment sur Lee Sin. Mais il reste optimiste pour la suite : « On veut tous s’améliorer et je pense que nous allons être encore meilleurs. »\n\nLa Karmine Corp devra désormais confirmer ces progrès face à MVK Esports, son prochain adversaire dans le Play-In. Encore à deux victoires en BO5 de la phase suisse, les Français devront afficher un visage plus convaincant pour poursuivre leur aventure aux Worlds 2026.",
     "first_seen": "2026-10-16T16:01:01Z"
   },
@@ -74,6 +164,7 @@
     "game": "val",
     "category": "official",
     "image": "https://e.sport.fr/wp-content/uploads/2025/05/GsISISbWIAAeWKA-1024x683.jpg",
+    "logo": null,
     "content": "L’avenir de nAts chez Team Liquid est désormais incertain. Ayaz « nAts » Akhmetshin a annoncé sur X être à la recherche d’une équipe pour la saison 2027 de VALORANT. Une déclaration qui pourrait marquer la fin d’une collaboration de quatre ans avec l’organisation, même si aucun départ n’a encore été officialisé. « Je suis toujours en discussions avec Team Liquid, mais l’organisation m’a également autorisé à explorer mes options pour l’année prochaine » , a précisé le joueur russe. Capable d’évoluer comme IGL ou Sentinelle, il se dit ouvert aux propositions de toutes les régions du VCT.\n\nArrivé chez Liquid fin 2022, nAts s’est imposé comme l’un des piliers de l’équipe, aussi bien par ses performances individuelles que par son leadership. En quatre saisons, il a participé à sept compétitions internationales et remporté deux titres en VCT EMEA. Malgré les nombreux changements d’effectif traversés par l’organisation, le Russe est resté une pièce centrale du projet, confirmant son statut parmi les joueurs les plus expérimentés de la région.\n\nAvant son arrivée chez Team Liquid, nAts s’était déjà fait un nom sur la scène internationale avec Gambit Esports. Vainqueur des Masters Berlin en 2021, il avait également atteint la finale des Champions la même année, s’inclinant face à Acend. Des performances qui avaient fait de lui l’un des meilleurs joueurs du monde à son poste.\n\nAlors que plusieurs organisations préparent déjà leur effectif pour la saison 2027, la disponibilité potentielle d’un joueur de son calibre pourrait animer le mercato. Son expérience du plus haut niveau, sa polyvalence et ses qualités de leader représentent autant d’atouts pour les équipes à la recherche d’un nouveau capitaine.\n\nReste désormais à savoir si Team Liquid parviendra à convaincre nAts de prolonger l’aventure ou si le Russe choisira de relever un nouveau défi. Pour l’heure, toutes les options restent ouvertes, y compris celle d’une cinquième saison sous les couleurs de Liquid.\n\nLFT for the 2027 VCT season I’m still in talks with Team Liquid, but they’ve also given me permission to explore my options for next year. Main roles: IGL / Sentinel Open to opportunities across all VCT regions. Contact: offnats@gmail.com pic.twitter.com/nZ7HockjlM",
     "first_seen": "2026-10-16T16:01:01Z"
   },
@@ -94,6 +185,23 @@
       "bg": "linear-gradient(135deg, #06291f 0%, #090d16 100%)"
     },
     "content": "Joblife commence à préparer son avenir sur VALORANT. Après une saison 2026 marquée par deux titres en Challengers France et une participation aux Play-Ins du VCT EMEA, l’organisation française devrait profiter de Project Blender pour tester plusieurs nouvelles recrues. D’après les informations de Sheep Esports , soulcas, hoody, Sevire et WanZeru devraient rejoindre runneR, seul rescapé de l’effectif précédent, pour disputer la deuxième phase de la compétition. Le groupe serait encadré par pakko, ancien entraîneur de Gentle Mates, dont l’arrivée a été officialisée le 7 octobre.\n\nParmi les noms annoncés, soulcas et hoody apporteraient une solide expérience du plus haut niveau européen. Passé notamment par Team Liquid et Apeks, soulcas retrouverait la compétition après une année presque entièrement passée loin des serveurs. De son côté, hoody, ancien joueur de G2 Esports et Giants, sort d’une saison particulièrement active sur le circuit secondaire. Le Britannique Sevire connaît également bien la scène française, après des passages chez Solary, Karmine Corp Blue Stars et Mandatory, avec qui il a notamment atteint les finales des Challengers France et EMEA au printemps. Enfin, le jeune Tchèque WanZeru, 19 ans, arriverait de Team Liquid Academy, où il a évolué durant la saison 2026.\n\nCe nouveau cinq ne serait toutefois pas nécessairement définitif. Les joueurs peuvent en effet participer à Project Blender sans être sous contrat, ce qui permettrait à Joblife d’évaluer plusieurs profils avant de prendre ses décisions pour 2027. Les joueurs concernés resteraient donc disponibles sur le marché, et des changements ne sont pas à exclure dans les prochaines semaines.\n\nDirectement invitée en deuxième phase, Joblife retrouvera notamment NAVI, Eternal Fire, l’Eintracht Francfort et CGN Esports. Les huit équipes seront réparties en deux groupes de quatre, avec des rencontres en BO3. Les deux premières de chaque groupe accéderont aux playoffs, avant une demi-finale décisive pour rejoindre la troisième et dernière phase du tournoi, dont la finale en LAN est prévue à Paris.\n\nPour Joblife, l’objectif sera double : confirmer les progrès réalisés en 2026 et poser les bases d’un effectif capable de rivaliser avec les meilleures équipes européennes en 2027. Après avoir notamment battu Fnatic, NAVI et PCIFIC Esports lors des Play-Ins du VCT EMEA, la structure française espère poursuivre sur sa lancée avec un groupe profondément renouvelé.\n\n[SOURCES] Joblife plan to compete at Project Blender 2026 with the following roster: Hoody Sevire runneR WanZeru soulcas pakko will lead the team as Head Coach Full report https://t.co/VlkDwyUWYv"
+  },
+  {
+    "title": "Revenge Is Sweet: LOUD advances to Shanghai Grand Final",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/773533/revenge-is-sweet-loud-advances-to-shanghai-grand-final",
+    "published": "2026-10-16T08:46:15Z",
+    "game": "val",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Don't check what year it is: LOUD is in the Champions Grand Final.",
+    "first_seen": "2026-10-16T23:44:55Z"
   },
   {
     "title": "Champions 2026 : 100 Thieves – G2 en direct",
@@ -121,6 +229,7 @@
     "game": "lol",
     "category": "news",
     "image": "https://e.sport.fr/wp-content/uploads/2026/10/b0973-1024x683.jpg",
+    "logo": null,
     "content": "Pour ses premiers pas aux championnats du monde de League of Legends, la Karmine Corp est passée par toutes les émotions. Opposée à Cloud9, troisième représentant nord-américain, l’équipe française a vécu un début de BO5 cauchemardesque. Dès la première manche, les Américains ont infligé une véritable correction à la KC, avec un score sans appel de 20-1 aux kills. Sur la midlane, Loki s’est montré absolument intouchable, terminant la partie en 11/0/3 sur Locke. Une entrée en matière inquiétante, qui a rapidement fait ressurgir les difficultés aperçues lors des playoffs du Summer Split.\n\nCar au-delà du résultat, c’est surtout le jeu collectif de la Karmine Corp qui a posé problème. Souvent en retard sur les objectifs, les Français ont peiné à coordonner leurs déplacements et à trouver les bonnes ouvertures lors des teamfights. Des hésitations particulièrement coûteuses face à une équipe de Cloud9 capable d’accélérer brutalement en milieu de partie. La deuxième manche a d’ailleurs failli tourner à une nouvelle démonstration, avec Loki toujours aussi dangereux sur Akali (5/2/1) et Tactical largement en avance sur Kalista (6/1/5). Mais cette fois, la KC a réussi l’impensable : un teamfight décisif autour du dragon, porté par le duo kyeahoo-Caliste, lui a permis de renverser une partie pourtant très mal engagée.\n\nC'EST TOUT DROIT ! pic.twitter.com/ZgwtDeCjHX\n\nCe sursaut n’a toutefois pas immédiatement réglé les problèmes des Français. Dans la troisième manche, Cloud9 a repris sa domination avec une victoire écrasante, 22-5 aux kills, sous l’impulsion d’un Blaber impérial sur Jarvan IV (7/0/14). Dos au mur, la Karmine Corp devait impérativement réagir pour éviter une élimination dès son entrée en lice.\n\nEt c’est Caliste qui a relancé les siens. Auteur d’une prestation exceptionnelle sur Xayah (11/1/3), le jeune ADC français a notamment fait basculer un teamfight crucial avant que la KC ne sécurise le dragon ancestral et n’égalise à 2-2. Tout allait donc se jouer dans une cinquième manche décisive, au son des traditionnels Silver Scrapes.\n\nYESSSSSSSSSSSSSSSSSSSSSSSSSSSS pic.twitter.com/h9ev2J76pB",
     "first_seen": "2026-10-16T16:01:01Z"
   },
@@ -150,6 +259,7 @@
     "game": "lol",
     "category": "tournament",
     "image": "https://e.sport.fr/wp-content/uploads/2026/10/FUR_Tatu_at_CBLOL_Cup_2026_Week_1-1024x683.jpeg",
+    "logo": null,
     "content": "Pour suivre le match FURIA – MVK Esports en direct, rendez-vous sur le lien ci-dessous :",
     "first_seen": "2026-10-16T23:33:04Z"
   },
@@ -161,6 +271,7 @@
     "game": "cod",
     "category": "news",
     "image": "https://media.esports.gg/uploads/2026/10/HUsdLKVXMAAwdVj-1024x530.webp",
+    "logo": null,
     "content": "One of the best decisions that Call of Duty has made over the past two years has been bringing back Classic Prestige, and that popular feature is back in Modern Warfare 4 . While Prestige does work a little differently this year, as there are two Prestige options for players, what hasn’t changed are the Prestige Icons that players can earn in Modern Warfare 4.\n\nNaturally, the Prestige Icons look completely new compared to any game before MW4, but the way you earn them is the same. You enter Prestige Mode after reaching level 55 and reset your level, but you earn an icon next to your name and some other exclusive rewards. If you’re curious about the Prestige Icons, we have a complete view of what they look like in MW4, and you can see them in the guide below.\n\nIn total, there are 10 Prestige Icons that players can earn in multiplayer, along with a Prestige Master icon. We haven’t seen the Prestige Master icon just yet, but we do have a look at all 10 of the standard Prestige Icons available in MW4.\n\nAs you can see from the 10 icons, there are some clear callbacks to previous Call of Duty games represented on most of the icons. For example, Prestige 6 has the COD Ghosts logo, while Prestige 7 has the Infinite Warfare logo. We also see Prestige 5 feature the silhouette of the Modern Warfare 3 (2011) soldier logo. Prestige 10 features the “4” icon from MW4 as well, so most Infinity Ward CODs are showcased in some fashion.\n\nIt should also be noted that the individual Prestige Icons are animated. The golden figures in the middle of each icon move in unique ways, and this can be seen in-game.\n\nWhile these Prestige Icons might be more monochromatic than some players might have liked, the different logos and symbols in each of the icons are nice throwbacks for Call of Duty veterans. The icons being animated is also a nice touch, as the past two years in BO6 and BO7 have featured static icons.",
     "first_seen": "2026-10-16T23:33:04Z"
   },
@@ -184,6 +295,7 @@
     "game": "val",
     "category": "news",
     "image": "https://e.sport.fr/wp-content/uploads/2026/10/53946825819_5432f6d724_k-1024x576.jpg",
+    "logo": null,
     "content": "Le VCT 2027 prend forme. Riot Games a officialisé les dates et les villes qui accueilleront les principales compétitions de la prochaine saison de VALORANT. Avec plus de 50 tournois au programme, le circuit adoptera un fonctionnement beaucoup plus ouvert, permettant notamment aux équipes non partenaires de se qualifier pour les plus grands rendez-vous internationaux. Les premières qualifications ouvertes débuteront dès novembre 2026, avant le lancement officiel de la saison avec les Kickoff, du 14 janvier au 7 février.\n\nLa saison s’ouvrira simultanément dans quatre régions : Berlin pour l’EMEA, São Paulo pour les Amériques, Bangkok pour le Pacifique et Hangzhou pour la Chine. Les meilleures équipes se retrouveront ensuite à Séoul, du 20 février au 3 mars, pour le premier Masters de l’année. Le circuit reprendra avec une première série de Cups régionales du 29 avril au 23 mai, notamment à Varsovie, Mexico, Manille et Wuhan, avant un deuxième Masters organisé à Valence, en Espagne, du 5 au 20 juin.\n\nAprès une deuxième série de Cups régionales en août, à Istanbul, Rio de Janeiro, Tokyo et Shanghai, la saison culminera avec les VALORANT Champions 2027, organisés à Austin du 16 septembre au 10 octobre. Une édition particulière puisque, pour la première fois, la finale du Game Changers Championship se déroulera également pendant les Champions, offrant une exposition inédite à la scène féminine.\n\nCette refonte s’accompagnera d’un soutien financier renforcé pour les équipes issues des qualifications ouvertes. Chaque participation à un Kickoff ou à une Cup rapportera 100 000 dollars de soutien, contre 200 000 dollars pour une qualification aux Masters et 400 000 dollars pour les Champions. Les équipes présentes au Game Changers Championship recevront également 100 000 dollars chacune.\n\nAvec ce nouveau format, Riot Games souhaite ouvrir davantage la compétition et permettre à de nouvelles structures de rivaliser avec les organisations historiques. Un changement majeur pour le circuit VALORANT, qui promet une saison 2027 particulièrement dense, aussi bien sur le plan sportif que géographique.\n\nYou know we’re going big with the VCT in 2027, but where are we headed? pic.twitter.com/SKCzrAUbaE",
     "first_seen": "2026-10-16T16:29:03Z"
   },
@@ -195,6 +307,7 @@
     "game": "lol",
     "category": "tournament",
     "image": "https://e.sport.fr/wp-content/uploads/2026/06/image_processing20260608-1-x10e71-1024x683.webp",
+    "logo": null,
     "content": "Pour suivre le match Cloud9 – Karmine Corp en direct, rendez-vous sur l’un des liens ci-dessous :",
     "first_seen": "2026-10-16T23:33:04Z"
   },
@@ -206,6 +319,7 @@
     "game": "fortnite",
     "category": "news",
     "image": "https://media.esports.gg/uploads/2026/10/One-Wish-Willow-Sprite-in-Lobby.webp",
+    "logo": null,
     "content": "The first leg of the Obsession x Fortnite collaboration has arrived as the One Wish Willow Sprite. This item is incredibly rare, but it’s one of the more interesting Sprites currently in the game.\n\nThis article covers everything we know about this new Sprite, including how you can find it and what it does.\n\nUnfortunately, we spent several hours playing the game after the v42.20 update but couldn’t locate the One Wish Willow Sprite. That’s a testament to the Sprite’s Mythic rarity, which is the rarest classification currently in Fortnite.\n\nOne Wish Willow Sprite in Override (Image credit: TheStreetRonin) We played through roughly eight to 10 matches and had no luck finding the newest Sprite. However, that doesn’t mean it’s impossible. Your best bet is to search for Mythic Cheat Codes or loot the Pumpkin Chests currently available across the map.\n\nMany Fortnite players have reported finding the One Wish Willow Sprite, and some are even trading them, so you might want to explore that as an option too.\n\nhow I got my bounty hunter WILLOW sprite. 🧡 smash pumpkins https://t.co/mfBRGt1mbZ pic.twitter.com/8X8ksAiOFz",
     "first_seen": "2026-10-16T23:33:04Z"
   },
@@ -217,8 +331,26 @@
     "game": "rl",
     "category": "news",
     "image": "https://e.sport.fr/wp-content/uploads/2026/10/RLCS_2026_Michal_Konkol_Paris_Major_Spacestation_Gaming-1024x683.jpg",
+    "logo": null,
     "content": "Spacestation Gaming tient sa troisième recrue pour les RLCS 2027. L’organisation nord-américaine a annoncé la signature de Rexton « solar » M., jeune talent de 17 ans qui évoluera aux côtés de Jack « reveal » LeDuc et Zachary « zach » Stone, sous les ordres du coach André « Xpere » Ruivinho. Il prendra la place laissée vacante par le Brésilien diaz, contraint de quitter l’équipe en raison de complications administratives liées à son visa. Ce dernier est désormais pressenti chez Vitality, où il pourrait retrouver nass et Oski.\n\nLe recrutement de solar constitue une véritable surprise. Repéré grâce à son ascension fulgurante dans les classements en ligne, l’Américain n’a encore jamais disputé de Main Event RLCS. Il a néanmoins montré des qualités prometteuses en terminant dans le Top 12 du Last Chance Qualifier nord-américain aux côtés de Druee et Kehvn. Il a également atteint la phase suisse des Opens 1v1 et 2v2 de sa région, avec deux Top 22 à la clé. Initialement attendu chez 9Lives avec monk et Juice, il a finalement choisi de rejoindre Spacestation Gaming.\n\nCe choix s’inscrit dans la tradition de Spacestation Gaming, réputée pour avoir révélé plusieurs jeunes talents nord-américains, notamment Daniel, Sypical et Arsenal. Mais solar devra rapidement faire ses preuves au sein d’une équipe qui sort d’une saison 2026 exceptionnelle. Après un Top 8 au Major de Paris, SSG a enchaîné deux finales internationales, à l’Esports World Cup puis aux championnats du monde RLCS, s’inclinant à chaque fois face à Team Falcons.\n\nAvec reveal et zach comme coéquipiers, solar aura donc la lourde tâche de succéder à diaz et de maintenir Spacestation Gaming parmi les meilleures formations mondiales. Un immense défi pour un joueur de 17 ans qui s’apprête à découvrir le plus haut niveau, avec le Club Championship 2027 en ligne de mire.\n\nTHE ROSTER MOVE NO ONE EXPECTED BUT EVERYONE NEEDED Welcome to SSG Rocket League @sqlarrl_ pic.twitter.com/vUZ6hRHdoW",
     "first_seen": "2026-10-16T16:29:03Z"
+  },
+  {
+    "title": "Seoul, València, Austin among 15 VCT 2027 host locations",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/773083/seoul-val-ncia-austin-among-15-vct-2027-host-locations",
+    "published": "2026-10-15T11:52:28Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "The 2027 VCT host locations have been revealed.",
+    "first_seen": "2026-10-16T23:44:55Z"
   },
   {
     "title": "Eight teams chase $1m at Thunderpick World Championship in Malta",
@@ -383,6 +515,40 @@
     "content": "LOUD beat NRG 2-1 in the VCT Champions 2026 upper-bracket semi-final on Saturday 10 October, advancing to face Team Vitality while NRG dropped into the lower bracket, according to Esports News UK.\n\nThe result gives LOUD another chance against the only team to beat them at the tournament so far. NRG, featuring British player Keiko, remain in contention but now have no room for error in the lower bracket.\n\nLOUD claimed the opening map in 46 minutes, but NRG answered with the longest contest of the series, taking map two after 49 minutes to level the score. The match went to a decider, where LOUD closed out the series in 36 minutes.\n\nThe three-map win extends LOUD’s run to three consecutive victories at Champions. They had opened with a 2-0 win over EDward Gaming, then lost 0-2 to Vitality before recovering with 2-0 results against Global Esports and Paper Rex ahead of the NRG match.\n\nNRG’s defeat ended a three-match winning streak at the event. The defending side had beaten Nongshim RedForce 2-0, Karmine Corp 2-1 and T1 2-0 before meeting LOUD, but the loss changes its route through the playoffs rather than ending its tournament.\n\nLOUD advance to the upper-bracket final against Vitality, who reached the meeting with a 2-0 win over G2 Esports. NRG move into the lower bracket alongside teams still fighting to stay alive, including T1 and 100 Thieves, both of whom survived the first round there.\n\n100 Thieves advanced by beating Nongshim RedForce 2-1, while T1 defeated Paper Rex by the same score. NRG will meet T1 again after beating them 2-0 in the upper-bracket quarter-final. The results leave multiple playoff paths open, with NRG needing to win each subsequent series to continue.\n\nThe split between the upper and lower brackets also shapes the tournament’s closing schedule. LOUD’s route offers a direct chance to reach the grand final, while NRG must first navigate the lower-bracket field. The Champions Shanghai format and schedule frame the stakes as the remaining teams approach the final days."
   },
   {
+    "title": "G2 enters the top four with 2-1 victory over T1",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/772153/g2-enters-the-top-four-with-2-1-victory-over-t1",
+    "published": "2026-10-11T15:54:42Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "G2 Esports",
+      "tag": "G2",
+      "color": "#ef4444",
+      "bg": "#380606"
+    },
+    "content": "",
+    "first_seen": "2026-10-16T23:44:55Z"
+  },
+  {
+    "title": "100 Thieves swipe away NRG's back-to-back dreams with 2-0 victory",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/771995/100-thieves-swipe-away-nrgs-back-to-back-dreams-with-2-0-victory",
+    "published": "2026-10-11T13:51:08Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "100 Thieves",
+      "tag": "100T",
+      "color": "#ef4444",
+      "bg": "#380606"
+    },
+    "content": "100 Thieves continue their lower-bracket run. NRG wave goodbye to Shanghai.",
+    "first_seen": "2026-10-16T23:44:55Z"
+  },
+  {
     "title": "Vitality.Bee Closure Puts LFL’s 2027 Plans Under Pressure",
     "source": "Esports Insider",
     "url": "https://esportsinsider.com/2026/10/lfl-2027-vitality-bee",
@@ -419,6 +585,23 @@
     "content": "T1 and 100 Thieves won 2-1 lower-bracket series at VALORANT Champions Shanghai , eliminating Paper Rex and Nongshim RedForce while keeping their own tournament runs alive.\n\nT1 took the first map against Paper Rex, winning Lotus 13-7, before their regional rivals levelled the series with a 13-6 result on Ascent. The decider on Summit then swung sharply: Paper Rex led 9-3 at half-time and won the second-half pistol, but T1 rallied to close the map 13-11.\n\nInitiator Ham “iZu” Woo-Joo led T1 through the final map and was the only player on his team to finish it with a positive KDA, according to Sheep Esports. He was named series MVP, recording a 1.15 rating and 290 average combat score (ACS).\n\nThe win keeps T1 in the lower bracket after an elimination match between two Pacific teams. T1’s route into the playoff stage followed a group-stage run that left little room for error, while the Champions Shanghai playoff field has now lost one of its most prominent contenders.\n\n100 Thieves also needed three maps to advance. The North American side won Split 13-5, then lost Sunset 9-13 as Nongshim RedForce forced a decider.\n\nAscent proved one-sided: 100 Thieves conceded only one round before finishing the map 13-1. Sentinel Matthew “Cryocells” Panganiban earned series MVP honours with a 1.41 rating and 253 ACS, as his team stayed alive in the lower bracket.\n\nBoth matches were elimination fixtures, so the results removed two teams from the Shanghai playoff field and sent the winners forward. The upper-bracket results earlier in the tournament had already placed 100 Thieves and Nongshim in the lower bracket; the latest round ended both teams’ chances of reaching the final.\n\nPaper Rex and Nongshim RedForce are out, while T1 and 100 Thieves remain in contention. Sheep Esports reported that the Pacific and EMEA regions each have only their fourth seed left as a regional representative, with the other remaining teams from the Americas. The shifting lineup reflects the regional spread across the playoff field ."
   },
   {
+    "title": "Vitality brings down G2 2-0 to claim upper final berth",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/771243/vitality-brings-down-g2-2-0-to-claim-upper-final-berth",
+    "published": "2026-10-10T13:59:04Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Team Vitality",
+      "tag": "VIT",
+      "color": "#facc15",
+      "bg": "#3b3002"
+    },
+    "content": "EMEA's last hope enters the top three in Shanghai.",
+    "first_seen": "2026-10-16T23:44:55Z"
+  },
+  {
     "title": "Astralis’ First LAN Title Since 2019 Precedes Roster Shake-Up",
     "source": "Esports Insider",
     "url": "https://esportsinsider.com/2026/10/astralis-roster-change",
@@ -429,6 +612,23 @@
     "image": "https://esportsinsider.com/wp-content/uploads/2026/10/astralis-first-lan-title-roster-shake-up.webp",
     "entity": null,
     "content": "Astralis have moved Rasmus “HooXi” Nielsen and Jakob “jabbi” Nygaard to the bench with immediate effect, days after the team secured its first LAN trophy since 2019.\n\nThe change is confirmed, but the next roster is not: reports identify former Liquid captain Kamil “siuhy” Szkaradek and Ukrainian rifler Nikita “cmtry” Samolotov as possible additions, with neither move officially confirmed. Sport.ua reported the benching and said both players’ contracts are nearing completion.\n\nThe timing follows Astralis’ victory at Stake Ranked Episode 4 in Barcelona, the organisation’s first LAN title since December 2019. HooXi led the team to that win, as well as grand-final appearances at PGL Astana 2025, FISSURE Playground 1 and PGL Bucharest 2026.\n\nHooXi joined Astralis permanently in June 2025 after serving as a stand-in, replacing Casper “cadiaN” Møller. jabbi arrived from HEROIC in November 2023 alongside Martin “stavn” Lund. Astralis had reportedly been seeking replacements for the pair two days before the benching, according to Sport.ua.\n\nThe reported interest in siuhy also comes amid movement in the CS2 in-game-leader market. His availability after his Liquid stint has featured in recent CS2 roster changes , while established leaders have continued to move between teams during active roster cycles.\n\nThe listed active lineup comprises Love “phzy” Smidebrant , Victor “Staehr” Staehr and Gytis “ryu” Glušauskas , with Filip “NEO” Kubski as coach. HooXi and jabbi are listed as benched; Staehr is the only Danish player among the three active players, alongside Sweden’s phzy and Lithuania’s ryu.\n\nAstralis’ next listed event is Stake Pulse Beat III, scheduled to begin on October 12, 2026. Sport.ua reported that cmtry could switch from the AWP to a rifling role if he joins, but the organisation has yet to confirm either potential signing."
+  },
+  {
+    "title": "LOUD deafen NRG, secure top-three spot at Champs",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/770452/loud-deafen-nrg-secure-top-three-spot-at-champs",
+    "published": "2026-10-10T09:05:26Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "LOUD Esports",
+      "tag": "LOUD",
+      "color": "#22c55e",
+      "bg": "#062b11"
+    },
+    "content": "",
+    "first_seen": "2026-10-16T23:44:55Z"
   },
   {
     "title": "G2, Vitality advance through contrasting Shanghai quarter-finals",
@@ -447,6 +647,40 @@
       "bg": "linear-gradient(135deg, #2b2205 0%, #090d16 100%)"
     },
     "content": "G2 beat 100 Thieves 2-0 in the Valorant Champions 2026 Shanghai Upper Bracket quarter-finals, while Vitality survived a three-map series against Nongshim RedForce to advance. The results sent both winners on in the upper bracket and left 100 Thieves and Nongshim to continue in the lower bracket, according to Insider Gaming.\n\nG2 took the opening map, Abyss, 13-5 on 100 Thieves’ pick. Nathan ‘leaf’ Orf finished with a 19/11/6 scoreline, while Trent ‘trent’ Cairns recorded 18/9/2 as G2 set the pace and secured a commanding start to the series.\n\nThe contest tightened on Ascent, but G2 held firm to win 13-11 and complete the sweep. The source report described the map as a test of composure: 100 Thieves created setbacks, yet G2 came through the close rounds and outclutched its opponent.\n\nThe result carried added weight after 100 Thieves had beaten G2 in VCT Americas Stage 2. The report also noted that 100 Thieves entered the matchup after winning EWC and that regional title, while G2 had struggled to reproduce its domestic form at international events. Its Shanghai run has offered a sharper response to that history; G2’s earlier Champions campaign provides further tournament context.\n\nVitality opened its series with a 13-6 win on Split after taking a 7-5 lead into the break. Nikita ‘Derke’ Sirmitev posted 280 ACS on the defensive half as Vitality controlled the second half, conceding only one round.\n\nNongshim responded emphatically on Abyss, winning 13-4 after a flawless second half. The swing sent the quarter-final to Haven, where Nongshim again held the advantage at the interval, leading 7-5, before the teams reached a 9-9 tie.\n\nVitality had to recover after Nongshim pushed into the contest and forced overtime. Elias ‘Jamppi’ Olkkonen delivered a 1v1 clutch to put Vitality on map and series point; Nongshim then found a retake to extend the map. Derke helped set up another match point, and Timofey ‘Chronicle’ Khromov’s late individual play helped Vitality close out the series and reach the upper semi-final.\n\nThe quarter-finals reshaped both sides of the bracket. The source report listed G2, Vitality, NRG and LOUD in the upper bracket, with 100 Thieves, Nongshim RedForce, Paper Rex and T1 in the lower bracket. The Champions Shanghai playoff field shows the wider eight-team contest."
+  },
+  {
+    "title": "100 Thieves pull off the heist against Nongshim RedForce to stay alive in Shanghai",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/769900/100-thieves-pull-off-the-heist-against-nongshim-redforce-to-stay-alive-in-shanghai",
+    "published": "2026-10-09T15:15:46Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "The Thieves snatch a win against Nongshim RedForce. The loss sends Nongshim packing.",
+    "first_seen": "2026-10-16T23:44:55Z"
+  },
+  {
+    "title": "Insane T1 comeback sends Paper Rex into extinction for 2026",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/769734/insane-t1-comeback-sends-paper-rex-into-extinction-for-2026",
+    "published": "2026-10-09T11:12:05Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "T1 Esports",
+      "tag": "T1",
+      "color": "#e11d48",
+      "bg": "#360511"
+    },
+    "content": "T1 comes back from the dead to send the dinos into extinction.",
+    "first_seen": "2026-10-16T23:44:55Z"
   },
   {
     "title": "Counter-Strike Sponsorships Face a Funding Gap in Brazil",
