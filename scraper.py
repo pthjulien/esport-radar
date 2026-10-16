@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
-"""Esport Radar Scraper 10.0
-- Rejet strict des articles multi-jeux (ex: LoL + FC 27 + Mario Kart) et tournois amateurs
-- Règle 100% visuel : vraie photo de presse OU logo officiel d'équipe/tournoi
-- Si aucune image/logo n'existe : article supprimé (0 carte texte)
-- Cumul d'historique propre sur 14 jours
+"""Esport Radar Scraper 11.0
+- Remplissage massif immédiat : pagination des flux (?paged=2, ?paged=3) et historique sur 35 jours
+- Règle 100% visuel : vraie photo de presse HD ou logo officiel d'équipe/tournoi
+- Rejet strict du multi-jeux (type LoL + Mario Kart) et des tournois amateurs
+- Objectif : 80 à 100+ articles qualifiés immédiatement disponibles
 """
 import html
 import json
@@ -16,22 +16,29 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 OUT_FILE = Path(__file__).resolve().parent / "data.json"
-MAX_ITEMS = 100
-MAX_AGE_DAYS = 14
+MAX_ITEMS = 120
+MAX_AGE_DAYS = 35  # Récupère l'ensemble du dernier mois en attendant les prochaines actus
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36"
 
-# Flux spécialisés fournissant du contenu esport vérifié
+# Flux avec pagination pour extraire immédiatement les 30 à 40 derniers articles de chaque jeu
 FEEDS = [
-    # E.SPORT.FR (Général + Catégories dédiées)
+    # E.SPORT.FR — Fil général (Pages 1, 2, 3)
     ("https://e.sport.fr/feed/", "E.SPORT.FR", None),
+    ("https://e.sport.fr/feed/?paged=2", "E.SPORT.FR", None),
+    ("https://e.sport.fr/feed/?paged=3", "E.SPORT.FR", None),
+
+    # E.SPORT.FR — Catégories dédiées paginées
     ("https://e.sport.fr/category/league-of-legends/feed/", "E.SPORT.FR", "lol"),
+    ("https://e.sport.fr/category/league-of-legends/feed/?paged=2", "E.SPORT.FR", "lol"),
     ("https://e.sport.fr/category/valorant/feed/", "E.SPORT.FR", "val"),
+    ("https://e.sport.fr/category/valorant/feed/?paged=2", "E.SPORT.FR", "val"),
     ("https://e.sport.fr/category/counter-strike/feed/", "E.SPORT.FR", "cs2"),
+    ("https://e.sport.fr/category/counter-strike/feed/?paged=2", "E.SPORT.FR", "cs2"),
     ("https://e.sport.fr/category/fortnite/feed/", "E.SPORT.FR", "fortnite"),
     ("https://e.sport.fr/category/call-of-duty/feed/", "E.SPORT.FR", "cod"),
     ("https://e.sport.fr/category/rocket-league/feed/", "E.SPORT.FR", "rl"),
     ("https://e.sport.fr/category/apex-legends/feed/", "E.SPORT.FR", "apex"),
-    
+
     # Médias spécialisés complémentaires
     ("https://www.dexerto.fr/feed/esport/", "Dexerto FR", None),
     ("https://charlieintel.com/feed/", "Charlie INTEL", "cod"),
@@ -40,7 +47,6 @@ FEEDS = [
     ("https://www.jeuxvideo.com/rss/rss-esport.xml", "JV Esport", None),
 ]
 
-# Règles strictes par discipline
 GAME_RULES = {
     "lol": re.compile(
         r"league of legends|\blol\b|\blec\b|\blfl\b|\blck\b|\blpl\b|\blcs\b|"
@@ -85,7 +91,7 @@ GAME_RULES = {
     )
 }
 
-# Liste noire des tournois amateurs, salons locaux et fêtes municipales
+# Liste noire des tournois amateurs et salons locaux
 AMATEUR_LOCAL_BAN = re.compile(
     r"bussy|saint-georges|amateurs? de gaming|amateurs? d'esport|week-end dédié aux jeux|"
     r"salon du jeu|fête du jeu|médiathèque|mjc|centre culturel|tournoi amateur|lan amateur|"
@@ -93,9 +99,8 @@ AMATEUR_LOCAL_BAN = re.compile(
     re.I
 )
 
-# Logos officiels pour les articles sans photo de presse directe
+# Logos officiels pour les dépêches sans photo directe
 OFFICIAL_LOGOS = [
-    # Compétitions majeures
     ("vct", re.compile(r"\bvct\b|valorant champions", re.I), {
         "title": "VALORANT Champions Tour", "tag": "VCT", "color": "#ff4655", "bg": "#1f0910"
     }),
@@ -120,8 +125,6 @@ OFFICIAL_LOGOS = [
     ("rlcs", re.compile(r"\brlcs\b", re.I), {
         "title": "Rocket League Championship Series", "tag": "RLCS", "color": "#0ea5e9", "bg": "#041829"
     }),
-    
-    # Équipes et structures officielles
     ("kc", re.compile(r"karmine corp|\bkarmine\b|\bkcorp\b|\bkc\b", re.I), {
         "title": "Karmine Corp", "tag": "KC", "color": "#38bdf8", "bg": "#05182e"
     }),
@@ -152,36 +155,25 @@ def clean_text(raw_html: str) -> str:
     return re.sub(r'\s+', ' ', text).strip()
 
 def detect_single_game(title: str, text_zone: str, feed_hint: str = None):
-    """
-    Règle anti multi-jeux :
-    Si l'article mentionne 2 jeux ou plus dans son titre, il est supprimé.
-    """
     if AMATEUR_LOCAL_BAN.search(title + " " + text_zone[:200]):
         return None
 
-    # Comptage des jeux distincts mentionnés dans le titre
-    matched_games_in_title = []
-    for game_key, rx in GAME_RULES.items():
-        if rx.search(title):
-            matched_games_in_title.append(game_key)
+    matched_games = [k for k, rx in GAME_RULES.items() if rx.search(title)]
 
-    # Si 2 jeux ou plus sont dans le titre (ex: LoL, FC 27, Mario Kart) -> POUBELLE
-    if len(matched_games_in_title) > 1:
-        # Exception uniquement pour la Coupe du Monde des clubs (EWC)
+    # Si 2 jeux ou plus sont dans le titre -> POUBELLE
+    if len(matched_games) > 1:
         if not re.search(r"esports world cup|\bewc\b", title, re.I):
             return None
 
-    # Si un jeu unique est trouvé dans le titre, c'est le bon
-    if len(matched_games_in_title) == 1:
-        return matched_games_in_title[0]
+    if len(matched_games) == 1:
+        return matched_games[0]
 
-    # Sinon, analyse du flux dédié ou du début de texte
     if feed_hint and feed_hint in GAME_RULES:
         return feed_hint
 
-    for game_key, rx in GAME_RULES.items():
+    for k, rx in GAME_RULES.items():
         if rx.search(text_zone[:250]):
-            return game_key
+            return k
 
     return None
 
@@ -197,7 +189,6 @@ def detect_category(text: str) -> str:
     return "news"
 
 def extract_press_photo(item, raw_xml: str) -> str:
-    """Extrait la vraie photo de presse haute définition."""
     enc = item.find("enclosure")
     if enc is not None and enc.get("url"):
         u = enc.get("url").strip()
@@ -228,7 +219,6 @@ def extract_press_photo(item, raw_xml: str) -> str:
     return ""
 
 def find_official_logo(title: str, text_zone: str):
-    """Trouve un logo de compétition ou d'équipe officiel."""
     for _, rx, data in OFFICIAL_LOGOS:
         if rx.search(title):
             return data
@@ -271,7 +261,6 @@ def main() -> int:
     seen_at = now.strftime("%Y-%m-%dT%H:%M:%SZ")
     cutoff = (now - timedelta(days=MAX_AGE_DAYS)).strftime("%Y-%m-%dT%H:%M:%SZ")
 
-    # Lecture de l'historique
     existing = {}
     if OUT_FILE.exists():
         try:
@@ -279,7 +268,6 @@ def main() -> int:
             if isinstance(d, list):
                 for a in d:
                     if isinstance(a, dict) and a.get("title") and a.get("published", "") >= cutoff:
-                        # Si l'article avait une photo ou un logo valide, on le garde
                         if (a.get("image") and "unsplash" not in a["image"]) or a.get("logo"):
                             k = a["title"].strip().lower()
                             existing[k] = a
@@ -308,18 +296,15 @@ def main() -> int:
             except Exception:
                 item_xml_str = ""
 
-            # FILTRE 1 : Détection stricte d'un jeu unique (élimine les multi-jeux type Bussy)
             game = detect_single_game(title, item_xml_str, hint)
             if not game:
                 continue
 
-            # FILTRE 2 : Photo de presse OU Logo officiel (si aucun des deux -> SUPPRIMÉ)
             photo_url = extract_press_photo(it, item_xml_str)
             logo_info = None
             if not photo_url:
                 logo_info = find_official_logo(title, item_xml_str)
 
-            # RÈGLE D'OR : Pas de photo ET pas de logo = ON NE PREND PAS
             if not photo_url and not logo_info:
                 continue
 
@@ -344,7 +329,7 @@ def main() -> int:
                 "first_seen": existing.get(k, {}).get("first_seen", seen_at)
             })
 
-    # Fusion avec l'historique
+    # Fusion avec l'historique et dédoublonnage
     merged = {**existing}
     for item in collected:
         k = item["title"].lower().strip()
@@ -358,10 +343,10 @@ def main() -> int:
 
     final = sorted_items[:MAX_ITEMS]
     OUT_FILE.write_text(json.dumps(final, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
-    
+
     n_photos = sum(1 for x in final if x.get("image"))
     n_logos = sum(1 for x in final if not x.get("image") and x.get("logo"))
-    print(f"Terminé : {len(final)} articles enregistrés ({n_photos} photos réelles + {n_logos} logos officiels. 0 carte texte).")
+    print(f"Extraction terminée : {len(final)} articles au total ({n_photos} photos réelles + {n_logos} logos officiels).")
     return 0
 
 if __name__ == "__main__":
