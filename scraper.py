@@ -204,3 +204,292 @@ def detect_game_strict(title: str, categories_str: str, lead_text: str, feed_hin
         matches = rx.findall(header_zone)
         if matches:
             scores[game_key] += 12 * len(matches)
+
+    # 2. Analyse du premier paragraphe court (Poids modéré : +3 points)
+    short_lead = (lead_text or "")[:280]
+    for game_key, rx in GAME_RULES.items():
+        if rx.search(short_lead):
+            scores[game_key] += 3
+
+    # 3. Indice de flux dédié (Poids d'appoint : +5 points uniquement si aucun autre jeu n'est dans le titre)
+    if feed_hint and feed_hint in scores:
+        scores[feed_hint] += 5
+
+    best_game = max(scores, key=scores.get)
+    if scores[best_game] <= 0:
+        return None
+    return best_game
+
+def detect_category(title: str, lead: str) -> str:
+    txt = f"{title} {lead[:200]}"
+    if re.search(r"rumou?rs?|rumeurs?|leak|fuite|selon|serait|pourrait|aurait|piste|courtise|en discussion", txt, re.I):
+        return "rumor"
+    if re.search(r"joins?|signs?|signe|rejoint|officialise|quitte|prolonge|recrute|transfert|benched|roster|départ|rejoindre|mercato", txt, re.I):
+        return "official"
+    if re.search(r"victoire|défaite|sacré|éliminé|finale|playoffs|classement|tournoi|major|masters|trophée|champions|direct|match|score|qualifi", txt, re.I):
+        return "tournament"
+    if re.search(r"patch|mise à jour|nerf|buff|équilibrage|update|hotfix", txt, re.I):
+        return "patch"
+    return "news"
+
+def detect_entity(title: str, lead: str):
+    """Détecte une équipe ou compétition officielle pour le Niveau 2."""
+    for _, rx, info in ENTITIES:
+        if rx.search(title):
+            return info
+    for _, rx, info in ENTITIES:
+        if rx.search(lead[:200]):
+            return info
+    return None
+
+def is_valid_press_photo(url: str) -> bool:
+    if not url or not url.startswith("http"):
+        return False
+    low = url.lower()
+    banned = ["unsplash", "wikimedia", "avatar", "logo", "icon", "emoji", "pixel", "tracking", "gstatic", "googleusercontent", "1x1", "blank"]
+    if any(b in low for b in banned):
+        return False
+    return bool(re.search(r"\.(jpe?g|png|webp|avif)", low))
+
+def fetch_wp_api(entry):
+    url, src_name, hint = entry
+    results = []
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/json"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            posts = json.loads(resp.read().decode("utf-8", errors="ignore"))
+        if not isinstance(posts, list):
+            return results
+
+        for post in posts:
+            title = clean_text(post.get("title", {}).get("rendered", ""))
+            link = post.get("link", "")
+            if not title or not link:
+                continue
+
+            # Date
+            pub_raw = post.get("date_gmt") or post.get("date") or ""
+            pub = pub_raw[:19] + "Z" if len(pub_raw) >= 19 else datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+            # Image & Catégories depuis _embedded
+            img = ""
+            cats = []
+            embedded = post.get("_embedded", {})
+            media_list = embedded.get("wp:featuredmedia", [])
+            if isinstance(media_list, list) and media_list:
+                img_candidate = media_list[0].get("source_url", "")
+                if is_valid_press_photo(img_candidate):
+                    img = img_candidate.replace("http://", "https://")
+
+            terms = embedded.get("wp:term", [])
+            for term_group in terms:
+                if isinstance(term_group, list):
+                    for t in term_group:
+                        if isinstance(t, dict) and t.get("name"):
+                            cats.append(t.get("name"))
+
+            # Paragraphes de l'article
+            raw_html = post.get("content", {}).get("rendered", "") or post.get("excerpt", {}).get("rendered", "")
+            p_tags = re.findall(r'<p[^>]*>(.*?)</p>', raw_html, flags=re.DOTALL | re.IGNORECASE)
+            paragraphs = []
+            for p in p_tags:
+                c = clean_text(p)
+                if len(c) > 40 and not c.lower().startswith(("à lire aussi", "lire aussi", "source :", "crédit :", "the post")):
+                    paragraphs.append(c)
+
+            if not img:
+                m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', raw_html, re.I)
+                if m and is_valid_press_photo(m.group(1)):
+                    img = m.group(1).replace("http://", "https://")
+
+            lead = paragraphs[0] if paragraphs else clean_text(post.get("excerpt", {}).get("rendered", ""))
+            if not paragraphs and lead:
+                paragraphs = [lead]
+
+            game = detect_game_strict(title, " ".join(cats), lead, hint)
+            if not game:
+                continue
+
+            cat = detect_category(title, lead)
+            ent = detect_entity(title, lead)
+            tier = "photo" if img else ("entity" if ent else "dispatch")
+
+            results.append({
+                "title": title,
+                "source": src_name,
+                "url": link,
+                "published": pub,
+                "game": game,
+                "category": cat,
+                "tier": tier,
+                "image": img,
+                "entity": ent,
+                "content": "\n\n".join(paragraphs[:8])
+            })
+    except Exception:
+        pass
+    return results
+
+def fetch_rss_feed(entry):
+    url, default_src, hint = entry
+    results = []
+    try:
+        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT, "Accept": "application/rss+xml, application/xml, text/xml"})
+        with urllib.request.urlopen(req, timeout=10) as resp:
+            xml_raw = resp.read()
+            root = ET.fromstring(xml_raw)
+    except Exception:
+        return results
+
+    for it in root.iter("item"):
+        raw_title = html.unescape((it.findtext("title") or "").strip())
+        link = (it.findtext("link") or "").strip()
+        if not raw_title or not link.startswith("http"):
+            continue
+
+        src_el = it.find("source")
+        src = (src_el.text or "").strip() if src_el is not None else ""
+        title = raw_title
+        if " - " in raw_title and default_src == "Google News":
+            parts = raw_title.rsplit(" - ", 1)
+            title = parts[0].strip()
+            if not src:
+                src = parts[1].strip()
+        if not src:
+            src = default_src
+
+        if any(bad in (src + " " + link).lower() for bad in IGNORED_DOMAINS):
+            continue
+
+        # Catégories XML
+        cats = [clean_text(c.text or "") for c in it.findall("category") if c.text]
+
+        # Contenu & Paragraphes
+        raw_encoded = it.findtext("{http://purl.org/rss/1.0/modules/content/}encoded") or ""
+        raw_desc = it.findtext("description") or ""
+        p_tags = re.findall(r'<p[^>]*>(.*?)</p>', raw_encoded or raw_desc, flags=re.DOTALL | re.IGNORECASE)
+        paragraphs = []
+        for p in p_tags:
+            c = clean_text(p)
+            if len(c) > 40 and c.lower() not in title.lower() and not c.lower().startswith(("à lire aussi", "lire aussi", "the post")):
+                paragraphs.append(c)
+
+        if not paragraphs:
+            desc_clean = clean_text(raw_desc)
+            if len(desc_clean) > 35 and desc_clean.lower() not in title.lower():
+                paragraphs.append(desc_clean)
+
+        lead = paragraphs[0] if paragraphs else ""
+
+        # Détection stricte du jeu
+        game = detect_game_strict(title, " ".join(cats), lead, hint)
+        if not game:
+            continue
+
+        # Extraction Photo (Niveau 1) — jamais sur Google News qui met un logo Google
+        img = ""
+        if default_src != "Google News":
+            enc = it.find("enclosure")
+            if enc is not None and is_valid_press_photo(enc.get("url", "")):
+                img = enc.get("url").strip().replace("http://", "https://")
+            if not img:
+                for elem in item_iter_media(it):
+                    if is_valid_press_photo(elem):
+                        img = elem.replace("http://", "https://")
+                        break
+            if not img:
+                m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', raw_encoded or raw_desc, re.I)
+                if m and is_valid_press_photo(m.group(1)):
+                    img = m.group(1).replace("http://", "https://")
+
+        try:
+            dt = parsedate_to_datetime(it.findtext("pubDate") or "")
+            if dt.tzinfo is None:
+                dt = dt.replace(tzinfo=timezone.utc)
+            pub = dt.astimezone(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+        except Exception:
+            pub = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+        cat = detect_category(title, lead)
+        ent = detect_entity(title, lead)
+        tier = "photo" if img else ("entity" if ent else "dispatch")
+
+        results.append({
+            "title": title,
+            "source": src,
+            "url": link,
+            "published": pub,
+            "game": game,
+            "category": cat,
+            "tier": tier,
+            "image": img,
+            "entity": ent,
+            "content": "\n\n".join(paragraphs[:8])
+        })
+
+    return results
+
+def item_iter_media(item):
+    urls = []
+    for elem in item.iter():
+        if elem.tag.endswith(("content", "thumbnail")):
+            u = elem.get("url", "").strip()
+            if u:
+                urls.append(u)
+    return urls
+
+def normalize_key(title: str) -> str:
+    return re.sub(r"[^a-z0-9]+", "", title.lower())[:65]
+
+def main() -> int:
+    now = datetime.now(timezone.utc)
+    cutoff = (now - timedelta(days=MAX_AGE_DAYS)).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+    all_collected = []
+
+    # Exécution parallèle rapide (moins de 6 secondes pour toutes les sources)
+    with concurrent.futures.ThreadPoolExecutor(max_workers=8) as executor:
+        wp_futures = [executor.submit(fetch_wp_api, entry) for entry in WP_APIS]
+        rss_futures = [executor.submit(fetch_rss_feed, entry) for entry in RSS_FEEDS]
+
+        for f in concurrent.futures.as_completed(wp_futures + rss_futures):
+            try:
+                all_collected.extend(f.result())
+            except Exception:
+                pass
+
+    # Dédoublonnage intelligent : si un même article existe avec photo et sans photo, le Niveau 1 (photo) gagne
+    tier_priority = {"photo": 3, "entity": 2, "dispatch": 1}
+    unique = {}
+    for item in all_collected:
+        if item.get("published", "") < cutoff:
+            continue
+        k = normalize_key(item["title"])
+        if not k:
+            continue
+        if k not in unique:
+            unique[k] = item
+        else:
+            old = unique[k]
+            if tier_priority.get(item["tier"], 0) > tier_priority.get(old["tier"], 0):
+                unique[k] = item
+            elif len(item.get("content", "")) > len(old.get("content", "")):
+                old["content"] = item["content"]
+
+    sorted_items = sorted(
+        unique.values(),
+        key=lambda x: x.get("published", ""),
+        reverse=True
+    )
+
+    final = sorted_items[:MAX_ITEMS]
+    OUT_FILE.write_text(json.dumps(final, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    
+    c_photo = sum(1 for x in final if x["tier"] == "photo")
+    c_ent = sum(1 for x in final if x["tier"] == "entity")
+    c_disp = sum(1 for x in final if x["tier"] == "dispatch")
+    print(f"Terminé : {len(final)} articles vérifiés (Niveau 1 Photos: {c_photo} | Niveau 2 Entités: {c_ent} | Niveau 3 Dépêches: {c_disp}).")
+    return 0
+
+if __name__ == "__main__":
+    sys.exit(main())
