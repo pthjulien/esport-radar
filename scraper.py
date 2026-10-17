@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Esport Radar Scraper 24.0
-- Tag CS2 épuré ("CS2" au lieu de "CS2 PRO")
-- Classification stricte : exclusion des crossovers/skins des transferts, verrouillage des matchs dans Tournois
-- 6 disciplines majeures (LoL, Valorant, CS2, Fortnite, CoD, Rocket League)
-- Dédoublonnage par URL unique (0 clone)
-- Règle photo de presse ou habillage broadcast sans dépendance externe
+"""Esport Radar Scraper 25.0
+- Focus strict : Tournois, résultats compétitifs, mercato officiel et transferts
+- Élimination des actus accessoires (skins, cosmétiques, drames de créateurs, guides)
+- Répartition équilibrée sur les 6 jeux (LoL, Valorant, CS2, Fortnite, CoD, Rocket League)
+- Volume étendu à 240 articles (minimum 30 articles récents garantis par jeu)
+- Vraie photo de presse prioritaire ou habillage broadcast haute fidélité
 """
 import html
 import json
@@ -18,80 +18,81 @@ from email.utils import parsedate_to_datetime
 from pathlib import Path
 
 OUT_FILE = Path(__file__).resolve().parent / "data.json"
-MAX_ITEMS = 220
+MAX_ITEMS = 240
 MAX_AGE_DAYS = 40
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
+# Flux spécialisés axés tournois, matchs et mercato
 FEEDS = [
-    # 1. LEAGUE OF LEGENDS
+    # --- 1. LEAGUE OF LEGENDS (Tournois, Worlds, LEC, LCK, LFL & Mercato) ---
     ("https://www.invenglobal.com/feed/atom", "Inven Global", "lol"),
+    ("https://dotesports.com/league-of-legends/feed", "Dot Esports", "lol"),
+    ("https://esports.gg/feed/", "Esports.gg", "lol"),
     ("https://e.sport.fr/category/league-of-legends/feed/", "E.SPORT.FR", "lol"),
     ("https://e.sport.fr/category/league-of-legends/feed/?paged=2", "E.SPORT.FR", "lol"),
     ("https://e.sport.fr/category/league-of-legends/feed/?paged=3", "E.SPORT.FR", "lol"),
     ("https://e.sport.fr/category/league-of-legends/feed/?paged=4", "E.SPORT.FR", "lol"),
     ("https://www.dexerto.fr/league-of-legends/feed/", "Dexerto FR", "lol"),
     ("https://www.dexerto.com/league-of-legends/feed/", "Dexerto US", "lol"),
-    ("https://dotesports.com/league-of-legends/feed", "Dot Esports", "lol"),
     ("https://blix.gg/feed/", "BLIX", "lol"),
 
-    # 2. VALORANT
+    # --- 2. VALORANT (VCT, Masters, Champions, Challengers & Mercato) ---
     ("https://vlr.gg/rss", "VLR.gg", "val"),
+    ("https://dotesports.com/valorant/feed", "Dot Esports", "val"),
     ("https://e.sport.fr/category/valorant/feed/", "E.SPORT.FR", "val"),
     ("https://e.sport.fr/category/valorant/feed/?paged=2", "E.SPORT.FR", "val"),
     ("https://e.sport.fr/category/valorant/feed/?paged=3", "E.SPORT.FR", "val"),
     ("https://e.sport.fr/category/valorant/feed/?paged=4", "E.SPORT.FR", "val"),
     ("https://www.dexerto.fr/valorant/feed/", "Dexerto FR", "val"),
     ("https://www.dexerto.com/valorant/feed/", "Dexerto US", "val"),
-    ("https://dotesports.com/valorant/feed", "Dot Esports", "val"),
     ("https://www.talkesport.com/feed/", "TalkEsport", "val"),
 
-    # 3. COUNTER-STRIKE 2
+    # --- 3. COUNTER-STRIKE 2 (Majors, BLAST, IEM, Qualifications & Transferts) ---
     ("https://www.hltv.org/rss/news", "HLTV", "cs2"),
     ("https://www.dust2.us/rss", "Dust2", "cs2"),
     ("https://pley.gg/feed", "Pley.gg", "cs2"),
     ("https://www.fragster.com/feed/", "Fragster", "cs2"),
+    ("https://dotesports.com/counter-strike/feed", "Dot Esports", "cs2"),
     ("https://e.sport.fr/category/counter-strike/feed/", "E.SPORT.FR", "cs2"),
     ("https://e.sport.fr/category/counter-strike/feed/?paged=2", "E.SPORT.FR", "cs2"),
     ("https://e.sport.fr/category/counter-strike/feed/?paged=3", "E.SPORT.FR", "cs2"),
-    ("https://dotesports.com/counter-strike/feed", "Dot Esports", "cs2"),
     ("https://www.dexerto.com/csgo/feed/", "Dexerto CS2", "cs2"),
     ("https://www.team-aaa.com/fr/rss/news.xml", "Team-aAa", "cs2"),
 
-    # 4. FORTNITE & FNCS
+    # --- 4. FORTNITE (FNCS, Cash Cups, Compétitions & Roster Moves) ---
     ("https://fortniteinsider.com/feed/", "Fortnite Insider", "fortnite"),
-    ("https://www.ggrecon.com/rss/", "GGRecon", "fortnite"),
+    ("https://dotesports.com/fortnite/feed", "Dot Esports", "fortnite"),
     ("https://e.sport.fr/category/fortnite/feed/", "E.SPORT.FR", "fortnite"),
     ("https://e.sport.fr/category/fortnite/feed/?paged=2", "E.SPORT.FR", "fortnite"),
     ("https://e.sport.fr/category/fortnite/feed/?paged=3", "E.SPORT.FR", "fortnite"),
     ("https://www.dexerto.fr/fortnite/feed/", "Dexerto FR", "fortnite"),
     ("https://www.dexerto.com/fortnite/feed/", "Dexerto US", "fortnite"),
-    ("https://dotesports.com/fortnite/feed", "Dot Esports", "fortnite"),
+    ("https://www.ggrecon.com/rss/", "GGRecon", "fortnite"),
 
-    # 5. CALL OF DUTY & WARZONE
+    # --- 5. CALL OF DUTY (CDL, Majors, Warzone Pro & Rostermania) ---
     ("https://charlieintel.com/feed/", "Charlie INTEL", "cod"),
     ("https://charlieintel.com/category/call-of-duty/feed/", "Charlie INTEL CoD", "cod"),
-    ("https://www.theloadout.com/feed", "The Loadout", "cod"),
+    ("https://dotesports.com/call-of-duty/feed", "Dot Esports", "cod"),
     ("https://e.sport.fr/category/call-of-duty/feed/", "E.SPORT.FR", "cod"),
     ("https://e.sport.fr/category/call-of-duty/feed/?paged=2", "E.SPORT.FR", "cod"),
     ("https://e.sport.fr/category/call-of-duty/feed/?paged=3", "E.SPORT.FR", "cod"),
     ("https://www.dexerto.fr/call-of-duty/feed/", "Dexerto FR", "cod"),
     ("https://www.dexerto.com/call-of-duty/feed/", "Dexerto US", "cod"),
-    ("https://dotesports.com/call-of-duty/feed", "Dot Esports", "cod"),
+    ("https://www.theloadout.com/feed", "The Loadout", "cod"),
 
-    # 6. ROCKET LEAGUE
+    # --- 6. ROCKET LEAGUE (RLCS, Majors, Worlds & Transferts) ---
     ("https://rocket-league.com/news/rss", "RL Garage", "rl"),
+    ("https://dotesports.com/rocket-league/feed", "Dot Esports", "rl"),
     ("https://e.sport.fr/category/rocket-league/feed/", "E.SPORT.FR", "rl"),
     ("https://e.sport.fr/category/rocket-league/feed/?paged=2", "E.SPORT.FR", "rl"),
     ("https://e.sport.fr/category/rocket-league/feed/?paged=3", "E.SPORT.FR", "rl"),
-    ("https://dotesports.com/rocket-league/feed", "Dot Esports", "rl"),
+    ("https://e.sport.fr/category/rocket-league/feed/?paged=4", "E.SPORT.FR", "rl"),
 
-    # HUBS GÉNÉRALISTES
+    # --- SOURCES COMPÉTITIONS GÉNÉRALISTES ---
     ("https://esportsinsider.com/feed", "Esports Insider", None),
-    ("https://esports.gg/feed/", "Esports.gg", None),
     ("https://e.sport.fr/feed/", "E.SPORT.FR", None),
     ("https://e.sport.fr/feed/?paged=2", "E.SPORT.FR", None),
     ("https://e.sport.fr/feed/?paged=3", "E.SPORT.FR", None),
-    ("https://www.jeuxvideo.com/rss/rss-esport.xml", "JV Esport", None),
 ]
 
 GAME_RULES = {
@@ -126,12 +127,14 @@ GAME_RULES = {
     )
 }
 
-GUIDE_AND_AMATEUR_BAN = re.compile(
+# Filtre strict : élimine les guides d'optimisation, les cosmétiques/skins et les rumeurs streamers
+FLUFF_AND_AMATEUR_BAN = re.compile(
     r"tier list|best loadout|meilleure classe|comment débloquer|how to unlock|code promo|"
     r"dce solution|sbc solution|wonderkids|guide complet|emplacement des|carte au trésor|"
-    r"bussy|saint-georges|amateurs? de gaming|amateurs? d'esport|week-end dédié aux jeux|"
-    r"salon du jeu|fête du jeu|médiathèque|mjc|centre culturel|tournoi amateur|lan amateur|"
-    r"mairie de|gaming amateur|sportmag|actu\.fr",
+    r"crossover|crossovers|bundle|skin leak|item shop|boutique du|battle pass|passe de combat|"
+    r"twitch ban|streamer drama|onlyfans|bussy|saint-georges|amateurs? de gaming|amateurs? d'esport|"
+    r"week-end dédié aux jeux|salon du jeu|fête du jeu|médiathèque|mjc|centre culturel|tournoi amateur|"
+    r"lan amateur|mairie de|gaming amateur|sportmag|actu\.fr",
     re.I
 )
 
@@ -171,7 +174,6 @@ SPECIFIC_IDENTITIES = [
     }),
 ]
 
-# CS2 épuré ("CS2" au lieu de "CS2 PRO")
 GAME_CIRCUIT_FALLBACKS = {
     "lol": { "title": "League of Legends Pro", "tag": "LOL", "color": "#c89b3c", "bg": "#2e2104" },
     "val": { "title": "VALORANT Champions Tour", "tag": "VCT", "color": "#ff4655", "bg": "#3d0a14" },
@@ -192,7 +194,7 @@ def normalize_url(url: str) -> str:
     return u.split('?')[0].rstrip('/')
 
 def detect_single_game(title: str, text_zone: str, feed_hint: str = None):
-    if GUIDE_AND_AMATEUR_BAN.search(title + " " + text_zone[:200]):
+    if FLUFF_AND_AMATEUR_BAN.search(title + " " + text_zone[:200]):
         return None
 
     matched_games = [k for k, rx in GAME_RULES.items() if rx.search(title)]
@@ -214,32 +216,26 @@ def detect_single_game(title: str, text_zone: str, feed_hint: str = None):
     return None
 
 def detect_category_strict(title: str, body: str) -> str:
-    """Classification chirurgicale garantissant que les matchs, transferts et actus transverses ne s'entrechoquent plus."""
     t = title.lower()
     first_p = body.split("\n\n")[0].lower() if body else ""
-
-    # Aiguillage direct vers Autre pour les partenariats, cosmétiques et crossovers
-    if re.search(r"\b(crossover|crossovers|collab|collaboration|skins?|bundle|cosmetics?|battle pass|passe de combat)\b", t):
-        return "news"
 
     # 1. Patchs & Équilibrages
     if re.search(r"\b(patch|patchs|notes de patch|patch notes|hotfix|nerf|buff|nerfs|buffs|mise à jour|mises à jour|équilibrage|weapon balancing)\b", t):
         if not re.search(r"\broster update\b", t):
             return "patch"
 
-    # 2. Rumeurs mercato & leaks
+    # 2. Rumeurs mercato & bruits de couloir
     if re.search(r"\b(rumou?rs?|rumeurs?|leaks?|fuite|fuites|selon|serait|pourrait|aurait|piste|courtise|exploring options|targets?|in talks|verbally agree|sources?:|report:)\b", t):
         return "rumor"
 
-    # 3. Tournois, Matchs & Résultats compétitifs
+    # 3. Tournois, Matchs & Résultats en compétition
     if re.search(r"\b(victoire|défaite|gagne|vainqueur|sacré|éliminé|élimination|finale|finales|semifinals?|demi-finales?|playoffs?|classement|tournoi|tournois|tournament|tournaments|major|majors|masters|trophée|match|matchs|score|scores|vs|sweep|advance|advances|beat|beats|win over|takes down|took down|qualifi\w*|bracket|brackets|standings|group stage|lower final|grand final)\b", t):
         return "tournament"
 
-    # 4. Transferts officiels & Mouvements de banc
+    # 4. Transferts officiels & changements de line-up
     if re.search(r"\b(signs?|signe|signent|rejoint|rejoignent|joins?|leaves?|quitte|quittent|prolonge|prolongent|recrute|recrutent|benched|bench|parted ways|parting ways|roster move|banc de touche|départ|départs|step down|steps down|stand-in|substitute|released?|acquires?|acquired|contract extension|free agent|officialise|officialisent)\b", t):
         return "official"
 
-    # Analyse secondaire du premier paragraphe si le titre est neutre
     if re.search(r"\b(advance to semifinals|secured victory|took down|eliminated from|defeated|punches ticket|won against)\b", first_p):
         return "tournament"
     if re.search(r"\b(officially announced the signing|parted ways with|announced departure|signed a contract)\b", first_p):
@@ -347,10 +343,11 @@ def main() -> int:
             if isinstance(d, list):
                 for a in d:
                     if isinstance(a, dict) and a.get("title") and a.get("game") in GAME_RULES and a.get("published", "") >= cutoff:
+                        if FLUFF_AND_AMATEUR_BAN.search(a["title"]):
+                            continue
                         img = a.get("image", "")
                         if img and not clean_image_url(img):
                             a["image"] = ""
-                        # Re-classification automatique de l'historique avec les filtres corrigés
                         a["category"] = detect_category_strict(a["title"], a.get("content", ""))
                         if not a.get("image"):
                             a["logo"] = get_visual_identity(a["title"], a.get("content", ""), a["game"])
@@ -423,9 +420,10 @@ def main() -> int:
             by_game[g].append(item)
 
     final_selection = []
+    # Assure un plancher élevé de 32 articles par discipline
     for g, items in by_game.items():
         items_sorted = sorted(items, key=lambda x: x.get("published", ""), reverse=True)
-        final_selection.extend(items_sorted[:28])
+        final_selection.extend(items_sorted[:32])
 
     remaining = [i for i in merged.values() if i not in final_selection]
     remaining_sorted = sorted(remaining, key=lambda x: x.get("published", ""), reverse=True)
@@ -435,7 +433,7 @@ def main() -> int:
 
     OUT_FILE.write_text(json.dumps(final, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     stats = {g: sum(1 for x in final if x["game"] == g) for g in GAME_RULES}
-    print(f"Extraction terminée : {len(final)} articles enregistrés.")
+    print(f"Extraction terminée : {len(final)} articles compétitifs enregistrés.")
     print(f"Détail par jeu : {stats}")
     return 0
 
