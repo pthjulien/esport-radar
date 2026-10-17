@@ -15,21 +15,21 @@ body {
   background-color: #080b11;
   color: #e2e8f0;
 }
-/* Style verrouillé à 100% avec contour blanc net */
-#feed .news-card {
-  background-color: #0d121f !important;
-  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+/* Le contour blanc net et constant autour de chaque case */
+.news-card {
+  background-color: #0e131f !important;
+  border: 1px solid rgba(255, 255, 255, 0.22) !important;
   border-radius: 14px !important;
   overflow: hidden;
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
 }
-#feed .news-card:hover {
+.news-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(255, 255, 255, 0.3) !important;
+  border-color: rgba(255, 255, 255, 0.55) !important;
   box-shadow: 0 16px 32px -12px rgba(0, 0, 0, 0.7);
 }
-#feed .news-card:active {
+.news-card:active {
   transform: scale(0.99);
 }
 .filter-btn {
@@ -195,7 +195,7 @@ var BD = {
 
 var S = { items: [], g: "all", t: "all", q: "", busy: false, sync: 0 };
 
-function $(id) { return document.getElementById(id); }
+function \$(id) { return document.getElementById(id); }
 
 function esc(s) {
   return String(s || "").replace(/[&<>"']/g, function(c) {
@@ -265,224 +265,4 @@ function renderCardHeader(i) {
       '</div>' +
     '</div>' +
     '<div class="relative z-10 flex flex-col items-center justify-center my-auto text-center">' +
-      '<div class="inline-flex items-center justify-center px-4 py-2 rounded-xl border backdrop-blur-md mb-2 shadow-2xl group-hover:scale-105 transition-transform duration-300" style="background-color:' + accent + '15; border-color:' + accent + '60; box-shadow: 0 0 30px ' + accent + '35;">' +
-        '<span class="text-xl font-black tracking-wider uppercase text-white drop-shadow-md">' + esc(tag) + '</span>' +
-      '</div>' +
-      '<span class="text-[11px] font-extrabold uppercase tracking-[0.2em] text-slate-200 drop-shadow">' + esc(title) + '</span>' +
-    '</div>' +
-  '</div>';
-}
-
-function card(i, k) {
-  var previewText = i.content ? i.content.split("\n\n")[0] : "";
-
-  return '<article class="news-card group flex flex-col justify-between" onclick="openModal(' + k + ')">' +
-    '<div>' +
-      renderCardHeader(i) +
-      '<div class="p-4">' +
-        '<h3 class="text-sm font-bold text-white group-hover:text-slate-200 leading-snug line-clamp-2 mb-2">' +
-          esc(i.title) +
-        '</h3>' +
-        (previewText ? '<p class="text-xs text-slate-400 line-clamp-2 leading-relaxed">' + esc(previewText) + '</p>' : '') +
-      '</div>' +
-    '</div>' +
-    '<div class="p-4 pt-0 flex items-center justify-between text-xs text-slate-500 border-t border-[#161e30] pt-3 mt-1">' +
-      '<span class="truncate max-w-[170px] font-medium">' + esc(i.source) + '</span>' +
-      '<span class="text-slate-400 group-hover:text-white font-semibold text-[11px] flex items-center gap-1 transition-colors">' +
-        'Lire l&#39;article <i class="fa-solid fa-chevron-right text-[9px]"></i>' +
-      '</span>' +
-    '</div>' +
-  '</article>';
-}
-
-function openModal(index) {
-  var v = vis();
-  var item = v[index];
-  if (!item) return;
-
-  var g = G[item.game] || G.lol;
-  var paragraphs = (item.content || "").split("\n\n").filter(function(p) { return p.trim().length > 0; }).map(function(p) {
-    return '<p class="text-slate-200 text-sm sm:text-base leading-relaxed mb-4">' + esc(p) + '</p>';
-  }).join("");
-
-  var modalBanner = item.image ?
-    '<div class="relative w-full h-72 sm:h-96 overflow-hidden bg-[#0a0e17] border-b border-[#1a2336]">' +
-      '<img src="' + esc(item.image) + '" alt="" referrerpolicy="no-referrer" class="w-full h-full object-cover">' +
-      '<div class="absolute inset-0 bg-gradient-to-t from-[#0e131f] via-transparent to-transparent"></div>' +
-    '</div>' : renderCardHeader(item);
-
-  $("modal-body").innerHTML =
-    '<div class="sticky top-0 z-20 bg-[#0e131f]/95 backdrop-blur-md border-b border-[#1a2336] px-6 py-3.5 flex items-center justify-between">' +
-      '<div class="flex items-center gap-2">' +
-        badgeGame(item.game) +
-        badgeType(item.category) +
-        '<span class="text-xs text-slate-400 ml-2 hidden sm:inline">' + esc(g.n) + '</span>' +
-      '</div>' +
-      '<button onclick="closeModal()" class="w-8 h-8 rounded-lg bg-[#141b2b] hover:bg-[#1f2940] text-slate-300 hover:text-white flex items-center justify-center transition">' +
-        '<i class="fa-solid fa-xmark text-sm"></i>' +
-      '</button>' +
-    '</div>' +
-    modalBanner +
-    '<div class="p-6 sm:p-8 space-y-6">' +
-      '<div>' +
-        '<h2 class="text-xl sm:text-2xl font-extrabold text-white leading-tight mb-3">' + esc(item.title) + '</h2>' +
-        '<div class="flex flex-wrap items-center gap-3 text-xs text-slate-400 border-b border-[#1a2336] pb-4">' +
-          '<span>Source : <strong class="text-white">' + esc(item.source) + '</strong></span>' +
-          '<span>•</span>' +
-          '<span>Publié il y a ' + esc(when(item.published)) + '</span>' +
-          '<span>•</span>' +
-          '<span>Jeu : <strong style="color:' + g.c + '">' + esc(g.n) + '</strong></span>' +
-        '</div>' +
-      '</div>' +
-      '<div class="prose prose-invert max-w-none">' +
-        (paragraphs || '<p class="text-slate-300 text-sm leading-relaxed">Découvrez les détails complets de cette annonce directement sur le média officiel ci-dessous.</p>') +
-      '</div>' +
-      '<div class="pt-5 border-t border-[#1a2336] flex flex-wrap items-center justify-between gap-4">' +
-        '<button onclick="closeModal()" class="px-5 py-2.5 rounded-xl border border-[#243048] text-xs font-semibold text-slate-300 hover:bg-[#141b2b] transition">' +
-          '← Retour au flux' +
-        '</button>' +
-        '<a href="' + esc(item.url) + '" target="_blank" rel="noopener noreferrer" class="px-6 py-2.5 rounded-xl bg-white text-slate-950 font-bold text-xs hover:bg-slate-200 active:scale-95 transition flex items-center gap-2 shadow-lg">' +
-          'Lire l&#39;article original sur ' + esc(item.source) + ' <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>' +
-        '</a>' +
-      '</div>' +
-    '</div>';
-
-  var modal = $("modal");
-  var cardElem = $("modal-card");
-  modal.classList.remove("hidden");
-  setTimeout(function() {
-    cardElem.classList.remove("scale-95", "opacity-0");
-    cardElem.classList.add("scale-100", "opacity-100");
-  }, 10);
-}
-
-function closeModal() {
-  var cardElem = $("modal-card");
-  cardElem.classList.remove("scale-100", "opacity-100");
-  cardElem.classList.add("scale-95", "opacity-0");
-  setTimeout(function() { $("modal").classList.add("hidden"); }, 180);
-}
-
-$("modal").addEventListener("click", function(e) { if (e.target === $("modal")) closeModal(); });
-document.addEventListener("keydown", function(e) { if (e.key === "Escape" && !$("modal").classList.contains("hidden")) closeModal(); });
-
-function side() {
-  var mv = S.items.filter(function(i) { return i.category === "official" || i.category === "rumor"; }).slice(0, 5);
-  $("top").innerHTML = mv.length ? mv.map(function(i) {
-    var isRumor = i.category === "rumor";
-    var tag = isRumor ? '<span class="text-amber-400 font-bold text-[10px]">RUMEUR</span>' : '<span class="text-emerald-400 font-bold text-[10px]">OFFICIEL</span>';
-    return '<a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="block p-3 rounded-xl bg-[#0a0e17] hover:bg-[#141b2b] border border-[#161e30] transition">' +
-      '<div class="flex items-center justify-between mb-1.5">' + tag + badgeGame(i.game) + '</div>' +
-      '<div class="text-xs font-semibold text-slate-200 line-clamp-2 leading-snug">' + esc(i.title) + '</div>' +
-      '<div class="text-[10px] text-slate-500 mt-1.5 flex items-center justify-between">' +
-        '<span>' + esc(i.source) + '</span>' +
-        '<span>' + esc(when(i.published)) + '</span>' +
-      '</div>' +
-    '</a>';
-  }).join("") : '<p class="text-xs text-slate-500 py-1">Aucun mouvement pour le moment.</p>';
-
-  var ch = S.items.filter(function(i) { return i.category === "tournament"; }).slice(0, 4);
-  $("nx").innerHTML = ch.length ? ch.map(function(i) {
-    return '<a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="block p-3 rounded-xl bg-[#0a0e17] hover:bg-[#141b2b] border border-[#161e30] transition">' +
-      '<div class="flex items-center justify-between mb-1.5">' +
-        '<span class="text-yellow-400 font-bold text-[10px]">TOURNOI</span>' +
-        badgeGame(i.game) +
-      '</div>' +
-      '<div class="text-xs font-semibold text-slate-200 line-clamp-2 leading-snug">' + esc(i.title) + '</div>' +
-      '<div class="text-[10px] text-slate-500 mt-1.5 flex items-center justify-between">' +
-        '<span>' + esc(i.source) + '</span>' +
-        '<span>' + esc(when(i.published)) + '</span>' +
-      '</div>' +
-    '</a>';
-  }).join("") : '<p class="text-xs text-slate-500 py-1">Aucune actualité de tournoi détectée.</p>';
-}
-
-function vis() {
-  var q = S.q.toLowerCase();
-  return S.items.filter(function(i) {
-    if (!G[i.game]) return false;
-    var gameMatch = (S.g === "all" || i.game === S.g);
-    var typeMatch = (S.t === "all" || i.category === S.t);
-    var searchMatch = !q || [i.title, i.source, G[i.game].n].join(" ").toLowerCase().includes(q);
-    return gameMatch && typeMatch && searchMatch;
-  });
-}
-
-function render() {
-  var v = vis();
-  $("cnt").textContent = "(" + v.length + " article" + (v.length > 1 ? "s" : "") + ")";
-  if (v.length) {
-    $("feed").innerHTML = v.map(card).join("");
-  } else {
-    $("feed").innerHTML = '<div class="col-span-full py-20 text-center text-slate-500 border border-dashed border-[#1a2336] rounded-2xl">' +
-      '<i class="fa-regular fa-folder-open text-3xl mb-2 block text-slate-600"></i>' +
-      '<p class="text-sm font-semibold text-slate-400">Aucun article ne correspond aux filtres</p>' +
-    '</div>';
-  }
-  side();
-}
-
-function chips() {
-  var games = [["all", "Tous les jeux (" + S.items.length + ")"]];
-  for (var k in G) {
-    var count = S.items.filter(function(i) { return i.game === k; }).length;
-    if (count > 0 || S.g === k) {
-      games.push([k, G[k].n + " (" + count + ")"]);
-    } else {
-      games.push([k, G[k].n]);
-    }
-  }
-  $("gf").innerHTML = games.map(function(pair) {
-    return '<button class="filter-btn" data-g="' + pair[0] + '" aria-pressed="' + (S.g === pair[0]) + '">' + esc(pair[1]) + '</button>';
-  }).join("");
-
-  var types = [];
-  for (var t in TYPES) {
-    types.push([t, TYPES[t]]);
-  }
-  $("tf").innerHTML = types.map(function(pair) {
-    return '<button class="filter-btn" data-t="' + pair[0] + '" aria-pressed="' + (S.t === pair[0]) + '">' + esc(pair[1]) + '</button>';
-  }).join("");
-}
-
-async function loadData() {
-  if (S.busy) return;
-  S.busy = true;
-  $("sp").classList.add("fa-spin");
-  try {
-    var r = await fetch("./data.json?t=" + Date.now());
-    if (!r.ok) throw new Error("Erreur HTTP " + r.status);
-    var data = await r.json();
-    S.items = Array.isArray(data) ? data.filter(function(i) { return G[i.game] && (i.image || i.logo); }) : [];
-    S.sync = Date.now();
-    $("sync").textContent = "Dernière synchro : " + new Date().toLocaleTimeString("fr-FR", { hour: "2-digit", minute: "2-digit" });
-  } catch (e) {
-    $("sync").textContent = "Erreur de chargement";
-  } finally {
-    S.busy = false;
-    $("sp").classList.remove("fa-spin");
-    chips();
-    render();
-  }
-}
-
-$("gf").addEventListener("click", function(e) {
-  var b = e.target.closest("[data-g]");
-  if (b) { S.g = b.dataset.g; chips(); render(); }
-});
-$("tf").addEventListener("click", function(e) {
-  var b = e.target.closest("[data-t]");
-  if (b) { S.t = b.dataset.t; chips(); render(); }
-});
-$("q").addEventListener("input", function(e) {
-  S.q = e.target.value.trim();
-  render();
-});
-$("rf").addEventListener("click", loadData);
-
-chips();
-render();
-loadData();
-</script>
-</body>
-</html>
+      '<div class="inline-flex items-center justify-center px-4 py-2 rounded-xl border backdrop-blur-md mb-2 shadow-2xl group-hover:scale-105 transition-transform duration-300" style
