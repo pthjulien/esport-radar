@@ -2,15 +2,11 @@ name: Mise à jour des actus esport
 
 on:
   schedule:
-    # S'exécute automatiquement toutes les heures à la minute 00
-    - cron: '0 * * * *'
-  workflow_dispatch: # Permet aussi de le lancer manuellement
-
-permissions:
-  contents: write
+    - cron: '0 * * * *' # Tourne automatiquement toutes les heures
+  workflow_dispatch:      # Permet de le lancer à la main avec le bouton
 
 jobs:
-  update:
+  update-news:
     runs-on: ubuntu-latest
     steps:
       - name: Récupérer le dépôt
@@ -21,12 +17,15 @@ jobs:
         with:
           python-version: '3.11'
 
-      - name: Exécuter le scraper
+      - name: Lancer le scraper avec l'IA
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
         run: python scraper.py
 
-      - name: Sauvegarder les nouvelles actualités
+      - name: Sauvegarder et publier les nouvelles données
         run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git add data.json
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Auto-update actus esport [skip ci]" && git push)
+          git commit -m "Mise à jour des actus avec classification IA" || exit 0
+          git push
