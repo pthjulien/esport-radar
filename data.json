@@ -288,23 +288,6 @@
     "first_seen": "2026-10-16T16:01:01Z"
   },
   {
-    "title": "100 Thieves rob G2 of Champions Shanghai dreams",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/774395/100-thieves-rob-g2-of-champions-shanghai-dreams",
-    "published": "2026-10-16T14:53:10Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "100 Thieves",
-      "tag": "100T",
-      "color": "#ef4444",
-      "bg": "#3d0606"
-    },
-    "content": "100 Thieves take down G2, setting up a lower final match against Team Vitality.",
-    "first_seen": "2026-10-16T23:44:55Z"
-  },
-  {
     "title": "VCT EMEA 2027 opens direct qualification path for aspiring teams",
     "source": "Fragster",
     "url": "https://www.fragster.com/vct-emea-2027-kickoff-qualifiers/",
@@ -400,6 +383,23 @@
     },
     "content": "FURIA have secured a place in the Thunderpick World Championship 2026 semifinals after defeating Brazilian rivals Legacy 2-1 in Malta. Following the victory, Gabriel “FalleN” Toledo explained why another tournament title could be especially valuable for a roster dealing with an exhausting schedule and limited practice time.\n\nFURIA dropped their own Cache pick 10-13 against Legacy but responded convincingly. They dominated Inferno 13-5 before closing Mirage 13-8 to advance directly into the playoffs.\n\nThe result also ended a frustrating run against Legacy. FURIA had lost their previous two meetings with the South American rivals this season, including encounters at the Esports World Cup and FISSURE Playground 3.\n\nThe team experimented with its setup on Inferno, with FalleN moving away from his usual CT-side B support role and taking a rotator position instead. KSCERATO received greater responsibility around B, a change FalleN said was based on the team’s belief that the position offered significant potential.\n\nFURIA’s route through the Thunderpick group stage has now included:\n\nThe Legacy result was particularly significant because the matchup has increasingly developed into a battle between two leading South American teams.",
     "first_seen": "2026-10-16T23:55:40Z"
+  },
+  {
+    "title": "100 Thieves rob G2 of Champions Shanghai dreams",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/774395/100-thieves-rob-g2-of-champions-shanghai-dreams",
+    "published": "2026-10-16T13:53:10Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "100 Thieves",
+      "tag": "100T",
+      "color": "#ef4444",
+      "bg": "#3d0606"
+    },
+    "content": "100 Thieves take down G2, setting up a lower final match against Team Vitality.",
+    "first_seen": "2026-10-16T23:44:55Z"
   },
   {
     "title": "Thunderpick WC : 9z Team – Aurora en direct",
