@@ -15,20 +15,21 @@ body {
   background-color: #080b11;
   color: #e2e8f0;
 }
-.news-card {
-  background-color: #0e131f;
-  border: 1px solid #1a2336;
-  border-radius: 14px;
+/* Style verrouillé à 100% avec contour blanc net */
+#feed .news-card {
+  background-color: #0d121f !important;
+  border: 1px solid rgba(255, 255, 255, 0.12) !important;
+  border-radius: 14px !important;
   overflow: hidden;
   transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
 }
-.news-card:hover {
+#feed .news-card:hover {
   transform: translateY(-4px);
-  border-color: #334260;
-  box-shadow: 0 16px 32px -12px rgba(0, 0, 0, 0.6);
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  box-shadow: 0 16px 32px -12px rgba(0, 0, 0, 0.7);
 }
-.news-card:active {
+#feed .news-card:active {
   transform: scale(0.99);
 }
 .filter-btn {
