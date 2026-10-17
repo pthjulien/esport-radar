@@ -1,13 +1,13 @@
 #!/usr/bin/env python3
-"""Esport Radar Scraper 26.0
-- Dédoublonnage d'événements : Détection d'affiche (match clash) et similarité lexicale
-- Hiérarchie de tri stricte : Patch > Rumeur > Transfert officiel > Tournoi/Match > Autre
-- Nettoyage automatique des crossovers et cosmétiques hors des transferts
+"""Esport Radar Scraper 27.0
+- IA Gemini intégrée pour classifier chaque titre avec précision sémantique
+- Repli automatique sur les règles locales si la clé est absente
+- Dédoublonnage d'affiches de match et élimination des doublons
 - 6 disciplines majeures (LoL, Valorant, CS2, Fortnite, CoD, Rocket League)
-- Conservation du meilleur article en cas de doublon (priorité à la photo HD)
 """
 import html
 import json
+import os
 import re
 import sys
 import urllib.parse
@@ -21,6 +21,7 @@ OUT_FILE = Path(__file__).resolve().parent / "data.json"
 MAX_ITEMS = 240
 MAX_AGE_DAYS = 40
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
+GEMINI_KEY = os.environ.get("GEMINI_API_KEY", "").strip()
 
 FEEDS = [
     # 1. LEAGUE OF LEGENDS
@@ -87,7 +88,7 @@ FEEDS = [
     ("https://e.sport.fr/category/rocket-league/feed/?paged=3", "E.SPORT.FR", "rl"),
     ("https://e.sport.fr/category/rocket-league/feed/?paged=4", "E.SPORT.FR", "rl"),
 
-    # HUBS GÉNÉRALISTES
+    # SOURCES COMPLÉMENTAIRES
     ("https://esportsinsider.com/feed", "Esports Insider", None),
     ("https://e.sport.fr/feed/", "E.SPORT.FR", None),
     ("https://e.sport.fr/feed/?paged=2", "E.SPORT.FR", None),
@@ -126,7 +127,6 @@ GAME_RULES = {
     )
 }
 
-# Exclusion stricte des contenus hors-sujet
 FLUFF_AND_AMATEUR_BAN = re.compile(
     r"tier list|best loadout|meilleure classe|comment débloquer|how to unlock|code promo|"
     r"dce solution|sbc solution|wonderkids|guide complet|emplacement des|carte au trésor|"
@@ -137,7 +137,6 @@ FLUFF_AND_AMATEUR_BAN = re.compile(
     re.I
 )
 
-# Structures esport pour détecter les affiches de match
 TRACKED_TEAMS = [
     (1, re.compile(r"\bkcorp\b|\bkarmine corp\b|\bkc\b", re.I)),
     (2, re.compile(r"\bvitality\b|\bvit\b", re.I)),
@@ -246,11 +245,8 @@ def extract_teams_ids(title: str) -> set:
     return found
 
 def are_articles_duplicate(item_a: dict, item_b: dict) -> bool:
-    """Détecte si deux articles traitent exactement du même événement sportif."""
     if item_a.get("game") != item_b.get("game"):
         return False
-
-    # Proximité temporelle (moins de 48 heures d'écart)
     try:
         t1 = datetime.fromisoformat(item_a["published"].replace("Z", "+00:00"))
         t2 = datetime.fromisoformat(item_b["published"].replace("Z", "+00:00"))
@@ -259,14 +255,12 @@ def are_articles_duplicate(item_a: dict, item_b: dict) -> bool:
     except Exception:
         pass
 
-    # 1. Détection d'affiche de match (les 2 mêmes équipes impliquées)
     teams_a = extract_teams_ids(item_a["title"])
     teams_b = extract_teams_ids(item_b["title"])
     if len(teams_a) >= 2 and len(teams_b) >= 2:
         if len(teams_a.intersection(teams_b)) >= 2:
             return True
 
-    # 2. Similarité lexicale sur les mots-clés forts
     tok_a = get_title_tokens(item_a["title"])
     tok_b = get_title_tokens(item_b["title"])
     if not tok_a or not tok_b:
@@ -276,7 +270,6 @@ def are_articles_duplicate(item_a: dict, item_b: dict) -> bool:
     union = tok_a.union(tok_b)
     jaccard = len(common) / len(union) if union else 0
 
-    # Au moins 3 termes forts partagés ou score de similarité > 45%
     if len(common) >= 3 and jaccard >= 0.35:
         return True
     if jaccard >= 0.48:
@@ -289,53 +282,43 @@ def detect_single_game(title: str, text_zone: str, feed_hint: str = None):
         return None
 
     matched_games = [k for k, rx in GAME_RULES.items() if rx.search(title)]
-
     if len(matched_games) > 1:
         if not re.search(r"esports world cup|\bewc\b", title, re.I):
             return None
 
     if len(matched_games) == 1:
         return matched_games[0]
-
     if feed_hint and feed_hint in GAME_RULES:
         return feed_hint
 
     for k, rx in GAME_RULES.items():
         if rx.search(text_zone[:250]):
             return k
-
     return None
 
 def detect_category_strict(title: str, body: str) -> str:
-    """Hiérarchie de classification étanche."""
     t = title.lower()
     first_p = body.split("\n\n")[0].lower() if body else ""
 
-    # Niveau 1 : Crossovers, bundles, cosmétiques -> "Autre" systématique
     if re.search(r"\b(crossover|crossovers|collab|collaboration|skins?|bundle|bundles|cosmetics?|item shop|boutique|battle pass|passe de combat|anime|concert)\b", t):
         return "news"
 
-    # Niveau 2 : Patchs et correctifs
     if re.search(r"\b(patch|patchs|notes de patch|patch notes|hotfix|nerf|buff|nerfs|buffs|mise à jour|mises à jour|équilibrage|weapon balancing)\b", t):
         if not re.search(r"\broster\b|\btransfert\b", t):
             return "patch"
 
-    # Niveau 3 : Rumeurs mercato et bruits de couloir
     if re.search(r"\b(rumou?rs?|rumeurs?|leaks?|fuite|fuites|selon|serait|pourrait|aurait|piste|courtise|viserait|exploring options|targets?|in talks|verbally agree|sources?:|report:|prépare un roster)\b", t):
         return "rumor"
 
-    # Niveau 4 : Transferts officiels et changements d'effectif stricts
     if re.search(r"\b(signs? with|signe chez|signe avec|rejoint l'équipe|rejoint le roster|officially signed?|officially joins?|officialise|officialisent|quitte|quittent|leaves? team|parted ways|parting ways|benched|banc de touche|bench|roster move|transfert officiel|free agent|released from|steps down|stepped down|stand-in|substitute)\b", t):
         return "official"
     if re.search(r"\b(signe|signent|rejoint|rejoignent|joins?|leaves?|prolonge|prolongent|recrute|recrutent|départ|départs)\b", t):
         if not re.search(r"\b(demi-finale|finale|quarts?|playoffs?|bracket|main event|champions|next round|trophée)\b", t):
             return "official"
 
-    # Niveau 5 : Tournois, résultats de matchs et compétitions
     if re.search(r"\b(victoire|défaite|gagne|battent|bat|vainqueur|sacré|éliminé|éliminée|élimination|finale|finales|semifinals?|demi-finales?|quarts?|playoffs?|classement|tournoi|tournois|tournament|tournaments|major|majors|masters|trophée|match|matchs|score|scores|\bvs\b|sweep|advance|advances|beat|beats|win over|takes? down|took down|qualifi\w*|bracket|brackets|standings|group stage|phase de poules|direct|live|en direct|affront\w*|champions)\b", t):
         return "tournament"
 
-    # Détection de secours dans le lead
     if re.search(r"\b(advance to semifinals|secured victory|took down|eliminated from|defeated|punches ticket|won against|en direct pour suivre le match)\b", first_p):
         return "tournament"
     if re.search(r"\b(sources tell|reportedly|according to sources|exploring options)\b", first_p):
@@ -344,6 +327,41 @@ def detect_category_strict(title: str, body: str) -> str:
         return "official"
 
     return "news"
+
+def classify_with_gemini(articles: list) -> dict:
+    if not GEMINI_KEY or not articles:
+        return {}
+    
+    prompt = (
+        "Tu es un expert mondial en esport. Pour chaque titre d'article numéroté, choisis la catégorie exacte parmi ces 5 choix stricts :\n"
+        "- tournament : match, résultat, score, victoire, qualification, élimination, direct, playoffs, tournoi\n"
+        "- official : transfert officiel, signature contractuelle, départ acté, mise sur le banc (benched), libération\n"
+        "- rumor : rumeur de mercato, fuite (leak), négociation en cours, joueur sur le départ\n"
+        "- patch : mise à jour du jeu, notes de patch, nerf, buff, équilibrage d'armes/personnages\n"
+        "- news : cosmétiques, partenariats, crossover, déclarations d'après-match, business, guides, autre\n\n"
+        "Titres à classifier :\n"
+    )
+    for idx, a in enumerate(articles):
+        prompt += f"{idx}: {a['title']}\n"
+    
+    prompt += '\nRéponds UNIQUEMENT sous forme d\'objet JSON strict au format : {"0": "tournament", "1": "official", ...}'
+
+    try:
+        url = f"https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key={GEMINI_KEY}"
+        req_data = json.dumps({
+            "contents": [{"parts": [{"text": prompt}]}],
+            "generationConfig": {"responseMimeType": "application/json"}
+        }).encode("utf-8")
+        req = urllib.request.Request(url, data=req_data, headers={"Content-Type": "application/json"})
+        with urllib.request.urlopen(req, timeout=15) as resp:
+            data = json.loads(resp.read().decode("utf-8"))
+            raw_text = data["candidates"][0]["content"]["parts"][0]["text"]
+            res = json.loads(raw_text)
+            valid = {"tournament", "official", "rumor", "patch", "news"}
+            return {int(k): v for k, v in res.items() if v in valid}
+    except Exception as e:
+        print(f"Repli sur les règles locales (Gemini: {e})")
+        return {}
 
 def clean_image_url(u: str) -> str:
     if not u or not u.startswith("http"):
@@ -448,7 +466,6 @@ def main() -> int:
                         img = a.get("image", "")
                         if img and not clean_image_url(img):
                             a["image"] = ""
-                        a["category"] = detect_category_strict(a["title"], a.get("content", ""))
                         if not a.get("image"):
                             a["logo"] = get_visual_identity(a["title"], a.get("content", ""), a["game"])
                         ukey = normalize_url(a.get("url", a["title"]))
@@ -508,13 +525,13 @@ def main() -> int:
                 "first_seen": existing.get(ukey, {}).get("first_seen", seen_at)
             })
 
-    # Fusion initiale par URL
+    # Dédoublonnage initial par URL
     merged_by_url = {**existing}
     for item in raw_collected:
         ukey = normalize_url(item["url"])
         merged_by_url[ukey] = item
 
-    # DÉDOUBLONNAGE D'ÉVÉNEMENT (MATCH CLASH & SIMILARITÉ)
+    # Dédoublonnage d'affiches de match et événements sportifs identiques
     all_articles = sorted(merged_by_url.values(), key=lambda x: x.get("published", ""), reverse=True)
     deduped = []
 
@@ -523,18 +540,23 @@ def main() -> int:
         for idx, existing_item in enumerate(deduped):
             if are_articles_duplicate(candidate, existing_item):
                 match_found = True
-                # Arbitrage : on privilégie l'article avec une vraie photo HD
                 cand_has_img = bool(candidate.get("image"))
                 exist_has_img = bool(existing_item.get("image"))
                 if cand_has_img and not exist_has_img:
                     deduped[idx] = candidate
                 elif cand_has_img == exist_has_img:
-                    # En cas d'égalité sur la photo, on garde le résumé le plus riche
                     if len(candidate.get("content", "")) > len(existing_item.get("content", "")):
                         deduped[idx] = candidate
                 break
         if not match_found:
             deduped.append(candidate)
+
+    # Classification sémantique par IA Gemini pour les articles récents
+    ai_batch = deduped[:50]
+    ai_cats = classify_with_gemini(ai_batch)
+    for idx, cat in ai_cats.items():
+        if idx < len(deduped):
+            deduped[idx]["category"] = cat
 
     # Répartition équilibrée par jeu
     by_game = {g: [] for g in GAME_RULES}
@@ -556,7 +578,7 @@ def main() -> int:
 
     OUT_FILE.write_text(json.dumps(final, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     stats = {g: sum(1 for x in final if x["game"] == g) for g in GAME_RULES}
-    print(f"Extraction terminée : {len(final)} articles uniques et qualifiés enregistrés.")
+    print(f"Extraction terminée : {len(final)} articles qualifiés enregistrés.")
     print(f"Détail par jeu : {stats}")
     return 0
 
