@@ -1,5 +1,22 @@
 [
   {
+    "title": "Vitality HQ looted, StarLadder trophy stolen during ongoing Paris riots",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79001/vitality-hq-looted-starladder-trophy-stolen-during-ongoing-paris-riots",
+    "published": "2026-10-17T20:41:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Team Vitality",
+      "tag": "VIT",
+      "color": "#facc15",
+      "bg": "#3d3002"
+    },
+    "content": "The V.Hive has been the target of looting and vandalism amidst the ongoing Parisian riots.",
+    "first_seen": "2026-10-17T21:21:45Z"
+  },
+  {
     "title": "Zomblers disband after lengthy period of roster instability",
     "source": "Dust2",
     "url": "https://www.dust2.us/news/79000/zomblers-disband-after-lengthy-period-of-roster-instability",
@@ -15,6 +32,18 @@
     },
     "content": "The team is finally going their separate ways.",
     "first_seen": "2026-10-17T20:21:06Z"
+  },
+  {
+    "title": "Austin to host VCT 2027 Champions for first time",
+    "source": "Esports Insider",
+    "url": "https://esportsinsider.com/2026/10/vct-2027-schedule",
+    "published": "2026-10-17T20:00:00Z",
+    "game": "val",
+    "category": "tournament",
+    "image": "https://esportsinsider.com/wp-content/uploads/2026/10/austin-host-vct-2027-champions-first-time.webp",
+    "logo": null,
+    "content": "Riot Games has set dates and locations for the 2027 VALORANT Champions Tour , with more than 50 tournaments across 15 cities and Champions heading to Austin for the first time.\n\nThe schedule, reported by Sheep Esports and TheSpike.gg on October 15, covers Open Qualifiers, Kickoff, Cups, Masters and Champions. Riot’s plan includes more than $7m in prize money, while regional tournaments will be hosted across multiple cities and countries rather than concentrated in one location.\n\nThe six partner teams across EMEA, Americas and Pacific will receive direct entry only to their respective regional Kickoff tournaments. They will then compete with teams advancing from Open Qualifiers for places at the remaining events. Chinese partner and visitor organisations, by contrast, will receive invitations to Kickoff and Cups, within a regional structure also covered by VCT’s China partnership arrangements .\n\nThe confirmed schedule pairs regional events with international stages:\n\nThe arrangement gives teams, sponsors and broadcasters a defined calendar and venue footprint well ahead of the season. Austin will host the season-ending world championship, while the Game Changers Championship will conclude alongside it.\n\nThe Open Qualifiers will begin in November 2026, providing the first route into Kickoff. Teams advancing from Open Qualifiers to Kickoff or a Cup will receive $100,000 for each event; teams reaching Masters will receive $200,000, and an open team that qualifies for Champions will receive $400,000 in support. Every team competing at the Game Changers Championship will receive $100,000.",
+    "first_seen": "2026-10-17T21:21:45Z"
   },
   {
     "title": "NorthForge add GKaay as coach",
