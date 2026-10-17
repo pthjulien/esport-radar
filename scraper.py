@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
-"""Esport Radar Scraper 25.0
-- Focus strict : Tournois, résultats compétitifs, mercato officiel et transferts
-- Élimination des actus accessoires (skins, cosmétiques, drames de créateurs, guides)
-- Répartition équilibrée sur les 6 jeux (LoL, Valorant, CS2, Fortnite, CoD, Rocket League)
-- Volume étendu à 240 articles (minimum 30 articles récents garantis par jeu)
-- Vraie photo de presse prioritaire ou habillage broadcast haute fidélité
+"""Esport Radar Scraper 26.0
+- Dédoublonnage d'événements : Détection d'affiche (match clash) et similarité lexicale
+- Hiérarchie de tri stricte : Patch > Rumeur > Transfert officiel > Tournoi/Match > Autre
+- Nettoyage automatique des crossovers et cosmétiques hors des transferts
+- 6 disciplines majeures (LoL, Valorant, CS2, Fortnite, CoD, Rocket League)
+- Conservation du meilleur article en cas de doublon (priorité à la photo HD)
 """
 import html
 import json
@@ -22,9 +22,8 @@ MAX_ITEMS = 240
 MAX_AGE_DAYS = 40
 USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36"
 
-# Flux spécialisés axés tournois, matchs et mercato
 FEEDS = [
-    # --- 1. LEAGUE OF LEGENDS (Tournois, Worlds, LEC, LCK, LFL & Mercato) ---
+    # 1. LEAGUE OF LEGENDS
     ("https://www.invenglobal.com/feed/atom", "Inven Global", "lol"),
     ("https://dotesports.com/league-of-legends/feed", "Dot Esports", "lol"),
     ("https://esports.gg/feed/", "Esports.gg", "lol"),
@@ -36,7 +35,7 @@ FEEDS = [
     ("https://www.dexerto.com/league-of-legends/feed/", "Dexerto US", "lol"),
     ("https://blix.gg/feed/", "BLIX", "lol"),
 
-    # --- 2. VALORANT (VCT, Masters, Champions, Challengers & Mercato) ---
+    # 2. VALORANT
     ("https://vlr.gg/rss", "VLR.gg", "val"),
     ("https://dotesports.com/valorant/feed", "Dot Esports", "val"),
     ("https://e.sport.fr/category/valorant/feed/", "E.SPORT.FR", "val"),
@@ -47,7 +46,7 @@ FEEDS = [
     ("https://www.dexerto.com/valorant/feed/", "Dexerto US", "val"),
     ("https://www.talkesport.com/feed/", "TalkEsport", "val"),
 
-    # --- 3. COUNTER-STRIKE 2 (Majors, BLAST, IEM, Qualifications & Transferts) ---
+    # 3. COUNTER-STRIKE 2
     ("https://www.hltv.org/rss/news", "HLTV", "cs2"),
     ("https://www.dust2.us/rss", "Dust2", "cs2"),
     ("https://pley.gg/feed", "Pley.gg", "cs2"),
@@ -59,7 +58,7 @@ FEEDS = [
     ("https://www.dexerto.com/csgo/feed/", "Dexerto CS2", "cs2"),
     ("https://www.team-aaa.com/fr/rss/news.xml", "Team-aAa", "cs2"),
 
-    # --- 4. FORTNITE (FNCS, Cash Cups, Compétitions & Roster Moves) ---
+    # 4. FORTNITE & FNCS
     ("https://fortniteinsider.com/feed/", "Fortnite Insider", "fortnite"),
     ("https://dotesports.com/fortnite/feed", "Dot Esports", "fortnite"),
     ("https://e.sport.fr/category/fortnite/feed/", "E.SPORT.FR", "fortnite"),
@@ -69,7 +68,7 @@ FEEDS = [
     ("https://www.dexerto.com/fortnite/feed/", "Dexerto US", "fortnite"),
     ("https://www.ggrecon.com/rss/", "GGRecon", "fortnite"),
 
-    # --- 5. CALL OF DUTY (CDL, Majors, Warzone Pro & Rostermania) ---
+    # 5. CALL OF DUTY & WARZONE
     ("https://charlieintel.com/feed/", "Charlie INTEL", "cod"),
     ("https://charlieintel.com/category/call-of-duty/feed/", "Charlie INTEL CoD", "cod"),
     ("https://dotesports.com/call-of-duty/feed", "Dot Esports", "cod"),
@@ -80,7 +79,7 @@ FEEDS = [
     ("https://www.dexerto.com/call-of-duty/feed/", "Dexerto US", "cod"),
     ("https://www.theloadout.com/feed", "The Loadout", "cod"),
 
-    # --- 6. ROCKET LEAGUE (RLCS, Majors, Worlds & Transferts) ---
+    # 6. ROCKET LEAGUE
     ("https://rocket-league.com/news/rss", "RL Garage", "rl"),
     ("https://dotesports.com/rocket-league/feed", "Dot Esports", "rl"),
     ("https://e.sport.fr/category/rocket-league/feed/", "E.SPORT.FR", "rl"),
@@ -88,7 +87,7 @@ FEEDS = [
     ("https://e.sport.fr/category/rocket-league/feed/?paged=3", "E.SPORT.FR", "rl"),
     ("https://e.sport.fr/category/rocket-league/feed/?paged=4", "E.SPORT.FR", "rl"),
 
-    # --- SOURCES COMPÉTITIONS GÉNÉRALISTES ---
+    # HUBS GÉNÉRALISTES
     ("https://esportsinsider.com/feed", "Esports Insider", None),
     ("https://e.sport.fr/feed/", "E.SPORT.FR", None),
     ("https://e.sport.fr/feed/?paged=2", "E.SPORT.FR", None),
@@ -127,16 +126,51 @@ GAME_RULES = {
     )
 }
 
-# Filtre strict : élimine les guides d'optimisation, les cosmétiques/skins et les rumeurs streamers
+# Exclusion stricte des contenus hors-sujet
 FLUFF_AND_AMATEUR_BAN = re.compile(
     r"tier list|best loadout|meilleure classe|comment débloquer|how to unlock|code promo|"
     r"dce solution|sbc solution|wonderkids|guide complet|emplacement des|carte au trésor|"
-    r"crossover|crossovers|bundle|skin leak|item shop|boutique du|battle pass|passe de combat|"
-    r"twitch ban|streamer drama|onlyfans|bussy|saint-georges|amateurs? de gaming|amateurs? d'esport|"
-    r"week-end dédié aux jeux|salon du jeu|fête du jeu|médiathèque|mjc|centre culturel|tournoi amateur|"
-    r"lan amateur|mairie de|gaming amateur|sportmag|actu\.fr",
+    r"skin leak|item shop|boutique du|twitch ban|streamer drama|onlyfans|"
+    r"bussy|saint-georges|amateurs? de gaming|amateurs? d'esport|week-end dédié aux jeux|"
+    r"salon du jeu|fête du jeu|médiathèque|mjc|centre culturel|tournoi amateur|lan amateur|"
+    r"mairie de|gaming amateur|sportmag|actu\.fr",
     re.I
 )
+
+# Structures esport pour détecter les affiches de match
+TRACKED_TEAMS = [
+    (1, re.compile(r"\bkcorp\b|\bkarmine corp\b|\bkc\b", re.I)),
+    (2, re.compile(r"\bvitality\b|\bvit\b", re.I)),
+    (3, re.compile(r"\bgentle mates\b|\bm8\b", re.I)),
+    (4, re.compile(r"\bsolary\b|\bsly\b", re.I)),
+    (5, re.compile(r"\bg2\b|\bg2 esports\b", re.I)),
+    (6, re.compile(r"\bfnatic\b|\bfnc\b", re.I)),
+    (7, re.compile(r"\bcloud9\b|\bc9\b", re.I)),
+    (8, re.compile(r"\bfuria\b", re.I)),
+    (9, re.compile(r"\bt1\b", re.I)),
+    (10, re.compile(r"\bloud\b", re.I)),
+    (11, re.compile(r"\b100 thieves\b|\b100t\b", re.I)),
+    (12, re.compile(r"\bnavi\b|\bnatus vincere\b", re.I)),
+    (13, re.compile(r"\bfaze\b|\bfaze clan\b", re.I)),
+    (14, re.compile(r"\boptic\b|\boptic texas\b", re.I)),
+    (15, re.compile(r"\bteam liquid\b|\bliquid\b", re.I)),
+    (16, re.compile(r"\bbds\b|\bteam bds\b", re.I)),
+    (17, re.compile(r"\bmouz\b", re.I)),
+    (18, re.compile(r"\bfalcons\b|\bteam falcons\b", re.I)),
+    (19, re.compile(r"\bastralis\b", re.I)),
+    (20, re.compile(r"\bheroic\b", re.I)),
+    (21, re.compile(r"\bspirit\b|\bteam spirit\b", re.I)),
+    (22, re.compile(r"\bvirtus\.?pro\b|\bvp\b", re.I)),
+    (23, re.compile(r"\bgen\.?g\b", re.I)),
+    (24, re.compile(r"\bsentinels\b|\bsen\b", re.I)),
+    (25, re.compile(r"\bblg\b|\bbilibili gaming\b", re.I)),
+    (26, re.compile(r"\bweibo\b|\bwbg\b", re.I)),
+    (27, re.compile(r"\bheretics\b|\bteam heretics\b", re.I)),
+    (28, re.compile(r"\bjoblife\b|\bjl\b", re.I)),
+    (29, re.compile(r"\baurora\b", re.I)),
+    (30, re.compile(r"\b9z\b|\b9z team\b", re.I)),
+    (31, re.compile(r"\bmvk\b|\bmvk esports\b", re.I)),
+]
 
 SPECIFIC_IDENTITIES = [
     ("100t", re.compile(r"100 thieves|\b100t\b", re.I), {
@@ -183,6 +217,13 @@ GAME_CIRCUIT_FALLBACKS = {
     "rl": { "title": "Rocket League Championship", "tag": "RLCS", "color": "#0ea5e9", "bg": "#04243d" }
 }
 
+STOP_WORDS = {
+    "les", "des", "pour", "sur", "dans", "avec", "sans", "sous", "par", "qui", "que", "quoi", "dont",
+    "est", "sont", "ont", "fait", "font", "vers", "une", "the", "and", "for", "with", "from", "this",
+    "that", "after", "over", "into", "direct", "live", "match", "matchs", "score", "scores", "face",
+    "contre", "against", "tout", "tous", "plus", "bien", "game", "jeux", "esport", "esports", "en"
+}
+
 def clean_text(raw_html: str) -> str:
     text = re.sub(r'<(script|style)[^>]*>.*?</\1>', '', raw_html or "", flags=re.DOTALL | re.IGNORECASE)
     text = re.sub(r'<[^>]+>', ' ', text)
@@ -192,6 +233,56 @@ def clean_text(raw_html: str) -> str:
 def normalize_url(url: str) -> str:
     u = re.sub(r'https?://(www\.)?', '', url.strip().lower())
     return u.split('?')[0].rstrip('/')
+
+def get_title_tokens(title: str) -> set:
+    words = re.findall(r'\b[a-zA-Z0-9\u00C0-\u017F]{3,}\b', title.lower())
+    return {w for w in words if w not in STOP_WORDS}
+
+def extract_teams_ids(title: str) -> set:
+    found = set()
+    for tid, rx in TRACKED_TEAMS:
+        if rx.search(title):
+            found.add(tid)
+    return found
+
+def are_articles_duplicate(item_a: dict, item_b: dict) -> bool:
+    """Détecte si deux articles traitent exactement du même événement sportif."""
+    if item_a.get("game") != item_b.get("game"):
+        return False
+
+    # Proximité temporelle (moins de 48 heures d'écart)
+    try:
+        t1 = datetime.fromisoformat(item_a["published"].replace("Z", "+00:00"))
+        t2 = datetime.fromisoformat(item_b["published"].replace("Z", "+00:00"))
+        if abs((t1 - t2).total_seconds()) > 48 * 3600:
+            return False
+    except Exception:
+        pass
+
+    # 1. Détection d'affiche de match (les 2 mêmes équipes impliquées)
+    teams_a = extract_teams_ids(item_a["title"])
+    teams_b = extract_teams_ids(item_b["title"])
+    if len(teams_a) >= 2 and len(teams_b) >= 2:
+        if len(teams_a.intersection(teams_b)) >= 2:
+            return True
+
+    # 2. Similarité lexicale sur les mots-clés forts
+    tok_a = get_title_tokens(item_a["title"])
+    tok_b = get_title_tokens(item_b["title"])
+    if not tok_a or not tok_b:
+        return False
+
+    common = tok_a.intersection(tok_b)
+    union = tok_a.union(tok_b)
+    jaccard = len(common) / len(union) if union else 0
+
+    # Au moins 3 termes forts partagés ou score de similarité > 45%
+    if len(common) >= 3 and jaccard >= 0.35:
+        return True
+    if jaccard >= 0.48:
+        return True
+
+    return False
 
 def detect_single_game(title: str, text_zone: str, feed_hint: str = None):
     if FLUFF_AND_AMATEUR_BAN.search(title + " " + text_zone[:200]):
@@ -216,32 +307,41 @@ def detect_single_game(title: str, text_zone: str, feed_hint: str = None):
     return None
 
 def detect_category_strict(title: str, body: str) -> str:
+    """Hiérarchie de classification étanche."""
     t = title.lower()
     first_p = body.split("\n\n")[0].lower() if body else ""
 
-    # 1. Patchs & Équilibrages
+    # Niveau 1 : Crossovers, bundles, cosmétiques -> "Autre" systématique
+    if re.search(r"\b(crossover|crossovers|collab|collaboration|skins?|bundle|bundles|cosmetics?|item shop|boutique|battle pass|passe de combat|anime|concert)\b", t):
+        return "news"
+
+    # Niveau 2 : Patchs et correctifs
     if re.search(r"\b(patch|patchs|notes de patch|patch notes|hotfix|nerf|buff|nerfs|buffs|mise à jour|mises à jour|équilibrage|weapon balancing)\b", t):
-        if not re.search(r"\broster update\b", t):
+        if not re.search(r"\broster\b|\btransfert\b", t):
             return "patch"
 
-    # 2. Rumeurs mercato & bruits de couloir
-    if re.search(r"\b(rumou?rs?|rumeurs?|leaks?|fuite|fuites|selon|serait|pourrait|aurait|piste|courtise|exploring options|targets?|in talks|verbally agree|sources?:|report:)\b", t):
+    # Niveau 3 : Rumeurs mercato et bruits de couloir
+    if re.search(r"\b(rumou?rs?|rumeurs?|leaks?|fuite|fuites|selon|serait|pourrait|aurait|piste|courtise|viserait|exploring options|targets?|in talks|verbally agree|sources?:|report:|prépare un roster)\b", t):
         return "rumor"
 
-    # 3. Tournois, Matchs & Résultats en compétition
-    if re.search(r"\b(victoire|défaite|gagne|vainqueur|sacré|éliminé|élimination|finale|finales|semifinals?|demi-finales?|playoffs?|classement|tournoi|tournois|tournament|tournaments|major|majors|masters|trophée|match|matchs|score|scores|vs|sweep|advance|advances|beat|beats|win over|takes down|took down|qualifi\w*|bracket|brackets|standings|group stage|lower final|grand final)\b", t):
-        return "tournament"
-
-    # 4. Transferts officiels & changements de line-up
-    if re.search(r"\b(signs?|signe|signent|rejoint|rejoignent|joins?|leaves?|quitte|quittent|prolonge|prolongent|recrute|recrutent|benched|bench|parted ways|parting ways|roster move|banc de touche|départ|départs|step down|steps down|stand-in|substitute|released?|acquires?|acquired|contract extension|free agent|officialise|officialisent)\b", t):
+    # Niveau 4 : Transferts officiels et changements d'effectif stricts
+    if re.search(r"\b(signs? with|signe chez|signe avec|rejoint l'équipe|rejoint le roster|officially signed?|officially joins?|officialise|officialisent|quitte|quittent|leaves? team|parted ways|parting ways|benched|banc de touche|bench|roster move|transfert officiel|free agent|released from|steps down|stepped down|stand-in|substitute)\b", t):
         return "official"
+    if re.search(r"\b(signe|signent|rejoint|rejoignent|joins?|leaves?|prolonge|prolongent|recrute|recrutent|départ|départs)\b", t):
+        if not re.search(r"\b(demi-finale|finale|quarts?|playoffs?|bracket|main event|champions|next round|trophée)\b", t):
+            return "official"
 
-    if re.search(r"\b(advance to semifinals|secured victory|took down|eliminated from|defeated|punches ticket|won against)\b", first_p):
+    # Niveau 5 : Tournois, résultats de matchs et compétitions
+    if re.search(r"\b(victoire|défaite|gagne|battent|bat|vainqueur|sacré|éliminé|éliminée|élimination|finale|finales|semifinals?|demi-finales?|quarts?|playoffs?|classement|tournoi|tournois|tournament|tournaments|major|majors|masters|trophée|match|matchs|score|scores|\bvs\b|sweep|advance|advances|beat|beats|win over|takes? down|took down|qualifi\w*|bracket|brackets|standings|group stage|phase de poules|direct|live|en direct|affront\w*|champions)\b", t):
         return "tournament"
+
+    # Détection de secours dans le lead
+    if re.search(r"\b(advance to semifinals|secured victory|took down|eliminated from|defeated|punches ticket|won against|en direct pour suivre le match)\b", first_p):
+        return "tournament"
+    if re.search(r"\b(sources tell|reportedly|according to sources|exploring options)\b", first_p):
+        return "rumor"
     if re.search(r"\b(officially announced the signing|parted ways with|announced departure|signed a contract)\b", first_p):
         return "official"
-    if re.search(r"\b(sources tell|reportedly|exploring options)\b", first_p):
-        return "rumor"
 
     return "news"
 
@@ -356,7 +456,7 @@ def main() -> int:
         except Exception:
             pass
 
-    collected = []
+    raw_collected = []
 
     for url, src_name, hint in FEEDS:
         try:
@@ -395,7 +495,7 @@ def main() -> int:
             content_text = "\n\n".join(paragraphs[:6])
 
             ukey = normalize_url(link)
-            collected.append({
+            raw_collected.append({
                 "title": title,
                 "source": src_name,
                 "url": link,
@@ -408,24 +508,47 @@ def main() -> int:
                 "first_seen": existing.get(ukey, {}).get("first_seen", seen_at)
             })
 
-    merged = {**existing}
-    for item in collected:
+    # Fusion initiale par URL
+    merged_by_url = {**existing}
+    for item in raw_collected:
         ukey = normalize_url(item["url"])
-        merged[ukey] = item
+        merged_by_url[ukey] = item
 
+    # DÉDOUBLONNAGE D'ÉVÉNEMENT (MATCH CLASH & SIMILARITÉ)
+    all_articles = sorted(merged_by_url.values(), key=lambda x: x.get("published", ""), reverse=True)
+    deduped = []
+
+    for candidate in all_articles:
+        match_found = False
+        for idx, existing_item in enumerate(deduped):
+            if are_articles_duplicate(candidate, existing_item):
+                match_found = True
+                # Arbitrage : on privilégie l'article avec une vraie photo HD
+                cand_has_img = bool(candidate.get("image"))
+                exist_has_img = bool(existing_item.get("image"))
+                if cand_has_img and not exist_has_img:
+                    deduped[idx] = candidate
+                elif cand_has_img == exist_has_img:
+                    # En cas d'égalité sur la photo, on garde le résumé le plus riche
+                    if len(candidate.get("content", "")) > len(existing_item.get("content", "")):
+                        deduped[idx] = candidate
+                break
+        if not match_found:
+            deduped.append(candidate)
+
+    # Répartition équilibrée par jeu
     by_game = {g: [] for g in GAME_RULES}
-    for item in merged.values():
+    for item in deduped:
         g = item.get("game")
         if g in by_game:
             by_game[g].append(item)
 
     final_selection = []
-    # Assure un plancher élevé de 32 articles par discipline
     for g, items in by_game.items():
         items_sorted = sorted(items, key=lambda x: x.get("published", ""), reverse=True)
         final_selection.extend(items_sorted[:32])
 
-    remaining = [i for i in merged.values() if i not in final_selection]
+    remaining = [i for i in deduped if i not in final_selection]
     remaining_sorted = sorted(remaining, key=lambda x: x.get("published", ""), reverse=True)
     final_selection.extend(remaining_sorted[:max(0, MAX_ITEMS - len(final_selection))])
 
@@ -433,7 +556,7 @@ def main() -> int:
 
     OUT_FILE.write_text(json.dumps(final, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     stats = {g: sum(1 for x in final if x["game"] == g) for g in GAME_RULES}
-    print(f"Extraction terminée : {len(final)} articles compétitifs enregistrés.")
+    print(f"Extraction terminée : {len(final)} articles uniques et qualifiés enregistrés.")
     print(f"Détail par jeu : {stats}")
     return 0
 
