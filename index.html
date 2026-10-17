@@ -226,7 +226,6 @@ function badgeType(ty) {
   return '<span class="badge ' + b[1] + '">' + b[0] + '</span>';
 }
 
-/* RENDU DU HEADER : VRAIE PHOTO OU CARTE BROADCAST NEXT-GEN */
 function renderCardHeader(i) {
   var g = G[i.game] || G.lol;
 
@@ -385,7 +384,7 @@ function side() {
   $("nx").innerHTML = ch.length ? ch.map(function(i) {
     return '<a href="' + esc(i.url) + '" target="_blank" rel="noopener noreferrer" class="block p-3 rounded-xl bg-[#0a0e17] hover:bg-[#141b2b] border border-[#161e30] transition">' +
       '<div class="flex items-center justify-between mb-1.5">' +
-        '<span class="text-yellow-400 font-bold text-[10px]"><i class="fa-solid fa-trophy mr-1"></i>TOURNOI</span>' +
+        '<span class="text-yellow-400 font-bold text-[10px]">TOURNOI</span>' +
         badgeGame(i.game) +
       '</div>' +
       '<div class="text-xs font-semibold text-slate-200 line-clamp-2 leading-snug">' + esc(i.title) + '</div>' +
