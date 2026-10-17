@@ -1,5 +1,17 @@
 [
   {
+    "title": "LCK : HANJIN BRION garde le même roster pour 2027",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/transferts/lck-hanjin-brion-garde-le-meme-roster-pour-2027-775639.shtm",
+    "published": "2026-10-17T14:00:00Z",
+    "game": "lol",
+    "category": "news",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/05/i1778155635101019-1024x683.jpeg",
+    "logo": null,
+    "content": "Alors que le mercato 2027 commence à s’animer sur League of Legends, HANJIN BRION aurait déjà bouclé son effectif pour la saison prochaine. Selon les informations de Sheep Esports , l’organisation sud-coréenne est parvenue à un accord avec ses cinq joueurs actuels, dont les contrats devaient initialement expirer à la fin de l’année. Casting, GIDEON, Roamer, Teddy et Namgung devraient ainsi poursuivre l’aventure ensemble pour au moins une saison supplémentaire. Une décision qui permettrait à BRION de conserver un collectif arrivé fin 2025, plutôt que de repartir sur un nouveau projet.\n\nCe choix s’explique notamment par les progrès affichés en 2026. Malgré un début d’année catastrophique, marqué par une LCK Cup terminée sans la moindre victoire en série, BRION a progressivement déjoué les pronostics. Sixième à l’issue des deux premières phases de la saison régulière, l’équipe a ensuite décroché sa place en Play-In, avant de s’incliner face à KT Rolster et BNK FEARX. Sa septième place finale constitue néanmoins son deuxième meilleur résultat depuis son arrivée en LCK, derrière la sixième place obtenue au printemps 2022.\n\nAvec l’un des budgets les plus modestes du championnat coréen, HANJIN BRION a notamment pu compter sur les progrès de ses jeunes joueurs. Roamer et Namgung ont réussi leurs débuts au plus haut niveau, tandis que Casting a montré un visage plus convaincant après une première expérience compliquée chez KT Rolster. De leur côté, les vétérans Teddy et GIDEON ont apporté leur expérience à un effectif encore en construction.\n\nLa formation coréenne a également conclu son année par une première participation à un tournoi international, lors de la Demacia Cup Global Invitational. BRION y a atteint les demi-finales, avant de s’incliner de justesse contre Team WE (2-3). Reste à savoir maintenant si cette stabilité permettra de franchir un nouveau cap et de retrouver les playoffs de la LCK, cinq ans après sa dernière apparition à ce stade de la compétition.\n\n[SOURCES] HANJIN BRION set to retain their entire starting lineup for LCK 2027 Casting GIDEON Roamer Teddy Namgung Report by @LEC_Wooloo https://t.co/doutzD152S",
+    "first_seen": "2026-10-17T14:21:57Z"
+  },
+  {
     "title": "Street Fighter movie reviews: Pro critics are skeptical, but fans are loving the chaos",
     "source": "Esports.gg",
     "url": "https://esports.gg/news/street-fighter-6/street-fighter-movie-review-roundup/",
@@ -24,23 +36,6 @@
     "first_seen": "2026-10-17T12:07:34Z"
   },
   {
-    "title": "Vitality books grand final rematch with 3-1 over 100 Thieves",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/775176/vitality-books-grand-final-rematch-with-3-1-over-100-thieves",
-    "published": "2026-10-17T11:40:27Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "100 Thieves",
-      "tag": "100T",
-      "color": "#ef4444",
-      "bg": "#3d0606"
-    },
-    "content": "",
-    "first_seen": "2026-10-17T12:07:34Z"
-  },
-  {
     "title": "PGL 2028 Calendar Cut to 6 CS2 Events With $11M Investment",
     "source": "TalkEsport",
     "url": "https://www.talkesport.com/news/cs2/pgl-2028-calendar-6-cs2-events/",
@@ -55,6 +50,23 @@
       "bg": "#382003"
     },
     "content": "The PGL 2028 calendar now has 6 events instead of 8. PGL has confirmed the updated schedule, with a combined investment of $11 million across the year. The tournament organizer had earlier announced 8 events for 2028, but it has now cut that number. The first event starts on January 14, and the last one ends on October 16.\n\nHere are the full dates and the events that PGL removed. The article also covers the funding PGL has pledged for 2027 and 2028.\n\nPGL has confirmed 6 Counter-Strike 2 events for 2028. The organizer had announced 8 tier-one events earlier, so the list is now 2 events shorter.\n\nFollowing our Tier 1 Program announcement for 2027/2028, we are confirming the 2028 PGL CS2 calendar. Six events across the year, backed by an investment of $11M, with all dates now locked in. Sharing the full schedule now gives teams, partners and fans clear planning…\n\nThe 2 removed events were set for August 16 to 28 and November 1 to 13. The August slot overlapped with the usual dates of the CS Asia Championships.\n\nThe new plan carries a combined investment of $11 million for the year. That figure matches the yearly commitment PGL made in its CS2 roadmap for 2027 and 2028.",
+    "first_seen": "2026-10-17T12:07:34Z"
+  },
+  {
+    "title": "Vitality books grand final rematch with 3-1 over 100 Thieves",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/775176/vitality-books-grand-final-rematch-with-3-1-over-100-thieves",
+    "published": "2026-10-17T10:40:27Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "100 Thieves",
+      "tag": "100T",
+      "color": "#ef4444",
+      "bg": "#3d0606"
+    },
+    "content": "",
     "first_seen": "2026-10-17T12:07:34Z"
   },
   {
