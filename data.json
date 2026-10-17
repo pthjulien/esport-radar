@@ -5,7 +5,7 @@
     "url": "https://www.talkesport.com/news/fortnite/nikki-obsession-fortnite-release-date/",
     "published": "2026-10-16T22:58:59Z",
     "game": "fortnite",
-    "category": "official",
+    "category": "news",
     "image": "https://www.talkesport.com/wp-content/uploads/fortnite-nikki-skin-852x1024.webp",
     "logo": null,
     "content": "Yes, Nikki from Obsession is coming to Fortnite. Encrypted files added in the v42.40 update on October 15, 2026, contain her Outfit, and leaker HYPEX says a full bundle is ready. Epic Games has not announced an Item Shop date or a price yet.\n\nThat’s why searches for the Nikki skin jumped in the United States this week. Players have seen the leak but can’t buy her yet. Below is everything confirmed so far and what is still a rumor.\n\nHYPEX posted the bundle details on X on October 15. According to the leak, Nikki comes with her own lobby idle animation. That’s a detail Epic usually saves for its bigger collabs.\n\nThe rest of the bundle reportedly includes:\n\nThe emote point matters if you’re only planning to buy one item. HappyGamer reports that buying the emote by itself gets you only the basic version. The full effect needs the skin too.\n\nThere’s no confirmed release date. Encrypted cosmetics usually go on sale within days or weeks of being added, because Epic decrypts them right before they hit the shop.",
@@ -17,7 +17,7 @@
     "url": "https://e.sport.fr/live/worlds-2026-cloud9-furia-en-direct-775605.shtm",
     "published": "2026-10-16T22:45:00Z",
     "game": "lol",
-    "category": "tournament",
+    "category": "news",
     "image": "https://e.sport.fr/wp-content/uploads/2026/08/Cloud9_Thanatos_at_LCS_2026_Spring-1024x732.jpg",
     "logo": null,
     "content": "Pour suivre le match Cloud9 – FURIA en direct, rendez-vous sur le lien ci-dessous :",
@@ -49,8 +49,8 @@
     "category": "official",
     "image": "",
     "logo": {
-      "title": "Counter-Strike 2 Circuit",
-      "tag": "CS2 PRO",
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
       "color": "#f59e0b",
       "bg": "#382003"
     },
@@ -66,8 +66,8 @@
     "category": "news",
     "image": "",
     "logo": {
-      "title": "Counter-Strike 2 Circuit",
-      "tag": "CS2 PRO",
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
       "color": "#f59e0b",
       "bg": "#382003"
     },
@@ -97,11 +97,11 @@
     "url": "https://www.dust2.us/news/78964/voca-eliminated-in-group-stage-at-elisa-breakout-series-2",
     "published": "2026-10-16T19:23:00Z",
     "game": "cs2",
-    "category": "news",
+    "category": "tournament",
     "image": "",
     "logo": {
-      "title": "Counter-Strike 2 Circuit",
-      "tag": "CS2 PRO",
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
       "color": "#f59e0b",
       "bg": "#382003"
     },
@@ -129,8 +129,8 @@
     "category": "tournament",
     "image": "",
     "logo": {
-      "title": "Counter-Strike 2 Circuit",
-      "tag": "CS2 PRO",
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
       "color": "#f59e0b",
       "bg": "#382003"
     },
@@ -143,7 +143,7 @@
     "url": "https://e.sport.fr/live/worlds-2026-karmine-corp-mvk-esports-en-direct-775604.shtm",
     "published": "2026-10-16T17:45:00Z",
     "game": "lol",
-    "category": "tournament",
+    "category": "news",
     "image": "https://e.sport.fr/wp-content/uploads/2026/08/image_processing20260627-1-hhnwts-1024x683.webp",
     "logo": null,
     "content": "Pour suivre le match Karmine Corp – MVK Esports en direct, rendez-vous sur l’un des liens ci-dessous :",
@@ -155,7 +155,7 @@
     "url": "https://www.talkesport.com/news/100-thieves-vs-g2-valorant-champions-2026/",
     "published": "2026-10-16T17:12:02Z",
     "game": "val",
-    "category": "tournament",
+    "category": "news",
     "image": "",
     "logo": {
       "title": "100 Thieves",
@@ -175,8 +175,8 @@
     "category": "news",
     "image": "",
     "logo": {
-      "title": "Counter-Strike 2 Circuit",
-      "tag": "CS2 PRO",
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
       "color": "#f59e0b",
       "bg": "#382003"
     },
@@ -201,7 +201,7 @@
     "url": "https://www.vlr.gg/774395/100-thieves-rob-g2-of-champions-shanghai-dreams",
     "published": "2026-10-16T14:53:10Z",
     "game": "val",
-    "category": "tournament",
+    "category": "news",
     "image": "",
     "logo": {
       "title": "100 Thieves",
@@ -255,8 +255,8 @@
     "category": "news",
     "image": "",
     "logo": {
-      "title": "Counter-Strike 2 Circuit",
-      "tag": "CS2 PRO",
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
       "color": "#f59e0b",
       "bg": "#382003"
     },
@@ -272,8 +272,8 @@
     "category": "tournament",
     "image": "",
     "logo": {
-      "title": "Counter-Strike 2 Circuit",
-      "tag": "CS2 PRO",
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
       "color": "#f59e0b",
       "bg": "#382003"
     },
@@ -315,7 +315,7 @@
     "url": "https://e.sport.fr/live/thunderpick-wc-9z-team-aurora-en-direct-2-775592.shtm",
     "published": "2026-10-16T13:45:00Z",
     "game": "cs2",
-    "category": "tournament",
+    "category": "news",
     "tier": "photo",
     "image": "https://e.sport.fr/wp-content/uploads/2025/05/GrgsxVqboAUV6_f-1024x683.jpg",
     "entity": null,
@@ -356,7 +356,7 @@
     "url": "https://e.sport.fr/transferts/joblife-prepare-un-roster-avec-soulcas-et-hoody-pour-project-blender-775597.shtm",
     "published": "2026-10-16T09:00:00Z",
     "game": "val",
-    "category": "official",
+    "category": "news",
     "tier": "photo",
     "image": "https://e.sport.fr/wp-content/uploads/2025/01/APK_soulcas_at_VCT_Ascension_EMEA_2024-1024x683.jpg",
     "entity": {
@@ -391,7 +391,7 @@
     "url": "https://e.sport.fr/live/champions-2026-100-thieves-g2-en-direct-2-775585.shtm",
     "published": "2026-10-16T08:45:00Z",
     "game": "val",
-    "category": "tournament",
+    "category": "news",
     "tier": "photo",
     "image": "https://e.sport.fr/wp-content/uploads/2025/08/54417576957_53f73e286e_k-1024x732.jpg",
     "entity": {
@@ -472,7 +472,7 @@
     "url": "https://e.sport.fr/live/champions-2026-vitality-loud-en-direct-2-775584.shtm",
     "published": "2026-10-16T05:45:00Z",
     "game": "val",
-    "category": "tournament",
+    "category": "news",
     "tier": "photo",
     "image": "https://e.sport.fr/wp-content/uploads/2026/06/VIT_Sayonara_VCT_2026_Stage_1_Week_1_Day_2-1-1024x683.jpg",
     "entity": {
@@ -536,11 +536,11 @@
     "url": "https://www.dust2.us/news/78935/esic-hand-out-lengthy-bans-to-players-involved-in-45m-matchfixing-scheme-at-portuguese-lan",
     "published": "2026-10-16T00:09:00Z",
     "game": "cs2",
-    "category": "tournament",
+    "category": "news",
     "image": "",
     "logo": {
-      "title": "Counter-Strike 2 Circuit",
-      "tag": "CS2 PRO",
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
       "color": "#f59e0b",
       "bg": "#382003"
     },
@@ -556,8 +556,8 @@
     "category": "news",
     "image": "",
     "logo": {
-      "title": "Counter-Strike 2 Circuit",
-      "tag": "CS2 PRO",
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
       "color": "#f59e0b",
       "bg": "#382003"
     },
@@ -570,7 +570,7 @@
     "url": "https://e.sport.fr/live/worlds-2026-furia-mvk-esports-en-direct-775559.shtm",
     "published": "2026-10-15T22:45:00Z",
     "game": "lol",
-    "category": "tournament",
+    "category": "news",
     "image": "https://e.sport.fr/wp-content/uploads/2026/10/FUR_Tatu_at_CBLOL_Cup_2026_Week_1-1024x683.jpeg",
     "logo": null,
     "content": "Pour suivre le match FURIA – MVK Esports en direct, rendez-vous sur le lien ci-dessous :",
@@ -582,11 +582,11 @@
     "url": "https://www.dust2.us/news/78930/official-lucid-steps-down-from-marsborne-citing-financial-constraints",
     "published": "2026-10-15T22:25:00Z",
     "game": "cs2",
-    "category": "news",
+    "category": "official",
     "image": "",
     "logo": {
-      "title": "Counter-Strike 2 Circuit",
-      "tag": "CS2 PRO",
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
       "color": "#f59e0b",
       "bg": "#382003"
     },
@@ -660,8 +660,8 @@
     "category": "tournament",
     "image": "",
     "logo": {
-      "title": "Counter-Strike 2 Circuit",
-      "tag": "CS2 PRO",
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
       "color": "#f59e0b",
       "bg": "#382003"
     },
@@ -689,8 +689,8 @@
     "category": "news",
     "image": "",
     "logo": {
-      "title": "Counter-Strike 2 Circuit",
-      "tag": "CS2 PRO",
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
       "color": "#f59e0b",
       "bg": "#382003"
     },
@@ -703,7 +703,7 @@
     "url": "https://e.sport.fr/live/worlds-2026-cloud9-karmine-corp-en-direct-775558.shtm",
     "published": "2026-10-15T17:45:00Z",
     "game": "lol",
-    "category": "tournament",
+    "category": "news",
     "image": "https://e.sport.fr/wp-content/uploads/2026/06/image_processing20260608-1-x10e71-1024x683.webp",
     "logo": null,
     "content": "Pour suivre le match Cloud9 – Karmine Corp en direct, rendez-vous sur l’un des liens ci-dessous :",
@@ -759,8 +759,8 @@
     "category": "news",
     "image": "",
     "logo": {
-      "title": "Counter-Strike 2 Circuit",
-      "tag": "CS2 PRO",
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
       "color": "#f59e0b",
       "bg": "#382003"
     },
@@ -785,11 +785,11 @@
     "url": "https://www.fragster.com/k27-balblna-steps-down/",
     "published": "2026-10-15T14:51:34Z",
     "game": "cs2",
-    "category": "news",
+    "category": "official",
     "image": "",
     "logo": {
-      "title": "Counter-Strike 2 Circuit",
-      "tag": "CS2 PRO",
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
       "color": "#f59e0b",
       "bg": "#382003"
     },
@@ -839,8 +839,8 @@
     "category": "tournament",
     "image": "",
     "logo": {
-      "title": "Counter-Strike 2 Circuit",
-      "tag": "CS2 PRO",
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
       "color": "#f59e0b",
       "bg": "#382003"
     },
@@ -894,7 +894,7 @@
     "url": "https://esportsinsider.com/2026/10/thunderpick-world-championship",
     "published": "2026-10-15T10:00:00Z",
     "game": "cs2",
-    "category": "tournament",
+    "category": "news",
     "tier": "photo",
     "image": "https://esportsinsider.com/wp-content/uploads/2026/10/eight-teams-chase-1m-thunderpick-world-championship.webp",
     "entity": {
@@ -1030,7 +1030,7 @@
     "url": "https://e.sport.fr/news/vizicsacsi-bientot-coach-en-lec-775510.shtm",
     "published": "2026-10-14T14:00:00Z",
     "game": "lol",
-    "category": "official",
+    "category": "news",
     "image": "https://e.sport.fr/wp-content/uploads/2026/10/Vizi-1024x576.jpg",
     "logo": null,
     "content": "C’est une page de l’histoire de League of Legends qui se tourne. Tamás « Vizicsacsi » Kiss a officiellement annoncé sa retraite en tant que joueur professionnel, mettant fin à une carrière débutée il y a plus de dix ans. Passé notamment par Unicorns of Love, Schalke 04 et Splyce, le vétéran hongrois s’était imposé comme l’un des visages emblématiques de la toplane européenne. Après plusieurs expériences au plus haut niveau, il avait poursuivi sa carrière sur la scène régionale, avec une dernière aventure sous les couleurs de E WIE EINFACH en Prime League.\n\nCette ultime saison n’aura toutefois pas été à la hauteur des attentes. Malgré une troisième place lors des playoffs du Spring Split et une participation aux EMEA Masters, conclue entre la 9e et la 12e place, E WIE EINFACH a connu un été beaucoup plus compliqué, avec une élimination dès la phase de groupes. Arrivé au terme de son contrat, Vizicsacsi a décidé de ne pas poursuivre sa carrière de joueur, évoquant notamment les difficultés structurelles de la scène Tier 2 européenne et le manque de perspectives pour les vétérans.\n\nPour autant, le Hongrois n’entend pas s’éloigner de la compétition. Son objectif est désormais de rejoindre le staff d’une équipe de LEC dès la saison 2027, afin de mettre son expérience et ses connaissances du jeu au service d’une nouvelle génération de joueurs. Une reconversion qu’il souhaite préparer immédiatement, notamment à travers ses streams, désormais davantage consacrés à l’analyse stratégique et à la compréhension du jeu qu’à l’entraînement individuel en SoloQ.\n\nAvec onze années d’expérience, plusieurs passages au plus haut niveau européen et une participation aux Worlds 2019 avec Splyce, Vizicsacsi possède un profil expérimenté pour se lancer dans le coaching. Reste à savoir si une organisation de LEC lui offrira cette opportunité lors du prochain mercato. Une chose est certaine : si Vizicsacsi raccroche définitivement la souris en tant que compétiteur, son aventure sur League of Legends est encore loin d’être terminée.\n\n[OFFICIAL] Vizicsacsi announces his retirement from professional League of Legends at age 33 after an 11-year career. The former #LEC top laner cites the declining state of Europe's Tier 2 scene as a factor in his decision to retire. He now plans to pursue coaching, hoping… pic.twitter.com/Ub6fPAA7wK",
@@ -1054,7 +1054,7 @@
     "url": "https://www.vlr.gg/772672/zander-set-to-leave-shopify-rebellion-black-after-one-year",
     "published": "2026-10-13T22:21:18Z",
     "game": "val",
-    "category": "news",
+    "category": "official",
     "image": "",
     "logo": {
       "title": "VALORANT Champions Tour",
@@ -1217,7 +1217,7 @@
     "url": "https://esportsinsider.com/2026/10/valorant-champions-shanghai-lower-bracket",
     "published": "2026-10-10T20:00:00Z",
     "game": "val",
-    "category": "tournament",
+    "category": "news",
     "tier": "photo",
     "image": "https://esportsinsider.com/wp-content/uploads/2026/10/t1-paper-rex-comeback-100-thieves-nongshim.webp",
     "entity": {
@@ -1269,7 +1269,7 @@
     "url": "https://esportsinsider.com/2026/10/astralis-roster-change",
     "published": "2026-10-10T10:00:00Z",
     "game": "cs2",
-    "category": "official",
+    "category": "news",
     "tier": "photo",
     "image": "https://esportsinsider.com/wp-content/uploads/2026/10/astralis-first-lan-title-roster-shake-up.webp",
     "entity": null,
@@ -1379,7 +1379,7 @@
     "url": "https://www.vlr.gg/769371/bestia-parts-ways-with-entire-valorant-roster",
     "published": "2026-10-09T03:05:14Z",
     "game": "val",
-    "category": "official",
+    "category": "news",
     "image": "",
     "logo": {
       "title": "VALORANT Champions Tour",
@@ -1432,7 +1432,7 @@
     "url": "https://www.eclypsia.com/guides/les-caisses-cs2-avec-les-meilleures-collections-de-skins-240394.html?utm_source=rss_feed&utm_medium=link&utm_campaign=unknown",
     "published": "2026-10-07T08:05:57Z",
     "game": "cs2",
-    "category": "official",
+    "category": "news",
     "image": "https://www.eclypsia.com/wp-content/uploads/eclypsia/2026/10/images-4.jpeg",
     "logo": null,
     "content": "Certaines caisses CS2 sont connues pour contenir plusieurs skins chers ou facilement reconnaissables. Les collections les plus intéressantes sont généralement celles qui regroupent une variété de designs, unis par un thème visuel ou, au contraire, radicalement différents les uns des autres en matière de couleurs, d’illustrations et de détails. Une bonne caisse peut proposer à […]",
