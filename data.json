@@ -1,5 +1,51 @@
 [
   {
+    "title": "Iowa Stormboar part ways with TyRa and Scorchyy",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79025/iowa-stormboar-part-ways-with-tyra-and-scorchyy",
+    "published": "2026-10-18T21:04:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "Iowa Stormboar's roster has continued to change significantly behind the scenes.",
+    "first_seen": "2026-10-18T21:21:36Z"
+  },
+  {
+    "title": "NiSMO enters unrestricted free agency",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/776968/nismo-enters-unrestricted-free-agency",
+    "published": "2026-10-18T20:31:02Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Tier-two veteran, NiSMO, announces he is looking for a team.",
+    "first_seen": "2026-10-18T21:21:36Z"
+  },
+  {
+    "title": "Worlds 2026 : la Karmine Corp face à Anyone’s Legend, un tirage explosif pour les Européens",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/news/worlds-2026-la-karmine-corp-face-a-anyones-legend-un-tirage-explosif-pour-les-europeens-775704.shtm",
+    "published": "2026-10-18T20:30:00Z",
+    "game": "lol",
+    "category": "news",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/09/maxresdefault-6-1024x576.jpg",
+    "logo": null,
+    "content": "Les choses sérieuses commencent pour les représentants européens. Après avoir survolé ses deux confrontations face à MVK Esports (3-0), la Karmine Corp débutera la phase suisse contre Anyone’s Legend, troisième seed de la LPL. Un premier test de taille pour les protégés de Kameto, qui restent sur huit manches remportées consécutivement. Les deux autres équipes du LEC n’ont pas été davantage épargnées : G2 Esports affrontera Dplus KIA, quatrième représentant coréen, tandis que Movistar KOI défiera Bilibili Gaming, l’une des principales puissances chinoises.\n\nParmi les autres affiches de ce premier tour, Gen.G retrouvera Invictus Gaming pour un choc entre la Corée du Sud et la Chine, avec notamment un duel très attendu entre Chovy et Rookie sur la midlane. De son côté, T1, champion du monde en titre, débutera face aux Brésiliens de LOS. Team Liquid affrontera CTBC Flying Oyster, Hanwha Life Esports sera opposé à Team Secret Whales, tandis que LYON défiera Top Esports.\n\nLe coup d’envoi du Swiss Stage sera donné vendredi 23 octobre, avec huit rencontres disputées en BO1. Pour rappel, les seize équipes devront remporter trois matchs pour accéder aux playoffs, tandis que trois défaites entraîneront une élimination. Les rencontres décisives pour la qualification ou l’élimination se joueront en BO3.\n\nThe #Worlds2026 Swiss Stage bracket! Note: Match order is still TBD. pic.twitter.com/0wzBUROdUQ",
+    "first_seen": "2026-10-18T21:21:36Z"
+  },
+  {
     "title": "SPUNJ claims BLAST is significantly behind on some payments amidst ongoing layoffs",
     "source": "Dust2",
     "url": "https://www.dust2.us/news/79026/spunj-claims-blast-is-significantly-behind-on-some-payments-amidst-ongoing-layoffs",
@@ -337,6 +383,18 @@
     },
     "content": "NorthForge have made multiple roster moves this month.",
     "first_seen": "2026-10-17T19:20:29Z"
+  },
+  {
+    "title": "Worlds 2026 : MVK Esports – FURIA en direct",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/live/worlds-2026-mvk-esports-furia-en-direct-775657.shtm",
+    "published": "2026-10-17T17:45:00Z",
+    "game": "lol",
+    "category": "tournament",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/10/FUR_Tatu_at_CBLOL_Cup_2026_Week_1-1024x683.jpeg",
+    "logo": null,
+    "content": "Pour suivre le match MVK Esports – FURIA en direct, rendez-vous sur le lien ci-dessous :",
+    "first_seen": "2026-10-18T21:21:36Z"
   },
   {
     "title": "100 Thieves suffer blow to Major chances after losses to MIBR, HEROIC at Stake Pulse Beat III",
@@ -1020,18 +1078,6 @@
     },
     "content": "The importance of having a VRS expert on staff has been recognized by HEROIC.",
     "first_seen": "2026-10-16T23:55:40Z"
-  },
-  {
-    "title": "Worlds 2026 : FURIA – MVK Esports en direct",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/live/worlds-2026-furia-mvk-esports-en-direct-775559.shtm",
-    "published": "2026-10-15T22:45:00Z",
-    "game": "lol",
-    "category": "tournament",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/10/FUR_Tatu_at_CBLOL_Cup_2026_Week_1-1024x683.jpeg",
-    "logo": null,
-    "content": "Pour suivre le match FURIA – MVK Esports en direct, rendez-vous sur le lien ci-dessous :",
-    "first_seen": "2026-10-16T23:33:04Z"
   },
   {
     "title": "Riot Games x Louis Vuitton collab launches new K/DA book",
