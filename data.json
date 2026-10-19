@@ -1,5 +1,34 @@
 [
   {
+    "title": "SportsBetExpert exit CS2: \"I’m happy I’m moving away from the scene just as much as the haters are!\"",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79059/sportsbetexpert-exit-cs2-im-happy-im-moving-away-from-the-scene-just-as-much-as-the-haters-are",
+    "published": "2026-10-19T18:25:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "Anadio's time in CS2 leaves behind a complicated legacy marred by an offensive and abrasive personality on social media.",
+    "first_seen": "2026-10-19T18:29:25Z"
+  },
+  {
+    "title": "Vitality, Gentle Mates et la Karmine Corp seront bien en VCT EMEA en 2027",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/news/vitality-gentle-mates-et-la-karmine-corp-seront-bien-en-vct-emea-en-2027-775734.shtm",
+    "published": "2026-10-19T18:00:00Z",
+    "game": "val",
+    "category": "news",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/10/Karmine-Corp-wins-VCT-EMEA-Stage-2-completing-stunning-turnaround-1024x576.webp",
+    "logo": null,
+    "content": "Le suspense est terminé. La Karmine Corp conservera bien son statut de partenaire pour les deux prochaines saisons, rejoignant ainsi Team Vitality et Gentle Mates parmi les organisations sélectionnées. Un choix qui récompense notamment le récent sacre de KC lors du Stage 2 du VCT EMEA, après un début de saison pourtant catastrophique. Pour Vitality, cette annonce intervient quelques heures seulement après la défaite face à LOUD en finale des Champions 2026 à Shanghai. Les Abeilles, vice-championnes du monde, pourront donc poursuivre leur projet ambitieux autour de Derke, Chronicle et leurs coéquipiers. De son côté, Gentle Mates conserve la place récupérée après l’exclusion de KOI, malgré une année irrégulière. L’organisation prépare déjà une refonte majeure de son effectif, avec les arrivées pressenties d’Alfajer, Ruxic, kozzy et Magnum.\n\nL’AVENTURE CONTINUE SUR VALORANT ! Tout a commencé sur ce jeu, from SBG to VCT Partner #M8WIN pic.twitter.com/W8FnsTagpD\n\nAvec ces confirmations, la liste des huit partenaires du VCT EMEA pour 2027 et 2028 est désormais complète : Karmine Corp, Vitality, Gentle Mates, Fnatic, Team Heretics, Team Liquid, BBL Esports et FUT Esports. La France sera ainsi particulièrement bien représentée dans cette nouvelle formule, contrairement à Movistar KOI, qui n’a pas été retenu malgré les démarches entreprises par Ibai Llanos auprès de Riot Games. Le championnat passera de dix à huit équipes partenaires, mais les formations non sélectionnées pourront toujours accéder aux compétitions internationales grâce aux qualifications ouvertes et aux nouvelles Cups.\n\nPour la Karmine Corp, l’enjeu sera désormais de confirmer son titre régional et de faire mieux qu’aux Champions 2026, où elle avait été éliminée dès la phase de groupes. Si une grande partie de son effectif est déjà sous contrat pour 2027, la structure devra également composer avec les nouvelles règles de composition des équipes, qui pourraient imposer des ajustements à partir de 2028. Vitality, Gentle Mates et KC disposeront en tout cas de deux années supplémentaires pour défendre les couleurs françaises et tenter de ramener un trophée international en EMEA.\n\nOn reste. @vct_emea #KCORP pic.twitter.com/bKrN5QLPuv",
+    "first_seen": "2026-10-19T18:29:25Z"
+  },
+  {
     "title": "Is Steam down right now? Server status and how to fix it",
     "source": "Esports.gg",
     "url": "https://esports.gg/guides/gaming/is-steam-down/",
@@ -2599,18 +2628,6 @@
     "image": "https://www.dexerto.com/cdn-image/wp-content/uploads/2026/09/10/MW4-has-exclusive-Xbox-weapon-skin-that-will-disappear-on-PC-PS5.jpg?width=1080&quality=75&format=auto",
     "logo": null,
     "content": "Modern Warfare 4 players on XBOX have the chance to get an exclusive skin when the new Call of Duty game drops, but it won’t appear on PC or PlayStation.",
-    "first_seen": "2026-10-16T23:59:28Z"
-  },
-  {
-    "title": "Evil Tung Tung Tung Sahur hacker wipes entire Valorant lobbies and mocks kernel anti-cheat",
-    "source": "Dexerto US",
-    "url": "https://www.dexerto.com/valorant/evil-tung-tung-tung-sahur-hacker-wipes-entire-valorant-lobbies-and-mocks-kernel-anti-cheat-3407562/",
-    "published": "2026-09-09T18:14:00Z",
-    "game": "val",
-    "category": "news",
-    "image": "https://www.dexerto.com/cdn-image/wp-content/uploads/2026/09/09/tung-tung-tung-sahur-valorant.jpg?width=1080&quality=75&format=auto",
-    "logo": null,
-    "content": "A bizarre Valorant hacker using an evil Tung Tung Tung Sahur model is wiping entire teams in seconds and putting Riot’s Vanguard anti-cheat under scrutiny.",
     "first_seen": "2026-10-16T23:59:28Z"
   }
 ]
