@@ -1,5 +1,34 @@
 [
   {
+    "title": "SPUNJ claims BLAST is significantly behind on some payments amidst ongoing layoffs",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79026/spunj-claims-blast-is-significantly-behind-on-some-payments-amidst-ongoing-layoffs",
+    "published": "2026-10-19T19:00:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "BLAST's position in the professional CS space is starting to waver.",
+    "first_seen": "2026-10-18T20:20:00Z"
+  },
+  {
+    "title": "Riot Games opens 600 free slots for VALORANT Champions Shanghai watch party in Malaysia",
+    "source": "Esports.gg",
+    "url": "https://esports.gg/news/valorant/valorant-champions-shanghai-watch-party/",
+    "published": "2026-10-19T18:38:13Z",
+    "game": "val",
+    "category": "tournament",
+    "image": "https://media.esports.gg/uploads/2026/10/what-attendees-got-883d8c0ceecf3353.webp",
+    "logo": null,
+    "content": "In confirmation that VALORANT is gripping Malaysia, Riot Games set a free watch party for the VALORANT Champions Shanghai Grand Final on Oct. 18 at Fang Kong in Kota Damansara, Petaling Jaya. All 600+ seats were snapped up by the local Malaysian community who didn’t want to miss the chance to enjoy one big party with friends and strangers alike, and see the new world champions crowned together.\n\nNot that it mattered to everyone in the end who won (VALORANT esports was the winner), with the event now the biggest screening in a run of Malaysian community events built around the game's biggest stage of the year. There’s clearly no party quite like a Malaysian VALORANT watch party.\n\nRegistration for the event opened just a week ago and demand popped immediately: 400+ spots were booked within the first 24 hours. Doors opened at 11:30 a.m. local time on the day, and the screening ran until the Grand Final broadcast ended as eager fans crowded gathered together to watch LOUD take on Team Vitality for a shot at glory. Thankfully, the teams didn’t disappoint and an ample amount of drama and tension was served up before LOUD ran out 3-1 winners.\n\nRiot Games listed the event on its official Champions 2026 watch party page a few days earlier, which helped to point fans to screenings near them, with the event confirming that Malaysia’s VALORANT community is exploding .\n\nThis latest edition was a step up from earlier Malaysian watch parties, both for the fans and the media. As expected, the excited crowd made a lot of noise; they were enthusiastic and passionate throughout the day, with spectators cheering on their team but coming together to celebrate as LOUD claimed a deserved victory. And this all happened despite Malaysian team Paper Rex not even making the final, which shows the love of the game comes first.\n\nThe watch party is the opening event of VALORANT Celebration Month, a Riot Games initiative specifically for the adoring Malaysian community. Two more events under the banner will be revealed later, though no details have been given yet.",
+    "first_seen": "2026-10-19T19:30:21Z"
+  },
+  {
     "title": "SportsBetExpert exit CS2: \"I’m happy I’m moving away from the scene just as much as the haters are!\"",
     "source": "Dust2",
     "url": "https://www.dust2.us/news/79059/sportsbetexpert-exit-cs2-im-happy-im-moving-away-from-the-scene-just-as-much-as-the-haters-are",
@@ -297,23 +326,6 @@
     "first_seen": "2026-10-19T04:30:50Z"
   },
   {
-    "title": "VCT Americas teams revealed ahead of next partnership cycle",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/777300/vct-americas-teams-revealed-ahead-of-next-partnership-cycle",
-    "published": "2026-10-19T02:48:53Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "The next era of VCT Americas is just around the corner.",
-    "first_seen": "2026-10-19T03:28:04Z"
-  },
-  {
     "title": "VCT EMEA partner teams revealed for 2027",
     "source": "VLR.gg",
     "url": "https://www.vlr.gg/777321/vct-emea-partner-teams-revealed-for-2027",
@@ -353,6 +365,23 @@
     "logo": null,
     "content": "Riot Games Music is continuing the music theme for League of Legends as K/DA release their comeback single, FIRESTARTER. The four-track release sees the return of SOYEON and MIYEON of i-dle as Akali and Ahri, joined by new collaborators Mimi Webb and Sophie Powers as Kai’Sa and Evelynn.\n\nFIRESTARTER premiered on Oct. 18 and confirmed K/DA’s comeback following other virtual League of Legends bands.\n\nFIRESTARTER shows us a bold, new evolution for the group with lethal new looks. The track is now available on all major streaming platforms. Lucky for us, we can expect these new looks to also be available in-game as skins on both League of Legends PC and Wild Rift.\n\nK/DA FIRESTARTER Akali (Image credit: Riot Games) This K/DA comeback brings back SOYEON and MIYEON from the K-pop group i-dle (previously (G)i-dle). They have been with K/DA since the debut record POP/STARS back in 2018.\n\nK/DA FIRESTARTER Ahri (Image credit: Riot Games) New artists are hopping on the track: Canadian singer-songwriter Sophie Powers is bringing her hyperpop energy as Evelynn . This isn’t the first time she’s collaborating with K-pop idols – we’ve all heard her on jellyous with ILLIT.\n\nK/DA FIRESTARTER Evelynn (Image credit: Riot Games) Finally, English singer-songwriter Mimi Webb completes K/DA’s four-piece as Kai’Sa .",
     "first_seen": "2026-10-19T02:26:41Z"
+  },
+  {
+    "title": "VCT Americas teams revealed ahead of next partnership cycle",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/777300/vct-americas-teams-revealed-ahead-of-next-partnership-cycle",
+    "published": "2026-10-19T01:48:53Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "The next era of VCT Americas is just around the corner.",
+    "first_seen": "2026-10-19T03:28:04Z"
   },
   {
     "title": "Global Esports exits Esports, to begin anew as AI studio",
@@ -467,23 +496,6 @@
     "logo": null,
     "content": "Les choses sérieuses commencent pour les représentants européens. Après avoir survolé ses deux confrontations face à MVK Esports (3-0), la Karmine Corp débutera la phase suisse contre Anyone’s Legend, troisième seed de la LPL. Un premier test de taille pour les protégés de Kameto, qui restent sur huit manches remportées consécutivement. Les deux autres équipes du LEC n’ont pas été davantage épargnées : G2 Esports affrontera Dplus KIA, quatrième représentant coréen, tandis que Movistar KOI défiera Bilibili Gaming, l’une des principales puissances chinoises.\n\nParmi les autres affiches de ce premier tour, Gen.G retrouvera Invictus Gaming pour un choc entre la Corée du Sud et la Chine, avec notamment un duel très attendu entre Chovy et Rookie sur la midlane. De son côté, T1, champion du monde en titre, débutera face aux Brésiliens de LOS. Team Liquid affrontera CTBC Flying Oyster, Hanwha Life Esports sera opposé à Team Secret Whales, tandis que LYON défiera Top Esports.\n\nLe coup d’envoi du Swiss Stage sera donné vendredi 23 octobre, avec huit rencontres disputées en BO1. Pour rappel, les seize équipes devront remporter trois matchs pour accéder aux playoffs, tandis que trois défaites entraîneront une élimination. Les rencontres décisives pour la qualification ou l’élimination se joueront en BO3.\n\nThe #Worlds2026 Swiss Stage bracket! Note: Match order is still TBD. pic.twitter.com/0wzBUROdUQ",
     "first_seen": "2026-10-18T21:21:36Z"
-  },
-  {
-    "title": "SPUNJ claims BLAST is significantly behind on some payments amidst ongoing layoffs",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/79026/spunj-claims-blast-is-significantly-behind-on-some-payments-amidst-ongoing-layoffs",
-    "published": "2026-10-18T20:08:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "BLAST's position in the professional CS space is starting to waver.",
-    "first_seen": "2026-10-18T20:20:00Z"
   },
   {
     "title": "Luminosity secure spot in $50k Tesla Cup LAN",
