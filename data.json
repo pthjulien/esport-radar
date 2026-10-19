@@ -1,5 +1,22 @@
 [
   {
+    "title": "Red Bull Partners With Team Apex Gaming, Backs Jonathan’s BGMI and Free Fire Rosters",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/red-bull-partners-with-team-apex-gaming-backs-jonathans-bgmi-and-free-fire-rosters/",
+    "published": "2026-10-19T08:50:21Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Red Bull India has signed a product partnership with Team Apex Gaming (TAG), the esports organisation founded by BGMI star Jonathan Amaral. The deal was announced in Mumbai on October 19, 2026.\n\nIt covers TAG’s BGMI and Free Fire rosters and its group of gaming content creators. Until now, Red Bull’s link with the organisation went through Jonathan alone, who has been a Red Bull Player for three years.\n\nRed Bull will work with TAG on gaming content, esports projects and community events. The partnership includes both competitive teams and the organisation’s creators.\n\nIt builds on things the two sides have already done together. Shreeman Legend was one of the 100 drivers in Red Bull’s MAX vs 100 karting challenge, and Sharkshe got a gaming room upgrade from Red Bull.\n\nJonathan said the deal means a lot as he starts a new chapter with his own team. “I’ve been a Red Bull Player for three years now, and some of my most memorable experiences have come through this partnership,” he said.\n\nHe added that he wants to “take this partnership further, bringing even bigger and more memorable gaming experiences to fans across India.”",
+    "first_seen": "2026-10-19T09:33:09Z"
+  },
+  {
     "title": "Cloud9 allows Initiator Jackk to explore options while under contract",
     "source": "VLR.gg",
     "url": "https://www.vlr.gg/777488/cloud9-allows-initiator-jackk-to-explore-options-while-under-contract",
@@ -104,7 +121,7 @@
     "first_seen": "2026-10-19T02:26:41Z"
   },
   {
-    "title": "K/DA drops FIRESTARTER, new artists join i-dle members for tracks",
+    "title": "K/DA drops FIRESTARTER, new artists join i-dle members for track",
     "source": "Esports.gg",
     "url": "https://esports.gg/news/league-of-legends/kda-firestarter-mv/",
     "published": "2026-10-19T02:18:06Z",
@@ -2418,18 +2435,6 @@
     "image": "https://www.dexerto.com/cdn-image/wp-content/uploads/2026/09/09/tung-tung-tung-sahur-valorant.jpg?width=1080&quality=75&format=auto",
     "logo": null,
     "content": "A bizarre Valorant hacker using an evil Tung Tung Tung Sahur model is wiping entire teams in seconds and putting Riot’s Vanguard anti-cheat under scrutiny.",
-    "first_seen": "2026-10-16T23:59:28Z"
-  },
-  {
-    "title": "Black Ops Royale will be removed from Warzone after less than a year",
-    "source": "Dexerto US",
-    "url": "https://www.dexerto.com/call-of-duty/black-ops-royale-will-be-removed-from-warzone-after-less-than-a-year-3407099/",
-    "published": "2026-09-09T09:29:26Z",
-    "game": "cod",
-    "category": "news",
-    "image": "https://www.dexerto.com/cdn-image/wp-content/uploads/2026/03/02/Warzone-Black-Ops-Royale-mode.jpg?width=1080&quality=75&format=auto",
-    "logo": null,
-    "content": "Warzone’s Black Ops Royale mode is set to be scrapped after less than a year, as it won’t be carried over once Modern Warfare 4 arrives.",
     "first_seen": "2026-10-16T23:59:28Z"
   }
 ]
