@@ -1,5 +1,22 @@
 [
   {
+    "title": "European Gamers Face Potential Server Blackouts Following Major Google Cloud Outage",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/google-cloud-outage-europe-gaming-impact/",
+    "published": "2026-10-20T11:11:39Z",
+    "game": "val",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Google Cloud outage reports came in across Europe on October 20, 2026, after multiple services failed in the europe-west2 region in London. Google says the incident began at 23:08 PDT on October 19, which was 7:08 am in London. Several developers use Google’s cloud for game server routing, such as EA, Bandai Namco, Capcom, and more.\n\nThis article covers the services affected and the possible gaming impact.\n\nGoogle Cloud’s status page lists an issue with multiple services in europe-west2. The company describes the symptoms as elevated errors and intermittent network failures in the region.\n\nGoogle says its engineering team is investigating and has apologized to affected customers. At the time of writing, it had not published a root cause or a firm recovery time.\n\nThe region is based in London. Google’s status page shows no serious issues in other regions. However, North America is not affected.\n\nGoogle has advised customers to move affected workloads to another available zone or region where possible. It said Looker Studio was not affected.",
+    "first_seen": "2026-10-20T11:27:17Z"
+  },
+  {
     "title": "RLCS : Eversax reste chez Vitality",
     "source": "E.SPORT.FR",
     "url": "https://e.sport.fr/transferts/rlcs-eversax-reste-chez-vitality-775743.shtm",
