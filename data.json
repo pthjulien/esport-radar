@@ -1,5 +1,51 @@
 [
   {
+    "title": "Nongshim RedForce allows Dambi to explore options",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/778098/nongshim-redforce-allows-dambi-to-explore-options",
+    "published": "2026-10-20T12:02:28Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Dambi may be set to part with the SPG/TOGS trio.",
+    "first_seen": "2026-10-20T12:33:37Z"
+  },
+  {
+    "title": "LFL : après une saison en LEC, Serin de retour chez Galions ?",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/transferts/lfl-apres-une-saison-en-lec-serin-de-retour-chez-galions-775745.shtm",
+    "published": "2026-10-20T12:00:00Z",
+    "game": "lol",
+    "category": "news",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/10/HVAm5w6WcAA6EVF-1024x683.webp",
+    "logo": null,
+    "content": "L’aventure de Tolga « Serin » Ölmez chez Team Heretics semble toucher à sa fin. Selon les informations de Sheep Esports , le joueur turc aurait trouvé un accord verbal avec Galions pour la saison 2027. Une particularité figure toutefois dans cet arrangement : Serin pourra continuer à étudier les offres du LEC jusqu’au 31 octobre. S’il ne trouve pas de place dans l’élite européenne d’ici cette date, son retour chez Galions devrait alors être acté. Du côté de Team Heretics, son remplacement se précise déjà, puisque l’organisation espagnole serait sur le point de recruter Jackies, en provenance de GIANTX.\n\nCette possible arrivée intervient après une première saison difficile pour Serin dans le LEC. Malgré une qualification pour les playoffs du LEC Versus, Heretics a terminé dernière du Spring Split, puis neuvième du Summer Split. Le midlaner n’a pas non plus réussi à convaincre individuellement, affichant notamment les moyennes de kills et de KDA les plus faibles à son poste lors du Summer Split. Un retour en LFL pourrait donc lui permettre de retrouver de la confiance dans un championnat qu’il connaît bien, après une expérience compliquée au plus haut niveau européen.\n\nDe son côté, Galions entend rester l’une des références du circuit ERL. Toujours en lice pour le titre aux EMEA Masters, l’organisation française prépare un effectif ambitieux pour 2027 malgré un contexte économique difficile pour plusieurs structures de deuxième division. Le retour de Serin pourrait constituer l’un des premiers mouvements importants de ce mercato, alors que l’actuel midlaner OMON explore lui aussi des opportunités en LEC et intéresserait déjà plusieurs équipes.\n\nReste désormais à savoir si Serin recevra une proposition suffisamment intéressante pour poursuivre son aventure dans l’élite. Dans le cas contraire, Galions pourrait récupérer un joueur expérimenté, déjà passé par les Worlds et désireux de rebondir après une saison délicate.\n\n[SOURCES] Heretics midlaner Serin has reached a verbal agreement with Galions in the LFL for the 2027 season. The agreement allows him to continue exploring #LEC options until October 31, 2026. Report by @LEC_Wooloo https://t.co/68ZlmDw6v5",
+    "first_seen": "2026-10-20T12:33:37Z"
+  },
+  {
+    "title": "Sungmin parts with Nongshim RedForce, original Sin Prisa core",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/778095/sungmin-parts-with-nongshim-redforce-original-sin-prisa-core",
+    "published": "2026-10-20T11:38:09Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "The former Sin Prisa-turned-Nongshim head coach is LFT.",
+    "first_seen": "2026-10-20T12:33:37Z"
+  },
+  {
     "title": "European Gamers Face Potential Server Blackouts Following Major Google Cloud Outage",
     "source": "TalkEsport",
     "url": "https://www.talkesport.com/news/google-cloud-outage-europe-gaming-impact/",
