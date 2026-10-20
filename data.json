@@ -1,5 +1,34 @@
 [
   {
+    "title": "Exclusive: Esports Charts founders on the past, present, and future of esports viewership analytics",
+    "source": "Esports.gg",
+    "url": "https://esports.gg/interviews/esports/esports-charts-at-10/",
+    "published": "2026-10-20T13:02:49Z",
+    "game": "lol",
+    "category": "news",
+    "image": "https://media.esports.gg/uploads/2026/10/esports-charts-at-10-stats.webp",
+    "logo": null,
+    "content": "This October, the analytics platform Esports Charts is celebrating its tenth anniversary. It has been ten years since it joined the esports scene in 2016, and the product has gone from a three-person project to the industry’s go-to source. The Esports Charts founders sat down with esports.gg to tell the story of how they shot to relevance in the past decade, their tales along the way, and what they think of the next ten years of esports.\n\nEsports Charts has crunched a lot of numbers over the decade. (Image credit: AWERTI) The past: Esports Charts’ beginnings and growth as a company Currently, Esports Charts is a product that belongs to its parent company, AWERTI. It didn’t start out like that, though. Artyom Odintsov, CEO and co-founder of AWERTI and its flagship products, Esports Charts and Streams Charts, revealed that it began as a three-person project between him, co-founder Ivan Danishevsky, and Chief Technical Officer (CTO) Ihor Kryvych.\n\n“We didn’t have the positions separated like that at the beginning, but over the years our roles grew into these positions,” said Odintsov.\n\nEven the products themselves weren’t set in stone. “We built many different things throughout the decade, and our need for the team changed accordingly. Before Esports Charts raised its seed round, AWERTI, then called ESM.one , launched a tournament platform for CS, Dota 2 and LoL , academies for Ukrainian streamers , the ZeerTV studio , and lots of other things.”\n\nOver time, projects were sold to other companies, and the teams moved with the product. Within ESM.one, other projects were closed, and manpower was instead allocated to Esports Charts, then Streams Charts.\n\nBy 2019, Esports Charts had over 20 employees . Odintsov revealed that their biggest hiring was when they launched their other products, like Streams Charts and DoHuya, from 2021 to 2023.",
+    "first_seen": "2026-10-20T13:37:58Z"
+  },
+  {
+    "title": "UdoTan, xavi8k announce free agency from Global Esports",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/778104/udotan-xavi8k-announce-free-agency-from-global-esports",
+    "published": "2026-10-20T12:34:02Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "The pair are the first to leave after GE's exit from Valorant.",
+    "first_seen": "2026-10-20T13:37:58Z"
+  },
+  {
     "title": "Nongshim RedForce allows Dambi to explore options",
     "source": "VLR.gg",
     "url": "https://www.vlr.gg/778098/nongshim-redforce-allows-dambi-to-explore-options",
@@ -2998,18 +3027,6 @@
     "image": "https://www.dexerto.com/cdn-image/wp-content/uploads/2025/12/04/modern-warfare-4-captain-price.jpg?width=1080&quality=75&format=auto",
     "logo": null,
     "content": "Infinity Ward’s Co-Studio Head has doubled down on Modern Warfare 4’s controversial skill-based matchmaking.",
-    "first_seen": "2026-10-16T23:59:28Z"
-  },
-  {
-    "title": "GameSir denies its controllers are cheating as COD pros debate ban",
-    "source": "Dexerto US",
-    "url": "https://www.dexerto.com/call-of-duty/gamesir-denies-its-controllers-are-cheating-as-cod-pros-debate-ban-3407786/",
-    "published": "2026-09-10T12:45:10Z",
-    "game": "cod",
-    "category": "news",
-    "image": "https://www.dexerto.com/cdn-image/wp-content/uploads/2026/09/10/Gamesir-controllers.jpg?width=1080&quality=75&format=auto",
-    "logo": null,
-    "content": "Call of Duty pros are considering sidelining GameSir controllers, but the manufacturer insists its products are legitimate.",
     "first_seen": "2026-10-16T23:59:28Z"
   }
 ]
