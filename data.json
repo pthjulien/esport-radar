@@ -1,5 +1,51 @@
 [
   {
+    "title": "BC.Game knock FaZe out of DraculaN",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79165/bcgame-knock-faze-out-of-draculan",
+    "published": "2026-10-22T16:54:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "",
+    "first_seen": "2026-10-22T17:27:22Z"
+  },
+  {
+    "title": "Call of Duty: Modern Warfare 4 Launch Patch Notes",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/modern-warfare-4-launch-patch-notes/",
+    "published": "2026-10-22T16:53:43Z",
+    "game": "cod",
+    "category": "patch",
+    "image": "",
+    "logo": {
+      "title": "Call of Duty League",
+      "tag": "CDL",
+      "color": "#84cc16",
+      "bg": "#1b2e04"
+    },
+    "content": "Activision has released the Modern Warfare 4 Launch Patch Notes ahead of the global launch of the highly anticipated Call of Duty game. The patch focuses on new multiplayer maps, weapon customization, movement improvements, and gameplay changes ahead of the game’s October 23, 2026, release.\n\nHere are the key areas Activision will be addressing on launch:\n\nModern Warfare 4 will launch with 20 multiplayer maps optimised for different game modes to ensure the most engaging experience.\n\nThe four dedicated 2v2 Gunfight maps are:\n\nModern Warfare 4 will offer a plethora of game modes to choose from. Moving away from the traditional game modes, the latest version of the game will include variations that might offer players a more refreshing experience.\n\nThe major patch released ahead of the launch of Modern Warfare 4 suggests that the developers have incorporated feedback from the beta into the update. The gameplay mechanics have seen significant changes from the beta, making the game feel more balanced. MW4 will bring tons of new weapons to choose from, along with all-time favorites, to make the gunfights more exciting.",
+    "first_seen": "2026-10-22T17:27:22Z"
+  },
+  {
+    "title": "EMEA Masters : Galions conserve son titre face à Solary",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/resultats/emea-masters-galions-conserve-son-titre-face-a-solary-775843.shtm",
+    "published": "2026-10-22T16:50:00Z",
+    "game": "lol",
+    "category": "tournament",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/10/HVP6tSPWEAA7Nw8-1024x854.jpg",
+    "logo": null,
+    "content": "Le remake des dernières finales de LFL et des EMEA Masters a tenu toutes ses promesses. Galions a frappé le premier, avant de voir Solary immédiatement revenir à hauteur. Impressionnant sur Zaheen, Thayger a ensuite permis aux siens de reprendre l’avantage et de s’offrir une première balle de match. Mais les Tourangeaux n’avaient pas dit leur dernier mot. Portés par un Jool exceptionnel et les dégâts d’Aetinoth sur Xayah, ils ont arraché une cinquième manche décisive, poussant cette finale jusqu’aux mythiques Silver Scrapes.\n\nMon fils s'appellera Jool ! pic.twitter.com/nwnJgvEDGE\n\nPour cette ultime confrontation, Galions a misé sur une draft audacieuse, avec notamment un duo Irelia-Lee Sin sur le topside. Un choix payant puisque les champions en titre ont largement dominé cette cinquième manche, ne laissant que peu d’espoir à leurs adversaires. Dos au mur, Solary a tenté le tout pour le tout autour de l’Elder Dragon, mais les Tourangeaux se sont fait piéger avant même de pouvoir contester l’objectif. OMON en a profité pour signer un quadruplé dévastateur sur Ahri, scellant définitivement la victoire de Galions. Décisif notamment en début de série, l’ADC Harpoon a été élu MVP de cette grande finale.\n\nÇA TUE PARTOUUUUT pic.twitter.com/7W4IkUTTmJ\n\nAvec ce succès, Galions réalise le doublé printemps-été aux EMEA Masters 2026, après avoir déjà remporté l’édition précédente. Solary, sacrée lors du premier tournoi de l’année, termine cette fois à la deuxième place malgré une résistance remarquable. Une conclusion spectaculaire pour la saison des ligues régionales européennes, qui confirme la domination des équipes françaises sur la compétition.\n\nTHE TROPHY IS THEIRS pic.twitter.com/QzqFxPd3lz",
+    "first_seen": "2026-10-22T17:27:22Z"
+  },
+  {
     "title": "All Major November 2026 Game Releases: GTA 6, WoW Forever, and More",
     "source": "TalkEsport",
     "url": "https://www.talkesport.com/news/november-2026-video-game-releases/",
@@ -171,18 +217,6 @@
       "bg": "#2e2104"
     },
     "content": "Stock photo: Corey Dupree / Pexels ( Pexels License )\n\nCapcom has confirmed only its second ever major security breach, sharing on Oct. 22 that a third party gained unauthorized access to CAPCOM ID, its unified account service, exposing 11,774,247 records worldwide. Services that use the login still work, Capcom says no credit card information was involved but 43 accounts had personal information exposed, including their date of birth. 196 accounts also had their passwords changed by the attacker.\n\nCAPCOM ID is the single account used across Capcom's web services and select online games, including Street Fighter 6 . Anyone who plays or registers on those services holds one, and while some sources claim only Japanese accounts have been affected by this breach, others say it’s a global issue.\n\nカプコン「CAPCOM ID」に第三者による不正アクセス。メールアドレスとシステム固有の識別情報が全世界で1177万4247件漏えい https://t.co/2ZfeJaD16v 196アカウントのパスワードが不正に変更され、リセット済み。緊急対策と攻撃手段の特定・対応は完了しサービスは利用可能。クレカ情報は漏えい対象外 https://t.co/iXzBMyt7rL\n\nThe leaked records consist of email addresses and system-unique identifiers, meaning data Capcom's systems log for each account. Capcom gave the figure only as a worldwide total, with no breakdown by country or region, even if many are speculating that the attack was limited to Japanese users.\n\nCapcom found no evidence that passwords users set themselves were leaked but has warned all customers to be on their guard if “Capcom” emails them.",
-    "first_seen": "2026-10-22T12:35:07Z"
-  },
-  {
-    "title": "EMEA Masters : la finale Solary – Galions en direct",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/live/emea-masters-la-finale-solary-galions-en-direct-2-775808.shtm",
-    "published": "2026-10-22T11:45:00Z",
-    "game": "lol",
-    "category": "tournament",
-    "image": "https://e.sport.fr/wp-content/uploads/2024/04/8861ecbf-1031-4596-b8cd-13f1ee5c1224-1024x576.jpg",
-    "logo": null,
-    "content": "Pour suivre la finale Solary – Galions en direct, rendez-vous sur l’un des liens ci-dessous :",
     "first_seen": "2026-10-22T12:35:07Z"
   },
   {
@@ -3120,41 +3154,6 @@
       "bg": "linear-gradient(135deg, #06291f 0%, #090d16 100%)"
     },
     "content": "Joblife commence à préparer son avenir sur VALORANT. Après une saison 2026 marquée par deux titres en Challengers France et une participation aux Play-Ins du VCT EMEA, l’organisation française devrait profiter de Project Blender pour tester plusieurs nouvelles recrues. D’après les informations de Sheep Esports , soulcas, hoody, Sevire et WanZeru devraient rejoindre runneR, seul rescapé de l’effectif précédent, pour disputer la deuxième phase de la compétition. Le groupe serait encadré par pakko, ancien entraîneur de Gentle Mates, dont l’arrivée a été officialisée le 7 octobre.\n\nParmi les noms annoncés, soulcas et hoody apporteraient une solide expérience du plus haut niveau européen. Passé notamment par Team Liquid et Apeks, soulcas retrouverait la compétition après une année presque entièrement passée loin des serveurs. De son côté, hoody, ancien joueur de G2 Esports et Giants, sort d’une saison particulièrement active sur le circuit secondaire. Le Britannique Sevire connaît également bien la scène française, après des passages chez Solary, Karmine Corp Blue Stars et Mandatory, avec qui il a notamment atteint les finales des Challengers France et EMEA au printemps. Enfin, le jeune Tchèque WanZeru, 19 ans, arriverait de Team Liquid Academy, où il a évolué durant la saison 2026.\n\nCe nouveau cinq ne serait toutefois pas nécessairement définitif. Les joueurs peuvent en effet participer à Project Blender sans être sous contrat, ce qui permettrait à Joblife d’évaluer plusieurs profils avant de prendre ses décisions pour 2027. Les joueurs concernés resteraient donc disponibles sur le marché, et des changements ne sont pas à exclure dans les prochaines semaines.\n\nDirectement invitée en deuxième phase, Joblife retrouvera notamment NAVI, Eternal Fire, l’Eintracht Francfort et CGN Esports. Les huit équipes seront réparties en deux groupes de quatre, avec des rencontres en BO3. Les deux premières de chaque groupe accéderont aux playoffs, avant une demi-finale décisive pour rejoindre la troisième et dernière phase du tournoi, dont la finale en LAN est prévue à Paris.\n\nPour Joblife, l’objectif sera double : confirmer les progrès réalisés en 2026 et poser les bases d’un effectif capable de rivaliser avec les meilleures équipes européennes en 2027. Après avoir notamment battu Fnatic, NAVI et PCIFIC Esports lors des Play-Ins du VCT EMEA, la structure française espère poursuivre sur sa lancée avec un groupe profondément renouvelé.\n\n[SOURCES] Joblife plan to compete at Project Blender 2026 with the following roster: Hoody Sevire runneR WanZeru soulcas pakko will lead the team as Head Coach Full report https://t.co/VlkDwyUWYv"
-  },
-  {
-    "title": "Revenge Is Sweet: LOUD advances to Shanghai Grand Final",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/773533/revenge-is-sweet-loud-advances-to-shanghai-grand-final",
-    "published": "2026-10-16T08:46:15Z",
-    "game": "val",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "LOUD Esports",
-      "tag": "LOUD",
-      "color": "#22c55e",
-      "bg": "#062e12"
-    },
-    "content": "Don't check what year it is: LOUD is in the Champions Grand Final.",
-    "first_seen": "2026-10-16T23:44:55Z"
-  },
-  {
-    "title": "Champions 2026 : 100 Thieves – G2 en direct",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/live/champions-2026-100-thieves-g2-en-direct-2-775585.shtm",
-    "published": "2026-10-16T08:45:00Z",
-    "game": "val",
-    "category": "tournament",
-    "tier": "photo",
-    "image": "https://e.sport.fr/wp-content/uploads/2025/08/54417576957_53f73e286e_k-1024x732.jpg",
-    "entity": {
-      "code": "G2",
-      "name": "G2 Esports",
-      "sub": "G2 Army • Structure Internationale",
-      "color": "#f87171",
-      "bg": "linear-gradient(135deg, #2d0a0e 0%, #090d16 100%)"
-    },
-    "content": "Pour suivre le match 100 Thieves – G2 en direct, rendez-vous sur l’un des liens ci-dessous :"
   },
   {
     "title": "All Prestige Icons in Modern Warfare 4 multiplayer",
