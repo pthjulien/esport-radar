@@ -1,5 +1,51 @@
 [
   {
+    "title": "Sashi drop out of NSTLGA Texas LAN",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79192/sashi-drop-out-of-nstlga-texas-lan",
+    "published": "2026-10-23T19:10:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "",
+    "first_seen": "2026-10-23T19:30:21Z"
+  },
+  {
+    "title": "Voca drop out of LAST CHANCE as team's Major chances dissolve",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79191/voca-drop-out-of-last-chance-as-teams-major-chances-dissolve",
+    "published": "2026-10-23T18:44:00Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "Singapore is just too far out of reach.",
+    "first_seen": "2026-10-23T19:30:21Z"
+  },
+  {
+    "title": "All Prestige rewards in Modern Warfare 4 & how to earn them",
+    "source": "Esports.gg",
+    "url": "https://esports.gg/guides/call-of-duty/all-prestige-rewards-in-modern-warfare-4-how-to-earn-them/",
+    "published": "2026-10-23T18:35:33Z",
+    "game": "cod",
+    "category": "news",
+    "image": "https://media.esports.gg/uploads/2026/10/Call-of-Duty-Black-Ops-6-Screenshot-2026.10.23-14.34.05.01-1024x576.webp",
+    "logo": null,
+    "content": "Classic Prestige has returned in Call of Duty: Modern Warfare 4 , but this year, Infinity Ward has changed some elements of the Prestige system. While it still works the same as previous years, there’s a new option for players that allows them to keep their unlocks while still earning rewards and a new Prestige Icon . Speaking of rewards, though, there are a ton of Prestige rewards you can earn in Modern Warfare 4 as you keep grinding through multiplayer and DMZ.\n\nBelow is a list of every Prestige reward and what you need to do to earn each one in multiplayer.\n\nTo start, the rewards you can earn depend on whether you choose Classic Prestige or Regular Prestige . If you choose Classic Prestige, you’ll earn every available reward that the game has to offer. However, going the Regular Prestige route will result in far fewer rewards.\n\nIf you haven’t made up your mind about which direction to go, you can see every Prestige reward in MW4 below so you can have a better idea of what you’re grinding for:\n\nAs you can see, your reward potential decreases with Regular Prestige, as you miss out on a total of 10 Operator Skins or weapon blueprints. However, regardless, both Classic and Regular Prestige gain a slew of rewards for Modern Warfare 4.",
+    "first_seen": "2026-10-23T19:30:21Z"
+  },
+  {
     "title": "Call of Duty pro Temp arrested on domestic violence aggravated assault charge",
     "source": "Dexerto US",
     "url": "https://www.dexerto.com/call-of-duty/call-of-duty-pro-temp-arrested-on-domestic-violence-aggravated-assault-charge-3421439/",
@@ -2991,35 +3037,6 @@
     "first_seen": "2026-10-19T02:26:41Z"
   },
   {
-    "title": "K/DA drops FIRESTARTER, new artists join i-dle members for track",
-    "source": "Esports.gg",
-    "url": "https://esports.gg/news/league-of-legends/kda-firestarter-mv/",
-    "published": "2026-10-19T02:18:06Z",
-    "game": "lol",
-    "category": "official",
-    "image": "https://media.esports.gg/uploads/2026/10/firestarter-kda-1.webp",
-    "logo": null,
-    "content": "Riot Games Music is continuing the music theme for League of Legends as K/DA release their comeback single, FIRESTARTER. The four-track release sees the return of SOYEON and MIYEON of i-dle as Akali and Ahri, joined by new collaborators Mimi Webb and Sophie Powers as Kai’Sa and Evelynn.\n\nFIRESTARTER premiered on Oct. 18 and confirmed K/DA’s comeback following other virtual League of Legends bands.\n\nFIRESTARTER shows us a bold, new evolution for the group with lethal new looks. The track is now available on all major streaming platforms. Lucky for us, we can expect these new looks to also be available in-game as skins on both League of Legends PC and Wild Rift.\n\nK/DA FIRESTARTER Akali (Image credit: Riot Games) This K/DA comeback brings back SOYEON and MIYEON from the K-pop group i-dle (previously (G)i-dle). They have been with K/DA since the debut record POP/STARS back in 2018.\n\nK/DA FIRESTARTER Ahri (Image credit: Riot Games) New artists are hopping on the track: Canadian singer-songwriter Sophie Powers is bringing her hyperpop energy as Evelynn . This isn’t the first time she’s collaborating with K-pop idols – we’ve all heard her on jellyous with ILLIT.\n\nK/DA FIRESTARTER Evelynn (Image credit: Riot Games) Finally, English singer-songwriter Mimi Webb completes K/DA’s four-piece as Kai’Sa .",
-    "first_seen": "2026-10-19T02:26:41Z"
-  },
-  {
-    "title": "Global Esports exits Esports, to begin anew as AI studio",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/777318/global-esports-exits-esports-to-begin-anew-as-ai-studio",
-    "published": "2026-10-19T01:31:01Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "The Global roster has been released and allowed to speak with other teams as free agents.",
-    "first_seen": "2026-10-19T03:28:04Z"
-  },
-  {
     "title": "RLCS : stizzy quitte Vitality et se rapproche de NIP",
     "source": "E.SPORT.FR",
     "url": "https://e.sport.fr/transferts/rlcs-stizzy-quitte-vitality-et-se-rapproche-de-nip-775674.shtm",
@@ -3385,18 +3402,6 @@
     "image": "https://www.dexerto.com/cdn-image/wp-content/uploads/2026/02/05/black-ops-7-season-6-ranked-play-loadouts.jpg?width=1080&quality=75&format=auto",
     "logo": null,
     "content": "Call of Duty pro Nero has been suspended from Black Ops 7 Ranked Play after advertising his boosting service on X.",
-    "first_seen": "2026-10-16T23:59:28Z"
-  },
-  {
-    "title": "New Warzone Assault Rifle has fastest TTK in the game with no recoil",
-    "source": "Dexerto US",
-    "url": "https://www.dexerto.com/call-of-duty/new-warzone-assault-rifle-has-fastest-ttk-in-the-game-with-no-recoil-3411117/",
-    "published": "2026-09-22T11:29:30Z",
-    "game": "cod",
-    "category": "news",
-    "image": "https://www.dexerto.com/cdn-image/wp-content/uploads/2026/09/22/warzone-tr51-para-assault-rifle.jpg?width=1080&quality=75&format=auto",
-    "logo": null,
-    "content": "A brand-new Warzone Assault Rifle is the fastest-killing weapon in the game, combining a rapid time to kill with virtually no recoil.",
     "first_seen": "2026-10-16T23:59:28Z"
   }
 ]
