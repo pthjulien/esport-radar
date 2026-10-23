@@ -1,5 +1,46 @@
 [
   {
+    "title": "How to Play Modern Warfare 4 Multiplayer Early With the New Zealand Trick",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/gaming/play-modern-warfare-4-multiplayer-early/",
+    "published": "2026-10-23T01:35:59Z",
+    "game": "cod",
+    "category": "news",
+    "image": "https://www.talkesport.com/wp-content/uploads/Modern-Warfare-4-1-1024x576.webp",
+    "logo": null,
+    "content": "You can play Modern Warfare 4 multiplayer early on console by switching your region to New Zealand. Console multiplayer unlocks at midnight local time on October 23, and New Zealand reaches midnight before anyone else, at 11:00 UTC on October 22. On the US East Coast, that works out to a 17-hour head start.\n\nThe trick works best on Xbox and through the Xbox app on PC. Steam and Battle.net players are out of luck because PC unlocks at one moment worldwide. PlayStation is possible, but it costs you a second account.\n\nConsole players get multiplayer at 12:00 AM local time on October 23. New Zealand has been on daylight saving time (NZDT, UTC+13) since late September, which is why its midnight lands at 11:00 UTC on October 22.\n\nSome guides list the New Zealand unlock as 6:00 AM on October 21. That is wrong. The table below shows what time New Zealand’s unlock hits in your zone, and how many hours you gain over waiting for your own midnight.\n\nThe math favours the Americas. A player in Los Angeles can be ten matches deep before most of the US has even woken up.\n\nXbox is the safest bet. The other platforms range from “works with extra steps” to “doesn’t work at all”, based on reports from Dot Esports’ platform-by-platform breakdown and other early-access guides.",
+    "first_seen": "2026-10-23T01:35:54Z"
+  },
+  {
+    "title": "CS2 October 22 Update Opens Hostages, Game Rules and Console to Map Scripts",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/cs2/cs2-october-22-update-map-scripting-hostages-gamerules/",
+    "published": "2026-10-23T01:23:50Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "Valve pushed a new Counter-Strike 2 patch on October 22, and almost every line of it is for mapmakers. The update lets scripted maps read and react to hostages, preload assets on demand, and control warmup, scores and round endings through a new GameRules export. Players in Premier or Competitive won’t see gameplay or balance changes from it.\n\nThe other big addition is a top-level Console export that can set convars without sv_cheats turned on. Radar elements placed by scripts also work in every game mode now. Before this patch they only showed up in Rush.\n\nValve’s official October 22 patch notes on Steam are split almost entirely under a map scripting header. Six areas moved. Hostages, precaching, the console, game rules, the custom HUD and the radar each picked up new functions, and a short list of fixes closed it out.\n\nFor anyone keeping track, this is the second patch in eight days. The previous one, on October 15, was a quality-of-life pass on demos, and we covered it in our breakdown of the CS2 demo viewer and round backup changes .\n\nHostage Rescue has been part of Counter-Strike since the late 1990s, yet scripts in CS2 couldn’t see it until now. The new CSHostage class exposes whether a hostage is being picked up, being carried, or already rescued. It can also return the player who rescued it, plus the exact start and finish times of a pickup.\n\nSix new event hooks fire at each step. They are OnHostagePickUpStart , OnHostagePickUpAbort , OnHostagePickUp , OnHostageDrop , OnHostageRescue and OnHostageKill , and a matching CSPlayerPawn.GetHostage tells a script which hostage a player is holding.",
+    "first_seen": "2026-10-23T01:35:54Z"
+  },
+  {
+    "title": "Best X-58 NYX loadout in Modern Warfare 4 multiplayer",
+    "source": "Esports.gg",
+    "url": "https://esports.gg/guides/call-of-duty/best-x-58-nyx-loadout-in-modern-warfare-4-multiplayer/",
+    "published": "2026-10-23T00:57:58Z",
+    "game": "cod",
+    "category": "news",
+    "image": "https://media.esports.gg/uploads/2026/10/9e44e6362e46118c17fe477c1d681e22-1024x605.webp",
+    "logo": null,
+    "content": "The X-58 NYX is one of the most versatile SMGs in Call of Duty: Modern Warfare 4 , and but it needs a specific loadout to be able to compete against other meta weapons in multiplayer. An internally suppressed, subsonic SMG, the X-58 NYX combines low recoil with high mobility and a sub-par damage range. So, to get the most out of the X-58 NYX in MW4, you’ll need a certain set of attachments on its loadout.\n\nBelow, you can see the best loadout and class setup for the X-58 NYX in Modern Warfare 4.\n\nThe X-58 NYX is already a terrific choice for players who like getting up close and personal with enemies, but you need some extra damage to compete at longer ranges. While it’s not as reliable as something like the ISO Nightshade , this loadout is very solid for the SMG class.\n\nThis loadout for the X-58 NYX makes it even stronger at close range while also making it viable at mid-range. The loadout also maintains its already great accuracy and mobility, making it much more on par with other meta weapons.\n\nWe’ve also equipped the X-58 Void, which is the Apex Attachment for the X-58 NYX. This makes the SMG even stealthier, as it makes use of the integrated suppressor further. There’s also no real downside to using the Apex Attachment, as it just allows you to run a sixth attachment on the loadout.\n\nWith your X-58 NYX attachments all set, you’ll want to complete the rest of your class, and we recommend using the following setup:",
+    "first_seen": "2026-10-23T01:35:54Z"
+  },
+  {
     "title": "K/DA heads to Worlds 2026 Opening Ceremony and releases new tracks",
     "source": "Esports.gg",
     "url": "https://esports.gg/news/league-of-legends/k-da-heads-to-worlds-2026-opening-ceremony-and-releases-new-tracks/",
@@ -199,7 +240,7 @@
     "category": "news",
     "image": "https://media.esports.gg/uploads/2026/10/Lil-Uzi-Vert-Fortnite-2-1024x1024.webp",
     "logo": null,
-    "content": "Lil Uzi Vert is the latest rapper to join Fortnite, following the latest Chapter 7 Mini-Season 3 teaser. This announcement arrived less than 24 hours after fellow rapper ASAP Rocky confirmed his involvement in the upcoming season.\n\nBased on leaks, Epic Games has a few more tricks up its sleeve, with many believing the final teaser will confirm the One Piece collaboration. Here’s what we know about the Lil Uzi Vert collab.\n\nView this post on Instagram A post shared by Lil Uzi Vert (@liluzivert)\n\nLil Uzi Vert posted the teaser on his official Instagram on the morning of Oct. 22. It has since amassed hundreds of thousands of viewers, similar to yesterday’s ASAP Rocky teaser.\n\nThe two trailers also share a similar art style, featuring bright colors and various other characters players can expect when the new season drops.\n\nAs covered in the ASAP Rocky announcement, recent Icon Series collabs follow an identical format. We expect the Lil Uzi Vert Fortnite collab to feature two skins, Jam Tracks , and various other cosmetics.",
+    "content": "Lil Uzi Vert is the latest rapper to join Fortnite, following the latest Chapter 7 Mini-Season 3 teaser. This announcement arrived less than 24 hours after fellow rapper ASAP Rocky confirmed his involvement in the upcoming season.\n\nBased on leaks, Epic Games has a few more tricks up its sleeve, with many believing the final teaser will confirm the One Piece collaboration. Here’s what we know about the Lil Uzi Vert collaboration.\n\nView this post on Instagram A post shared by Lil Uzi Vert (@liluzivert)\n\nLil Uzi Vert posted the teaser on his official Instagram on the morning of Oct. 22. It has since amassed hundreds of thousands of viewers, similar to yesterday’s ASAP Rocky teaser.\n\nThe two trailers also share a similar art style, featuring bright colors and various other characters players can expect when the new season drops.\n\nAs covered in the ASAP Rocky announcement, recent Icon Series collaborations follow an identical format. We expect the Lil Uzi Vert Fortnite collaboration to feature two skins, Jam Tracks , and various other cosmetics.",
     "first_seen": "2026-10-22T16:32:08Z"
   },
   {
@@ -235,7 +276,7 @@
     "category": "tournament",
     "image": "https://media.esports.gg/uploads/2026/10/cs2-pgl-masters-bucharest-2026-talent-lineup-hosts-analysts.webp",
     "logo": null,
-    "content": "The Counter-Strike 2 (CS2) esports event PGL Masters Bucharest 2026 runs from Oct. 24 to Oct. 31.\n\nThe tournament starts with the Swiss stage: five days packed with spectacular matches. Sixteen teams participate in this initial phase, but only eight can advance to the playoffs.\n\nAmong the tier 1 rosters, only Falcons are skipping this event. Otherwise, we have all of the Counter-Strike elite here. Vitality and FURIA are fresh off winning recent tournaments. Spirit are ready to recover from an unexpected drop in results.\n\nLegacy want to prove their rightful placement among the current top-tier crew. NAVI dream of striking back from the abyss they’ve fallen into. These and other thrilling storylines fire up the excitement for the Swiss rounds!\n\nFollow the Swiss stage of PGL Masters Bucharest here. Watch the matches via live streams, check out the schedule, and dive into detailed match results, including map scores.\n\nThe PGL Masters Bucharest 2026 features two simultaneous streams during most of the Swiss stage rounds.",
+    "content": "Counter-Strike 2 (CS2) esports event PGL Masters Bucharest 2026 runs from Oct. 24 to Oct. 31.\n\nThe tournament starts with the Swiss stage, which features five days packed with spectacular matches. Sixteen teams participate in this initial phase, but only eight can advance to the playoffs.\n\nAmong the Tier 1 rosters, only Falcons are skipping this event. Otherwise, we have all of the Counter-Strike elite here. Vitality and FURIA are fresh off winning recent tournaments. Spirit are ready to recover from an unexpected drop in results.\n\nLegacy players want to prove their rightful placement among the current top-tier crew. NAVI, meanwhile, dream of striking back from the abyss they’ve fallen into. These and other exciting storylines are fueling anticipation for the Swiss stage!\n\nFollow the Swiss stage of PGL Masters Bucharest here. Watch the matches via live streams, check out the schedule, and dive into detailed match results, including map scores.\n\nThe PGL Masters Bucharest 2026 features two simultaneous streams during most of the Swiss stage rounds.",
     "first_seen": "2026-10-22T13:40:52Z"
   },
   {
@@ -890,18 +931,6 @@
     "logo": null,
     "content": "Throughout your career in Call of Duty: Modern Warfare 4 DMZ, you’ll continually get to complete DMZ Orders, which are specific tasks that earn you rewards the more you complete them. While some of the DMZ Orders are simple, others can be rather difficult, and one of the more challenging ones is to “Open a Safe.”\n\nWhile this sounds trivial at first glance, you then realize that Safes aren’t too common to find on the Hajin map in DMZ. Luckily, though, we know of some dedicated spots for Safes that allow you to complete this DMZ Order with no problem at all.\n\nFor us, this specific DMZ Order was on Page 5, and it even says that you can find Safes in Compounds and Locked Spaces . Of course, that doesn’t help a lot, as you still need to go out and search for these locations and then locate the Safe itself.\n\nWhile you might have some serious trouble trying to find a “Locked Space,” you shouldn’t have many problems locating a Compound. These are marked by a tent icon on your Tac-Map and are fairly common in Hajin, particularly out in the woodlands or the side roads in between the major points of interest on the map.\n\nIn order to open a Safe in a Compound, you need to enter it and then clear out 100% of the enemy AI from the area . This is tracked by a percentage meter that appears on the left side of your screen when you enter a Compound. There are usually around 10-12 enemies in each Compound, and when they’re all cleared out, your meter will read 100%.\n\nFrom here, you need to find the Safe that the Compound has stashed. For the most part, the Safe is located at the top of the guard tower, which is found at most Compounds . Just climb the stairs to get to the top, and you’ll find the Safe sitting on the ground next to a desk. Interact with it, loot the contents, and you’ll get a mission completion for this DMZ Order.",
     "first_seen": "2026-10-21T17:27:32Z"
-  },
-  {
-    "title": "Best WZ.55 Striga loadout in Modern Warfare 4 multiplayer",
-    "source": "Esports.gg",
-    "url": "https://esports.gg/guides/call-of-duty/best-wz-55-striga-loadout-in-modern-warfare-4-multiplayer/",
-    "published": "2026-10-21T16:12:17Z",
-    "game": "cod",
-    "category": "news",
-    "image": "https://media.esports.gg/uploads/2026/10/Call-of-Duty-Black-Ops-6-Screenshot-2026.10.16-16.51.25.92-1024x576.webp",
-    "logo": null,
-    "content": "The WZ.55 Striga is a strong submachine gun in Call of Duty: Modern Warfare 4 , but you’ll need the right loadout to get the most out of it. With the right attachments, the WZ.55 Striga can compete with other meta weapons in multiplayer. However, you’ll want to add some attachments that boost accuracy if you want the SMG to be able to stay on target at longer ranges.\n\nBelow, you can see our best WZ.55 Striga loadout for Modern Warfare 4 multiplayer.\n\nThe WZ.55 Striga is a decent all-around submachine gun, but it does need some help on the recoil control front. With how much mobility the SMG has, you can really focus on accuracy attachments to boost that stat to the max. You’ll also need some extra damage range to compete with other close-range weapons, like the X-58 NYX .\n\nHere’s our recommended loadout for the WZ.55 Striga:\n\nThis is easily the most balanced loadout for the WZ.55 Striga in MW4, and it addresses all of the SMG’s shortcomings. For starters, you’ll see a huge increase to recoil control by using the muzzle and rear grip, and gain extra damage range with the barrel. Then, your mobility is boosted by the stock while you also gain 10 extra bullets in each magazine with the 35 Round Mag.\n\nThe WZ.55 Striga has great iron sights, so we didn’t bother with an optic. We also didn’t use the Apex Attachment, but if you want to use them SMGs in akimbo, then feel free to equip it.",
-    "first_seen": "2026-10-21T23:23:33Z"
   },
   {
     "title": "1xBet brings iGaming and esports to SiGMA World 2026",
@@ -3114,40 +3143,6 @@
     "logo": null,
     "content": "C’est l’un des premiers gros coups du mercato Fortnite pour 2027. L’Américain Peter « Peterbot » Kata, sacré champion du monde FNCS en 2024, va unir ses forces avec le Roumain Oltean « shxrk » Ștefan et le Slovène Tin « t3eny » Popovic, tous deux sous contrat avec Aurora Gaming. Un rapprochement qui n’était pas forcément attendu, puisque shxrk et t3eny semblaient initialement partis pour poursuivre leur aventure avec Swizzy. Mais ce dernier ne fera finalement pas partie du trio, ouvrant la porte à l’arrivée de l’une des plus grandes stars de la scène compétitive.\n\nCe changement représente un véritable tournant pour les deux vice-champions du monde. Après avoir brillé sur la scène internationale en 2026, shxrk et t3eny tenteront désormais de franchir la dernière marche avec Peterbot. Sur le papier, l’association réunit trois joueurs capables de rivaliser avec les meilleurs, mais leur complémentarité reste à démontrer. L’arrivée d’une nouvelle personnalité au sein d’un duo déjà bien établi pourrait notamment nécessiter quelques ajustements dans leur manière de jouer.\n\nSi certains observateurs s’interrogent sur la capacité des trois joueurs à évoluer ensemble, Clix ne partage pas ces inquiétudes. Le streamer et joueur américain s’est montré particulièrement enthousiaste à l’annonce de cette association. « Je ne vois pas comment ce trio pourrait ne pas fonctionner. Les trois sont capables de s’adapter les uns aux autres » , a-t-il déclaré.\n\nDe son côté, Swizzy pourrait également retrouver une équipe de premier plan. Double champion du monde en titre, il serait désormais susceptible de rejoindre Vic0 et Malibuca, une autre association qui pourrait faire parler d’elle lors des prochaines FNCS. Cette piste reste toutefois à confirmer.\n\nAvec Peterbot, shxrk et t3eny réunis sous les mêmes couleurs, la saison 2027 de Fortnite s’annonce déjà particulièrement intéressante. Reste à voir si ce trio parviendra à transformer son immense potentiel individuel en résultats collectifs, avec un objectif évident : décrocher le titre mondial.\n\nPETERBOT REJOINT SHXRK ET T3ENY POUR LES FNCS TRIO C’EST QUOI CE RETOURNEMENT DE SITUATION ??? Shxrk vient d’annoncer que Swizzy ne jouera PLUS avec eux… ET C’EST PETERBOT QUI LE REMPLACE PETERBOT SHXRK T3ENY pic.twitter.com/Z38Dupom67",
     "first_seen": "2026-10-16T16:01:01Z"
-  },
-  {
-    "title": "VCT EMEA 2027 opens direct qualification path for aspiring teams",
-    "source": "Fragster",
-    "url": "https://www.fragster.com/vct-emea-2027-kickoff-qualifiers/",
-    "published": "2026-10-16T14:14:30Z",
-    "game": "val",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Riot Games has revealed the full structure for the VCT EMEA 2027 Kickoff qualifiers, creating a new route for non-partner teams to compete directly against established VALORANT organizations.\n\nOpen qualification begins in November across Europe, Türkiye and MENA. Four teams will eventually earn places at the VCT EMEA Kickoff 2027, where they will join eight partner organizations in a 12-team field.\n\nThe biggest change is the number of opportunities available outside the partnership system.\n\nTwo European teams will qualify for the Kickoff, while Türkiye and MENA receive one slot each. Every region will run two qualifier stages, giving teams another opportunity if their first attempt ends early.\n\nEach region then uses its own playoff structure to determine which teams advance to the VCT EMEA Kickoff.\n\nFor Europe, the top four teams from each qualifier advance to a 16-team playoff. Eight additional non-partner teams will receive direct invitations based on their competitive status and results during 2026.",
-    "first_seen": "2026-10-16T23:44:55Z"
-  },
-  {
-    "title": "G2 vs NAVI headlines PGL Masters Bucharest 2026 opening round",
-    "source": "Fragster",
-    "url": "https://www.fragster.com/pgl-masters-bucharest-2026-opening-matches/",
-    "published": "2026-10-16T14:09:54Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "G2 Esports",
-      "tag": "G2",
-      "color": "#ef4444",
-      "bg": "#380606"
-    },
-    "content": "PGL has revealed the opening matchups for PGL Masters Bucharest 2026, setting up several high-profile Counter-Strike 2 clashes immediately on the first day. The $1.25 million tournament begins on October 24 and features 16 teams competing through a Swiss group stage before eight advance to the playoffs.\n\nG2 against Natus Vincere stands out as one of the biggest opening encounters, while Aurora will meet The MongolZ in another important matchup. Spirit, Vitality, MOUZ and FURIA are also among the teams beginning their campaigns on the opening day.\n\nAll 16 teams will play their first best-of-three series on October 24.\n\nAurora and The MongolZ will begin the action alongside FUT and TYLOO. Spirit then face BETBOOM, while MOUZ meet Liquid in the second time slot.\n\nThe afternoon schedule features Vitality against 9z and Legacy against Nemiga before the day closes with G2 against NAVI and FURIA against DENDELE.\n\nThe Swiss format means these opening results will immediately influence each team’s route through the group stage. Three victories are required to reach the playoffs, while three defeats result in elimination.",
-    "first_seen": "2026-10-16T23:44:55Z"
   },
   {
     "title": "All Prestige Icons in Modern Warfare 4 multiplayer",
