@@ -1,5 +1,17 @@
 [
   {
+    "title": "Worlds 2026 : Gen.G – Invictus Gaming en direct",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/live/worlds-2026-gen-g-invictus-gaming-en-direct-775875.shtm",
+    "published": "2026-10-23T16:50:00Z",
+    "game": "lol",
+    "category": "tournament",
+    "image": "https://e.sport.fr/wp-content/uploads/2024/03/chovy-pog-3-17091849278341436176512-1024x683.webp",
+    "logo": null,
+    "content": "Pour suivre le match Gen.G – Invictus Gaming en direct, rendez-vous sur le lien ci-dessous :",
+    "first_seen": "2026-10-23T17:27:32Z"
+  },
+  {
     "title": "LCS : Cloud9 verrouille Vulcan jusqu’en 2029",
     "source": "E.SPORT.FR",
     "url": "https://e.sport.fr/transferts/lcs-cloud9-verrouille-vulcan-jusquen-2029-775860.shtm",
@@ -3009,23 +3021,6 @@
     },
     "content": "One final trophy for FalleN's cabinet?",
     "first_seen": "2026-10-18T22:20:38Z"
-  },
-  {
-    "title": "Iowa Stormboar part ways with TyRa and Scorchyy",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/79025/iowa-stormboar-part-ways-with-tyra-and-scorchyy",
-    "published": "2026-10-18T21:04:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "Iowa Stormboar's roster has continued to change significantly behind the scenes.",
-    "first_seen": "2026-10-18T21:21:36Z"
   },
   {
     "title": "RLCS : stizzy quitte Vitality et se rapproche de NIP",
