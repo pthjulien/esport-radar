@@ -1,5 +1,17 @@
 [
   {
+    "title": "Worlds 2026 : Anyone’s Legend – Karmine Corp en direct",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/live/worlds-2026-anyones-legend-karmine-corp-en-direct-775878.shtm",
+    "published": "2026-10-23T19:50:00Z",
+    "game": "lol",
+    "category": "tournament",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/06/image_processing20260608-1-x10e71-1024x683.webp",
+    "logo": null,
+    "content": "Pour suivre le match Anyone’s Legend – Karmine Corp en direct, rendez-vous sur l’un des liens ci-dessous :",
+    "first_seen": "2026-10-23T20:25:02Z"
+  },
+  {
     "title": "Sashi drop out of NSTLGA Texas LAN",
     "source": "Dust2",
     "url": "https://www.dust2.us/news/79192/sashi-drop-out-of-nstlga-texas-lan",
@@ -3005,23 +3017,6 @@
       "bg": "#3d0a14"
     },
     "content": "The next era of VCT Americas is just around the corner.",
-    "first_seen": "2026-10-19T03:28:04Z"
-  },
-  {
-    "title": "VCT EMEA partner teams revealed for 2027",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/777321/vct-emea-partner-teams-revealed-for-2027",
-    "published": "2026-10-19T02:37:31Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "EMEA organizations that applied for Riot partnership agreements have begun announcing their status.",
     "first_seen": "2026-10-19T03:28:04Z"
   },
   {
