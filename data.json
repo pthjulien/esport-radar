@@ -172,7 +172,7 @@
     "title": "MIBR GC, SK Nebula draw first blood at GCC 2026",
     "source": "VLR.gg",
     "url": "https://www.vlr.gg/779170/mibr-gc-sk-nebula-draw-first-blood-at-gcc-2026",
-    "published": "2026-10-23T07:02:22Z",
+    "published": "2026-10-23T06:02:22Z",
     "game": "val",
     "category": "news",
     "image": "",
@@ -546,40 +546,6 @@
     "first_seen": "2026-10-22T15:32:31Z"
   },
   {
-    "title": "KRX announces mass exodus following partnership snub",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/778910/krx-announces-mass-exodus-following-partnership-snub",
-    "published": "2026-10-22T13:56:05Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "One of Valorant's most iconic outfits sees 10 leave.",
-    "first_seen": "2026-10-22T13:40:52Z"
-  },
-  {
-    "title": "balax departs LOUD after assisting in Champions-winning run",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/778901/balax-departs-loud-after-assisting-in-champions-winning-run",
-    "published": "2026-10-22T13:10:51Z",
-    "game": "val",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "LOUD Esports",
-      "tag": "LOUD",
-      "color": "#22c55e",
-      "bg": "#062e12"
-    },
-    "content": "The analyst is LFT for the 2027 season after a trophy-lifting 2026.",
-    "first_seen": "2026-10-22T12:35:07Z"
-  },
-  {
     "title": "Swiss stage at CS2 PGL Masters Bucharest 2026: Storylines, matchups, full results",
     "source": "Esports.gg",
     "url": "https://esports.gg/news/counter-strike-2/swiss-stage-pgl-masters-bucharest-2026-results/",
@@ -604,10 +570,10 @@
     "first_seen": "2026-10-22T13:40:52Z"
   },
   {
-    "title": "trexx set to depart Team Liquid for the second time",
+    "title": "KRX announces mass exodus following partnership snub",
     "source": "VLR.gg",
-    "url": "https://www.vlr.gg/778895/trexx-set-to-depart-team-liquid-for-the-second-time",
-    "published": "2026-10-22T12:52:07Z",
+    "url": "https://www.vlr.gg/778910/krx-announces-mass-exodus-following-partnership-snub",
+    "published": "2026-10-22T12:56:05Z",
     "game": "val",
     "category": "news",
     "image": "",
@@ -617,8 +583,8 @@
       "color": "#ff4655",
       "bg": "#3d0a14"
     },
-    "content": "After a second stint with Liquid, trexx is LFT for the second straight offseason.",
-    "first_seen": "2026-10-22T12:35:07Z"
+    "content": "One of Valorant's most iconic outfits sees 10 leave.",
+    "first_seen": "2026-10-22T13:40:52Z"
   },
   {
     "title": "Fortnite Wins Australian Court Battle, Reclaims Spot on iOS",
@@ -635,6 +601,40 @@
       "bg": "#2e084d"
     },
     "content": "Fortnite returns to iOS in Australia on October 22, 2026, after the Federal Court of Australia ruled against Apple in the Epic Games antitrust case. Justice Jonathan Beach found that Apple broke competition law by limiting app distribution and payment options. Epic announced the return on X, and Apple plans to appeal. The court also ordered Apple to open iOS to third-party app stores and alternative payments by March 1, 2027.\n\nThis article covers the return date, the court ruling, the March 2027 changes, and Apple’s response.\n\nEpic Games said on X that Fortnite would come back to the Australian App Store on Thursday, October 22. Players in Australia can now download the game straight from the App Store. Before this, they had to go through the Epic Games Store.\n\nBig news: Fortnite is coming back to the App Store in Australia tomorrow! Today the Australia Federal Court told Apple to open up iOS after finding they violated competition law. Here’s what’s changing in Australia in March 2027: • iOS will be open to third party app stores •…\n\nThe return follows a ruling that Apple violated Australian competition law. The court found that Apple restricted how apps are distributed and how users pay inside them. It also ordered Apple to readmit Fortnite and other Epic apps once Epic sends a written request. Readmission stays subject to App Store rules that match the court’s orders.\n\nEpic CEO Tim Sweeney reacted on X after the remedies were issued. He called the outcome a “huge victory for consumers and developers” and said Epic is studying the verdict. He added that more details will follow.",
+    "first_seen": "2026-10-22T12:35:07Z"
+  },
+  {
+    "title": "balax departs LOUD after assisting in Champions-winning run",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/778901/balax-departs-loud-after-assisting-in-champions-winning-run",
+    "published": "2026-10-22T12:10:51Z",
+    "game": "val",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "LOUD Esports",
+      "tag": "LOUD",
+      "color": "#22c55e",
+      "bg": "#062e12"
+    },
+    "content": "The analyst is LFT for the 2027 season after a trophy-lifting 2026.",
+    "first_seen": "2026-10-22T12:35:07Z"
+  },
+  {
+    "title": "trexx set to depart Team Liquid for the second time",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/778895/trexx-set-to-depart-team-liquid-for-the-second-time",
+    "published": "2026-10-22T11:52:07Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "After a second stint with Liquid, trexx is LFT for the second straight offseason.",
     "first_seen": "2026-10-22T12:35:07Z"
   },
   {
@@ -718,23 +718,6 @@
     "first_seen": "2026-10-22T11:29:21Z"
   },
   {
-    "title": "Meteor to leave T1 with contract set to expire",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/778872/meteor-to-leave-t1-with-contract-set-to-expire",
-    "published": "2026-10-22T11:04:29Z",
-    "game": "val",
-    "category": "official",
-    "image": "",
-    "logo": {
-      "title": "T1 Esports",
-      "tag": "T1",
-      "color": "#e11d48",
-      "bg": "#3b0511"
-    },
-    "content": "After just two years with the Korean Esports giant, Meteor is set to leave T1.",
-    "first_seen": "2026-10-22T10:30:35Z"
-  },
-  {
     "title": "FFMAI 2026 Fall Group Stage: Dates, Teams, Format, and More",
     "source": "TalkEsport",
     "url": "https://www.talkesport.com/mobile-gaming/free-fire-max/ffmai-2026-fall-group-stage-dates-teams-format-and-more/",
@@ -752,21 +735,21 @@
     "first_seen": "2026-10-22T11:29:21Z"
   },
   {
-    "title": "keiko to leave NRG after one season, becomes restricted free agent",
+    "title": "Meteor to leave T1 with contract set to expire",
     "source": "VLR.gg",
-    "url": "https://www.vlr.gg/778864/keiko-to-leave-nrg-after-one-season-becomes-restricted-free-agent",
-    "published": "2026-10-22T10:18:45Z",
+    "url": "https://www.vlr.gg/778872/meteor-to-leave-t1-with-contract-set-to-expire",
+    "published": "2026-10-22T10:04:29Z",
     "game": "val",
     "category": "official",
     "image": "",
     "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
+      "title": "T1 Esports",
+      "tag": "T1",
+      "color": "#e11d48",
+      "bg": "#3b0511"
     },
-    "content": "After one season with the 2025 world champions, keiko has been allowed to walk.",
-    "first_seen": "2026-10-22T09:31:19Z"
+    "content": "After just two years with the Korean Esports giant, Meteor is set to leave T1.",
+    "first_seen": "2026-10-22T10:30:35Z"
   },
   {
     "title": "Worlds 2026 : Gen.G favori, Chovy et Ruler au sommet du ranking OTP",
@@ -817,10 +800,10 @@
     "first_seen": "2026-10-22T08:34:08Z"
   },
   {
-    "title": "Wo0t leaves Team Heretics, ending three-year run",
+    "title": "keiko to leave NRG after one season, becomes restricted free agent",
     "source": "VLR.gg",
-    "url": "https://www.vlr.gg/778860/wo0t-leaves-team-heretics-ending-three-year-run",
-    "published": "2026-10-22T09:37:57Z",
+    "url": "https://www.vlr.gg/778864/keiko-to-leave-nrg-after-one-season-becomes-restricted-free-agent",
+    "published": "2026-10-22T09:18:45Z",
     "game": "val",
     "category": "official",
     "image": "",
@@ -830,7 +813,7 @@
       "color": "#ff4655",
       "bg": "#3d0a14"
     },
-    "content": "He joined as a high-flying 18-year-old rookie, and leaves having gained a wealth of experience in Heretics colors.",
+    "content": "After one season with the 2025 world champions, keiko has been allowed to walk.",
     "first_seen": "2026-10-22T09:31:19Z"
   },
   {
@@ -863,21 +846,21 @@
     "first_seen": "2026-10-22T09:31:19Z"
   },
   {
-    "title": "Gentle Mates to part with head coach KUNDIKUNDI",
+    "title": "Wo0t leaves Team Heretics, ending three-year run",
     "source": "VLR.gg",
-    "url": "https://www.vlr.gg/778820/gentle-mates-to-part-with-head-coach-kundikundi",
-    "published": "2026-10-22T08:29:38Z",
+    "url": "https://www.vlr.gg/778860/wo0t-leaves-team-heretics-ending-three-year-run",
+    "published": "2026-10-22T08:37:57Z",
     "game": "val",
-    "category": "news",
+    "category": "official",
     "image": "",
     "logo": {
-      "title": "Gentle Mates",
-      "tag": "M8",
-      "color": "#f472b6",
-      "bg": "#3d082b"
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
     },
-    "content": "The Gentle Mates rebuild continues ahead of the 2027 shift.",
-    "first_seen": "2026-10-22T07:41:31Z"
+    "content": "He joined as a high-flying 18-year-old rookie, and leaves having gained a wealth of experience in Heretics colors.",
+    "first_seen": "2026-10-22T09:31:19Z"
   },
   {
     "title": "BGMI Survivor League Puts 50 Creators on One Leaderboard With ₹70 Lakh Prize Pool, Fans Decide the Winner",
@@ -924,6 +907,23 @@
     },
     "content": "Denis “electroNic” Sharipov does not consider his playing career over. A month after BC.Game moved him to the bench, the 2021 Major winner told viewers of a Russian-language stream that he wants to return.\n\nelectroNic was a guest on Russian streamer stariy_bog’s broadcast of 1win Private Club #2 in Belgrade on Wednesday. During PARIVISION ‘s semi-final against BIG , the conversation turned to messages in the chat describing him as a former pro player. electroNic corrected that. In Pley’s translation from Russian:\n\nI’m not a former pro player. I really want to come back. So yes, don’t count me among the former ones just yet.\n\nThe clip was picked up and subtitled in English by NarT.\n\n🗣️ \"I'm not a former pro player. I really want to come back.\" electroNic made it clear today that he's NOT DONE with professional Counter-Strike and is determined to make a comeback to the competitive scene! 👇 pic.twitter.com/t8hPkUktPH\n\nBC.Game signed the Russian rifler from Virtus.pro in October 2025, reuniting him with s1mple , his teammate at NAVI from 2017 to 2023. On 22 September 2026, the club moved him to the bench and signed Australian Tyson “asap” Paterson in his place.",
     "first_seen": "2026-10-22T09:31:19Z"
+  },
+  {
+    "title": "Gentle Mates to part with head coach KUNDIKUNDI",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/778820/gentle-mates-to-part-with-head-coach-kundikundi",
+    "published": "2026-10-22T07:29:38Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Gentle Mates",
+      "tag": "M8",
+      "color": "#f472b6",
+      "bg": "#3d082b"
+    },
+    "content": "The Gentle Mates rebuild continues ahead of the 2027 shift.",
+    "first_seen": "2026-10-22T07:41:31Z"
   },
   {
     "title": "Dragon Ranger Gaming sweep Rare Atom to open VCT Threshold China bid for a 2027 guest place",
@@ -1542,7 +1542,7 @@
     "title": "Evil Geniuses to cease operations",
     "source": "VLR.gg",
     "url": "https://www.vlr.gg/778312/evil-geniuses-to-cease-operations",
-    "published": "2026-10-21T00:47:39Z",
+    "published": "2026-10-20T23:47:39Z",
     "game": "val",
     "category": "news",
     "image": "",
@@ -1803,23 +1803,6 @@
     "first_seen": "2026-10-20T14:29:27Z"
   },
   {
-    "title": "UdoTan, xavi8k announce free agency from Global Esports",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/778104/udotan-xavi8k-announce-free-agency-from-global-esports",
-    "published": "2026-10-20T13:34:02Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "The pair are the first to leave after GE's exit from Valorant.",
-    "first_seen": "2026-10-20T13:37:58Z"
-  },
-  {
     "title": "SportsBetExpert pull out of CS2, owner says team cost over $20,000 a month",
     "source": "Pley.gg",
     "url": "https://pley.gg/cs2/sportsbetexpert-pull-out-of-cs2-owner-says-team-cost-over-20000-a-month/",
@@ -1849,10 +1832,39 @@
     "first_seen": "2026-10-20T13:37:58Z"
   },
   {
+    "title": "VALORANT Developers Reveal ‘Hush’: Telekinetic Abilities and Agent Design Explained",
+    "source": "Pley.gg",
+    "url": "https://pley.gg/valorant/new-agent-hush-abilities/",
+    "published": "2026-10-20T12:59:26Z",
+    "game": "val",
+    "category": "news",
+    "image": "https://pley.gg/app/uploads/2026/10/image-7.png",
+    "logo": null,
+    "content": "Following weeks of leaks and teasers, Riot Games has officially lifted the curtain on VALORANT’s newest agent. Known as Hush , the game’s first Cantonese agent is bringing a completely new mechanic to the tactical shooter: telekinesis.\n\nIn a recent sit-down interview with the development team, Riot broke down the inspiration behind Hush’s eccentric personality, her high-fashion aesthetic, and the deep mechanics behind her game-changing, telekinetic ability kit.\n\nAccording to the narrative and design teams, Hush was built to resonate with players who feel like the “weird one” in their friend group, yet are still fiercely intelligent, capable, and surrounded by a core group who understands them. She brings a highly eccentric, methodical energy to the VALORANT Protocol.\n\nVisually, Hush leans heavily into high-fashion couture. Because telekinesis is her power source, the design team incorporated this directly into her character model. Players will notice floating beads around her bracelet and a flash grenade that levitates freely on her thigh rather than being strapped to a holster. Her clothing features subtle patterns inspired by the folds of a human brain, and—confirming the recent pop-up event leaks—she sports a small ghost keychain hanging from her belt.\n\nPerhaps the most groundbreaking addition to Hush’s kit is her passive ability. Unlike other passive traits in the game, Hush’s telekinesis operates on a cooldown, effectively acting as a fifth ability.\n\nTracked via a subtle UI indicator on the top HUD, Hush can use her mind to interact with the environment from a distance. When the ability is ready, interactable objects will emit a distinct visual glow. Using this mechanic, Hush can:",
+    "first_seen": "2026-10-22T09:31:19Z"
+  },
+  {
+    "title": "UdoTan, xavi8k announce free agency from Global Esports",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/778104/udotan-xavi8k-announce-free-agency-from-global-esports",
+    "published": "2026-10-20T12:34:02Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "The pair are the first to leave after GE's exit from Valorant.",
+    "first_seen": "2026-10-20T13:37:58Z"
+  },
+  {
     "title": "Nongshim RedForce allows Dambi to explore options",
     "source": "VLR.gg",
     "url": "https://www.vlr.gg/778098/nongshim-redforce-allows-dambi-to-explore-options",
-    "published": "2026-10-20T13:02:28Z",
+    "published": "2026-10-20T12:02:28Z",
     "game": "val",
     "category": "news",
     "image": "",
@@ -1866,22 +1878,22 @@
     "first_seen": "2026-10-20T12:33:37Z"
   },
   {
-    "title": "VALORANT Developers Reveal ‘Hush’: Telekinetic Abilities and Agent Design Explained",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/valorant/new-agent-hush-abilities/",
-    "published": "2026-10-20T12:59:26Z",
-    "game": "val",
+    "title": "LFL : après une saison en LEC, Serin de retour chez Galions ?",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/transferts/lfl-apres-une-saison-en-lec-serin-de-retour-chez-galions-775745.shtm",
+    "published": "2026-10-20T12:00:00Z",
+    "game": "lol",
     "category": "news",
-    "image": "https://pley.gg/app/uploads/2026/10/image-7.png",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/10/HVAm5w6WcAA6EVF-1024x683.webp",
     "logo": null,
-    "content": "Following weeks of leaks and teasers, Riot Games has officially lifted the curtain on VALORANT’s newest agent. Known as Hush , the game’s first Cantonese agent is bringing a completely new mechanic to the tactical shooter: telekinesis.\n\nIn a recent sit-down interview with the development team, Riot broke down the inspiration behind Hush’s eccentric personality, her high-fashion aesthetic, and the deep mechanics behind her game-changing, telekinetic ability kit.\n\nAccording to the narrative and design teams, Hush was built to resonate with players who feel like the “weird one” in their friend group, yet are still fiercely intelligent, capable, and surrounded by a core group who understands them. She brings a highly eccentric, methodical energy to the VALORANT Protocol.\n\nVisually, Hush leans heavily into high-fashion couture. Because telekinesis is her power source, the design team incorporated this directly into her character model. Players will notice floating beads around her bracelet and a flash grenade that levitates freely on her thigh rather than being strapped to a holster. Her clothing features subtle patterns inspired by the folds of a human brain, and—confirming the recent pop-up event leaks—she sports a small ghost keychain hanging from her belt.\n\nPerhaps the most groundbreaking addition to Hush’s kit is her passive ability. Unlike other passive traits in the game, Hush’s telekinesis operates on a cooldown, effectively acting as a fifth ability.\n\nTracked via a subtle UI indicator on the top HUD, Hush can use her mind to interact with the environment from a distance. When the ability is ready, interactable objects will emit a distinct visual glow. Using this mechanic, Hush can:",
-    "first_seen": "2026-10-22T09:31:19Z"
+    "content": "L’aventure de Tolga « Serin » Ölmez chez Team Heretics semble toucher à sa fin. Selon les informations de Sheep Esports , le joueur turc aurait trouvé un accord verbal avec Galions pour la saison 2027. Une particularité figure toutefois dans cet arrangement : Serin pourra continuer à étudier les offres du LEC jusqu’au 31 octobre. S’il ne trouve pas de place dans l’élite européenne d’ici cette date, son retour chez Galions devrait alors être acté. Du côté de Team Heretics, son remplacement se précise déjà, puisque l’organisation espagnole serait sur le point de recruter Jackies, en provenance de GIANTX.\n\nCette possible arrivée intervient après une première saison difficile pour Serin dans le LEC. Malgré une qualification pour les playoffs du LEC Versus, Heretics a terminé dernière du Spring Split, puis neuvième du Summer Split. Le midlaner n’a pas non plus réussi à convaincre individuellement, affichant notamment les moyennes de kills et de KDA les plus faibles à son poste lors du Summer Split. Un retour en LFL pourrait donc lui permettre de retrouver de la confiance dans un championnat qu’il connaît bien, après une expérience compliquée au plus haut niveau européen.\n\nDe son côté, Galions entend rester l’une des références du circuit ERL. Toujours en lice pour le titre aux EMEA Masters, l’organisation française prépare un effectif ambitieux pour 2027 malgré un contexte économique difficile pour plusieurs structures de deuxième division. Le retour de Serin pourrait constituer l’un des premiers mouvements importants de ce mercato, alors que l’actuel midlaner OMON explore lui aussi des opportunités en LEC et intéresserait déjà plusieurs équipes.\n\nReste désormais à savoir si Serin recevra une proposition suffisamment intéressante pour poursuivre son aventure dans l’élite. Dans le cas contraire, Galions pourrait récupérer un joueur expérimenté, déjà passé par les Worlds et désireux de rebondir après une saison délicate.\n\n[SOURCES] Heretics midlaner Serin has reached a verbal agreement with Galions in the LFL for the 2027 season. The agreement allows him to continue exploring #LEC options until October 31, 2026. Report by @LEC_Wooloo https://t.co/68ZlmDw6v5",
+    "first_seen": "2026-10-20T12:33:37Z"
   },
   {
     "title": "Sungmin parts with Nongshim RedForce, original Sin Prisa core",
     "source": "VLR.gg",
     "url": "https://www.vlr.gg/778095/sungmin-parts-with-nongshim-redforce-original-sin-prisa-core",
-    "published": "2026-10-20T12:38:09Z",
+    "published": "2026-10-20T11:38:09Z",
     "game": "val",
     "category": "news",
     "image": "",
@@ -1892,18 +1904,6 @@
       "bg": "#3d0a14"
     },
     "content": "The former Sin Prisa-turned-Nongshim head coach is LFT.",
-    "first_seen": "2026-10-20T12:33:37Z"
-  },
-  {
-    "title": "LFL : après une saison en LEC, Serin de retour chez Galions ?",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/transferts/lfl-apres-une-saison-en-lec-serin-de-retour-chez-galions-775745.shtm",
-    "published": "2026-10-20T12:00:00Z",
-    "game": "lol",
-    "category": "news",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/10/HVAm5w6WcAA6EVF-1024x683.webp",
-    "logo": null,
-    "content": "L’aventure de Tolga « Serin » Ölmez chez Team Heretics semble toucher à sa fin. Selon les informations de Sheep Esports , le joueur turc aurait trouvé un accord verbal avec Galions pour la saison 2027. Une particularité figure toutefois dans cet arrangement : Serin pourra continuer à étudier les offres du LEC jusqu’au 31 octobre. S’il ne trouve pas de place dans l’élite européenne d’ici cette date, son retour chez Galions devrait alors être acté. Du côté de Team Heretics, son remplacement se précise déjà, puisque l’organisation espagnole serait sur le point de recruter Jackies, en provenance de GIANTX.\n\nCette possible arrivée intervient après une première saison difficile pour Serin dans le LEC. Malgré une qualification pour les playoffs du LEC Versus, Heretics a terminé dernière du Spring Split, puis neuvième du Summer Split. Le midlaner n’a pas non plus réussi à convaincre individuellement, affichant notamment les moyennes de kills et de KDA les plus faibles à son poste lors du Summer Split. Un retour en LFL pourrait donc lui permettre de retrouver de la confiance dans un championnat qu’il connaît bien, après une expérience compliquée au plus haut niveau européen.\n\nDe son côté, Galions entend rester l’une des références du circuit ERL. Toujours en lice pour le titre aux EMEA Masters, l’organisation française prépare un effectif ambitieux pour 2027 malgré un contexte économique difficile pour plusieurs structures de deuxième division. Le retour de Serin pourrait constituer l’un des premiers mouvements importants de ce mercato, alors que l’actuel midlaner OMON explore lui aussi des opportunités en LEC et intéresserait déjà plusieurs équipes.\n\nReste désormais à savoir si Serin recevra une proposition suffisamment intéressante pour poursuivre son aventure dans l’élite. Dans le cas contraire, Galions pourrait récupérer un joueur expérimenté, déjà passé par les Worlds et désireux de rebondir après une saison délicate.\n\n[SOURCES] Heretics midlaner Serin has reached a verbal agreement with Galions in the LFL for the 2027 season. The agreement allows him to continue exploring #LEC options until October 31, 2026. Report by @LEC_Wooloo https://t.co/68ZlmDw6v5",
     "first_seen": "2026-10-20T12:33:37Z"
   },
   {
@@ -1948,10 +1948,22 @@
     "first_seen": "2026-10-22T09:31:19Z"
   },
   {
+    "title": "RLCS : Eversax reste chez Vitality",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/transferts/rlcs-eversax-reste-chez-vitality-775743.shtm",
+    "published": "2026-10-20T10:00:00Z",
+    "game": "rl",
+    "category": "news",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/09/738f2be6db161ab1b38e38ee0666ea22e94932f5-1920x1280-1-1024x683.webp",
+    "logo": null,
+    "content": "Un temps annoncé sur le marché après l’expiration de son contrat, Benjamin « Eversax » Wagner devrait finalement rester chez Team Vitality pour la saison 2027. Selon les informations de Sheep Esports , l’entraîneur belge aurait trouvé un accord verbal avec l’organisation française pour poursuivre sa mission à la tête de l’équipe. Arrivé en octobre 2025 aux côtés de stizzy, il serait ainsi le seul membre de l’effectif 2026 à conserver sa place. Vitality aurait en effet déjà trouvé des accords avec nass, Oski et diaz, trois joueurs appelés à former son nouveau trio après les départs attendus de zen, stizzy et ExoTiiK.\n\nCe renouvellement marque un tournant majeur pour la structure française. Après plusieurs saisons passées sous les couleurs des Abeilles, zen se rapproche de Gentle Mates, où il pourrait retrouver Atow et Vatira pour former une véritable équipe de stars. Stizzy devrait quant à lui rejoindre Ninjas in Pyjamas aux côtés de crr, tandis qu’ExoTiiK devrait également céder sa place. Pour la première fois depuis son arrivée sur Rocket League, Vitality pourrait donc évoluer sans aucun joueur français, Eversax restant le seul représentant francophone de l’effectif.\n\nAncien entraîneur de la Karmine Corp et de Gentle Mates, Eversax possède une solide expérience du plus haut niveau, avec notamment un sacre au Major de Copenhague en 2024. Lors des RLCS 2026, il avait accompagné Vitality jusqu’à la deuxième place du Major de Boston et dans le dernier carré à Paris, avant une élimination décevante entre la 9e et la 12e place aux Worlds. Avec un trio entièrement renouvelé, le technicien belge aura désormais la lourde tâche de lancer un nouveau cycle et de ramener les Abeilles au sommet de Rocket League.\n\n[SOURCES] Team Vitality is expected to retain Eversax as their head coach for the #RLCS Club Championship. The Belgian joined the coaching staff for the organization at the beginning of the 2026 Season. @i_Eros_ reporting. @Michelin | Read more here …",
+    "first_seen": "2026-10-20T10:26:39Z"
+  },
+  {
     "title": "FunPlus Phoenix signs 77even ahead of China Threshold",
     "source": "VLR.gg",
     "url": "https://www.vlr.gg/778064/funplus-phoenix-signs-77even-ahead-of-china-threshold",
-    "published": "2026-10-20T10:29:40Z",
+    "published": "2026-10-20T09:29:40Z",
     "game": "val",
     "category": "news",
     "image": "",
@@ -1968,7 +1980,7 @@
     "title": "Shyy, basic, and artzin enter free agency after FURIA stints",
     "source": "VLR.gg",
     "url": "https://www.vlr.gg/778056/shyy-basic-and-artzin-enter-free-agency-after-furia-stints",
-    "published": "2026-10-20T10:06:46Z",
+    "published": "2026-10-20T09:06:46Z",
     "game": "val",
     "category": "news",
     "image": "",
@@ -1980,18 +1992,6 @@
     },
     "content": "The Brazilian org's future in Valorant looks cloudy, with three players announcing their free agency.",
     "first_seen": "2026-10-20T09:30:16Z"
-  },
-  {
-    "title": "RLCS : Eversax reste chez Vitality",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/transferts/rlcs-eversax-reste-chez-vitality-775743.shtm",
-    "published": "2026-10-20T10:00:00Z",
-    "game": "rl",
-    "category": "news",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/09/738f2be6db161ab1b38e38ee0666ea22e94932f5-1920x1280-1-1024x683.webp",
-    "logo": null,
-    "content": "Un temps annoncé sur le marché après l’expiration de son contrat, Benjamin « Eversax » Wagner devrait finalement rester chez Team Vitality pour la saison 2027. Selon les informations de Sheep Esports , l’entraîneur belge aurait trouvé un accord verbal avec l’organisation française pour poursuivre sa mission à la tête de l’équipe. Arrivé en octobre 2025 aux côtés de stizzy, il serait ainsi le seul membre de l’effectif 2026 à conserver sa place. Vitality aurait en effet déjà trouvé des accords avec nass, Oski et diaz, trois joueurs appelés à former son nouveau trio après les départs attendus de zen, stizzy et ExoTiiK.\n\nCe renouvellement marque un tournant majeur pour la structure française. Après plusieurs saisons passées sous les couleurs des Abeilles, zen se rapproche de Gentle Mates, où il pourrait retrouver Atow et Vatira pour former une véritable équipe de stars. Stizzy devrait quant à lui rejoindre Ninjas in Pyjamas aux côtés de crr, tandis qu’ExoTiiK devrait également céder sa place. Pour la première fois depuis son arrivée sur Rocket League, Vitality pourrait donc évoluer sans aucun joueur français, Eversax restant le seul représentant francophone de l’effectif.\n\nAncien entraîneur de la Karmine Corp et de Gentle Mates, Eversax possède une solide expérience du plus haut niveau, avec notamment un sacre au Major de Copenhague en 2024. Lors des RLCS 2026, il avait accompagné Vitality jusqu’à la deuxième place du Major de Boston et dans le dernier carré à Paris, avant une élimination décevante entre la 9e et la 12e place aux Worlds. Avec un trio entièrement renouvelé, le technicien belge aura désormais la lourde tâche de lancer un nouveau cycle et de ramener les Abeilles au sommet de Rocket League.\n\n[SOURCES] Team Vitality is expected to retain Eversax as their head coach for the #RLCS Club Championship. The Belgian joined the coaching staff for the organization at the beginning of the 2026 Season. @i_Eros_ reporting. @Michelin | Read more here …",
-    "first_seen": "2026-10-20T10:26:39Z"
   },
   {
     "title": "Worlds 2026 : Caliste veut défier Ruler et Gen.G",
@@ -2071,10 +2071,22 @@
     "first_seen": "2026-10-20T03:27:12Z"
   },
   {
+    "title": "All Weapon Prestige Camos in Modern Warfare 4 & how to earn them",
+    "source": "Esports.gg",
+    "url": "https://esports.gg/guides/call-of-duty/all-weapon-prestige-camos-in-modern-warfare-4-how-to-earn-them/",
+    "published": "2026-10-20T01:04:28Z",
+    "game": "cod",
+    "category": "news",
+    "image": "https://media.esports.gg/uploads/2026/10/image-23-1024x576.webp",
+    "logo": null,
+    "content": "There are several different forms of progression in Call of Duty: Modern Warfare 4 , and one of the newer grinds in multiplayer is earning Weapon Prestige Camos. This system was brought back to the franchise in Black Ops 7, and Modern Warfare 4 has kept it in multiplayer, but with some twists.\n\nWeapon Prestige Camos can be earned across all 33 weapons in MW4, but there are only four of them in total to unlock. You unlock each camo the same way for all weapons, but, of course, you need to know the unlock method before you start the grind. Below, we’ll explain everything you need to know about earning Weapon Prestige Camos in MW4.\n\nThe four Weapon Prestige Camos in MW4 multiplayer are: Pyroclast, Pyroclast Terminus, Pyroclast Scatter, and Pyroclast Cascade. You won’t start the process of earning any of these camos until you reach Weapon Prestige 1 with a weapon. This is accomplished by getting to that weapon’s max level, which usually goes to around 65-70 for most primary weapons.\n\nOnce you reach the max level for a weapon, you can enter Weapon Prestige , which works the same way that Classic Prestige Mode works in MW4 . When you enter Weapon Prestige, you reset that weapon back to level one and re-lock any non-shared attachments for it. You keep all shared attachments, though. From this point, you can re-unlock all weapon levels, and when you reach max level again, you’ll start earning Weapon Prestige Master levels. There are then 250 total levels to max out Weapon Prestige Master .\n\nYou can only Prestige weapons a single time in MW4, but once you do, you can start unlocking Weapon Prestige Camos. Look below to find out what you need to do to unlock all four Weapon Prestige Camos in multiplayer:\n\nUnlike in Black Ops 7, which has unique Weapon Prestige Camos for every single weapon, the four camos are the same for all weapons in Modern Warfare 4. So, just because you earn Pyroclast Cascade for the M4 doesn’t then mean you have it unlocked for the Patriot XMR. Every Weapon Prestige grind is separate, but the Weapon Prestige Camos are the same.",
+    "first_seen": "2026-10-20T01:32:17Z"
+  },
+  {
     "title": "Cloud9 head coach Veer set to enter free agency",
     "source": "VLR.gg",
     "url": "https://www.vlr.gg/777953/cloud9-head-coach-veer-set-to-enter-free-agency",
-    "published": "2026-10-20T01:28:07Z",
+    "published": "2026-10-20T00:28:07Z",
     "game": "val",
     "category": "news",
     "image": "",
@@ -2085,18 +2097,6 @@
       "bg": "#032442"
     },
     "content": "After an assistant coach-turned-head coach stint with C9, Veer is set to enter free agency",
-    "first_seen": "2026-10-20T01:32:17Z"
-  },
-  {
-    "title": "All Weapon Prestige Camos in Modern Warfare 4 & how to earn them",
-    "source": "Esports.gg",
-    "url": "https://esports.gg/guides/call-of-duty/all-weapon-prestige-camos-in-modern-warfare-4-how-to-earn-them/",
-    "published": "2026-10-20T01:04:28Z",
-    "game": "cod",
-    "category": "news",
-    "image": "https://media.esports.gg/uploads/2026/10/image-23-1024x576.webp",
-    "logo": null,
-    "content": "There are several different forms of progression in Call of Duty: Modern Warfare 4 , and one of the newer grinds in multiplayer is earning Weapon Prestige Camos. This system was brought back to the franchise in Black Ops 7, and Modern Warfare 4 has kept it in multiplayer, but with some twists.\n\nWeapon Prestige Camos can be earned across all 33 weapons in MW4, but there are only four of them in total to unlock. You unlock each camo the same way for all weapons, but, of course, you need to know the unlock method before you start the grind. Below, we’ll explain everything you need to know about earning Weapon Prestige Camos in MW4.\n\nThe four Weapon Prestige Camos in MW4 multiplayer are: Pyroclast, Pyroclast Terminus, Pyroclast Scatter, and Pyroclast Cascade. You won’t start the process of earning any of these camos until you reach Weapon Prestige 1 with a weapon. This is accomplished by getting to that weapon’s max level, which usually goes to around 65-70 for most primary weapons.\n\nOnce you reach the max level for a weapon, you can enter Weapon Prestige , which works the same way that Classic Prestige Mode works in MW4 . When you enter Weapon Prestige, you reset that weapon back to level one and re-lock any non-shared attachments for it. You keep all shared attachments, though. From this point, you can re-unlock all weapon levels, and when you reach max level again, you’ll start earning Weapon Prestige Master levels. There are then 250 total levels to max out Weapon Prestige Master .\n\nYou can only Prestige weapons a single time in MW4, but once you do, you can start unlocking Weapon Prestige Camos. Look below to find out what you need to do to unlock all four Weapon Prestige Camos in multiplayer:\n\nUnlike in Black Ops 7, which has unique Weapon Prestige Camos for every single weapon, the four camos are the same for all weapons in Modern Warfare 4. So, just because you earn Pyroclast Cascade for the M4 doesn’t then mean you have it unlocked for the Patriot XMR. Every Weapon Prestige grind is separate, but the Weapon Prestige Camos are the same.",
     "first_seen": "2026-10-20T01:32:17Z"
   },
   {
@@ -2538,7 +2538,7 @@
     "title": "Cloud9 allows Initiator Jackk to explore options while under contract",
     "source": "VLR.gg",
     "url": "https://www.vlr.gg/777488/cloud9-allows-initiator-jackk-to-explore-options-while-under-contract",
-    "published": "2026-10-19T07:34:38Z",
+    "published": "2026-10-19T06:34:38Z",
     "game": "val",
     "category": "news",
     "image": "",
@@ -2555,7 +2555,7 @@
     "title": "Kyu enters free agency after second run with M80",
     "source": "VLR.gg",
     "url": "https://www.vlr.gg/777472/kyu-enters-free-agency-after-second-run-with-m80",
-    "published": "2026-10-19T07:02:49Z",
+    "published": "2026-10-19T06:02:49Z",
     "game": "val",
     "category": "news",
     "image": "",
