@@ -1,5 +1,39 @@
 [
   {
+    "title": "FC 27 Season 2 FC Heritage Pass: Every Free and Premium Reward",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/guides/fc-27-season-2-fc-heritage-pass-rewards/",
+    "published": "2026-10-23T01:50:39Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "FC 27 Season 2 is live, and it’s called FC Heritage. EA flipped the switch on October 22, 2026, and the theme leans hard on old-school FUT nostalgia, with cards for active players who could one day end up in the Hall of FUT.\n\nThe Season Pass runs 30 levels on both ladders. Below you’ll find every reward, which levels actually matter, and whether the Premium upgrade earns its price this time.\n\nIf you’re new to this year’s game mode, our breakdown of how EA plans to fix Ultimate Team in FC 27 covers the big changes first.\n\nSeason 2 ends on December 3, 2026 at 07:59 UTC (1:29 PM IST), according to FUT.GG’s season tracker . That gives you 42 days from launch.\n\nEA usually starts the next season the moment the old one closes. So expect Season 3 to drop the same morning, though EA hasn’t confirmed it yet.\n\nFUT.GG lists 30,000 Season Points (SP) to clear all 30 levels. Spread over 42 days, that works out to roughly 715 SP a day.",
+    "first_seen": "2026-10-23T02:27:35Z"
+  },
+  {
+    "title": "Today’s Quordle Answers and Hints for October 23, 2026 (Game #1733)",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/mobile-gaming/quordle-answers-today-hints-october-23-2026/",
+    "published": "2026-10-23T01:42:15Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Today’s Quordle answers for October 23, 2026 are spoiler-protected below, so you can take a hint first and decide how much help you want. Game #1733 has no repeated letters and no rare letters, which makes it one of the friendlier Friday grids.\n\nWe split this guide into general hints, one clue per word, the full answers, and the Daily Sequence solution. Scroll at your own pace.\n\nStart with the broad hints if you only want a small push. They narrow the field without giving away a full word.\n\nOne pattern stands out today. The letter I shows up in all four answers, so an opener like SLICE or RAINS can light up every board at once.\n\nStill stuck after the table? These clues point to each word without spelling it out.\n\nSpoiler warning: the four solutions are right below. Stop here if you want to keep trying.",
+    "first_seen": "2026-10-23T02:27:35Z"
+  },
+  {
     "title": "How to Play Modern Warfare 4 Multiplayer Early With the New Zealand Trick",
     "source": "TalkEsport",
     "url": "https://www.talkesport.com/news/gaming/play-modern-warfare-4-multiplayer-early/",
@@ -25,7 +59,7 @@
       "color": "#f59e0b",
       "bg": "#382003"
     },
-    "content": "Valve pushed a new Counter-Strike 2 patch on October 22, and almost every line of it is for mapmakers. The update lets scripted maps read and react to hostages, preload assets on demand, and control warmup, scores and round endings through a new GameRules export. Players in Premier or Competitive won’t see gameplay or balance changes from it.\n\nThe other big addition is a top-level Console export that can set convars without sv_cheats turned on. Radar elements placed by scripts also work in every game mode now. Before this patch they only showed up in Rush.\n\nValve’s official October 22 patch notes on Steam are split almost entirely under a map scripting header. Six areas moved. Hostages, precaching, the console, game rules, the custom HUD and the radar each picked up new functions, and a short list of fixes closed it out.\n\nFor anyone keeping track, this is the second patch in eight days. The previous one, on October 15, was a quality-of-life pass on demos, and we covered it in our breakdown of the CS2 demo viewer and round backup changes .\n\nHostage Rescue has been part of Counter-Strike since the late 1990s, yet scripts in CS2 couldn’t see it until now. The new CSHostage class exposes whether a hostage is being picked up, being carried, or already rescued. It can also return the player who rescued it, plus the exact start and finish times of a pickup.\n\nSix new event hooks fire at each step. They are OnHostagePickUpStart , OnHostagePickUpAbort , OnHostagePickUp , OnHostageDrop , OnHostageRescue and OnHostageKill , and a matching CSPlayerPawn.GetHostage tells a script which hostage a player is holding.",
+    "content": "Valve released a Counter-Strike 2 update on October 22, 2026, and every line of it is for mapmakers. Map scripts can now track hostages, control warmup, scores and round endings through a new GameRules export, run console commands and preload assets. Competitive matchmaking, weapons and maps are unchanged.\n\nThe other big addition is a top-level Console export that can set convars without sv_cheats turned on. Radar elements placed by scripts also work in every game mode now. Before this patch they only showed up in Rush.\n\nValve’s official October 22 patch notes on Steam are split almost entirely under a map scripting header. Six areas moved. Hostages, precaching, the console, game rules, the custom HUD and the radar each picked up new functions, and a short list of fixes closed it out.\n\nFor anyone keeping track, this is the second patch in eight days. The previous one, on October 14, was a quality-of-life pass on demos, and we covered it in our breakdown of the CS2 demo viewer and round backup changes .\n\nThese are Valve’s official release notes for the October 22, 2026 Counter-Strike 2 update.\n\nHostage Rescue has been part of Counter-Strike since the late 1990s, yet scripts in CS2 couldn’t see it until now. The new CSHostage class exposes whether a hostage is being picked up, being carried, or already rescued. It can also return the player who rescued it, plus the exact start and finish times of a pickup.",
     "first_seen": "2026-10-23T01:35:54Z"
   },
   {
@@ -3102,35 +3136,6 @@
     },
     "content": "Liquid couldn't close their second-half lead in map two.",
     "first_seen": "2026-10-16T23:55:40Z"
-  },
-  {
-    "title": "ESIC Bans Hungarian Counter-Strike Player for Life",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/cs2/playn-lifetime-ban-esic-nomercy/",
-    "published": "2026-10-16T16:50:43Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "The playN lifetime ban is now official. On October 16, 2026, the Esports Integrity Commission (ESIC) imposed lifetime ineligibility on Hungarian Counter-Strike player Palkovics “playN” Tamás. ESIC had earlier given him a 3-year ban as part of its NOMERCY match manipulation case. The commission revised that decision after he posted images of apparent cash on social media.\n\nBelow, you can read what ESIC decided, why it changed the sanction, how the original NOMERCY ruling looked, and what happens next for the player.\n\nESIC announced the lifetime ban on October 16, 2026. The sanction bars Tamás from covered ESIC and Member competitions in any capacity.\n\nThe new ban replaces the earlier 3-year exclusion. That ban would have run until April 23, 2029. ESIC says Tamás now has no scheduled return to ESIC Member competition in April 2029.\n\nESIC did not reduce the sanction for cooperation. It said it had considered his earlier assistance, but that it did not excuse his later conduct.\n\nThe revision follows public posts Tamás made after ESIC published his original sanction. ESIC says the posts displayed apparent cash and other proceeds of financial crime. They also carried comments about the match manipulation findings, betting payouts and a return to competition.",
-    "first_seen": "2026-10-16T23:59:28Z"
-  },
-  {
-    "title": "What is esports? How competitive gaming works",
-    "source": "Esports.gg",
-    "url": "https://esports.gg/news/what-is-esports/",
-    "published": "2026-10-16T16:48:04Z",
-    "game": "lol",
-    "category": "news",
-    "image": "https://media.esports.gg/uploads/2026/10/what-is-esports-article-by-esportsgg-image-via-razer-1024x576.webp",
-    "logo": null,
-    "content": "What is esports? Esports is when professional players or teams compete against each other in video games. These competitions usually involve prize money, and the biggest esports matches are played in organized tournaments and watched by in-person attendees or viewers worldwide.\n\nThe word “esports” is short for “electronic sports” and refers to organized competition in video games. The main difference between gaming and esports is this competition around the game. For example, playing League of Legends with friends is gaming. However, competing in a high-stakes tournament against other players is esports.\n\nThere isn’t one set way that esports works since each game has its own rules and leagues, but the basic idea involves players or teams duking it out against each other and making their way up a tournament bracket.\n\nFor example, the League of Legends 2026 Season World Championship (LoL Worlds 2026) involved teams from around the world competing in various qualification events throughout the year. Teams that made it to the League of Legends Champions Korea (LCK) esports league’s 2026 Season Playoffs, for example, had to fight against each other to enter LoL Worlds 2026 itself.\n\nLet’s take a look at World of Warcraft Mythic Dungeon International 2026 (WoW MDI 2026) as well. This tournament kicked off in April with the Time Trials phrase. The top 24 teams then got split into three groups of eight. There were also eight teams from China. Only two teams from each group advanced to the Season 1 Finals. There, they competed for four coveted spots in the WoW MDI Global Finals at BlizzCon 2026. The BlizzCon 2026 event was an in-person tournament that had a live, cheering crowd.\n\nSome of the most established esports games are multiplayer online battle arenas (MOBAs), first-person shooters (FPS), battle royales, mobile games, and fighting games.",
-    "first_seen": "2026-10-17T00:11:13Z"
   },
   {
     "title": "Peterbot rejoint shxrk et t3eny, un trio de rêve pour les FNCS 2027",
