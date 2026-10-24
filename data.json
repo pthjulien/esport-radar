@@ -1,5 +1,17 @@
 [
   {
+    "title": "Worlds 2026 : G2 – LOS en direct",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/live/worlds-2026-g2-los-en-direct-775941.shtm",
+    "published": "2026-10-24T18:50:00Z",
+    "game": "lol",
+    "category": "tournament",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/09/1788860663-5a8d52b2-1024x683.webp",
+    "logo": null,
+    "content": "Pour suivre le match G2 – LOS en direct, rendez-vous sur le lien ci-dessous :",
+    "first_seen": "2026-10-24T19:22:02Z"
+  },
+  {
     "title": "La Coupe de France Slash est de retour sur Rocket League",
     "source": "E.SPORT.FR",
     "url": "https://e.sport.fr/news/la-coupe-de-france-slash-est-de-retour-sur-rocket-league-775957.shtm",
@@ -484,18 +496,6 @@
       "bg": "#382003"
     },
     "content": "Eternal Fire aren't out of the Major race, yet.",
-    "first_seen": "2026-10-23T23:23:53Z"
-  },
-  {
-    "title": "Worlds 2026 : LOS – T1 en direct",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/live/worlds-2026-los-t1-en-direct-775881.shtm",
-    "published": "2026-10-23T22:50:00Z",
-    "game": "lol",
-    "category": "tournament",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/06/i1780181775090429-1024x683.jpeg",
-    "logo": null,
-    "content": "Pour suivre le match LOS – T1 en direct, rendez-vous sur le lien ci-dessous :",
     "first_seen": "2026-10-23T23:23:53Z"
   },
   {
