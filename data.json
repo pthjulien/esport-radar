@@ -1,5 +1,17 @@
 [
   {
+    "title": "Worlds 2026 : Secret Whales – Invictus Gaming en direct",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/live/worlds-2026-secret-whales-invictus-gaming-en-direct-775943.shtm",
+    "published": "2026-10-24T20:50:00Z",
+    "game": "lol",
+    "category": "tournament",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/08/IG_Rookie_Worlds_2025-1024x732.jpg",
+    "logo": null,
+    "content": "Pour suivre le match Secret Whales – Invictus Gaming en direct, rendez-vous sur le lien ci-dessous :",
+    "first_seen": "2026-10-24T21:22:06Z"
+  },
+  {
     "title": "ZETA DIVISION allows eKo, Syouta, and Absol to explore options",
     "source": "VLR.gg",
     "url": "https://www.vlr.gg/779869/zeta-division-allows-eko-syouta-and-absol-to-explore-options",
@@ -482,18 +494,6 @@
     "first_seen": "2026-10-24T04:25:24Z"
   },
   {
-    "title": "Worlds 2026 : Secret Whales – LYON en direct",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/live/worlds-2026-secret-whales-lyon-en-direct-775882.shtm",
-    "published": "2026-10-23T23:50:00Z",
-    "game": "lol",
-    "category": "tournament",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/03/LYON_Inspired_at_LCS_2026_Lock-In-1-1024x684.jpg",
-    "logo": null,
-    "content": "Pour suivre le match Secret Whales – LYON en direct, rendez-vous sur le lien ci-dessous :",
-    "first_seen": "2026-10-24T00:38:50Z"
-  },
-  {
     "title": "Gentle Mates GC, KRÜ BLAZE earn wins on day two",
     "source": "VLR.gg",
     "url": "https://www.vlr.gg/779509/gentle-mates-gc-kr-blaze-earn-wins-on-day-two",
@@ -702,18 +702,6 @@
     "logo": null,
     "content": "Pour suivre le match Team Liquid – Gentle Mates en direct, rendez-vous sur l’un des liens ci-dessous :",
     "first_seen": "2026-10-23T18:28:38Z"
-  },
-  {
-    "title": "Worlds 2026 : Gen.G – Invictus Gaming en direct",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/live/worlds-2026-gen-g-invictus-gaming-en-direct-775875.shtm",
-    "published": "2026-10-23T16:50:00Z",
-    "game": "lol",
-    "category": "tournament",
-    "image": "https://e.sport.fr/wp-content/uploads/2024/03/chovy-pog-3-17091849278341436176512-1024x683.webp",
-    "logo": null,
-    "content": "Pour suivre le match Gen.G – Invictus Gaming en direct, rendez-vous sur le lien ci-dessous :",
-    "first_seen": "2026-10-23T17:27:32Z"
   },
   {
     "title": "LCS : Cloud9 verrouille Vulcan jusqu’en 2029",
@@ -2913,6 +2901,23 @@
     "logo": null,
     "content": "Un temps annoncé sur le marché après l’expiration de son contrat, Benjamin « Eversax » Wagner devrait finalement rester chez Team Vitality pour la saison 2027. Selon les informations de Sheep Esports , l’entraîneur belge aurait trouvé un accord verbal avec l’organisation française pour poursuivre sa mission à la tête de l’équipe. Arrivé en octobre 2025 aux côtés de stizzy, il serait ainsi le seul membre de l’effectif 2026 à conserver sa place. Vitality aurait en effet déjà trouvé des accords avec nass, Oski et diaz, trois joueurs appelés à former son nouveau trio après les départs attendus de zen, stizzy et ExoTiiK.\n\nCe renouvellement marque un tournant majeur pour la structure française. Après plusieurs saisons passées sous les couleurs des Abeilles, zen se rapproche de Gentle Mates, où il pourrait retrouver Atow et Vatira pour former une véritable équipe de stars. Stizzy devrait quant à lui rejoindre Ninjas in Pyjamas aux côtés de crr, tandis qu’ExoTiiK devrait également céder sa place. Pour la première fois depuis son arrivée sur Rocket League, Vitality pourrait donc évoluer sans aucun joueur français, Eversax restant le seul représentant francophone de l’effectif.\n\nAncien entraîneur de la Karmine Corp et de Gentle Mates, Eversax possède une solide expérience du plus haut niveau, avec notamment un sacre au Major de Copenhague en 2024. Lors des RLCS 2026, il avait accompagné Vitality jusqu’à la deuxième place du Major de Boston et dans le dernier carré à Paris, avant une élimination décevante entre la 9e et la 12e place aux Worlds. Avec un trio entièrement renouvelé, le technicien belge aura désormais la lourde tâche de lancer un nouveau cycle et de ramener les Abeilles au sommet de Rocket League.\n\n[SOURCES] Team Vitality is expected to retain Eversax as their head coach for the #RLCS Club Championship. The Belgian joined the coaching staff for the organization at the beginning of the 2026 Season. @i_Eros_ reporting. @Michelin | Read more here …",
     "first_seen": "2026-10-20T10:26:39Z"
+  },
+  {
+    "title": "FunPlus Phoenix signs 77even ahead of China Threshold",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/778064/funplus-phoenix-signs-77even-ahead-of-china-threshold",
+    "published": "2026-10-20T09:29:40Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "FPX bolsters its ranks ahead of a crucial Ascension-adjacent event.",
+    "first_seen": "2026-10-24T21:22:06Z"
   },
   {
     "title": "How to get the Tactical Nuke killstreak in Modern Warfare 4",
