@@ -1,5 +1,56 @@
 [
   {
+    "title": "BIG sign up for EPIC.LAN in late push for a Major spot",
+    "source": "Pley.gg",
+    "url": "https://pley.gg/cs2/big-sign-up-for-epic-lan-in-late-push-for-a-major-spot/",
+    "published": "2026-10-24T07:05:40Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "BIG have registered for EPIC.LAN 49, a C-Tier LAN in Kettering, England, from 30 October to 1 November. The extra event barely moves their chances of a PGL Major Singapore invite in one VRS simulation, and their season still hangs on Stake Ranked Episode 5 next week.\n\nBIG appeared on EPIC.LAN’s team list on Friday evening, with one player added so far. It is a bring-your-own-computer event, and every player needs a £95 participant ticket. Thirty teams have signed up. The prize pool grows with the field: at the current count it is £5,000 with £2,650 for the winner, and it reaches £6,500 at the 48-team cap. EPIC.LAN says the event meets Valve’s requirements to count in the rankings, provided HLTV covers it.\n\nThe German organisation need the points. They finished third at 1win Private Club Season 2 after losing the lower bracket final to The MongolZ on Thursday, a result that, as Pley reported at the time , left them needing a near-perfect run at Stake Ranked.\n\nValve’s ranking model, published on GitHub, rates teams on their own prize money, on the prize money of the teams they beat and how many teams those opponents have beaten, and on their ten best LAN wins, alongside head-to-head results. The opponent factors are scaled by each event’s prize pool. The LAN factor is not: a recent win on LAN counts the same in Kettering as anywhere else.\n\nThat is the only real gain on offer, according to VRS analyst Udknud. He wrote that EPIC.LAN “has low event weight and (very) low ranked opposition, so there are only the LAN win points to gain from wins there.”\n\nDoes BIG at EPIC LAN really change anything? My simulations says \"not really\", but it is based on some assumptions about the event I am not 100% sure about I have to admit: Anyways, I needed to calculate this BIG at EPIC LAN thing for my sims. So here are all the nerdy details… pic.twitter.com/5twkoaaRyL",
+    "first_seen": "2026-10-24T07:32:34Z"
+  },
+  {
+    "title": "Dplus KIA beat G2 again in Worlds 2026 opener, three months after Esports World Cup win",
+    "source": "Esports Insider",
+    "url": "https://esportsinsider.com/2026/10/dplus-kia-beat-g2-esports-again-as-worlds-2026-group-stage-opens",
+    "published": "2026-10-24T07:05:21Z",
+    "game": "lol",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "G2 Esports",
+      "tag": "G2",
+      "color": "#ef4444",
+      "bg": "#380606"
+    },
+    "content": "Dplus KIA, drawn from the bottom seeding tier, beat top-tier G2 Esports in their first Worlds 2026 match. It is their second win over the LEC champions since July and sets up a meeting with T1 on Saturday.\n\nPlay began at 21:10 UTC in the best-of-one tie.\n\nThe Elo power rankings favour G2. They sit 13th on a rating of 1798, with a 92-41 record in 133 rated matches. Dplus KIA are 29th on 1715, with a 91-61 record across 152 rated matches.\n\nG2 took the early initiative. They won a four-versus-four fight against DK’s bottom lane. They then caught ShowMaker on Syndra in mid. Dplus KIA still secured the first dragon and closed out the game.\n\nThe defeat ended a three-match winning run for G2. Before Worlds, they beat Team Vitality, Karmine Corp and Movistar KOI in LEC Summer 2026. The 3-0 win over Movistar KOI came in the Summer Grand Final in Nice on 20 September. It gave G2 their 20th LEC title.\n\nDplus KIA arrived with mixed LCK form. Their last domestic match was a 1-3 loss to T1. Before that, they had beaten KT Rolster and BNK FEARX.",
+    "first_seen": "2026-10-24T07:32:34Z"
+  },
+  {
+    "title": "apEX’s Major sticker and Astralis’ invite on the line as PGL Masters Bucharest begins",
+    "source": "Pley.gg",
+    "url": "https://pley.gg/cs2/apex-s-major-sticker-and-astralis-invite-on-the-line-as-pgl-masters-bucharest-begins/",
+    "published": "2026-10-24T07:04:44Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "PGL Masters Bucharest is the last tier-one event before Valve sets the invitations for PGL Major Singapore. Beyond the $1,250,000 title, two roster questions will be settled by a simple count: Vitality need five matches with jL for him to replace apEX on their Major roster, and FUT need five with SunPayus to remove cmtry, now an Astralis player, from theirs.\n\nThe Swiss stage starts on Saturday 09:00 CEST , when FUT open against TYLOO and defending champions Aurora face The MongolZ . Sixteen teams play in PGL’s studio until the grand final on 31 October. Two days later, on 2 November, Valve’s Regional Standings decide who is invited to which stage of the Major in Singapore, which starts on 24 November.\n\nFor most of the field, the Major invite is already safe. What is still open is who goes straight to Stage 3, who has to play more rounds, and, for two teams, which five players the invitation will actually name.\n\nValve’s Regional Standings do not rank organisations. They rank rosters, and Valve’s published code sets out how a roster is defined. The model looks at a team’s last ten matches and includes “only the most recent players who have played five or more matches on this roster”. A team is still treated as the same team as long as at least three players carry over, so a single stand-in or signing does not reset its points.\n\nIn practice, a new player needs five of the last ten matches before he replaces the player he came in for. Until then, the name of the departed player stays on the roster that gets the invitation.\n\nThe latest official standings, published by Valve on 5 October, list Vitality as apEX, flameZ, mezii, ropz and ZywOo, and FUT as cmtry, dem0n, dziugss, Krabeni and xfl0ud. Valve’s Major Supplemental Rulebook states that “invitations will be sent to intact rosters” and that the roster a team registers “must match the invited roster”. A team may add one substitute and one coach.",
+    "first_seen": "2026-10-24T07:32:34Z"
+  },
+  {
     "title": "Exclusive: MLBB at 10, From Niche Mobile MOBA to Global Esports Powerhouse",
     "source": "Esports.gg",
     "url": "https://esports.gg/interviews/mobile-legends-bang-bang/mlbb-10th-anniversary-exclusive-interview/",
@@ -2957,18 +3008,6 @@
     "first_seen": "2026-10-19T17:27:25Z"
   },
   {
-    "title": "« On peut battre n’importe qui » : Yike affiche ses ambitions avec la Karmine Corp",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/news/on-peut-battre-nimporte-qui-yike-affiche-ses-ambitions-avec-la-karmine-corp-775727.shtm",
-    "published": "2026-10-19T16:00:00Z",
-    "game": "lol",
-    "category": "news",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/10/i1792183326867188-1024x732.jpeg",
-    "logo": null,
-    "content": "Après des débuts compliqués face à Cloud9, la Karmine Corp a progressivement trouvé son rythme lors des Play-In, enchaînant huit victoires consécutives pour décrocher sa qualification. Dans une interview accordée à Hotspawn , Martin « Yike » Sundelin estime que son équipe évolue actuellement à 80 % de son potentiel maximal. « Je dirais autour de 80 %. Je pense qu’on a montré certaines des bonnes choses travaillées pendant notre bootcamp. Les premiers jours ont été difficiles, notamment à cause du décalage horaire, mais on est progressivement revenus à notre niveau » . Une montée en puissance encourageante avant le début du Main Event, ce vendredi 23 octobre.\n\nEt malgré un tirage relevé face à Anyone’s Legend, première tête de série de la LPL, le jungler suédois ne semble pas particulièrement inquiet. « Je pense qu’on a de bonnes chances de les battre. On l’a déjà fait à l’EWC, donc je pense qu’on peut recommencer. Même s’ils sont la première tête de série chinoise, on va jouer notre jeu. Si on joue bien, je pense qu’on peut battre n’importe qui » . Yike aimerait également retrouver Team Liquid au cours de la compétition, histoire de prendre sa revanche après la défaite de KC au MSI et les provocations de ses adversaires.\n\nNotre adversaire est enfin connu, on jouera contre AL pour notre premier match du Swiss Stage ! Ils voudront surement prendre leur revanche sur notre rencontre à l'EWC, on va les prendre très au sérieux ! #KCORP pic.twitter.com/EVoOY26dJ6\n\nLe jungler a également évoqué l’importance de Kameto, présent à Los Angeles pour soutenir son équipe. Après la victoire difficile contre Cloud9, le fondateur de la Karmine Corp avait notamment tenu à rassurer ses joueurs. « Il nous a dit qu’on ne devait pas jouer avec la peur, qu’on devait nous faire confiance et jouer comme on en a l’habitude. Ça m’a fait beaucoup de bien d’entendre ces mots, et probablement au reste de l’équipe aussi. »\n\nEnfin, interrogé sur les possibles arrivées de Reha et Wadi chez Team Vitality en 2027, Yike s’est montré enthousiaste à l’idée de retrouver ses anciens entraîneurs dans le LEC. « J’ai travaillé avec eux pendant un an et je les ai beaucoup appréciés. J’ai énormément de respect pour eux, donc ce sera intéressant de voir comment leur projet évolue » . Mais avant de penser à la prochaine saison, le jungler a un objectif bien plus immédiat : confirmer la montée en puissance de KC face aux meilleures équipes du monde.\n\nKC Yike reveals what advice Kameto gave to the team: \"He told us we didn’t have to play scared, that we should trust each other, play the way we usually do, and that we’d do well. Those words were great for me to hear, and probably for the team too. Having him with us is… pic.twitter.com/gzuD3wD7x5",
-    "first_seen": "2026-10-19T16:29:54Z"
-  },
-  {
     "title": "Obsession x Fortnite: Release date, confirmed cosmetics, and more",
     "source": "Esports.gg",
     "url": "https://esports.gg/news/fortnite/obsession-x-fortnite/",
@@ -2984,35 +3023,6 @@
     },
     "content": "The highly anticipated Obsession x Fortnite collaboration arrives soon during Fortnitemares 2026. On Oct. 21, players can acquire the Freaky Nikki skin alongside various other cosmetics. Here is everything you need to know about this crossover!\n\nFound the One Wish Willow. Oct. 21. pic.twitter.com/W765ErWmUt\n\nThe only Obsession x Fortnite skin confirmed by leakers is one based on Nikki Freeman’s character from the film. Other cosmetics included in the collection include a Back Bling, Pickaxe, and Emote.\n\nLeakers have also confirmed that Nikki will have a unique lobby idle animation, and her Emote is specific to her skin, unlike when other skins use it.\n\nAccording to leakers, the entire Obsession bundle will be decrypted on Tuesday, Oct. 20, giving us a look at all the cosmetics. We also expect a tournament where players can compete to win the collection for free.\n\nObsession is a horror movie that was released in May 2025 after premiering at the Toronto International Film Festival (TIFF) in September. It follows the main character, Bear, who breaks a One Wish Willow to make his crush, Nikki, love him more than anyone.",
     "first_seen": "2026-10-19T15:31:15Z"
-  },
-  {
-    "title": "LEC : Vitality va récupérer deux anciens champions de la Karmine Corp",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/transferts/lec-vitality-va-recuperer-deux-anciens-champions-de-la-karmine-corp-775711.shtm",
-    "published": "2026-10-19T14:00:00Z",
-    "game": "lol",
-    "category": "tournament",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/10/c3cf0561b3ae0047f72d5c8b2b91ce72f5348383-2048x1365-1-1024x683.jpg",
-    "logo": null,
-    "content": "Du changement se prépare sur le banc de Team Vitality. Selon les informations de Sheep Esports , la structure française serait sur le point de recruter Wadi « Wadi » Benarbia au poste de head coach et Rehareha « Reha » Ramanana en tant que coach stratégique pour la saison 2027. Un duo bien connu des supporters de la Karmine Corp, puisque les deux hommes avaient déjà travaillé ensemble en 2025, contribuant au sacre de KC lors du Winter Split. À l’époque, Reha occupait le poste d’entraîneur principal, épaulé par Wadi. Les rôles devraient cette fois être inversés, avec un Wadi chargé de la gestion du groupe et un Reha davantage concentré sur les aspects stratégiques du jeu.\n\nAprès cette aventure commune, les deux techniciens avaient emprunté des chemins différents en 2026. Reha avait pris du recul tout en apportant son aide à French Flair en LFL, tandis que Wadi poursuivait son travail au sein de la Karmine Corp, à la tête de KC Blue Stars en Nexus League. Vitality aurait également étudié la piste Dan Dan, actuel entraîneur de Solary, avant de privilégier le tandem Wadi-Reha. Leur arrivée devrait entraîner un renouvellement important du staff actuel, notamment composé de Pad, Arvindir, Garih et Hansen, dont les contrats arrivent à expiration.\n\nCe changement intervient après une saison 2026 particulièrement frustrante pour les Abeilles. Malgré une première place en saison régulière au Spring Split et une deuxième au Summer, Vitality n’a remporté aucun BO5 en playoffs du LEC, échouant systématiquement dès son entrée dans le tableau. L’équipe a néanmoins terminé cinquième au classement annuel et décroché une invitation à la Demacia Cup Global Invitational, où elle a poussé KT Rolster jusqu’à une cinquième manche en quarts de finale.\n\nLa reconstruction pourrait d’ailleurs dépasser largement le staff technique. Naak Nako serait actuellement le seul joueur encore sous contrat pour 2027, mais Vitality n’exclurait pas non plus son départ en cas d’offre intéressante. Avec la récente fermeture de son équipe académique, l’organisation semble ainsi prête à tourner une page importante de son projet League of Legends.\n\nEn attendant les premiers mouvements du côté des joueurs, le retour annoncé de Wadi et Reha en LEC constitue déjà un signal fort. Après avoir remporté un titre européen avec la Karmine Corp, les deux Français pourraient désormais tenter de ramener Vitality au sommet du championnat.\n\n[SOURCES] Former KC Coaching Staff Wadi + Reha is set to join Team Vitality in the #LEC as the team rebuilds for 2027. Dan Dan was also considered for the position. Report by @anonimotum , @i_Eros_ & @LEC_Wooloo https://t.co/VHsmbboBLt",
-    "first_seen": "2026-10-19T14:34:29Z"
-  },
-  {
-    "title": "GTA 6 Firings: Rockstar Union Tribunal Hears HR Gave Discord Informant Time Off",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/gta-6/rockstar-union-tribunal-discord-informant-time-off/",
-    "published": "2026-10-19T13:52:08Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Rockstar Games allegedly gave a staff member time off for watching a private union Discord server, according to evidence shown at the Rockstar union tribunal in Glasgow on October 16, 2026. The claim comes from the Independent Workers’ Union of Great Britain (IWGB), which represents the GTA 6 developers fired in 2025. Rockstar denies the firings had anything to do with union activity.\n\nThe evidence is a short message exchange. In it, a Rockstar HR manager lets an informant take an hour back after the worker spent an hour combing through the union server for screenshots.\n\nRockstar calls these people “whistleblowers.” The tribunal uses the neutral label “information providers,” and their names are redacted from the court papers.\n\nThe exchange was put to Rockstar executive Jennifer Kolbe during cross-examination, as first reported by Vertical Slice . The Scotsman describes Kolbe as the company’s second most senior person.\n\nIn the messages, HR manager Julie Stephen offers the informant extra time off as compensation. The worker had spent an hour “going through everything” on the union server and collecting screenshots.\n\nThe informant asked for an hour off the next day. Stephen allegedly replied “no worries,” and the request was approved in Workday.",
-    "first_seen": "2026-10-19T14:34:29Z"
   },
   {
     "title": "Best controller settings to use in Modern Warfare 4 – Sensitivity, movement, & more",
