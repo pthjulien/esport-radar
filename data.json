@@ -1,5 +1,46 @@
 [
   {
+    "title": "Team Vitality bids farewell to Derke",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/780054/team-vitality-bids-farewell-to-derke",
+    "published": "2026-10-25T09:56:23Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Team Vitality",
+      "tag": "VIT",
+      "color": "#facc15",
+      "bg": "#3d3002"
+    },
+    "content": "Derke departs the hive after two years.",
+    "first_seen": "2026-10-25T10:22:50Z"
+  },
+  {
+    "title": "BMIC 2026 Prize Pool Distribution: Champion Gets ₹30 Lakh From ₹1 Crore Purse",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/mobile-gaming/bgmi/bmic-2026-prize-pool-distribution/",
+    "published": "2026-10-25T09:27:46Z",
+    "game": "val",
+    "category": "news",
+    "image": "https://www.talkesport.com/wp-content/uploads/bmic-2026-for-the-crown-mumbai.webp",
+    "logo": null,
+    "content": "The BMIC 2026 prize pool distribution is out, and the winner of the Battlegrounds Mobile India International Cup will take home ₹30 lakh from a total purse of ₹1 crore. Every one of the 16 teams gets paid, with the last-placed squad still earning ₹1.25 lakh. Three individual awards worth ₹4.75 lakh complete the pool.\n\nThe event runs from October 30 to November 1, 2026, at the Sardar Vallabhbhai Patel Indoor Stadium in Mumbai. Six Indian teams face five from South Korea and five from Japan, with two PUBG Mobile Global Championship (PMGC) 2026 spots also on the line.\n\nHere is the full placement breakdown, as announced by Krafton India Esports. We’ve added each spot’s share of the ₹1 crore pool.\n\nThe money is heavily weighted toward the top. The top three split ₹55 lakh, more than half the pool. Teams finishing 9th to 16th share ₹14.5 lakh between eight squads.\n\nThree individual awards round out the purse.\n\nAdd it up and the numbers check out: ₹95.25 lakh in placement prizes plus ₹4.75 lakh in awards makes exactly ₹1 crore.",
+    "first_seen": "2026-10-25T10:22:50Z"
+  },
+  {
+    "title": "MIBR Benches Entire Valorant Roster, aspas and zekken Now Open to Transfers",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/valorant/mibr-benches-valorant-roster-aspas-zekken/",
+    "published": "2026-10-25T09:25:32Z",
+    "game": "val",
+    "category": "news",
+    "image": "https://www.talkesport.com/wp-content/uploads/aspas-mibr-valorant-champions-paris-2025.webp",
+    "logo": null,
+    "content": "MIBR has moved its whole Valorant roster to inactive status, putting Erick “aspas” Santos, Zachary “zekken” Patrone, Andrew “Verno” Maust, Roberto “Mazino” Rivas and Ian “tex” Botsch on the market ahead of VCT 2027. The Brazilian organization announced the move on X on October 23, 2026, less than a week after it was reported as one of eight VCT Americas partner teams for the next two-year cycle.\n\nThe players are still under contract. Any club that wants one of them has to negotiate a transfer with MIBR directly.\n\nMIBR’s statement was posted in Portuguese. According to Insider Gaming’s translation, the club said it made the decision after talks with the players’ representatives and because of “significant changes to the competitive structure” planned for 2027, including what it called a regional transition and the challenges that come with it.\n\nThe statement adds that “all existing contractual obligations remain in effect, and any potential transfers will be negotiated directly with MIBR.” In other words, these players aren’t free agents. A team that wants aspas or zekken will probably have to pay a buyout.\n\nThe staff stays. VLR.gg lists fRoD as head coach, Happy as assistant coach and Nandinnn as manager, and none of them were part of the announcement.\n\nThe key detail is the new regional setup. Sheep Esports reports that VCT Americas will run four divisions in 2027: North America, LATAM North, LATAM South and Brazil. LOUD and MIBR are the two partner teams placed in Brazil.",
+    "first_seen": "2026-10-25T10:22:50Z"
+  },
+  {
     "title": "d4v41 announces LFT status after six years with Paper Rex",
     "source": "VLR.gg",
     "url": "https://www.vlr.gg/780050/d4v41-announces-lft-status-after-six-years-with-paper-rex",
@@ -2889,57 +2930,6 @@
     },
     "content": "Quite the commitment to supporting the region.",
     "first_seen": "2026-10-20T18:30:38Z"
-  },
-  {
-    "title": "BC.Game conquer BBL 2-0 in DraculaN playoffs",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/79093/bcgame-conquer-bbl-2-0-in-draculan-playoffs",
-    "published": "2026-10-20T17:11:00Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "",
-    "first_seen": "2026-10-20T17:39:19Z"
-  },
-  {
-    "title": "FaZe survive ASTRAL scare to make DraculaN quarterfinals",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/79090/faze-survive-astral-scare-to-make-draculan-quarterfinals",
-    "published": "2026-10-20T16:41:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "",
-    "first_seen": "2026-10-20T17:39:19Z"
-  },
-  {
-    "title": "Liquid throw 10-3 lead to magic, going home from 1win Private Club Season 2 without a map win",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/79087/liquid-throw-10-3-lead-to-magic-going-home-from-1win-private-club-season-2-without-a-map-win",
-    "published": "2026-10-20T16:17:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "The worrying signs continue for the NA squad.",
-    "first_seen": "2026-10-20T16:29:52Z"
   },
   {
     "title": "RLCS : Eversax reste chez Vitality",
