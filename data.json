@@ -1,5 +1,34 @@
 [
   {
+    "title": "ThirdSite announces Wingman Clash tournament in partnership with Linus Tech Tips",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79308/thirdsite-announces-wingman-clash-tournament-in-partnership-with-linus-tech-tips",
+    "published": "2026-10-26T21:09:00Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "The online 2v2 tournament will be open to players in Canada and the US.",
+    "first_seen": "2026-10-26T21:29:55Z"
+  },
+  {
+    "title": "HSR 4.7 Livestream Airs October 30: Time in IST, Codes and Aha Reveal",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/hsr-4-7-livestream-time-ist-codes/",
+    "published": "2026-10-26T20:38:26Z",
+    "game": "val",
+    "category": "news",
+    "image": "https://www.talkesport.com/wp-content/uploads/Aha-the-Aeon-of-Elation-in-Honkai-Star-Rail-4.7-1024x576.webp",
+    "logo": null,
+    "content": "The HSR 4.7 livestream airs on Friday, October 30, 2026, at 7:30 PM (UTC+8), which is 5:00 PM IST in India. HoYoverse has titled the Honkai: Star Rail Version 4.7 Special Program “Now, Lay Laughter to All Stars.” It should reveal three redemption codes worth Stellar Jade and give the first full look at Aha, the Aeon of Elation, before Version 4.7 goes live on November 11.\n\nHoYoverse confirmed the Special Program for October 30, 2026, at 19:30 (UTC+8). That is 11:30 AM UTC. The stream goes live at the same moment worldwide, so only the local clock changes.\n\nOne detail trips people up every autumn. Europe left summer time on October 25, but the United States stays on daylight time until November 1. For this one week, the gap between US and European clocks is an hour shorter than usual. The table below uses the clocks that will actually be in force on October 30.\n\nFor players in India, 5:00 PM on a Friday is a friendly slot. Most people can catch the codes live after school or work without staying up late.\n\nThe broadcast streams on the official Honkai: Star Rail YouTube channel and the official Honkai: Star Rail Twitch channel . HoYoverse usually posts the stream link and any code reminders on the official Honkai: Star Rail account on X as well.\n\nThe codes appear on screen during the stream, so it pays to watch live or keep the official account open in another tab.",
+    "first_seen": "2026-10-26T21:29:55Z"
+  },
+  {
     "title": "All Apex Legends ranks explained: Iron, Emerald, Grandmaster, and more",
     "source": "Esports.gg",
     "url": "https://esports.gg/guides/apex-legends/apex-legends-ranks/",
@@ -2750,30 +2779,6 @@
     },
     "content": "PUBG PC esports India is getting its first KRAFTON-run tournament built only for Indian players. KRAFTON India Esports announced the PUBG India Cup 2026 (PIC 2026), an open PUBG: Battlegrounds tournament with a ₹25 lakh prize pool. Registrations close on November 4, and the event runs from November 11 to 29. Reports also claim that India will get its own PUBG PC region in 2027, though KRAFTON has not confirmed it.\n\nRead on for the PIC 2026 schedule, entry rules, the current qualification path, and the history of PUBG PC in India.\n\nPIC 2026 is an open-for-all PUBG: Battlegrounds PC tournament. Squads can sign up at pubgesports.in until November 4 at 23:59 IST.\n\nThe event has four stages and ends with a 16-team Grand Final. The total prize pool is ₹25 lakh.\n\nKRAFTON India Esports has run its esports program around BGMI so far. Its 2026 roadmap covered BGIS, BMPS, BMSD and BMIC, with no PC events. PIC 2026 is the first PC event from the publisher built only for players in India.\n\nTwo details are still missing. KRAFTON has not said how many teams move between stages. It also has not said whether the Grand Finals will be online or on LAN.",
     "first_seen": "2026-10-22T12:35:07Z"
-  },
-  {
-    "title": "PMGO 2026 Season 2 in Pakistan: Worst S-Tier Tournament in PUBG Mobile History?",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/mobile-gaming/bgmi/pmgo-2026-season-2-in-pakistan-worst-s-tier-tournament-in-pubg-mobile-history/",
-    "published": "2026-10-22T11:29:02Z",
-    "game": "val",
-    "category": "tournament",
-    "image": "https://www.talkesport.com/wp-content/uploads/Untitled-design-12-2-1024x576.jpg",
-    "logo": null,
-    "content": "The PUBG Mobile Global Open (PMGO) 2026 Season 2 was supposed to be a historic event for Pakistan. For the first time, the country is hosting an S-tier international PUBG Mobile tournament, bringing some of the world’s best teams to Lahore.\n\nHowever, instead of celebrating this milestone, fans are raising serious questions about the tournament’s organisation.\n\nFrom the absence of a live audience at the competition venue to repeated match delays and complaints about the event setup, PMGO 2026 Season 2 has faced criticism since its opening days .\n\nThe tournament is scheduled from October 20 to 25, but its first few days have already raised an important question: Is this one of the most disappointing S-tier PUBG Mobile events?\n\nOne of the biggest concerns surrounding PMGO 2026 Season 2 is the lack of spectators at the venue where players are competing. Major international PUBG Mobile tournaments are known for their live crowds, large stages, team entrances, and exciting atmosphere.\n\nHowever, the competition venue in Lahore has not been publicly identified in the event information available to us, and fans have reportedly not been allowed inside the playing area. Instead, reports suggest that a separate viewing arrangement has been made where spectators can watch the matches on a screen.",
-    "first_seen": "2026-10-22T11:29:21Z"
-  },
-  {
-    "title": "Major winner Qikert retires to coach Spirit Academy",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/cs2/major-winner-qikert-retires-to-coach-spirit-academy/",
-    "published": "2026-10-22T11:08:13Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "https://pley.gg/app/uploads/2026/10/flag-ru.png",
-    "logo": null,
-    "content": "Aleksei “Qikert” Golubev has ended his playing career after almost a decade and taken over as head coach of Spirit Academy. The 27-year-old Kazakh won the IEM Rio Major in 2022 and played at seven Majors.\n\nSpirit ‘s academy team presented him on X on Wednesday, pointing to his Rio trophy and his runner-up medal from Berlin in 2019. He replaces Vladislav “Flash_1” Bykov, who stays in the organisation and moves on to coach Spirit Academy White, the club’s second development team.\n\nWe would like to introduce to you Aleksei @Qikert Golubev, the new head coach of Team Spirit Academy 🤝 He's got the IEM Rio Major 2022 trophy and a StarLadder Major Berlin 2019 runner-up's medal under his belt! We're excited to welcome him to the team🔥 pic.twitter.com/GT0YPuvNHl\n\nIt is Qikert’s first job as a coach. He took charge straight away: Spirit Academy played their opening group match of CCT Europe Series 12 against Lavked on Wednesday, while they are already through to the playoffs of Series 11.\n\nQikert made his name with AVANGAR, whom he joined in 2017. Two years later the team reached the final of the StarLadder Major Berlin, where Astralis won 2-0. The roster moved to Virtus.pro at the end of 2019, and in 2022, playing under the Outsiders name, it won the IEM Rio Major after beating HEROIC 2-0 in the final.\n\nVirtus.pro benched him in August 2023. He then spent a year and a half with PARIVISION and went to MIBR on loan in September 2025. The Brazilians won three tournaments in a row after adding him and kl1m, and his seventh and final Major came with them at the StarLadder Budapest Major later that year.",
-    "first_seen": "2026-10-23T15:30:57Z"
   },
   {
     "title": "Erling Haaland admits to being an “embarassing” camper in Call of Duty",
