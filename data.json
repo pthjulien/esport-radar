@@ -1,5 +1,34 @@
 [
   {
+    "title": "Legendary Finnish org  ENCE files for bankruptcy after 13 years in CS",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79312/legendary-finnish-org-ence-files-for-bankruptcy-after-13-years-in-cs",
+    "published": "2026-10-26T21:55:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "The Finnish org is out of business after thirteen years.",
+    "first_seen": "2026-10-26T22:29:40Z"
+  },
+  {
+    "title": "Worlds 2026 : Team Liquid – Anyone’s Legend en direct",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/live/worlds-2026-team-liquid-anyones-legend-en-direct-776035.shtm",
+    "published": "2026-10-26T21:50:00Z",
+    "game": "lol",
+    "category": "tournament",
+    "image": "https://e.sport.fr/wp-content/uploads/2025/11/AL_Kael_MSI_2025-1024x683.jpg",
+    "logo": null,
+    "content": "Pour suivre le match Team Liquid – Anyone’s Legend en direct, rendez-vous sur le lien ci-dessous :",
+    "first_seen": "2026-10-26T22:29:40Z"
+  },
+  {
     "title": "ThirdSite announces Wingman Clash tournament in partnership with Linus Tech Tips",
     "source": "Dust2",
     "url": "https://www.dust2.us/news/79308/thirdsite-announces-wingman-clash-tournament-in-partnership-with-linus-tech-tips",
@@ -1120,18 +1149,6 @@
     },
     "content": "SR Gold and MIBR GC join Gentle Mates GC and KRÜ BLAZE in the upper semifinals.",
     "first_seen": "2026-10-25T03:26:39Z"
-  },
-  {
-    "title": "Worlds 2026 : Team Liquid – Bilibili Gaming en direct",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/live/worlds-2026-team-liquid-bilibili-gaming-en-direct-775946.shtm",
-    "published": "2026-10-24T23:50:00Z",
-    "game": "lol",
-    "category": "tournament",
-    "image": "https://e.sport.fr/wp-content/uploads/2025/07/BLG_knight_Worlds_2024-1024x683.jpg",
-    "logo": null,
-    "content": "Pour suivre le match Team Liquid – Bilibili Gaming en direct, rendez-vous sur le lien ci-dessous :",
-    "first_seen": "2026-10-25T00:28:48Z"
   },
   {
     "title": "NIP Group set to generate $15m in Bitcoin per month after third purchase of Bitcoin mining capacity",
@@ -2761,23 +2778,6 @@
       "bg": "#3d0a14"
     },
     "content": "Valve is once again upping the pace in the battle against CS2 cheaters, as they send out another wave of invites to the VACNet Labeling Portal.\n\nThrough an X post earlier today, Valve confirmed that it has sent out a fresh wave of VACNet labeling page invites to CS2 players, with the aim of curbing the cheating problem in the shooter even further.\n\nWe have just sent out another wave of VACNet labeling page invites. Recent match quality improvements are the direct result of heroic, handsome and beautiful labelers like yourself. If you have been selected, a VACNet icon will appear in-game. https://t.co/HVev9A3CqR pic.twitter.com/mCtg41ZZN2\n\nFor the unaware, the VACNet Labeling Portal is a recently implemented tool that lets select users examine gameplay footage and flag behavior that may indicate cheating. Unlike CS:GO’s Overwatch system, the decisions from the reviewers in the VACNet labeling portal can’t issue direct bans on the suspects, but Valve uses these human judgments to help its anti-cheat AI recognize suspicious play more accurately.\n\nThe impact of the VACNet Labeling Portal in CS2 matchmaking was prominent, to say the least. Shortly after the feature went live, players from throughout the world reported seeing mid-game bans and match cancellations, with the number of bans skyrocketing over the weeks.\n\nThe improved anti-cheat measures also wreaked havoc in cheater forums, with cheat devs warning buyers to avoid playing premier entirely.",
-    "first_seen": "2026-10-22T12:35:07Z"
-  },
-  {
-    "title": "PUBG PC Esports Scene in India: PIC 2026, 2027 Region Plans and More",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/pubg-pc-esports-india/",
-    "published": "2026-10-22T11:35:05Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "PUBG PC esports India is getting its first KRAFTON-run tournament built only for Indian players. KRAFTON India Esports announced the PUBG India Cup 2026 (PIC 2026), an open PUBG: Battlegrounds tournament with a ₹25 lakh prize pool. Registrations close on November 4, and the event runs from November 11 to 29. Reports also claim that India will get its own PUBG PC region in 2027, though KRAFTON has not confirmed it.\n\nRead on for the PIC 2026 schedule, entry rules, the current qualification path, and the history of PUBG PC in India.\n\nPIC 2026 is an open-for-all PUBG: Battlegrounds PC tournament. Squads can sign up at pubgesports.in until November 4 at 23:59 IST.\n\nThe event has four stages and ends with a 16-team Grand Final. The total prize pool is ₹25 lakh.\n\nKRAFTON India Esports has run its esports program around BGMI so far. Its 2026 roadmap covered BGIS, BMPS, BMSD and BMIC, with no PC events. PIC 2026 is the first PC event from the publisher built only for players in India.\n\nTwo details are still missing. KRAFTON has not said how many teams move between stages. It also has not said whether the Grand Finals will be online or on LAN.",
     "first_seen": "2026-10-22T12:35:07Z"
   },
   {
