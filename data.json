@@ -1,5 +1,34 @@
 [
   {
+    "title": "Game Changers Championship : MIBR – Gentle Mates en direct",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/live/game-changers-championship-mibr-gentle-mates-en-direct-776096.shtm",
+    "published": "2026-10-27T17:45:00Z",
+    "game": "val",
+    "category": "tournament",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/09/f3e23-1024x683.jpg",
+    "logo": null,
+    "content": "Pour suivre le match G2 Gozen – Team Liquid en direct, rendez-vous sur l’un des liens ci-dessous :",
+    "first_seen": "2026-10-27T17:44:39Z"
+  },
+  {
+    "title": "FaZe essentially Major-bound after RLG Tesla Cup wins",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79341/faze-essentially-major-bound-after-rlg-tesla-cup-wins",
+    "published": "2026-10-27T17:32:00Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "We will almost definitely have FaZe stickers!",
+    "first_seen": "2026-10-27T17:44:39Z"
+  },
+  {
     "title": "Liquid 2-2 in Bucharest following loss to Aurora",
     "source": "Dust2",
     "url": "https://www.dust2.us/news/79337/liquid-2-2-in-bucharest-following-loss-to-aurora",
@@ -25,7 +54,7 @@
     "category": "news",
     "image": "https://media.esports.gg/uploads/2026/10/One-Piece-x-Fortnite-1024x683.webp",
     "logo": null,
-    "content": "Fortnite is not holding back on its upcoming One Piece collab, which will include skins based on seven confirmed characters so far. In addition to the main character, Luffy, six other characters will appear either in the ‘Treasure Hunters’ season’s Battle Pass or potentially in the Item Shop.\n\nThis article outlines every confirmed One Piece character due to get a skin in the upcoming Fortnite Mini-Season.\n\nAll seven characters outlined above appeared in the first official Fortnite x One Piece trailer, making it one of the most robust collabs we’ve seen in some time. Epic Games followed a similar format with the previous Mini-Seasons based on The Simpsons and Star Wars .\n\nFortnite One Piece skins (Image via Epic Games/HYPEX) From a diversity standpoint, the ratio leans toward the Straw Hats crew from the source material. However, Ace and Buggy, respectively, from the Whitebeard Pirates and the Four Emperors, are also in the mix. We don’t know yet which skins will be in the Battle Pass and which will be in the Item Shop.\n\nBeyond the skins themselves, leakers identified a few possible Mythic items. It appears to be Usopp’s Slingshot, Luffy’s Gum Gum Pistol, and a tangerine healing item. Lastly, there will be an entirely new map with POIs themed to One Piece.\n\nFortnite Treasure Hunters key art (Image via Epic Games) As covered previously, the Fortnite Mini-Season features more than the One Piece skins. Epic Games also confirmed that ASAP Rocky , Lil Uzi Vert , Kasane Teto , and Hatsune Miku will also appear in the new season.",
+    "content": "Fortnite is not holding back on its upcoming One Piece collaboration, which will include skins based on seven confirmed characters so far. In addition to the main character, Luffy, six other characters will appear either in the “Treasure Hunters” season’s Battle Pass or potentially in the Item Shop.\n\nThis article outlines every confirmed One Piece character due to get a skin in the upcoming Fortnite Mini-Season.\n\nAll seven characters outlined above appeared in the first official Fortnite x One Piece trailer, making it one of the most robust collaborations we’ve seen in some time. Epic Games followed a similar format with the previous Mini-Seasons based on The Simpsons and Star Wars .\n\nFortnite One Piece skins (Image credit: Epic Games / HYPEX) From a diversity standpoint, the ratio leans toward the Straw Hats crew from the source material. However, Ace and Buggy, respectively, from the Whitebeard Pirates and the Four Emperors, are also in the mix. We don’t know yet which skins will be in the Battle Pass and which will be in the Item Shop.\n\nBeyond the skins themselves, leakers identified a few possible Mythic items. It appears to be Usopp’s Slingshot, Luffy’s Gum Gum Pistol, and a tangerine healing item. Lastly, there will be an entirely new map with POIs themed to One Piece.\n\nFortnite Treasure Hunters key art (Image credit: Epic Games) As covered previously, the Fortnite Mini-Season features more than the One Piece skins. Epic Games also confirmed that ASAP Rocky , Lil Uzi Vert , Kasane Teto , and Hatsune Miku will also appear in the new season.",
     "first_seen": "2026-10-27T16:43:30Z"
   },
   {
@@ -2715,40 +2744,6 @@
       "bg": "#3d0a14"
     },
     "content": "The PUBG Mobile Global Open (PMGO) 2026 Season 2 Grand Finals start on October 24 in Lahore, Pakistan. Sixteen teams are left from the original 32, and they’ll fight over two days for a $500,000 prize pool and 150 PMGC points.\n\nIt’s Pakistan’s first official global PUBG Mobile esports event. The home crowd won’t have a local team to cheer, though, after 4Thrives went out in the Group Stage.\n\nFor the full tournament background, see our PMGO 2026 Season 2 dates, format and venue guide .\n\nThe Grand Finals are a two-day event on October 24 and 25, 2026 . Each day has six matches, so 12 in total, plus a possible Match 13 on Sunday.\n\nSportsDunia’s published schedule has the first match starting at 11:00 UTC (4:30 PM IST, 4:00 PM PKT) both days. Matches run roughly 45 minutes apart.\n\n12 teams qualified straight from the Group Stage, six from each group. The final four came through the Survival Stage.",
-    "first_seen": "2026-10-23T12:30:47Z"
-  },
-  {
-    "title": "Moscow Game Week Returns With Global Studios and Ranked CS2 Finals",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/cs2/moscow-international-game-week-2026-dates-cs2-finals/",
-    "published": "2026-10-23T12:07:57Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "Moscow International Game Week will return for its second edition from October 29 to November 1, 2026, combining an international games exhibition, industry discussions and the Moscow Cyber Games Counter-Strike 2 LAN finals. Organisers say more than 85 companies will exhibit, with participants from India, Brazil, China, South Korea and Malaysia among those announced.\n\nThe official event schedule separates the wider city programme from the main venue activities. City events begin on October 29, while the gaming exhibition and business programme run from October 30 to November 1. The main venue is Moscow Game Hub, identified on the website as the Video Games and Animation Cluster at 40 Bolshoy Boulevard.\n\nThe announced overseas exhibitors include Brazil’s national stand, Brasilia Game Hub, China’s Chingmu, South Korean companies BURNING SOUL and BEAR&SKUNK, and Malaysia’s Experimental Design Team. India will have a group stand featuring BuzzedMen Studio, AbracaDabra Software Solutions and Nilee Games. Together, the exhibitors cover game development, creative services and technology used in production.\n\nRussian publishers and gaming platforms will also present their work. An indie alley will bring together independent projects, while a separate residents’ alley will feature studios based at Moscow Game Hub. According to the organisers’ announcement, visitors will be able to try games, meet their creators and learn about game and animation development. A themed merchandise marketplace is also planned.\n\nThis year’s theme, “Beyond the Industry,” focuses on the relationship between games, animation, film and literature. Discussions will examine how creators can develop fictional worlds across different formats and find partners for new projects. The programme is intended for developers, investors and professionals working in related creative fields, alongside the exhibition’s public audience.\n\nThe published business tracks cover cultural identity in game design, business development and government support, shared fictional universes, education and AI in animation. Training, internships and practical experience are included in the education strand. The agenda therefore extends from producing individual games to building studios and developing stories that can support several kinds of media.",
-    "first_seen": "2026-10-23T12:30:47Z"
-  },
-  {
-    "title": "New Valorant Leak Reveals Big Clove Nerfs Coming in the Next Patch",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/valorant-clove-nerfs/",
-    "published": "2026-10-23T12:03:15Z",
-    "game": "val",
-    "category": "patch",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Clove might be receiving some major nerfs in the next Valorant patch, curbing their aggressive potential without compromising on their utility as a Controller.\n\nAccording to recent leaks from multiple sources, Clove’s Pick-Me-Up and Ultimate ability will be receiving some significant changes in the upcoming update, aiming to reduce their pubstomping potential and balance out their absurdly high win rates across all ranks.\n\nAs per several prominent Valorant dataminers on X, Clove will see the following tweaks heading into the next patch:\n\nCLOVE NERFS from @RemValorant : – Pick-Me-Up: movement speed reduced from 15% → 10% – After using her Ultimate, Clove can no longer gain Ultimate Points from kills for the rest of the round. – Enemies will now gain an Ultimate Point for killing Clove after she revives. pic.twitter.com/yJH0e9Wp4Y\n\nNote that the Clove nerfs have not been officially confirmed yet, and are only early leaks from dataminers.\n\nHowever, it’s safe to say that these Clove nerfs have been a long time coming. At the time of writing, Clove is the highest-picked Agent in competitive play across all ranks, and that too with an incredibly high win rate.",
     "first_seen": "2026-10-23T12:30:47Z"
   },
   {
