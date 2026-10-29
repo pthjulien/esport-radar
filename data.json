@@ -1,5 +1,34 @@
 [
   {
+    "title": "KRU parts ways with mwzera and heat",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/781616/kru-parts-ways-with-mwzera-and-heat",
+    "published": "2026-10-29T09:28:41Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "The duo leaves after their third stint as teammates.",
+    "first_seen": "2026-10-29T09:45:07Z"
+  },
+  {
+    "title": "Worlds 2026 : T1 et Invictus Gaming en quarts, KOI et LYON en 2-2",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/resultats/worlds-2026-t1-et-invictus-gaming-en-quarts-koi-et-lyon-en-2-2-776177.shtm",
+    "published": "2026-10-29T09:00:00Z",
+    "game": "lol",
+    "category": "tournament",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/10/86659-1024x683.jpg",
+    "logo": null,
+    "content": "Les champions du monde en titre n’ont pas tremblé. Opposé à Movistar KOI, T1 a survolé son BO3 pour s’imposer 2-0, porté notamment par un Doran impérial sur la toplane. Le Coréen a terminé la première manche avec un impressionnant 6/0/6 sur Ambessa, avant de récidiver sur Gwen (4/0/7). Une démonstration de force qui permet à T1 de rejoindre Dplus KIA et Gen.G en quarts de finale, devenant ainsi la troisième équipe coréenne qualifiée. Faker continue également d’écrire l’histoire, avec une onzième qualification pour les quarts de finale des Worlds, un record absolu dans la compétition.\n\nPour KOI, en revanche, la situation devient préoccupante. Après avoir débuté le Swiss Stage par deux victoires, les Espagnols viennent d’enchaîner deux défaites face à Dplus KIA et T1. Désormais en 2-2, ils devront impérativement remporter leur prochain BO3 pour poursuivre l’aventure. Une dernière chance de rejoindre le top 8 mondial, après avoir échoué à faire tomber deux des favoris coréens.\n\nOn offre tout à T1 pic.twitter.com/kTYgqGInk5\n\nDans l’autre rencontre de la soirée, Invictus Gaming a dû batailler pour venir à bout de LYON (2-1). Les Chinois ont d’abord écrasé la première manche en seulement 25 minutes, avec un sévère 19-4 au tableau d’affichage. Rookie s’est particulièrement illustré sur Aurora (8/1/8), pendant qu’Inspired est complètement passé à côté de sa partie avec Nocturne (1/6/1). Le jungler polonais s’est toutefois repris dans la deuxième manche, cette fois sur Qiyana (4/1/5), bien épaulé par un Dhokla agressif sur Olaf (4/2/3). De quoi permettre à LYON d’égaliser et d’arracher une manche décisive.\n\nMais la manche décisive a rapidement tourné à la démonstration. Dépassé dès la draft, LYON n’a jamais réussi à contenir la botlane chinoise, où JiaQi et Meiko ont fait vivre un véritable enfer à leurs adversaires. Impérial sur Caitlyn (5/1/2), JiaQi a même conclu la rencontre sur un triple kill, scellant la victoire d’Invictus Gaming en seulement 24 minutes. Les Chinois deviennent ainsi les premiers représentants de la LPL à décrocher leur billet pour les quarts de finale de ces Worlds 2026. Une qualification particulière pour TheShy et Rookie, qui se retrouvent ensemble dans le top 8 mondial huit ans après leur sacre historique sous les couleurs d’IG en 2018.\n\nPour LYON, la désillusion est immense. Après avoir parfaitement lancé leur tournoi avec deux victoires consécutives, les Américains ont enchaîné deux revers face à Gen.G et Invictus Gaming. En 2-2, ils se retrouvent dos au mur comme Movistar KOI. Les deux formations occidentales devront impérativement remporter leur dernier BO3 du Swiss Stage pour espérer rejoindre les quarts de finale.",
+    "first_seen": "2026-10-29T09:45:07Z"
+  },
+  {
     "title": "Final matches of CS2 PGL Masters Bucharest 2026: Playoff bracket, results",
     "source": "Esports.gg",
     "url": "https://esports.gg/news/counter-strike-2/pgl-masters-bucharest-2026-playoff-results/",
@@ -210,18 +239,6 @@
     "first_seen": "2026-10-28T23:30:10Z"
   },
   {
-    "title": "Worlds 2026 : Invictus Gaming – LYON en direct",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/live/worlds-2026-invictus-gaming-lyon-en-direct-776121.shtm",
-    "published": "2026-10-28T22:45:00Z",
-    "game": "lol",
-    "category": "tournament",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/08/IG_Rookie_Worlds_2025-1024x732.jpg",
-    "logo": null,
-    "content": "Pour suivre le match Invictus Gaming – LYON en direct, rendez-vous sur le lien ci-dessous :",
-    "first_seen": "2026-10-28T23:30:10Z"
-  },
-  {
     "title": "Swisher, JBa set to headline Team USA at IESF 2026 as team list is revealed",
     "source": "Dust2",
     "url": "https://www.dust2.us/news/79393/swisher-jba-set-to-headline-team-usa-at-iesf-2026-as-team-list-is-revealed",
@@ -249,18 +266,6 @@
     "logo": null,
     "content": "Pour suivre le match KRÜ Blaze – Team Liquid en direct, rendez-vous sur le lien ci-dessous :",
     "first_seen": "2026-10-28T21:33:19Z"
-  },
-  {
-    "title": "Worlds 2026 : KOI – T1 en direct",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/live/worlds-2026-koi-t1-en-direct-776120.shtm",
-    "published": "2026-10-28T19:45:00Z",
-    "game": "lol",
-    "category": "tournament",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/06/i1780181775090429-1024x683.jpeg",
-    "logo": null,
-    "content": "Pour suivre le match KOI – T1 en direct, rendez-vous sur le lien ci-dessous :",
-    "first_seen": "2026-10-28T20:36:17Z"
   },
   {
     "title": "Luminosity completely out of Major contention after ENVY eliminate them from RLG Tesla Cup",
@@ -293,7 +298,7 @@
       "color": "#ff4655",
       "bg": "#3d0a14"
     },
-    "content": "Halloween is almost here, and Riot Games is marking the occasion with Valorant’s brand-new “Grave Matters” capsule.\n\nThe Grave Matters capsule is the latest collection of cosmetics that’s being added to the Valorant store. While it doesn’t include any weapon skins, there are a number of attractive cosmetics in the capsule that players can use to give their loadouts a spooky but cute makeover.\n\nHere’s everything you need to know about the Grave Matters capsule in Valorant, including a full list of its contents, its price, release date, and more details.\n\nAs already confirmed by Riot Games, the Grave Matters capsule in Valorant includes the following cosmetics:\n\nNo tricks. Just treats. The Grave Matters Capsule is in your store now. pic.twitter.com/iBMKJqgyWr\n\nAs with most premium capsules , the Shriek Player Card and Spray are both animated, with the latter also having sound effects.",
+    "content": "Halloween is almost here, and Riot Games is marking the occasion with Valorant’s brand-new “Grave Matters” capsule.\n\nThe Grave Matters capsule is the latest collection of cosmetics that’s being added to the Valorant store. While it doesn’t include any weapon skins, there are a number of attractive cosmetics in the capsule that players can use to give their loadouts a spooky but cute makeover.\n\nBelow are the Grave Matters capsule’s full contents, price, and release date.\n\nAs already confirmed by Riot Games, the Grave Matters capsule in Valorant includes the following cosmetics:\n\nNo tricks. Just treats. The Grave Matters Capsule is in your store now. pic.twitter.com/iBMKJqgyWr\n\nAs with most premium capsules , the Shriek Player Card and Spray are both animated, with the latter also having sound effects.",
     "first_seen": "2026-10-28T18:40:22Z"
   },
   {
@@ -533,7 +538,7 @@
       "color": "#ff4655",
       "bg": "#3d0a14"
     },
-    "content": "With PUBG undergoing a challenging phase with its desktop version in India, the PUBG India Challenge 2026 is about to kick off, giving players an opportunity to compete against the best that this region has to offer. Organized by KRAFTON and Tesseract Esports, the event will run between November 11 and November 29, with registrations already underway.\n\nWith the tournament divided into 4 phases, teams will have to prove themselves at every stage. Not only does this act as a filter for the unpredictable nature of battle royale matches, but it also serves as a cushion against tough luck.\n\nIf you are planning to participate in the tournament, then there is still time before it commences.\n\nThe tournament starts in the Open Qualifiers stage with TPP-based matches. The top 32 teams from the opening stage will make it to the League Stage, after which the top 12 teams will qualify directly for the Grand Finals. Teams placing between 13th and 28th get another opportunity through the Last Chance Stage, where only 4 teams will be allowed into the Grand Finals. The 12 teams from the League Stage will be joined by the 4 teams from the LCQ to compete in a 10-match Grand Finals.\n\nThe total prize pool stands at ₹25,00,000, with division based on the teams’ placement:\n\nPUBG PC is what many believe to be a dying breed in the large landscape of Indian esports , but PIC 2026 poses a strong challenge to that supposition. With a big stage and a massive prize pool, Indian PUBG teams rarely get a golden opportunity like this to show their skills, and KRAFTON has just handed it to them on a silver platter.",
+    "content": "With PUBG undergoing a challenging phase with its desktop version in India, the PUBG India Challenge 2026 is about to kick off, giving players an opportunity to compete against the best that this region has to offer. Organized by KRAFTON and Tesseract Esports, the event will run between November 11 and November 29, with registrations already underway.\n\nThe tournament is split into 4 phases, so teams have to prove themselves at every stage. The multi-phase format filters out some of the randomness of battle royale matches and gives teams a cushion against bad luck.\n\nIf you are planning to participate in the tournament, then there is still time before it commences.\n\nThe tournament starts in the Open Qualifiers stage with TPP-based matches. The top 32 teams from the opening stage will make it to the League Stage, after which the top 12 teams will qualify directly for the Grand Finals. Teams placing between 13th and 28th get another opportunity through the Last Chance Stage, where only 4 teams will be allowed into the Grand Finals. The 12 teams from the League Stage will be joined by the 4 teams from the LCQ to compete in a 10-match Grand Finals.\n\nThe total prize pool stands at ₹25,00,000, with division based on the teams’ placement:\n\nPUBG PC is what many believe to be a dying breed in the large landscape of Indian esports , but PIC 2026 poses a strong challenge to that supposition. With a big stage and a massive prize pool, Indian PUBG teams rarely get a golden opportunity like this to show their skills, and KRAFTON has just handed it to them on a silver platter.",
     "first_seen": "2026-10-28T11:37:09Z"
   },
   {
