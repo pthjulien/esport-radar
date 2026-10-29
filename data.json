@@ -1,5 +1,39 @@
 [
   {
+    "title": "Natus Vincere parts with 2026 roster",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/781606/natus-vincere-parts-with-2026-roster",
+    "published": "2026-10-29T06:31:11Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Natus Vincere",
+      "tag": "NAVI",
+      "color": "#facc15",
+      "bg": "#3b3002"
+    },
+    "content": "NAVI bids farewell to their main roster as NAVI Junior will represent the organization in the EMEA Kickoff Qualifiers.",
+    "first_seen": "2026-10-29T06:45:09Z"
+  },
+  {
+    "title": "MIBR GC, KRÜ BLAZE advance to top four over SK Nebula and TL Brazil",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/781601/mibr-gc-kr-blaze-advance-to-top-four-over-sk-nebula-and-tl-brazil",
+    "published": "2026-10-29T05:50:43Z",
+    "game": "val",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "MIBR and KRÜ join M8 and SRG in the top four at GCC 2026.",
+    "first_seen": "2026-10-29T06:45:09Z"
+  },
+  {
     "title": "All Overwatch voice actors (2026)",
     "source": "Esports.gg",
     "url": "https://esports.gg/news/overwatch/overwatch-2-voice-actors-list-revealed/",
@@ -2638,35 +2672,6 @@
     },
     "content": "Luminosity stacks up tournaments as the Major comes near.",
     "first_seen": "2026-10-24T22:21:08Z"
-  },
-  {
-    "title": "Worlds 2026 : Secret Whales – Invictus Gaming en direct",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/live/worlds-2026-secret-whales-invictus-gaming-en-direct-775943.shtm",
-    "published": "2026-10-24T20:50:00Z",
-    "game": "lol",
-    "category": "tournament",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/08/IG_Rookie_Worlds_2025-1024x732.jpg",
-    "logo": null,
-    "content": "Pour suivre le match Secret Whales – Invictus Gaming en direct, rendez-vous sur le lien ci-dessous :",
-    "first_seen": "2026-10-24T21:22:06Z"
-  },
-  {
-    "title": "ZETA DIVISION allows eKo, Syouta, and Absol to explore options",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/779869/zeta-division-allows-eko-syouta-and-absol-to-explore-options",
-    "published": "2026-10-24T20:19:39Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "ZETA DIVISION players drop like flies, announcing free agency via X.",
-    "first_seen": "2026-10-24T20:20:48Z"
   },
   {
     "title": "La Coupe de France Slash est de retour sur Rocket League",
