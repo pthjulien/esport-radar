@@ -1,5 +1,22 @@
 [
   {
+    "title": "New LAR rifle model discovered in CS2 game files",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79438/new-lar-rifle-model-discovered-in-cs2-game-files",
+    "published": "2026-10-30T00:19:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "Valve continues to cook behind the scenes.",
+    "first_seen": "2026-10-30T00:44:10Z"
+  },
+  {
     "title": "Modder ports CS2 into Roblox engine creating faithful copy of Valve's shooter",
     "source": "Dust2",
     "url": "https://www.dust2.us/news/79436/modder-ports-cs2-into-roblox-engine-creating-faithful-copy-of-valves-shooter",
@@ -2665,18 +2682,6 @@
     "logo": null,
     "content": "The world’s best mobile Fortnite players head to BLAST Studios in Denmark for the 2026 Mobile Championship. Across two days, these players will compete in Reload Solos for a share of $200,000.\n\nThis competition is not the Fortnite Global Championship, but rather a tournament designed specifically for mobile players. Follow along all weekend for the latest results to see who will crown themselves the best mobile Fortnite player!\n\nFortnite Mobile Championship Twitch Drops (Image credit: Epic Games) You can claim the Twitch Drops shown above by connecting your Twitch account to your Epic Games account and watching the Fortnite Mobile Championship broadcast.",
     "first_seen": "2026-10-24T15:23:09Z"
-  },
-  {
-    "title": "Worlds 2026 : Gen.G – LYON en direct",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/live/worlds-2026-gen-g-lyon-en-direct-776001.shtm",
-    "published": "2026-10-25T21:50:00Z",
-    "game": "lol",
-    "category": "tournament",
-    "image": "https://e.sport.fr/wp-content/uploads/2025/10/54097366409_e567fe51e7_k-1024x683.webp",
-    "logo": null,
-    "content": "Pour suivre le match Gen.G – LYON en direct, rendez-vous sur le lien ci-dessous :",
-    "first_seen": "2026-10-27T07:43:01Z"
   },
   {
     "title": "Call of Duty: Black Ops II Is Among the Best-Selling Games of 2026, 14 Years After Launch",
