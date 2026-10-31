@@ -1,5 +1,22 @@
 [
   {
+    "title": "meco1e announces his retirement from competitive Valorant",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/782289/meco1e-announces-his-retirement-from-competitive-valorant",
+    "published": "2026-10-31T03:06:10Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "meco1e officially retires from esports.",
+    "first_seen": "2026-10-31T03:39:06Z"
+  },
+  {
     "title": "Sentinels release JonahP and Jerrwin",
     "source": "VLR.gg",
     "url": "https://www.vlr.gg/782283/sentinels-release-jonahp-and-jerrwin",
@@ -1847,6 +1864,23 @@
     "first_seen": "2026-10-28T09:42:28Z"
   },
   {
+    "title": "Team Liquid sweep Anyone’s Legend out of Worlds 2026, ending NA’s 13-series LPL drought",
+    "source": "Esports Insider",
+    "url": "https://esportsinsider.com/2026/10/team-liquid-sweep-anyones-legend-out-of-worlds-2026-ending-nas-13-series-lpl-drought",
+    "published": "2026-10-28T08:45:46Z",
+    "game": "lol",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "League of Legends Pro",
+      "tag": "LOL",
+      "color": "#c89b3c",
+      "bg": "#2e2104"
+    },
+    "content": "Team Liquid Alienware beat Anyone's Legend 2-0 to eliminate the LPL's top seed from the Worlds 2026 Swiss Stage without a game win. The result keeps the LCS champions alive and sets up a deciding series against LOS on 30 October.\n\nAnyone’s Legend arrived at Worlds 2026 as China’s top seed. Team Liquid Alienware delivered the final blow in a series that began at 15:55 CDT.\n\nLiquid controlled the opening game from the red side. They closed it in 33 minutes and 13 seconds with a 16-5 lead on kills. Top laner Morgan finished 7/1/6 on Camille. The second game was a far longer contest. It ran to 47 minutes before Liquid sealed the series, with Yeon’s Xayah playing a key part in the result.\n\nFor Anyone’s Legend, the defeat capped a collapse. They had already lost best-of-one matches to Karmine Corp and Top Esports before the Liquid series. Such an exit had no precedent for a Chinese top seed at Worlds, Dot Esports reported. It is also the second Worlds in a row in which the LPL’s first seed failed to get out of the Swiss Stage. Bilibili Gaming went out in Round 5 in 2025.\n\nAnyone’s Legend and Team Secret Whales were the first two teams knocked out. Each finished joint 15th-16th and receives US$90,000 from a total prize pool of US$5,000,000. Earlier the same day, LOS had eliminated Team Secret Whales, the LCP’s top seed, with a 2-0 win that gave Brazil its first victory of the Swiss Stage.\n\nThe significance stretches beyond this tournament. Fittingly, the LCS’s previous series win over an LPL team also belonged to Team Liquid. They beat Invictus Gaming in the MSI 2019 semi-finals.",
+    "first_seen": "2026-10-31T03:39:06Z"
+  },
+  {
     "title": "Gentle Mates GC, SR Gold continue upper bracket warpaths",
     "source": "VLR.gg",
     "url": "https://www.vlr.gg/781105/gentle-mates-gc-sr-gold-continue-upper-bracket-warpaths",
@@ -2623,40 +2657,6 @@
     "logo": null,
     "content": "GTA 6 Ambrosia is an inland industrial town in central Leonida. It’s built around the Allied Crystal sugar refinery, and the Final Chapter MC biker gang has a strong hold on it. Rockstar describes it as the place where “American industry and old school values still reign supreme.” Its look closely matches Clewiston, the Florida sugar town on the south shore of Lake Okeechobee.\n\nAmbrosia is one of the six regions Rockstar revealed on its official Grand Theft Auto VI website alongside Trailer 2 in May 2025. With the game due out on November 19, 2026, here’s everything confirmed about the town so far, and what’s still guesswork.\n\nRockstar places Ambrosia “in the heart of Leonida.” That puts it inland, away from the Vice City coast and the Leonida Keys. Fans believe it sits in a wider area called Ambrosia County.\n\nRockstar hasn’t released a fully labelled map yet, so the town’s exact position and size are still unconfirmed. Official screenshots show flat farmland, sugarcane fields, industrial yards and small-town roads.\n\nAmbrosia is one of the six confirmed regions:\n\nRockstar’s tagline for the region is “Keeping Leonida Sweet,” with the subheading “The battle for the health and wealth of Leonida begins here.”",
     "first_seen": "2026-10-27T00:33:20Z"
-  },
-  {
-    "title": "SOFLO announces $1,500 Campus Clash collegiate tournament",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/79272/soflo-announces-1500-campus-clash-collegiate-tournament",
-    "published": "2026-10-26T22:45:00Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "SOFLO branches out into the collegiate world.",
-    "first_seen": "2026-10-26T23:25:45Z"
-  },
-  {
-    "title": "Legendary Finnish org  ENCE files for bankruptcy after 13 years in CS",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/79312/legendary-finnish-org-ence-files-for-bankruptcy-after-13-years-in-cs",
-    "published": "2026-10-26T21:55:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "The Finnish org is out of business after thirteen years.",
-    "first_seen": "2026-10-26T22:29:40Z"
   },
   {
     "title": "RLCS : Extra reste fidèle à la Karmine Corp, le retour d’un duo légendaire",
