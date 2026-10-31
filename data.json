@@ -1,5 +1,34 @@
 [
   {
+    "title": "Worlds 2026 : Hanwha Life – Bilibili Gaming en direct",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/live/worlds-2026-hanwha-life-bilibili-gaming-en-direct-776253.shtm",
+    "published": "2026-10-31T22:45:00Z",
+    "game": "lol",
+    "category": "tournament",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/10/HVpgf-zbgAAdUe0-1024x683.webp",
+    "logo": null,
+    "content": "Pour suivre le match Hanwha Life – Bilibili Gaming en direct, rendez-vous sur le lien ci-dessous :",
+    "first_seen": "2026-10-31T23:29:28Z"
+  },
+  {
+    "title": "Orbit enter NA Counter-Strike scene with ex-F5",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79520/orbit-enter-na-counter-strike-scene-with-ex-f5",
+    "published": "2026-10-31T22:44:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "An old-school name has been revived and is now entering the NA scene.",
+    "first_seen": "2026-10-31T23:29:28Z"
+  },
+  {
     "title": "YEKINDAR earns career-first MVP with stellar final at PGL Masters Bucharest",
     "source": "Dust2",
     "url": "https://www.dust2.us/news/79523/yekindar-earns-career-first-mvp-with-stellar-final-at-pgl-masters-bucharest",
@@ -15,6 +44,23 @@
     },
     "content": "His first MVP after twelve EVPs over the years.",
     "first_seen": "2026-10-31T22:29:42Z"
+  },
+  {
+    "title": "PGL Bucharest peaks at 667K viewers, short of Astana record",
+    "source": "Pley.gg",
+    "url": "https://pley.gg/cs2/pgl-bucharest-peaks-at-667k-viewers-short-of-astana-record/",
+    "published": "2026-10-31T21:30:47Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "FURIA against Nemiga was the most-watched series of PGL Masters Bucharest 2026, yet the event stays well short of PGL’s non-Major record.\n\nFURIA ‘s 3-2 win over Nemiga Gaming on Saturday peaked at 667,736 concurrent viewers, according to Esports Charts . No other series in Bucharest came close: the next best was NAVI against Team Spirit in the group stage at 590,066.\n\nAcross 76 hours of airtime the event drew just over 20.1 million hours watched and an average audience of 264,558. Esports Charts still lists the tournament as being moderated, so the figures may move slightly. We covered the series itself in our grand final report .\n\nThe peak is more than double the April edition of PGL Bucharest, which FUT Esports won in front of a 320,700 peak , and well above the 518,849 that PGL Bucharest 2025 reached. Against the rest of the 2026 calendar, though, it sits in the lower half:\n\nIt is not PGL’s best non-Major peak either. That mark belongs to PGL Astana 2026, which Esports Charts lists as the organiser’s most popular non-Major Counter-Strike event at more than 1.16 million. PGL Cluj-Napoca in February, where Team Vitality against PARIVISION drew 908,945, also beat it by more than 240,000. Bucharest also finished below ESL Pro League Season 24, which peaked at 747,055 three weeks ago.\n\nTwo teams dominated the event’s five biggest series. FURIA played in three of them: the final, their group stage loss to Spirit (560,657) and the semi-final win over MOUZ (482,153). Spirit also featured three times, including against MOUZ (513,052), even though they went out before the playoffs.",
+    "first_seen": "2026-10-31T23:29:28Z"
   },
   {
     "title": "HexT: \"The game against NRG is the RMR final\"",
@@ -1198,18 +1244,6 @@
       "bg": "#382003"
     },
     "content": "The modder was able to pull CS2's assets and get them working on the Roblox engine.",
-    "first_seen": "2026-10-29T23:30:41Z"
-  },
-  {
-    "title": "Worlds 2026 : Top Esports – Bilibili Gaming en direct",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/live/worlds-2026-top-esports-bilibili-gaming-en-direct-776171.shtm",
-    "published": "2026-10-29T22:45:00Z",
-    "game": "lol",
-    "category": "tournament",
-    "image": "https://e.sport.fr/wp-content/uploads/2025/07/BLG_knight_Worlds_2024-1024x683.jpg",
-    "logo": null,
-    "content": "Pour suivre le match Top Esports – Bilibili Gaming en direct, rendez-vous sur le lien ci-dessous :",
     "first_seen": "2026-10-29T23:30:41Z"
   },
   {
@@ -2519,40 +2553,6 @@
     },
     "content": "G2's ever-reliable in-game leader departs after three years with the team.",
     "first_seen": "2026-10-28T00:42:42Z"
-  },
-  {
-    "title": "ENVY continue to struggle, lose Relog Tesla Cup opener to GamerLegion",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/79359/envy-continue-to-struggle-lose-relog-tesla-cup-opener-to-gamerlegion",
-    "published": "2026-10-27T22:54:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "This is the team's fourth loss in five matches since joining ENVY.",
-    "first_seen": "2026-10-27T23:28:00Z"
-  },
-  {
-    "title": "Luminosity smashed by HOTU in RLG Tesla Cup opener despite HOTU having vetoes randomized",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/79357/luminosity-smashed-by-hotu-in-rlg-tesla-cup-opener-despite-hotu-having-vetoes-randomized",
-    "published": "2026-10-27T21:49:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "Luminosity had a rough day on Ancient despite a 62.5% winrate on the map.",
-    "first_seen": "2026-10-27T22:32:23Z"
   },
   {
     "title": "Fortnite x One Piece: All confirmed skins for Treasure Hunters season",
