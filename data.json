@@ -1,5 +1,22 @@
 [
   {
+    "title": "Unreal Engine Vulnerability Puts Modded Games at Risk",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/unreal-engine-vulnerability-launchurl/",
+    "published": "2026-10-31T09:36:58Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Unreal Engine ships with a default setting that can let community-made content open and run files on a player’s Windows PC, according to a vulnerability record published on 14 October. The researcher who found it says Epic Games has sent only an automatic reply since he reported it in July, and the hotfix Epic released a week after the disclosure doesn’t mention it.\n\nThe flaw, CVE-2026-14765 , is in LaunchURL, a Blueprint node that games use to open web links. Unreal checks those links against a filter, but the filter’s list of allowed link types is empty by default, and an empty list lets everything through. That includes links that point to files on the player’s own machine. The record covers Unreal Engine versions up to and including 5.8.0, rates the issue 7.7 out of 10, or High, and classes it as an insecure default (CWE-1188).\n\nAny Unreal game that loads Blueprints made by its players, such as custom maps or mods, may be affected. Games that don’t load player-made Blueprints aren’t.\n\nThe advisory from AHA!, the Austin, Texas hacker group that assigned the CVE, explains the chain. On Windows, LaunchURL hands any link that isn’t http or https to the operating system’s “open” command. If the link points to a file, Windows opens it the way it would if you double-clicked it, and for file types such as .exe, .bat, .cmd, .vbs, .msi and .lnk, opening means running.\n\nA malicious map or mod therefore only needs to save a file somewhere on the PC and then point LaunchURL at it. AHA! says the official score understates the risk for games built around user content. The score assumes the attacker needs local access and the player has to do something, but in a game with a Workshop the player’s only action is loading a map.\n\nKhael Kugler, a lead security engineer at Praetorian, traced the problem to the engine while looking at MECCHA CHAMELEON, a $5.99 hide-and-seek game built in Unreal Engine 5 that came out on Steam in June. It was a surprise hit. SteamDB recorded a peak of 340,534 players on 21 June, and the developer said it had sold 20 million copies in just over two months, Game Developer reported . Players share custom maps through the Steam Workshop.",
+    "first_seen": "2026-10-31T10:30:10Z"
+  },
+  {
     "title": "Brawl Talk explains new Ranked, reveals three brawlers and Brawlidays 2026",
     "source": "Esports.gg",
     "url": "https://esports.gg/news/mobile/brawl-talk-oct-2026-ranked-brawlidays-more/",
@@ -141,7 +158,7 @@
     "category": "tournament",
     "image": "https://e.sport.fr/wp-content/uploads/2026/10/f0b8d-1024x683.jpg",
     "logo": null,
-    "content": "Le destin a réservé un scénario particulièrement intéressant aux représentants européens. Après avoir éliminé CTBC Flying Oyster (2-0) pour revenir à 2-2 dans le Swiss Stage, la Karmine Corp retrouvera Movistar KOI dans un BO3 décisif pour la qualification en quarts de finale. Un tirage qui devrait ravir Caliste, lequel avait justement désigné la formation espagnole comme son adversaire préféré pour cette dernière rencontre. De son côté, KOI devra rebondir après sa lourde défaite face à T1 (0-2) lors du quatrième round.\n\nL’enjeu est immense pour les deux formations. Avec l’élimination de G2 Esports face à Hanwha Life (0-2), l’Europe a perdu l’un de ses principaux favoris, mais elle est désormais assurée de compter au moins un représentant dans le Top 8 mondial. Pour la KC, ce serait une nouvelle étape majeure dans son parcours international, tandis que KOI espère confirmer sa place parmi les meilleures équipes de la compétition. Une chose est certaine : au terme de ce duel fratricide, une équipe européenne poursuivra son aventure, tandis que l’autre devra faire ses valises.\n\nMais l’affiche la plus prestigieuse de ce dernier round opposera Hanwha Life Esports à Bilibili Gaming. Les Coréens arrivent lancés après leur démonstration face à G2, portée notamment par les excellentes prestations de Kanavi et Gumayusi. En face, BLG se retrouve dos au mur après sa défaite contre Top Esports (1-2). Deux formations annoncées parmi les grandes prétendantes au titre mondial se disputeront donc un unique billet pour les quarts de finale, avec une élimination particulièrement douloureuse pour le perdant.\n\nEnfin, LOS et LYON compléteront le programme de ce cinquième round, dans une confrontation entre deux équipes qui ont déjà déjoué plusieurs pronostics. Les Brésiliens viennent notamment de créer la surprise en éliminant Team Liquid (2-1), première tête de série nord-américaine, tandis que LYON tentera de prolonger son aventure après sa défaite contre Invictus Gaming. Les trois rencontres se disputeront ce samedi en BO3, avec une qualification en quarts de finale pour les vainqueurs et une élimination définitive pour les perdants. Les horaires exacts des matchs n’ont pas encore été annoncés.\n\nThe updated #Worlds2026 Swiss Stage Bracket after today's matches! pic.twitter.com/UPYNZg1J5u",
+    "content": "Le destin a réservé un scénario particulièrement intéressant aux représentants européens. Après avoir éliminé CTBC Flying Oyster (2-0) pour revenir à 2-2 dans le Swiss Stage, la Karmine Corp retrouvera Movistar KOI dès 18h dans un BO3 décisif pour la qualification en quarts de finale. Un tirage qui devrait ravir Caliste, lequel avait justement désigné la formation espagnole comme son adversaire préféré pour cette dernière rencontre. De son côté, KOI devra rebondir après sa lourde défaite face à T1 (0-2) lors du quatrième round.\n\nL’enjeu est immense pour les deux formations. Avec l’élimination de G2 Esports face à Hanwha Life (0-2), l’Europe a perdu l’un de ses principaux favoris, mais elle est désormais assurée de compter au moins un représentant dans le Top 8 mondial. Pour la KC, ce serait une nouvelle étape majeure dans son parcours international, tandis que KOI espère confirmer sa place parmi les meilleures équipes de la compétition. Une chose est certaine : au terme de ce duel fratricide, une équipe européenne poursuivra son aventure, tandis que l’autre devra faire ses valises.\n\nMais l’affiche la plus prestigieuse de ce dernier round opposera Hanwha Life Esports à Bilibili Gaming aux alentours de minuit. Les Coréens arrivent lancés après leur démonstration face à G2, portée notamment par les excellentes prestations de Kanavi et Gumayusi. En face, BLG se retrouve dos au mur après sa défaite contre Top Esports (1-2). Deux formations annoncées parmi les grandes prétendantes au titre mondial se disputeront donc un unique billet pour les quarts de finale, avec une élimination particulièrement douloureuse pour le perdant.\n\nEnfin, LOS et LYON compléteront le programme de ce cinquième round, dans une confrontation entre deux équipes qui ont déjà déjoué plusieurs pronostics. Les Brésiliens viennent notamment de créer la surprise en éliminant Team Liquid (2-1), première tête de série nord-américaine, tandis que LYON tentera de prolonger son aventure après sa défaite contre Invictus Gaming. Les trois rencontres se disputeront ce samedi en BO3, avec une qualification en quarts de finale pour les vainqueurs et une élimination définitive pour les perdants.\n\n18h – Movistar KOI Karmine Corp 21h – LOS LYON 0h – Hanwha Life Bilibili Gaming\n\nThe updated #Worlds2026 Swiss Stage Bracket after today's matches! pic.twitter.com/UPYNZg1J5u",
     "first_seen": "2026-10-31T01:51:13Z"
   },
   {
@@ -859,7 +876,7 @@
     "category": "tournament",
     "image": "https://e.sport.fr/wp-content/uploads/2026/10/HUx4z_UXYAEPV_e-1024x732.jpg",
     "logo": null,
-    "content": "Pour suivre le match Karmine Corp – CFO en direct, rendez-vous sur le lien ci-dessous :",
+    "content": "Pour suivre le match Karmine Corp – CFO en direct, rendez-vous sur l’un des liens ci-dessous :",
     "first_seen": "2026-10-29T19:45:02Z"
   },
   {
@@ -2640,23 +2657,6 @@
     },
     "content": "After more than three years of waiting, Garena has officially announced the Free Fire India launch date. The popular battle royale game will finally be available in India on October 28, 2026 , for both Android and iOS devices.\n\nGarena confirmed the news through its official social media accounts, ending years of uncertainty about the game’s return.\n\nThe announcement reads: “FREE FIRE INDIA IS HERE! Get ready to jump in Free Fire India from 28 October.” This is major news for the Indian gaming community, which has been waiting for the game’s return since 2023.\n\nFree Fire India will launch on Wednesday, October 28, 2026. According to Garena’s announcement, the game will be available on the Google Play Store and iOS.\n\nA post shared by Garena Free Fire India (@freefireindiaofficial)\n\nFree Fire India will feature special in-game events and campaigns based on Indian festivals and cultures. Garena has also announced a special Diwali event, which will run until November 15, 2026.",
     "first_seen": "2026-10-27T07:43:01Z"
-  },
-  {
-    "title": "Gentle Mates part ways with full roster and coaching staff",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/780736/gentle-mates-part-ways-with-full-roster-and-coaching-staff",
-    "published": "2026-10-27T06:20:08Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Gentle Mates",
-      "tag": "M8",
-      "color": "#f472b6",
-      "bg": "#3d082b"
-    },
-    "content": "Gentle Mates bid farewell to five players and two coaches ahead of the 2027 season.",
-    "first_seen": "2026-10-27T06:36:26Z"
   },
   {
     "title": "RLCS : Extra reste fidèle à la Karmine Corp, le retour d’un duo légendaire",
