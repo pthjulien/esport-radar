@@ -1,5 +1,17 @@
 [
   {
+    "title": "Wildcard book Singapore Major place as NRG miss out",
+    "source": "Pley.gg",
+    "url": "https://pley.gg/cs2/wildcard-book-singapore-major-place-as-nrg-miss-out/",
+    "published": "2026-11-01T20:08:00Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "https://pley.gg/app/uploads/2026/10/flag-pl-valorant.png",
+    "logo": null,
+    "content": "A 13-0 Nuke against BARCA settles the last Americas invite, and Wildcard’s final against 100 Thieves tonight decides Europe’s last place too.\n\nWildcard are going to the PGL Major Singapore . They beat BARCA 2-0 in the FiReSPORTS Last Chance semi-final in Buenos Aires on Sunday, 13-7 on Inferno and 13-0 on Nuke, and that locks up the ninth and final Americas invite, as first reported by Dust2.us . NRG and BESTIA are out of the race.\n\nThe North Americans join Liquid and M80 from their own scene. HLTV’s VRS projection counted Wildcard as clinched after the semi-final, up from 56% a day earlier. Valve publish the standings on 2 November.\n\nSINGAPORE HERE WE COME🇸🇬 pic.twitter.com/LQVMA4E6Xa\n\nBARCA picked Inferno, and Wildcard won both pistol rounds on it. They led 8-4 at the half and closed it out 13-7. Wildcard’s own Nuke pick was over almost before it started: 12-0 on the T side, and Jadan “HexT” Postma won a 1v2 in round 13 to finish the map and the series without BARCA scoring a round.\n\nEthan “reck” Serrano was the best player on the server, 28-15 with 90.9% KAST. In-game leader Nemanja “nEMANHA” Đukić added 29 kills at 100.7 ADR, the highest on the server. That came two days after HexT told Dust2 Brasil that nEMANHA and Sebastian “fr3nd” Kuśmierz had both lost their voices the day before the tournament, with the IGL at about 40%.",
+    "first_seen": "2026-11-01T20:29:29Z"
+  },
+  {
     "title": "How to Get Zoro’s Three Sword Style in Fortnite",
     "source": "TalkEsport",
     "url": "https://www.talkesport.com/news/fortnite/zoro-three-sword-style-fortnite/",
@@ -144,8 +156,13 @@
     "published": "2026-11-01T16:21:17Z",
     "game": "cs2",
     "category": "news",
-    "image": "https://pley.gg/app/uploads/2026/10/flag-ru.png",
-    "logo": null,
+    "image": "",
+    "logo": {
+      "title": "100 Thieves",
+      "tag": "100T",
+      "color": "#ef4444",
+      "bg": "#3d0606"
+    },
     "content": "HOTU were one series away from a sure Singapore Major place and now need Sunday night’s results in Buenos Aires to go their way.\n\n1win won GLuck Moscow Cyber Games on Sunday with a 2-0 win over HOTU in the grand final, 13-9 on Anubis and 13-11 on Dust2. The title takes 1win to Stage 2 of the PGL Major Singapore, and it leaves HOTU without the invite a win would have guaranteed them.\n\nAs we wrote this morning , the Moscow final and FiReSPORTS Last Chance in Buenos Aires were the last two events that could move Europe’s final places before Valve’s VRS snapshot on 2 November. Moscow is settled. The last European invite now goes through Argentina, where 100 Thieves control their own fate and HOTU and Fnatic can only hope.\n\nHOTU picked Anubis and held 6-6 at the half, but 1win took seven of the last ten rounds to close it out 13-9. Artem “ArtFr0st” Kharitonov, on loan from BetBoom, went 18-8 on the map. Dmitry “mizu” Kondratev did what he could on the other side with 21-13, 76.8 ADR and 90.9% KAST, the only HOTU player with more kills than deaths.\n\nOn 1win’s Dust2 pick, HOTU trailed 4-8 at the break and fought back to 11-11. The comeback stopped there: 1win won round 23 on a B execute and then the map, 13-11.\n\nThe lineup of Sergey “Ax1Le” Rykhtorov, Vladislav “nafany” Gorshkov, Andrey “BELCHONOKK” Yasinskiy, Petr “fame” Bolyshev and ArtFr0st only came together in August, and they are already 14th in HLTV’s world ranking.",
     "first_seen": "2026-11-01T18:36:05Z"
   },
@@ -180,7 +197,7 @@
     "published": "2026-11-01T14:55:00Z",
     "game": "cs2",
     "category": "news",
-    "image": "https://pley.gg/app/uploads/2026/10/flag-sg.png",
+    "image": "https://pley.gg/app/uploads/2026/10/flag-ph.png",
     "logo": null,
     "content": "The Singaporean duelist leaves after five years, one Masters trophy and five international grand finals, with d4v41 heading out on the same day.\n\nPaper Rex have parted ways with Wang “Jinggg” Jing Jie, the organisation announced on X on Saturday. The 23-year-old joined the Singaporean team in September 2021 and played in every one of their international finals since.\n\nPaper Rex thanked him for “the clutches, memes, aces and memories” and signed off with a nod to the agent that defined his career:\n\nThank you for everything @Jingggxd, keep being the crazy Raze player that you are\n\nJJ first joined Paper Rex in September 2021, becoming a core member of our roster ever since. We will never forget the clutches, memes, aces and memories we made. From all of us at Paper Rex, we wish Jing all the best for his future endeavours. Thank you for everything @Jingggxd … pic.twitter.com/mE3dkSFlGQ\n\nJinggg answered a few minutes later. “5 years ago when i got called up to join PRX i never imagined my life would be like this at all,” he wrote, adding that he is “very excited to see whats next up”.",
     "first_seen": "2026-11-01T16:32:17Z"
@@ -405,8 +422,13 @@
     "published": "2026-11-01T10:03:45Z",
     "game": "val",
     "category": "news",
-    "image": "https://pley.gg/app/uploads/2026/10/flag-br-valorant.png",
-    "logo": null,
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
     "content": "A 17-15 win on Ascent sends the Latin American side into Sunday’s grand final in São Paulo, where an unbeaten Gentle Mates GC coached by Ex6TenZ are waiting.\n\nKRÜ BLAZE will play for the Valorant Game Changers Championship after beating Shopify Rebellion Gold 3-1 in the lower final in São Paulo on Saturday. The win came four days after SR Gold had sent them into the lower bracket with a 2-0, and it sets up a grand final against Gentle Mates GC at Sunday 19:00 CET .\n\nSR Gold took the first map, Sunset, 13-6, and looked like the side that had beaten KRÜ comfortably earlier in the week. KRÜ answered on Summit and Split, and the fourth map went to overtime before they closed out Ascent 17-15.\n\nIt was KRÜ BLAZE’s third win in the lower bracket. Since the loss to SR Gold, they have beaten Team Liquid Brazil, last year’s champions, MIBR GC and now SR Gold without dropping a map until Saturday.\n\nKRÜ BLAZE finished fourth at last year’s championship in Seoul. The lineup is antG, nonee, ponix, tok1o and micaela, coached by bonzitt. One more series win would give them the title.\n\nTheir opponents come in through the upper bracket. Gentle Mates GC swept Team Liquid Brazil in their first match, swept MIBR GC, and edged SR Gold 2-1 in the upper final on Friday, winning the last two maps 13-11 and 13-10.",
     "first_seen": "2026-11-01T10:34:19Z"
   },
@@ -654,7 +676,7 @@
     "published": "2026-10-31T17:19:27Z",
     "game": "cs2",
     "category": "news",
-    "image": "https://pley.gg/app/uploads/2026/10/flag-lv.png",
+    "image": "https://pley.gg/app/uploads/2026/10/flag-br-valorant.png",
     "logo": null,
     "content": "Nine years into his career, the Latvian finally has an MVP medal, and FURIA now have five players with at least one.\n\nMareks “ YEKINDAR ” Gaļinskis is the MVP of PGL Masters Bucharest 2026. HLTV named him the event’s best player after FURIA beat Nemiga 3-2 in Saturday’s grand final, and it is the first MVP award of his career.\n\nThe title is FURIA’s second in a row after the Thunderpick World Championship and is worth $450,000, split evenly between the players and the organisation. We covered the final itself in our grand final report .\n\nYEKINDAR himself played it down after the final. He told James “BanKs” Banks, as HLTV reported :\n\nYou know the term, life tournament? Don’t expect this every tournament.\n\nThe 27-year-old went 82-57 across the five maps of the final with 99.6 ADR and 75.8% KAST. His 1.56 rating was the highest on the server by a distance: Nemiga’s khaN was next at 1.18, and KSCERATO led the rest of FURIA at 1.15.",
     "first_seen": "2026-10-31T19:34:03Z"
@@ -666,8 +688,13 @@
     "published": "2026-10-31T17:19:24Z",
     "game": "cs2",
     "category": "tournament",
-    "image": "https://pley.gg/app/uploads/2026/10/flag-se-valorant.png",
-    "logo": null,
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
     "content": "All 22 places at PGL’s fifth tier one event of 2027 go out as VRS invites, and a missed visa deadline counts as a withdrawal.\n\nPGL has revealed the structure of PGL CS2 #5, a 16-team LAN in the Schengen area from 2 to 12 September 2027, with $1,000,000 in winnings and a further $300,000 in VRS bonuses. The organiser published the details on its news site and on X on Saturday afternoon, while the PGL Masters Bucharest 2026 grand final was being played. No city or venue has been named.\n\nPGL has confirmed the full structure for its 5th Tier 1 Counter-Strike 2 tournament of 2027, to be held in the Schengen area between September 2 and 12, 2027. The tournament will feature a total of $1,300,000 in rewards, including $1,000,000 in prize winnings and $300,000 in VRS… pic.twitter.com/aQ9ZOlNq4Q\n\nEvery team gets there through the Valve Regional Standings. Fourteen teams are invited directly from the Global VRS, starting from No. 1, and the last two places go to the winners of an eight-team EU Closed Qualifier, played online on Fragnet Arena from 24 to 27 May 2027. The eight qualifier teams are also invited, from the Europe VRS, beginning with the highest-ranked European side that has not already been invited to the main event. That makes 22 direct invites in total, with no wildcards and, unlike PGL Bucharest 2027 and the April event in China, no open qualifier.\n\nThe comparison with PGL’s April event in China is clear. That tournament has open qualifiers in Europe and Asia and a separate Asian path to the main event. In September, a team outside the global top 14 can only get in through the European closed qualifier, and only if it is high enough in the Europe VRS to be invited to it.\n\nInvites four months before the event also mean rosters are locked in early. A team can only accept if at least three of its players were on the invited roster on 3 May and play every match of the tournament. PGL’s post does not describe the main event bracket. When PGL unveiled its 2027 and 2028 plans in March, it said its events would keep a format close to the Majors, with Bo3 Swiss stages and eight-team playoffs, Dust2.us reported.",
     "first_seen": "2026-10-31T19:34:03Z"
   },
@@ -2429,23 +2456,6 @@
     },
     "content": "Finally, an accurate model of how the game feels sometimes.",
     "first_seen": "2026-10-29T00:43:02Z"
-  },
-  {
-    "title": "ENVY swept by GamerLegion, falling short of RLG Tesla Cup playoffs",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/79396/envy-swept-by-gamerlegion-falling-short-of-rlg-tesla-cup-playoffs",
-    "published": "2026-10-28T23:06:00Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "ENVY couldn't secure back-to-back wins to reach the semifinals.",
-    "first_seen": "2026-10-28T23:30:10Z"
   },
   {
     "title": "Modern Warfare 4 Season 1 adds terrifying new DMZ map and missions",
