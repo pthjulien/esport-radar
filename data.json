@@ -1,5 +1,22 @@
 [
   {
+    "title": "100 Thieves push past Isurus to keep PGL Major Singapore dreams live",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79526/100-thieves-push-past-isurus-to-keep-pgl-major-singapore-dreams-live",
+    "published": "2026-11-01T00:32:00Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "100 Thieves",
+      "tag": "100T",
+      "color": "#ef4444",
+      "bg": "#3d0606"
+    },
+    "content": "100 Thieve's road to Singapore continues to run through Buenos Aires.",
+    "first_seen": "2026-11-01T00:50:54Z"
+  },
+  {
     "title": "Worlds 2026 : Hanwha Life – Bilibili Gaming en direct",
     "source": "E.SPORT.FR",
     "url": "https://e.sport.fr/live/worlds-2026-hanwha-life-bilibili-gaming-en-direct-776253.shtm",
@@ -2535,23 +2552,6 @@
       "bg": "#382003"
     },
     "content": "More bad news for the NA tournament organizer.",
-    "first_seen": "2026-10-28T00:42:42Z"
-  },
-  {
-    "title": "G2 Esports bids farewell to valyn",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/781008/g2-esports-bids-farewell-to-valyn",
-    "published": "2026-10-27T23:46:58Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "G2 Esports",
-      "tag": "G2",
-      "color": "#ef4444",
-      "bg": "#380606"
-    },
-    "content": "G2's ever-reliable in-game leader departs after three years with the team.",
     "first_seen": "2026-10-28T00:42:42Z"
   },
   {
