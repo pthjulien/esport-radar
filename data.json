@@ -1,5 +1,22 @@
 [
   {
+    "title": "Backstreet Boys unveil Backstreet Gamers team and open GGL tryouts to find players",
+    "source": "Esports.gg",
+    "url": "https://esports.gg/news/backstreet-boys-gaming-league/",
+    "published": "2026-11-02T11:30:49Z",
+    "game": "lol",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "League of Legends Pro",
+      "tag": "LOL",
+      "color": "#c89b3c",
+      "bg": "#2e2104"
+    },
+    "content": "Backstreet’s back, alright? Yup, it turns out that the US pop group are huge esports fans, and they’ve launched an esports team called Backstreet Gamers (BSG) in the Global Gaming League (GGL). They’ve swapped the mic for a keyboard and mouse combo, and are now searching for players to fill the first roster, with women especially invited to sign-up. For the group's fans, it's a direct route from the concert floor to a competitive scene they may never have followed … and probably never saw coming.\n\nAlongside the reveal, the group showed off BSG's logo and mascot.\n\nBSG joins a league built around celebrity owners, which means they’ll fit right at home. They won’t be expected to face the likes of Team Falcon . Instead, they’ll join star-led squads that belong to T-Pain, Ne-Yo, Howie Mandel, Flavor Flav, and GilliedaKing & Wallo26.\n\nGGL was founded by CEO Clinton Sparks with partners T-Pain and Priceline co-founder Jeff Hoffman. Teams compete across several games and genres, and the live-streamed matches aptly mix gameplay with music and celebrity appearances.\n\nThe launch lines up with the debut of Drft Szn on GGL Primes, the league's 24/7 online competition platform. Aspiring players can enter online tournaments there, win prizes, take masterclasses, and build a reputation. Standouts can then chase a spot on one of the celebrity-owned teams.\n\nRelive one of the iconic boy bands’ greatest hits",
+    "first_seen": "2026-11-02T11:51:50Z"
+  },
+  {
     "title": "Meteor and TenTen set to join QT DIG for VCT 2027",
     "source": "Pley.gg",
     "url": "https://pley.gg/valorant/meteor-and-tenten-set-to-join-qt-dig-for-vct-2027/",
@@ -12,7 +29,7 @@
     "first_seen": "2026-11-02T10:57:51Z"
   },
   {
-    "title": "DHL Recruitment Drive at IEM Beijing After 50,000 Esports Applications",
+    "title": "DHL Brings Its Recruitment Drive to IEM Beijing After 50,000 Esports Applications",
     "source": "TalkEsport",
     "url": "https://www.talkesport.com/news/cs2/dhl-esports-hiring-china-iem-beijing/",
     "published": "2026-11-02T10:43:06Z",
@@ -2449,18 +2466,6 @@
     },
     "content": "Valve released a new update for Counter-Strike 2 last night. While the official patch notes focus on adjustments to the silent reload mechanic and minor bug fixes, backend changes discovered by dataminers reveal new casual mode modifiers and files for an unreleased rifle.\n\nThe main gameplay modification in the official changelog addresses how players execute silent reloads. Valve added a setting that allows users to switch the silent reload input between hold and toggle. With the toggle option enabled, players can release the reload key once the silent reload animation begins. If a player needs to abort the quiet reload and transition back to a standard fast reload, tapping the reload key a second time will cancel the action.\n\nAlongside the input adjustment, the update resolves an audio defect. Previously, the initial sound cue of a weapon reload would occasionally play for nearby players regardless of whether a silent reload was initiated. This inconsistency has now been patched.\n\nIn the miscellaneous section of the patch notes, Valve fixed a rendering issue on AMD graphics cards where liquid surfaces appeared completely black. The developers also corrected multiple user interface and audio bugs triggered when rewinding footage during demo playback.\n\nBeyond the official documentation, inspections of the game files by community dataminers Thour and Gabe Follower exposed new weapon assets. According to Thour, files and an inventory icon for a weapon designated as the LAR were added to the client with this patch.\n\nGabe Follower noted that this weapon is a renamed version of the previously leaked M14. The current files indicate that the LAR functions like a Winchester rifle, utilizing a per-bullet reloading mechanic. However, the materials for the weapon are currently stored inside a folder labeled “do_not_ship”, indicating that the firearm is still in development and not ready for public release.",
     "first_seen": "2026-10-29T12:44:28Z"
-  },
-  {
-    "title": "Worlds 2026 : T1 et Invictus Gaming en quarts, KOI et LYON en 2-2",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/resultats/worlds-2026-t1-et-invictus-gaming-en-quarts-koi-et-lyon-en-2-2-776177.shtm",
-    "published": "2026-10-29T09:00:00Z",
-    "game": "lol",
-    "category": "tournament",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/10/86659-1024x683.jpg",
-    "logo": null,
-    "content": "Les champions du monde en titre n’ont pas tremblé. Opposé à Movistar KOI, T1 a survolé son BO3 pour s’imposer 2-0, porté notamment par un Doran impérial sur la toplane. Le Coréen a terminé la première manche avec un impressionnant 6/0/6 sur Ambessa, avant de récidiver sur Gwen (4/0/7). Une démonstration de force qui permet à T1 de rejoindre Dplus KIA et Gen.G en quarts de finale, devenant ainsi la troisième équipe coréenne qualifiée. Faker continue également d’écrire l’histoire, avec une onzième qualification pour les quarts de finale des Worlds, un record absolu dans la compétition.\n\nPour KOI, en revanche, la situation devient préoccupante. Après avoir débuté le Swiss Stage par deux victoires, les Espagnols viennent d’enchaîner deux défaites face à Dplus KIA et T1. Désormais en 2-2, ils devront impérativement remporter leur prochain BO3 pour poursuivre l’aventure. Une dernière chance de rejoindre le top 8 mondial, après avoir échoué à faire tomber deux des favoris coréens.\n\nOn offre tout à T1 pic.twitter.com/kTYgqGInk5\n\nDans l’autre rencontre de la soirée, Invictus Gaming a dû batailler pour venir à bout de LYON (2-1). Les Chinois ont d’abord écrasé la première manche en seulement 25 minutes, avec un sévère 19-4 au tableau d’affichage. Rookie s’est particulièrement illustré sur Aurora (8/1/8), pendant qu’Inspired est complètement passé à côté de sa partie avec Nocturne (1/6/1). Le jungler polonais s’est toutefois repris dans la deuxième manche, cette fois sur Qiyana (4/1/5), bien épaulé par un Dhokla agressif sur Olaf (4/2/3). De quoi permettre à LYON d’égaliser et d’arracher une manche décisive.\n\nMais la manche décisive a rapidement tourné à la démonstration. Dépassé dès la draft, LYON n’a jamais réussi à contenir la botlane chinoise, où JiaQi et Meiko ont fait vivre un véritable enfer à leurs adversaires. Impérial sur Caitlyn (5/1/2), JiaQi a même conclu la rencontre sur un triple kill, scellant la victoire d’Invictus Gaming en seulement 24 minutes. Les Chinois deviennent ainsi les premiers représentants de la LPL à décrocher leur billet pour les quarts de finale de ces Worlds 2026. Une qualification particulière pour TheShy et Rookie, qui se retrouvent ensemble dans le top 8 mondial huit ans après leur sacre historique sous les couleurs d’IG en 2018.\n\nPour LYON, la désillusion est immense. Après avoir parfaitement lancé leur tournoi avec deux victoires consécutives, les Américains ont enchaîné deux revers face à Gen.G et Invictus Gaming. En 2-2, ils se retrouvent dos au mur comme Movistar KOI. Les deux formations occidentales devront impérativement remporter leur dernier BO3 du Swiss Stage pour espérer rejoindre les quarts de finale.",
-    "first_seen": "2026-10-29T09:45:07Z"
   },
   {
     "title": "Modern Warfare 4 Season 1 adds terrifying new DMZ map and missions",
