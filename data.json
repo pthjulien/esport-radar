@@ -1,5 +1,46 @@
 [
   {
+    "title": "LAG cruise to NSTLGA Texas Open victory",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79582/lag-cruise-to-nstlga-texas-open-victory",
+    "published": "2026-11-02T17:53:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "",
+    "first_seen": "2026-11-02T17:55:10Z"
+  },
+  {
+    "title": "BMIC 2026 Winners and Losers: A Silent Dome, a 7-Point Heartbreak and a Korean Masterclass",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/mobile-gaming/bgmi/bmic-2026-winners-and-losers/",
+    "published": "2026-11-02T17:16:23Z",
+    "game": "val",
+    "category": "news",
+    "image": "https://www.talkesport.com/wp-content/uploads/BMIC-2026-Crowd-at-The-Dome-Mumbai-1024x768.webp",
+    "logo": null,
+    "content": "Nongshim RedForce came to Mumbai as favourites and won BMIC 2026 by 82 points . The second BGMI International Cup ran from October 30 to November 1 at The Dome, SVP Indoor Stadium, with 16 teams (six from India, five each from South Korea and Japan) playing 18 matches for a ₹1 crore prize pool and two PUBG Mobile Global Championship (PMGC) 2026 tickets.\n\nKorea won again. DRX took the first BMIC in 2025, NS RedForce took this one, and Korean teams filled the whole podium. Behind them, an Indian side finished seven points short of a PMGC slot, India’s domestic champion never got going, and Japan had a weekend to forget.\n\nI was in the stands at the Dome for all three days, so some of what follows comes from the seats as much as from the scoreboard.\n\nThis was never a title race. NS RedForce led after Day 1 with 72 points, led after Day 2 with 128, and went into Match 18 with a 67-point cushion. They won that one too, a 21-point Chicken Dinner on Miramar.\n\nFrom where I sat, the moment NS RedForce sealed it was the strangest of the weekend. The Dome went almost completely silent: a room full of Indian fans who had spent three days hoping for a different name on that trophy, watching it go to Korea again.\n\nOver 18 matches they scored 233 points, with 148 finishes and five Chicken Dinners, all event highs. DRX were next on 151. After NSR’s 28-point win on Miramar in Match 12 and their 24-point, 14-finish win in Match 14, everyone else was playing for second.",
+    "first_seen": "2026-11-02T17:55:10Z"
+  },
+  {
+    "title": "Zeus refuse de prolonger avec HLE, un transfert XXL se prépare en LCK ?",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/transferts/zeus-refuse-de-prolonger-avec-hle-un-transfert-xxl-se-prepare-en-lck-776338.shtm",
+    "published": "2026-11-02T17:00:00Z",
+    "game": "lol",
+    "category": "news",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/11/i1793403966756265-1024x683.jpeg",
+    "logo": null,
+    "content": "Le mercato s’annonce particulièrement mouvementé en Corée du Sud. Quelques jours après l’élimination surprise de Hanwha Life Esports aux Worlds 2026, Choi « Zeus » Woo-je pourrait bien être l’un des grands acteurs de l’intersaison. Selon les informations du média coréen Inven Global , le toplaner de 22 ans aurait décliné une offre de prolongation formulée par HLE avant le début du championnat du monde. Encore sous contrat jusqu’à la mi-novembre, le joueur souhaiterait désormais tester sa valeur sur le marché, tant sur le plan financier que sportif.\n\nCette incertitude intervient dans un contexte particulièrement délicat pour Hanwha Life. Vainqueur du MSI 2026 et deuxième des playoffs de la LCK, le cinq composé de Zeus, Kanavi, Zeka, Gumayusi et Delight faisait partie des principaux prétendants au titre mondial. Mais son parcours s’est brutalement arrêté dès le Swiss Stage, après des défaites contre Gen.G, Invictus Gaming et Bilibili Gaming. Éliminée par BLG (0-2) lors du dernier round, la formation coréenne doit désormais préparer une saison 2027 qui pourrait s’accompagner de changements importants.\n\nLe départ de Zeus est toutefois loin d’être acté. Malgré l’absence d’accord avant les Worlds, Hanwha Life poursuivrait les négociations avec son joueur vedette. « Nous sommes en discussion permanente avec le joueur » , aurait ainsi indiqué un représentant de l’organisation à nos confrères. Une manière de rappeler que le club espère toujours conserver son toplaner, même si la concurrence pourrait rapidement faire grimper les enchères.\n\nÀ seulement 22 ans, Zeus possède déjà un palmarès qui en fait l’un des profils les plus attractifs de la scène internationale. Son éventuelle arrivée sur le marché des agents libres pourrait déclencher une véritable bataille entre les grandes organisations de LCK. Pour HLE, l’enjeu est donc considérable : parvenir à convaincre le Sud-Coréen de poursuivre l’aventure ou se retrouver contraint de reconstruire sa toplane. Les prochaines semaines devraient permettre d’y voir plus clair, alors que l’ouverture du mercato approche à grands pas.\n\nHLE Zeus rejected Hanwha Life Esports' contract extension offer before Worlds 2026, according to @InvenGlobal He reportedly wants to explore free agency and assess his market value. His contract expires on November 16, HLE are still in discussions with the player pic.twitter.com/FS6f7hhTSF",
+    "first_seen": "2026-11-02T17:55:10Z"
+  },
+  {
     "title": "Fortnite Captain’s Day: All dates and what they mean",
     "source": "Esports.gg",
     "url": "https://esports.gg/news/fortnite/captains-day-fortnite/",
@@ -664,23 +705,6 @@
       "bg": "#3d0a14"
     },
     "content": "Paper Rex releases Jinggg, an OG member of the organization.",
-    "first_seen": "2026-11-01T15:29:21Z"
-  },
-  {
-    "title": "Gladiators Esports misses their PMGC 2026 dream by just 5 points",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/gladiators-esports-misses-their-pmgc-2026-dream-by-just-5-points/",
-    "published": "2026-11-01T14:32:54Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Gladiators Esports have failed to qualify for PMGC 2026. India’s BMSD 2026 runners-up finished 4th at the BGMI International Cup (BMIC) 2026 in Mumbai on 144 points, after Dplus KIA’s Favian eliminated them in Match 18 on Miramar. Only the top two at BMIC earned PUBG Mobile Global Championship places, and Gladiators ended 7 points behind DRX in 2nd.\n\nIt is a hard way to go out. Gladiators won three Chicken Dinners at BMIC 2026, two of them on the final day, and walked into the last match just 3 points off a PMGC spot.\n\nGladiators needed a big final match and got 2 points. Going into Match 18, they sat 3rd on 142 points, 3 behind DRX (145) and 1 ahead of Dplus KIA (141). To take the runner-up slot, they had to outscore DRX by at least 4 points and Dplus KIA by at least 2.\n\nInstead, Gladiators were knocked out early in the Miramar match by Favian’s Dplus KIA. They left with 2 points and finished on 144. DRX added 6 points to close on 151, and Dplus KIA were already on 145 and still alive when Gladiators went out. That pushed Gladiators down to 4th, with no way back into the top two.\n\nThe swing is the story, a single good finish still would have done it. Gladiators had scored 23 and 17 points in their two Day 3 Chicken Dinners, but the last game gave them almost nothing.\n\nFavian of Dplus KIA eliminated Gladiators Esports in Match 18. Dplus KIA came to BMIC 2026 as the Korean Esports League (KEL) 2026 runners-up with Favian, Nolbu, Chpz, Cyxae and Porico. The elimination did double damage, because Dplus KIA were Gladiators’ direct rivals for the second PMGC slot.",
     "first_seen": "2026-11-01T15:29:21Z"
   },
   {
@@ -2414,30 +2438,6 @@
       "bg": "#382003"
     },
     "content": "FaZe’s tumultuous Major qualification saga continues, zigging where they should have zagged against GamerLegion.\n\nAfter being near-qualified to the PGL Singapore Major, FaZe have added another chapter to their story of brawls needed to reach the coveted Major stage.\n\nA semi-final series against GamerLegion at RLG Tesla Cup is all they needed to win to be “>99%” qualified to the upcoming Major, according to HLTV’s simulation, but fell over the course of a three-map series.\n\nGamerLegion, fresh off of replacing their captain, upset FaZe Clan with the help of a superb Fredrik ‘REZ’ Sterner who dropped a server-high 1.44 rating. On the other side, a heroic attempt from captain Russel ‘Twistzz’ Van Dulken was insufficient to virtually secure a Major spot.\n\nAccording to Udknud on X , his estimate show that FaZe need to win their 3rd-4th place decider at RLG Tesla Cup against B8 to feel confident about reaching the Major by the November 2nd cutoff.\n\nGamerLegion took the first map off FaZe after being down in the dumps. GamerLegion went on a 9-1 run after being down 4-8, blowing FaZe out of the water on their pick of Dust2 to win 13-9.",
-    "first_seen": "2026-10-29T15:48:05Z"
-  },
-  {
-    "title": "Evo Brazil 2027 unveils games lineup, resurrects Mortal Kombat 1",
-    "source": "Esports.gg",
-    "url": "https://esports.gg/guides/fgc/evo-brazil-2027-games-dates-location/",
-    "published": "2026-10-29T13:46:50Z",
-    "game": "lol",
-    "category": "news",
-    "image": "https://media.esports.gg/uploads/2026/10/Evo-Brazil-2027-game-linup.webp",
-    "logo": null,
-    "content": "Evo Brazil 2027 takes place in São Paulo from March 26 to March 28.\n\nThe esports event features eight fighting games in its main lineup. Some of them are expected, like Street Fighter 6 and TEKKEN 8 — hands down the most popular titles in the fighting game community (FGC). Beyond that, there are a few surprises, with the return of Mortal Kombat 1 (MK1) arguably being the biggest one.\n\nRead on to discover the essential basics of Evo Brazil 2027.\n\nExpo Center Norte in São Paulo is the venue for Evo Brazil 2027. The event is scheduled to take place from March 26 to March 28.\n\nThe main lineup at Evo Brazil 2027 features eight fighting games.\n\nFull game lineup at Evo Brazil 2027 (Image credit: Evo) MK1 is back from the dead? No 2XKO in sight After active development ceased , Mortal Kombat 1 pretty quickly disappeared from the lineups of most major fighting game events around the world. However, the game remains immensely popular in South America.",
-    "first_seen": "2026-10-29T13:55:53Z"
-  },
-  {
-    "title": "Vitality shrug off Cache ambush to knock NAVI out of Bucharest",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/cs2/vitality-shrug-off-cache-ambush-to-knock-navi-out-of-bucharest/",
-    "published": "2026-10-29T13:38:51Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "https://pley.gg/app/uploads/2026/02/ropz-Vitality-1.jpg",
-    "logo": null,
-    "content": "NAVI took the map Vitality almost never lose, but ZywOo on Mirage and ropz on Dust2 turned the series back around.\n\nTeam Vitality are in the semi-finals of PGL Masters Bucharest 2026 after a 2-1 win over NAVI on Thursday afternoon. NAVI took their own Cache pick 13-5, Vitality answered 13-9 on Mirage and closed the series 13-6 on Dust2. NAVI go home in fifth to eighth place.\n\nIt is Vitality’s third series win over NAVI this month, after a 2-1 at ESL Pro League Season 24 on 4 October and the 2-0 in the Swiss stage on Tuesday . This one started very differently.\n\nKeep chilling @Vitality_apEX TOP 4 SECURED 🫡 pic.twitter.com/49D1PyiwMl\n\nIn the Swiss meeting, NAVI had removed Cache. This time they removed Inferno and picked Cache, the map on which Vitality had lost only once since it returned to the pool, an overtime defeat in August. Vitality did not see it coming. “Maybe we thought they were going to go somewhere else, and they picked Cache,” William “mezii” Merriman said in the post-match interview. “I think overall they had a really good plan.”\n\nFor four rounds it looked like the usual story. Vitality won all four on the CT side, then lost a couple of rounds without building their economy, and never recovered. NAVI won 13 of the last 14 rounds: 7-1 to reach 7-5 at the break, then all six on Vitality’s T side. The analysts on PGL’s desk pointed to rounds five and 15, the same flash and peek at B: it cost ropz his life when Vitality tried it, and won makazze a double kill when NAVI did.",
     "first_seen": "2026-10-29T15:48:05Z"
   },
   {
