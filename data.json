@@ -1,5 +1,22 @@
 [
   {
+    "title": "FaZe fall to FURIA in IEM Beijing opener",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79591/faze-fall-to-furia-in-iem-beijing-opener",
+    "published": "2026-11-02T19:41:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "FURIA Esports",
+      "tag": "FURIA",
+      "color": "#cbd5e1",
+      "bg": "#1e293b"
+    },
+    "content": "A competitive series ultimately went the way of the PGL Masters Bucharest 2026 champions.",
+    "first_seen": "2026-11-02T19:48:03Z"
+  },
+  {
     "title": "m0NESY Says kyousuke Must Stop Overthinking and “Be Himself”",
     "source": "Fragster",
     "url": "https://www.fragster.com/m0nesy-kyousuke-falcons-iem-beijing/",
@@ -293,6 +310,23 @@
     },
     "content": "KRÜ BLAZE are world champions for the first time ever.",
     "first_seen": "2026-11-02T15:54:22Z"
+  },
+  {
+    "title": "KRÜ Blaze Are Your Valorant Game Changers Championship 2026 Winners!",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/valorant/kru-blaze-game-changers-championship-2026/",
+    "published": "2026-11-02T14:28:01Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "KRÜ Blaze have taken down Gentle Mates GC in the grand final of the Valorant Game Changers Championship 2026 to lift the prestigious trophy. With this victory, they became the first LATAM team to win the Championship, and the first ever to win it after dropping out of the upper bracket.\n\nThe grand final clash between KRÜ Blaze and Gentle Mates GC was intense, and it went the full distance, ultimately ending 3-2 in favor of KRÜ Blaze. Here’s everything that went down in the nail-biter series.\n\nTHE MOMENT THEY'VE BEEN WAITING FOR VISA @KRUesports BLAZE ARE YOUR #VCTGameChangers CHAMPIONS! pic.twitter.com/oA5EZRuhZv\n\nDespite getting a head start and grabbing the first three rounds, KRÜ Blaze failed to maintain their momentum as Gentle Mates GC retaliated hard, dominating over the rest of the half and leading 7-5 as the teams swapped sides. Gentle Mates’ domination continued through the second half as well, as they didn’t drop a single round on their T-side and ended the game with a score of 13-5.\n\nOnce again, KRÜ Blaze secured themselves a head start by grabbing the first four rounds back-to-back. Gentle Mates GC tried to fight back, but KRÜ Blaze didn’t want to let go of the driver’s seat this time around as they pushed through the first half of their opposition’s map pick with a solid 8-4 lead. Dropping only a single round in the second half, KRÜ Blaze secured Abyss with a 13-5 score.\n\nMap three ran for an entire hour, though the first half gave little hint of it. KRÜ Blaze dominated the opening rounds, going into the break with a commanding 10-2 lead. Unfortunately for them, Gentle Mates GC also put up an equally strong defence on Sunset, leaving no room for error as they pushed the game into overtime with a 10-2 half of their own. Ultimately, KRÜ Blaze had the last laugh as they secured both overtime rounds to take the third map for themselves.",
+    "first_seen": "2026-11-02T19:48:03Z"
   },
   {
     "title": "IEM Beijing 2026 Day 1 Results and Day 2 Schedule",
@@ -2415,40 +2449,6 @@
     "logo": null,
     "content": "Overwatch has 10 competitive ranks starting at Bronze and ending with Top 500 Challenger. Here are all Overwatch ranks in order plus their SR ranges and how the ranked system works in 2026.\n\nThe competitive ranks in Overwatch show where you stand on the Competitive Play ladder. Players progress through the Bronze, Silver, Gold, Platinum, Emerald, Diamond, Master, Grandmaster, and Champion tiers, and only the best of best are in the Top 500 Challenger rank.\n\nEach Overwatch rank has five divisions going from 5 to 1. Division 5 is the lowest within a rank while Division 1 is the highest. For example, Platinum 5 is the lowest Platinum rank while Platinum 1 is the highest.\n\nWinning Competitive matches increases your rank progress while losing can decrease it. Top 500 Challenger works differently and uses leaderboard placement and Challenger Score instead of the standard division system.\n\nIn Overwatch, your rank is determined by your Hero Skill Rating (HSR). This is more commonly known as just “SR” by players.\n\nWinning Competitive matches increases your SR and rank progress while losing can decrease it. Top 500 Challenger uses Challenger Score and leaderboard placement instead of the standard SR divisions.",
     "first_seen": "2026-10-29T17:42:48Z"
-  },
-  {
-    "title": "CS2 LAR Weapon Leak: Stats, Price, Damage and More",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/cs2/cs2-lar-weapon-leak-stats-price/",
-    "published": "2026-10-29T16:53:29Z",
-    "game": "cs2",
-    "category": "rumor",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "The latest Counter-Strike 2 update was a big one. Not only did it introduce a batch of new content to the game alongside some crucial bug fixes, but it also laid the foundation for an upcoming addition that might just change the game forever.\n\nOn the surface, the October 28 CS2 update adds brand-new “mutators” to the game alongside other improvements like 109 silent reload animations, a silent reload setting, and some fixes. These “mutators” are effectively game modifiers that can alter the classic game modes in a variety of fun ways. With today’s update, the “Big Head” mutator has been added to the Casual mode of CS2.\n\nHowever, hidden deep within the game files, dataminers have managed to uncover something much more interesting that could potentially be added to CS2 in the near future and could have a profound impact on the game’s competitive meta.\n\nRelease Notes for today are up: https://t.co/jOYps2I6e0\n\nShortly after the October 28 CS2 update went live, dataminers managed to dig into the game files to find references to a brand-new weapon that’s not currently in the game.\n\nNew Weapon Lar files are added in CS2 with this update. Here's the icon of the weapon. pic.twitter.com/PXTH7zq081",
-    "first_seen": "2026-10-29T17:42:48Z"
-  },
-  {
-    "title": "cmtry expected to miss Singapore Major for Astralis after FUT’s Bucharest exit",
-    "source": "Fragster",
-    "url": "https://www.fragster.com/cmtry-miss-singapore-major-astralis/",
-    "published": "2026-10-29T16:27:30Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "Nikita “cmtry” Samolotov is expected to miss the PGL Major Singapore 2026 for Astralis after FUT were eliminated from PGL Masters Bucharest in the quarterfinals.\n\nNemiga’s 2-0 victory over FUT has created a complicated Valve Regional Standings situation that leaves cmtry tied to his former team’s eligible Major roster. Unless FUT play another eligible LAN match before the November 2 invitation cutoff, Astralis will likely have to compete in Singapore without their recently signed rifler.\n\nThe issue centers around Valve’s VRS roster rules.\n\nFUT signed Álvaro “SunPayus” García from G2 earlier in October, replacing cmtry in the active lineup.\n\nHowever, a new player must complete five official matches with a team before being fully reflected in its VRS roster.\n\nFUT’s quarterfinal against Nemiga was only SunPayus’ fourth official match since joining the organization.",
-    "first_seen": "2026-10-29T16:47:33Z"
   },
   {
     "title": "Call of Duty: Modern Warfare 4 review – A few maps short of a classic",
