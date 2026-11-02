@@ -2149,6 +2149,23 @@
     "first_seen": "2026-11-01T16:32:17Z"
   },
   {
+    "title": "T1 and Invictus Gaming secure Worlds 2026 quarterfinal spots",
+    "source": "Fragster",
+    "url": "https://www.fragster.com/t1-invictus-gaming-worlds-2026-quarterfinals/",
+    "published": "2026-10-29T16:12:54Z",
+    "game": "lol",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "T1 Esports",
+      "tag": "T1",
+      "color": "#e11d48",
+      "bg": "#3b0511"
+    },
+    "content": "T1 and Invictus Gaming have become the third and fourth teams to qualify for the League of Legends World Championship 2026 quarterfinals.\n\nT1 produced a convincing 2-0 victory over Movistar KOI, while Invictus Gaming survived a stronger challenge from LYON to win their series 2-1.\n\nBoth teams finish their Swiss Stage campaigns with 3-1 records and join Gen.G and Dplus KIA in the knockout stage.\n\nT1 entered the series knowing one victory would secure their place in the quarterfinals.\n\nMovistar KOI started Game 1 competitively and found first blood on Faker, but the European side struggled to convert its early opportunities into a lasting advantage.\n\nT1 gradually took control through stronger side-lane pressure and better teamfight execution.",
+    "first_seen": "2026-11-02T12:55:49Z"
+  },
+  {
     "title": "Revenant XSpark Takes Eight Honours at India Gaming Awards Season 5: Full List of Its Winners",
     "source": "TalkEsport",
     "url": "https://www.talkesport.com/news/esports/revenant-xspark-india-gaming-awards-season-5-eight-honours/",
@@ -2448,23 +2465,6 @@
     "image": "https://pley.gg/app/uploads/2026/02/Aleksib-NAVI-scaled-2.jpg",
     "logo": null,
     "content": "Two of Thursday’s quarter-finals at PGL Masters Bucharest 2026 replay series from the last fortnight, and in both the team that lost has yet to find an answer to the other.\n\nNAVI face Team Vitality at 12:00 CET , two days after a 2-0 defeat to the same opponent in the Swiss stage, and BetBoom Team close the day against FURIA at 18:00 CET , eleven days after losing the Thunderpick World Championship final to them 3-2. The four winners go on to the semi-finals, and the grand final is a Bo5 on Saturday 31 October.\n\nThe first semi-final place is already taken. Nemiga, who came through the open qualifiers to reach Bucharest, beat FUT 2-0. They won their own Nuke pick 13-11 from 3-9 down at the break and then took FUT’s Dust2 13-9, winning seven of the ten rounds after the switch. syph0, on loan from Spirit Academy, led the series with 30-25.\n\nThe event has run ahead of schedule all week, so the later series can start early.\n\nOn Tuesday NAVI led Vitality 9-3 at half-time on Dust2 and did not win another round. The 13-9 followed a 13-2 loss on their own Inferno pick, and it extended a pattern that ran through their group stage: across four maps against BetBoom and Vitality, NAVI won four of 34 rounds played after the switch.\n\nThey reached the playoffs anyway. A 2-1 win over Team Spirit in Wednesday’s last Swiss round knocked Spirit out and was NAVI’s first series win over them since IEM Katowice 2025. makazze and w0nderful had more than 100 kills between them in the series.",
-    "first_seen": "2026-10-29T12:44:28Z"
-  },
-  {
-    "title": "Valve introduces big head mutators in Counter-Strike 2 alongside silent reload adjustments and leaked LAR rifle files",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/cs2/valve-introduces-big-head-mutators-in-counter-strike-2-alongside-silent-reload-adjustments-and-leaked-lar-rifle-files/",
-    "published": "2026-10-29T09:05:08Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "Valve released a new update for Counter-Strike 2 last night. While the official patch notes focus on adjustments to the silent reload mechanic and minor bug fixes, backend changes discovered by dataminers reveal new casual mode modifiers and files for an unreleased rifle.\n\nThe main gameplay modification in the official changelog addresses how players execute silent reloads. Valve added a setting that allows users to switch the silent reload input between hold and toggle. With the toggle option enabled, players can release the reload key once the silent reload animation begins. If a player needs to abort the quiet reload and transition back to a standard fast reload, tapping the reload key a second time will cancel the action.\n\nAlongside the input adjustment, the update resolves an audio defect. Previously, the initial sound cue of a weapon reload would occasionally play for nearby players regardless of whether a silent reload was initiated. This inconsistency has now been patched.\n\nIn the miscellaneous section of the patch notes, Valve fixed a rendering issue on AMD graphics cards where liquid surfaces appeared completely black. The developers also corrected multiple user interface and audio bugs triggered when rewinding footage during demo playback.\n\nBeyond the official documentation, inspections of the game files by community dataminers Thour and Gabe Follower exposed new weapon assets. According to Thour, files and an inventory icon for a weapon designated as the LAR were added to the client with this patch.\n\nGabe Follower noted that this weapon is a renamed version of the previously leaked M14. The current files indicate that the LAR functions like a Winchester rifle, utilizing a per-bullet reloading mechanic. However, the materials for the weapon are currently stored inside a folder labeled “do_not_ship”, indicating that the firearm is still in development and not ready for public release.",
     "first_seen": "2026-10-29T12:44:28Z"
   },
   {
