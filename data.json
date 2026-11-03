@@ -1,5 +1,39 @@
 [
   {
+    "title": "glorinsz steps down from NorthForge",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79598/glorinsz-steps-down-from-northforge",
+    "published": "2026-11-03T00:49:00Z",
+    "game": "cs2",
+    "category": "official",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "The longtime partnership of roca and glorinsz has come to an end.",
+    "first_seen": "2026-11-03T00:51:15Z"
+  },
+  {
+    "title": "100 Thieves withdraw from Austin LAN after qualifying to the Major",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79597/100-thieves-withdraw-from-austin-lan-after-qualifying-to-the-major",
+    "published": "2026-11-02T23:42:00Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "100 Thieves",
+      "tag": "100T",
+      "color": "#ef4444",
+      "bg": "#3d0606"
+    },
+    "content": "Austin LAN unfortunately doesn't fit in 100T's schedule as they get ready for Singapore.",
+    "first_seen": "2026-11-03T00:51:15Z"
+  },
+  {
     "title": "EliGE learned Portuguese to leave Liquid, according to Pimp",
     "source": "Dust2",
     "url": "https://www.dust2.us/news/79596/elige-learned-portuguese-to-leave-liquid-according-to-pimp",
@@ -2442,30 +2476,6 @@
     "logo": null,
     "content": "Overwatch has released “In the Wolf’s Mouth,” an animated short featuring the clash between Doomfist and Vendetta. The video marks the end of Vendetta’s Reign of Talon and hints at a new beginning.\n\nOverwatch’s new Reign of Talon animated short begins with Sojourn, Tracer , and Winston jumping into action against Vendetta’s forces. It also has Brigitte inform them that the EMP bomb is also located beneath Colosseo and has Sojourn call for Baptiste .\n\nSojourn soon dukes it out against Vendetta, who is equipped with new gear like an anima blade thanks to Sh i on and hard light technology thanks to Domina .\n\nOverwatch News Overwatch sets up ultimate endgame battle: Overwatch vs Talon vs Doomfist theory Overatch's new \"Until the End\" comic has an interesting file name. All paths appear to be leading toward an epic...\n\nDoomfist vs. Vendetta in Reign of Talon Vendetta and Sojourn fight until Doomfist, equipped once more thanks to Doctrine , interrupts them, turning the confrontation into Vendetta versus Doomfist instead. Vendetta is eventually defeated when the statue of herself collapses on top of her. She asks Doomfist to kill her, warning that otherwise she’ll come after him, but Doomfist leaves her be and says that he expects nothing less.\n\nTracer and Winston then arrive, but they think twice about facing Doomfist as they see Reaper , Sombra , Widowmaker, and Sigma in the distance. Sojourn also tells them to stand down against Doomfist’s reunited Talon.",
     "first_seen": "2026-10-29T19:45:02Z"
-  },
-  {
-    "title": "Netflix Is Making a Live-Action PUBG Series With Donald Glover",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/pubg/netflix-pubg-series-donald-glover/",
-    "published": "2026-10-29T18:46:39Z",
-    "game": "val",
-    "category": "tournament",
-    "image": "https://www.talkesport.com/wp-content/uploads/PUBG_Netflix_Series-1024x576.webp",
-    "logo": null,
-    "content": "Netflix is developing a live-action series based on PUBG: Battlegrounds, and Donald Glover is attached to write, direct, executive produce and star. Netflix and Krafton, the South Korean company that owns the game, announced the project on 29 October, with TheWrap among the first to carry it. His brother Stephen Glover, a writer on Atlanta, will write and executive produce, Gematsu reported .\n\nBeyond those names, the Netflix PUBG series has no plot, setting, release window or cast yet. What’s on Netflix reports that the scripts haven’t been written, and its own estimate is that the show won’t reach the service before 2028.\n\nNetflix’s announcement, as quoted by Gizmodo, called PUBG “the best-selling game from Krafton that globally popularized the battle royale genre” and “a global cultural icon with seven Guinness World Records”. Krafton said the series is part of a push to “expand the franchise beyond gaming into original entertainment content”.\n\nMost game adaptations that have worked on screen started with people. HBO’s The Last of Us had Joel and Ellie. Arcane, which won the Emmy for outstanding animated program in 2022, had Vi and Jinx. PUBG has nobody. It drops up to 100 players onto an island, they scavenge for weapons while a shrinking circle forces them together, and the last player or squad alive wins. Every character in the show will have to be invented.\n\nThe premise isn’t new either. PUBG grew out of the battle royale mods Brendan Greene made for Arma, and the genre takes its name from the 2000 Japanese film Battle Royale. Strangers fighting to be the last one standing has been on screen many times since, The Hunger Games included, so a straight retelling would land in crowded territory. Prime Video’s Fallout is a better model: it kept the world and the tone of the games and wrote new characters into them.\n\nNothing in Glover’s record suggests a straight action show. Atlanta, the FX series he created, won him two Emmys in 2017, for lead actor in a comedy and for directing a comedy, according to the Television Academy , which lists 14 nominations for him in total. That year Atlanta also won the Golden Globe for best musical or comedy series, and Glover won the Globe for best actor. The show often left its main characters behind for standalone episodes, especially in its third season, and it rarely did what viewers expected.",
-    "first_seen": "2026-10-29T19:45:02Z"
-  },
-  {
-    "title": "LEC : Deft, Diable… NAVI voit très grand pour 2027",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/transferts/lec-deft-diable-navi-voit-tres-grand-pour-2027-776153.shtm",
-    "published": "2026-10-29T17:00:00Z",
-    "game": "lol",
-    "category": "news",
-    "image": "https://e.sport.fr/wp-content/uploads/2022/11/87206-1024x683.jpg",
-    "logo": null,
-    "content": "Natus Vincere compte bien franchir un cap en 2027. Pour sa première saison complète en LEC, la structure ukrainienne a réussi à s’installer parmi les prétendants aux playoffs, terminant notamment à la quatrième place du Summer Split. Un résultat qui lui a permis de décrocher une invitation à la Demacia Cup Global Invitational, sa première compétition internationale. Mais NAVI ne souhaite pas s’arrêter là. Selon les informations de Sheep Esports , l’organisation prépare une profonde reconstruction de son effectif autour d’Enes « Rhilech » Uçan, élu Rookie of the Year en 2026 et sous contrat jusqu’à fin 2027.\n\nPour accompagner son jeune jungler turc, NAVI aurait déjà exploré plusieurs pistes particulièrement ambitieuses, notamment en Corée du Sud. La structure aurait ainsi tenté d’entamer des discussions avec Kim « Deft » Hyuk-kyu, champion du monde 2022, mais le vétéran avait déjà choisi de rejoindre NS RedForce. Autre nom prestigieux envisagé : Nam « Diable » Dae-geun, l’un des jeunes talents les plus prometteurs de la scène coréenne. Là encore, cette piste ne devrait pas aboutir, le joueur se dirigeant vers une autre destination. Deux tentatives infructueuses qui témoignent néanmoins des ambitions de NAVI sur le marché des transferts.\n\nEt les changements pourraient être nombreux, car Maynter, Poby, SamD et Parus ont tous été autorisés à explorer d’autres opportunités. Les deux premiers sont respectivement sous contrat jusqu’en novembre 2026 et fin 2027, tandis que SamD arrivera également en fin de contrat en novembre et que Parus reste lié à NAVI jusqu’en 2027. Aucun départ n’est encore confirmé, mais la structure étudie des alternatives aux quatre postes, avec la volonté d’entourer Rhilech de joueurs plus expérimentés.\n\nSi le recrutement de stars de LCK ou de LPL reste difficilement envisageable sur le plan financier, NAVI disposerait d’un budget conséquent à l’échelle de la LEC. L’organisation prospecte également en Europe et en Amérique du Nord, où elle pourrait attirer plusieurs profils convoités. Sur le banc, Vasilis « TheRock » Voltis conservera son poste d’entraîneur principal et participera activement à la construction de l’effectif, avec de nouveaux assistants attendus pour renforcer le staff.\n\nAucune recrue n’a encore été officialisée, mais le message est clair : après avoir posé les bases de son projet en 2026, NAVI veut désormais se donner les moyens de rivaliser avec les meilleures équipes européennes. Et si les pistes Deft et Diable n’ont pas abouti, elles donnent déjà un aperçu de l’ampleur du chantier engagé pour 2027.\n\n[SOURCES] NAVI to rebuild around Rookie of the Year Rhilech for #LEC 2027 The team is exploring options across Europe, North America & Korea. More details by @LEC_Wooloo https://t.co/LHEeWA6ZuO",
-    "first_seen": "2026-10-29T17:42:48Z"
   },
   {
     "title": "Call of Duty: Modern Warfare 4 review – A few maps short of a classic",
