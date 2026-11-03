@@ -1,5 +1,41 @@
 [
   {
+    "title": "Overwatch Season 5 mid-season patch notes",
+    "source": "Esports.gg",
+    "url": "https://esports.gg/news/overwatch/overwatch-season-5-mid-season-patch-notes/",
+    "published": "2026-11-03T18:30:00Z",
+    "game": "lol",
+    "category": "patch",
+    "image": "https://media.esports.gg/uploads/2026/11/overwatch-season-5-midseason-patch-notes-article-by-esportsgg-screenshot-by-esportsgg-dmon-1024x576.webp",
+    "logo": null,
+    "content": "Blizzard Entertainment just revealed all of the Overwatch Season 5 mid-season patch notes and details. This patch includes the new Taking Reign event, the return of the Excavation Initiative for loot boxes galore, and a slew of hero balance changes.\n\nOf the tank heroes, D.Mon , Junker Queen, Mauga, Ramattra, and Winston have updates in today’s mid-season patch notes. Notably, D.Mon has a bunch of nerfs. Her Propulsors retain their knockback effect, but no longer deal impact damage. This reduces her burst potential. Meanwhile, her Overstrike’s lifesteal is now 125% instead of 150%. According to Blizzard Entertainment, the changes to her Power Barrier also makes it more obvious to the enemy team. Winston also has a minor nerf while Junker Queen, Mauga , and Ramattra receive buffs.\n\nNext, Anran has buffs in terms of her Zhuque Fans and ultimate, however, her Inferno Rush’s knockback is gone and she can no longer hit the same target ultimate times per use. Hanzo , meanwhile, has a notable nerf as his Sonic Disruption perk no longer overrides Sombra’s hacked health packs. His brother also has a nerf to Deflect’s duration. Additionally, Vendetta has Palatine Fang and Whirlwind Dash nerfs.\n\nFinally, Ana has a major nerf to her Biotic Grenade’s explosion damage, Brigitte and Illari have buffs to their healing abilities, Doctrine now has longer cooldowns on Shrouded Momentum and Infuse, Sombra’s EMP can override Hanzo’s hacked health packs, and Jetpack Cat lose 25 health, has 20% slower fuel regeneration despite Frenetic Flight’s improved acceleration.\n\nHere are all of the patch notes for Overwatch’s Stadium game mode as well. Of the tank heroes, only Winston has a nerf to his Tesla Field power. Meanwhile, damage heroes Cassidy , Genji, Sojourn, and Vendetta have some balance changes. No support heroes have adjustments in the Season 5 midcycle.\n\nThe Taking Reign event runs from Nov. 3 to Dec. 7, and it involves completing challenges to earn rewards such as a mythic weapon for Vendetta and a legendary Doomfist skin.",
+    "first_seen": "2026-11-03T18:43:42Z"
+  },
+  {
+    "title": "Fortnite’s ultra-rare Pirate Coin hunt sparks paid carries, AFK tools, and a $10,000 eBay listing",
+    "source": "Dexerto US",
+    "url": "https://www.dexerto.com/fortnite/fortnites-ultra-rare-pirate-coin-hunt-sparks-paid-carries-afk-tools-and-a-10000-ebay-listing-3424507/",
+    "published": "2026-11-03T18:27:27Z",
+    "game": "fortnite",
+    "category": "news",
+    "image": "https://www.dexerto.com/cdn-image/wp-content/uploads/2026/11/03/fortnite-treasure-hunt-pirate-shop.jpg?width=1080&quality=75&format=auto",
+    "logo": null,
+    "content": "Fortnite’s ultra-rare Pirate Shop Access hunt has players sharing exploits, selling tools, and listing accounts for thousands of dollars.",
+    "first_seen": "2026-11-03T18:43:42Z"
+  },
+  {
+    "title": "Elder Scrolls 6 Name and Teaser Officially Revealed by Bethesda",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/the-elder-scrolls-6-sentinel-revealed/",
+    "published": "2026-11-03T18:06:51Z",
+    "game": "val",
+    "category": "news",
+    "image": "https://www.talkesport.com/wp-content/uploads/image-693-1024x462.jpg",
+    "logo": null,
+    "content": "Bethesda has officially revealed the first teaser for its upcoming Elder Scrolls title in over eight years, and it finally puts a name to what is easily one of the most anticipated video games of all time.\n\nThe next Elder Scrolls game is officially called The Elder Scrolls VI: Sentinel , as confirmed by a November 3rd teaser posted on the Elder Scrolls X handle . Alongside revealing the name of Elder Scrolls 6 , the studio also shared a short teaser built around the title reveal, just in time for the 40th anniversary of Bethesda Game Studios .\n\nNo gameplay footage was shown in the teaser.\n\n“The scroll offered only a shimmer, a veil thinly lifted to my eyes. A future lost. A victory undone. Sands of time scattered by fate.” Yazar, Moth Priest to High Queen Iradne of Hammerfell (4E 206) pic.twitter.com/hBLeqYcySL\n\nThe name fits the setting that fans have long been expecting. Bethesda’s original teaser , released in 2018, pointed toward Hammerfell, the desert province on the western edge of Tamriel. Sentinel is one of that region’s most recognizable cities, so the title goes in accordance with the lore.\n\nAdditionally, we can also see a quote from Yazar, Moth Priest of High Queen Iradne of Hammerfell, at the end of the teaser. The quote reads:",
+    "first_seen": "2026-11-03T18:43:42Z"
+  },
+  {
     "title": "Liquid knocked to IEM Beijing lower bracket after 0-2 loss to PARIVISION",
     "source": "Dust2",
     "url": "https://www.dust2.us/news/79614/liquid-knocked-to-iem-beijing-lower-bracket-after-0-2-loss-to-parivision",
@@ -2277,23 +2313,6 @@
     "first_seen": "2026-10-31T13:41:27Z"
   },
   {
-    "title": "Unreal Engine Vulnerability Puts Modded Games at Risk",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/unreal-engine-vulnerability-launchurl/",
-    "published": "2026-10-31T09:36:58Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Unreal Engine ships with a default setting that can let community-made content open and run files on a player’s Windows PC, according to a vulnerability record published on 14 October. The researcher who found it says Epic Games has sent only an automatic reply since he reported it in July, and the hotfix Epic released a week after the disclosure doesn’t mention it.\n\nThe flaw, CVE-2026-14765 , is in LaunchURL, a Blueprint node that games use to open web links. Unreal checks those links against a filter, but the filter’s list of allowed link types is empty by default, and an empty list lets everything through. That includes links that point to files on the player’s own machine. The record covers Unreal Engine versions up to and including 5.8.0, rates the issue 7.7 out of 10, or High, and classes it as an insecure default (CWE-1188).\n\nAny Unreal game that loads Blueprints made by its players, such as custom maps or mods, may be affected. Games that don’t load player-made Blueprints aren’t.\n\nThe advisory from AHA!, the Austin, Texas hacker group that assigned the CVE, explains the chain. On Windows, LaunchURL hands any link that isn’t http or https to the operating system’s “open” command. If the link points to a file, Windows opens it the way it would if you double-clicked it, and for file types such as .exe, .bat, .cmd, .vbs, .msi and .lnk, opening means running.\n\nA malicious map or mod therefore only needs to save a file somewhere on the PC and then point LaunchURL at it. AHA! says the official score understates the risk for games built around user content. The score assumes the attacker needs local access and the player has to do something, but in a game with a Workshop the player’s only action is loading a map.\n\nKhael Kugler, a lead security engineer at Praetorian, traced the problem to the engine while looking at MECCHA CHAMELEON, a $5.99 hide-and-seek game built in Unreal Engine 5 that came out on Steam in June. It was a surprise hit. SteamDB recorded a peak of 340,534 players on 21 June, and the developer said it had sold 20 million copies in just over two months, Game Developer reported . Players share custom maps through the Steam Workshop.",
-    "first_seen": "2026-10-31T10:30:10Z"
-  },
-  {
     "title": "Brawl Talk explains new Ranked changes, reveals three brawlers and Brawlidays 2026",
     "source": "Esports.gg",
     "url": "https://esports.gg/news/mobile/brawl-talk-oct-2026-ranked-brawlidays-more/",
@@ -2303,23 +2322,6 @@
     "image": "https://media.esports.gg/uploads/2026/05/Brawl-Cup-2026-cover-640x360.avif",
     "logo": null,
     "content": "Following the settled schedule of Brawl Talk video releases, Supercell treats us to a new program on Oct. 31. It’s somewhat unusual, giving Brawl Stars players information on three upcoming characters instead of two. The festive Brawldays 2026 season is the reason!\n\nPre-announcement hints point to the main highlights of the upcoming Brawl Talk, including another wave of Ranked mode changes and exciting Christmas 2026 activities in Brawl Stars.\n\nThe new Brawl Talk went live on Oct. 31. You can watch the program right here, as the video is embedded above.\n\nThe Ranked mode in Brawl Stars is going to be revamped again. It’s quite understandable that the developers are trying to perfectly balance this competitive experience.\n\nPlaying Brawl Stars Ranked can be totally frustrating — like when you need to earn another win for your Brawl Pass quest, but you keep losing match after match.\n\nRanked should be accessible for everyone, letting players find challenges suited to their skill level while enjoying their progress up the ladder. On the other hand, Supercell has made it clear that this mode is specifically designed for the most dedicated Brawl Stars competitors.",
-    "first_seen": "2026-10-31T09:33:59Z"
-  },
-  {
-    "title": "NIP Group Raises Its Share Limit to 10 Billion as It Pays for Bitcoin Miners in Stock",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/nip-group-10-billion-shares-bitcoin-miners/",
-    "published": "2026-10-31T09:29:13Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "NIP Group, the Nasdaq-listed company that owns Ninjas in Pyjamas, has raised the number of shares it is allowed to issue fivefold, from 2 billion to 10 billion. Shareholders approved the change at an extraordinary general meeting in Hong Kong on 16 October, according to a filing with the US Securities and Exchange Commission. The filing doesn’t give the vote counts.\n\nIt is the second big increase in 15 months. At a meeting in July 2025, shareholders had already raised the limit from 500 million shares to 2 billion. Over that period, NIP has been paying for Bitcoin mining machines with new stock.\n\nFour days after the vote, NIP disclosed its third deal to buy mining machines with its own stock. Under the purchase agreement , dated 24 September and filed on 20 October, the sellers receive up to 247,091,740 Class A shares for machines with about 4.47 exahashes per second (EH/s) of computing power. At the agreed rate of $6.12 per terahash, the deal is worth about $27.35 million.\n\nThe agreement says NIP had 431,520,600 Class A shares outstanding when it was signed, so the new shares would add about 57% to that count. NIP also has two classes of B shares, and the filings don’t give a current total across all classes. Under the new limit, NIP can issue up to 8.78 billion Class A shares, up from 1.76 billion. Either side can walk away if the deal hasn’t closed by 31 October. Co-chief executive Hicham Chahine told Decrypt this week that the batch has closed, but no filing confirming that had appeared by 30 October.\n\nThe first two batches followed the same pattern. In June 2025 NIP agreed to buy about 3.11 EH/s of machines for about 119.6 million Class A shares, and said they would mine about 60 Bitcoin a month. They produced about 151 Bitcoin from September to November 2025, roughly 50 a month. A second, larger deal in November 2025, for about 8.19 EH/s and up to 314.5 million shares, has been closing in stages, and NIP’s latest filing on it said one closing remained.\n\nNIP says the three purchases take its fleet to about 13.85 EH/s, which it expects to produce about 195 Bitcoin a month at full deployment. Chahine said that “scaling our hashrate to nearly 14 EH/s solidifies our position as a significant player in the Bitcoin mining space”.",
     "first_seen": "2026-10-31T09:33:59Z"
   },
   {
@@ -2405,18 +2407,6 @@
     "logo": null,
     "content": "Overwatch Season 5’s Team Drives event is now live, allowing players to duke it out in groups and increase their competitive rank for in-game rewards. Here’s everything you need to know about Team Drives in Overwatch Season 5.\n\nBetween Oct. 29 and Nov. 3 before the usual Tuesday update, Overwatch players can participate in the Season 5 Team Drives event. This is a competitive event where players must gain Fame to increase their Gladiator Rank. The more Fame and higher Gladiator Rank, the better the rewards.\n\nIn addition to Competitive Points and player card frames, the first 10,000 teams to finish the event get a title that includes their finishing placement.\n\nOverwatch News Overwatch players get New Evolution Doomfist skin for free The New Evolution Doomfist skin represents the tank hero's current appearance in canon.\n\nOverwatch Team Drives Fame explained Winning matches grants a player Fame while losing matches may decrease it depending on the player’s Gladiator Rank. Wins results in 100 Fame if they’re the first victory in a streak. Then, if a player keeps at least one teammate in their next match and wins it, then they’ll get +50% more Fame.\n\n“In addition, each player you stay grouped with beyond the first grants an additional bonus total up to +100% if everyone stays in the group,” according to Blizzard Entertainment. “These bonuses stack, and win streaks can be worth up to 300 Fame.”",
     "first_seen": "2026-10-30T23:29:34Z"
-  },
-  {
-    "title": "Overwatch players get New Evolution Doomfist skin for free",
-    "source": "Esports.gg",
-    "url": "https://esports.gg/news/overwatch/overwatch-players-get-new-evolution-doomfist-skin-for-free/",
-    "published": "2026-10-30T19:05:25Z",
-    "game": "lol",
-    "category": "news",
-    "image": "https://media.esports.gg/uploads/2026/10/overwatch-new-evolution-doomfist-skin-article-by-esportsgg-screenshot-by-esportsgg-evolution-doomfist-skin-1024x576.webp",
-    "logo": null,
-    "content": "Overwatch players can now unlock a brand-new Doomfist skin for free. Here’s how to get it yourself and what the New Evolution Doomfist skin means in the story and lore.\n\nTo obtain the New Evolution Doomfist skin for free in Overwatch, simply launch the game and head over to the hero gallery. Then, select Doomfist and check out his list of skins. New Evolution Doomfist should be there for you to equip. This skin is of the common rarity.\n\nDoomfist received this new skin because he recently duked it out against Vendetta in a Reign of Talon cinematic. Titled “In the Wolf’s Mouth,” the cinematic began with a Vendetta versus Sojourn battle before a Doomfist versus Vendetta one.\n\nThe end of the cinematic saw Doomfist telling Overwatch to take the defeated Vendetta. It also showed how Reaper , Sombra , Widowmaker, and Sigma were on Doomfist’s side for his version of Talon.\n\nThis isn’t Overwatch’s first time bringing a lore-related skin from its comics and other lore-related media into the game. Reaper and Soldier: 76 also received skins representing their younger days as Gabriel Reyes and Jack Morrison. The Casual Hanzo skin in Overwatch was also shown in a Christmas comic.\n\nDokiwatch, one of Overwatch’s alternate universes, also recently had a comic showing off new Dokiwatch skins for Ramattra , Mercy, Lifeweaver, Illari , and Anran before they officially became available in the game itself.",
-    "first_seen": "2026-10-30T19:41:36Z"
   },
   {
     "title": "EGAMES opens signups for a global schools esports event with Rocket League and eFootball",
