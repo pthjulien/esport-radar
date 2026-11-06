@@ -1,5 +1,39 @@
 [
   {
+    "title": "Official: Marsborne promote ben1337 to head coach",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79712/official-marsborne-promote-ben1337-to-head-coach",
+    "published": "2026-11-06T23:19:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "An unsurprising move sees ben1337 take on the mantle of head coach.",
+    "first_seen": "2026-11-06T23:32:31Z"
+  },
+  {
+    "title": "BC.Game CEO claims betting sites will be banned from using names, logos at Singapore Major",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79710/bcgame-ceo-claims-betting-sites-will-be-banned-from-using-names-logos-at-singapore-major",
+    "published": "2026-11-06T23:00:00Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "Five teams would be affected by this ruling.",
+    "first_seen": "2026-11-06T23:32:31Z"
+  },
+  {
     "title": "Breaking: FlyQuest RED part ways with Shakezullah",
     "source": "Dust2",
     "url": "https://www.dust2.us/news/79707/breaking-flyquest-red-part-ways-with-shakezullah",
@@ -2226,40 +2260,6 @@
       "bg": "#3d0a14"
     },
     "content": "Six free agents hit the market ahead of the team's pivot to Korea.",
-    "first_seen": "2026-11-04T05:53:33Z"
-  },
-  {
-    "title": "DetonatioN FocusMe levels roster, SSeeS remains",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/784043/detonation-focusme-levels-roster-ssees-remains",
-    "published": "2026-11-04T05:21:58Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "DetonatioN FocusMe's captain is currently slated to continue his tenure with the organization into a fourth year.",
-    "first_seen": "2026-11-04T05:53:33Z"
-  },
-  {
-    "title": "G2 Esports bids farewell to BABYBAY",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/784045/g2-esports-bids-farewell-to-babybay",
-    "published": "2026-11-04T04:54:40Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "G2 Esports",
-      "tag": "G2",
-      "color": "#ef4444",
-      "bg": "#380606"
-    },
-    "content": "",
     "first_seen": "2026-11-04T05:53:33Z"
   },
   {
