@@ -1,5 +1,22 @@
 [
   {
+    "title": "Astralis to field Anlelele at PGL Major Singapore",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79736/astralis-to-field-anlelele-at-pgl-major-singapore",
+    "published": "2026-11-07T23:13:00Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "Anlelele will play since cmtry is still on FUT's VRS roster.",
+    "first_seen": "2026-11-07T23:30:06Z"
+  },
+  {
     "title": "Valorant 13.10 Leaks Reveal Buffs to Cypher, Killjoy, and Vyse",
     "source": "TalkEsport",
     "url": "https://www.talkesport.com/news/valorant/valorant-13-10-update-sentinel-buffs-leak/",
@@ -2228,23 +2245,6 @@
     "image": "https://www.talkesport.com/wp-content/uploads/faceit-automatic-server-matching-1024x576.webp",
     "logo": null,
     "content": "FACEIT is taking server selection out of players’ hands in Counter-Strike 2 . From Season 10, which launches on December 9, a new automatic server matching system will choose the location for every match based on how each player in the lobby actually connects.\n\nThe feature replaces the server preferences players currently set in their queue settings, and FACEIT CS2 announced it on November 4 as the first of several Season 10 updates. The platform also confirmed that new server locations are on the way, although it has not yet said where they will be.\n\nIntroducing automatic server matching, a new way FACEIT will pick the server for your match by rating each location on your and your party’s live and historical ping, jitter and packet loss. Live December 09 with Season 10. https://t.co/qfvOsqDKau pic.twitter.com/PNjDy0bFuG\n\nAt the heart of the system is a connection score, which measures a player’s ping, jitter and packet loss to every server location. According to FACEIT, the score draws on both live readings and recent matches, so one bad evening on a shaky connection should not decide where a player is sent.\n\nThat matters because ping alone rarely tells the whole story in CS2. Jitter, the swing in ping from one moment to the next, and packet loss, where data simply never arrives, are usually behind the rubber-banding and missing shots that players blame on the server.\n\nBefore each match, FACEIT will rule out any location where someone in the lobby or party has a poor connection. It then picks the server for the whole match from the locations that remain, weighing those connection scores against match balance and queue times. Parties still get a small say, however, because each one can ban a single location before the pick is made.",
-    "first_seen": "2026-11-04T18:50:53Z"
-  },
-  {
-    "title": "Liquid fall just short of IEM Beijing playoffs after narrow loss to BETBOOM",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/79639/liquid-fall-just-short-of-iem-beijing-playoffs-after-narrow-loss-to-betboom",
-    "published": "2026-11-04T17:48:00Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "They got an impressive comeback on map two and had a strong effort on map three.",
     "first_seen": "2026-11-04T18:50:53Z"
   },
   {
