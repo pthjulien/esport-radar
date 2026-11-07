@@ -1,5 +1,39 @@
 [
   {
+    "title": "Iowa Stormboar announce four new players including HLTV Prospect H0NeST",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79713/iowa-stormboar-announce-four-new-players-including-hltv-prospect-h0nest",
+    "published": "2026-11-07T00:00:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "Iowa Stormboar have five on their books for the first time since September.",
+    "first_seen": "2026-11-07T00:51:22Z"
+  },
+  {
+    "title": "FACEIT holds vote to let players decide to keep or remove knife rounds",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79714/faceit-holds-vote-to-let-players-decide-to-keep-or-remove-knife-rounds",
+    "published": "2026-11-06T23:34:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "The change would randomize which side teams start on.",
+    "first_seen": "2026-11-07T00:51:22Z"
+  },
+  {
     "title": "Official: Marsborne promote ben1337 to head coach",
     "source": "Dust2",
     "url": "https://www.dust2.us/news/79712/official-marsborne-promote-ben1337-to-head-coach",
@@ -2227,40 +2261,6 @@
     "logo": null,
     "content": "Aurora won three second-half rounds across the four maps they lost in Beijing, and their coach said a lineup this new has nothing to fall back on when it gets tired.\n\nTwo maps, two 13-5 scorelines: BetBoom Team needed less than two hours on Wednesday morning to end Aurora Gaming ‘s run at IEM Beijing 2026 . The Group B lower bracket semi-final went 13-5 on BetBoom’s Mirage pick and 13-5 on Aurora’s own Cache, and Aurora leave in ninth to 12th place with $25,000.\n\nIEM Beijing 2026'ya BB Team karşısında aldığımız mağlubiyet ile veda ediyoruz. Major için daha çok çalışacağız ve daha güçlü döneceğiz. pic.twitter.com/T1b4N7KWcd\n\nThe result turned a recent head to head around. Aurora had beaten this BetBoom side 2-0 in the quarter-finals of the Cologne Major in June and 2-1 in EPL Season 24 in October. Both maps were 8-4 at the half and 5-1 after it, and Aurora’s four lost maps at the event (3-13, 4-13, 5-13, 5-13) brought them three second-half rounds in total.\n\nAurora had warned that this could happen. Before the match, Jimpphat said the team had not practised at all in Beijing because of the early starts and the jet lag. After it, coach ashhh said the problem goes deeper than one bad morning.\n\nEveryone’s probably equally tired, but we have less to kind of fall back on because we are so new.",
     "first_seen": "2026-11-04T07:01:53Z"
-  },
-  {
-    "title": "Gen.G releases Ash, Efina, and coach peri",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/784057/gen-g-releases-ash-efina-and-coach-peri",
-    "published": "2026-11-04T05:52:27Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Gen.G says goodbye to three members as their contracts expire.",
-    "first_seen": "2026-11-04T05:53:33Z"
-  },
-  {
-    "title": "VARREL parts ways with full roster",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/784050/varrel-parts-ways-with-full-roster",
-    "published": "2026-11-04T05:45:27Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Six free agents hit the market ahead of the team's pivot to Korea.",
-    "first_seen": "2026-11-04T05:53:33Z"
   },
   {
     "title": "Fortnite’s ultra-rare Pirate Coin hunt sparks paid carries, AFK tools, and a $10,000 eBay listing",
