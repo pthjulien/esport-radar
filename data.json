@@ -1,5 +1,39 @@
 [
   {
+    "title": "Richard Lewis: karrigan could transition to coaching “depending on how things are going”",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79739/richard-lewis-karrigan-could-transition-to-coaching-depending-on-how-things-are-going",
+    "published": "2026-11-08T00:32:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "The Danish IGL could step in, with zonic expressing a desire to have more family time.",
+    "first_seen": "2026-11-08T00:51:32Z"
+  },
+  {
+    "title": "Wo0t joins FUT Esports",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/786466/wo0t-joins-fut-esports",
+    "published": "2026-11-07T23:43:46Z",
+    "game": "val",
+    "category": "official",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Wo0t makes his return to Turkish Valorant under FUT.",
+    "first_seen": "2026-11-08T00:51:32Z"
+  },
+  {
     "title": "Astralis to field Anlelele at PGL Major Singapore",
     "source": "Dust2",
     "url": "https://www.dust2.us/news/79736/astralis-to-field-anlelele-at-pgl-major-singapore",
@@ -2221,30 +2255,6 @@
       "bg": "#3d0a14"
     },
     "content": "India’s MOBA Legends scene has hit one of its biggest flashpoints in years. Evil Esports, one of the oldest names in Indian Mobile Legends, pulled out of a showmatch event run by caster Kronos on November 3, after a row over the schedule spiralled into public accusations of favouritism.\n\nThe showmatches were meant to help decide which team would be put forward for India’s eighth slot at the upcoming Google Play event that the community refers to as MLMS. The name goes back to the Moba Legends: 5v5! Master Series , whose first season earlier this year sent champions True Rippers to the Esports World Cup.\n\nInstead of settling anything, Evil’s exit has turned a one-day event into a wider argument about how slots are handed out in Moba Legends: 5v5!, the version of Mobile Legends: Bang Bang played in India.\n\nEvil’s place in that story runs deeper than most. The team was already billed as one of India’s top Mobile Legends squads before the game was banned in the country in June 2020. It was also still active when the title returned as Moba Legends: 5v5! under Vizta Games in April 2024.\n\nKronos, who runs the MOBA Masala Cup and whose channel also covers international events such as the North American Premier Series, put the showmatches together at short notice. Four teams were lined up, namely Yama Esports, Noctura, Daku Sena and Evil Esports, with Daku Sena widely seen as the frontrunners for the slot before Evil asked for a shot at it.\n\nThe trouble started with a clash between two versions of the schedule. A text version showed Evil playing two back-to-back best-of-three series, whereas the tournament graphic had them playing three in a row, and Kronos could not clear it up straight away because he was busy casting.",
-    "first_seen": "2026-11-04T18:50:53Z"
-  },
-  {
-    "title": "Weibo Gaming Reportedly Lands babybay as the Former G2 Star Heads to VCT China for 2027",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/valorant/babybay-weibo-gaming-vct-china-2027/",
-    "published": "2026-11-04T18:18:49Z",
-    "game": "val",
-    "category": "rumor",
-    "image": "https://www.talkesport.com/wp-content/uploads/vct-2027-partnered-teams-weibo-gaming-1024x576.webp",
-    "logo": null,
-    "content": "Andrej “babybay” Francisty is reportedly swapping VCT Americas for a fresh start in China, only weeks after helping G2 Esports reach the final four at Champions Shanghai. According to Sheep Esports, the American is set to join Weibo Gaming for the 2027 VCT China season. That would make him one of the most surprising names on the move in an off-season that has already seen T1 reportedly build around TenZ .\n\nNeither Weibo nor babybay has confirmed the deal, although the pieces around him have moved quickly this week. G2 said goodbye on November 3, thanking him as a “caster, sub, coach, teammate” in its farewell post , and its VALORANT account then listed him and valyn as free agents looking for a team. A day later, the player agency Ocelot Sports welcomed the 21-year-old to its books on X.\n\nThe timing is what makes the move so striking, because babybay is coming off the most successful year of his career. He had retired at the end of 2023 and was working as a VCT Americas caster when G2 called him up in 2025. His job was to cover for Nathan “leaf” Orf in the early weeks of Stage 2, a split the team went on to win.\n\nThat stint earned him a full starting spot for 2026 once Jonah “JonahP” Pulice left for Sentinels, and the results followed straight away. G2 finished second at Americas Kickoff and reached the top four at Masters Santiago, where Paper Rex knocked the team out, before beating Leviatán in the Stage 1 final to claim another Americas title.\n\nMasters London proved a harder trip, however, as G2 lost to Xi Lai Gaming and FUT Esports after skipping straight to the playoffs. The team then went out of the Esports World Cup in the group stage, and a fourth-place finish in Stage 2 left its Champions hopes resting on circuit points.\n\nG2 still squeezed into Champions Shanghai as the fourth Americas seed, and it saved its best form for last. Wins over TYLOO, Team Liquid, 100 Thieves and T1 carried the team into the final four, where a rematch with 100 Thieves ended the run before LOUD beat Team Vitality in the grand final.",
-    "first_seen": "2026-11-04T18:50:53Z"
-  },
-  {
-    "title": "FACEIT Is Scrapping Manual Server Picks in CS2, Automatic Server Matching Arrives",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/cs2/faceit-automatic-server-matching-cs2-season-10/",
-    "published": "2026-11-04T17:51:11Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "https://www.talkesport.com/wp-content/uploads/faceit-automatic-server-matching-1024x576.webp",
-    "logo": null,
-    "content": "FACEIT is taking server selection out of players’ hands in Counter-Strike 2 . From Season 10, which launches on December 9, a new automatic server matching system will choose the location for every match based on how each player in the lobby actually connects.\n\nThe feature replaces the server preferences players currently set in their queue settings, and FACEIT CS2 announced it on November 4 as the first of several Season 10 updates. The platform also confirmed that new server locations are on the way, although it has not yet said where they will be.\n\nIntroducing automatic server matching, a new way FACEIT will pick the server for your match by rating each location on your and your party’s live and historical ping, jitter and packet loss. Live December 09 with Season 10. https://t.co/qfvOsqDKau pic.twitter.com/PNjDy0bFuG\n\nAt the heart of the system is a connection score, which measures a player’s ping, jitter and packet loss to every server location. According to FACEIT, the score draws on both live readings and recent matches, so one bad evening on a shaky connection should not decide where a player is sent.\n\nThat matters because ping alone rarely tells the whole story in CS2. Jitter, the swing in ping from one moment to the next, and packet loss, where data simply never arrives, are usually behind the rubber-banding and missing shots that players blame on the server.\n\nBefore each match, FACEIT will rule out any location where someone in the lobby or party has a poor connection. It then picks the server for the whole match from the locations that remain, weighing those connection scores against match balance and queue times. Parties still get a small say, however, because each one can ban a single location before the pick is made.",
     "first_seen": "2026-11-04T18:50:53Z"
   },
   {
