@@ -1,5 +1,56 @@
 [
   {
+    "title": "Latency, Frame Rate and RNG: Three Different Things Players Often Confuse",
+    "source": "Fragster",
+    "url": "https://www.fragster.com/latency-frame-rate-and-rng-three-different-things-players-often-confuse/",
+    "published": "2026-11-10T13:41:37Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "A shot feels late, the camera stutters and the next attack produces an unexpected damage number. In chat, all three problems might get called lag. That description makes troubleshooting difficult because the symptoms can come from completely different parts of the game.\n\nLatency measures delay. Frame rate describes how frequently frames are produced. Random number generation supplies values that game rules can use to select outcomes. The three can operate during the same action, but they answer different questions.\n\nNetwork latency concerns communication between machines. A game’s ping counter usually reports an estimate of round-trip time to a server. System latency concerns the local path from an input to the resulting change on the display.\n\nThat difference matters when a game feels unresponsive despite a low ping. The delay can involve the input device, game processing, rendering or display. A fast network connection does not remove every step between clicking a mouse and seeing the response.\n\nNVIDIA’s explanation of system and network latency separates these paths and explains why FPS alone cannot measure responsiveness. A useful latency reading must identify the part of the process it measures.\n\nFor troubleshooting, describe the symptom first. Does the view turn late when the mouse moves? Does a server-confirmed interaction arrive late while local movement looks smooth? Those observations provide more information than calling both problems lag.",
+    "first_seen": "2026-11-10T14:05:57Z"
+  },
+  {
+    "title": "Epic Games Claims Ownership of Jazz Jackrabbit Amid Legal Dispute",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/jazz-jackrabbit-rights-cliff-bleszinski-epic-games/",
+    "published": "2026-11-10T13:12:21Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "According to reports, Epic Games has taken full ownership of Jazz Jackrabbit, which has stopped its original creator, Cliff Bleszinski, from reviving the extremely popular classic video game franchise.\n\nThe veteran video game designer, known for his work with the Gears of War franchise, has claimed that this attempt to regain control of the game, Jazz Jackrabbit, has concluded with the creators of Fortnite retaining its complete rights. Following the iconic green rabbit’s introduction to Fortnite as a Sprite in Chapter 7 , Season 4, Bleszinski sought a legal route to regain control over the franchise.\n\nAccording to him, he created the character Jazz Jackrabbit when he was 17, before joining EPIC Games. While EPIC maintains full ownership, the other party was able to produce the original agreement, which could suggest their respective positions on the matter. The absence of paperwork proved instrumental in bringing his legal pursuit to an unsavoury conclusion.\n\nAfter lawyering up Epic claims they fully own the rights to Jazz Jackrabbit and won't back down in spite of not having any paperwork to prove it (nor do I) in spite of the fact that they still pay me from sales of it on GoG (which means paperwork exists somewhere) and are still… pic.twitter.com/tD5UKfKtye\n\nIn his conversation with IGN , Bleszinski revealed that EPIC Games continues to pay him a royalty for the Jazz Jackrabbit sales on GOG, which hints that the original contractual documentation could still exist somewhere. Given that he created the paperwork years ago, he lacks the necessary ammunition to take on EPIC Games through legal channels.\n\nAccepting the difficulties surrounding the situation, Bleszinski has considered a “spiritual successor” to Jazz Jackrabbit as he rules out conventional methods to revive the series. Reviving the essence of the series under a different umbrella is understood by him as the best way forward. The “spiritual successor” will likely carry over the elements of the original character that avoid invoking a legal battle with EPIC.",
+    "first_seen": "2026-11-10T14:05:57Z"
+  },
+  {
+    "title": "ARC Raiders Sales Hit 17 Million as Nexon Expects Flat Revenue",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/arc-raiders-sales-17-million-nexon-revenue/",
+    "published": "2026-11-10T13:01:01Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "ARC Raiders sales have passed 17 million copies, according to Nexon’s Q3 2026 earnings report. The number comes with a caveat. Nexon said the game’s Q3 revenue matched its outlook, and it expects Q4 revenue from the game to stay about the same. Sales have slowed noticeably since the extraction shooter launched on October 30, 2025.\n\nThis article covers the new sales total, the full sales timeline, the revenue outlook, Nexon’s wider results, and the player count changes tied to recent updates.\n\nNexon confirmed the 17 million figure in its Q3 2026 earnings report . Embark Studios, the developer, is a Nexon subsidiary.\n\nThe report says ARC Raiders revenue for Q3 came in line with Nexon’s forecast. For Q4, Nexon expects the game’s revenue to stay broadly flat compared to the previous quarter. In short, the game still sells, but revenue is no longer growing.\n\nThe total looks smaller next to earlier jumps. ARC Raiders reached 16 million copies in May 2026. That means it added about 1 million copies in roughly six months.\n\nThe game started fast. It sold more than 4 million copies in its first 12 days on PC, PS5, and Xbox Series X|S. The table below shows how the total has grown since then.",
+    "first_seen": "2026-11-10T14:05:57Z"
+  },
+  {
     "title": "Claude Fable 5.2 Is Making Whole Games From a Single Prompt, What Does That Mean for Game Development?",
     "source": "TalkEsport",
     "url": "https://www.talkesport.com/editorials/claude-fable-5-2-games-ai-game-development/",
@@ -2054,23 +2105,6 @@
     "first_seen": "2026-11-07T12:41:37Z"
   },
   {
-    "title": "FACEIT Opens Community Vote on Eliminating the CS2 Knife Round",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/cs2/faceit-knife-round-vote-season-10/",
-    "published": "2026-11-07T12:15:01Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "The FACEIT knife round vote lets Counter-Strike 2 players decide whether the pre-match knife fight stays in matchmaking. FACEIT announced the vote on X. Players can choose to keep the knife round or switch to random starting sides. The winning option will be tested at the start of FACEIT Season 10 on December 9. Voting closes on November 12, 2026.\n\nThis article covers how the current system works, what changes if the knife round goes, when the test starts, and which leagues are not affected.\n\nFACEIT has opened a community vote on the knife round in its Counter-Strike 2 matchmaking. Players can vote to keep it or remove it. If FACEIT removes the knife round, the game will pick starting sides at random.\n\nRight now, both teams play a knife round before the match. The winning team chooses whether to start on the T side or the CT side. The team captain makes that choice in chat.\n\nFACEIT announced the vote in a post on X . The option with the most votes will be tested at the start of FACEIT Season 10 on December 9, 2026. Voting closes on November 12, 2026.\n\nAnnouncing the knife round vote, where you decide whether we keep the knife round or pick sides at random. The winning option goes live as a test in Season 10 on December 09. Vote by November 12 https://t.co/WywDprRVmT pic.twitter.com/i5o3DVIDGA",
-    "first_seen": "2026-11-07T12:41:37Z"
-  },
-  {
     "title": "Faker prévient Bilibili Gaming : « C’est dommage pour eux de tomber sur T1 »",
     "source": "E.SPORT.FR",
     "url": "https://e.sport.fr/news/faker-previent-bilibili-gaming-cest-dommage-pour-eux-de-tomber-sur-t1-776594.shtm",
@@ -2080,30 +2114,6 @@
     "image": "https://e.sport.fr/wp-content/uploads/2026/11/faker-quart-4-1-1024x782.jpg",
     "logo": null,
     "content": "T1 est encore au rendez-vous. Triple championne du monde en titre, la formation coréenne a décroché sa dixième qualification consécutive en demi-finale des Worlds en venant à bout de la Karmine Corp. Malgré une troisième manche concédée aux Français, Faker et ses coéquipiers ont globalement maîtrisé leur sujet, notamment grâce aux performances exceptionnelles de Peyz. Interrogé après la rencontre, le légendaire midlaner s’est montré particulièrement satisfait de la prestation collective de son équipe. « Aujourd’hui, avant toute chose, je trouve que notre travail d’équipe lors des teamfights était vraiment au point et je pense que nous avons pu dérouler la partie comme nous l’avions prévu » , a-t-il expliqué en interview.\n\nUn succès qui semble avoir parfaitement lancé T1 dans cette phase finale. Alors qu’il avait regretté le manque d’adversité rencontré durant le Swiss Stage, Faker a cette fois apprécié l’intensité des affrontements face à la KC. « Aujourd’hui, il y a eu beaucoup de teamfights croustillants, donc je suis plutôt content. J’espère que nous aurons un autre affrontement explosif en demi-finale. » Une perspective qui devrait ravir les spectateurs, puisque le prochain adversaire des Coréens n’est autre que Bilibili Gaming, l’un des grands prétendants au titre mondial.\n\nAprès avoir éliminé Hanwha Life lors du Swiss Stage, puis balayé Dplus KIA en quarts de finale (3-0), Bilibili Gaming poursuit son impressionnante campagne contre les représentants de la LCK. La formation chinoise espère désormais ajouter T1 à son tableau de chasse et se rapprocher d’un premier sacre mondial. Mais Faker ne semble pas particulièrement inquiet à l’idée de retrouver les coéquipiers de Knight. Au contraire, le joueur de 30 ans leur a adressé un avertissement aussi respectueux que provocateur.\n\n« BLG a affiché un niveau de jeu solide, de très fortes performances tout au long des Worlds cette année. Je pense qu’ils ont ce qu’il faut pour remporter le tournoi. Mais c’est dommage pour eux de tomber sur T1 en demi-finale » , a lancé Faker avec une confiance déconcertante. Une déclaration qui donne le ton avant ce choc entre deux des meilleures équipes de la planète. Bilibili Gaming rêve de faire tomber un troisième représentant coréen, mais T1 compte bien poursuivre sa quête d’un quatrième titre mondial consécutif. Rendez-vous ce dimanche pour découvrir qui aura le dernier mot.\n\nA WORLDS 2024 FINALS REMATCH: BLG versus T1 in the #Worlds2026 Semifinals! pic.twitter.com/Bo3wxzymeZ",
-    "first_seen": "2026-11-07T12:41:37Z"
-  },
-  {
-    "title": "GodLike Are Back in Valorant: RvK, azys and sayoo Reportedly Lead Roster for VCT 2027 Open Qualifiers",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/valorant/godlike-valorant-roster-vct-2027-open-qualifiers-rvk-azys-sayoo/",
-    "published": "2026-11-07T11:53:42Z",
-    "game": "val",
-    "category": "tournament",
-    "image": "https://www.talkesport.com/wp-content/uploads/vct-2027-open-team-fixed-payouts-1024x576.webp",
-    "logo": null,
-    "content": "GodLike Esports are reportedly preparing a return to Valorant, with a roster of five experienced South Asian Challengers players for the VCT 2027 Kickoff Open Qualifiers. The line-up was leaked on X on 7 November by Valorant community figure Purab Jyoti Kashyap, who listed Rishi “RvK” Vijayakumar, Azis “azys” Nandang, Willy “sayoo” Ivandra, Kasif “Paradox” Sayyed and Norbu “Karam1l” Tsering.\n\nGodLike have not announced the roster, and none of the five players has publicly confirmed the move. If the report is accurate, it would be the Indian organisation’s third attempt at building a Valorant team, after short-lived rosters in 2021 and 2023.\n\n[LEAK] Godlike Valorant Roster for VCT OQ South Asia – RvK – Azys – Sayoo – Paradox – Karam1l An experienced and well-balanced roster on paper, but I was really hoping to see a new face. Thoughts? pic.twitter.com/su7d6OCBT8\n\nKashyap described the group as “an experienced and well-balanced roster on paper”, although he added that he had been hoping to see a new face. That reaction sums up the line-up fairly well. Three of the five players are Indian, while azys is Filipino and sayoo is Indonesian, and all five have spent years on the South Asian Challengers circuit. Several of them have also played together before, which could matter with the Open Qualifiers now only ten days away.\n\nRvK is the most decorated name on the list, with a long record of trophies in the region. He won both 2023 Challengers League South Asia splits with Orangutan, with azys alongside him, before spells at Reckoning Esports, True Rippers and DOT EXE. He then joined S8UL Esports in March 2026, winning the Challengers 2026 South Asia Split 1 Final Stage and finishing second in the Split 2 Playoffs. That runner-up finish came behind sayoo’s No Salary Peek, who won the Split 2 title and later finished fourth at the Challengers 2026 Pacific Last Chance Qualifier.\n\nazys has an even longer list of titles in South Asia, despite spending this year away from the region. After his Orangutan years, he won the Challengers League 2024 South Asia Split 3 Final Stage with Mogo eSports, and then took Challengers 2025 South Asia Stage 2 with Revenant XSpark. He moved to Xipto Esports in Southeast Asia for 2026. The Indonesian sayoo made his name at home, where he won Challengers League Indonesia Split 1 with Bigetron Arctic and reached the 2023 SEA Games final with the national team.",
-    "first_seen": "2026-11-07T12:41:37Z"
-  },
-  {
-    "title": "Wardogs Season 3 Release Date Revealed: New Map, Improved Anti-Cheat, and More",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/wardogs-season-3-release-date/",
-    "published": "2026-11-07T11:46:41Z",
-    "game": "val",
-    "category": "news",
-    "image": "https://www.talkesport.com/wp-content/uploads/image-1117.webp",
-    "logo": null,
-    "content": "Despite starting off strong with an incredibly successful first season, Bulkhead’s all-out tactical warfare title Wardogs didn’t exactly have the smoothest Season 2. From a failed “ Lonestar Needs You ” campaign to changes that effectively killed cross-region gameplay for many players, Season 2 of Wardogs saw the devs make multiple missteps, which was promptly reflected in the game’s player numbers on Steam.\n\nFortunately, the devs behind Wardogs have been pretty vocal about addressing their mistakes. According to a dev log shared by Bulkhead on November 6th, a good portion of the missteps in Season 2 were caused by giving in to player complaints too quickly.\n\n“Both we, the developers, and you, as the players, must hold strong and not speedrun fixes to appease the loudest voices,” the devs said. “The perfect example of what happens if you react too quickly is Season 2.”\n\nAlongside addressing the past mistakes, Bulkhead finally shed light on the release date for Wardogs Season 3 via the dev log, while also confirming some of the changes the game will be getting with its next major update.\n\nBulkhead has confirmed that the highly anticipated Wardogs Season 3 will go live on November 12, 2026 , and it will bring with it a number of crucial changes to the title, aimed at fixing some of the damage caused by the past season.\n\nWARDOGS Season 03 drops November 12th. New map. Longer seasons. Renewed convictions. DEVLOG below. Patch Notes next week. pic.twitter.com/DMqGFsSThA",
     "first_seen": "2026-11-07T12:41:37Z"
   },
   {
