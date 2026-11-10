@@ -1,5 +1,152 @@
 [
   {
+    "title": "Cricket 07 Now Runs in Unreal Engine 5, and the Fan Behind Its Browser Port Wants Playtesters",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/gaming/cricket-07-unreal-engine-5-port-dhaiwat-playtest/",
+    "published": "2026-11-10T09:51:24Z",
+    "game": "val",
+    "category": "news",
+    "image": "https://www.talkesport.com/wp-content/uploads/cricket-07-unreal-engine-5-lords-exhibition-1024x621.webp",
+    "logo": null,
+    "content": "Developer Dhaiwat says he has ported EA Sports Cricket 07, the 2006 PC game, into Unreal Engine 5, keeping its original gameplay while giving it modern graphics. He shared two clips on X at 02:08 UTC on 10 November, writing that he had “somehow managed to port over a 2006 cricket game into unreal engine 5”. He also asked fans to reply if they wanted to help him playtest it, with a warning to “expect a lot of bugs”. By Tuesday morning, the post had passed 30,000 views and drawn more than 100 replies.\n\ni have somehow managed to port over a 2006 cricket game into unreal engine 5 :)) exact same old gameplay with 2026 graphics. crazy how this project was a bare skeleton less than a week ago pls drop a reply below if you want to help me playtest. expect a lot of bugs https://t.co/ISP7rNJIuu pic.twitter.com/cYCqm6rGl8\n\nThe Unreal Engine project has moved remarkably quickly. Dhaiwat said it had been “a bare skeleton less than a week ago”. His first update came at 22:45 UTC on 3 November, when he wrote that he had “just played one ball” of the game in the engine. The new clips show a two-over exhibition between India and England at Lord’s. One frame shows England’s Steve Harmison bowling to an Indian batter with an invented name, a quirk of a game that licensed only four national teams.\n\nDhaiwat has been open about what still holds the visuals back. In a reply to one fan , he said the limit “is still assets”, meaning the player models and kits, and that it “will look 100x better once those are remastered”. He also told another user that this version is “a desktop game for mac and windows”, unlike his earlier browser port. He has not said how playtesters will get access, or whether the Unreal Engine build will be released publicly.\n\nThe Unreal Engine project grew out of a browser port that spread widely in October. On 20 October, Dhaiwat shared a version of Cricket 07 with “an online multiplayer mode” that needed nothing more than a web browser. That post has since passed 2.1 million views and 14,000 likes. On 29 October, he said more than 50,000 recent online matches had been played on it.\n\nHe explained the method when he released the code on 22 October. Rather than running the game in an emulator, he took the original 2006 Windows executable and statically recompiled it into C, then wrote a small layer to stand in for the Windows functions the game expects. The game’s Direct3D 8 graphics calls were translated to WebGPU, and the whole program was compiled to WebAssembly with Emscripten. Online matches run on netplay over WebSockets, with one Cloudflare Durable Object handling each room.",
+    "first_seen": "2026-11-10T09:51:28Z"
+  },
+  {
+    "title": "What It Really Costs to Play GTA 6 in India",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/gta-6/gta-6-real-cost-india-ps5-xbox/",
+    "published": "2026-11-10T09:40:47Z",
+    "game": "val",
+    "category": "news",
+    "image": "https://www.talkesport.com/wp-content/uploads/gta-6-ultimate-edition-cover-art-1024x554.webp",
+    "logo": null,
+    "content": "Getting into GTA 6 in India will cost most players somewhere between ₹55,000 and ₹71,000 on launch day. The most reliable figure is ₹70,989, the price Amazon India listed for a PS5 Slim Digital bundled with the Standard Edition in late October. An Xbox Series S could be cheaper on paper, at around ₹54,500 with the game, but only if you can find one near Microsoft’s list price.\n\nCompare that with BGMI, which millions of Indians play every day for free on a phone they already own. Rockstar’s biggest game in more than a decade arrives on November 19, and for a lot of Indian players, the real question is not when it releases but whether they can afford to get in.\n\nThe game itself costs the same on both platforms. The Standard Edition is ₹5,999 and the Ultimate Edition is ₹7,499 on both the PlayStation Store India and the Xbox Store India . Standard owners can upgrade later for ₹1,500. The console is where the money goes.\n\nPS5 Slim prices and bundles are Amazon India listings from October 28, as reported by Business Today. The PS5 Pro price is from Bajaj Finserv’s EMI listing, updated on October 17, which showed it out of stock. *Xbox prices are estimates. Microsoft raised Xbox prices worldwide from August 1, and the figures above are the estimated new Indian prices reported by The Sunday Guardian, not official Microsoft India pricing. Before that rise, the Series S started at ₹39,990 and the Series X at ₹59,990.\n\nDo not be surprised to see much higher Xbox prices online. Many listings come from third-party sellers. In July, Smartprix tracked a Series S 1TB on Flipkart at ₹73,999, and this month a Series X on Flipkart was listed by a third-party seller at ₹1,07,220. Check who the seller is before you pay.\n\nOne more detail matters for PS5 buyers. GTA 6’s retail box contains a download code, not a disc, so the extra ₹4,995 for the PS5 with a disc drive buys you nothing for GTA 6 at launch.",
+    "first_seen": "2026-11-10T09:51:28Z"
+  },
+  {
+    "title": "All five MOUZ players collect HLTV awards from Beijing",
+    "source": "Pley.gg",
+    "url": "https://pley.gg/cs2/all-five-mouz-players-collect-hltv-awards-from-beijing/",
+    "published": "2026-11-10T09:30:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "torzsi, Spinx, xelex and PR join MVP xertioN among the honours, and MOUZ fill the maximum three places in the IEM Beijing All-Star team.\n\nFour of HLTV’s seven EVPs from IEM Beijing 2026 play for MOUZ . Ádám “ torzsi ” Torzsás, Lotan “ Spinx ” Giladi, Adrian “xelex” Vincze and Oldřich “PR” Nový were named on Monday, a day after Dorian “ xertioN ” Berman took the MVP award for the 3-0 grand final win over The MongolZ . Every player in the winning five now has an individual award from the event.\n\nThe other three EVPs went to NAVI ‘s Ihor “ w0nderful ” Zhdanov and Valeriy “ b1t ” Vakhovskiy from the third-placed side, and to Techno, the only player from the runners-up on the list.\n\nNo MOUZ player leaves Beijing unappreciated as they claim four of the seven latest HLTV EVPs ⭐️ @w0nderfulof @torzsics @SpinxCS2 @b1tcs @Techno4K @PRcsgoo @xelexcs pic.twitter.com/rL5zc2xK0k\n\nHLTV’s reason for the clean sweep is in its own numbers: MOUZ are the first team since 2019 to have all five players above a 1.15 rating at an MVP event, according to HLTV .\n\nThe All-Star team followed later on Monday evening. HLTV picks the best player in each of five roles from positional data, using the same method as for MVPs and EVPs, and no team can have more than three players in it. MOUZ reached that limit.",
+    "first_seen": "2026-11-10T09:51:28Z"
+  },
+  {
+    "title": "ScoutOP Reportedly Gets Four Bigg Boss 20 Punishments After Pushing Yung DSA, Including Eviction at Any Time",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/scoutop-bigg-boss-20-punishment-yung-dsa-fight-gta-6-theory/",
+    "published": "2026-11-10T09:28:07Z",
+    "game": "val",
+    "category": "rumor",
+    "image": "https://www.talkesport.com/wp-content/uploads/gta-6-launch-artwork-scout-bigg-boss-theory-1024x576.webp",
+    "logo": null,
+    "content": "Tanmay Singh, the esports star known as Scout, has reportedly been handed four punishments on Bigg Boss 20 after pushing rapper Yung DSA during a captaincy task. According to fan accounts that follow the show’s 24-hour channel on JioHotstar , Scout will stay nominated for the rest of the season and can no longer become captain. He also loses access to any special powers, and Bigg Boss can evict him at any time.\n\nNeither JioHotstar nor Colors TV had released a promo of the decision by Tuesday, and the episode covering the fight had not yet aired.\n\nBREAKING: SCOUT OP FACES 4 MAJOR PUNISHMENTS AFTER PHYSICAL FIGHT WITH YUNG DSA! Bigg Boss takes STRICT action against Scout following the physical fight with Yung DSA! Here are the 4 major punishments announced: • Nominated for the ENTIRE SEASON! • No more Captaincy…\n\nThe first reports of the fight appeared on X at around 14:30 UTC on Monday, 9 November, which was 8pm in Mumbai, where the show is filmed. The list of punishments followed at about 19:15 UTC, a quarter to one in the morning on 10 November in Mumbai. A post by the fan news account Bigg Boss Tak setting out the four penalties had passed 400,000 views by Tuesday morning. By then, #YungDSA was among the topics trending in India on X.\n\nThe clash came in the second round of a captaincy task, in which Uditi Singh sat on a robot chair while Scout’s side tried to make her cry. According to the live-feed reports, Scout singed the edge of one of her family photographs as part of that effort. Gullu, whose real name is Kushal Tanwar, and Yung DSA kept interrupting and commenting on what he was doing, and the argument turned into an exchange of abuse. Scout then pushed Yung, who reportedly replied “Ab dosti khatam”, Hindi for “the friendship is over”.\n\nBigg Boss stepped in straight away, according to the same reports, sending Scout to the bedroom and Yung to the garden and putting the captaincy task on hold . Scout reportedly admitted to the push and apologised, and Yung appeared to accept the apology later on the live feed. Aamrapali Dubey then questioned his decision and urged him to take a firmer stand against physical violence. Yung is reported to have told Bigg Boss that either Scout should leave the house or he would walk out himself.",
+    "first_seen": "2026-11-10T09:51:28Z"
+  },
+  {
+    "title": "BGMI 4.7 Update Arrives November 18 With Arctic Chronicles Theme Mode",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/mobile-gaming/bgmi/bgmi-4-7-update-arctic-chronicles-release-date/",
+    "published": "2026-11-10T09:21:48Z",
+    "game": "val",
+    "category": "news",
+    "image": "https://www.talkesport.com/wp-content/uploads/Ancient-Ice-Serpent-Awakens-1024x576.webp",
+    "logo": null,
+    "content": "BGMI 4.7 arrives on November 18, 2026, and it brings winter with it. KRAFTON India has confirmed that the update is led by Arctic Chronicles, a Nordic theme mode built around a giant serpent that runs through the map itself. The mode stays in the game until January 18, 2027, and two more winter events follow in December.\n\nThe beast is inspired by Jormungandr, the world serpent of Norse legend. Unlike most theme-mode monsters, it is not just scenery. Its body becomes part of the battleground, and players can take it on directly.\n\nHere is the full schedule KRAFTON India has confirmed so far.\n\nKRAFTON India says more features from 4.7 will be revealed separately in the coming days, so expect this list to grow before launch.\n\nArctic Chronicles centres on what KRAFTON India calls the Ancient Beast. Players can blow a horn to stir its tail, which raises a submerged tower out of the water. The beast’s body also becomes part of the terrain, hiding new areas and supplies and opening up new ways to move around Erangel.\n\nThe most intriguing line in the announcement is about fighting it. KRAFTON India has confirmed that players will be able to take on the beast directly, and that those who do “may find a match plays out very differently”. It has not said what the reward is. That is clearly being saved for the trailer.",
+    "first_seen": "2026-11-10T09:51:28Z"
+  },
+  {
+    "title": "PGL confirm Cluj-Napoca teams with Fnatic in qualifier and NIP absent",
+    "source": "Pley.gg",
+    "url": "https://pley.gg/cs2/pgl-confirm-cluj-napoca-teams-with-fnatic-in-qualifier-and-nip-absent/",
+    "published": "2026-11-10T09:18:39Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "Fnatic",
+      "tag": "FNC",
+      "color": "#fb923c",
+      "bg": "#3d1602"
+    },
+    "content": "All 14 direct invites match Valve’s November standings, but the closed qualifier has Fnatic in the sixth invited place and no Ninjas in Pyjamas.\n\nPGL announced the teams for PGL Cluj-Napoca 2027 on Tuesday 10 November, with 14 invited sides and two places left for a closed qualifier that starts on Sunday 15 November. The 14 are the top 14 of Valve’s 2 November global VRS in the same order, exactly as we projected last Tuesday , so PGL did not have to go further down the list for the main event.\n\n🇷🇴 The best teams in the world are coming to PGL Cluj-Napoca 2027 🔥 @mousesports @TeamVitalityCS @furia @AuroraCS2_GG @Team__Spirit @BetBoomTeam @FalconsEsport @futesportsgg @legacyggbr @nemigagg @G2CSGO @1win_cs2 @natusvincere @AstralisCS 2 more spots will be decided at the… pic.twitter.com/2YFXfbW584\n\nAstralis keep the last invite, eight points ahead of Ninjas in Pyjamas. MOUZ, Vitality, FURIA, Aurora and Spirit are the five highest-ranked teams on the list, which puts each of them in line for the $60,000 bonus PGL pays to the top five that accept. 1win appear under their usual name, although they will play the Singapore Major as THE ONE .\n\nThe qualifier is where the announcement differs from our projection. PGL invite six teams from Valve’s European standings, and five of the six we listed are there. NIP, 13th in Europe on 1,564 points and the first team outside the main event, are not. The sixth invite goes to Fnatic, who are 20th in Europe.\n\nFnatic share their 1,488 points with HOTU, who sit one place higher in Valve’s European table and are also missing from PGL’s list. PGL has not given a reason for either absence. Its rulebook says invites are issued in VRS order, that an invite not accepted by the deadline counts as declined, and that when a roster cannot accept or declines, PGL “proceeds down the same VRS list in order until all announced places are filled”.",
+    "first_seen": "2026-11-10T09:51:28Z"
+  },
+  {
+    "title": "Did Elon Musk Warn Jensen Huang? How His “You’re an Asset” Joke Became the Huang Affair’s Biggest Meme",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/business/elon-musk-youre-an-asset-joke-jensen-huang-meme/",
+    "published": "2026-11-10T09:11:38Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "One of the most shared posts about the Jensen Huang affair this week is not about Huang at all, but a joke Elon Musk made more than a year ago. Viral posts on X now claim that Musk “warned” the Nvidia chief executive with his line “If she’s a 10, you’re an asset”.\n\nA post by the account The Fourth Estate, which said Musk “sent a warning to Jensen”, had passed 914,000 views by Monday. A Chinese-language post sharing screenshots of Musk’s words drew more than 470,000 more, even though none of Musk’s original posts mention Huang or Nvidia.\n\nIf she’s a 10, you’re an asset pic.twitter.com/Fc9twx1BPp\n\nThe joke began on 16 August 2025, when Musk posted: “Overheard at a party, ‘If your gf is a 10, she’s an asset'”. About an hour later, he corrected himself in a follow-up post , writing that he “meant to say ‘if your gf is a 10, you’re an asset’, as in intelligence agency asset”. The point of the gag, in other words, was that the man is the target. Musk then posted the tighter version on 23 October 2025, and that post has now passed 36 million views.\n\nThe line resonates now because of what has been reported about Huang. According to the New York Times, US intelligence concluded that Alice Huang, a former executive at the Singapore chip buyer Megaspeed, had been recruited by China’s Ministry of State Security to gather information on him. Huang admitted on 8 November that he had been unfaithful to his wife, without naming the person, and Beijing has called the spy claims a smear. That overlap is enough for the internet to turn an old dating joke into a supposed prophecy, as our Megaspeed explainer helps to show.\n\nThe word itself has an official echo in this case, which helps explain why the joke stuck. In their 4 November letter , three House committee chairs described Alice Huang as “a publicly reported People’s Republic of China (PRC) intelligence asset”. In intelligence jargon, an asset is a source who provides information, while the person being cultivated is usually called the target. Musk’s corrected joke, which made the boyfriend the asset, does not quite match either role, but viral posts have happily blended the two.",
+    "first_seen": "2026-11-10T09:51:28Z"
+  },
+  {
+    "title": "PGL Cluj-Napoca 2027 Teams Confirmed: Vitality, MOUZ and NAVI Lead 14 Invites as FaZe and PARIVISION Face Qualifier",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/cs2/pgl-cluj-napoca-2027-teams-invites-closed-qualifier/",
+    "published": "2026-11-10T09:07:01Z",
+    "game": "val",
+    "category": "tournament",
+    "image": "https://www.talkesport.com/wp-content/uploads/pgl-cluj-napoca-2027-qualifiers-prize-pool-1024x576.webp",
+    "logo": null,
+    "content": "PGL has named the 14 teams invited to PGL Cluj-Napoca 2027, and defending champions Team Vitality lead a field that also includes MOUZ, Natus Vincere, Spirit, FURIA and Falcons. The list, published on X at 08:05 UTC on 10 November, leaves two places for a closed qualifier that now features FaZe Clan and PARIVISION, last year’s runners-up. The 16-team event runs from 13 to 21 February 2027, with the playoffs at BT Arena in Cluj-Napoca from 19 to 21 February. It offers $1.3 million in total rewards, according to PGL’s official event page .\n\nThe best teams in the world are coming to PGL Cluj-Napoca 2027 @mousesports @TeamVitalityCS @furia @AuroraCS2_GG @Team__Spirit @BetBoomTeam @FalconsEsport @futesportsgg @legacyggbr @nemigagg @G2CSGO @1win_cs2 @natusvincere @AstralisCS 2 more spots will be decided at the… pic.twitter.com/2YFXfbW584\n\nThe 14 direct invites were handed out through Valve’s Regional Standings, the ranking Valve uses to decide places at third-party events, and the full tables are published on Valve’s regional standings repository . Alongside the headline names, the list includes Aurora, BetBoom, FUT, Legacy, Nemiga, G2 Esports, 1win and Astralis. It is a field that reflects how much the top of the rankings has shifted, with Turkey’s FUT and Brazil’s Legacy both earning places ahead of more established organisations. Several familiar names appear on neither list, including Team Liquid and The MongolZ.\n\nEight teams will fight for the last two places. PGL has invited HEROIC, Eternal Fire, FaZe Clan, 100 Thieves, PARIVISION and Fnatic straight into the European Closed Qualifier, where they will be joined by the winners of two Open Qualifiers. The first Open Qualifier runs on 10 and 11 November and the second on 12 and 13 November, as we explained when registration opened last week. The Closed Qualifier then takes place from 15 to 18 November.\n\nPARIVISION’s route back to Romania is the most striking of the lot. The team reached the grand final of PGL Cluj-Napoca 2026 before losing to Vitality, yet it now has to qualify to return to the same event. FaZe Clan faces the same task, at a time when its wider brand is teasing a comeback through its 11.11.26 campaign . HEROIC and Fnatic, both former tier-one regulars, will also need to come through an eight-team bracket in which only the top two advance.\n\nThe invited field is also packed with storylines from the past season. Falcons and FURIA, who met in the IEM Cologne 2026 grand final , are both in, as are Natus Vincere and Team Spirit, two former Major winners. MOUZ return as the 2025 champions, while Astralis and G2 Esports bring two of the best-known brands in the game. Vitality, meanwhile, arrive as defending champions after their dominant run to the 2026 title. That leaves very little room for an easy group, whichever two teams come through the qualifier.",
+    "first_seen": "2026-11-10T09:51:28Z"
+  },
+  {
+    "title": "Jensen Huang’s Children Hold Key Roles in Nvidia’s Robotics and Omniverse Units, Earned $2.5 Million Last Year",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/business/jensen-huang-children-nvidia-roles-pay-madison-spencer/",
+    "published": "2026-11-10T08:40:47Z",
+    "game": "val",
+    "category": "news",
+    "image": "https://www.talkesport.com/wp-content/uploads/nvidia-robot-learning-simulation-1024x544.webp",
+    "logo": null,
+    "content": "Jensen Huang’s two children work in some of the most strategically important parts of Nvidia, and the company’s own filings show they were paid about $2.5 million between them in its last financial year. The Wall Street Journal reported on 9 November that Huang has placed the two children he has with his wife of more than 40 years “in high-priority business units”. Its story, headlined “Jensen Huang Apologized to Nvidia for His Infidelity. His Kids Are On Staff.”, appeared a day after Huang told employees he had been unfaithful. Prediction-market and finance accounts then pushed the claim across X as “BREAKING” news, often without the detail behind it.\n\nJensen Huang has put the two children he has with his wife of more than 40 years in high-priority business units at Nvidia https://t.co/7FnVWS6lsJ pic.twitter.com/qJYPzuqSVr\n\nNone of this is new information in itself, because Nvidia already discloses the employment and pay of Madison and Spencer Huang in its annual proxy filings. What has changed this week is the context around them. Huang’s admission, and the board’s independent investigation into reports that he was the target of a foreign intelligence effort, have put every part of his position at Nvidia under a sharper light.\n\nMadison Huang is director of product and technical marketing for Nvidia Omniverse, according to her official Nvidia developer profile . The same profile says she also covers Nvidia’s Isaac and GR00T robotics platforms, and handles positioning and go-to-market work across industrial digitalisation and physical AI. She previously worked in marketing at the luxury group LVMH and holds an MBA from London Business School. According to earlier profiles, she trained as a chef before joining Nvidia’s Omniverse team in 2020.\n\nSpencer Huang is listed as a product manager on his Nvidia blog author page , where his name sits on company announcements about humanoid robots. Those include the Isaac GR00T Blueprint for humanoid robotics, published on 6 January 2025. Reports say he joined in 2022 to work on Isaac Sim’s cloud products, after running the R&D Cocktail Lab in Taipei for several years and completing an MBA at NYU. Robotics and simulation are areas Huang has repeatedly singled out as Nvidia’s next big opportunity, usually under the banner of physical AI.\n\nNvidia’s 2026 proxy statement addresses the arrangement directly. It confirms that “the daughter and son of Jen-Hsun Huang” are employed by the company, and states that neither lives with him, holds an executive officer role or reports directly to him. Their pay, the filing says, was set under Nvidia’s normal compensation practices without any involvement from Huang himself. Total compensation for fiscal 2026 was about $1,232,000 for his daughter and $1,320,000 for his son.",
+    "first_seen": "2026-11-10T09:51:28Z"
+  },
+  {
+    "title": "Trump Says FBI Is Looking Into Jensen Huang’s Affair, He Hired A Crisis PR Firm A Year Earlier",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/business/trump-fbi-jensen-huang-affair-heller-crisis-pr-firm/",
+    "published": "2026-11-10T08:25:32Z",
+    "game": "val",
+    "category": "news",
+    "image": "https://www.talkesport.com/wp-content/uploads/nvidia-headquarters-santa-clara-huang-fbi-1024x627.webp",
+    "logo": null,
+    "content": "Donald Trump said on Monday that the FBI is “looking into” matters connected to Jensen Huang’s affair with a woman US intelligence has linked to China. He added that the Nvidia chief executive had personally assured him that he did not know she was a spy. “He said, ‘I had no idea that she was a spy,’ and I really believe him,” Trump told reporters at a White House news conference on 9 November. On the same day, WIRED reported that Huang had been working with Heller, a New York crisis communications firm known for handling sex scandals, since as early as October 2025.\n\nThe two developments landed on a bruising day for Nvidia, whose shares fell 4.27% to close at $178.67, according to Al Jazeera . Huang admitted on 8 November that he had been “unfaithful” to his wife, and the company’s board has opened an independent investigation. Our Megaspeed explainer sets out how a Chinese gaming company’s offshoot came to sit at the centre of the case.\n\nTrump kept his comments short but notably supportive. “We’ll look into it,” he said, adding that he knew “the FBI is looking into it in terms of something else” and that “I think he will be in good shape”. He did not explain what “something else” referred to, and the FBI has not commented publicly on any inquiry. According to CNBC , Trump said Huang told him on Monday itself that he had no idea about the woman’s alleged intelligence role.\n\nThe president’s account of when he learned about the concerns is harder to square with earlier reporting. Trump said he first heard about them “not too long ago”, although he also said he had been “reading a little bit about it over a period of time”. The New York Times reported in late October, however, that Trump had been briefed on the intelligence findings about a year earlier. He has defended Huang since the first reports, saying on 31 October that “we’re going to check it out very closely” while calling him “very above board”.\n\nWIRED’s report, by Lauren Goode, cites two sources who say Heller has handled Huang’s behind-the-scenes communications since late 2025. According to the outlet, Nvidia told its internal communications team in late October 2025 to include the firm on all press inquiries concerning Huang, whether personal or professional. That instruction came shortly after the New York Times first reported on Megaspeed’s Nvidia purchases. Heller’s team also communicated frequently with Huang and his daughter Madison, a product marketing director at Nvidia.\n\nThe firm was initially thought to be handling private matters, such as the family’s philanthropy, and it is not clear whether its early work involved the affair. Heller was founded by Risa Heller, a former press secretary to Senator Chuck Schumer, whose reported clients have included Anthony Weiner during his 2011 sexting scandal, chef Mario Batali and writer Jeffrey Toobin. A Heller representative referred WIRED to Nvidia, which did not respond to the outlet’s request for comment. Hiring a crisis adviser is not evidence of wrongdoing in itself, although the timing adds to questions about how long Huang’s circle expected scrutiny.",
+    "first_seen": "2026-11-10T09:51:28Z"
+  },
+  {
+    "title": "Vidit Gujrathi Joins Team Apex Gaming as TAG Confirms Its First Chess Signing",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/chess/vidit-gujrathi-joins-team-apex-gaming-tag-chess/",
+    "published": "2026-11-10T08:17:56Z",
+    "game": "val",
+    "category": "official",
+    "image": "https://www.talkesport.com/wp-content/uploads/vidit-gujrathi-tata-steel-chess-tag-1002x1024.webp",
+    "logo": null,
+    "content": "Team Apex Gaming has signed Vidit Gujrathi, confirming the grandmaster as the organisation’s first chess player two days after a teaser that kept his face hidden. TAG posted on X at 12:36 UTC on 9 November that “every great game needs a Grandmaster”, and welcomed Vidit Gujrathi by name. Vidit replied about three hours later, writing “Happy to be part of @Team_ApexGaming” and “Let’s kill it”. By the following morning, the announcement had passed 43,000 views, while his reply had drawn more than 18,000.\n\nEvery great game needs a Grandmaster. Ours just arrived. Welcome, Vidit Gujrathi. #TAGonTOP pic.twitter.com/T4gL7ZiVcV\n\nThe signing confirms what the first teaser had strongly suggested. As we reported on 7 November, in our breakdown of TAG’s “national treasure” video , the clip named nobody but fitted Vidit more closely than any other grandmaster. Neither TAG nor Vidit has yet said what his role will be, or whether he will compete under the TAG banner, create content for it, or both. The organisation has not disclosed the length or terms of the deal either.\n\nThe 91-second announcement video follows the style of that teaser, with a dark chessboard scene and the logo of Kick , TAG’s live-streaming sponsor, in the corner. One Hindi subtitle line, “Aankhon pe patti hai, fir bhi itna sukoon”, translates roughly as “a blindfold over the eyes, and still so calm”. It appears to nod to blindfold chess, the format in which players hold the whole position in their heads. Neither post revealed when Vidit will first appear on TAG’s channels.\n\nOn the board, Vidit brings one of the strongest records of his generation. He became a grandmaster in 2013, won the FIDE Grand Swiss in 2023 and beat Hikaru Nakamura in both of their games at the 2024 Candidates Tournament in Toronto. He has also won two Olympiad gold medals with India, the second in Budapest in 2024, at the team event run by FIDE , the sport’s world governing body. His reach goes well beyond results, however, with more than 140,000 followers on X and a large audience for his streams and YouTube videos.\n\nHappy to be part of @Team_ApexGaming Let’s kill it https://t.co/qtFaAsrSEA",
+    "first_seen": "2026-11-10T09:51:28Z"
+  },
+  {
     "title": "Krafton Q3 2026 Results: Revenue Rises 11.6%, but Operating Profit Falls 35.5% and FX Losses Push It Into the Red",
     "source": "TalkEsport",
     "url": "https://www.talkesport.com/business/krafton-q3-2026-earnings-results-pubg-subnautica-2/",
@@ -2020,108 +2167,6 @@
     "first_seen": "2026-11-07T00:51:22Z"
   },
   {
-    "title": "FACEIT holds vote to let players decide to keep or remove knife rounds",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/79714/faceit-holds-vote-to-let-players-decide-to-keep-or-remove-knife-rounds",
-    "published": "2026-11-06T23:34:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "The change would randomize which side teams start on.",
-    "first_seen": "2026-11-07T00:51:22Z"
-  },
-  {
-    "title": "Official: Marsborne promote ben1337 to head coach",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/79712/official-marsborne-promote-ben1337-to-head-coach",
-    "published": "2026-11-06T23:19:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "An unsurprising move sees ben1337 take on the mantle of head coach.",
-    "first_seen": "2026-11-06T23:32:31Z"
-  },
-  {
-    "title": "BC.Game CEO claims betting sites will be banned from using names, logos at Singapore Major",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/79710/bcgame-ceo-claims-betting-sites-will-be-banned-from-using-names-logos-at-singapore-major",
-    "published": "2026-11-06T23:00:00Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "Five teams would be affected by this ruling.",
-    "first_seen": "2026-11-06T23:32:31Z"
-  },
-  {
-    "title": "Breaking: FlyQuest RED part ways with Shakezullah",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/79707/breaking-flyquest-red-part-ways-with-shakezullah",
-    "published": "2026-11-06T21:17:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "Could a return to the server be on the cards for the former Bad News Bears player?",
-    "first_seen": "2026-11-06T21:35:57Z"
-  },
-  {
-    "title": "FACEIT testing automatic server matching in Season 10",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/79697/faceit-testing-automatic-server-matching-in-season-10",
-    "published": "2026-11-06T20:47:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "",
-    "first_seen": "2026-11-06T21:35:57Z"
-  },
-  {
-    "title": "Metziport and ENVY claim spots at ROG Journey Winter",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/79696/metziport-and-envy-claim-spots-at-rog-journey-winter",
-    "published": "2026-11-06T20:20:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "",
-    "first_seen": "2026-11-06T20:41:43Z"
-  },
-  {
     "title": "BIG débarque en RLCS",
     "source": "E.SPORT.FR",
     "url": "https://e.sport.fr/news/big-debarque-en-rlcs-776530.shtm",
@@ -2132,66 +2177,6 @@
     "logo": null,
     "content": "Le mercato continue de s’agiter sur Rocket League, et cette fois, c’est un nouveau géant de l’esport allemand qui pourrait entrer dans la danse. Selon les informations de Sheep Esports , BIG serait sur le point de recruter Damian « Tox » Schäfer, Matheo « osaft » Hapke et Nico « Nico » Majgren, trois joueurs libres ayant annoncé leur association le 23 octobre dernier. Une arrivée historique pour l’organisation berlinoise, fondée en 2017 et particulièrement connue pour ses équipes sur Counter-Strike et League of Legends. BIG a également connu le succès sur Fortnite, avec notamment un sacre à l’Esports World Cup, et souhaiterait désormais étendre ses activités à Rocket League.\n\nPour ses premiers pas sur la scène compétitive, BIG miserait sur un mélange d’expérience et de jeunesse. Présent en RLCS depuis 2020, Tox apporterait son vécu au groupe, après avoir notamment terminé deuxième des qualifications européennes de la dernière chance pour les Worlds 2026 avec Volare. À ses côtés, le Danois Nico, âgé de 17 ans, sort d’une saison encourageante chez NOVO Esports, tandis que son homologue allemand osaft, également âgé de 17 ans, s’est illustré sur la scène du 1v1. Demi-finaliste de l’European 1v1 Open en 2026, ce dernier avait notamment remporté le championnat d’Europe FIFAe avec Tox sous les couleurs de l’Allemagne. Le trio serait accompagné de l’entraîneur norvégien Kasper « Kasper » Sjølstad, ancien membre de WYLDE.\n\nCette nouvelle formation devrait rapidement avoir l’occasion de se mesurer aux meilleures équipes européennes. Le trio figure parmi les candidats les plus sérieux aux qualifications ouvertes du London Club Kick-Off, aux côtés notamment de Geekay Esports et d’Ikkaku, la nouvelle équipe formée par Rezears, yujin et le Français ExoTiiK. Un premier rendez-vous important pour BIG, qui ne fait pas partie des 20 organisations invitées à intégrer le programme de partenariat des RLCS 2027.\n\nL’organisation allemande aurait d’ailleurs dû faire face à une concurrence importante pour s’attacher les services du trio. Toujours selon la même source, l’Eintracht Francfort, également présent sur League of Legends, aurait tenté sa chance, tout comme Five Fears et NOVO Esports. BIG semble finalement avoir pris l’avantage dans ce dossier, même si aucune signature n’a encore été officialisée. Avec un vétéran expérimenté et deux jeunes talents prometteurs, la structure berlinoise pourrait rapidement se faire une place parmi les outsiders de la scène européenne.\n\n[SOURCES] BIG are expected to sign Tox , Nico , osaft , and head coach Kasper for the #RLCS Club Kick-Off Qualifiers. The German organization is entering Rocket League Esports for the first time. @Michelin | @i_Eros_ reporting. https://t.co/YyoSnuTJ0X",
     "first_seen": "2026-11-06T18:46:03Z"
-  },
-  {
-    "title": "Singapore Regulators crackdown on PGL Major over gambling concerns",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/cs2/pgl-major-singapore-gambling-team-names-bc-game-betboom-1win-parivision/",
-    "published": "2026-11-06T17:58:30Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "https://www.talkesport.com/wp-content/uploads/singapore-indoor-stadium-pgl-major-1024x768.webp",
-    "logo": null,
-    "content": "BC.Game will not be allowed to use its own name or logo at the PGL Major Singapore, after the crypto casino’s chief executive confirmed that Singapore’s gambling rules apply to its Counter-Strike 2 team. “Yes we are not allowed to use our logo and name due to regulations in Singapore, it’s not Valve,” Ali “Ako” Muhanned wrote on X on 6 November. He added that he had known about the restriction for a long time, and that the team had already submitted an alternative that was still waiting for approval. His post came a day after the Russian Telegram channel Esports Base reported that BC.Game, BetBoom Team, 1win and PARIVISION would all have to play the PGL Major Singapore under different names.\n\nAccording to that report, logos, stickers and team names that include or point to a gambling, casino or bookmaker brand are barred at the event unless the brand holds a valid Singapore licence. The four organisations were reportedly given about a day to propose neutral alternatives. Neither PGL nor Valve has published a statement on the requirements, and BetBoom, 1win and PARIVISION have not said which names they will use. BetBoom Team’s general director, Artyom “Pioneer” Savelyev, did write in his Telegram channel that “BoomBoys will not play at the Major in Singapore”. That rules out the name the club used at Dota 2’s biggest event this year.\n\nThe rules behind the change come from Singapore’s Gambling Control Act 2022, which is enforced by the Gambling Regulatory Authority (GRA). Section 85 of the act makes it an offence to advertise any unlawful gambling, which covers gambling services that are not licensed or exempted in Singapore. Crucially for esports teams, the section treats sponsorship and brand-sharing deals as advertising when a name is displayed in connection with an event and gambling is the main activity carried out under that name. On that reading, a team named after a casino or bookmaker brand would appear to fall squarely within the definition, whatever the players themselves do on the server.\n\nThe penalties are serious enough to make any event organiser cautious. A conviction under section 85 carries a fine of up to S$20,000, and the offence is one of strict liability, so prosecutors do not need to prove that anyone meant to advertise gambling. Under section 87 , the GRA can also order advertisers to remove the material and publish a corrective advertisement. Ignoring such an order can lead to a fine of up to S$50,000, two years in prison, or both. The authority already works to block unlicensed online gambling sites and payments, and it asks the public to report unlawful gambling advertisements and promotions.\n\nSingapore has made room for gambling sponsors before, but only through a formal legal exemption. In October 2025, the Ministry of Home Affairs issued an exemption order for the Formula 1 Singapore Grand Prix , which runs until the end of 2028. It lets sponsors that provide unauthorised gambling services show their names and logos on racing team attire, cars and even team names, provided there is no invitation to gamble. That order names only the Grand Prix, which means it offers nothing to the 32 teams arriving for the Major.\n\nFor three of the four teams, playing under another name at a Valve event is nothing new. At The International 2026 in Shanghai in August, BetBoom Team played as BoomBoys, PARIVISION as Team Vision and 1win as Iron Wing. Valve never explained the changes publicly, although Savelyev later said the club had to rename because of restrictions on bookmaker branding at the event. Team Vision went all the way to the grand final, where they lost 3-2 to Team Spirit, so the new name did little to slow them down.",
-    "first_seen": "2026-11-06T18:46:03Z"
-  },
-  {
-    "title": "GTA 6 Mural in Brooklyn Ruined with Graffiti two weeks before launch",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/gta-6/gta-6-mural-brooklyn-graffiti-jelous/",
-    "published": "2026-11-06T17:46:39Z",
-    "game": "val",
-    "category": "news",
-    "image": "https://www.talkesport.com/wp-content/uploads/gta_mural_brooklyn-1024x1024.webp",
-    "logo": null,
-    "content": "A hand-painted Grand Theft Auto VI mural in Brooklyn, New York, has been tagged with graffiti less than a month after it was finished, and just over two weeks before the game comes out. The wall at the corner of Wythe Avenue and North 11th Street in Williamsburg shows Jason and Lucia, the game’s two leads, in the same artwork that Rockstar Games uses for its launch trailer.\n\nLate on Tuesday night, according to reports, someone sprayed a large black-and-white “JELOUS” tag across the bottom of the piece. Photos of the tagged wall were then shared on Instagram by an account called jelous.ktd, and many GTA fans have not taken it well.\n\nThe tag runs across the lower half of the mural, over the legs of both characters and the front of the red car that Lucia is sitting on. The Grand Theft Auto logo, the faces of both characters and the Rockstar logo in the corner are all still visible. As of Friday, neither Rockstar nor Colossal Media, the New York company that painted the wall, had commented publicly on the damage. There has also been no report that the mural has been cleaned or repainted since the tag appeared.\n\nThe mural is the work of Colossal Media , a company that specialises in hand-painted outdoor advertising and is based nearby on North 10th Street. Colossal confirmed the job in an Instagram post on 3 October , saying it had painted its first ever campaign for Rockstar 22 years ago. “Two decades later, we’re back at it for GTA 6,” the company wrote, describing the jump from San Andreas in 2004 to GTA VI in 2026 as a tradition that continues. That post has since collected more than 200,000 likes on Instagram.\n\nThe corner itself has some Rockstar history, having carried a Grand Theft Auto V mural back in 2013, according to the fan site GTABoom. Colossal’s painters spent about seven days on the new piece, which was finished around 10 October after fans had tracked its progress through photos posted on Reddit. One freelance muralist, who said in Reddit comments that he was working on the wall for Colossal, described it as a temporary piece with a lifespan of around a month. TalkEsport has not been able to verify that account, and neither Rockstar nor Colossal has said how long the mural will stay up.\n\nThe reaction online was quick, and most of it was hostile. Under the Instagram post showing the tag, commenters wrote “Ruined” and “Not cool”, according to Kotaku, even as the photo became one of the account’s most popular posts. TheGamer later reported that comments on the post had been switched off after the criticism kept coming. On the GTA subreddit, a user who said they were an Italian graffiti artist called it “pretty disrespectful, even by graffiti standards”.",
-    "first_seen": "2026-11-06T18:46:03Z"
-  },
-  {
-    "title": "FUT Esports Sign Wo0t From Team Heretics, With batujnax and hezacoil Reportedly Next for VCT 2027",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/valorant/fut-esports-wo0t-batujnax-hezacoil-vct-2027/",
-    "published": "2026-11-06T17:42:24Z",
-    "game": "val",
-    "category": "news",
-    "image": "https://www.talkesport.com/wp-content/uploads/batujnax-fire-flux-vct-emea-stage-2-1024x683.webp",
-    "logo": null,
-    "content": "FUT Esports have started rebuilding their Valorant team for VCT 2027, and the first name is a big one. The Turkish organisation announced on 6 November that Mert “ Wo0t ” Alkan is “officially joining our VCT roster”, adding that the move is still pending Riot approval. Within minutes of that announcement, Sheep Esports reported that Fire Flux Esports initiator Mehmet Batu “batujnax” Özaslan has reached a verbal agreement to join him. That followed an earlier report from the same outlet that his Fire Flux teammate Berkay “hezacoil” Doğar is heading the same way.\n\nA NEW ERA BEGINS. @WootVL is officially joining our VCT roster! Welcome to the family, let’s make history together! pic.twitter.com/WNaFn3DKI7\n\nWo0t is the headline signing, and he arrives with one of the best records of any Turkish player in the VCT. He spent three years with Team Heretics , reaching the Valorant Champions 2024 grand final and winning the Esports World Cup in 2025. He then lifted the VCT EMEA Stage 1 title with the Spanish club this year, before leaving it on 22 October. He has also worn the FUT shirt before, standing in for the team at Monsters Reloaded 2026 last month, where FUT finished in the top four.\n\nThe changes follow a season that ended in disappointment at Valorant Champions in Shanghai. FUT opened the group stage with a 2-0 win over JD Gaming, but losses to 100 Thieves and T1 sent them home early, in an event that LOUD went on to win . Back in Europe, FUT had finished third at VCT EMEA Stage 2 after a 3-0 defeat to Team Liquid in the lower bracket final. That was enough to qualify for Champions, but not enough to change the feeling that the roster had peaked.\n\nFUT have already parted ways with Doğan “xeus” Gözgen, Efe “s0pp” Tur and Volkan “sociablEE” Yönal, along with head coach Berke “Vlad” Kantürk, according to Sheep Esports, whose reporting cites Riot’s VCT Global Contract Database. Eray “yetujey” Budak is signed only until the end of 2026, while Okan “KROSTALY” Alaçam has a deal that runs through the 2027 season, although it is not clear whether he will stay. The organisation kept its partner slot when Riot cut each international league to eight teams for the 2027-28 cycle, so it has the security to rebuild properly.\n\nNeither batujnax nor hezacoil is a household name yet, but both have climbed quickly through the Turkish scene. batujnax made his VCT debut with Apeks in 2025, after the team earned promotion through Ascension EMEA. Both players then spent the early part of 2026 at S2G Esports. From there, he and hezacoil moved to REBORN, winning Challengers EMEA Stage 2 and finishing second in Stage 3, before Fire Flux Esports took over the roster in August.",
-    "first_seen": "2026-11-06T17:44:13Z"
-  },
-  {
-    "title": "WoW: Forever Dodged the Launch Queues, Now Blizzard Has to Fix Its Ghost Towns",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/gaming/wow-forever-launch-empty-cities-layering-blizzard/",
-    "published": "2026-11-06T17:19:29Z",
-    "game": "val",
-    "category": "news",
-    "image": "https://www.talkesport.com/wp-content/uploads/what-is-world-of-warcraft-forever-1024x576.webp",
-    "logo": null,
-    "content": "World of Warcraft: Forever has had the kind of launch that MMO players rarely get, with servers up on time and queues measured in minutes rather than hours. Blizzard’s new take on the 2004 game went live in every region at once at 3pm PST on 4 November, which was midnight in Paris, and it has drawn wide coverage in France this week. As one French headline put it, Blizzard is betting big on a return to its roots. The problem, two days in, is that parts of that old world feel strangely empty, and Blizzard has promised to adjust things on Friday.\n\nForever is not a straight re-release like WoW Classic, which recreates the original game as it was. Instead, it imagines what would have happened if Blizzard had kept building on the Azeroth of 2004. It keeps the level cap at 60 and adds new zones, quests, dungeons and raids to the original world. It runs alongside both modern World of Warcraft and Classic, and access is included with a standard WoW subscription , which costs €13 a month in France, according to AFP.\n\nThe complaints started within hours of launch, once the crowds in the starting zones had spread out across the world. Players on the official forums reported capital cities with only a handful of other people in them, even though PC Gamer reported hundreds of thousands of players online. It pinned the problem on the game’s “realmless layering technology”, which splits a huge population into many copies of the same world. That can leave a city like Stormwind looking deserted, which is a real problem for a game built on nostalgia for crowded auction houses and busy roads.\n\nBlizzard has acknowledged the issue and moved quickly to address it. In a forum reply on 5 November , Blizzard’s Aggrend wrote that the team was aware of “some issues with certain areas not feeling as populated as they should”. He added that Blizzard would be “tweaking some numbers tomorrow to help things feel a bit more lively”, which points to changes on Friday. He did not say which numbers would change, or by how much.\n\nThe smooth start owes a lot to a difficult beta. Blizzard raised server capacity twice during the public test because of demand and queues, according to AFP, and the company said on X that nearly nine million characters were created during the testing period. Clayton Stone, Blizzard’s associate director of production, said in a Blizzard video that the beta had far exceeded the team’s expectations and was one of the biggest the company had ever run.\n\nThe new content is substantial for a game that refuses to raise its level cap. Forever adds three new zones and opens up areas such as Mount Hyjal, along with more than 1,000 quests, nine dungeons and two planned raids. A new race, the Skyborne Elves, also joins the game alongside new combinations such as Forsaken Paladins and Dwarf Shamans. Progression is deliberately horizontal, which means new gear and abilities should broaden a character’s options rather than make older content trivial. Access to the Skyborne Elves comes through optional upgrade packs, which also include cosmetics and game time, and a restock of the physical Collector’s Edition is not due to ship until February 2027.",
-    "first_seen": "2026-11-06T17:44:13Z"
-  },
-  {
-    "title": "FISSURE’s unpaid CS2, Dota 2 prize debt explained as CEO addresses financial struggles",
-    "source": "Esports.gg",
-    "url": "https://esports.gg/news/counter-strike-2/fissure-prize-debts-ceo-statement-explanation/",
-    "published": "2026-11-06T15:48:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "https://media.esports.gg/uploads/2025/09/CS2-FISSURE_Playground-2-thumbnail-640x360.jpg",
-    "logo": null,
-    "content": "FISSURE burst onto the competitive schedule for Counter-Strike 2 (CS2) and Dota 2 in 2025. The organizer had started a new esports series for these games named FISSURE Playground.\n\nNotably, the tournaments offered $1M+ prize pools and scheduled several events per season. After just one year, FISSURE Playground went into the shadows, canceling its 2026 tournaments.\n\nThe series resurfaced in September following a partnership contract with another organization — CS2 FISSURE Playground #3 took place in China.\n\nFor esports fans, competitive action is usually the main focus. However, FISSURE created significant financial turmoil behind the scenes, so the community had no choice but to notice unpaid debts owed to major teams like G2 Esports, Team Falcons, FURIA, and others.\n\nIn early November 2026, FISSURE’s CEO issued an official statement addressing the crisis and outlining their recovery plans.\n\nRead on to discover the timeline behind FISSURE’s rapid rise and sudden collapse, along with the key factors that brought the organizer to this point.",
-    "first_seen": "2026-11-06T16:47:03Z"
   },
   {
     "title": "LEC : Ibai (KOI) prêt à « péter » le salary cap pour un « équipazo » !",
