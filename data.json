@@ -1,5 +1,56 @@
 [
   {
+    "title": "SOFLO announce news details for $1,000 SOFLO Slam 3",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79794/soflo-announce-news-details-for-1000-soflo-slam-3",
+    "published": "2026-11-10T00:28:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "The $1,000 online event is now targeting December.",
+    "first_seen": "2026-11-10T00:53:00Z"
+  },
+  {
+    "title": "Ashland University win SOFLO Campus Clash",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79793/ashland-university-win-soflo-campus-clash",
+    "published": "2026-11-10T00:19:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "Ashland didn't drop a single map in the tournament.",
+    "first_seen": "2026-11-10T00:53:00Z"
+  },
+  {
+    "title": "KODEX part ways with JSP and kenny",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79792/kodex-part-ways-with-jsp-and-kenny",
+    "published": "2026-11-09T23:59:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "KODEX are set to field jsfeltner and Scorchyy in upcoming competitions.",
+    "first_seen": "2026-11-10T00:53:00Z"
+  },
+  {
     "title": "BC.Game, 1win, and other betting site-backed teams decide new branding for Singapore Major",
     "source": "Dust2",
     "url": "https://www.dust2.us/news/79776/bcgame-1win-and-other-betting-site-backed-teams-decide-new-branding-for-singapore-major",
@@ -2148,57 +2199,6 @@
     "first_seen": "2026-11-06T11:51:11Z"
   },
   {
-    "title": "Mirage and Dust 2 Pick Rates Drop With New CS2 Map Pick System",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/cs2/cs2-premier-map-pick-rates/",
-    "published": "2026-11-06T11:18:50Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "On September 22, 2026, Valve rolled out a major CS2 update that completely changed some aspects of the game, adding silent reloads for all weapons, implementing the Rush game mode, and reintroducing clan tags back to the shooter, among other changes. The biggest change for Premier players, though, was to the map veto process.\n\nPrior to the update, the two teams took turns banning maps until only one remained in the pool. With the September 22 update, Valve replaced that with a pick-based system. To put it simply, Team 1 picks one map, Team 2 picks two, and Team 1 picks a final one. One of the picked maps is then randomly selected for that game.\n\nThe old format had a clear downside. Less popular maps were repeatedly eliminated during the ban phase, while the more popular maps were played every other game.\n\nBut how is Valve’s new map veto system faring against that? With a few months of data now available, we can see how much the new system has changed what people actually play.\n\nAccording to data from Leetify , Mirage and Dust 2 have taken the biggest hit with the map veto change. Before the update, the two maps dominated Premier, with Mirage peaking at around 25% of matches and Dust 2 trailing just behind at roughly 24%. Since the change, Mirage has dropped to 20.3% and Dust 2 to 19.8% as of October 20.\n\nThe big winners are the maps that were frequently banned under the old system:",
-    "first_seen": "2026-11-06T11:51:11Z"
-  },
-  {
-    "title": "Marvel Rivals Season 11 Release Date, Start Time, New Heroes",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/marvel-rivals/marvel-rivals-season-11-release-date-start-time-new-heroes/",
-    "published": "2026-11-06T11:08:53Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Marvel Rivals Season 11 will launch on November 13, 2026. NetEase Games confirmed the date on the Season 10.5 roadmap. The update is expected to go live at 9 AM UTC, and players should expect at least 2 hours of downtime. The studio will reveal the new heroes, battle pass, and events in a Dev Vision episode on November 10. The dev team has also promised 2 new heroes.\n\nBelow, you can find the Marvel Rivals Season 11 release date, start times, hero details, and leaked skins.\n\nSeason 11 starts on Friday, November 13, 2026. This is the last date on the Season 10.5 roadmap, so Season 10.5 ends the same day.\n\nNetEase has not shared the exact start time yet. Seasons 10 and 10.5 both went live at 9 AM UTC, and it is expected that Season 11 will follow that pattern.\n\nPlayers cannot join right away. The servers will be down for at least 2 hours while the update installs.\n\nUS clocks moved back on November 1. That is why 9 AM UTC now falls at 1 AM PT and 4 AM ET, not at 2 AM PT and 5 AM EDT.",
-    "first_seen": "2026-11-06T11:51:11Z"
-  },
-  {
-    "title": "Jonathan Switches to a Three-Finger Layout in BGMI to Improve His Shotgun Play",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/mobile-gaming/bgmi/jonathan-three-finger-layout-bgmi/",
-    "published": "2026-11-06T11:08:12Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Jonathan has changed the way he plays BGMI. After years on a two-finger setup, the Team Apex Gaming founder revealed on a live stream that he has moved to a three-finger control layout, and said the main reason is to sharpen his shotgun fights.\n\nIt is a bigger deal than it sounds. Jonathan built his reputation, and a YouTube channel that just passed 8 million subscribers , on the two-finger style. Changing it now means relearning movements he has done thousands of times without thinking.\n\nJonathan told viewers that the new layout is mainly about close-range play. Shotgun fights in BGMI are decided in fractions of a second, and they ask a lot of your hands at once. You need to move, aim, jump or crouch and fire, often while peeking a corner.\n\nOn two fingers, both thumbs are busy. The left thumb moves and the right thumb aims, so firing or jumping means briefly lifting one of them off its job. A third finger, usually the index finger on top of the screen, takes over one of those actions. That lets a player keep aiming while they shoot, which is exactly what close-range fights reward.\n\nJonathan was upfront that the switch will not pay off straight away. He said it will take time before he can use the new layout properly, because he has to build fresh muscle memory and get comfortable with where everything now sits on the screen.\n\nAnyone who has changed control layouts knows the feeling. Buttons you used to hit without looking are suddenly in the wrong place, and your old habits keep pulling you back. For a while, a player can feel worse with the new setup than the old one, even if it has a higher ceiling in the long run.",
-    "first_seen": "2026-11-06T11:51:11Z"
-  },
-  {
     "title": "Worlds 2026 : la Karmine Corp face à T1, le choc de tous les espoirs",
     "source": "E.SPORT.FR",
     "url": "https://e.sport.fr/news/worlds-2026-la-karmine-corp-face-a-t1-le-choc-de-tous-les-espoirs-776535.shtm",
@@ -2348,18 +2348,6 @@
     "first_seen": "2026-11-05T23:40:29Z"
   },
   {
-    "title": "Worlds 2026 : Dplus KIA – Bilibili Gaming en direct",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/live/worlds-2026-dplus-kia-bilibili-gaming-en-direct-776453.shtm",
-    "published": "2026-11-05T21:45:00Z",
-    "game": "lol",
-    "category": "tournament",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/11/BLG_knight_Worlds_2026_d05607ac4a-1024x683.webp",
-    "logo": null,
-    "content": "Pour suivre le match Dplus KIA – Bilibili Gaming en direct, rendez-vous sur l’un des liens ci-dessous :",
-    "first_seen": "2026-11-07T22:31:17Z"
-  },
-  {
     "title": "What are Kill Modes in Modern Warfare 4? Answered",
     "source": "Esports.gg",
     "url": "https://esports.gg/guides/call-of-duty/what-are-kill-modes-in-modern-warfare-4-answered/",
@@ -2399,6 +2387,23 @@
     },
     "content": "Fortnite Crew is changing on December 5, 2026. Epic Games is ending the monthly Crew Pack outfits and replacing them with more V-Bucks the longer you stay subscribed, starting at 1,000 a month and rising to 1,600 after a year. Subscribers also get a 20% XP boost. The price stays at $11.99 a month, according to Epic’s announcement on Fortnite.com .\n\nFor many players this is a bigger change than it looks. Epic cut Crew’s monthly allowance from 1,000 to 800 V-Bucks from June 6, 2026, as we reported in our story on the Fortnite Crew V-Bucks drop to 800 . The new system brings the starting amount back to 1,000 and goes higher from the third month.\n\nYour monthly V-Bucks now depend on how long you have been subscribed, across four tiers.\n\nBy our count, a new subscriber who stays for a full year would get 15,600 V-Bucks in the first 12 months. That is 6,000 more than the 9,600 a year the 800 V-Bucks allowance gives, and 3,600 more than the old 1,000 a month. From the second year, Gold members would get 19,200 V-Bucks a year.\n\nThe monthly Crew Pack outfits are ending. December 2026 is the last month of exclusive Crew skins under the current system. Players who already own Crew Pack outfits will receive all of their remaining Legacy Styles for those outfits, pickaxes and back blings, so nothing they own is lost.\n\nThe OG Pass is also leaving Crew. Fortnite OG’s current season ends on December 5, and the next OG era is planned for late 2027.",
     "first_seen": "2026-11-05T12:58:36Z"
+  },
+  {
+    "title": "Gen.G sweep LYON to end North America’s Worlds 2026 run and set up iG semi-final",
+    "source": "Esports Insider",
+    "url": "https://esportsinsider.com/2026/11/gen-g-sweep-lyon-to-end-north-americas-worlds-2026-run-and-set-up-ig-semi-final",
+    "published": "2026-11-05T07:13:18Z",
+    "game": "lol",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "League of Legends Pro",
+      "tag": "LOL",
+      "color": "#c89b3c",
+      "bg": "#2e2104"
+    },
+    "content": "Gen.G beat LYON 3-0 in Allen, Texas, removing North America's last team from Worlds 2026. The LCK top seed are now one series from a first Worlds final, with a revived Invictus Gaming in the way.\n\nGen.G swept LYON in the second Worlds 2026 quarter-final in Allen, Texas. The defeat removes North America’s last team from the tournament. The LCK top seed now face Invictus Gaming in a best-of-five semi-final on Saturday, starting at 16:00 Central Time.\n\nReaching the last four secures Gen.G at least third or fourth place. That is a familiar stopping point for the organisation. It has finished third or fourth at four of its last five Worlds and has never played in a Worlds final, GosuGamers reported.\n\nThe stakes go beyond one team. Gen.G entered the tournament as the LCK’s top seed. Korean sides are chasing a fifth Summoner’s Cup in a row.\n\nTheir opponents bring their own history. Invictus Gaming beat Top Esports 3-1 in the opening quarter-final. That put iG into their first Worlds semi-final since 2019. TheShy and Rookie, who won Worlds with iG in 2018, are back in the last four.\n\nThe money rises sharply from here. Worlds 2026 carries a US$5,000,000 prize pool. The champion takes US$1,000,000 (20%), and the runner-up receives US$800,000.",
+    "first_seen": "2026-11-10T00:53:00Z"
   },
   {
     "title": "Major Fortnite Crew changes announced: No more skins and OG Pass removal",
