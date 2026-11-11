@@ -1,5 +1,39 @@
 [
   {
+    "title": "Anaks joins Titan Esports Club following BLG stint",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/788583/anaks-joins-titan-esports-club-following-blg-stint",
+    "published": "2026-11-11T11:20:23Z",
+    "game": "val",
+    "category": "official",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "",
+    "first_seen": "2026-11-11T11:51:18Z"
+  },
+  {
+    "title": "Smoggy turns the page on EDG, joins BiliBili Gaming",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/788578/smoggy-turns-the-page-on-edg-joins-bilibili-gaming",
+    "published": "2026-11-11T10:56:11Z",
+    "game": "val",
+    "category": "official",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "BiliBili Gaming adds Smoggy to usher in new era",
+    "first_seen": "2026-11-11T11:51:18Z"
+  },
+  {
     "title": "Singapore Major Stage 1 schedule pits Liquid against s1mple’s GOSH",
     "source": "Pley.gg",
     "url": "https://pley.gg/cs2/singapore-major-stage-1-schedule-pits-liquid-against-s1mples-gosh/",
@@ -738,6 +772,18 @@
     },
     "content": "China’s competition regulator has cleared Savvy Games Group’s purchase of Moonton, the studio behind Mobile Legends: Bang Bang, without attaching any conditions. The State Administration for Market Regulation (SAMR) completed its review on 29 October, and listed the deal among the mergers it approved unconditionally between 26 October and 1 November. That list was published on SAMR’s website on 6 November, and the approval drew wider attention this week after reports by TechNode and The Esports Advocate. The ruling removes one of the regulatory hurdles facing a deal that values Moonton at more than $6 billion.\n\nSavvy, which is wholly owned by Saudi Arabia’s Public Investment Fund (PIF), agreed to buy Moonton from ByteDance in March. Neither company has disclosed the final price, but Skadden, which advised ByteDance , described it as “reported to be above $6 billion”. The sale has not yet closed, and no closing date has been announced. Savvy and ByteDance had not commented on the Chinese approval by Tuesday evening, UTC.\n\nThe SAMR notice does not use Savvy’s brand name. According to The Esports Advocate, it lists the buyer as Saudi Electronic Games Holding Company, the Riyadh entity that owns the Savvy trademark, and the targets as Moonton Holdings Limited and Shanghai Moonton Technology. An unconditional approval means the regulator found no competition concerns that needed remedies, such as asset sales or limits on how the business is run. Chinese approval was always going to be required, because Moonton’s operating company and headquarters are in Shanghai.\n\nSkadden said in March that closing depended on customary conditions, including certain regulatory approvals. It did not list which authorities were involved, and neither company has said whether any other reviews are still open. The timetable has already stretched further than Savvy first suggested. When it confirmed the agreement, Savvy said it expected the deal to close “in the coming months”.\n\nThe sale has been building for most of the year. Reuters reported in February that ByteDance was in advanced talks to sell Moonton to Savvy for $6 billion to $7 billion, and the two sides announced an agreement on 20 March, according to Arab News . ByteDance had bought Moonton through its gaming arm Nuverse in 2021, at a valuation of about $4 billion. The Chinese company has since pulled back from large parts of its games business.\n\nSavvy chief executive Brian Ward said in March that the deal “directly supports Savvy’s purpose to enable prosperity and connection through play for generations to come”. He added that, once completed, it would “further strengthen our leadership in mobile games”. Moonton chief executive Zhang Yunfan is expected to stay on after closing, and an internal letter seen by Reuters said the management structure would remain unchanged. According to Savvy, Mobile Legends has more than 110 million monthly players and more than 1.5 billion installs worldwide.",
     "first_seen": "2026-11-10T18:43:14Z"
+  },
+  {
+    "title": "Fortnite Pirate Token Odds Are 1 in 137,500 (Worth $10K?)",
+    "source": "The Loadout",
+    "url": "https://theloadout.com/fortnite-pirate-token-odds-are-1-in-137500-worth-10k",
+    "published": "2026-11-10T17:03:40Z",
+    "game": "fortnite",
+    "category": "news",
+    "image": "https://theloadout.com/wp-content/uploads/2026/11/fortnite-pirate-token-odds.jpg",
+    "logo": null,
+    "content": "One chest. A 1 in 137,500 chance. That is what stands between you and the Pirate Shop Access token, the Fortnite item some players claim is worth $10,000.\n\nEpic Games has finally told players how likely they are to find the Pirate Shop Access token in Fortnite. The answer is not kind. Every chest you open in a normal match has a 1 in 137,500 chance of dropping it.\n\nThe token is the star prize of the Treasure Hunters season. Once activated, it makes every Item Shop item bought with V-Bucks free for two weeks. It can be used twice, once in 2026 and once in 2027.\n\nPlayers have put a huge price on that. Some say an account holding the token could sell for as much as $10,000. We could not verify any sale at that price. Coverage of the token has put its value at thousands of dollars.\n\nSelling accounts breaks Epic's terms of service. That has not stopped it. Players are reportedly selling accounts and offering token-hunting services at hourly rates.\n\nEpic's numbers cover every treasure in the season. Here is the chance per chest in a normal match:",
+    "first_seen": "2026-11-11T11:51:18Z"
   },
   {
     "title": "Overwatch tests 6v6 Role Queue Competitive mode in Season 6",
@@ -2202,23 +2248,6 @@
     "first_seen": "2026-11-08T16:34:07Z"
   },
   {
-    "title": "Bad News Eagles tease a return to Counter-Strike",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/cs2/bad-news-eagles-tease-a-return-to-counter-strike/",
-    "published": "2026-11-08T16:00:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "The Kosovar side behind one of the great Major upsets are coming back, more than a year after they disbanded.\n\nBad News Eagles are returning to Counter-Strike. The organisation posted “A new era. A new BNE. Coming soon.” on X on Saturday 14:03 CET , with a link to a new website. No players, staff or date have been announced.\n\nA new era. A new BNE. Coming soon. https://t.co/nkQmnGveSs pic.twitter.com/e5NoEpt5XO\n\nThe teaser had passed 109,000 views by Sunday morning.\n\nBad News Eagles were founded in February 2022 and reached three Majors in a row with the same five players: SENER1, gxx-, juanflatroo, sinnopsyy and rigoN. The biggest moment came at the IEM Rio Major 2022, where they knocked out FaZe, the reigning Major champions.\n\nGuild Esports took over the roster in November 2023. The five came back under the Bad News Eagles name in February 2025, but the project lasted five months, and the team disbanded in June 2025 .",
-    "first_seen": "2026-11-08T17:29:48Z"
-  },
-  {
     "title": "Worlds 2026 : la Karmine Corp fait exploser les audiences face à T1",
     "source": "E.SPORT.FR",
     "url": "https://e.sport.fr/chiffres/worlds-2026-la-karmine-corp-fait-exploser-les-audiences-face-a-t1-776629.shtm",
@@ -2229,23 +2258,6 @@
     "logo": null,
     "content": "La Karmine Corp a quitté les Worlds 2026, mais elle aura marqué cette édition jusque dans les chiffres d’audience. Opposée au triple champion du monde en titre T1, la formation française a attiré une foule impressionnante de spectateurs dans la nuit de vendredi à samedi. Selon les données publiées par Esports Charts , le quart de finale a enregistré un pic de 2 793 144 spectateurs simultanés, hors plateformes chinoises. Un record pour cette édition 2026, qui n’avait encore jamais franchi la barre des deux millions de spectateurs sur une même rencontre.\n\nUn engouement qui s’explique autant par la popularité mondiale de T1 et de Faker que par l’immense communauté de la Karmine Corp. Pour sa première participation aux championnats du monde, le club français avait réussi à se hisser jusqu’en quarts de finale après un parcours commencé dès le Play-In. Malgré une troisième manche remportée par les coéquipiers de Caliste, les Coréens ont finalement imposé leur supériorité, notamment grâce à un Peyz exceptionnel. Une élimination douloureuse pour le dernier représentant européen, mais qui n’a pas empêché les supporters du Blue Wall de répondre massivement présent.\n\nSur Twitch, Kameto a lui aussi vécu une soirée historique. Le cofondateur de la Karmine Corp a rassemblé jusqu’à 262 641 spectateurs simultanés sur sa chaîne, établissant un nouveau record personnel pour une rencontre de League of Legends. Une performance qui témoigne de l’engouement suscité par le parcours de la KC, capable de mobiliser une communauté considérable face à l’une des équipes les plus prestigieuses de l’histoire de l’esport.\n\nÀ l’échelle internationale, ce quart de finale a largement dominé les autres affiches du tournoi, aucune des trois autres rencontres de ce stade n’ayant intégré le top 5 des matchs les plus regardés de l’édition. Le pic reste toutefois inférieur aux 3,92 millions de spectateurs enregistrés lors du quart de finale entre T1 et Anyone’s Legend en 2025. Avec ses 2,79 millions de spectateurs, les Worlds 2026 se hissent néanmoins à la quatrième place des événements esportifs les plus suivis de l’année, dépassant notamment le Major d’IEM Cologne sur Counter-Strike 2. Et les chiffres pourraient encore grimper : T1 retrouvera Bilibili Gaming ce dimanche en demi-finale, avant une grande finale programmée le 14 novembre.\n\n@T1LoL vs @KarmineCorp reached 2.79M Peak Viewers! The most popular match of Worlds 2026 so far, and the first to surpass 2M viewers Full breakdown: https://t.co/PxqFCK1ISd pic.twitter.com/CE9KUqlUP9",
     "first_seen": "2026-11-09T08:23:36Z"
-  },
-  {
-    "title": "Wo0t returns to Turkey with FUT Esports",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/valorant/wo0t-returns-to-turkey-with-fut-esports/",
-    "published": "2026-11-08T14:32:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "FUT add a Champions finalist and Esports World Cup winner to their 2027 core, and Team Heretics are left with only RieNs and benjyfishy.\n\nFUT Esports have signed Mert “Wo0t” Alkan from Team Heretics, giving the Turkish partner team three players for the 2027 VCT season and taking one of EMEA’s most decorated flex players out of the Heretics rebuild. FUT confirmed the move on X on Friday 17:40 CET under the line “A NEW ERA BEGINS.”\n\nA NEW ERA BEGINS. @WootVL is officially joining our VCT roster! Welcome to the family, let’s make history together! pic.twitter.com/WNaFn3DKI7\n\nIt is Wo0t’s first Turkish club since he left Fire Flux Esports in October 2023.\n\nAt FUT he joins Eray “yetujey” Budak, his teammate at Fire Flux Young and then at Fire Flux Esports in the Turkish Challengers circuit. Okan “KROSTALY” Alaçam is the third player.\n\nThe trio have already played together. Wo0t lined up for FUT at Monsters Reloaded on 24 October, three days after Heretics announced his exit, and the team lost the semi-final 2-1 to Fire Flux.",
-    "first_seen": "2026-11-08T14:35:17Z"
   },
   {
     "title": "Chovy breaks curse, qualifies for first Worlds final ever",
@@ -3272,18 +3284,6 @@
     "logo": null,
     "content": "Après avoir été invitée à rejoindre le programme de partenariat des RLCS 2027, AG.AL aurait verrouillé son premier roster sur Rocket League. Selon les informations de Sheep Esports , la structure chinoise est sur le point de signer Joseph « Joyo » Young, Archie « Archie » Pickthall et Ole « oaly. » Doorn, avec Dylan « eekso » Pickering au poste d’entraîneur. Une réunion particulièrement intéressante puisque les quatre hommes avaient déjà travaillé ensemble chez Geekay Esports en 2025, terminant dans le top 4 des Championnats du monde. AG.AL avait initialement tenté de se positionner sur le trio français Atow, Vatira et zen, désormais proche de Gentle Mates, avant de se tourner vers d’autres pistes.\n\nArchie devrait donc quitter Gentle Mates après une saison marquée par la victoire au Major de Boston 2026, tandis qu’Oaly est libre depuis son départ de Ninjas in Pyjamas en septembre. De son côté, Joyo sort d’une année plus compliquée avec Geekay Esports, durant laquelle il n’a pas réussi à se qualifier pour les Worlds, une première depuis ses débuts sur le circuit RLCS. Les trois joueurs espèrent désormais retrouver leur complémentarité et reproduire les performances réalisées ensemble en 2025.\n\nPour AG.AL, cette arrivée sur Rocket League s’inscrit dans une stratégie de développement ambitieuse. L’organisation chinoise, récemment récompensée lors de l’Esports World Cup Club Championship, dispose de moyens importants pour renforcer sa présence sur plusieurs disciplines. Avec un trio expérimenté et un entraîneur qui connaît déjà parfaitement ses joueurs, elle pourrait rapidement s’imposer comme une prétendante sérieuse sur la scène européenne. Sa nouvelle équipe devrait faire ses débuts lors du Club Kick-off à Londres.\n\n[SOURCES] AG AL is expected to sign Archie , Oaly and Joyo for RLCS Club Championship, with Eekso taking over as head coach. @i_Eros_ reporting. @Michelin | Read more here https://t.co/b9hwT0CxQ3",
     "first_seen": "2026-10-22T08:34:08Z"
-  },
-  {
-    "title": "ASAP Rocky is joining Fortnite during the One Piece collab season",
-    "source": "Esports.gg",
-    "url": "https://esports.gg/news/fortnite/asap-rocky-fortnite/",
-    "published": "2026-10-21T17:35:09Z",
-    "game": "fortnite",
-    "category": "news",
-    "image": "https://media.esports.gg/uploads/2026/10/ASAP-Rocky-Fortnite-skin-tease.webp",
-    "logo": null,
-    "content": "Fortnite has confirmed a collaboration with rapper ASAP Rocky, stylized A$SAP Rocky, ahead of the upcoming One Piece Mini-Season. This partnership will include the usual cosmetics, Jam Tracks, and perhaps more, as is standard in the Icon Series.\n\nHere’s everything we learned from the teaser trailer and what we expect.\n\nA$AP ROCKY MUSIC CAN BE HEARD AT THE CHEST pic.twitter.com/KrC6qpiCoD\n\nFortnite first teased this partnership in-game at the One Piece chest location. Players could hear the rapper’s song “RIOT” shortly before he shared the teaser trailer on his Instagram story.\n\nA$AP ROCKY x FORTNITE 🚨 DROPPING SOON. pic.twitter.com/ezx35A7ihk\n\nThe trailer then circulated throughout social media, showcasing the first official look at the ASAP Rocky Fortnite skin alongside a few other new anime skins. While it’s not much, the image gives us an idea of what the ASAP Rocky skin will look like when it launches.",
-    "first_seen": "2026-10-21T18:29:32Z"
   },
   {
     "title": "RLCS : NIP mise sur un prodige de 15 ans pour compléter son roster",
