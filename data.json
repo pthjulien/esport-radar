@@ -1,5 +1,22 @@
 [
   {
+    "title": "The Dawg joins the Hive: Team Vitality signs jawgemo",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/788702/the-dawg-joins-the-hive-team-vitality-signs-jawgemo",
+    "published": "2026-11-11T21:04:29Z",
+    "game": "val",
+    "category": "official",
+    "image": "",
+    "logo": {
+      "title": "Team Vitality",
+      "tag": "VIT",
+      "color": "#facc15",
+      "bg": "#3d3002"
+    },
+    "content": "Team Vitality rounds out its 2027 roster with jawgemo.",
+    "first_seen": "2026-11-11T21:28:36Z"
+  },
+  {
     "title": "Gentle Mates a refusé une place en LEC",
     "source": "E.SPORT.FR",
     "url": "https://e.sport.fr/news/gentle-mates-a-refuse-une-place-en-lec-776922.shtm",
@@ -709,7 +726,7 @@
     "published": "2026-11-10T20:14:52Z",
     "game": "fortnite",
     "category": "news",
-    "image": "https://www.dexerto.com/cdn-image/wp-content/uploads/2024/06/10/Gears-of-War-E-Day-Dom.jpg?width=1080&quality=75&format=auto",
+    "image": "https://www.dexerto.com/cdn-image/wp-content/uploads/2026/11/10/Gears-of-War-cover.jpg?width=1080&quality=75&format=auto",
     "logo": null,
     "content": "Cliff Bleszinski says Epic refused to hand over Jazz Jackrabbit, even though neither side has the original paperwork.",
     "first_seen": "2026-11-10T20:39:56Z"
@@ -2235,23 +2252,6 @@
     "image": "https://www.talkesport.com/wp-content/uploads/gta-6-key-art-jason-lucia-car.webp",
     "logo": null,
     "content": "There are no confirmed GTA 6 cheat codes yet. Rockstar Games has not published a single cheat for PS5 or Xbox, and it has not said whether the game will have cheats at all. Any list you see online right now, with button combinations for weapons, cars or wanted levels, is guesswork at best and made up at worst.\n\nThat will change when GTA 6 launches on November 19. Until then, here is what we actually know, how cheats worked in GTA V, and how to avoid the fake lists and scams that are already doing the rounds.\n\nNobody outside Rockstar knows for sure. The developer has not mentioned cheats in any trailer, store listing or official post, and none of the game’s pre-release coverage has shown them in action.\n\nHistory is on the side of fans, though. Cheat codes have been part of nearly every mainline GTA game, from the 3D era through to GTA V, and Red Dead Redemption 2 had them too. It would be a surprise if Rockstar dropped them completely, but until the game is out, it is not confirmed.\n\nGTA V is the best guide to what GTA 6 might do. It gave players three ways to enter cheats.\n\nCheats in GTA V also came with rules. You could still save your game with a cheat active, but trophies and achievements were turned off while it was in use, according to Rockstar Support . Entering a code again usually switched the cheat off, and reloading a save cleared them all.",
-    "first_seen": "2026-11-09T08:23:36Z"
-  },
-  {
-    "title": "Is GTA 6 Online Coming Soon? What the Leaked PS5 Data Actually Shows",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/gta-6-online-release-leaked-ps5-data-multiplayer/",
-    "published": "2026-11-09T07:51:31Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "GTA 6’s PlayStation 5 files contain the first hints of online play. With pre-loading about to begin, the tracking account PlayStation Game Size has found three multiplayer-related entries tied to GTA 6 in Sony’s backend data, and fans are now asking whether GTA 6 Online could arrive sooner than expected.\n\nIt is an exciting find, but it is also a small one. The entries show that GTA 6 is set up to support online activities on PS5. They do not tell us what the online mode is called, what it includes, or when it will launch, and Rockstar has still not said a word about it.\n\nPlayStation Game Size, which tracks game listings and file data on Sony’s systems, shared three “activity” entries linked to GTA 6.\n\nGrand Theft Auto VI supports : intentType\": \"joinSession\" intentType\": \"launchActivity\" intentType\": \"launchMultiplayerActivity\"\n\nActivities are a PS5 feature that let you jump straight into a mode or mission from the console’s home screen. The multiplayer entry is the interesting one, since it suggests GTA 6 will have online content that the PS5 menu can launch. As VGTimes put it in its report, “The data doesn’t confirm that online play will be available at launch.”\n\nThe same data lists the current version as 01.001.004, with a worldwide PS5 package of about 223GB. That sits between the 212GB in Rockstar’s official FAQ and the 230GB printed on the PS5 boxes already reaching stores .",
     "first_seen": "2026-11-09T08:23:36Z"
   },
   {
