@@ -1,6 +1,57 @@
 [
   {
-    "title": "m0NESY Ranks 14th in Forbes Russia’s Most Valuable Athlete Brands for 2026",
+    "title": "CS2 Update Hides a New Frost Mechanic That Freezes Players and Weapons, and Snowy Cobblestone Looks Next",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/cs2/cs2-update-frost-mechanic-snowy-cobblestone-patch-notes/",
+    "published": "2026-11-12T08:52:11Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "Counter-Strike 2’s latest update looks like a routine fix on paper, but its files point to something much colder. Valve released the patch on 11 November with a short list of fixes for animations, Retakes bots and a DirectX 11 rendering hang. Underneath those notes, however, dataminers found a complete frost system that makes players, weapons and even chickens freeze when they stay outside, and thaw when they go indoors. Together with earlier finds pointing to a snowy version of Cobblestone, it is the clearest sign yet that Valve is preparing a winter map for CS2.\n\nA showcase of how the new CS2 frost effect looks in game: pic.twitter.com/QrxANT5sde\n\nThe new console commands describe the mechanic in surprising detail. A command called r_csgo_frost_force switches the effect on and links it to players, weapons and chickens, with separate settings for outdoor and indoor areas. Two more control how quickly frost builds up outside and melts away indoors, and the files suggest that each takes about 10 seconds to reach its full state. In other words, a player who spends a round holding an open angle would gradually ice over, while one sitting in a building would stay clear.\n\nFiring a weapon appears to be the main way to fight the cold. Another command sets how much a barrel heats up per shot, so a rifle that is being used constantly should resist frost while an idle one freezes over. The files also mention how long a burning Molotov takes to produce heat, which hints that fire could thaw players and weapons around it. Dataminer aqua, who tracks changes in CS2’s files, has already shown the effect running in the game , with a frosted weapon clearly visible in first person.\n\nThe update also adds a hidden video setting for parallax occlusion mapping, a rendering technique that gives flat surfaces convincing depth. Snow, with its footprints and uneven drifts, is exactly the kind of surface that benefits from it. None of this has been announced by Valve, and there is no release date. The commands could still change before launch, or end up limited to a single map or event rather than regular matchmaking.\n\nCobblestone is the obvious candidate for all of this. Earlier strings found in CS2’s files pointed to a snow-covered version of the map, with snowy textures and footprints, and the new frost system fits that theme perfectly. Cobblestone was part of CS:GO’s competitive map pool for years, so a winter return would bring back one of the game’s best-known layouts with a new twist. Snow maps are not new to the community either, as veteran mapper FMPONE showed when he released the Canadian Rockies map de_splinter earlier this year.",
+    "first_seen": "2026-11-12T08:54:35Z"
+  },
+  {
+    "title": "T1 brings TenZ out of retirement a day after re-signing crashies from Fnatic",
+    "source": "Esports Insider",
+    "url": "https://esportsinsider.com/2026/11/t1-brings-tenz-out-of-retirement-a-day-after-re-signing-crashies-from-fnatic",
+    "published": "2026-11-12T08:28:20Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Fnatic",
+      "tag": "FNC",
+      "color": "#fb923c",
+      "bg": "#3d1602"
+    },
+    "content": "T1 has added two-time Masters champion Tyson 'TenZ' Ngo to its Valorant roster for VCT Pacific in 2027. The move ends his retirement and builds on T1's signing of crashies, who has just left London-based Fnatic.\n\nT1 has ended Tyson ‘TenZ’ Ngo’s retirement. The organisation confirmed on 12 November that he will join its Valorant roster for VCT Pacific in 2027. It made the announcement with a post and a welcome video.\n\nT1 called him a ‘living legend’ of Valorant. It said he was starting a new chapter with the organisation.\n\nTenZ retired from professional play in 2024. He has spent this year at T1 as a content creator. The announcement moves him from that role into the competitive squad.\n\nHis record explains the attention. With Sentinels, he beat Fnatic 3-0 in the Masters Reykjavík 2021 final. He then won Masters Madrid 2024 with a 3-2 win over Gen.G. That made him the first Americas player to win more than one VCT Masters event, Liquipedia records.\n\nThe TenZ news came a day after T1 confirmed Austin ‘crashies’ Roberts. He returns six years after T1 released him in September 2020. crashies called T1 the place ‘where it all started’. He said he was excited for the new challenge.",
+    "first_seen": "2026-11-12T08:54:35Z"
+  },
+  {
+    "title": "88% of Nvidia employees want Jensen Huang to stay, poll before second affair report",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/business/nvidia-employees-blind-survey-jensen-huang-stay-ceo/",
+    "published": "2026-11-12T07:43:09Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Nearly nine in ten Nvidia employees want Jensen Huang to stay on as chief executive, according to a survey by the anonymous workplace app Blind . Of the 232 Nvidia staff who took part, 88% said Huang should remain in charge, 11% said he should step down voluntarily and just 1% said the board should remove him. The results spread quickly on 12 November, as Nvidia’s directors met to decide his future. They need one important caveat, however, because the poll was taken on 9 and 10 November, before the latest and most damaging report about him.\n\nBlind lets users verify their employer through a work email address, which is why its polls are often treated as a rough guide to staff mood inside big tech companies. A wider Blind poll of 1,689 professionals across the industry was much less forgiving. Only 60% of those respondents wanted Huang to stay, 18% said he should leave voluntarily and 22% wanted the board to push him out . The gap suggests that the people closest to Huang judge him very differently from the rest of Silicon Valley.\n\nA new statement from the independent members of the NVIDIA Board: https://t.co/uSFDhiohG8\n\nWhen Nvidia staff answered the survey, the scandal was about one relationship. Huang had admitted to an affair in a letter to staff on 8 November, and US intelligence officials reportedly believe the woman involved, Alice Huang, was gathering information for China. The board had opened an investigation , but it had also said it had “no reason to believe” that national security or Nvidia’s secrets were compromised. Huang, meanwhile, had told staff he would cooperate fully.\n\nThe picture changed sharply on the afternoon of 11 November, when The New York Times reported that Huang had also had a relationship with a senior executive who reports to him, citing current and former employees. Within hours, the Wall Street Journal said the board was preparing to oust him, and Nvidia shares fell more than 8% in extended trading. A relationship with a direct report raises workplace and governance questions that the first affair did not, so the same employees might answer the Blind poll differently today.\n\nNvidia’s board had not announced a decision as of 07:30 UTC on 12 November. Its independent directors have already hired former Manhattan prosecutor Joon Kim and the law firm Wachtell, Lipton, Rosen & Katz to lead their inquiry. TalkEsport is not naming the executive in the Times report, who has not commented publicly and has not been accused of wrongdoing.",
+    "first_seen": "2026-11-12T08:54:35Z"
+  },
+  {
+    "title": "m0NESY Is the Only Esports Player in Forbes Russia’s 30 Most Valuable Athlete Brands",
     "source": "TalkEsport",
     "url": "https://www.talkesport.com/news/cs2/m0nesy-forbes-russia-most-valuable-personal-brands-2026/",
     "published": "2026-11-12T07:10:40Z",
@@ -8,7 +59,7 @@
     "category": "news",
     "image": "https://www.talkesport.com/wp-content/uploads/Ilya-Osipov_-Esports-Rising-Star-777x1024.webp",
     "logo": null,
-    "content": "Counter-Strike 2 player Ilya “m0NESY” Osipov has been ranked 14th in Forbes Russia’s list of the 30 most valuable personal brands among Russian athletes for 2026, published on 5 November. The Falcons rifler is the only esports player on the list. He climbed 10 places from 24th in the 2025 edition. Mixed martial arts fighter Islam Makhachev tops the 2026 ranking.\n\nThe Forbes Russia ranking measures the strength of an athlete’s personal brand rather than their earnings. It uses four weighted measures. Audience engagement on social media counts for 40% of the score. Audience size on social networking channels counts for 30%, social media popularity for 20% and media popularity for 10%.\n\nFigure skaters Alexandra Trusova and Kamila Valieva also rank in the top three alongside Makhachev. Football goalkeeper Igor Akinfeev, footballer Matvey Kislyak and tennis player Andrey Rublev are all ranked below m0NESY. Forbes Russia has not published a monetary value for the brands. It has also not published the individual scores behind each position. Forbes Russia notes that esports stars trail even chess in mentions in professional media. However, it says their fan base and engagement can compete with those of figure skaters.\n\nM0NESY, 21, is one of the best-known players in Counter-Strike. He plays for Falcons, the reigning Major champions. He won the IEM Cologne Major 2026 with Falcons and was named the event’s most valuable player. Forbes Russia also lists five EVP awards, for exceptionally valuable player, among his achievements. Forbes Russia calls him “the biggest star of Russian esports”. He has earned more than $1m in prize money during his career.\n\nHe has featured in HLTV’s list of the top 20 players of the year in every year since his debut season in 2022. He finished second on the 2024 list, behind Danil “donk” Kryshkovets. Falcons have stayed near the top this season, from their Esports World Cup 2026 opener to their ESL Pro League Season 24 run .",
+    "content": "Counter-Strike 2 player Ilya “m0NESY” Osipov has been ranked 14th in Forbes Russia’s list of the 30 most valuable personal brands among Russian athletes for 2026, published last week on 5 November. The Falcons rifler is the only esports player on the list. He climbed 10 places from 24th in the 2025 edition. Mixed martial arts fighter Islam Makhachev tops the 2026 ranking.\n\nThe Forbes Russia ranking measures the strength of an athlete’s personal brand rather than their earnings. It uses four weighted measures. Audience engagement on social media counts for 40% of the score. Audience size on social networking channels counts for 30%, social media popularity for 20% and media popularity for 10%.\n\nFigure skaters Alexandra Trusova and Kamila Valieva also rank in the top three alongside Makhachev. Football goalkeeper Igor Akinfeev, footballer Matvey Kislyak and tennis player Andrey Rublev are all ranked below m0NESY. Forbes Russia has not published a monetary value for the brands. It has also not published the individual scores behind each position. Forbes Russia notes that esports stars trail even chess in mentions in professional media. However, it says their fan base and engagement can compete with those of figure skaters.\n\nAt 21, m0NESY is already one of the best-known players in Counter-Strike. He plays for Falcons, the reigning Major champions. He won the IEM Cologne Major 2026 with Falcons and was named the event’s most valuable player. Forbes Russia also lists five EVP awards, for exceptionally valuable player, among his achievements. Forbes Russia calls him “the biggest star of Russian esports”. He has earned more than $1m in prize money during his career.\n\nHe has featured in HLTV’s list of the top 20 players of the year in every year since his first full season with G2 in 2022. He finished second on the 2024 list, behind Danil “donk” Kryshkovets. Even donk, who beat him to HLTV’s top spot that year, does not appear on the Forbes Russia list. Falcons have stayed near the top this season, from their Esports World Cup 2026 opener to their ESL Pro League Season 24 run .",
     "first_seen": "2026-11-12T07:12:02Z"
   },
   {
@@ -147,23 +198,6 @@
       "bg": "#3b0511"
     },
     "content": "TenZ is officially back in professional VALORANT, two years after he retired. T1 confirmed the signing of Tyson “TenZ” Ngo in a post at 03:00 UTC on 12 November , or 12:00 in Seoul, calling him “a living legend of VALORANT” and declaring that “the KING is back”. The Canadian star answered 11 minutes later with a two-word post of his own : “I’m back”. The move ends a retirement from pro play that began in September 2024, and puts one of the game’s most famous players in VCT Pacific for 2027.\n\n𝐖𝐞𝐥𝐜𝐨𝐦𝐞 '𝐓𝐞𝐧𝐙' The KING is back! A living legend of VALORANT, 'TenZ' begins a new chapter with T1. Ready to make history under the red wings, join us in giving him a warm welcome! https://t.co/ny3VtTtYnx #T1VALORANT pic.twitter.com/gmgLEzXJR2\n\nThe announcement confirms what we reported on 4 November, when reports first linked TenZ, crashies and Sacy with the Korean organisation. T1 announced crashies exactly a day earlier, at 03:00 UTC on 11 November, in a welcome post of its own. “Back where it all started,” crashies wrote, a reference to his first VALORANT team, which was T1 in 2020. Sacy’s reported move into the head coach role has not yet been confirmed by T1.\n\nT1 is not a rebuilding team looking for a famous name to sell tickets. The club won Masters Bangkok in 2025, its first international VALORANT title, and finished third in Pacific Stage 2 and joint fifth at Champions in 2026. Its current roster on VLR.gg lists TenZ and crashies alongside three Korean players, stax, BuZz and iZu. That makes this a contender adding two proven internationals, rather than a project built from scratch around one star.\n\nThe commercial logic behind the signing is just as strong. TenZ has been one of VALORANT’s most recognisable faces since he led Sentinels to VCT Masters Reykjavík in 2021, where he was named grand final MVP. T1 is one of the biggest brands in esports, largely thanks to its League of Legends success, and it now has a VALORANT star with a huge following in North America. VCT Pacific matches are played in Seoul, so many of those fans will be watching their favourite player at very different hours from what they are used to.\n\nThere is a neat circle to the story as well. TenZ announced his retirement on 14 September 2024, shortly after Sentinels were knocked out of Champions 2024 in Seoul. Two years later, he returns to compete in the same city, this time wearing the colours of a Korean organisation. It also takes him into a region whose teams he mostly faced only at international events.",
-    "first_seen": "2026-11-12T03:49:28Z"
-  },
-  {
-    "title": "Jensen Huang Could Be Out at Nvidia as Board Meets After Second Affair Report",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/business/nvidia-board-oust-jensen-huang-second-relationship-report/",
-    "published": "2026-11-12T03:07:04Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Nvidia’s board is preparing to remove Jensen Huang as chief executive, according to a Wall Street Journal report published at 22:44 UTC (14:44 in Santa Clara) on 11 November. The Journal said directors could meet as soon as Wednesday to decide the future of the man who co-founded the company in 1993, citing people familiar with the matter. Its report came about an hour after The New York Times said Huang had also had a relationship with a senior Nvidia executive who reports to him.\n\nReuters reported that the board was meeting late on Wednesday, US time, but as of 03:15 UTC on 12 November Nvidia had announced no decision, and Huang remained chief executive.\n\nBreaking: Nvidia’s board is preparing to oust CEO Jensen Huang after he had two extramarital affairs, including one with a suspected Chinese spy. https://t.co/Pjsu5j87CF pic.twitter.com/mrsySLr8sd\n\nThe Times report adds a second relationship to the scandal that began with Alice Huang, the Megaspeed executive whom US intelligence reportedly believes was working for China. The paper said Huang’s relationship with the executive was described by five current or former employees. Some employees also described a video, taken at a San Jose hotel during Nvidia’s conference in March, that the Times said showed the pair being affectionate. The Times said it had not seen the video itself, and neither Nvidia, Huang nor the executive has confirmed the account.\n\nJensen Huang, the Nvidia CEO under scrutiny for an affair with a reputed Chinese spy, is also said to have had a relationship with a company executive. https://t.co/FfwCDLhZp4\n\nA relationship with a direct report is a different kind of problem for a board than an affair outside the company. Many large companies require senior staff to disclose relationships with people they manage, because of the risk of conflicts and favouritism. According to the Times, Huang told its reporters, “I don’t think you should be talking to me directly,” before ending the call. TalkEsport is not naming the executive, who has not commented publicly and has not been accused of any wrongdoing.",
     "first_seen": "2026-11-12T03:49:28Z"
   },
   {
@@ -2332,35 +2366,6 @@
     "image": "https://e.sport.fr/wp-content/uploads/2026/11/63c5b289e0d32a0c5ffe3d05f3e36a3ea4301b72-1920x1080-1-1024x576.webp",
     "logo": null,
     "content": "L’affaire continue de prendre de l’ampleur du côté de TLN Pirates. Dans un communiqué publié le 6 novembre, Riot Games a annoncé la suspension provisoire de Nikola « Axelent » Petrusev, ADC de la formation française durant la saison 2026 de LFL. Selon les informations relayées par Sheep Esports , le joueur macédonien est visé par une enquête concernant de possibles violations du code de conduite mondial de l’esport de Riot Games. La mesure, entrée en vigueur immédiatement, restera applicable jusqu’à la conclusion de l’enquête ou jusqu’à nouvel ordre.\n\nL’éditeur insiste toutefois sur le caractère préventif de cette décision. Une suspension provisoire ne constitue pas une reconnaissance de culpabilité et peut être levée si les éléments recueillis ne justifient aucune sanction supplémentaire. Toutes les parties concernées auront également la possibilité de présenter leur version des faits avant une éventuelle décision définitive. Pour l’heure, Riot Games n’a communiqué aucun détail sur les accusations précises visant Axelent, invoquant la confidentialité de la procédure.\n\nCette annonce intervient moins de trois semaines après une première affaire concernant Tomislav « Thomas » Nanjara, support et coéquipier d’Axelent sur la botlane. Le 22 octobre dernier, TLN Pirates avait elle-même contacté Riot Games après avoir découvert des informations susceptibles de remettre en question l’intégrité compétitive de certaines rencontres. Thomas avait alors été suspendu à titre provisoire, tandis que la direction du club assurait collaborer pleinement avec l’éditeur. Avec cette deuxième suspension, l’organisation se retrouve désormais au cœur d’une enquête particulièrement sensible.\n\nUne situation qui contraste avec les excellents résultats sportifs de TLN Pirates cette année. Arrivée en LFL début 2026, la structure avait terminé quatrième du Spring Split avant de décrocher la deuxième place du Summer Split. Elle s’était ensuite hissée jusqu’aux quarts de finale des EMEA Masters, finalement éliminée par l’académie espagnole KOI Fénix (1-3). De son côté, Axelent a réagi à l’annonce sur les réseaux sociaux avec un message énigmatique : « Sortez le popcorn, le spectacle va bientôt commencer. » Reste désormais à connaître les conclusions de l’enquête, aucune infraction n’ayant été établie à ce stade.\n\nGrab some popcorn the show gonna start soon https://t.co/RPnjvguUtZ",
-    "first_seen": "2026-11-09T12:59:46Z"
-  },
-  {
-    "title": "CS2 BLAST Rivals Fall 2026 overview and results: Final showcase before the Major",
-    "source": "Esports.gg",
-    "url": "https://esports.gg/news/counter-strike-2/cs2-blast-rivals-fall-2026-overview-results/",
-    "published": "2026-11-09T12:52:52Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "https://media.esports.gg/uploads/2026/11/cs2-blast-rivals-fall-2026-talent-lineup.webp",
-    "logo": null,
-    "content": "BLAST Rivals Fall 2026 takes place in Hong Kong from Nov. 11 to Nov. 15. It’s a Counter-Strike 2 (CS2) event with eight invited teams. The majority of them are from the top-most tier of competition, true rivals in this esports scene.\n\nThe tournament consists of groups, where two teams will be eliminated, and playoffs, spanning from two quarterfinals to the grand final.\n\nThe prize pool is $1,000,000, with the winners claiming $250,000. Additionally, participants earn points for the BLAST Frequent Flyers 2026 program, which features a $2,000,000 prize pool.\n\nOne of the main thrills of BLAST Rivals Fall 2026 is that it’s the final event ahead of the PGL Singapore Major coming later this month. We can witness how the favorites are prepared for the main battle of this season.\n\nFollow the CS2 action from BLAST Rivals Hong Kong here. Watch the live stream, check out the daily schedule, and track the detailed match results.\n\nThe official BLAST Premier channels on YouTube and Twitch broadcast the CS2 Rivals Fall 2026 tournament. The stream is also embedded above.",
-    "first_seen": "2026-11-09T12:59:46Z"
-  },
-  {
-    "title": "Las Vegas weighs $2 million BLAST deal to host a 2028 Major",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/cs2/las-vegas-weighs-2-million-blast-deal-to-host-a-2028-major/",
-    "published": "2026-11-09T12:35:51Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "Southern Nevada’s public tourism board votes on Tuesday on a sponsorship that could put BLAST’s third Counter-Strike Major in Las Vegas, with a second BLAST event to follow in summer 2028.\n\n$2 million is the price Las Vegas is prepared to pay for two BLAST events in 2028. The Las Vegas Convention and Visitors Authority (LVCVA), the region’s public tourism agency, has a sponsorship agreement with BLAST ApS as item one on the agenda for its board meeting on Tuesday 18:00 CET , as first reported by The Esports Radar . The item is listed “for possible action”.\n\nThe agenda book sums up the proposal in one sentence:\n\nThat the Board of Directors considers authorizing the Chief Executive Officer (CEO)/President to execute a Sponsorship Agreement with BLAST ApS, in the amount of $2,000,000, to host the following events in Las Vegas in 2028: 1) the Counter-Strike Major E-Sports Competition and 2) a Summer BLAST E-Sports Competition.\n\nThe Major “is scheduled to take place in Las Vegas in 2028, during the weekend between Thanksgiving and National Finals Rodeo, filling a key need period for the destination”, chief sports officer Janis Burke writes in the staff memo. HLTV reports a tentative window of 20 November to 10 December 2028, which would make it the second Major of that year. The summer event would be held at the Las Vegas Convention Center, and the agenda does not say which game.\n\nIn return, the LVCVA would get “host city designation and rights for both premier BLAST tournaments”, digital, broadcast and destination marketing assets, and “hospitality and ticket allocations”. The two events are estimated to generate 130,000 hotel room nights; the $2 million sits in the 2028 budget.",
     "first_seen": "2026-11-09T12:59:46Z"
   },
   {
