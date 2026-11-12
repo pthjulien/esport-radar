@@ -1,5 +1,51 @@
 [
   {
+    "title": "m0NESY Ranks 14th in Forbes Russia’s Most Valuable Athlete Brands for 2026",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/cs2/m0nesy-forbes-russia-most-valuable-personal-brands-2026/",
+    "published": "2026-11-12T07:10:40Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "https://www.talkesport.com/wp-content/uploads/Ilya-Osipov_-Esports-Rising-Star-777x1024.webp",
+    "logo": null,
+    "content": "Counter-Strike 2 player Ilya “m0NESY” Osipov has been ranked 14th in Forbes Russia’s list of the 30 most valuable personal brands among Russian athletes for 2026, published on 5 November. The Falcons rifler is the only esports player on the list. He climbed 10 places from 24th in the 2025 edition. Mixed martial arts fighter Islam Makhachev tops the 2026 ranking.\n\nThe Forbes Russia ranking measures the strength of an athlete’s personal brand rather than their earnings. It uses four weighted measures. Audience engagement on social media counts for 40% of the score. Audience size on social networking channels counts for 30%, social media popularity for 20% and media popularity for 10%.\n\nFigure skaters Alexandra Trusova and Kamila Valieva also rank in the top three alongside Makhachev. Football goalkeeper Igor Akinfeev, footballer Matvey Kislyak and tennis player Andrey Rublev are all ranked below m0NESY. Forbes Russia has not published a monetary value for the brands. It has also not published the individual scores behind each position. Forbes Russia notes that esports stars trail even chess in mentions in professional media. However, it says their fan base and engagement can compete with those of figure skaters.\n\nM0NESY, 21, is one of the best-known players in Counter-Strike. He plays for Falcons, the reigning Major champions. He won the IEM Cologne Major 2026 with Falcons and was named the event’s most valuable player. Forbes Russia also lists five EVP awards, for exceptionally valuable player, among his achievements. Forbes Russia calls him “the biggest star of Russian esports”. He has earned more than $1m in prize money during his career.\n\nHe has featured in HLTV’s list of the top 20 players of the year in every year since his debut season in 2022. He finished second on the 2024 list, behind Danil “donk” Kryshkovets. Falcons have stayed near the top this season, from their Esports World Cup 2026 opener to their ESL Pro League Season 24 run .",
+    "first_seen": "2026-11-12T07:12:02Z"
+  },
+  {
+    "title": "Nvidia Expands Its ElevenLabs Deal at the Summit Jensen Huang Skipped, Hours Before the Ouster Report",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/business/nvidia-elevenlabs-nemotron-summit-jensen-huang/",
+    "published": "2026-11-12T07:08:23Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Nvidia has deepened its partnership with ElevenLabs, the AI voice company, at the New York summit that Jensen Huang was supposed to headline. The chipmaker said on 11 November that its Nemotron models are now available inside ElevenAgents, ElevenLabs’ platform for building voice agents, in a post at 21:17 UTC , or 16:17 in New York. Kari Briski , one of Nvidia’s generative AI software leaders, represented the company on stage instead of its chief executive. Less than an hour later, The New York Times reported a second relationship involving Huang, and by the evening the Wall Street Journal said Nvidia’s board was preparing to remove him .\n\nHuang had been booked for a fireside chat with ElevenLabs chief executive Mati Staniszewski. Business Insider reported on 9 November that his name had disappeared from the speaker list, a day after he admitted to an affair in a letter to staff. The agenda was then rewritten to give Staniszewski the closing keynote instead. Huang also stepped back from a separate gathering of chief executives this week, according to reports. The partnership went ahead without him, which says a lot about how Nvidia is trying to keep its business moving while its leadership is in question.\n\nWe’re expanding our collaboration with @elevenlabs to bring voice agents to enterprises and governments worldwide. With NVIDIA Nemotron models now in ElevenAgents, organizations have more choice in how they build and customize voice agents. NVIDIA’s @karibriski joined… pic.twitter.com/AJ0G8qQOpq\n\nThe centrepiece of the deal is Nemotron 3.5 Super VL, one of Nvidia’s open models, which ElevenLabs customers can now choose inside ElevenAgents. According to the ElevenLabs announcement , the model reached leading task-completion accuracy on the company’s customer-support benchmark at 70% lower cost than other leading open models. Its reasoning can also be switched off for simple tasks, which ElevenLabs says makes it one of the three fastest models on the platform. For businesses running thousands of calls a day, that combination of price and speed is the real selling point.\n\nThe bigger shift in this deal is about control over data. Companies can post-train Nemotron models on their own data and run the whole system on their own servers, rather than sending conversations to an outside cloud. That matters for banks, hospitals and governments, which often cannot let sensitive calls leave their own buildings. ElevenLabs is also adding 15 megawatts of Nvidia Vera Rubin computing capacity to its existing Blackwell Ultra systems, a sign of how much demand it expects.\n\nThe first public example comes from Poland, the home country of ElevenLabs’ co-founders. A voice agent running on-premises with Nvidia Confidential Computing will call patients who only have landlines, reminding them of appointments booked through the national e-Health system. That system handles about 40 million appointments a year, and ElevenLabs says missed appointments run between 10% and 20%. The two companies are also exploring voice AI that runs directly on robots, industrial machines and vehicles, although that work is still at an early stage.",
+    "first_seen": "2026-11-12T07:12:02Z"
+  },
+  {
+    "title": "Gen.G vs. BLG odds: Worlds 2026 finals betting and implied win chances",
+    "source": "Esports.gg",
+    "url": "https://esports.gg/news/betting/worlds-2026-finals-odds/",
+    "published": "2026-11-12T06:13:29Z",
+    "game": "lol",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "League of Legends Pro",
+      "tag": "LOL",
+      "color": "#c89b3c",
+      "bg": "#2e2104"
+    },
+    "content": "Gen.G Esports are favorites over Bilibili Gaming (BLG) in the 2026 League of Legends (LoL) World Championship (Worlds) final on Nov. 14. Polymarket prices them at 63% to BLG’s 38%, while 1xBet and Stake imply about 61% to 62% once margin is removed.\n\nThese are the lines captured Nov. 12 . Decimal odds include your stake, so 1.55 returns 1.55 units for every unit wagered.\n\nEach raw chance is 1 divided by the decimal odds. At 1xBet, 1 / 1.584 is 63.1% for Gen.G and 1 / 2.436 is 41.1% for BLG. Together they reach 104.2%, and the extra 4.2 points are the bookmaker’s margin.\n\nDividing each side by 104.2% removes the margin and leaves 60.6% for Gen.G and 39.4% for BLG. Stake’s raw figures are 64.5% and 40.0%, a total of 104.5%, which becomes 61.7% and 38.3%. This proportional method assumes the margin is spread evenly across both sides and may not be 100% reliable.\n\nThe same steps were used for Polymarket. 1 / 1.56 is 64.1% for Gen.G and 1 / 2.55 is 39.2% for BLG, a total of 103.3%. Removing the margin leaves 62.0% and 38.0%. The percent prices total 101%, which leaves 62.4% and 37.6%. It’s worth noting that when the numbers were captured, the platform displayed 63% for Gen.G .\n\nGen.G swept LYON 3-0 on Nov. 5 and Invictus Gaming 3-0 on Nov. 7, meaning they have not dropped a single game in the Worlds 2026 Knockout stage.",
+    "first_seen": "2026-11-12T07:12:02Z"
+  },
+  {
     "title": "Tekken Veteran Katsuhiro Harada Asks Microsoft Never to Make Another Xbox Series S",
     "source": "TalkEsport",
     "url": "https://www.talkesport.com/news/gaming/katsuhiro-harada-xbox-series-s-criticism/",
@@ -2318,35 +2364,6 @@
     "first_seen": "2026-11-09T12:59:46Z"
   },
   {
-    "title": "PGL lock the Singapore rosters: apEX in for jL, BnTeT at GOSH",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/cs2/pgl-lock-the-singapore-rosters-apex-in-for-jl-bntet-at-gosh/",
-    "published": "2026-11-09T12:00:09Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "https://pley.gg/app/uploads/2026/10/flag-br-valorant.png",
-    "logo": null,
-    "content": "Four of the 32 lineups will start the Major with the registered substitute in place of an invited player, and GOSH have put a 31-year-old who last played a Major with TYLOO in 2019 on their bench.\n\nFour changes separate the rosters Valve invited from the ones that will play. PGL published the locked player lists for the PGL Major Singapore 2026 on Monday, five players, a coach and a substitute for each of the 32 teams, and closed with one line on who swaps in: “Legacy will play with ksloks instead of n1ssim, Team Vitality with apEX instead of jL, Astralis with Anlelele instead of jabbi, and FUT ESPORTS with SunPayus instead of cmtry.”\n\nThe 32 teams are the ones we reported after the 2 November cut-off. What is new is the paperwork around them: who is registered as the sixth man, and which of the invited names will watch from the bench.\n\nTeam Vitality’s entry is the odd one: the regular in-game leader is the substitute, and the stand-in is on the roster. Dan “apEX” Madesclaire missed PGL Masters Bucharest for the birth of his child, and Justinas “jL” Lekavičius stood in for him after covering for mezii at BLAST Open Porto in August and September.\n\nValve’s standings define a roster by the players who have appeared in five or more of a team’s last ten matches. Vitality’s quarter-final in Bucharest was jL’s fifth, which put him in apEX’s place on the invited roster, as we explained before the event . PGL’s list follows that roster to the letter: jL, ZywOo, flameZ, mezii and ropz as the five, XTQZZZ as coach, apEX as substitute. The substitutions line then confirms what Vitality’s own lineup already shows, with apEX back in the active five. Whether the registration also costs apEX a player sticker, as NarT suggested before Bucharest, is for Valve to settle.\n\nThe other three swaps are the ones the teams announced themselves. Legacy benched n1ssim on 28 October and brought in ksloks , a 21-year-old who has never played a Major. Astralis loaned Anlelele from Sashi on Friday, because cmtry, their October signing, is still on FUT’s roster in Valve’s standings and cannot play for them in Singapore. jabbi, who stood in for cmtry in three Stake Ranked Episode 5 matches, is registered as the sixth player.",
-    "first_seen": "2026-11-09T12:59:46Z"
-  },
-  {
-    "title": "PGL Confirms New Names for Four Teams in Singapore Major 2026",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/cs2/pgl-major-singapore-name-changes/",
-    "published": "2026-11-09T11:52:20Z",
-    "game": "val",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "PGL Major Singapore name changes are official. PGL confirmed that BC.Game, 1win, BETBOOM and PARIVISION will play under different names because the companies behind them are not licensed to operate in Singapore. BC.Game will play as GOSH, 1win as THE ONE, BetBoom as BB Team, and PARIVISION as PVISION. The Counter-Strike Major starts on November 24 with 32 teams.\n\nThis article covers the new names, the logo changes, the reason for the rule, and the PGL Major Singapore schedule for each team.\n\nPGL revealed the full team list for the Major and confirmed the four name changes at the same time.\n\nPGL Major Singapore 2026 – Stage 1, 2, and 3 teams. Tickets: https://t.co/gJ4XqKXuvc #PGLMajor pic.twitter.com/3gOzSvJ6Pj\n\nBC.Game will play under the name GOSH, the live-streaming platform it recently partnered with. 1win will take the name THE ONE. Both teams will use entirely new logos.\n\nBetBoom and PARIVISION will keep their usual logos. They will appear as BB Team and PVISION.",
-    "first_seen": "2026-11-09T12:59:46Z"
-  },
-  {
     "title": "LFL : courtisé en LEC, Looki reste fidèle à la Karmine Corp",
     "source": "E.SPORT.FR",
     "url": "https://e.sport.fr/transferts/lfl-courtise-en-lec-looki-reste-fidele-a-la-karmine-corp-776635.shtm",
@@ -2393,18 +2410,6 @@
     "logo": null,
     "content": "Le mercato s’annonce particulièrement agité du côté de Cloud9. Selon les informations de Sheep Esports , Edward « Tactical » Ra aurait reçu l’autorisation d’explorer ses options pour la saison 2027, malgré un contrat jusqu’au 20 novembre 2028. La structure nord-américaine aurait en parallèle commencé à étudier plusieurs pistes pour renforcer sa botlane. Un départ de Tactical est donc désormais envisageable, même si aucune décision définitive n’aurait encore été prise. En raison de sa situation contractuelle, un éventuel transfert nécessiterait notamment un accord entre les différentes parties.\n\nArrivé chez Cloud9 le 25 juin dernier, Tactical avait pourtant contribué au renouveau de l’équipe durant le Summer Split. Tout juste sacré champion de la NACL avec Conviction, l’ADC avait été recruté pour concurrencer le vétéran Zven, dans un contexte particulièrement difficile pour la formation américaine. Après huit échecs consécutifs lors de matchs qualificatifs pour les compétitions internationales, Cloud9 cherchait désespérément à retrouver les sommets. Le pari avait finalement porté ses fruits : Tactical s’était imposé comme titulaire, tout comme le midlaner Loki à la place d’APA. Troisième du Summer Split après une défaite contre LYON (1-3), Cloud9 avait ainsi décroché sa première qualification aux Worlds depuis deux ans.\n\nMais le retour sur la scène internationale a rapidement tourné au cauchemar. Éliminé dès le 16 octobre après une défaite contre les Brésiliens de FURIA (1-3), Cloud9 est devenu la première équipe à quitter les Worlds 2026. Il s’agit même de l’élimination la plus précoce de l’histoire de l’organisation dans la compétition. Une contre-performance particulièrement difficile à digérer, qui avait notamment poussé le support Vulcan à qualifier publiquement les prestations de son équipe de « pathétiques » .\n\nLa direction semble désormais déterminée à repartir sur de nouvelles bases. Le contrat de Zven a déjà été résilié, tout comme celui d’APA, tandis que l’avenir de Tactical reste incertain. Plusieurs ADC de renom pourraient d’ailleurs être disponibles sur le marché nord-américain dans les prochaines semaines. Berserker, Massu, Yeon et sajed arrivent notamment à l’échéance de leurs contrats respectifs, offrant à Cloud9 plusieurs possibilités pour reconstruire sa botlane. Après avoir retrouvé les Worlds en 2026, la structure américaine espère surtout éviter une nouvelle désillusion internationale l’année prochaine.\n\n[SOURCES] AD Carry Tactical has been allowed to explore his options as Cloud9 consider alternatives for the position Much like the LEC, the LCS is set for an offseason with several botlaners hitting FA More in report by @LCS_Eevee & @LEC_Wooloo https://t.co/4QYQqJs9N7",
     "first_seen": "2026-11-08T16:34:07Z"
-  },
-  {
-    "title": "Worlds 2026 : la Karmine Corp fait exploser les audiences face à T1",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/chiffres/worlds-2026-la-karmine-corp-fait-exploser-les-audiences-face-a-t1-776629.shtm",
-    "published": "2026-11-08T15:00:00Z",
-    "game": "lol",
-    "category": "news",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/11/46d5a2873acabf5fefc1fe19c9003072be4c76f5-1920x1080-1-1024x576.jpg",
-    "logo": null,
-    "content": "La Karmine Corp a quitté les Worlds 2026, mais elle aura marqué cette édition jusque dans les chiffres d’audience. Opposée au triple champion du monde en titre T1, la formation française a attiré une foule impressionnante de spectateurs dans la nuit de vendredi à samedi. Selon les données publiées par Esports Charts , le quart de finale a enregistré un pic de 2 793 144 spectateurs simultanés, hors plateformes chinoises. Un record pour cette édition 2026, qui n’avait encore jamais franchi la barre des deux millions de spectateurs sur une même rencontre.\n\nUn engouement qui s’explique autant par la popularité mondiale de T1 et de Faker que par l’immense communauté de la Karmine Corp. Pour sa première participation aux championnats du monde, le club français avait réussi à se hisser jusqu’en quarts de finale après un parcours commencé dès le Play-In. Malgré une troisième manche remportée par les coéquipiers de Caliste, les Coréens ont finalement imposé leur supériorité, notamment grâce à un Peyz exceptionnel. Une élimination douloureuse pour le dernier représentant européen, mais qui n’a pas empêché les supporters du Blue Wall de répondre massivement présent.\n\nSur Twitch, Kameto a lui aussi vécu une soirée historique. Le cofondateur de la Karmine Corp a rassemblé jusqu’à 262 641 spectateurs simultanés sur sa chaîne, établissant un nouveau record personnel pour une rencontre de League of Legends. Une performance qui témoigne de l’engouement suscité par le parcours de la KC, capable de mobiliser une communauté considérable face à l’une des équipes les plus prestigieuses de l’histoire de l’esport.\n\nÀ l’échelle internationale, ce quart de finale a largement dominé les autres affiches du tournoi, aucune des trois autres rencontres de ce stade n’ayant intégré le top 5 des matchs les plus regardés de l’édition. Le pic reste toutefois inférieur aux 3,92 millions de spectateurs enregistrés lors du quart de finale entre T1 et Anyone’s Legend en 2025. Avec ses 2,79 millions de spectateurs, les Worlds 2026 se hissent néanmoins à la quatrième place des événements esportifs les plus suivis de l’année, dépassant notamment le Major d’IEM Cologne sur Counter-Strike 2. Et les chiffres pourraient encore grimper : T1 retrouvera Bilibili Gaming ce dimanche en demi-finale, avant une grande finale programmée le 14 novembre.\n\n@T1LoL vs @KarmineCorp reached 2.79M Peak Viewers! The most popular match of Worlds 2026 so far, and the first to surpass 2M viewers Full breakdown: https://t.co/PxqFCK1ISd pic.twitter.com/CE9KUqlUP9",
-    "first_seen": "2026-11-09T08:23:36Z"
   },
   {
     "title": "Call of Duty: Warzone Is Now Free on Nintendo Switch 2",
