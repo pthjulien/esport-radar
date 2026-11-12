@@ -1,5 +1,68 @@
 [
   {
+    "title": "Wardogs Season 3 Removes IR Range Finder, Revamps Parachutes, and Improves Attack Vehicles",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/wardogs-season-3-patch-notes/",
+    "published": "2026-11-12T12:22:26Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Days after teasing the contents of Wardogs Season 3 through a recent dev log video , Bulkhead has officially unveiled the release notes for the highly anticipated upcoming patch.\n\nWARDOGS Season 03 drops November 12th. New map. Longer seasons. Renewed convictions. DEVLOG below. Patch Notes next week. pic.twitter.com/DMqGFsSThA\n\nThe Wardogs Season 3 update, which is set to go live later today, will introduce a series of new content to the game, including an urban map, a brand-new game mode, multi-track unlocks, and more.\n\nAlongside these new additions, the patch will also change a number of existing game mechanics: IR Range Finders are getting completely removed from the game, Parachutes are seeing a major revamp, most attack vehicles are seeing notable buffs, catch-up mechanics are ramped up, and more.\n\nHere’s everything you need to know about the Wardogs Season 3 update before it officially kicks off.\n\nBulkhead has officially confirmed that Wardogs Season 3 will go live on November 12, 2026 , at around 15:00 UTC . The game servers will be taken offline at around 13:00 UTC , and the maintenance should take roughly two hours to conclude.",
+    "first_seen": "2026-11-12T12:59:25Z"
+  },
+  {
+    "title": "Krafton Releases Its Own On-Device AI Model, Raon-1 Nano, After Building PUBG Ally on Nvidia’s",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/pubg/krafton-raon-1-nano-on-device-ai-pubg-ally/",
+    "published": "2026-11-12T12:08:58Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Krafton, the company behind PUBG: Battlegrounds and Battlegrounds Mobile India, has released Raon-1 nano, a small language model built for on-device inference. It has an effective 1.5 billion parameters and 3.1 billion in total, and the weights are on Hugging Face under the Apache 2.0 licence, which allows commercial use. Krafton says it was trained for multi-turn conversation, instruction following and tool calling, in Korean and English. For gamers, the relevant detail is that Krafton’s two shipped AI characters, PUBG Ally and inZOI’s Smart Zois, run on small models from Nvidia rather than on a model of Krafton’s own.\n\nWe’re releasing Raon-1 nano, an effective 1.5B dense LLM with per-layer embeddings and 3.1B total parameters. Our journey from PUBG Ally toward on-device LLMs continues. We pruned and distilled Raon-1 mini preview (30B-A4B) using our MoE-to-Dense approach, then further… pic.twitter.com/ydiQGrBlAd\n\nKRAFTON AI, the company’s research arm, described the release as the next step in “our journey from PUBG Ally toward on-device LLMs”. Kangwook Lee, Krafton’s chief AI officer, said the company “finally” has “a better base model for our edge AI applications”, meaning models that run on local hardware such as a gaming PC. Krafton has not said which of its games will use Raon-1 nano, or when.\n\nKrafton has shipped on-device AI in its games since inZOI entered early access in March 2025. Its optional Smart Zoi feature drives the city’s residents with a 0.5-billion-parameter Mistral NeMo Minitron model from Nvidia’s ACE platform, according to Nvidia , and it runs only on GeForce RTX graphics cards. PUBG Ally also uses Nvidia ACE, and its AI teammate Ella reached players in the Ally Duo beta on Sanhok in June 2026.\n\nKrafton described Ally’s design in an engineering interview published by Nvidia . Its team first tested cloud-hosted models, but the combined network and inference latency made responses too slow for live squad play. It moved to Nvidia’s Mistral-NeMo-Minitron-2B, quantised it for client-side deployment and fitted it into the VRAM left over by PUBG, so Ally runs on GPUs with as little as 8GB. A separate Krafton research preprint put the median API cost of Claude Opus 4.8 at $7.10 per replayed match , and Krafton judged it impractical at scale.\n\nThe local approach still had limits in the beta. Ally Duo was restricted to PCs with GeForce RTX cards, and Krafton’s patch notes advised players who saw delayed responses to lower their graphics settings or resolution. That advice indicates the model and the game were competing for the same GPU resources.",
+    "first_seen": "2026-11-12T12:59:25Z"
+  },
+  {
+    "title": "Kick Free GTA 6: How to Get One of 10,000 GTA 6 Ultimate Edition Codes",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/gta-6/kick-free-gta-6-how-to-get/",
+    "published": "2026-11-12T12:06:51Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Kick is giving away 10,000 digital copies of Grand Theft Auto VI Ultimate Edition through its Sunset Reward Case promotion. Viewers unlock a case by watching any stream on the platform for three hours. The promotion opened on 12 November and closes on 7 December. A case gives viewers a chance to win a code, and Kick does not guarantee a copy.\n\nThe steps are set out in Kick’s announcement of the Sunset Reward Case . No purchase, subscription or deposit is needed, and paying does not improve the odds.\n\nNew users can also open a free case once they finish Kick’s onboarding. Each valid entry has the same chance of winning, Kick says. Cases also contain emotes and badges. Codes are for PS5 or Xbox Series X|S, and Kick contacts winners at their registered email address.\n\nKick will not issue any codes before 19 November, the day GTA 6 launches, and some may arrive later. That means winners cannot use the promotion to pre-load the game. Selections stay provisional until Kick verifies each winner. Winners have at least 14 days to respond and confirm their details.\n\nXbox codes are open to eligible entrants worldwide, subject to local law and Microsoft’s restrictions. PS5 codes only work on PlayStation Network accounts registered in a list of supported countries, including the US, UK, Brazil, Japan and India. Choosing a region in the case does not change where a PSN account is registered. Kick says it owes no replacement if a winner picks the wrong console or region.\n\nKick runs the promotion on its own. It says it is not affiliated with Rockstar Games or Take-Two Interactive, and it does not share entrants’ personal data with Rockstar. The promoter is Kick Streaming Pty Ltd. Staff of Kick and Rockstar, and their immediate families, cannot enter.",
+    "first_seen": "2026-11-12T12:59:25Z"
+  },
+  {
+    "title": "Playoffs at R6 Osaka Major 2026: Three-win path to the trophy",
+    "source": "Esports.gg",
+    "url": "https://esports.gg/news/rainbow-six-siege/r6-osaka-major-2026-playoffs/",
+    "published": "2026-11-12T12:01:59Z",
+    "game": "lol",
+    "category": "tournament",
+    "image": "https://media.esports.gg/uploads/2026/11/r6-osaka-major-2026-talent-lineup.webp",
+    "logo": null,
+    "content": "The final battles of the Rainbow Six Siege (R6) Major in Osaka, Japan, run for three days, from Nov. 13 to Nov. 15.\n\nFrom the intense Swiss-system rounds, teams from three primary regions have made it to the playoffs. We have two recent Major winners and SI champions in the mix! They need to show their best play, as a few ambitious and skilled contenders are willing to put their hands on the Osaka trophy.\n\nCatch the ultimate R6 esports action from the Osaka Major playoffs right here: with the live stream, match schedule, map scores, and full results in the final bracket.\n\nThe stream of the Osaka Major playoffs is available on the official Rainbow Six Esports YouTube and Twitch .\n\nCatch the matches live if you’re hunting for the Twitch Drops ! The time zone is not too convenient for some regions, specifically in Europe — head to the YouTube channel for all the VODs from the tournament.\n\nThe weekend of Nov. 13–15 concludes the Rainbow Six Siege Osaka Major 2026. Check out the detailed schedule of playoff matches below.",
+    "first_seen": "2026-11-12T12:59:25Z"
+  },
+  {
     "title": "Shreeman Legend Dismisses Team Apex Gaming BGMI Roster Disbandment Rumour",
     "source": "TalkEsport",
     "url": "https://www.talkesport.com/mobile-gaming/bgmi/shreeman-dismisses-team-apex-gaming-bgmi-roster-disbandment-rumour/",
@@ -2267,40 +2330,6 @@
     "first_seen": "2026-11-09T17:00:38Z"
   },
   {
-    "title": "Rainbow Six Siege Year 11 Season 4 Reveal Set for Osaka Major Final",
-    "source": "Fragster",
-    "url": "https://www.fragster.com/rainbow-six-siege-y11s4-reveal-osaka-major/",
-    "published": "2026-11-09T16:45:57Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "Ubisoft has confirmed when players will get their first detailed look at Rainbow Six Siege Year 11 Season 4. The next seasonal reveal will take place during the BLAST R6 Osaka Major Grand Final weekend, bringing together the game’s competitive scene and its next major content update.\n\nThe presentation is scheduled for November 14 at 9:30 p.m. ET, which corresponds to November 15 at 3:30 a.m. CET. It will be broadcast live on Twitch.\n\nFull details of the season remain under wraps, but Ubisoft’s existing Year 11 roadmap already gives players a clear idea of several features expected in Season 4.\n\nUbisoft is using one of Rainbow Six Siege’s biggest esports events of the year to present the final season of Year 11.\n\nThe reveal will run alongside the Osaka Major Grand Final weekend at ATC Hall in Osaka, Japan. According to the event information, members of the development team will discuss upcoming gameplay changes, competitive improvements and the direction of Siege heading into the end of Year 11.\n\nPlayers watching the broadcast are also expected to have access to an exclusive reveal-themed charm during the event.",
-    "first_seen": "2026-11-09T17:00:38Z"
-  },
-  {
-    "title": "Xi Lai Gaming allows IGL WsLeo to explore options",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/787805/xi-lai-gaming-allows-igl-wsleo-to-explore-options",
-    "published": "2026-11-09T16:27:06Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "After one year with Xi Lai Gaming, WsLeo has been allowed to explore his options.",
-    "first_seen": "2026-11-09T17:00:38Z"
-  },
-  {
     "title": "YouTuber Typical Gamer misses ultra-rare Fortnite reward by quitting match as a joke in 80-hour grind",
     "source": "Dexerto US",
     "url": "https://www.dexerto.com/fortnite/youtuber-typical-gamer-misses-ultra-rare-fortnite-reward-by-quitting-match-as-a-joke-in-80-hour-grind-3426257/",
@@ -2328,23 +2357,6 @@
     },
     "content": "Ubisoft have chosen the Osaka Major Grand Final as the perfect time to unveil Rainbow Six Siege's Year 11 Season 4. A live reveal panel will now take place on Nov. 14 at 9:30 p.m. ET, Steam News has just confirmed, and will be streamed on Twitch. Players will get a first sneak peak at the season's gameplay and competitive changes while the Major's biggest match is played. For fans, it’s set to be an epic night of competitive action and big reveals.\n\nInside the BLAST R6 Osaka November Major the panel sits on a stage that moves to the ATC Hall in Osaka, Japan, for playoffs and finals starting Nov. 13. Event organizers have attached a $600,000 prize pool to this, and six Invitational points are at stake, with the points counting toward a spot at the Six Invitational 2027 in São Paulo.\n\nUbisoft's post invites players to \"be among the first to discover the season's biggest updates\" and hear from the development team.\n\nJoshua Mills, Rainbow Six Siege 's Creative Director, and Christopher Budgen, its Game Director, will host the event. Ubisoft's event guide says the panel will show how community feedback shapes balancing and content in Year 11 Season 4.\n\nWhether you’re watching live or at an official watch party, you’ll be able to unlock an exclusive Reveal Charm, which is exclusively available only on Nov. 15. Ubisoft is keeping the season's contents under wraps for now, though.\n\nThe final is still a few days away but teams are now in action. LOS kicked off their Osaka Major run with a bang, sweeping Chinese org Kingzero 2-0. From the 16-team Swiss phase, the top eight move into the bracket.",
     "first_seen": "2026-11-09T17:00:38Z"
-  },
-  {
-    "title": "Shopify Rebellion Gold parts ways with Vanitas",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/787796/shopify-rebellion-gold-parts-ways-with-vanitas",
-    "published": "2026-11-09T15:33:08Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Shopify Rebellion Gold will look to rebuild ahead of the Kickoff Qualifiers.",
-    "first_seen": "2026-11-09T15:55:40Z"
   },
   {
     "title": "Vous regardez les pros de Fortnite ? Cinq habitudes à reprendre au-delà de leurs skins",
@@ -2421,18 +2433,6 @@
     "image": "https://e.sport.fr/wp-content/uploads/2026/11/T1.EA_Cypher_LCK_CL_Season_2025-1024x683.jpg",
     "logo": null,
     "content": "Solary prépare un nouveau gros coup sur le mercato. D’après les informations de Sheep Esports , Kim « Cypher » Yu-jun devrait rejoindre la formation française pour la saison 2027, après plus de trois années passées au sein des équipes académiques de T1. Né en Italie, où il a vécu pendant dix ans, le joueur sud-coréen s’apprête à découvrir la scène compétitive européenne pour la première fois. Un recrutement ambitieux pour Solary, qui entend confirmer son nouveau statut parmi les meilleures équipes des ligues régionales européennes.\n\nPassé par les différentes équipes de jeunes de T1, Cypher avait intégré à temps plein l’effectif de T1 Academy en LCK Challengers League cette année. En 2026, il a disputé 110 rencontres officielles, avec un taux de victoire de 61,8 %, se distinguant notamment sur Kai’Sa (9 victoires pour 1 défaite) et Varus (7 victoires pour 1 défaite). Malgré ces performances encourageantes, l’ADC avait perdu sa place en fin de saison au profit d’Eclipse, jeune talent de 17 ans. Ce dernier avait notamment participé au World Star Challengers Invitational, remporté par T1 Academy face à… Solary. Cypher pourrait donc retrouver certains de ses anciens coéquipiers dès l’année prochaine, mais cette fois sous les couleurs françaises.\n\nCe recrutement s’inscrirait dans la continuité d’une saison exceptionnelle pour Solary. Après plusieurs années sans parvenir à se qualifier aux EMEA Masters, la structure a remporté son premier titre européen lors de l’édition Winter 2026, avant de décrocher deux sacres consécutifs en LFL. Finaliste des EMEA Masters au Spring puis au Summer, ainsi que du WSCI, l’équipe tourangelle s’est imposée comme l’une des références de la scène européenne de deuxième division. Des résultats qui lui permettent désormais d’afficher de grandes ambitions pour 2027.\n\nL’arrivée annoncée de Cypher constituerait une nouvelle étape dans la reconstruction de l’effectif. Solary aurait déjà trouvé un accord verbal avec Boukada, ancien jungler de SK Gaming et Shifters en LEC. Le reste de l’équipe demeure toutefois incertain, plusieurs joueurs explorant actuellement leurs possibilités au plus haut niveau européen, tandis que les contrats de l’effectif actuel arrivent prochainement à expiration. Avec deux recrues prometteuses et des moyens financiers importants à l’échelle des ligues régionales, Solary semble déterminée à rester au sommet. Et pourquoi pas prendre sa revanche sur T1 lors d’une prochaine confrontation internationale ?\n\n? Mehdi « Boukada » Lahlou ? Kim « Cypher » Yu-jun ?\n\n[SOURCES] Former T1 Esports Academy AD Carry Cypher is set to join Solary in the LFL Report by @LEC_Wooloo @anonimotum @i_Eros_ https://t.co/5WsuKaECKo",
-    "first_seen": "2026-11-08T17:29:48Z"
-  },
-  {
-    "title": "Jynxzi launches his esports team, signs R6 roster: Who are the players and what’s next?",
-    "source": "Esports.gg",
-    "url": "https://esports.gg/news/rainbow-six-siege/jynxzi-esports-r6-roster/",
-    "published": "2026-11-08T16:36:27Z",
-    "game": "lol",
-    "category": "news",
-    "image": "https://media.esports.gg/uploads/2026/11/r6-jynxzi-esports-team-na-cup-2026.webp",
-    "logo": null,
-    "content": "At the beginning of November 2026, Nicholas “Jynxzi” Stewart made a big announcement via a seemingly casual tweet. He wrote, “Introducing Jynxzi Esports,” and tagged five Rainbow Six players. It was the reveal of his own esports team .\n\nThe official R6 Esports account made their move as well, crafting a welcoming poster confirming that Jynxzi Esports is stepping into this competitive scene.\n\nRead on to discover all the details about Jynxzi Esports, the players on this R6 team, their plans for the near future, and more.\n\nThe team, Jynxzi Esports, is not entirely new to the Rainbow Six Siege professional scene.\n\nJynxzi acquired the existing roster of FYR Strays . All the players remain active under the new brand, carrying over their competitive momentum for future achievements.\n\nThe full active roster of Jynxzi Esports consists of the following players.",
     "first_seen": "2026-11-08T17:29:48Z"
   },
   {
