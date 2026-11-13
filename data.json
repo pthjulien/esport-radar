@@ -1,5 +1,56 @@
 [
   {
+    "title": "The Streamer Awards 2026 Winners List: All Categories",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/streamer-awards-2026-winners/",
+    "published": "2026-11-13T10:52:44Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "The sixth annual Streamer Awards, which took place on November 12, 2026, has come to an end. Hosted by QTCindrella alongside co-host Caroline Kwan, the event saw some of the biggest creators across Twitch, YouTube and Kick attending the event in person.\n\nFan voting for The Streamer Awards took place from October 16 to October 31 across 37 categories. Now, following a bizarre incident in which the show’s trophies were stolen from the front porch just weeks before the ceremony, we finally have the complete list of winners.\n\nIn this article, we’ll go through the full winners list for The Streamer Awards 2026 for every category, while taking a look at the nominees for each one.\n\nBelow, we have included the full list of winners for The Streamer Awards 2026:\n\nIShowSpeed wins Streamer of the Year at the Streamer Awards Accepting his nomination completely in Indonesian pic.twitter.com/2InXabmhXt\n\nCongratulations to Katie B, your BEST BREAKOUT STREAMER pic.twitter.com/7ahURU5JRC",
+    "first_seen": "2026-11-13T10:55:00Z"
+  },
+  {
+    "title": "Microsoft Outage Passes 16 Hours With Outlook and Teams Still Down, but Xbox Is Holding Up",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/tech/microsoft-outage-xbox-outlook-teams-16-hours/",
+    "published": "2026-11-13T10:42:36Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Microsoft’s outage across Outlook, Teams and the wider Microsoft 365 suite has now run for more than 16 hours, and the company’s own status page still shows service capacity below normal. Problems began with Teams in North America on 12 November, before Exchange Online mailboxes started failing from 17:54 UTC (11:24 pm IST). Minutes later, Microsoft confirmed that the issue could affect Microsoft 365 connectivity “for users in any region”. For gamers, the main question is whether Xbox has gone down with it, and so far the answer is mostly no.\n\nAs of Friday morning UTC, the official Xbox status page listed all services as “up and running”, including sign-in, multiplayer, the store and cloud gaming. Microsoft’s service health page names Outlook.com, OneDrive, OneNote, Microsoft To Do, Teams and Microsoft 365 for the web among the affected consumer products, and Xbox is not on that list. The disruption sits mainly in Exchange Online, the email system behind Outlook, and in the services that depend on it.\n\nSome players have still reported trouble since the outage began. Users on social media and outage trackers have described failed sign-ins, digital games that would not launch, cloud saves that did not sync and problems reaching Xbox Cloud Gaming. Windows Central, which collected those reports, said its own staff could connect normally. Microsoft has not confirmed those reports, and TalkEsport found no post from Xbox Support about the outage. Players who see errors should check the status page first, since a local network fault can produce the same errors.\n\nThe timing is awkward for Xbox, which has only just widened access to cloud play. Microsoft launched a free, ad-supported tier of Xbox Cloud Gaming on 12 November, the same day the outage began, and cloud gaming depends on Microsoft’s servers more than any other part of the platform. Xbox was not so lucky in October 2025, when a faulty configuration change to Azure Front Door took down Xbox sign-ins and Minecraft for hours along with Microsoft 365. Cloud failures have hit games elsewhere too, including Google Cloud’s outage in Europe last month.\n\nMicrosoft has given a detailed running account of the incident, though not a root cause. At 22:09 UTC on 12 November, it said a core process on affected servers was “becoming overwhelmed, causing capacity loss”, and that its actions so far “have not provided the anticipated relief”. Two hours later, it said servers it had returned to service could become unresponsive again “once they receive traffic”. It then began limiting which types of traffic could reach the affected infrastructure.\n\nThere has been some movement on the cause since then. Microsoft first said it had not identified any recent change linked to the start of the problem. By 21:40 UTC, however, it was assessing whether reverting “a small number of recent configuration updates” could speed up recovery. On Friday morning, it reported “positive results for service stability and increased capacity” from traffic optimisation, and said it was extending those actions across affected regions. Its latest update said service health “remains variable”, and that it has no evidence of malicious activity.",
+    "first_seen": "2026-11-13T10:55:00Z"
+  },
+  {
+    "title": "T1 goes all-in on fusion roster, welcoming Sacy as head coach",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/790063/t1-goes-all-in-on-fusion-roster-welcoming-sacy-as-head-coach",
+    "published": "2026-11-13T10:41:33Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "T1 Esports",
+      "tag": "T1",
+      "color": "#e11d48",
+      "bg": "#3b0511"
+    },
+    "content": "",
+    "first_seen": "2026-11-13T10:55:00Z"
+  },
+  {
     "title": "kiNgg tips his crown, says farewell to LEVIATÁN",
     "source": "VLR.gg",
     "url": "https://www.vlr.gg/790052/kingg-tips-his-crown-says-farewell-to-leviat-n",
@@ -2375,52 +2426,6 @@
     },
     "content": "According to reports, Epic Games has taken full ownership of Jazz Jackrabbit, which has stopped its original creator, Cliff Bleszinski, from reviving the extremely popular classic video game franchise.\n\nThe veteran video game designer, known for his work with the Gears of War franchise, has claimed that this attempt to regain control of the game, Jazz Jackrabbit, has concluded with the creators of Fortnite retaining its complete rights. Following the iconic green rabbit’s introduction to Fortnite as a Sprite in Chapter 7 , Season 4, Bleszinski sought a legal route to regain control over the franchise.\n\nAccording to him, he created the character Jazz Jackrabbit when he was 17, before joining EPIC Games. While EPIC maintains full ownership, the other party was able to produce the original agreement, which could suggest their respective positions on the matter. The absence of paperwork proved instrumental in bringing his legal pursuit to an unsavoury conclusion.\n\nAfter lawyering up Epic claims they fully own the rights to Jazz Jackrabbit and won't back down in spite of not having any paperwork to prove it (nor do I) in spite of the fact that they still pay me from sales of it on GoG (which means paperwork exists somewhere) and are still… pic.twitter.com/tD5UKfKtye\n\nIn his conversation with IGN , Bleszinski revealed that EPIC Games continues to pay him a royalty for the Jazz Jackrabbit sales on GOG, which hints that the original contractual documentation could still exist somewhere. Given that he created the paperwork years ago, he lacks the necessary ammunition to take on EPIC Games through legal channels.\n\nAccepting the difficulties surrounding the situation, Bleszinski has considered a “spiritual successor” to Jazz Jackrabbit as he rules out conventional methods to revive the series. Reviving the essence of the series under a different umbrella is understood by him as the best way forward. The “spiritual successor” will likely carry over the elements of the original character that avoid invoking a legal battle with EPIC.",
     "first_seen": "2026-11-10T14:05:57Z"
-  },
-  {
-    "title": "ARC Raiders Sales Hit 17 Million as Nexon Expects Flat Revenue",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/arc-raiders-sales-17-million-nexon-revenue/",
-    "published": "2026-11-10T13:01:01Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "ARC Raiders sales have passed 17 million copies, according to Nexon’s Q3 2026 earnings report. The number comes with a caveat. Nexon said the game’s Q3 revenue matched its outlook, and it expects Q4 revenue from the game to stay about the same. Sales have slowed noticeably since the extraction shooter launched on October 30, 2025.\n\nThis article covers the new sales total, the full sales timeline, the revenue outlook, Nexon’s wider results, and the player count changes tied to recent updates.\n\nNexon confirmed the 17 million figure in its Q3 2026 earnings report . Embark Studios, the developer, is a Nexon subsidiary.\n\nThe report says ARC Raiders revenue for Q3 came in line with Nexon’s forecast. For Q4, Nexon expects the game’s revenue to stay broadly flat compared to the previous quarter. In short, the game still sells, but revenue is no longer growing.\n\nThe total looks smaller next to earlier jumps. ARC Raiders reached 16 million copies in May 2026. That means it added about 1 million copies in roughly six months.\n\nThe game started fast. It sold more than 4 million copies in its first 12 days on PC, PS5, and Xbox Series X|S. The table below shows how the total has grown since then.",
-    "first_seen": "2026-11-10T14:05:57Z"
-  },
-  {
-    "title": "Claude Fable 5.2 Is Making Whole Games From a Single Prompt, What Does That Mean for Game Development?",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/editorials/claude-fable-5-2-games-ai-game-development/",
-    "published": "2026-11-10T12:08:33Z",
-    "game": "val",
-    "category": "news",
-    "image": "https://www.talkesport.com/wp-content/uploads/claude-fable-5-2-shooter-game-felix-rieseberg-1024x567.webp",
-    "logo": null,
-    "content": "Within a day of its launch, Claude Fable 5.2 had turned X into a showroom for games that nobody coded by hand. Anthropic released the model at 18:58 UTC on 9 November, and its announcement post passed 12.6 million views by Tuesday. Users quickly began posting shooters, racing games, a boat ride through dreamlike worlds and a medieval MMO village, all built by the model. The most shared demo came from Felix Rieseberg, who works at Anthropic, and whose first-person shooter had close to a million views.\n\nI wanted to test Fable 5.2's quality with one-shot prompts without human feedback. Everything in this game is from scratch: models, sounds, textures. ~$550 at API pricing, ~2.7M output and 445M input tokens, heavily cached. Took 8 hours! Play it here: https://t.co/fazOCcyNIH pic.twitter.com/GoCitQ9EVe\n\nRieseberg said he wanted to test the model “with one-shot prompts without human feedback”. According to his post, everything in the game, from the 3D models to the sounds and textures, was made from scratch over eight hours. He put the cost at about $550 at API prices, using around 2.7 million output tokens and 445 million input tokens, most of them cached. The game is playable in a browser , and footage from it shows an objective to cut three uplink relays inside a warehouse.\n\nFable 5.2 is the third model in Anthropic’s Fable line since June, and the company describes it as its most capable model for technical work. Its official page lists building “interactive 3D worlds” among its strengths, alongside coding, research and robotics. It also quotes a creative technologist at Unity, who says the model is “very strong on the harder game-dev tasks”. Anthropic cut the API price to $8 per million input tokens and $40 per million output tokens, down from $10 and $50 for Fable 5.1, and the benchmark scores on its page are the company’s own.\n\nThe demos cover most of the genres that fill a storefront. Creative coder Kevin Ngo posted a boat ride through eight dreamlike worlds , playable in the browser, which passed 320,000 views. Another user, Izkimar, said he built an entire MMO world in a single day, and that “every single asset you see was generated from code”. He argued that stylised art was a bigger test for the model than hyperrealism, and his footage shows a village of stone cottages, dirt paths and autumn trees.\n\nThe most ambitious claim came from the user ericmaskfr, who posted a Grand Theft Auto style city just over a week before GTA 6 launches. He said it took a single prompt, 2 hours and 14 minutes and a $200 subscription plan. His list of features includes a five-star wanted system, carjacking, a garage with paint jobs and neon underglow, nine districts and a day-to-night cycle. He also claimed that an indie studio would quote $90,000 and eight months for a similar prototype, a figure he did not source.",
-    "first_seen": "2026-11-10T12:54:58Z"
-  },
-  {
-    "title": "Nintendo eShop Gifting: Release Date, How It Works, Limits",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/nintendo-eshop-gifting-release-date-how-it-works/",
-    "published": "2026-11-10T11:35:06Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Nintendo eShop gifting is coming to Switch and Switch 2 in November 2026. Nintendo released system update 23.5.0 on November 9 to prepare both consoles for the feature. Players will be able to buy eligible games, DLC, and upgrade packs for members of their Nintendo Account family group. Nintendo’s US announcement lists November 16 as the launch date, while the patch notes list November 17.\n\nThis article explains the release date, how gifting works, the limits, and the other changes in the update.\n\nNintendo announced the feature on November 9, 2026. It will arrive through a Nintendo eShop update, not through the system update itself. The system update only adds the support the consoles need.\n\nThe patch notes say the gifting feature will be available after an eShop update scheduled for November 17, 2026. Nintendo’s US announcement says the feature arrives on November 16. Nintendo has not explained the one-day difference.\n\nGifting will work on both Nintendo Switch and Nintendo Switch 2. Both consoles need system software version 23.5.0 or later.\n\nPlayers can gift eligible games, DLC, and upgrade packs. Gifts are only possible between members of the same Nintendo Account family group. A family group can have up to 8 members.",
-    "first_seen": "2026-11-10T11:46:21Z"
   },
   {
     "title": "LFL : Solary dit adieu à Kryze, une légende du club",
