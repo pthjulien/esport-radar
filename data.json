@@ -1,5 +1,68 @@
 [
   {
+    "title": "TSMC Confirms Employee Data Leak as Seller Offers 46,000 Records for 3 Bitcoin",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/tech/tsmc-employee-data-leak-cloud-provider-46000-records/",
+    "published": "2026-11-13T11:44:32Z",
+    "game": "val",
+    "category": "rumor",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "TSMC has confirmed that personal data belonging to some of its current and former employees was posted on an external website without authorisation, after a seller began offering what it claims are about 46,000 employee records. In a statement filed with the US Securities and Exchange Commission on 12 November, the world’s largest contract chipmaker said it had “found no evidence that TSMC’s systems have been compromised”. It said the leaked information matched data stored in the system services of a third-party cloud provider, and was unrelated to its operations or to customer data. TSMC has not named the provider, however, and has not said how many people are affected.\n\nThe listing appeared on two underground forums, DarkForums and BreachForums, according to United Daily News and ETtoday . The seller is asking for 3 bitcoin, or about NT$7.4 million, for a 6.9GB data set, and has threatened to publish everything if no buyer comes forward within a week. A sample file of 499 records, each with 19 fields, was posted alongside the listing, United Daily News reported. Neither TSMC nor Taiwanese media have verified that the full set holds 46,000 records.\n\nAccording to the seller’s listing, as described in Taiwanese reports, each record includes a name, date of birth, job title, nationality, national ID number, home address, mobile number and email address. Some records reportedly also contain bank account information, along with the phone numbers and addresses of employees’ emergency contacts. TSMC’s own statement does not list the fields involved, although it says the company is informing affected staff and providing them with support. A national ID number combined with a bank account and a home address is enough for convincing impersonation attempts against banks and mobile operators. That is why the exposure matters even without a breach of TSMC’s network.\n\nThe profile of the people involved also makes the data unusually valuable. TSMC’s engineers are among the most sought-after in the chip industry, and job titles tied to names and phone numbers are useful material for targeted phishing and recruitment approaches. Taiwanese prosecutors charged several people in 2025 over the alleged theft of trade secrets linked to TSMC’s 2nm process, a case that showed how much outsiders will invest to reach the company’s staff. TSMC said it is working with the cloud vendor, the relevant investigating authorities and a third-party cybersecurity firm to establish the facts.\n\nFor gamers and the wider hardware market, TSMC’s key claim is that the incident does not touch its fabs. The company makes most of the world’s most advanced chips, including Nvidia’s GeForce and data centre GPUs and AMD’s Ryzen and Radeon processors. It also builds Apple’s A and M series chips and the custom processors inside the PlayStation 5 and Xbox Series consoles. TSMC said the data is unrelated to its operations, and Taiwanese reports said there was no evidence that wafer production or customer orders were affected. So far, there is no sign of any knock-on effect on the supply of PC or console hardware, which is already under pressure from rising memory costs .\n\nTSMC has dealt with security incidents before, although the earlier ones followed a different pattern. In August 2018, a virus spread through several of its fabs after what the company called “misoperation during the software installation process for a new tool”. TSMC estimated the impact at about 3% of its third-quarter revenue. In 2023, the LockBit ransomware group claimed to have hacked TSMC, but the company said the incident hit a hardware supplier and exposed only server set-up information. The latest case again points to a third party, this time a cloud provider holding employee records.",
+    "first_seen": "2026-11-13T11:50:47Z"
+  },
+  {
+    "title": "Valorant Hush Nerf Hinted as Riot Plans Sentinel Changes",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/valorant/valorant-hush-nerf-riot-hint-sentinel-balance/",
+    "published": "2026-11-13T11:38:52Z",
+    "game": "val",
+    "category": "patch",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Hush nerf talk has started in Valorant after Riot Games hinted at changes during a Reddit Q&A. Agent designer RiotNickwu named her ultimate as the first ability the team would consider adjusting. Riot is still watching Hush while players get used to her kit. The studio also said bigger Sentinel changes are coming after Patch 13.10.\n\nThis article covers the Hush nerf hint, why Riot is waiting, the Sentinel balance plans, and other details from the Q&A, including agent-inspired skins.\n\nRiot Games hinted that Hush might receive a nerf. RiotNickwu , an agent designer, answered questions in a Reddit Q&A session . He pointed to her ultimate as the first ability he would look at.\n\nHer ultimate is called Suspension. It sends out a steerable projectile that levitates players where it lands.\n\nRiot has not confirmed a change or a date. Patch 13.10 made no balance changes to Hush in normal modes. It only fixed visual bugs for Suspension and her animations.\n\nDevelopers continue to monitor Hush. They are giving players time to get used to her abilities before making changes.",
+    "first_seen": "2026-11-13T11:50:47Z"
+  },
+  {
+    "title": "Gen.G completes roster with Ray",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/790068/gen-g-completes-roster-with-ray",
+    "published": "2026-11-13T11:08:01Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "One year removed from his professional debut, Ray joins the Tiger Nation.",
+    "first_seen": "2026-11-13T11:50:47Z"
+  },
+  {
+    "title": "LEC : Supa et Myrwn tournent la page Movistar KOI",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/transferts/lec-supa-et-myrwn-tournent-la-page-movistar-koi-777011.shtm",
+    "published": "2026-11-13T11:00:00Z",
+    "game": "lol",
+    "category": "news",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/11/SUPA-MADRID-1024x576.webp",
+    "logo": null,
+    "content": "Le grand ménage se poursuit chez Movistar KOI. Alors que BrokenBlade devrait débarquer sur la toplane en provenance de G2 Esports, deux visages emblématiques de l’effectif espagnol s’apprêtent à faire leurs valises. Selon les informations de Sheep Esports , Alex « Myrwn » Villarejo aurait trouvé un accord avec GIANTX pour la saison 2027, tandis que David « Supa » Martínez García devrait poursuivre sa carrière chez Natus Vincere. Deux départs majeurs pour une formation qui avait construit son identité autour d’un noyau de joueurs espagnols.\n\n[SOURCES] Former Movistar KOI Toplaner Myrwn is set to join GIANTX for the 2027 #LEC season Report by @i_Eros_ , @anonimotum & @LEC_Wooloo https://t.co/a9E94ixXpu\n\nArrivés ensemble en LEC en 2024 sous les couleurs de MAD Lions KOI, les deux joueurs ont connu de belles réussites, jusqu’à décrocher un titre de champion d’Europe. Malgré une saison 2026 plus compliquée, ils ont également participé aux Worlds, où Movistar KOI a quitté la compétition en phase suisse avec deux victoires et trois défaites. Désormais, les deux Espagnols vont emprunter des chemins différents, après avoir passé trois années au sein du même effectif.\n\nPour Myrwn, la prochaine destination devrait donc être GIANTX. Également courtisé par NAVI, le toplaner de 23 ans aurait finalement privilégié la structure espagnole, où il retrouverait plusieurs nouvelles recrues. Thayger est attendu dans la jungle, Feisty sur la midlane et Piero au poste de support, tandis que Guilhoto devrait rester à la tête de l’équipe. Un projet ambitieux, avec l’objectif de se rapprocher du podium du LEC et de décrocher une qualification internationale.\n\nDe son côté, Supa devrait rejoindre Natus Vincere, qui cherche à reconstruire son effectif autour de Rhilech. Également suivi par GIANTX et envisagé comme une solution de repli par Fnatic, l’AD Carry de 26 ans mettrait ainsi fin à sept années de collaboration avec Melzhet, son entraîneur depuis 2019. Un changement important pour le joueur, qui n’avait encore jamais porté d’autres couleurs que celles de KOI dans l’élite européenne. Pour Supa comme pour Myrwn, la saison 2027 sera donc celle d’un nouveau départ, avec l’envie de prouver qu’ils ont encore leur place parmi les meilleurs joueurs du continent.\n\n[SOURCES] Supa is set to join Natus Vincere as their AD Carry for the 2027 #LEC season GIANTX also showed interest in Supa, while Fnatic considered him as a backup option. Report by @i_Eros_ , @anonimotum & @LEC_Wooloo https://t.co/w9rNCSpNuC",
+    "first_seen": "2026-11-13T11:50:47Z"
+  },
+  {
     "title": "The Streamer Awards 2026 Winners List: All Categories",
     "source": "TalkEsport",
     "url": "https://www.talkesport.com/news/streamer-awards-2026-winners/",
@@ -2336,30 +2399,6 @@
     "first_seen": "2026-11-10T15:43:32Z"
   },
   {
-    "title": "Valorant 13.10 update bring Sentinel buffs and big changes to assists",
-    "source": "Dexerto US",
-    "url": "https://www.dexerto.com/valorant/valorant-13-10-update-bring-sentinel-buffs-and-big-changes-to-assists-3426986/",
-    "published": "2026-11-10T14:28:03Z",
-    "game": "val",
-    "category": "patch",
-    "image": "https://www.dexerto.com/cdn-image/wp-content/uploads/2026/11/10/valorant-13.10-patch-notes-sentinels-buffs-cypher-nerf.jpg?width=1080&quality=75&format=auto",
-    "logo": null,
-    "content": "Valorant’s 13.10 update is here, with some buffs and nerfs for different Sentinels, as well as a change for in-game assists. So, lets get into the patch notes.",
-    "first_seen": "2026-11-10T15:43:32Z"
-  },
-  {
-    "title": "Valorant Patch 13.10 Notes: Sentinel Buffs, Assist Changes and Replay Bookmarks",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/valorant/valorant-patch-13-10-notes/",
-    "published": "2026-11-10T14:21:18Z",
-    "game": "val",
-    "category": "patch",
-    "image": "https://www.talkesport.com/wp-content/uploads/replay-bookmark-valorant-timeline-1024x112.jpg",
-    "logo": null,
-    "content": "Valorant patch 13.10 is out, and the biggest news for ranked players is a set of Sentinel buffs. Cypher’s Spycam, Killjoy’s Turret and Vyse’s Arc Rose now come back 15 seconds faster after being destroyed. The patch also adds replay bookmarks, changes how assists are counted, and gives Gauntlet: Glitched five-player parties and new abilities.\n\nThe changes line up with what leaks suggested for 13.10 last week, and Riot has now confirmed them in the official 13.10 patch notes .\n\nRiot says these are “light changes” to encourage more back-and-forth between teams. The idea is to give Sentinels more room to place utility early and reset it mid-round, while still rewarding the team that breaks their setup.\n\nThe new 45-second cooldown sits just below the 50-second cooldown on Initiator signature abilities, which Riot points out on purpose. Cypher does lose something too. Picking up his Spycam now takes longer to come back, bringing him in line with other Sentinels.\n\nRiot also calls this “a small, targeted change” while it looks at Sentinel cooldowns more broadly, so bigger changes may follow in a later patch.\n\nRiot admits it changed assists back in patch 13.08, alongside the Performance Score update, but forgot to include it in the patch notes. Here is how assists now work:",
-    "first_seen": "2026-11-10T15:43:32Z"
-  },
-  {
     "title": "Apex Legends Legend bans explained: how Ranked voting works",
     "source": "Pley.gg",
     "url": "https://pley.gg/apex-legends/apex-legends-legend-bans-explained-how-ranked-voting-works/",
@@ -2409,35 +2448,6 @@
     },
     "content": "A shot feels late, the camera stutters and the next attack produces an unexpected damage number. In chat, all three problems might get called lag. That description makes troubleshooting difficult because the symptoms can come from completely different parts of the game.\n\nLatency measures delay. Frame rate describes how frequently frames are produced. Random number generation supplies values that game rules can use to select outcomes. The three can operate during the same action, but they answer different questions.\n\nNetwork latency concerns communication between machines. A game’s ping counter usually reports an estimate of round-trip time to a server. System latency concerns the local path from an input to the resulting change on the display.\n\nThat difference matters when a game feels unresponsive despite a low ping. The delay can involve the input device, game processing, rendering or display. A fast network connection does not remove every step between clicking a mouse and seeing the response.\n\nNVIDIA’s explanation of system and network latency separates these paths and explains why FPS alone cannot measure responsiveness. A useful latency reading must identify the part of the process it measures.\n\nFor troubleshooting, describe the symptom first. Does the view turn late when the mouse moves? Does a server-confirmed interaction arrive late while local movement looks smooth? Those observations provide more information than calling both problems lag.",
     "first_seen": "2026-11-10T14:05:57Z"
-  },
-  {
-    "title": "Epic Games Claims Ownership of Jazz Jackrabbit Amid Legal Dispute",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/jazz-jackrabbit-rights-cliff-bleszinski-epic-games/",
-    "published": "2026-11-10T13:12:21Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "According to reports, Epic Games has taken full ownership of Jazz Jackrabbit, which has stopped its original creator, Cliff Bleszinski, from reviving the extremely popular classic video game franchise.\n\nThe veteran video game designer, known for his work with the Gears of War franchise, has claimed that this attempt to regain control of the game, Jazz Jackrabbit, has concluded with the creators of Fortnite retaining its complete rights. Following the iconic green rabbit’s introduction to Fortnite as a Sprite in Chapter 7 , Season 4, Bleszinski sought a legal route to regain control over the franchise.\n\nAccording to him, he created the character Jazz Jackrabbit when he was 17, before joining EPIC Games. While EPIC maintains full ownership, the other party was able to produce the original agreement, which could suggest their respective positions on the matter. The absence of paperwork proved instrumental in bringing his legal pursuit to an unsavoury conclusion.\n\nAfter lawyering up Epic claims they fully own the rights to Jazz Jackrabbit and won't back down in spite of not having any paperwork to prove it (nor do I) in spite of the fact that they still pay me from sales of it on GoG (which means paperwork exists somewhere) and are still… pic.twitter.com/tD5UKfKtye\n\nIn his conversation with IGN , Bleszinski revealed that EPIC Games continues to pay him a royalty for the Jazz Jackrabbit sales on GOG, which hints that the original contractual documentation could still exist somewhere. Given that he created the paperwork years ago, he lacks the necessary ammunition to take on EPIC Games through legal channels.\n\nAccepting the difficulties surrounding the situation, Bleszinski has considered a “spiritual successor” to Jazz Jackrabbit as he rules out conventional methods to revive the series. Reviving the essence of the series under a different umbrella is understood by him as the best way forward. The “spiritual successor” will likely carry over the elements of the original character that avoid invoking a legal battle with EPIC.",
-    "first_seen": "2026-11-10T14:05:57Z"
-  },
-  {
-    "title": "LFL : Solary dit adieu à Kryze, une légende du club",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/transferts/lfl-solary-dit-adieu-a-kryze-une-legende-du-club-776801.shtm",
-    "published": "2026-11-10T11:00:00Z",
-    "game": "lol",
-    "category": "news",
-    "image": "https://e.sport.fr/wp-content/uploads/2025/11/1704e9f06b3e689e5d82483d8d5fdfa244583502-3840x2180-1-1024x581.webp",
-    "logo": null,
-    "content": "C’est une page importante de l’histoire de Solary qui se tourne. La structure française a officialisé le départ de Felix « Kryze » Hellström, son toplaner depuis le début de l’année 2024. À 27 ans, le Suédois quitte le club après trois saisons durant lesquelles il aura largement contribué à sa progression sur la scène compétitive de League of Legends. Arrivé dans une équipe encore en quête de résultats, il s’en va aujourd’hui avec un palmarès bien garni et une place particulière dans le cœur des supporters.\n\nDans son message d’adieu, Solary n’a pas caché son émotion, rendant un hommage appuyé à l’un des visages emblématiques de son projet. « Felix aura fait partie de l’aventure pendant 3 ans et pendant tout ce temps, il aura été le joueur rêvé, le coéquipier rêvé et tout ce dont on peut espérer d’un joueur et d’une personne. » La structure tourangelle a également salué son parcours avec des mots particulièrement forts : « Tu es arrivé avec tout à construire et tu repars aujourd’hui comme une légende du club. » Un hommage à la hauteur de son investissement et de son importance dans les succès récents de l’équipe.\n\nKryze quitte Solary au terme d’un exercice 2026 particulièrement réussi. Avec ses coéquipiers, le Suédois a remporté deux titres de champion de France en LFL, ainsi que les EMEA Masters Winter. La formation tourangelle a ensuite atteint la finale des EMEA Masters Spring, avant de décrocher une nouvelle médaille d’argent lors du World Star Challengers Invitational, après une défaite face à T1 Academy (2-3). Solary a finalement conclu sa saison sur une troisième finale internationale perdue, cette fois aux EMEA Masters Summer contre Galions (2-3). Une régularité impressionnante qui a permis à la structure de s’imposer parmi les références des ligues régionales européennes.\n\nMalgré ces dernières désillusions, Kryze laisse derrière lui un héritage considérable, après avoir accompagné Solary dans l’une des plus belles périodes de son histoire. Son départ s’inscrit également dans une importante reconstruction de l’effectif pour 2027, avec les arrivées attendues de plusieurs nouveaux talents. Reste désormais à savoir où le vétéran suédois poursuivra sa carrière, lui qui avait notamment été évoqué parmi les candidats à une place en LEC.\n\nFelix aura fait partie de l'aventure pendant 3 ans et pendant tout ce temps, il aura été le joueur rêvé, le coéquipier rêvé et tout ce dont on peut espérer d'un joueur et d'une personne. Merci pour tout @KryzeLoL tu es arrivé avec tout à construire et tu repars aujourd'hui comme… pic.twitter.com/mK0vfdUHAq",
-    "first_seen": "2026-11-10T11:46:21Z"
   },
   {
     "title": "Virtus.pro make stand-in Patsi permanent with F0R3VER inactive",
