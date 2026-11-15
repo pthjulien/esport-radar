@@ -1,5 +1,39 @@
 [
   {
+    "title": "Another one bites the dust: LOUD parts ways with Darker",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/790662/another-one-bites-the-dust-loud-parts-ways-with-darker",
+    "published": "2026-11-15T05:15:30Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "LOUD Esports",
+      "tag": "LOUD",
+      "color": "#22c55e",
+      "bg": "#062e12"
+    },
+    "content": "LOUD parts ways with another Champions-winning player.",
+    "first_seen": "2026-11-15T07:41:29Z"
+  },
+  {
+    "title": "djay: \"I'm finally on a roster where the players around me are equal to or above me in terms of game knowledge\"",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79928/djay-im-finally-on-a-roster-where-the-players-around-me-are-equal-to-or-above-me-in-terms-of-game-knowledge",
+    "published": "2026-11-15T01:21:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "djay feels confident about the team's recent progress.",
+    "first_seen": "2026-11-15T07:41:29Z"
+  },
+  {
     "title": "snav on Austin LAN: \"The finals should be a 3-0 for us no matter who we play\"",
     "source": "Dust2",
     "url": "https://www.dust2.us/news/79924/snav-on-austin-lan-the-finals-should-be-a-3-0-for-us-no-matter-who-we-play",
@@ -2370,35 +2404,6 @@
     "image": "https://www.talkesport.com/wp-content/uploads/Top-BGMI-Streamers-in-India-by-Hours-Watched-1-1024x576.webp",
     "logo": null,
     "content": "Renowned S8UL content creator and former esports athlete Raj “Snax” Varma has become the most watched Battlegrounds Mobile India (BGMI) streamer over the 30 day period ending on 11th November. Snax has beaten all other major streamers, including LoLzZz Gaming and Jonathan Gaming, and even Krafton India Esports in the last 30 days.\n\nAccording to LetsGrowEsports’ livestream analytics platform, Snax Gaming has emerged as the most watched BGMI streamer in the past 30 days. Notably, he has topped the charts for both Hours Watched and Peak Viewers, beating even Krafton India Esports despite two official events, Battlegrounds Mobile India Showdown 2026 (BMSD 2026) and Battlegrounds Mobile India International Cup 2026 (BMIC 2026), taking place in the same timeframe.\n\nOver the last 30 days, Snax has recorded a whopping 1.84 million watch hours, trailed by Krafton India Esports and LoLzZz Gaming at 1.47 million watch hours and 363 thousand watch hours, respectively. What stands out is that the difference between Snax and LoLzZz (#3) is over five times.\n\nNow, if we turn towards peak viewership, a similar trend follows. Snax leads the chart with a massive 247.6k peak concurrent viewers, followed by Krafton India Esports and Jonathan Gaming with 185.5k and 115.2k peak viewers, respectively. Interestingly, Snax’s peak viewership was more than twice that of Jonathan Gaming (#3).\n\nSnax’s content creation and livestreaming journey has been going extremely well for the past few months. Notably, during his PUBG Mobile World Cup watch party at Esports World Cup GRAND FINALS, he recorded a concurrent peak viewership of a massive 448540 viewers . To put it into perspective, only 2 livestreams have recorded a concurrent peak viewership higher than his. The first being Akın Batur at 706680 peak concurrent viewers and PUBG Mobile Indonesia at 472164 peak concurrent viewers.",
-    "first_seen": "2026-11-11T12:57:50Z"
-  },
-  {
-    "title": "Bilibili Gaming sign world champion Smoggy from EDG",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/valorant/bilibili-gaming-sign-world-champion-smoggy-from-edg/",
-    "published": "2026-11-11T12:03:02Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "The controller from EDward Gaming’s 2024 title side ends more than four years at the club and joins a BLG team that missed Champions Shanghai and is still looking for a head coach.\n\nBilibili Gaming have signed Zhang “Smoggy” Zhao for the 2027 VCT season. EDward Gaming announced on Weibo on Tuesday 10 November that he was leaving the team with immediate effect, and BLG confirmed his arrival on Wednesday 11 November.\n\nSheep Esports reported the move on 5 November, as we noted in our round-up of the China offseason .\n\nSmoggy came to EDG from Weibo Gaming in July 2022, and EDG’s farewell post recalls that his first appearance came as a substitute at Champions Istanbul that year. He started out in a flex role, covering initiator, sentinel and secondary duelist around ZmjjKK, before moving to primary controller midway through 2024, VLR.gg writes.\n\nThe switch paid off within months. EDG won China Kickoff, Stage 1 and Stage 2 in 2024 and then became the first Chinese team to win VALORANT Champions , beating Team Heretics 3-2 in the Seoul final.\n\nUnder head coach Autumn in 2026, EDG won China Stage 1 and finished third in London, but Champions Shanghai ended in the group stage. All four Chinese teams went out there without winning a series.",
-    "first_seen": "2026-11-11T12:57:50Z"
-  },
-  {
-    "title": "BGMI Air Pre Registration Opens on iOS Ahead of 10 December Launch",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/mobile-gaming/bgmi/bgmi-air-pre-registration-ios-app-store/",
-    "published": "2026-11-11T11:59:24Z",
-    "game": "val",
-    "category": "news",
-    "image": "https://www.talkesport.com/wp-content/uploads/CE59A769-C3AE-4A98-A58C-FFE076124A30.webp",
-    "logo": null,
-    "content": "KRAFTON India has opened pre-registration for BGMI Air on iOS, a month before the game launches in India on 10 December. iPhone users can now sign up on the Apple App Store, the company said on 11 November. Until now, pre-registration had been open only on Google Play, where it passed 14 million sign-ups. The iOS opening means players on both major mobile platforms can now register before launch.\n\nBGMI Air is a lighter version of Battlegrounds Mobile India, KRAFTON India’s main battle royale game. The company says it keeps BGMI’s core gameplay while needing an initial download of around 1GB. That size is aimed at players whose phones or storage have kept them from playing BGMI. KRAFTON India has not published the minimum device requirements or the full install size after updates. The small download is the main way the company hopes to reach players who cannot run the full game.\n\nBGMI Air will be a separate app rather than an update to BGMI. Existing BGMI players can play it without transferring their current accounts, KRAFTON India said. The company has not said whether progress, purchases or cosmetics will carry over between the two games. It has also not said whether players on the two apps will share matchmaking. For existing players, this means BGMI Air is an extra app, not a replacement.\n\nThe Android figure gives a sense of early demand. BGMI Air passed 14 million pre-registrations on Google Play before its launch date was announced, the company said. That is about 5% of BGMI’s 260 million total downloads, a TalkEsport calculation. The comparison is rough, because downloads and pre-registrations measure different things, and one person can count more than once. Even so, the figure shows the lighter app has drawn substantial interest before release.\n\nKRAFTON India has not said how many players it expects at launch, or whether esports events will follow. Karan Pathak, KRAFTON India’s associate director of esports, said the company would launch the app first and then decide its esports plans, as we covered in our interview with Karan Pathak . TalkEsport reported earlier on how BGMI Air passed 10 million pre-registrations , and on the confirmation of its launch date . Any esports announcement is therefore unlikely before the app is available.\n\nPlayers can pre-register now on Google Play and the Apple App Store. KRAFTON India said further updates will come through BGMI Air’s official social media accounts. Everything confirmed so far is in our BGMI Air guide , and details on the main game are on the official BGMI website . BGMI Air launches in India on 10 December.",
     "first_seen": "2026-11-11T12:57:50Z"
   },
   {
