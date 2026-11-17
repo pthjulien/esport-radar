@@ -1,5 +1,131 @@
 [
   {
+    "title": "tatm: \"I want Pose1doNN and CoolComs permanently\"",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79978/tatm-i-want-pose1donn-and-coolcoms-permanently",
+    "published": "2026-11-17T00:50:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "Is this the next evolution of DETONATE?",
+    "first_seen": "2026-11-17T02:23:22Z"
+  },
+  {
+    "title": "Check out the VRS impact of Austin LAN 2026",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79989/check-out-the-vrs-impact-of-austin-lan-2026",
+    "published": "2026-11-17T00:29:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "Voca won the tournament and made the most headway in the VRS standings.",
+    "first_seen": "2026-11-17T02:23:22Z"
+  },
+  {
+    "title": "Infinite on qualifying for a Major in 2027: \"I'm confident Voca can do it\"",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79988/infinite-on-qualifying-for-a-major-in-2027-im-confident-voca-can-do-it",
+    "published": "2026-11-17T00:23:00Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "",
+    "first_seen": "2026-11-17T02:23:22Z"
+  },
+  {
+    "title": "Maze: \"When I come up with concepts, the team are really good at adapting fast\"",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79960/maze-when-i-come-up-with-concepts-the-team-are-really-good-at-adapting-fast",
+    "published": "2026-11-16T23:01:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "Maze has been impressed by his teammates' malleability.",
+    "first_seen": "2026-11-17T02:23:22Z"
+  },
+  {
+    "title": "Sandman: \"This roster could be capable of actually competing overseas\"",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/79983/sandman-this-roster-could-be-capable-of-actually-competing-overseas",
+    "published": "2026-11-16T21:36:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "Despite the loss to Voca, Sandman believes this iteration of LAG is one of the best the organization has assembled.",
+    "first_seen": "2026-11-17T02:23:22Z"
+  },
+  {
+    "title": "jabbi leaves Astralis after three years and one LAN title",
+    "source": "Pley.gg",
+    "url": "https://pley.gg/cs2/jabbi-leaves-astralis-after-three-years-and-one-lan-title/",
+    "published": "2026-11-16T20:00:33Z",
+    "game": "cs2",
+    "category": "official",
+    "image": "https://pley.gg/app/uploads/2026/10/flag-se-valorant.png",
+    "logo": null,
+    "content": "The Dane is still one of the five names on PGL’s locked Singapore roster, but Anlelele was already listed to play in his place.\n\nAstralis have announced the departure of Jakob “jabbi” Nygaard, the rifler who arrived in November 2023 and was part of the team that won the organisation its first LAN title since 2019 last month. The club said goodbye on X on Monday evening, a little over five weeks after jabbi and HooXi were moved to the bench .\n\nThank you, @jabbiCS ❤️ It’s been an amazing three years, and you’ve been such a big part of the team. Thanks for all the hard work, the good memories and for being an absolute pleasure to have around, both in and outside the server. You’ll always be part of the Astralis family… pic.twitter.com/KBWF4Jpadw\n\nAstralis thanked the 23-year-old for his time on the team:\n\nIt’s been an amazing three years, and you’ve been such a big part of the team. Thanks for all the hard work, the good memories and for being an absolute pleasure to have around, both in and outside the server.\n\nThe announcement does not mention the PGL Major Singapore , and on paper jabbi is still part of Astralis’ entry. PGL’s locked rosters from 9 November list phzy , Staehr , ryu , siuhy and jabbi as the five, NEO as coach and Anton “Anlelele” Huynh as substitute. The same page settles who plays: “Astralis with Anlelele instead of jabbi.”",
+    "first_seen": "2026-11-17T02:23:22Z"
+  },
+  {
+    "title": "LEC 2027 : date de reprise, format, Roadtrips… ce qu’il faut savoir",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/news/lec-2027-date-de-reprise-format-roadtrips-ce-quil-faut-savoir-777198.shtm",
+    "published": "2026-11-16T19:00:00Z",
+    "game": "lol",
+    "category": "news",
+    "image": "https://e.sport.fr/wp-content/uploads/2025/10/bb43cfc5-931f-4021-b6e5-9703f2c0e64d-1024x683.jpg",
+    "logo": null,
+    "content": "Le compte à rebours est lancé pour le championnat européen de League of Legends. La saison 2027 du LEC débutera officiellement le vendredi 15 janvier, avec le coup d’envoi du Winter Split. Riot Games a confirmé le maintien des trois segments traditionnels (Winter, Spring et Summer), sans bouleversement majeur du format. L’éditeur souhaite ainsi poursuivre sur la lancée de la saison précédente, en conservant une formule qui a fait ses preuves.\n\nComme lors des segments de printemps et d’été 2026, les dix équipes s’affronteront en Bo3 lors de la saison régulière, dans un format où chaque formation rencontrera une fois ses neuf adversaires. Les six meilleures équipes se qualifieront ensuite pour les playoffs, intégralement disputés en Bo5. La Fearless Draft et le système de Sélection prioritaire seront également conservés tout au long de l’année. Une chose est sûre : aucun match en Bo1 ne sera au programme de cette saison 2027.\n\nLEC RETURNS ON JANUARY 15 Winter, Spring and Summer: Check out the (old) new format for all three splits! pic.twitter.com/ig6FaCDwVC\n\nL’autre grande annonce concerne les LEC Roadtrips, qui feront leur retour pour une troisième année consécutive. Après cinq événements délocalisés organisés en partenariat avec la Karmine Corp et Movistar KOI en 2026, Riot Games souhaite poursuivre le développement de cette initiative. L’objectif sera de collaborer avec davantage d’organisations pour faire voyager le championnat dans de nouvelles villes à travers la région EMEA.\n\nUne excellente nouvelle pour les supporters européens, qui avaient notamment pu assister à des rencontres à Barcelone, Madrid, Évry, Paris ou encore Nice cette année. Les nouvelles destinations restent toutefois à déterminer, tout comme le calendrier détaillé du Winter Split. Riot Games promet de communiquer davantage d’informations dans les prochaines semaines, avant une reprise qui s’annonce particulièrement attendue après un mercato mouvementé.\n\nDid you get the memo? pic.twitter.com/VRWuhXFyVG",
+    "first_seen": "2026-11-17T02:23:22Z"
+  },
+  {
+    "title": "Toshiba TV becomes Official Premium Partner of MLBB’s first MCT SEA in Bangkok",
+    "source": "Esports.gg",
+    "url": "https://esports.gg/news/mobile-legends-bang-bang-2/toshiba-mlbb-mct-sea-partner/",
+    "published": "2026-11-16T18:58:27Z",
+    "game": "lol",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "League of Legends Pro",
+      "tag": "LOL",
+      "color": "#c89b3c",
+      "bg": "#2e2104"
+    },
+    "content": "MOONTON Games took the opportunity at the tournament's Group draw to reveal that Toshiba TV is now the Official Premium Partner of the first Mobile Legends: Bang Bang Southeast Asia Championship Tour (MCT SEA). It represents new territory for the telly maker, which has never before worked with the MLBB developer on such a large regional esports event. The in-person tournament runs in Bangkok, Thailand, from Dec. 9 to 13 with a $50,000 prize pool.\n\nThe activation runs under a campaign called \"Set the Game On.” It will cover tournament broadcasts, retail stores, social media, and even online shopping. Toshiba branding will sit alongside Turtle Cam and Turtle Slain. In addition, Toshiba TV will have its own presence at the celebration for the Grand Final.\n\nThe TV maker, of course, has a product to push: its flagship RGB Mini LED ZXS. The R650 Mini LED, an e-commerce exclusive in Southeast Asia, will tie the campaign to local online retail.\n\nDoes the deal make sense? Toshiba TV's Regional Marketing Manager (ASEAN), Ken Lim, noted that MLBB is a mobile game but insisted that more fans are following it on larger screens. \"We want Toshiba TV to become part of that shared viewing experience,\" he said. What’s more, MLBB's biggest moments, such as a Turtle fight deciding a series, will be replayed on living-room screens and watch-party projectors. According to Toshiba, that’s where its sets really belong.\n\nSo although Toshiba hasn’t worked on such a big regional esports before, it has worked with MLBB, sponsoring small community events like a Philippines watch party for the M5 World Championship.\n\nMOONTON's Group Draw results confirm several matchups so far:",
+    "first_seen": "2026-11-17T02:23:22Z"
+  },
+  {
     "title": "From underdog to champion: Myyz wins TFT Enchanted Wilds Tactician’s Crown!",
     "source": "Esports.gg",
     "url": "https://esports.gg/news/teamfight-tactics/myyz-wins-tft-enchanted-wilds-tacticians-crown/",
@@ -8,7 +134,7 @@
     "category": "news",
     "image": "https://media.esports.gg/uploads/2026/11/tft-myyz-article-by-esportsgg-image-via-riot-games-tft-set-18-tacticians-crown-winner-tft-set-18-tacticians-crown-stage-1024x576.webp",
     "logo": null,
-    "content": "The winner of the Teamfight Tactics (TFT) Set 18: Enchanted Wilds Tactician’s Crown is Myyz! Read on for Myyz’s journey to the top what he said about his well-earned victory.\n\nOver the weekend, 40 TFT players duked it out in hopes of claiming the lion’s share of $470,000 USD and making esports history. After Day 1’s matches, only 32 players remained in the competition. They then fought until only eight players claimed spots in the Day 3 Grand Final.\n\nPlayed under the checkmate format, the TFT Set 18 Tactician’s Crown Grand Final required players to reach 20 points before securing a first-place finish to take home the gold. The competition was intense, as by Game 7, almost every player entered checkmate. Then, a Game 8 came about for the first time ever in TFT Grand Finals history.\n\nIt was Riftbeast showdown between Maris and Myyz, and the latter player came out on top!\n\nIn that moment, Myyz went from a relatively unfamiliar name on the international stage to a Tactician’s Crown champion. Previously, he only participated in the TFT Open Championship 2026 Fall: Super Server event and its Regional Finals.\n\nThe player took home $150,000 USD and dedicated his victory to China’s (CN) competitive scene.",
+    "content": "The winner of the Teamfight Tactics (TFT) Set 18: Enchanted Wilds Tactician’s Crown is Myyz! Read on for Myyz’s journey to the top what he said about his well-earned victory.\n\nOver the weekend, 40 TFT players duked it out in hopes of claiming the lion’s share of $470,000 USD and making esports history. After Day 1’s matches, only 32 players remained in the competition. They then fought until only eight players claimed spots in the Day 3 Grand Final.\n\nPlayed under the checkmate format, the TFT Set 18 Tactician’s Crown Grand Final required players to reach 20 points before securing a first-place finish to take home the gold. The competition was intense, as by Game 7, almost every player entered checkmate. Then, a Game 8 came about for the first time ever in TFT Grand Finals history.\n\nIt was a Riftbeast showdown between Maris and Myyz, and the latter player came out on top!\n\nIn that moment, Myyz went from a relatively unfamiliar name on the international stage to a Tactician’s Crown champion. Previously, he only participated in the TFT Open Championship 2026 Fall: Super Server event and its Regional Finals.\n\nThe player took home $150,000 USD and dedicated his victory to China’s (CN) competitive scene.",
     "first_seen": "2026-11-16T18:11:38Z"
   },
   {
@@ -2253,137 +2379,6 @@
     },
     "content": "A long trip over the Pacific Ocean brings alvinboy to his new home.",
     "first_seen": "2026-11-13T12:57:32Z"
-  },
-  {
-    "title": "Gen.G sign 18-year-old Ray to finish their 2027 lineup",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/valorant/gen-g-sign-18-year-old-ray-to-finish-their-2027-lineup/",
-    "published": "2026-11-13T12:03:07Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "The 18-year-old controller won both Korean Challengers splits with ONSIDE Gaming and now joins Dambi and MaKo at Gen.G.\n\nWhen Gen.G revealed four of their 2027 players last week, the one name missing was the fifth starter, still on trial at the time. That spot now belongs to Oh “Ray” Eun-hyuk, who joins from ONSIDE Gaming after a single season that took him from a Challengers lineup to the VCT Pacific playoffs. Gen.G announced the signing on X on Friday 13 November.\n\nRay completes a starting five with Lee “Dambi” Hyuk-kyu and Kim “MaKo” Myeong-gwan, whose signings we covered last week , plus the two who stayed, Kim “Karon” Won-tae and Kim “t3xture” Na-ra. Gen.G wrote that he has shown “impressive growth and great results not only throughout VCT Challengers but also on the Pacific stage”.\n\n𝗪𝗲𝗹𝗰𝗼𝗺𝗲, 𝗥𝗮𝘆! ‘Ray’ Eunhyeok Oh joins Gen.G VALORANT in 2027! Showing impressive growth and great results not only throughout VCT Challengers but also on the Pacific stage, he is ready to take the next step in his career as an official member of Gen.G VALORANT.… pic.twitter.com/pqMg1Omys5\n\nRay was born on 25 June 2008, which makes him 18. His breakthrough came in December 2025, when ONSIDE won the Korea & Japan Challengers Showdown with a 2-1 final against DK. The 2026 season went the same way: ONSIDE took both splits of VALORANT Challengers Korea, each with a 3-0 grand final, first against Gen.G Global Academy and then against ART.\n\nHe started the year as the team’s main controller. According to VLR.gg , his agent pool grew to include Waylay once Jung “Xiesta” Si-hwan arrived on loan from Gen.G in February, and Neon came later in the year. Omen is still the core of his game, with 45 of his 73 recorded maps on the agent, ahead of Astra (10), Waylay (9) and Brimstone (6).",
-    "first_seen": "2026-11-14T15:40:22Z"
-  },
-  {
-    "title": "TSMC Confirms Employee Data Leak as Seller Offers 46,000 Records for 3 Bitcoin",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/tech/tsmc-employee-data-leak-cloud-provider-46000-records/",
-    "published": "2026-11-13T11:44:32Z",
-    "game": "val",
-    "category": "rumor",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "TSMC has confirmed that personal data belonging to some of its current and former employees was posted on an external website without authorisation, after a seller began offering what it claims are about 46,000 employee records. In a statement filed with the US Securities and Exchange Commission on 12 November, the world’s largest contract chipmaker said it had “found no evidence that TSMC’s systems have been compromised”. It said the leaked information matched data stored in the system services of a third-party cloud provider, and was unrelated to its operations or to customer data. TSMC has not named the provider, however, and has not said how many people are affected.\n\nThe listing appeared on two underground forums, DarkForums and BreachForums, according to United Daily News and ETtoday . The seller is asking for 3 bitcoin, or about NT$7.4 million, for a 6.9GB data set, and has threatened to publish everything if no buyer comes forward within a week. A sample file of 499 records, each with 19 fields, was posted alongside the listing, United Daily News reported. Neither TSMC nor Taiwanese media have verified that the full set holds 46,000 records.\n\nAccording to the seller’s listing, as described in Taiwanese reports, each record includes a name, date of birth, job title, nationality, national ID number, home address, mobile number and email address. Some records reportedly also contain bank account information, along with the phone numbers and addresses of employees’ emergency contacts. TSMC’s own statement does not list the fields involved, although it says the company is informing affected staff and providing them with support. A national ID number combined with a bank account and a home address is enough for convincing impersonation attempts against banks and mobile operators. That is why the exposure matters even without a breach of TSMC’s network.\n\nThe profile of the people involved also makes the data unusually valuable. TSMC’s engineers are among the most sought-after in the chip industry, and job titles tied to names and phone numbers are useful material for targeted phishing and recruitment approaches. Taiwanese prosecutors charged several people in 2025 over the alleged theft of trade secrets linked to TSMC’s 2nm process, a case that showed how much outsiders will invest to reach the company’s staff. TSMC said it is working with the cloud vendor, the relevant investigating authorities and a third-party cybersecurity firm to establish the facts.\n\nFor gamers and the wider hardware market, TSMC’s key claim is that the incident does not touch its fabs. The company makes most of the world’s most advanced chips, including Nvidia’s GeForce and data centre GPUs and AMD’s Ryzen and Radeon processors. It also builds Apple’s A and M series chips and the custom processors inside the PlayStation 5 and Xbox Series consoles. TSMC said the data is unrelated to its operations, and Taiwanese reports said there was no evidence that wafer production or customer orders were affected. So far, there is no sign of any knock-on effect on the supply of PC or console hardware, which is already under pressure from rising memory costs .\n\nTSMC has dealt with security incidents before, although the earlier ones followed a different pattern. In August 2018, a virus spread through several of its fabs after what the company called “misoperation during the software installation process for a new tool”. TSMC estimated the impact at about 3% of its third-quarter revenue. In 2023, the LockBit ransomware group claimed to have hacked TSMC, but the company said the incident hit a hardware supplier and exposed only server set-up information. The latest case again points to a third party, this time a cloud provider holding employee records.",
-    "first_seen": "2026-11-13T11:50:47Z"
-  },
-  {
-    "title": "Valorant Hush Nerf Hinted as Riot Plans Sentinel Changes",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/valorant/valorant-hush-nerf-riot-hint-sentinel-balance/",
-    "published": "2026-11-13T11:38:52Z",
-    "game": "val",
-    "category": "patch",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Hush nerf talk has started in Valorant after Riot Games hinted at changes during a Reddit Q&A. Agent designer RiotNickwu named her ultimate as the first ability the team would consider adjusting. Riot is still watching Hush while players get used to her kit. The studio also said bigger Sentinel changes are coming after Patch 13.10.\n\nThis article covers the Hush nerf hint, why Riot is waiting, the Sentinel balance plans, and other details from the Q&A, including agent-inspired skins.\n\nRiot Games hinted that Hush might receive a nerf. RiotNickwu , an agent designer, answered questions in a Reddit Q&A session . He pointed to her ultimate as the first ability he would look at.\n\nHer ultimate is called Suspension. It sends out a steerable projectile that levitates players where it lands.\n\nRiot has not confirmed a change or a date. Patch 13.10 made no balance changes to Hush in normal modes. It only fixed visual bugs for Suspension and her animations.\n\nDevelopers continue to monitor Hush. They are giving players time to get used to her abilities before making changes.",
-    "first_seen": "2026-11-13T11:50:47Z"
-  },
-  {
-    "title": "Gen.G completes roster with Ray",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/790068/gen-g-completes-roster-with-ray",
-    "published": "2026-11-13T11:08:01Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "One year removed from his professional debut, Ray joins the Tiger Nation.",
-    "first_seen": "2026-11-13T11:50:47Z"
-  },
-  {
-    "title": "LEC : Supa et Myrwn tournent la page Movistar KOI",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/transferts/lec-supa-et-myrwn-tournent-la-page-movistar-koi-777011.shtm",
-    "published": "2026-11-13T11:00:00Z",
-    "game": "lol",
-    "category": "news",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/11/SUPA-MADRID-1024x576.webp",
-    "logo": null,
-    "content": "Le grand ménage se poursuit chez Movistar KOI. Alors que BrokenBlade devrait débarquer sur la toplane en provenance de G2 Esports, deux visages emblématiques de l’effectif espagnol s’apprêtent à faire leurs valises. Selon les informations de Sheep Esports , Alex « Myrwn » Villarejo aurait trouvé un accord avec GIANTX pour la saison 2027, tandis que David « Supa » Martínez García devrait poursuivre sa carrière chez Natus Vincere. Deux départs majeurs pour une formation qui avait construit son identité autour d’un noyau de joueurs espagnols.\n\n[SOURCES] Former Movistar KOI Toplaner Myrwn is set to join GIANTX for the 2027 #LEC season Report by @i_Eros_ , @anonimotum & @LEC_Wooloo https://t.co/a9E94ixXpu\n\nArrivés ensemble en LEC en 2024 sous les couleurs de MAD Lions KOI, les deux joueurs ont connu de belles réussites, jusqu’à décrocher un titre de champion d’Europe. Malgré une saison 2026 plus compliquée, ils ont également participé aux Worlds, où Movistar KOI a quitté la compétition en phase suisse avec deux victoires et trois défaites. Désormais, les deux Espagnols vont emprunter des chemins différents, après avoir passé trois années au sein du même effectif.\n\nPour Myrwn, la prochaine destination devrait donc être GIANTX. Également courtisé par NAVI, le toplaner de 23 ans aurait finalement privilégié la structure espagnole, où il retrouverait plusieurs nouvelles recrues. Thayger est attendu dans la jungle, Feisty sur la midlane et Piero au poste de support, tandis que Guilhoto devrait rester à la tête de l’équipe. Un projet ambitieux, avec l’objectif de se rapprocher du podium du LEC et de décrocher une qualification internationale.\n\nDe son côté, Supa devrait rejoindre Natus Vincere, qui cherche à reconstruire son effectif autour de Rhilech. Également suivi par GIANTX et envisagé comme une solution de repli par Fnatic, l’AD Carry de 26 ans mettrait ainsi fin à sept années de collaboration avec Melzhet, son entraîneur depuis 2019. Un changement important pour le joueur, qui n’avait encore jamais porté d’autres couleurs que celles de KOI dans l’élite européenne. Pour Supa comme pour Myrwn, la saison 2027 sera donc celle d’un nouveau départ, avec l’envie de prouver qu’ils ont encore leur place parmi les meilleurs joueurs du continent.\n\n[SOURCES] Supa is set to join Natus Vincere as their AD Carry for the 2027 #LEC season GIANTX also showed interest in Supa, while Fnatic considered him as a backup option. Report by @i_Eros_ , @anonimotum & @LEC_Wooloo https://t.co/w9rNCSpNuC",
-    "first_seen": "2026-11-13T11:50:47Z"
-  },
-  {
-    "title": "The Streamer Awards 2026 Winners List: All Categories",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/streamer-awards-2026-winners/",
-    "published": "2026-11-13T10:52:44Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "The sixth annual Streamer Awards, which took place on November 12, 2026, has come to an end. Hosted by QTCindrella alongside co-host Caroline Kwan, the event saw some of the biggest creators across Twitch, YouTube and Kick attending the event in person.\n\nFan voting for The Streamer Awards took place from October 16 to October 31 across 37 categories. Now, following a bizarre incident in which the show’s trophies were stolen from the front porch just weeks before the ceremony, we finally have the complete list of winners.\n\nIn this article, we’ll go through the full winners list for The Streamer Awards 2026 for every category, while taking a look at the nominees for each one.\n\nBelow, we have included the full list of winners for The Streamer Awards 2026:\n\nIShowSpeed wins Streamer of the Year at the Streamer Awards Accepting his nomination completely in Indonesian pic.twitter.com/2InXabmhXt\n\nCongratulations to Katie B, your BEST BREAKOUT STREAMER pic.twitter.com/7ahURU5JRC",
-    "first_seen": "2026-11-13T10:55:00Z"
-  },
-  {
-    "title": "Microsoft Outage Passes 16 Hours With Outlook and Teams Still Down, but Xbox Is Holding Up",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/tech/microsoft-outage-xbox-outlook-teams-16-hours/",
-    "published": "2026-11-13T10:42:36Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Microsoft’s outage across Outlook, Teams and the wider Microsoft 365 suite has now run for more than 16 hours, and the company’s own status page still shows service capacity below normal. Problems began with Teams in North America on 12 November, before Exchange Online mailboxes started failing from 17:54 UTC (11:24 pm IST). Minutes later, Microsoft confirmed that the issue could affect Microsoft 365 connectivity “for users in any region”. For gamers, the main question is whether Xbox has gone down with it, and so far the answer is mostly no.\n\nAs of Friday morning UTC, the official Xbox status page listed all services as “up and running”, including sign-in, multiplayer, the store and cloud gaming. Microsoft’s service health page names Outlook.com, OneDrive, OneNote, Microsoft To Do, Teams and Microsoft 365 for the web among the affected consumer products, and Xbox is not on that list. The disruption sits mainly in Exchange Online, the email system behind Outlook, and in the services that depend on it.\n\nSome players have still reported trouble since the outage began. Users on social media and outage trackers have described failed sign-ins, digital games that would not launch, cloud saves that did not sync and problems reaching Xbox Cloud Gaming. Windows Central, which collected those reports, said its own staff could connect normally. Microsoft has not confirmed those reports, and TalkEsport found no post from Xbox Support about the outage. Players who see errors should check the status page first, since a local network fault can produce the same errors.\n\nThe timing is awkward for Xbox, which has only just widened access to cloud play. Microsoft launched a free, ad-supported tier of Xbox Cloud Gaming on 12 November, the same day the outage began, and cloud gaming depends on Microsoft’s servers more than any other part of the platform. Xbox was not so lucky in October 2025, when a faulty configuration change to Azure Front Door took down Xbox sign-ins and Minecraft for hours along with Microsoft 365. Cloud failures have hit games elsewhere too, including Google Cloud’s outage in Europe last month.\n\nMicrosoft has given a detailed running account of the incident, though not a root cause. At 22:09 UTC on 12 November, it said a core process on affected servers was “becoming overwhelmed, causing capacity loss”, and that its actions so far “have not provided the anticipated relief”. Two hours later, it said servers it had returned to service could become unresponsive again “once they receive traffic”. It then began limiting which types of traffic could reach the affected infrastructure.\n\nThere has been some movement on the cause since then. Microsoft first said it had not identified any recent change linked to the start of the problem. By 21:40 UTC, however, it was assessing whether reverting “a small number of recent configuration updates” could speed up recovery. On Friday morning, it reported “positive results for service stability and increased capacity” from traffic optimisation, and said it was extending those actions across affected regions. Its latest update said service health “remains variable”, and that it has no evidence of malicious activity.",
-    "first_seen": "2026-11-13T10:55:00Z"
-  },
-  {
-    "title": "T1 goes all-in on fusion roster, welcoming Sacy as head coach",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/790063/t1-goes-all-in-on-fusion-roster-welcoming-sacy-as-head-coach",
-    "published": "2026-11-13T10:41:33Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "T1 Esports",
-      "tag": "T1",
-      "color": "#e11d48",
-      "bg": "#3b0511"
-    },
-    "content": "",
-    "first_seen": "2026-11-13T10:55:00Z"
   },
   {
     "title": "Déjà un trophée pour le Gentle Mates de zen et Vatira",
