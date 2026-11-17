@@ -1,5 +1,422 @@
 [
   {
+    "title": "NSTLGA announce $5,000 Black Pearl Cup",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/80014/nstlga-announce-5000-black-pearl-cup",
+    "published": "2026-11-17T20:03:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "The online event will be NSTLGA's final of 2026.",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "LEC : échec des négociations avec Solary, Shifters finalement maintenu en 2027 ?",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/news/lec-echec-des-negociations-avec-solary-shifters-finalement-maintenu-en-2027-777219.shtm",
+    "published": "2026-11-17T19:00:00Z",
+    "game": "lol",
+    "category": "news",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/11/HQ-VGhtX0AAH0W1-1024x683.webp",
+    "logo": null,
+    "content": "Solary ne devrait finalement pas débarquer en LEC en 2027. Selon les informations de Sheep Esports , la structure française aurait bien entamé des discussions avec Shifters pour récupérer temporairement sa place dans l’élite européenne de League of Legends. Mais les deux organisations ne seraient pas parvenues à trouver un accord. Un coup d’arrêt pour cette piste, alors que Shifters avait contacté plusieurs structures, notamment issues des ligues régionales européennes, afin d’étudier la possibilité de louer son slot.\n\nLa question financière aurait notamment représenté un obstacle majeur pour Solary. Son cofondateur Wakz avait récemment expliqué qu’une arrivée en LEC était « pas impossible, mais peu probable » , évoquant un investissement considérable. Selon ses estimations, le fonctionnement d’une équipe sur une saison coûterait environ un million d’euros, avec une marge de 300 000 euros. En ajoutant la location du slot, la facture totale pourrait grimper entre 2 et 5 millions d’euros. Un montant difficilement envisageable pour la structure tourangelle, qui avait déjà dû mobiliser 200 000 euros supplémentaires pour financer ses nouveaux locaux.\n\nFace à cette situation, Shifters aurait décidé de reprendre les choses en main. Toujours selon Sheep Esports , son directeur général Mathieu Debonnaire aurait commencé à contacter des joueurs et leurs agents pour préparer la saison 2027. Le jungler français Sheo participerait également aux discussions autour du futur effectif, même si sa présence dans l’équipe n’est pas encore garantie. Tous les contrats des joueurs de la saison 2026 sont arrivés à expiration le 16 novembre.\n\nCette reprise des activités laisse donc penser que Shifters pourrait finalement conserver sa place en LEC, même si une location du slot reste théoriquement possible. L’organisation devra toutefois rattraper son retard sur un mercato déjà bien avancé, plusieurs concurrents ayant bouclé leur recrutement. Après une saison 2026 particulièrement difficile, conclue aux dernières places du championnat, Shifters pourrait ainsi repartir de zéro avec l’objectif de retrouver de la compétitivité en 2027.\n\n[SOURCES] Shifters have begun their offseason operations for the 2027 #LEC season After weeks of silence, the organization is opening talks with players and agents. Report by @LEC_Wooloo , @anonimotum & @i_Eros_ https://t.co/fiEOh8rLyO",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "100 Thieves qualify for PGL Cluj-Napoca 2027 with wins over PARIVISION, fnatic",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/80012/100-thieves-qualify-for-pgl-cluj-napoca-2027-with-wins-over-parivision-fnatic",
+    "published": "2026-11-17T18:57:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "100 Thieves",
+      "tag": "100T",
+      "color": "#ef4444",
+      "bg": "#3d0606"
+    },
+    "content": "100 Thieves went 3-0 in the PGL qualifier.",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "Breaking: Valve tease the return of Cobblestone",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/80016/breaking-valve-tease-the-return-of-cobblestone",
+    "published": "2026-11-17T18:45:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "Ksharp to be inducted into the HLTV Hall of Fame",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/80010/ksharp-to-be-inducted-into-the-hltv-hall-of-fame",
+    "published": "2026-11-17T18:23:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "Ksharp is the first North American to earn a place in the Hall of Fame.",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "The Game Awards 2026 Nominees: Full List of Every Category",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/gaming/the-game-awards-2026-nominees-full-list/",
+    "published": "2026-11-17T18:07:05Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Grand Theft Auto VI leads The Game Awards 2026 nominees with eight nominations, including Game of the Year, after Geoff Keighley revealed the shortlist across all categories in a livestream on 17 November. Rockstar Games’ open world title earned its place two days before its own launch, with its release landing inside this year’s eligibility window by a single day.\n\nCONTROL Resonant and Resident Evil Requiem follow with six nominations each, while Phantom Blade Zero has five. The ceremony takes place on 10 December 2026 at the Peacock Theater in Los Angeles, with Keighley hosting for the thirteenth time. A jury drawn from more than 160 media and creator outlets picked the nominees, and fans can vote now through the official The Game Awards website .\n\nSix games are competing for the top prize this year. The shortlist mixes new releases, a returning Remedy franchise and Nintendo’s remake of one of the most celebrated games ever made.\n\nGrand Theft Auto VI appears in Game of the Year, Best Game Direction, Best Narrative, Best Score and Music, Best Audio Design, Best Performance, Best Art Direction and Best Action/Adventure Game. The game will not be in players’ hands when voting opens, as millions prepare for GTA 6 launch day streams later this week. Games released on or before 20 November qualified this year, while Players’ Voice entries have until 30 November.\n\nCapcom holds two of the five Best Game Direction slots through Pragmata and Resident Evil Requiem. The Blood of Dawnwalker, the debut game from Rebel Wolves and Bandai Namco, is the only Best Narrative nominee absent from the Game of the Year list. Rahul Kohli earns a Best Performance nomination for Saros, alongside Manni L. Perez for Grand Theft Auto VI.\n\nBig Walk is the most nominated independent release, with four nominations across Games for Impact, Best Independent Game, Best Family Game and Best Multiplayer Game. EA Sports FC 27 and Forza Horizon 6 compete in Best Sports/Racing Game, while Riot Games’ 2XKO features in Best Fighting Game.",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "Is Doki Doki Literature Club (DDLC) coming to Fortnite?",
+    "source": "Esports.gg",
+    "url": "https://esports.gg/news/fortnite/ddlc-fortnite/",
+    "published": "2026-11-17T18:05:16Z",
+    "game": "fortnite",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Fortnite Champion Series",
+      "tag": "FNCS",
+      "color": "#a855f7",
+      "bg": "#2e084d"
+    },
+    "content": "Rumors in the Fortnite community suggest that the popular visual novel game, Doki Doki Literature Club (DDLC), is coming to Fortnite. Many of these leaks have reputable support, with some leakers calling an “80-90%” chance that it will happen.\n\nThis article outlines all the details regarding this rumored collab, including when it could drop and what it will feature!\n\n4 UPCOMING ANIME/CEL-SHADED SKINS • All female, each one has a custom lobby pose • At least 2 have cloth physics & 1 has special hair physics • 1 bundle + each skin separately, no other cosmetics MAYBE Doki Doki x Fortnite? (NOTHING CONFIRMED) pic.twitter.com/DnZOd9t4BU\n\nFortnite leaker HYPEX was among the many to report this rumored collab. However, the initial details cast some doubt on the actual collaboration. HYPEX outlined his theories, explaining that these are anime/cel-shaded skins and that all four are female.\n\nThose details alone have led most leakers down the same path: that DDLC is coming to Fortnite. Another leaker, ShiinaBR, followed with a list of currently encrypted skins , including Doki Doki Literature Club. Shiina added an 80-90% certainty to the post.\n\nPairing all of the evidence so far with the fact that Epic Games added DDLC to the Epic Games Store in September, there’s little doubt that this will be the rumored collab. It would fit nicely into the current One Piece-inspired season .",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "BGMI Popularity Battle Annual Gala: Registration Dates, Nine Tiers and Rewards",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/mobile-gaming/bgmi/bgmi-popularity-battle-annual-gala-4-7-update/",
+    "published": "2026-11-17T17:53:01Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Krafton India is bringing a Popularity Battle Annual Gala to Battlegrounds Mobile India (BGMI) with the 4.7 update on 18 November. Registration opens on the same day and closes on 24 November. The main event runs from 25 November to 27 December, with a Team Popularity Battle to follow in December. The update also adds a redesigned Mode Selection screen and a seasonal reward event called Chicko’s Loot.\n\nPopularity Battle is BGMI’s social ranking event, in which players compete for recognition within the game’s community. The Annual Gala is a larger version of the format. Krafton India announced the event in Bengaluru on 12 November. It said further ways to earn points will be revealed when the event goes live. It has not said whether the Team Popularity Battle will use the same tiers and rewards.\n\nThe Annual Gala has nine ranking tiers. The highest tier is limited to 3,000 players. Each round of the event counts towards a final stage called the Peak Battle, which decides the rewards. Players who reach the top tiers receive exclusive in game honours tied to their ranking. Krafton India has not listed the rewards for each tier.\n\nThe event also introduces a Starlight Grand Prize. Every registered player has a chance to win it, regardless of their final tier. Krafton India has not said how many Starlight Grand Prizes will be given out or what the prize includes.\n\nChicko’s Loot runs from 20 November to 21 January 2027. Players collect Lucky Eggs by playing different game modes or by receiving them as gifts from friends. The eggs can be exchanged for rewards in an event shop. A mini game built around the Lucky Eggs will be added in December.\n\nThe Mode Selection screen has been redesigned with two sections, Mine and Discover. Mine lists the modes a player uses most, while Discover shows modes they have not tried. The new screen will reach players in phases during the update rather than all at once.",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "The TenZ Gamble: Why T1’s 2027 Roster Could Struggle",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/editorials/tenz-gamble-t1-2027-roster-could-struggle/",
+    "published": "2026-11-17T17:34:31Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "T1 Esports",
+      "tag": "T1",
+      "color": "#e11d48",
+      "bg": "#3b0511"
+    },
+    "content": "T1’s 2027 VALORANT roster is complete, but three questions hang over it before its first match: who plays which role, which language the team calls in, and whether it can finally win a VCT Pacific league stage. The club confirmed Tyson “TenZ” Ngo on 12 November, ending a retirement that began in September 2024. TenZ replied to the announcement with “I’m back”. Austin “crashies” Roberts had joined a day earlier, and Gustavo “Sacy” Rossi was named head coach on 13 November.\n\nThe expected starting five is Kim “stax” Gu-taek, Yu “BuZz” Byung-chul, Ham “iZu” Woo-joo, TenZ and crashies. So “sungmin” Seong-min, previously head coach of T1’s academy side, returns as coach. The team is expected to debut at Red Bull Home Ground in December.\n\nT1 cleared most of its staff on 2 November. Head coach Kim “KDG” Dong-gun and assistant coach Lee “CheongGak” Il-ho left, along with players Meteor, Munchkin and DH. T1 credited KDG with taking the team to its first Champions playoffs. Sacy, a Champions and Masters winner as a player, has never coached a team before. Two new players and a new head coach will start their preparation at the same time.\n\nTenZ built his reputation on duelists, but he moved to controller in his final season with Sentinels. Since retiring, he has played only two professional series, for Sentinels’ academy team in May 2025. stax played controller for T1 in 2026, iZu played initiator and BuZz was the primary duelist. crashies has played both initiator and sentinel.\n\nThat leaves two recent controller players for a role most compositions fill once. If TenZ plays controller, stax has to move to another role. If TenZ returns to duelist, he shares the role with BuZz. crashies is the most flexible of the five, and T1 has not said how it will split the roles.\n\nTenZ and crashies are the first non Korean players on T1’s main roster since the team joined VCT Pacific. The squad has three Korean speakers and two English speakers, with a Brazilian head coach. Mixed Pacific teams usually call in English, and crashies has already played in North America and Europe. T1 has not said which language the team will use.",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "Back (in the booth): FULL SENSE signs Crws as head coach",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/791594/back-in-the-booth-full-sense-signs-crws-as-head-coach",
+    "published": "2026-11-17T17:08:52Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Crws is back as FULL SENSE's head coach.",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "LCS : Shopify Rebellion mise sur Massu, Vulcan et Gryffinn",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/transferts/lcs-shopify-rebellion-mise-sur-massu-vulcan-et-gryffinn-777207.shtm",
+    "published": "2026-11-17T17:00:00Z",
+    "game": "lol",
+    "category": "news",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/10/C9_Vulcan_walking_through_the_crowd_9ceb73296d-1024x707.webp",
+    "logo": null,
+    "content": "Les choses s’accélèrent du côté de Shopify Rebellion. Selon les informations de Sheep Esports , l’organisation aurait trouvé des accords verbaux avec Fahad « Massu » Abdulmalek et Philippe « Vulcan » Laflamme pour la saison 2027. Les deux Canadiens devraient ainsi former la nouvelle botlane des Rebels, respectivement aux postes d’ADC et de support. Massu aurait notamment été préféré à Tactical et Sushee, tandis que Vulcan aurait été choisi devant Isles. Deux recrues de premier plan pour une équipe déterminée à retrouver les sommets de la scène nord-américaine.\n\nÀ seulement 21 ans, Massu s’apprêterait à quitter FlyQuest après quatre années passées au sein de l’organisation. Révélé au plus haut niveau en 2024, il avait notamment remporté le titre de Rookie of the Year en LCS avant de briller aux Worlds, où FlyQuest avait poussé Gen.G jusqu’à la cinquième manche en quarts de finale. Malgré deux nouveaux titres régionaux en 2025, sa dernière saison aura été plus compliquée, avec une absence au MSI et aux Worlds 2026. Également courtisé par NAVI et Movistar KOI, le jeune ADC aurait finalement choisi de poursuivre sa carrière en Amérique du Nord.\n\n[SOURCES] Massu is set to join Shopify Rebellion for the 2027 #LCS season After four years with FlyQuest, he will reunite with Quad and form an all-Canadian botlane with Vulcan at SR! Report by @LCS_Eevee , @anonimotum & @LEC_Wooloo https://t.co/ow0bRSlfOF\n\nPour l’accompagner sur la botlane, Shopify Rebellion miserait sur l’expérience de Vulcan, élu MVP du Spring Split 2026 des LCS. Le support de 27 ans devrait quitter Cloud9 après trois nouvelles saisons sous ses couleurs. Malgré une excellente régularité en saison régulière, C9 n’aura pas réussi à décrocher le moindre titre durant cette période. Son retour aux Worlds en 2026 s’était également soldé par une élimination précoce en Play-In, après deux défaites face à la Karmine Corp et FURIA.\n\n[SOURCES] Vulcan is set to join Shopify Rebellion as starting support for the 2027 LCS season. He will leave Cloud9 after three years with the organization. Report by @LCS_Eevee @anonimotum @LEC_Wooloo https://t.co/PMsu60GDou\n\nMais le recrutement de Shopify Rebellion ne s’arrêterait pas là. Toujours selon Sheep Esports , Johnson « Gryffinn » Le aurait lui aussi trouvé un accord verbal avec les Rebels. Le jungler américano-vietnamien de 20 ans, arrivé chez FlyQuest en 2026, pourrait ainsi retrouver ses anciens coéquipiers Massu et Quad. Son transfert reste toutefois conditionné à un accord avec FlyQuest, où il est encore sous contrat jusqu’en novembre 2027. L’organisation pourrait même bloquer son départ si elle ne parvient pas à lui trouver un remplaçant.",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "Esports Awards 2026 winners",
+    "source": "Esports.gg",
+    "url": "https://esports.gg/guides/esports/esports-awards-2026-winners/",
+    "published": "2026-11-17T16:46:48Z",
+    "game": "lol",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "League of Legends Pro",
+      "tag": "LOL",
+      "color": "#c89b3c",
+      "bg": "#2e2104"
+    },
+    "content": "This year’s edition of the Esports Awards kicks off tonight in Miami, Florida. Bookmark this guide for the latest updates on the Esports Awards 2026 winners plus the full list of nominees across every category.\n\nBelow are all of the categories and nominees for the Esports Awards 2026.\n\nThe Esports Awards 2026 event takes place on Nov. 17, in Miami, Florida, marking the first time the event has been held in the city. In partnership with the EWC and Oakley, the ceremony celebrates the industry’s biggest creators, teams, and personalities. Check back soon for the latest Esports Awards winners.\n\nThe Esports Awards 2026 winners will be added to this guide as they are announced. Check back for the full list of winners across all of the categories.\n\nThe Esports Awards 2026 nominees span 19 categories, including Esports Game of the Year, Esports Team of the Year, Streamer of the Year, and Esports Personality of the Year. Find the complete list of nominees above.\n\nThe Streamer of the Year nominees include Cinna, CaseOh, IShowSpeed, JasonTheWeen, Kai Cenat, Caedrel, OhnePixel, Jynxzi, Snax Gaming, StableRonaldo, Coringa, and TheBurntPeanut.",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "Eternal Fire brings back KROSTALY in FUT-centric rebuild",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/791589/eternal-fire-brings-back-krostaly-in-fut-centric-rebuild",
+    "published": "2026-11-17T16:22:13Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "KROSTALY is back and will suit up next to two former FUT teammates.",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "SEN City's worst kept secret is out: keiko joins Sentinels",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/791580/sen-citys-worst-kept-secret-is-out-keiko-joins-sentinels",
+    "published": "2026-11-17T15:36:09Z",
+    "game": "val",
+    "category": "official",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "Travis Scott GTA 6 Air Force 1 Low: Price, Release Date and All Colourways",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/gta-6/travis-scott-gta-6-air-force-1-low-price-release-date/",
+    "published": "2026-11-17T15:35:09Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Travis Scott, Nike and Rockstar Games are releasing a pack of three Air Force 1 Low ’07 sneakers tied to Grand Theft Auto VI. Each pair is expected to cost $130. Release listings first gave 19 November, the day GTA 6 launches, before the date moved to 21 November. Nike and Rockstar have not officially confirmed the price, the date or where the shoes will be sold.\n\nScott shared the first images of the collaboration on Instagram in early November. He posed with the shoes beside a pink vintage car, with the caption “As a kid it was a game now it’s reality”. Scott also features on GTA VI: The Album with the track “RHYNO”, part of the game’s 34 song soundtrack .\n\nThe pack comes in three colourways: white, black, and a black pair covered in multicoloured stars. The star pair carries the style code JJ7603-900 and the colour name Multi Color/Pale Ivory/Black/Bold Berry/Fire Pink. Images of all three leaked in the first week of November, before Scott confirmed the project himself.\n\nEach shoe swaps the usual “AIR” lettering on the midsole for “GTA”. The designs also carry Scott’s reverse Swoosh, a feature of his earlier Nike collaborations. The star pattern refers to the wanted level system used across the GTA series, and the black pair shows a full six star wanted level.\n\nNike has not published a product page or said which apps and stores will carry the pack. Nike has sold earlier Travis Scott collaborations through its SNKRS app, Scott’s Cactus Jack website and selected retailers. Those releases usually sold out quickly and appeared on resale sites at higher prices within hours.\n\nFIRST LOOK: Travis Scott x Rockstar Games x Nike Air Force 1 Low GTA 6 Pack November 20th JJ7604-001 (Black); JJ7602-100 (White)⁰ $130 @hchb_nc pic.twitter.com/0FwOP1WV72",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "LCK : Cuzz quitte KT Rolster pour retrouver DN SOOPers",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/transferts/lck-cuzz-quitte-kt-rolster-pour-retrouver-dn-soopers-777216.shtm",
+    "published": "2026-11-17T15:00:00Z",
+    "game": "lol",
+    "category": "official",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/11/KT_Cuzz_at_Worlds_2025_Finals-1024x683.jpg",
+    "logo": null,
+    "content": "Un nouveau chapitre se profile pour Mun « Cuzz » U-chan. Selon les informations de Sheep Esports , le jungler sud-coréen devrait quitter KT Rolster pour rejoindre DN SOOPers lors de la saison 2027 de LCK. Un retour aux sources pour le vétéran de 26 ans, qui avait déjà porté les couleurs de l’organisation en 2024, lorsqu’elle évoluait encore sous le nom de Freecs. Il devrait notamment retrouver sur la toplane DuDu, dont la prolongation a été officialisée ce lundi.\n\nPrésent au plus haut niveau depuis 2017, Cuzz possède une solide expérience de la scène coréenne. Passé par Longzhu Gaming, Kingzone DragonX et T1, il a notamment remporté le Summer Split 2017 et le Spring Split 2020 de la LCK. Plus récemment, il s’était illustré avec KT Rolster lors des Worlds 2025, atteignant la grande finale avant de s’incliner face à T1 (2-3). Son arrivée représenterait donc un renfort d’expérience pour DN SOOPers, qui cherche à retrouver les premières places du championnat.\n\nCe recrutement devrait entraîner le départ de Kim « Sharvel » Dan-woo, arrivé chez DN SOOPers en cours de saison 2026. À seulement 19 ans, l’ancien pensionnaire de l’académie de Dplus KIA aurait décidé d’explorer ses options sur le marché des transferts, avec l’ambition de rejoindre une formation de premier plan en LCK.\n\nMalgré les difficultés de DN SOOPers en championnat, Sharvel a montré de belles promesses depuis son arrivée. Il a notamment contribué au sacre de son équipe en KeSPA Cup, remporté face à Nongshim RedForce (3-0). Son avenir reste donc à surveiller, tandis que DN SOOPers pourrait également conserver deokdam, encore sous contrat pour 2027, afin de construire son nouvel effectif autour de plusieurs joueurs expérimentés.\n\n[SOURCES] Cuzz is set to join DN SOOPers for the 2027 #LCK season The jungler will return to the organization he represented as Freecs in 2024, joining DuDu , who has renewed through 2028 Report by @LEC_Wooloo https://t.co/5aMrDT2Hvx",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "JD Gaming brings in glacier from Wolves",
+    "source": "VLR.gg",
+    "url": "https://www.vlr.gg/791572/jd-gaming-brings-in-glacier-from-wolves",
+    "published": "2026-11-17T14:53:12Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "A young Duelist joins JDG after a year to remember for the org.",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "GTA 6’s Leonida’s Weather Teases Six New Screenshots, Shows How Wild Its Weather Gets",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/gta-6/gta-6-weather-channel-leonida-forecast-new-screenshots/",
+    "published": "2026-11-17T14:28:37Z",
+    "game": "val",
+    "category": "news",
+    "image": "https://www.talkesport.com/wp-content/uploads/gta-6-weather-leonida-keys-heavy-rain-1024x576.webp",
+    "logo": null,
+    "content": "The Weather Channel spent Monday afternoon, US time, forecasting a state that does not exist. Three days before Grand Theft Auto VI launches on 19 November, the American TV network posted a six-part forecast for Leonida, the fictional version of Florida where the game is set. Each post came with a new screenshot supplied by Rockstar Games, and the opening post had passed 5.2 million views on X by Tuesday evening in India.\n\nNobody knows weather like we do. That’s why @rockstargames gave us an exclusive look at the forecast for Leonida and the dynamic weather in GTAVI. “Grand Theft Auto VI takes place in Leonida – a fictional world inspired by modern-day Florida, a landscape with one of the most…\n\nThe partnership is a marketing stunt, but the choice of subject is deliberate. Weather has been one of the systems Rockstar has talked about most in the run-up to launch, and the thread came with a statement from Owen Shepherd, Rockstar’s VP of Art for Light and Rendering. “We had to completely reimagine our in-game weather systems to feel more localized, persistent, and above all dynamic,” he said, describing skies that range “from clear blue skies to towering vertiginous cumulonimbus clouds”.\n\nShepherd also explained why Leonida needed that work in the first place. He called it “a fictional world inspired by modern-day Florida, a landscape with one of the most unpredictable weather systems in the US”. That makes it worth looking at the six forecasts closely, both for what they show about the game and for how they compare with the real Florida.\n\nThe forecasts are written in The Weather Channel’s familiar on-air voice, but every detail points back to the game. The first warns that heavy rain is making visibility poor across “many places in the Keys”, and adds that local authorities have installed reflectors on some roads. It finishes with a joke about getting your headlights fixed at Coastal Auto Care, which appears to be one of Leonida’s in-game businesses.\n\nThe second forecast moves inland, to the swamps of Pelican Valley. “The water is murky at the best of times but this storm’s made it nearly impossible to spot the big nibblers,” the post reads. That line is a nod to the alligators Rockstar has already confirmed among the animals of Leonida , and the screenshot shows a storm front rolling across flooded grassland.",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "JioBLAST’s First VCT Qualifier Opens With Self-Hosted Matches and a Last-Minute Bracket Change",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/valorant/jioblast-vct-south-asia-qualifier-schedule-bracket-change/",
+    "published": "2026-11-17T13:49:02Z",
+    "game": "val",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "The VCT 2027 Kickoff Open Qualifiers for South Asia began on 17 November, and the first day of JioBLAST’s first Valorant Champions Tour event drew complaints from players before many of the opening matches had finished. Teams said they were left to set up their own match lobbies, and one player said a new schedule and bracket arrived on Discord an hour before his team was due to play. JioBLAST , the Indian venture that pairs Jio with BLAST, had not commented publicly on the complaints by the evening.\n\nWhat you said here is one thing, and there’s one more thing I’d like to add. Since I’m also playing in this VCT Qualifier, I honestly can’t get my head around the fact that the admins/management released the schedule and match timings last night, around 11 PM–12 AM on the 16th… https://t.co/LwX4ivTRe6\n\nRiot Games named JioBLAST as the organiser in early November, after NODWIN Gaming ran South Asia’s Challengers circuit in 2026. As our guide to the South Asia Open Qualifiers explained, the Swiss stage runs from 17 to 20 November and sends eight teams to a double-elimination playoff from 23 to 29 November. Only two teams will go on to Kickoff APAC, and the playoffs will be broadcast.\n\nThe loudest complaint came from a post by an Indian esports news account on X, published at 1:25 pm Indian time, shortly before the first matches were due to start. It said there were “no mods, no admins” to oversee the opening matches, and that teams had been asked to contact each other, set up their games and play. By the evening, the post had passed 25,000 views, far more than JioBLAST’s own post announcing the qualifier the day before.\n\nA more detailed account came from inside the event. Hassan Aseel “Asitte” Rasheed, a Maldivian player who was named Best Esports PC Player of the Year at awards backed by Ooredoo Maldives in 2023, said he was playing in the qualifier himself. In his post on X , he said the schedule and match timings were released at around 11 pm to midnight on 16 November, with matches due to start from 2 pm Indian time the next day.\n\n“That was fine, even though it wasn’t a full 24 hours’ notice,” Rasheed wrote. On 17 November, however, he said teams were told on Discord, an hour before their scheduled matches, that a new schedule and new brackets had been released. “It now seems like we have to play a BO3 today,” he added, and said many teams were raising the same issue in Discord voice chats and channels.",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "Nvidia Board Creates National Security Committee as Washington Presses for Answers on China Chips",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/business/nvidia-national-security-export-control-oversight-committee/",
+    "published": "2026-11-17T13:47:55Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "Nvidia’s board has set up a new committee to watch over the company’s national security work and export controls, five days after Jensen Huang resigned as chief executive. The National Security and Export Control Oversight Committee was announced on 17 November, the same day Nvidia reports its third-quarter results, the first under interim chief executive Colette Kress. In its announcement , Nvidia said the new standing committee will be responsible for board-level oversight of “national security policies, export control compliance and global trade risk management”.\n\nThe NVIDIA Board of Directors has established the National Security and Export Control Oversight Committee. Read the release: https://t.co/uIeCqHURiI\n\nThe timing is hard to separate from the pressure building in Washington. Treasury Secretary Scott Bessent has demanded answers from Nvidia’s board within 10 days, as we reported when he called for a “dramatic shakeup” at the company. A day before the committee was announced, the Commerce and Justice departments said in a rare joint statement that they had been investigating the Singapore cloud company Megaspeed since 2024.\n\nDirector Suzanne Nora Johnson, a former vice chairman of Goldman Sachs, will chair the committee. The other two members are Stephen Neal, chairman emeritus and senior counsel at the law firm Cooley, and John O. Dabiri, a professor of aeronautics and mechanical engineering at Caltech. All three are listed on Nvidia’s board of directors page , which now names Harvey Jones as chair.\n\nJudging by those biographies, none of the three comes from a national security or export control background. The board appears to know it, because the committee will hire “independent, outside experts” in law, national security and trade compliance to support its work. It will meet at least four times a year, including sessions with management and private sessions without them.\n\nThe change to reporting lines may matter more than the committee itself. Nvidia’s existing National Security Team and Global Trade Compliance Team will now report directly to the committee, as well as to Kress on day-to-day operations. That gives the board a direct line to the teams that handle export compliance, rather than hearing from them only through management.",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "Legacy CS2 Orgs Could Quit If They Miss Majors, Warns TechGirl, as Sticker Money Dries Up",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/cs2/techgirl-legacy-orgs-quit-cs2-majors-sticker-money/",
+    "published": "2026-11-17T13:11:23Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "Counter-Strike’s biggest names could start walking away from the game if they keep missing Majors, according to presenter and podcaster Sam “TechGirl” Wright. Speaking on the latest episode of Feed the Trolls , her show with Duncan “Thorin” Shields, she said she thinks “a lot of these legacy orgs eventually pull out of Counter-Strike if they’re not making the Major”. The warning lands a week before the PGL Major Singapore begins on 24 November, with fnatic, NRG, paiN and TYLOO all missing from the 32-team field.\n\nWright’s point is about money as much as prestige. Since Valve rebuilt the Major sticker system in May, an organisation’s income from the biggest event of the season depends far more on how far it goes. Teams that do not qualify get nothing at all, and for clubs with large wage bills and few other reliable revenue streams, that gap is getting harder to absorb.\n\nFor years, Major stickers were sold in capsules, and organisations and players negotiated their own splits in their contracts. Valve scrapped capsules for the IEM Cologne Major in May 2026 and moved to a Major Shop, where fans buy the exact stickers they want with tokens. Half of all sales still go to the tournament organiser, the teams and the players. What changed is that Valve now sets each team’s royalty rate by its seeding before the Major and its final placing after it, as Counter-Strike’s official account announced at the time.\n\nThe gap between the top and bottom of that scale is wide. The Major champion receives 2.85% of token sales, while the bottom-placed teams receive 0.72%, and each team’s share is now split evenly between the organisation and its five players. On every $100 million of sales, that leaves a champion’s organisation with about $1.43 million and a first-stage casualty’s with about $360,000. At Cologne, the bottom rate went to Gaimin Gladiators and SINNERS, whose organisations each took just 0.36%.\n\nSome team owners warned about this months ago. M80 chief executive Marco Mereu said in June that the change “could cause teams to refocus on other events besides the Majors” as they look for income. Reports since then have described sales slowing sharply after the Cologne launch, and Valve skipped its usual end-of-event sticker sale for the first time. For organisations that relied on a healthy sticker cheque even after an early exit, the budget maths has changed, and missing the Major altogether now leaves an even bigger gap against rivals who go deep.\n\nWright also took aim at one organiser in particular. On the podcast, she said that “apparently” the chief executive of FiReSPORTS had claimed the sticker situation would be fixed after Singapore. “How convenient that leads into his Majors,” she added. FiReSPORTS , the Argentine company behind FiReLEAGUE, will host the first Major of 2027 in Buenos Aires, before Perfect World stages the second in Shanghai.",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "IEM Beijing locked in through 2028 as EFG signs 3-year deal with city esports body",
+    "source": "Esports.gg",
+    "url": "https://esports.gg/news/iem-beijing-2028-deal/",
+    "published": "2026-11-17T13:06:01Z",
+    "game": "lol",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "League of Legends Pro",
+      "tag": "LOL",
+      "color": "#c89b3c",
+      "bg": "#2e2104"
+    },
+    "content": "Under a three-year framework deal that ESL FACEIT Group (EFG) concluded with the Beijing Esports Industry Development Association, Intel Extreme Masters (IEM) Beijing will be held each year as a Counter-Strike 2 (CS2) tournament between 2026 and 2028. The deal was rubber stamped at a ceremony during IEM Beijing 2026, Insider Gaming detailed.\n\nThe Bloomage Biotech Biohyalux ECM Arena in Wukesong, Haidian District, successfully hosted IEM Beijing 2026 earlier this month, which MOUZ won. The Association, which is supervised by the Beijing Municipal Bureau of Press and Publication, will now start working closely with EFG and local authorities on a long-term support structure. The aim is for broadcasters, sponsors, and Chinese esports clubs to get the commercial safety net they crave.\n\nMarc Winther, Director of Esports Counter-Strike 2 at EFG, hailed the deal as a flagship event for domestic fans. He also said the arrangement offers teams and partners in the area a stable footing for expansion.\n\nLooking at the figures, it’s no surprise that EFG wanted to hang around: the 2026 edition prompted almost 60,000 fans to turn up across six days of competition, which EFG calls the biggest standalone IEM held in Asia ever . It also revived IEM's 360-degree arena stage for the first time since 2022, when the IEM Rio Major took place.\n\nThe commitment follows a run of strong domestic numbers. IEM's standalone Chinese debut was in Beijing in 2019. IEM Chengdu in 2025 sold out with more than 35,000 attendees and 770,000 peak online viewers. Research firm Niko Partners estimates CS2 pulled 137.5 million viewers on Chinese livestreaming platforms in June 2026, up 50 percent month on month, making it the second most-watched shooter in the territory.\n\nThree years of municipal backing is a different proposition entirely from a one-off stop. Teams and sponsors now have a known destination they can plan around, while local fans are guaranteed top tier for the next three years at least. The 2026 edition has set a high bar for the next two.",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "LCK : T1 prépare le grand retour de Roach",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/transferts/lck-t1-prepare-le-grand-retour-de-roach-777213.shtm",
+    "published": "2026-11-17T13:00:00Z",
+    "game": "lol",
+    "category": "news",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/11/755a7990255bc90a0f66c215d36ed80914639467-1920x1080-1-1024x576.webp",
+    "logo": null,
+    "content": "Un visage bien connu pourrait bientôt faire son retour chez T1. Selon les informations du journaliste sud-coréen Arra, Kim « Roach » Kang-hui devrait devenir le nouvel entraîneur principal de l’équipe pour la saison 2027 de LCK. Âgé de 27 ans, l’ancien toplaner retrouverait ainsi une organisation dont il a porté les couleurs pendant cinq ans, entre 2020 et 2024, avant de s’éloigner de la compétition pour effectuer son service militaire.\n\nArrivé chez T1 comme joueur en 2020, Roach avait progressivement entamé sa reconversion sur le banc. Après une première expérience avec l’équipe académique en 2022, il avait intégré le staff de l’équipe première à l’été 2023. Il avait notamment participé aux deux sacres consécutifs de T1 aux Worlds 2023 et 2024, ainsi qu’à la victoire lors de la première édition de l’Esports World Cup en 2024. Son retour marquerait donc celui d’un entraîneur qui connaît parfaitement l’environnement du club et plusieurs de ses joueurs.\n\nCette arrivée potentielle intervient après une saison 2026 mouvementée pour T1. Malgré une nouvelle qualification pour les demi-finales des Worlds, Faker et ses coéquipiers ont vu leur rêve d’un quatrième titre mondial consécutif s’envoler face à Bilibili Gaming (1-3). Une élimination qui a mis fin à trois années de domination sur la scène internationale.\n\nLe staff technique avait également connu plusieurs changements au cours de l’année. Après la mise en retrait de kkOma, Tom avait assuré l’intérim au poste de Head Coach, épaulé par Mata puis Easyhoon. Avec Roach aux commandes, T1 pourrait donc ouvrir un nouveau chapitre en 2027, avec l’ambition de retrouver les sommets de la LCK et de reconquérir son titre mondial. Reste désormais à attendre la confirmation officielle de l’organisation.\n\n[BREAKING] Roach is set to join T1 as Head Coach for the 2027 season, according to Inven. He previously served as a coach for T1 from 2022 to 2024. pic.twitter.com/savOl0k92S",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "GTA 6 Launch Day Marathons: List of Biggest Streamers to Watch",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/gta-6/gta-6-launch-day-marathons-list-of-biggest-streamers-to-watch/",
+    "published": "2026-11-17T12:45:47Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "After years of trailers, leaks, and two delays, the global launch of Grand Theft Auto VI is finally upon us. As we stand only a few hours away from the release of what is arguably the most anticipated video game of all time, the excitement is palpable among gamers throughout the globe. Fans have already started taking days off work and clearing their schedule as they get ready for a return to Vice City.\n\nFor the unaware, GTA 6 is all set to launch on the PlayStation 5 and the Xbox Series X|S on November 19, 2026. This means PC gamers might have to sit this one out for now, as no release date for the game has been given on PC at the time of writing.\n\nBut if you’re on PC, or you don’t have a next-gen console, don’t worry. You can still be part of the launch-day celebrations, as several prominent streamers are set to broadcast their playthroughs from the moment servers open, and that means you can watch the game without owning it.\n\nMajor streamers from throughout the world have already started organizing GTA 6 marathons on the game’s launch day, with many planning to stay live for 12, 24, or even more hours as they explore Leonida.\n\nIn this article, we’ll go through the biggest GTA 6 launch day marathons you need to be aware of if you’re planning to catch the gameplay live alongside thousands of other gamers.\n\nHere are some of the biggest names in the streaming world who have confirmed GTA 6 marathons right from the launch day:",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "SWC 2026 Finals set for Stockholm with $4.2M pool and five SNK fighting games",
+    "source": "Esports.gg",
+    "url": "https://esports.gg/news/snk-world-championship-2026-stockholm/",
+    "published": "2026-11-17T12:14:09Z",
+    "game": "lol",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "League of Legends Pro",
+      "tag": "LOL",
+      "color": "#c89b3c",
+      "bg": "#2e2104"
+    },
+    "content": "The SNK World Championship 2026 Finals (SWC 2026 Finals) is all set for showtime on Nov. 27 to 29. The drama will unfold at the DreamHack Stockholm 2026 in Stockholm, Sweden, and comes with a total prize pool of $4.2 million. The Fatal Fury: City of the Wolves winner will pocket $1.5 million of that, which is three times the KOF XV top prize. Players who haven't qualified have until Nov. 20 to register for the remaining slots.\n\nThere’s every reason to put their names down, too: the $4.2 million figure covers both qualifiers and finals, meaning all participants take something home. The finals run on a special stage inside DreamHack Stockholm 2026, with main matches spread across three stages.\n\n⏰ 5 DAYS LEFT TO GET IN! Still thinking about entering the #SWC2026 tournaments? Now’s the time. Fight through the LCQ in FATAL FURY: City of the Wolves, THE KING OF FIGHTERS XV or SAMURAI SHODOWN, or test yourself in ART OF FIGHTING 3 and THE KING OF FIGHTERS ’98. 📅 Registration closes 20 November, 12 AM CET.\n\nArt of Fighting 3 and KOF '98 are open brackets, so anyone who registers by Nov. 20 can compete.\n\nAnyone attending opening day on Nov. 27 will also get to witness the Fatal Fury: City of the Wolves Regional League (2v2) World Finals. Two-player teams from Asia, North America, South America and Middle East/Europe will compete, with each one having made it through 10 gruelling regional qualifiers and a further four regional leagues.\n\nOn Nov. 29, SNK said it will share its 2027 esports roadmap, a new content creator program, and all the latest Fatal Fury news",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
+    "title": "IEM Beijing 2027 and 2028 Dates Confirmed",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/cs2/iem-beijing-2027-2028-dates-confirmed/",
+    "published": "2026-11-17T11:50:41Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "IEM Beijing 2027 will run from November 1 to 7, ESL FACEIT Group has confirmed. The organizer also set IEM Beijing 2028 for October 21 to 29. Both events fall under a 3-year agreement with the Beijing Esports Industry Development Association that covers 2026 to 2028. The news arrived after MOUZ beat The MongolZ in the IEM Beijing 2026 grand final.\n\nBelow, you can find the confirmed dates, the details of the deal, and a recap of this year’s event.\n\nESL FACEIT Group (EFG) has announced on X that Intel Extreme Masters will return to Beijing in 2027 and 2028.\n\nEFG and the Beijing Esports Industry Development Association signed a 3-year framework cooperation agreement. It brings IEM to Beijing every year from 2026 to 2028. EFG says the deal establishes the Chinese capital as Counter-Strike’s new home in Asia.\n\nToday we're thrilled to announce that #IEM will be returning to Beijing for three consecutive years from 2026 to 2028! pic.twitter.com/KSOTrdiHKs\n\nThe 2027 and 2028 dates are listed below:",
+    "first_seen": "2026-11-17T20:40:46Z"
+  },
+  {
     "title": "GTA 6 Release: List of Indian Companies Giving Employees Holidays on November 19",
     "source": "TalkEsport",
     "url": "https://www.talkesport.com/gta-6/indian-companies-gta-6-holiday/",
@@ -70,7 +487,7 @@
     "first_seen": "2026-11-17T11:37:32Z"
   },
   {
-    "title": "Communication Score in Dota 2: How to increase and keep it high",
+    "title": "Communication Score in Dota 2: How to increase it and keep it high",
     "source": "Esports.gg",
     "url": "https://esports.gg/guides/dota-2/how-to-increase-communication-score-dota-2/",
     "published": "2026-11-17T09:40:18Z",
@@ -78,7 +495,7 @@
     "category": "tournament",
     "image": "https://media.esports.gg/uploads/2026/11/example-of-a-good-dota-2-communication-score.webp",
     "logo": null,
-    "content": "To increase your Communication Score in Dota 2 and keep it high, you need to be respectful and considerate of other players when using in-game communication tools. Avoid unnecessary chat, arguments with teammates, excessive pinging, and refusing to commend or swap commends with other players after matches.\n\nCommunication Score is a metric designed to keep Dota 2 players from misusing its in-game communication features and to promote a more mature and healthier playing environment. If you want to learn more, this post will provide you with all the updated information about Communication Score, especially if you’re having issues with it being too low.\n\nA Communication Score of over 10,000 (Image credit: Valve) Introduced in the 2023 Summer Client Update , the Communication Score is another metric that goes along with the Behavior Score. It has a threshold range of 0-10,000, but the maximum Communication Score that a player can get is 12,000.\n\nCommunication Score generally reflects the quality of a player’s in-game chat and speech interactions. If a player uses the game’s communication features to have toxic and unhealthy interactions with other players, the system will likely reduce an amount of Communication Score from that player.\n\nAlso read: How to increase Behavior Score in Dota 2\n\nAs your Communication Score drops, Dota 2 gradually restricts your access to certain communication features. Below are the features that become unavailable when your score falls below specific thresholds.",
+    "content": "To increase your Communication Score in Dota 2 and keep it high, you need to be respectful and considerate of other players when using in-game communication tools. Avoid unnecessary chat, arguments with teammates, excessive pinging, and refusing to commend or swap commends with other players after matches.\n\nCommunication Score is a metric designed to keep Dota 2 players from misusing its in-game communication features and to promote a more mature and healthier playing environment. If you want to learn more, this post provides you with all the updated information about Communication Score, especially if you’re having issues with it being too low.\n\nA Communication Score of over 10,000 (Image credit: Valve) Introduced in the 2023 Summer Client Update , the Communication Score is another metric that goes along with the Behavior Score. It has a threshold range of 0-10,000, but the maximum Communication Score that a player can get is 12,000.\n\nCommunication Score generally reflects the quality of a player’s in-game chat and speech interactions. If a player uses the game’s communication features to have toxic and unhealthy interactions with other players, the system will likely reduce an amount of Communication Score from that player.\n\nAlso read: How to increase Behavior Score in Dota 2\n\nAs your Communication Score drops, Dota 2 gradually restricts your access to certain communication features. Below are the features that become unavailable when your score falls below specific thresholds.",
     "first_seen": "2026-11-17T11:37:32Z"
   },
   {
@@ -194,7 +611,7 @@
     "category": "news",
     "image": "https://media.esports.gg/uploads/2026/11/all-teams-in-dota-2-blast-slam-9.webp",
     "logo": null,
-    "content": "BLAST SLAM 9 is the ninth installment of one of the biggest Dota 2 Tier 1 tournaments organized by BLAST, a prominent esports production company from Denmark. This online competition is set to take place from November 20 to November 29, 2026, with a total prize pool of $750,000 USD.\n\nThis post will feature all information about BLAST SLAM 9, such as all competing teams, tournament format, where you can watch the action, and the latest results.\n\nTo play in BLAST SLAM 9, Dota 2 teams must either receive a direct invite from the tournament organizers or join a regional qualifying competition. For this event, 12 teams secured their tickets through direct invites, while four teams joined later after winning their respective regional qualifiers.\n\nThe slots for regional qualifiers are composed of two teams from Europe, one from China, and one from Southeast Asia.\n\nThe tournament format will follow the same format as the previous BLAST events . Teams will have to survive a highly competitive group stage, followed by seeding and last-chance matches, before they can continue their campaign in the less pressuring double-elimination bracket.\n\nIn the group stage, all 16 teams will be divided into four groups of four teams each. Every team in each group will fight each other to get as many series victories as possible. This part of the tournament will be very vital for each competing team, as only the top two teams for each group will advance to the next round.",
+    "content": "BLAST SLAM 9 is the ninth installment of one of the biggest Dota 2 Tier 1 tournaments organized by BLAST, a prominent esports production company from Denmark. This online competition is set to take place from Nov. 20 to Nov. 29, with a total prize pool of $750,000 USD.\n\nThis article covers everything you need to know about BLAST SLAM 9, including the competing teams, tournament format, where to watch the action, and the latest results.\n\nTo play in BLAST SLAM 9, Dota 2 teams must either receive a direct invite from the tournament organizers or join a regional qualifying competition. For this event, 12 teams secured their tickets through direct invites, while four teams joined later after winning their respective regional qualifiers.\n\nThe slots for regional qualifiers are composed of two teams from Europe, one from China, and one from Southeast Asia.\n\nThe tournament format will follow the same format as the previous BLAST events . Teams will have to survive a highly competitive group stage, followed by seeding and last-chance matches, before they can continue their campaign in the less pressuring double-elimination bracket.\n\nIn the group stage, all 16 teams will be divided into four groups of four teams each. Every team in each group will fight each other to get as many series victories as possible. This part of the tournament will be very vital for each competing team, as only the top two teams for each group will advance to the next round.",
     "first_seen": "2026-11-17T11:37:32Z"
   },
   {
@@ -216,9 +633,9 @@
     "published": "2026-11-17T02:44:08Z",
     "game": "fortnite",
     "category": "news",
-    "image": "https://media.esports.gg/uploads/2025/01/Fortnite-Server-Online-1024x576.avif",
+    "image": "https://media.esports.gg/uploads/2026/11/fortite-server-1024x576.webp",
     "logo": null,
-    "content": "Fortnite is currently online and operational with no known server or matchmaking issues reported, as of Nov. 16, 2026. This guide covers everything you need to know about Fortnite server issues, including how to troubleshoot the errors and track issues as they persist.\n\nNo, Fortnite is currently online and functioning normally. There are no reported outages as of Nov. 16, 2026. The best way to check is to visit the official Epic Games Public Status website. This resource lets you check not only the status of Fortnite, but many other Epic Games-related operations.\n\nThe most recent outage occurred as planned on Nov. 11 into 12 as Epic Games took the game offline for a scheduled update. This is typical, as Fortnite updates roll out regularly and require the servers to be offline.\n\n🟢 Downtime's a wrap! Jump back in and see what's new: BR: https://t.co/ME7nUoIsvm Arenas: https://t.co/921zjNOOz9\n\nMore often than not, Fortnite servers being offline just means the game is undergoing scheduled maintenance or an incoming patch. In other cases, Fortnite is down because of an unseen issue.\n\nWhile it doesn’t happen often, it can prevent players from accessing the game for a few minutes to several hours. This is usually due to an issue on Epic Games’ server side that may affect more than just Fortnite.",
+    "content": "Fortnite is currently online and operational with no known server or matchmaking issues reported, as of Nov. 17, 2026. This guide covers everything you need to know about Fortnite server issues, including how to troubleshoot the errors and track issues as they persist.\n\nNo, Fortnite is currently online and functioning normally. There are no reported outages as of Nov. 17, 2026. The best way to check is to visit the official Epic Games Public Status website. This resource lets you check not only the status of Fortnite, but many other Epic Games-related operations.\n\nThe most recent outage occurred as planned on Nov. 11 into 12 as Epic Games took the game offline for a scheduled update. This is typical, as Fortnite updates roll out regularly and require the servers to be offline.\n\n🟢 Downtime's a wrap! Jump back in and see what's new: BR: https://t.co/ME7nUoIsvm Arenas: https://t.co/921zjNOOz9\n\nMore often than not, Fortnite servers being offline just means the game is undergoing scheduled maintenance or an incoming patch. In other cases, Fortnite is down because of an unseen issue.\n\nWhile it doesn’t happen often, it can prevent players from accessing the game for a few minutes to several hours. This is usually due to an issue on Epic Games’ server side that may affect more than just Fortnite.",
     "first_seen": "2026-11-17T11:37:32Z"
   },
   {
@@ -1994,294 +2411,6 @@
     "first_seen": "2026-11-14T15:40:22Z"
   },
   {
-    "title": "zekken still without a 2027 team three weeks after MIBR benched him",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/valorant/zekken-still-without-a-2027-team-three-weeks-after-mibr-benched-him/",
-    "published": "2026-11-14T11:51:00Z",
-    "game": "cs2",
-    "category": "official",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "The Masters Madrid champion is still under contract with MIBR, and neither they nor his old team Sentinels appear to have a place for him.\n\nZachary “zekken” Patrone has not found a team for the 2027 VCT season. MIBR moved their entire Valorant roster to the inactive list on 23 October, and three weeks later the American is still there alongside aspas, Verno and Mazino.\n\nAny club that wants him has to deal with MIBR first. The Brazilian organisation pointed to “the regional transition” in 2027 when it benched the players, and added: “All existing contractual obligations remain in effect, and any potential transfers will be negotiated directly with MIBR.”\n\nCOMUNICADO OFICIAL DO MIBR — VALORANT 2027 Após conversas com os representantes dos jogadores e considerando as mudanças na estrutura competitiva para 2027, incluindo a mudança de região e os desafios associados a ela, o MIBR decidiu reavaliar seu elenco de VALORANT para a… pic.twitter.com/WsDNIxWS0v\n\nMIBR appear to be moving on without him. TheSpike Brasil reported on Friday that they have a verbal agreement with Less , who is still under contract with KRÜ, and plan to add dgzin and academy players Kring and Turkish.\n\nA way back to Sentinels, where zekken won Masters Madrid in 2024, looks closed too. They have already signed OXY, brawk and canezerra next to johnqt, brought back Zellsis as sixth man, and Sheep Esports reported on 8 November that Keiko has a verbal agreement to join them.",
-    "first_seen": "2026-11-14T15:40:22Z"
-  },
-  {
-    "title": "GTA 6 Twitch Drops: Dates, Rewards & How to Claim",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/gta-6/gta-6-twitch-drops/",
-    "published": "2026-11-14T11:33:59Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "GTA 6 Twitch Drops are set to run from November 18 to November 30, 2026, 1 day before the game launches on November 19. Reports say players can unlock up to 19 rewards by watching GTA 6 streams with Drops enabled. Players need to link their Twitch and Rockstar Games accounts first. Twitch CEO Dan Clancy also promised daily surprise drops of GTA 6 Ultimate Edition copies.\n\nThis guide covers the dates, account linking, claim steps, and more.\n\nThe GTA 6 Twitch Drops campaign is scheduled for November 18 to November 30, 2026. That window opens 1 day before the GTA 6 release date of November 19.\n\nThere will be up to 19 drops. Viewers earn them by watching participating GTA 6 streams. Streams with drops active usually carry a “Drops Enabled” tag.\n\nHere is a list of all the GTA 6 Twitch drops:\n\nYou need Twitch and Rockstar Games accounts. You should link them before the campaign starts, so your progress counts from day 1.",
-    "first_seen": "2026-11-14T15:40:22Z"
-  },
-  {
-    "title": "MIBR reach verbal agreement with Less, but KRÜ want to keep him",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/valorant/mibr-reach-verbal-agreement-with-less-but-kru-want-to-keep-him/",
-    "published": "2026-11-14T11:13:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "The 2022 world champion has said yes to MIBR, according to TheSpike Brasil, yet his contract with KRÜ runs until the end of 2027.\n\nMIBR have reached a verbal agreement with Felipe “Less” Basso for the 2027 VCT season, TheSpike Brasil reported on Friday 13 November. Nothing is signed. The Brazilian club still has to agree a deal with KRÜ Esports, and that part is not expected to be easy.\n\nLess is under contract with KRÜ until the end of 2027, according to Riot’s contract database as cited by TheSpike. The Argentine club has not released him publicly to talk to other teams, and it wants to keep him as the only player left from its 2026 lineup. Less, however, chose to accept MIBR’s offer and, for now, does not want to stay, the report says. Playing alongside Douglas “dgzin” Silva, who has already agreed terms with MIBR, weighed heavily in his decision.\n\nNeither MIBR nor KRÜ commented when TheSpike asked.\n\nLess joined KRÜ in December 2025, reuniting with his old LOUD teammate saadhak. The season never got going. He missed VCT Americas Kickoff because of US visa problems, like the rest of KRÜ’s starting lineup, and the team failed to reach an international event across the two league stages. KRÜ then held tryouts at the start of October and moved Less to the bench.\n\nBefore that he spent a single season with Team Vitality in VCT EMEA, and before Vitality he won Valorant Champions 2022 with LOUD, the first Champions title for a Brazilian team.",
-    "first_seen": "2026-11-14T15:40:22Z"
-  },
-  {
-    "title": "La Karmine Corp a bouclé son roster pour la LFL",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/transferts/la-karmine-corp-a-boucle-son-roster-pour-la-lfl-777066.shtm",
-    "published": "2026-11-14T11:00:00Z",
-    "game": "lol",
-    "category": "news",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/09/6a84bff049b03-1024x576.jpeg",
-    "logo": null,
-    "content": "Le mercato touche déjà à sa fin du côté de la Karmine Corp Blue. Selon les informations de Sheep Esports , Mohamed « Myrtus » Rahli aurait trouvé un accord avec la structure française pour la saison 2027. Le support de 21 ans, qui évoluait cette année chez Movistar KOI Fénix, aurait privilégié le projet du Blue Wall malgré une offre de Galions et un intérêt de G2 NORD. Son arrivée viendrait ainsi compléter le cinq de départ de KCB, qui aurait pris une longueur d’avance sur ses concurrents dans la préparation de la prochaine saison.\n\nLe dossier aurait toutefois mis du temps à se décanter. Avant de donner son accord à la Karmine Corp, Myrtus aurait exploré plusieurs opportunités en LEC, sans parvenir à trouver un projet suffisamment convaincant. Le Français sort pourtant d’une excellente saison en Espagne, avec trois titres nationaux remportés sous les couleurs de Movistar KOI Fénix. Il a également participé à deux éditions des EMEA Masters, atteignant notamment les demi-finales du tournoi estival, ainsi qu’au World Star Challengers Invitational en Corée du Sud.\n\nAprès avoir porté les couleurs de Solary puis de BDS Academy, Myrtus s’apprête donc à retrouver le championnat français avec un tout autre statut. Ses performances en Espagne lui ont permis de franchir un cap et de s’imposer parmi les supports les plus prometteurs des ligues régionales européennes. À seulement 21 ans, il aura désormais l’occasion de confirmer sa progression au sein de l’une des structures les plus populaires de la scène française, avec l’ambition de poursuivre sur sa lancée après une année 2026 riche en succès.\n\nAvec cette dernière recrue attendue, la Karmine Corp Blue serait ainsi la première organisation française à avoir trouvé l’ensemble de ses titulaires pour 2027. Reste néanmoins une incertitude importante concernant l’avenir de la LFL. Après plusieurs années à la tête du championnat, Webedia ne sera plus son organisateur la saison prochaine. Si la compétition devrait bien faire son retour sous une nouvelle direction, aucune annonce officielle n’a encore été faite concernant son fonctionnement ou son calendrier. De quoi laisser planer quelques interrogations, même si le Blue Wall semble déjà prêt à aborder ce nouveau chapitre.\n\nXu « Tao » Hongtao Alessandro Oleg « Oleg » Karkachev Hamza « Panda » Siala Rocco « Looki » Palfi Mohamed « Myrtus » Rahli\n\n[SOURCES] Myrtus va rejoindre la Karmine Corp Blue pour la saison 2027 en LFL. G2 NORD et Galions étaient également intéressés par le joueur Infos via @LEC_Wooloo https://t.co/7eatbrvPZS",
-    "first_seen": "2026-11-14T15:40:22Z"
-  },
-  {
-    "title": "tN1R’s ace puts Spirit in the Hong Kong final",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/cs2/tn1rs-ace-puts-spirit-in-the-hong-kong-final/",
-    "published": "2026-11-14T10:35:59Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "https://pley.gg/app/uploads/2026/10/flag-ru.png",
-    "logo": null,
-    "content": "tN1R topped the server at 37-26 and killed MOUZ’s seven-round comeback on Ancient as Spirit reached their first final since beating MOUZ in Porto in September.\n\nTeam Spirit beat MOUZ 2-0 (Mirage 13-7, Ancient 13-11) in the semi-finals of BLAST Rivals 2026 Season 2 in Hong Kong and play FURIA in the Bo5 Grand Final on Sunday 09:00 CET . It is their first final since they beat MOUZ 3-1 to win BLAST Open Porto on 6 September, and MOUZ had won all three of their meetings since. MOUZ , first in the VRS and slight favourites, are out in 3rd-4th place.\n\n. @TEAM__SPIRIT ARE YOUR FIRST GRAND FINALISTS! 🐉 #BLASTPremier #MMarkEvents pic.twitter.com/ArDe8EQzr1\n\nMOUZ arrived with a plan for Danil “donk” Kryshkovets , and on Mirage it worked: he finished the map 13-13. It made no difference. Mirage was MOUZ’s pick, a map they had won 86% of the time over the last three months and four of the last five times they had played it against Spirit, and Spirit led 9-3 at the half on the CT side.\n\nBoris “magixx” Vorobiev , Spirit’s in-game leader, was the best player on the map. He took the first kill on the site in the pistol round, aced MOUZ’s eco and went 18-10 with 101.5 ADR. Dmitry “sh1ro” Sokolov went 19-8, and early in the half the two of them won a 2v3 together, magixx holding one side of the site and sh1ro the other.\n\n‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌‌ @magixx772 🤝 @sh1rocsgo pic.twitter.com/QHssSpOStr",
-    "first_seen": "2026-11-14T15:40:22Z"
-  },
-  {
-    "title": "apEX blames his own calling as Vitality reset for Singapore",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/cs2/apex-blames-his-own-calling-as-vitality-reset-for-singapore/",
-    "published": "2026-11-14T10:31:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Team Vitality",
-      "tag": "VIT",
-      "color": "#facc15",
-      "bg": "#3d3002"
-    },
-    "content": "Vitality’s captain rated his own calling in Hong Kong as his worst in a long time, and the team now have six or seven days at home before a short Singapore bootcamp.\n\nThree series, one win and the first 13-0 defeat Vitality have ever suffered in CS2: that was the return of Dan “apEX” Madesclaire at BLAST Rivals Season 2. After the 2-0 quarter-final loss to MOUZ on Friday, the Frenchman put a large part of it on himself. He told HLTV that the way he called in Hong Kong was “really poor, probably my worst calling in a long, long time”.\n\nIt was apEX’s first event back after paternity leave. mezii had taken the calls in his place at PGL Masters Bucharest, as we reported in October .\n\nWe knew that this season would be difficult with the paternity leaves of mezii and me. We knew that. That’s something we accepted, and now we need to move forward.\n\nHe added that Vitality arrived with little preparation, so his own expectations were lower than usual.\n\nThe opening 2-0 over Falcons looked like a normal Vitality start. Then FURIA came back from a map down and finished the series with a 13-0 on Mirage. In the quarter-final, MOUZ won all four pistol rounds and closed Cache 16-14 in overtime. “Zero pistols today. It doesn’t happen in MR12,” apEX said of the MOUZ series, and against FURIA he pointed to how many close rounds Vitality lost.",
-    "first_seen": "2026-11-14T15:40:22Z"
-  },
-  {
-    "title": "kiNgg leaves Leviatán after five years and a Masters title",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/valorant/kingg-leaves-leviatan-after-five-years-and-a-masters-title/",
-    "published": "2026-11-14T10:04:00Z",
-    "game": "cs2",
-    "category": "official",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "The Chilean IGL who lifted the Masters London trophy in June is a free agent for the first time in his career.\n\nLeviatán have to find a new in-game leader for the 2027 VCT season. The Argentine club announced on Friday 13 November that Francisco “kiNgg” Aravena has left after five years with the club.\n\nIn June, kiNgg captained Leviatán to the Masters London title with a 3-2 win over Paper Rex in the grand final. None of the five had won a Masters before. The rest of the year went the other way. Leviatán went out in 5th-6th in VCT Americas Stage 2 and missed Valorant Champions Shanghai.\n\nkiNgg said goodbye on X in Spanish. “You were by my side for basically my entire competitive career, you helped me grow, and we reached the very top together,” he wrote, adding that he hopes to share his next step “soon”.\n\nMe faltan las palabras para agradecer a todo LEVIATAN y todo lo que hicimos juntos, estoy enormemente agradecido y orgulloso de haber representado a estos colores durante todo este tiempo y no solo haber estado en los momentos duros, sino que en todos los felices también 🩵.… https://t.co/duLqCFIctL\n\nLeviatán picked kiNgg up in November 2021 together with his Australs teammates Melser, adverso and Tacolilla. In their first year the team reached Masters Copenhagen and Valorant Champions 2022 in Istanbul. Their best season before London came in 2024, when they won VCT Americas Stage 2 and finished third at Champions.",
-    "first_seen": "2026-11-14T15:40:22Z"
-  },
-  {
-    "title": "Sacy on joining T1: “I’m basically here because of my dad”",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/valorant/sacy-on-joining-t1-im-basically-here-because-of-my-dad/",
-    "published": "2026-11-14T09:37:21Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "https://pley.gg/app/uploads/2026/11/sacy-53942432994.jpg",
-    "logo": null,
-    "content": "T1’s new head coach had already turned down other coaching offers, and says his father talked him into the last one.\n\nT1 published “NEW CHAPTER”, a short film about their 2027 Valorant roster, on YouTube on Saturday 04:00 CET . In it, Gustavo “Sacy” Rossi explains that he had already said no to other teams that wanted him as a coach and that T1 were the last offer left. He talked it over with his father first.\n\nAnd my dad was like “You know, you’re too young to live based on comfort in your life.”\n\n“I’m basically here because of my dad,” the Brazilian said. It fits what he wrote on X when T1 announced him on Friday : he and his wife had just bought a house, and he had never coached a team before.\n\nSacy also set the target. T1 won Masters Bangkok in 2025, so “there’s only one thing left, and that’s Champions”, he said. He added that he is learning the job from assistant coach sungmin.\n\nTenZ used his part of the film to say he wants to find out “what it looks like if you pair talent with hard work”. crashies , who first played for T1 in 2020, said the offer to return after six years was “definitely special”.",
-    "first_seen": "2026-11-14T15:40:22Z"
-  },
-  {
-    "title": "Vitality prend l’eau à Hong Kong, ZywOo méconnaissable",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/resultats/vitality-prend-leau-a-hong-kong-zywoo-meconnaissable-777048.shtm",
-    "published": "2026-11-14T09:00:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/11/sKOc4i5OnHH7U9FVBFQ2NC-1024x683.jpg",
-    "logo": null,
-    "content": "Le séjour à Hong Kong a viré au cauchemar pour Team Vitality. Pourtant bien lancée dans les BLAST Rivals, la formation française a complètement perdu pied face à FURIA lors du match pour la première place du groupe A. Après avoir facilement remporté Inferno (13-5), les coéquipiers de ZywOo ont laissé les Brésiliens renverser la rencontre sur Dust2 (13-10), avant de subir une véritable humiliation sur Mirage. Un terrible 13-0, le premier encaissé par Vitality sur une carte depuis le lancement de Counter-Strike 2.\n\nLe scénario est d’autant plus frustrant que Vitality avait montré un visage convaincant en début de rencontre. Portée par flameZ et mezii sur Inferno, l’équipe française semblait avoir les armes pour décrocher directement sa place en demi-finales. Mais après avoir laissé filer Dust2 malgré une belle remontée, elle s’est complètement effondrée sur la carte décisive. Incapables de trouver la moindre ouverture face à la défense brésilienne, les joueurs de Vitality ont subi treize rounds consécutifs, dans une rencontre où ZywOo n’est jamais parvenu à peser sur les débats.\n\nIt's a rough return for apEX as FURIA crush Vitality 13-0 on the final map of Mirage (Clip via @BLASTPremier Hong Kong broadcast) pic.twitter.com/krVlzIBm4O\n\nReléguée en quarts de finale, Vitality espérait se relancer ce vendredi face à MOUZ. Mais les difficultés ont rapidement refait surface. Malgré une première période encourageante sur Mirage, les coéquipiers d’apEX ont été dépassés après le changement de côté, concédant la première carte (8-13). Sur Cache, ils ont longtemps couru après le score avant de trouver les ressources nécessaires pour arracher les prolongations. Quelques actions décisives de mezii et un quadruple élimination de ropz ont notamment permis aux Français d’entretenir l’espoir.\n\nMais MOUZ a finalement eu le dernier mot (16-14), porté par les excellentes prestations de xertioN et xelex. Les joueurs de Vitality ont notamment perdu les quatre pistol rounds de la rencontre, un handicap considérable à ce niveau. Cette élimination prématurée vient surtout confirmer les difficultés individuelles de plusieurs cadres, à commencer par ZywOo. La superstar française termine les BLAST Rivals avec un rating de 0.91 sur sept cartes, soit la pire performance de sa carrière lors d’un tournoi en LAN. Un chiffre particulièrement inhabituel pour celui qui a longtemps porté Vitality vers les sommets.\n\nOur Hong Kong run ends here Thank you for the continuous support Time to reset and lock in for the Singapore Major pic.twitter.com/rX2Ii2hz8b",
-    "first_seen": "2026-11-14T15:40:22Z"
-  },
-  {
-    "title": "MSI 2027 heads to Valencia as Riot reshapes Split 1 with First Stand: All In in China",
-    "source": "Esports Insider",
-    "url": "https://esportsinsider.com/2026/11/msi-2027-heads-to-valencia-as-riot-reshapes-split-1-with-first-stand-all-in-in-china",
-    "published": "2026-11-14T07:18:22Z",
-    "game": "lol",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "League of Legends Pro",
-      "tag": "LOL",
-      "color": "#c89b3c",
-      "bg": "#2e2104"
-    },
-    "content": "Riot will take the Mid-Season Invitational to Spain in 2027, bringing a top-tier League of Legends event back to Europe for the first time since the Worlds 2024 final in London. Its one-off, expanded First Stand in China will also change Split 1 for the LEC, with the full details due in January.\n\nEurope will host a top-tier League of Legends event again in 2027. Riot set out its international calendar on 13 November, the eve of the Worlds 2026 final. The Mid-Season Invitational goes to Valencia. London’s staging of the Worlds 2024 final was the last time the continent held an international League of Legends tournament.\n\nFor British fans, that puts a top-tier event within Europe next year. Riot has not yet given dates or ticket details for the Feria de Valencia event.\n\nSpain’s last international League of Legends event came in 2019. That year, Madrid’s Palacio Vistalegre staged the Worlds quarter-finals and semi-finals. Valencia has never hosted one before.\n\nChina will stage First Stand: All In at the start of the 2027 season. Riot calls this single edition its largest tournament ever.\n\nFirst Stand 2027 had originally been given to Southeast Asia. The bigger format took it to China instead. Southeast Asia will now host the event in 2028.",
-    "first_seen": "2026-11-14T08:47:37Z"
-  },
-  {
-    "title": "Red Bull Wings Cup India Final: Eight EA FC 27 Players Compete for Miami Spot in Bengaluru on 15 November",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/india/red-bull-wings-cup-india-national-final-bengaluru-ea-fc-27/",
-    "published": "2026-11-14T07:01:04Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Red Bull will crown its Red Bull Wings Cup India champion at Kettle Studio in Bengaluru on 15 November. Eight EA Sports FC 27 finalists will play a knockout bracket for the national title. The winner will represent India at the Red Bull Wings Cup World Final in Miami. Rohit J Abraham faces Vanshaj Sharma and Saransh Jain plays Fadl Afridi in the quarter-finals.\n\nThe national final ends an Indian qualifying phase that ran from 28 September to 14 November. Players reached Bengaluru through two routes, the on-campus University League and the online Open League on PS5. Red Bull launched the Indian competition in Mumbai on 5 October.\n\nThe eight finalists start in the quarter-finals, with the winners moving on to the semi-finals. The two semi-final winners then meet in a best-of-three championship final. A player must win all three rounds to take the national title and the Miami place. Red Bull has not said whether the quarter-finals and semi-finals are single matches or series.\n\nGates at Kettle Studio open at 5:30pm IST. Red Bull said a limited number of tickets are available through RSVP.\n\nThe quarter-final draw pairs Rohit J Abraham with Vanshaj Sharma and Saransh Jain with Fadl Afridi. Satyam Jha meets Dhruv Keshwani, and Sharuk Sanjay plays Akshay S. Red Bull has not said how the winners of each tie will be paired in the semi-finals.\n\nVanshaj arrives in Bengaluru after representing RNTX at the FC Pro Open Global Qualifier in London earlier this month. He earned his place at that event through the Asia South qualifier before RNTX signed him on 4 November .",
-    "first_seen": "2026-11-14T08:47:37Z"
-  },
-  {
-    "title": "Nvidia Investors With $2.1 Billion at Stake Ask Board to Keep Jensen Huang’s Return on the Table",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/business/nvidia-shareholders-letter-jensen-huang-return-altimeter-atreides/",
-    "published": "2026-11-14T06:58:37Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Two investors whose funds held about $2.1 billion of Nvidia stock in June have asked its board not to rush into naming a new chief executive, and to keep Jensen Huang’s possible return open. Brad Gerstner, chief executive of Altimeter Capital, and Gavin Baker, managing partner and chief investment officer of Atreides Management, made their joint letter public on Friday.\n\nIn it, they urge the board to “pursue a slow, measured, and deliberate process regarding the future leadership of Nvidia that leaves all options on the table, including the potential return of Jensen Huang”. Nvidia has not responded publicly to the letter.\n\nThe request came a day after Huang resigned as president, chief executive and director, effective immediately, while an investigation into his conduct was under way. Chief financial officer Colette Kress is now interim chief executive, and former Synopsys chief executive Harvey Jones became the board’s first chair, according to Nvidia’s announcement and its filing with US regulators . The letter also differs sharply from the viral “employee letter” that spread the same day, which copied OpenAI’s 2023 staff letter almost word for word. This one was published by the two investors who signed it.\n\nThe letter runs to four short paragraphs, and most of it argues against speed. “There are more questions about recent events than answers,” the two investors write. They say the board “should avoid a rush to replace Jensen that undermines and thwarts the best interests of shareholders”. In their view, the company “will be capably led in the interim by Colette Kress and team”, which means the board has time to get the decision right.\n\nGerstner and Baker also accept that the decision belongs to the board. “If after all the facts are known the Board decides that it is not in shareholders’ best interest to have Jensen Huang back as CEO, that is the Board’s prerogative,” the letter says. They add that Huang, as founder and long-time leader, “has earned the right for a deliberate process that avoids any needless rush to replace him before all the facts are known”. The letter does not dispute the reports about Huang’s conduct, and it does not ask for him to be reinstated now.\n\nSome viral summaries said the investors wanted “a more thorough investigation” before any decision. The letter does not use that phrase, and it does not mention the review led by former federal prosecutor Joon Kim and Wachtell Lipton , which the board’s independent directors commissioned before Huang left. It asks only that no successor be chosen before “all the facts are known”, and it sets no timetable. The board has not said when the review is expected to finish.",
-    "first_seen": "2026-11-14T08:47:37Z"
-  },
-  {
-    "title": "AMD Cuts Radeon GPU Supply in China by Up to 50%, and the Shortage Could Last Until January 2027",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/hardware/amd-radeon-gpu-supply-china-cut-50-percent-shortage-2027/",
-    "published": "2026-11-14T06:54:23Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "AMD has cut supplies of Radeon gaming GPUs to its graphics card partners in China by 20% to 50% since October, according to Board Channels, a Chinese industry source that tracks the graphics card channel. The shortage could last until January 2027, the report adds. The cuts apply across the Radeon RX range rather than to a single model, and monthly allocations to board partners are still falling, MyDrivers reported on 12 November. AMD has not commented on the report, and it has not announced any change to its supply plans.\n\nThe report describes AMD’s shortage as no less severe than Nvidia’s. Nvidia’s board partners in China have also been working with limited GPU supply, and Nvidia has reportedly cancelled a 24GB RTX 5080 for the Chinese market because of memory costs. Nvidia’s RTX 50 cards use the newer GDDR7, and the 3GB modules that card needed cost about three times as much as the 2GB modules on the existing 16GB model. Taken together, buyers in one of the biggest markets for DIY PC parts face tight supply from both GPU vendors heading into the end of the year.\n\nBoard Channels points to two causes: rising costs for memory and GPU cores, and AI computing demand taking production capacity away from gaming parts. Every card in the current Radeon RX 9000 line-up uses GDDR6. The RX 9070 XT and RX 9070 carry 16GB on a 256-bit bus and the RX 9070 GRE has 12GB on a 192-bit bus, while the RX 9060 XT uses 8GB or 16GB on 128 bits. DRAM makers have shifted wafer capacity towards high-bandwidth memory for AI accelerators, which tightens supply and raises prices for older graphics memory such as GDDR6. GPU vendors commonly sell their chips to board partners together with the memory, so those costs land on AMD’s allocations directly.\n\nThe pressure was already visible in AMD’s results. The company reported gaming revenue of $773 million for the third quarter, down 40% from a year earlier, which it put down to lower semi-custom and graphics revenue. Data centre revenue rose 97% to $8.5 billion in the same quarter. In May, AMD had already warned that higher memory and component costs would cut its second-half gaming revenue by more than 20% compared with the first half.\n\nThe supply cuts follow a run of price increases in China. AMD told partners in August that Radeon prices would rise by 10% or more, and new list prices took effect on 1 October, according to SMZDM . The RX 9070 rose by 700 yuan to 6,299 yuan, the RX 9070 GRE by 400 yuan to 4,999 yuan, and the RX 9060 XT 16GB by 600 yuan to 4,899 yuan. The RX 9060 XT 8GB went up by 300 yuan to 3,390 yuan, while the RX 9070 XT stayed at 6,999 yuan.\n\nFor board partners, the cut leaves fewer chips to build cards with. Brands that sell Radeon cards in China, from Sapphire, PowerColor and XFX to local makers such as Yeston, cannot ship products without GPU allocations, and MyDrivers said dealers have little stock to sell. Partners that also sell Nvidia cards have no easy fallback, since GeForce supply is tight as well.",
-    "first_seen": "2026-11-14T08:47:37Z"
-  },
-  {
-    "title": "Zupee Raised $100+ Million as a Gaming Company, When the Money Games Ended, It Called Itself AI",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/editorials/zupee-shutdown-real-money-gaming-ai-pivot/",
-    "published": "2026-11-14T06:13:10Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Zupee told the market on 16 October that it was leaving gaming to build “AI-led” businesses for India. A month later, it has laid off its entire remaining workforce and looks close to shutting down, Inc42 reported , with severance covering staff until January 2027. Along the way, it closed its microdrama app Zupee Studio and its astrology platform NeoAstro. Investors had put more than $121 million into the company, roughly ₹1,000 crore at today’s exchange rate, on the promise that it was one of India’s leading gaming platforms.\n\nThe collapse was triggered by a law, not by a scandal, and nothing reported suggests Zupee broke any rules. Yet its rise and fall show how easily a fashionable label can stand in for a business. Zupee called itself a gaming company from 2018 until October, and when the money ran out it reached for the next label investors like. The question is what, beneath both labels, anyone was actually backing.\n\nZupee was founded in 2018 by Dilsher Singh Malhi and Siddhant Saurabh, two IIT Kanpur graduates. Malhi studied chemical engineering and worked as a research associate at EPFL in Switzerland, according to his IIT Kanpur profile , while Saurabh was a software engineer at the trading firm Graviton Research Capital. Neither had worked in games before Zupee, according to those profiles. The company started as a quiz app, then found its market in Ludo, Snakes and Ladders and Carrom, played for cash entry fees and cash prizes.\n\nThat model made serious money while it lasted. Zupee reported revenue of more than ₹1,100 crore and its first full-year profit, ₹146 crore, in the 2024 financial year, according to Entrackr . It closed a $102 million round in January 2022, with reports putting its valuation above $500 million, and signed a content partnership with Reliance Jio. Those numbers, however, came from players paying to compete for cash, not from players buying or playing games for their own sake.\n\nThe difference became obvious once paid contests ended. Zupee shut all of its paid games in August 2025 and kept free versions of Ludo Supreme, Ludo Turbo and Snakes and Ladders running. Without the entry fees, those games could not carry the company, and it cut about 170 jobs in September 2025 and about 200 more in January, YourStory reported . A business that loses its revenue overnight when cash prizes are removed was a contests business with games attached.\n\nNone of this should have surprised anyone writing cheques. Karnataka and Tamil Nadu both tried to outlaw real-money games before 2025. The 28% GST on the full value of deposits, in force since October 2023, showed how little goodwill the sector had left with policymakers. The industry’s defence rested on a label: these were games of skill, it argued, and so they were “gaming”, not gambling. Investors priced Zupee as a gaming platform, while its revenue depended on a legal distinction that the government could remove.",
-    "first_seen": "2026-11-14T08:47:37Z"
-  },
-  {
-    "title": "Man Arrested in Delhi Over Death of Kolkata Woman He Met Through PUBG",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/india/baranagar-anjali-shaw-death-pubg-accused-arrested-delhi/",
-    "published": "2026-11-14T05:38:03Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Police have arrested Dharambir Kumar, a man from Uttar Pradesh, outside Anand Vihar railway station in New Delhi over the death of 26-year-old Anjali Shaw in Baranagar, north of Kolkata. Kumar was picked up late on 12 November in a joint operation by a special team from Baranagar police station and Delhi Police. According to police and her family, the two had met while playing PUBG. Kumar is being brought to West Bengal on transit remand for questioning, OJAS reported .\n\nShaw’s body was found with injury marks on the night of 10 November in a fifth-floor flat in the Lakepally area of Baranagar. The flat belongs to her elder sister and brother-in-law, who now live mostly in Srirampore, and it was empty at the time. Shaw had collected the key from a neighbour that afternoon, and police broke the door down that night after her sister could not reach her by phone, OJAS reported . Police have not disclosed the cause of death, and the case was first treated as a possible suicide before injuries and missing valuables pointed investigators towards a suspected murder. A cousin has alleged that she had injury marks on her neck and face.\n\nPolice suspect that a personal or financial dispute between the two may have led to her death, although they have not confirmed a motive. Police sources told OJAS they are also examining a disagreement over playing PUBG together. Shaw’s father said the pair were friends and that Kumar used to call her his sister, and he said Kumar had given his home address as somewhere near Lucknow. Kumar’s age has not been made public, and police have not said what charges he faces or whether he has a lawyer.\n\nKuntal Banerjee, Deputy Commissioner of Police (South) of the Barrackpore Police Commissionerate, said the accused was being brought from Delhi and that his questioning would reveal more about the case. Investigators believe Kumar left with Shaw’s jewellery and mobile phone. Her family says the missing items include her watch, a ring, a bracelet and earrings. Investigators also say Kumar repeatedly switched the phone on and off after the incident, apparently to confuse attempts to track his location.\n\nPolice believe he used her phone to send WhatsApp messages to her father and to make a brief, silent call to her mother. Her family told OJAS that a reply from her number invited them to ask whatever they wanted. A second message then read, “I’m among you, but you won’t catch me.” The family handed screenshots of those messages to police, who traced Kumar through mobile tower data and other inputs.\n\nOfficers are reviewing CCTV footage from Shitala Mata Lane and Lakepally, partly to check whether anyone else was involved. Footage from the housing complex helped investigators identify the suspect earlier in the week, OJAS reported . Police have not named any other suspect, and they are also questioning family members, neighbours and other residents of the building. Local MLA Sajal Ghosh, who visited the family, said the culprit would be caught but that police needed time to complete the investigation.",
-    "first_seen": "2026-11-14T08:47:37Z"
-  },
-  {
-    "title": "PUBG MOBILE FLASH Is Out Worldwide: Under 1GB, Runs on 2GB RAM and Shares Your PUBG MOBILE Account",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/pubgm/pubg-mobile-flash-launch-download-size-requirements/",
-    "published": "2026-11-14T05:34:50Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "PUBG MOBILE FLASH, the official lightweight version of PUBG MOBILE, is now available worldwide for free on Android and iOS. The app launched on 13 November with an initial download of 0.96GB on Android and under 2GB on iOS, and it runs on phones with as little as 2GB of RAM. It was co-developed by Tencent Games’ LightSpeed Studios and KRAFTON, and picked up 27 million pre-registrations before launch, according to the official launch announcement . Players who log in keep the same account, friends, matches and items they already have in PUBG MOBILE.\n\nThat last point is what separates FLASH from the old PUBG Mobile Lite. Lite, released in 2019 and since discontinued, used its own accounts and smaller matches, so players on budget phones were effectively cut off from everyone else. FLASH is a lighter client for the same game, with cross-play against the full app and updates synchronised with it. It was first shown at the PUBG Mobile World Cup in August as PUBG Mobile Light, before it was renamed FLASH in September.\n\nThe move targets the players PUBG MOBILE has found hardest to keep. Much of the audience it still wants to reach plays on budget Android phones with little free storage, in markets where Garena’s Free Fire built its lead by running on modest hardware. A sub-1GB client with a 2GB RAM floor brings PUBG MOBILE into that segment without splitting its player base, which was the main weakness of Lite.\n\nThe size saving comes from what FLASH leaves out of the first install. Only Erangel and Classic Battle Royale are pre-installed, while other maps, modes, events and higher-quality graphics packs are downloaded when players choose them, the press release says. A confirmation step stops those packs from downloading automatically, which matters on prepaid data plans. The lobby is simplified, icons are lightweight by default, and players who have not downloaded a cosmetic item see a temporary outfit in its place until they fetch the files.\n\nPerformance settings run at 25, 30, 40 or 60 frames per second, depending on the device. Compared with the FLASH beta, PUBG MOBILE says it is targeting a 10% higher average frame rate, 10% better frame-rate stability and 3% lower power use. It is also aiming for 12% less memory use, a 15% shorter startup screen and 20% faster loading before matches. The company describes those numbers as targets, not results guaranteed on every phone, so real gains will vary by chipset and storage speed.\n\nSecurity is shared with the main game too. FLASH uses the same Ban Pan anti-cheat system as PUBG MOBILE, including real-time cheat detection, enforcement and its Investigator system. Since FLASH players share matches with players on the full game, PUBG MOBILE says they are covered by the same protections.",
-    "first_seen": "2026-11-14T08:47:37Z"
-  },
-  {
-    "title": "LoL Esports 2027: First Stand changes, all host cities",
-    "source": "Esports.gg",
-    "url": "https://esports.gg/news/league-of-legends/lol-esports-2027-venues-first-stand/",
-    "published": "2026-11-14T01:50:15Z",
-    "game": "lol",
-    "category": "news",
-    "image": "https://media.esports.gg/uploads/2026/11/msi-2027-valencia.webp",
-    "logo": null,
-    "content": "Riot Games unveiled their plans for League of Legends (LoL) Esports in 2027. The first event of the year, First Stand: All In, promises to feature the most amount of teams in an international ever. It also announced the host cities for all international events, as well as a potential integration for the Demacia Cup into Worlds.\n\nFirst Stand 2027 was initially announced for Southeast Asia . Riot has opted to move the event, now officially named First Stand: All In , to China.\n\nMSI 2027 will take place in Valencia, Spain . This places it in the same city as the second VALORANT Masters of 2027, possibly reducing logistical and operational costs for the organizer.\n\nWorlds 2027 will be split between two host countries and three cities: Nagoya, Japan , and Suwon and Seoul, South Korea .\n\nRiot revealed the “All In” branding through a LoL Esports post. It said that with the change comes a major expansion and All In will be “a one-time event that will bring more teams, more players, and more of our global community together to kick off the competitive season.”\n\nIt also says that First Stand: All In 2027 will be the largest tournament Riot has ever produced. As part of this expansion, the event veers away from the initial plan of being hosted in Southeast Asia to China .",
-    "first_seen": "2026-11-14T08:47:37Z"
-  },
-  {
-    "title": "Marvel Rivals Season 11 Twitch Drops: Claim all 4 Devil Dinosaur rewards and more",
-    "source": "Esports.gg",
-    "url": "https://esports.gg/guides/marvel-rivals/marvel-rivals-season-11-twitch-drops-claim-all-4-devil-dinosaur-rewards-and-more/",
-    "published": "2026-11-14T01:45:49Z",
-    "game": "lol",
-    "category": "news",
-    "image": "https://media.esports.gg/uploads/2026/11/marvel-rivals-season-11-twitch-drops-article-by-esportsgg-image-via-netease-games-november-13-2026-marvel-rivals-free-rewards-1024x576.webp",
-    "logo": null,
-    "content": "Season 11: Doomsday is now live, which also means the arrival of Marvel Rivals Season 11 Twitch Drops. Read on for our guide on how to obtain all of them.\n\nIn total, there are four new Marvel Rivals Twitch Drops that you can earn starting Nov. 13 with the launch of Season 11. These items include the Devil Dinosaur Will of Galacta skin, spray, and nameplate. You can also unlock the Dino Treat emote for free.\n\nHere are all of these Twitch Drops and the watch time required to unlock them. Don’t forget to connect your Marvel Rivals account to Twitch to be eligible for these items.\n\nTo link your Marvel Rivals account to Twitch, visit the game’s official Twitch Drops landing page, sign in, and select your preferred platform. The options include Steam, Epic Games Store, Xbox Series X|S, PlayStation 5, and NetEase Games.\n\nNext, click on the “Connect” button located just below the Twitch icon.\n\nAfter, press the “Authorize” button and make sure that the Twitch account that you’re currently signed in to is the correct one.",
-    "first_seen": "2026-11-14T08:47:37Z"
-  },
-  {
-    "title": "Marvel Rivals Season 11  roadmap, skins, events, and more",
-    "source": "Esports.gg",
-    "url": "https://esports.gg/guides/marvel-rivals/marvel-rivals-season-11-roadmap-skins-events-and-more/",
-    "published": "2026-11-14T01:02:06Z",
-    "game": "lol",
-    "category": "news",
-    "image": "https://media.esports.gg/uploads/2026/11/marvel-rivals-season-11-roadmap-article-by-esportsgg-image-via-netease-games-november-13-2026-1024x576.webp",
-    "logo": null,
-    "content": "NetEase Games has revealed the official Marvel Rivals Season 11 roadmap. In addition to Nightcrawler joining the roster as a strategist hero on Nov. 13, the season features a new Battle Pass, three events, the Incursion Point map, plus skins galore. Read on for the full Marvel Rivals Season 11 roadmap and the Marvel Rivals Season 11.5 release date.\n\nBelow is the full Marvel Rivals Season 11 roadmap. It kicks off with Nightcrawler joining the game on Nov. 13 as a new strategist hero. He even has an event dedicated to him. The update introduces the new Incursion Battle Pass, Pickles Plush accessory, plus skins for Nightcrawler, Gambit, and The Hood as well.\n\nThe Marvel Rivals Season 11 roadmap kicks off with the arrival of Nightcrawler as a new playable hero. The update also introduces a new event, battlepass, accessory, and several costumes.\n\nAccording to NetEase Games, Marvel Rivals Season 11.5 is slated for Dec. 11.\n\nNightcrawler has the Steadfast Swordsman, Hope Soared, and X-Force skins at launch.\n\nAside from Nightcrawler, the other new Marvel Rivals Season 11 skins include Versatile Valet for Gambit, Astral Oblivion for The Hood, Shining Moment for White Fox, Shining Moment for Loki, Shining Moment for Magik, Shining Moment for Storm, Gaming Life for Rocket Raccoon, Gaming Life for Jeff the Landshark, Gaming Life for Scarlet Witch, Gaming Life for Moon Knight, Gaming Life for Star-Lord, and Incursion for Human Torch.",
-    "first_seen": "2026-11-14T01:21:29Z"
-  },
-  {
     "title": "Can you gift the Music Pass in Fortnite? Here’s the latest",
     "source": "Esports.gg",
     "url": "https://esports.gg/guides/gift-music-pass-fortnite/",
@@ -2294,81 +2423,6 @@
     "first_seen": "2026-11-14T01:21:29Z"
   },
   {
-    "title": "Marvel Rivals Nightcrawler abilities, team-ups, and skins",
-    "source": "Esports.gg",
-    "url": "https://esports.gg/guides/marvel-rivals/marvel-rivals-nightcrawler-abilities-team-ups-and-skins/",
-    "published": "2026-11-14T00:22:03Z",
-    "game": "lol",
-    "category": "news",
-    "image": "https://media.esports.gg/uploads/2026/11/marvel-rivals-nightcrawler-teamups-article-by-esportsgg-image-via-netease-games-november-13-2026-1024x697.webp",
-    "logo": null,
-    "content": "Marvel Rivals Season 11 is now live, which means players can duke it out as Nightcrawler. Here’s everything you need to know about Nightcrawler’s abilities, team-ups, skins, and more.\n\nIn Marvel Rivals, Nightcrawler can toss grenades that explode on impact thanks to Forged Brimstone. These grenades damage enemies and heals teammates. His right-click, meanwhile, is Three-Sword Style, which allows him to potentially land critical hits. In terms of Nightcrawler’s teleportation powers, they are represented by Swift Intervention, Smoke Shift, Tandem Teleport, and his Phasing Finale ultimate. This hero can also cling to walls thanks to his Crawler Cling passive.\n\nIn terms of Nightcrawler’s team-ups at launch, they’re with Rogue and Magik. Both of these team-ups have a base and enhanced effect.\n\nAs for Nightcrawler’s starting skins, Marvel Rivals players can get his Steadfast Swordsman one plus the Hope Soared and X-Force recolors at launch.\n\nNightcrawler entered Marvel Rivals in Season 11 on Nov. 13.\n\nNightcrawler is a strategist hero in Marvel Rivals.",
-    "first_seen": "2026-11-14T01:21:29Z"
-  },
-  {
-    "title": "China approves Savvy Games Group’s $6B acquisition of Mobile Legends developer MOONTON Games",
-    "source": "Esports.gg",
-    "url": "https://esports.gg/news/mobile-legends-bang-bang/china-approves-savvy-games-group-mlbb-moonton-games-acquisition/",
-    "published": "2026-11-13T23:08:43Z",
-    "game": "lol",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "League of Legends Pro",
-      "tag": "LOL",
-      "color": "#c89b3c",
-      "bg": "#2e2104"
-    },
-    "content": "China’s State Administration for Market Regulation (SAMR) has cleared Savvy Games Group’s parent entity Saudi Electronic Games Holding Company’s planned acquisition of MOONTON Games, the developer of Mobile Legends: Bang Bang (MLBB). This brings the reported $6 billion-plus deal with ByteDance one step closer to completion.\n\nThe approval, completed on Oct. 29 and published on Nov. 6, advances the acquisition that ByteDance agreed to in March 2026. Nearly eight months after the agreement was announced, the transaction has yet to close.\n\nSAMR included the acquisition in its list of mergers approved without conditions between Oct. 26 and Nov. 1. The notice identifies Saudi Electronic Games Holding Company as the acquirer and Moonton Holdings Limited and Shanghai Moonton Technology Co., Ltd. as the target companies.\n\nThe notice does not mention Savvy Games Group by name. However, Saudi Electronic Games Holding Company is its parent entity, according to the Canadian trademark registration . Savvy is wholly owned by Saudi Arabia’s Public Investment Fund (PIF).\n\nSavvy confirmed in March that it had signed an agreement to acquire Moonton from ByteDance for a reported price exceeding $6 billion. Neither company has disclosed the exact purchase price. ByteDance acquired MOONTON Games back in 2021 for approximately $4 billion before revealing its plans to restructure its gaming business in 2023.\n\nThe acquisition could have broader implications for esports. This is considering the number of major gaming and tournament organizations connected to Saudi Arabia’s PIP.",
-    "first_seen": "2026-11-14T01:21:29Z"
-  },
-  {
-    "title": "H0NeST on making HLTV Prospects: \"I can be better...I need to just work on myself and get higher\"",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/79906/h0nest-on-making-hltv-prospects-i-can-be-betteri-need-to-just-work-on-myself-and-get-higher",
-    "published": "2026-11-13T22:19:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "The Ukrainian rifler has been making waves recently.",
-    "first_seen": "2026-11-14T01:21:29Z"
-  },
-  {
-    "title": "Marvel Rivals upcoming characters: New heroes, leaks, and rumors",
-    "source": "Esports.gg",
-    "url": "https://esports.gg/guides/marvel-rivals/marvel-rivals-upcoming-characters-new-heroes-leaks-and-rumors/",
-    "published": "2026-11-13T21:26:06Z",
-    "game": "lol",
-    "category": "rumor",
-    "image": "https://media.esports.gg/uploads/2026/10/marvel-rivals-leaks-nightcrawler-confirmed-1024x576.webp",
-    "logo": null,
-    "content": "Leaks point to Doctor Doom as a possible candidate for the next new Marvel Rivals character after Season 11’s Nightcrawler and Season 11.5’s Dracula. However, keep in mind that leaked characters are not guaranteed to release, and plans can change before an official announcement.\n\nAccording to X0X_LEAK, Doctor Doom may be the next Marvel Rivals character after Dracula. The datamining group previously leaked Nightcrawle and Gorr, who indeed arrived in Season 10 and Season 11.\n\nNightcrawler indeed arrived in Marvel Rivals Season 11 as the newest Marvel Rivals character. He was leaked by datamining group X0X_LEAK . On Oct. 7, the group also posted a gallery card hinting at a weapon used by Kurt Wagner.\n\nWith the Doctor Doom movie releasing this December and Marvel Rivals’ current Path to Doomsday content schedule, Doctor Doom himself may join the playable roster. On Nov. 8 , X0X_LEAK noted that he may have both vanguard and duelist roles in Marvel Rivals. After the reveal of Dracula for Season 11.5, the group stated that Doctor Doom may arrive in 2027 .\n\nAccording to X0X_LEAK, interactions with Captain Marvel were leaked in 2025 and got re-added to the game by accident. The voice lines related to the hero were then removed again.\n\nThe Season 2 trailer for Marvel Rivals features a Professor X statue. MarvelRivals.gg also reported on May 27 that a third party datamined this hero.",
-    "first_seen": "2026-11-14T01:21:29Z"
-  },
-  {
-    "title": "This Gaming Chair Lets You Actually Feel Every Gunshot and Crash",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/razer-soma-pro-soma-sensa-hd-haptics-gaming-chairs-price-features/",
-    "published": "2026-11-13T21:23:45Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Razer Soma Pro is a new gaming chair that adds haptic motors, built-in speakers, and reactive RGB lighting to one seat. Razer announced it alongside the Razer Soma Sensa HD Haptics, a cheaper model that focuses on haptic feedback only. The Soma Pro costs $999.99. The Soma Sensa HD Haptics costs $569.99. Both chairs are on sale now.\n\nBelow, you can read how the haptics work, what each chair includes, and how they compare with the Soma Chroma.\n\nRazer announced the Razer Soma Pro and the Soma Sensa HD Haptics today. Both are wireless gaming chairs with haptic feedback built into the seat. The Soma Pro also adds speakers and RGB lighting.\n\nThe Soma Pro costs $999.99 in the US, £999.99 in the UK, and €1,029.99 in Europe. The Soma Sensa HD Haptics costs $569.99, £569.99, and €589.99. These are the MSRP figures Razer listed.\n\nSee the sights, hear every sound and feel the moments. Project Madison comes to life with the Razer Soma Pro: https://t.co/96VRH7bWB0 . The ultimate gaming throne for those who want to immerse themselves fully, the Razer Soma Pro combines Razer Chroma RGB, THX Spatial Audio and… pic.twitter.com/LjeGoCQVgF\n\nBoth chairs are available now at Razer.com , RazerStores , and select retailers worldwide. Razer is also offering US$50 in store credit for Soma Pro orders placed during launch week.",
-    "first_seen": "2026-11-14T01:21:29Z"
-  },
-  {
     "title": "Rocket League ranks explained (2026): All ranks, MMR, and rank distribution",
     "source": "Esports.gg",
     "url": "https://esports.gg/news/rocket-league/rocket-league-ranking-system/",
@@ -2378,23 +2432,6 @@
     "image": "https://media.esports.gg/uploads/2021/05/Rocket-League-ranks-7-1024x576.avif",
     "logo": null,
     "content": "Rocket League’s ranked system matches players against opponents of similar skill levels across competitive playlists. This guide goes over every Rocket League rank in order, MMR, rank distribution, and more.\n\nHere are the MMR charts for Ranked Duel 1v1, Ranked Doubles 2v2, and Ranked Standard 3v3, according to rocketleague.tracker.network .\n\nRocket League players can now display their MMR if they wish to do so. Enabling this option shows their MMR in competitive playlists and the scoreboard after a ranked match.\n\nRocket League content creator Americas_F1nest also explained how MMR works in a video. According to him, players usually gain around 9 to 10 MMR per game. However, this can be higher during placement matches and vary slightly based on rank differences between teammates.\n\nAt the start of a season, players can also gain around 25 to 30 MMR during their first 10 placement matches before gains gradually return to normal.\n\nRocket League has 22 competitive ranks, starting with Bronze 1 and ending at SSL. SSL is the highest rank in the game and the only rank without divisions. According to data from rocketleague.tracker.network, the SSL MMR for Ranked Duel 1v1, Ranked Doubles 2v2, and Ranked Standard 3v3 are 1,353 to 1,606, 1,863 to 2,002, and 1,868 to 1,894, respectively.",
-    "first_seen": "2026-11-14T01:21:29Z"
-  },
-  {
-    "title": "The Game Awards 2026 Nominees Date, Time, and How to Watch",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/the-game-awards-2026-nominees-date-time/",
-    "published": "2026-11-13T21:04:45Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "The Game Awards 2026 nominees will be revealed on Tuesday, November 17, 2026. The Game Awards announced the date on November 13. A livestream hosted by Geoff Keighley will confirm the nominees for every category at 9am PT, 12pm ET, and 5pm GMT. The main ceremony follows on December 10 at the Peacock Theater in Los Angeles. GTA 6 is eligible for all awards.\n\nRead on for the start times, eligibility rules, voting details, and the games tipped for Game of the Year.\n\nThe Game Awards will reveal its nominees live on Tuesday, November 17, 2026. Geoff Keighley will host a global nomination announcement special for all categories.\n\nThe livestream starts at 12pm ET, 9am PT, and 5pm GMT. Fans in India can tune in at 10:30 pm IST.\n\nThe Game Awards confirmed the date in a post on X on November 13. The post asked fans to set a reminder to watch.\n\nThe Game Awards linked a reminder page in its X post . Fans can use it to get an alert before the stream starts. The post did not name the streaming platforms.",
     "first_seen": "2026-11-14T01:21:29Z"
   },
   {
@@ -3240,23 +3277,6 @@
       "bg": "#04243d"
     },
     "content": "Student finalists in the State and National Rocket League Finals will play on high-end Razer controllers used by professional players this November, after the hardware brand became the Official Controller Partner of Australian school esports operator The FUSE Cup. The Rocket League decider is the capstone of a school year of qualifiers.\n\nThe FUSE Cup's Chief Operating Officer, Daniel Aivaliotis-Martinez, shared the news in an announcement post on LinkedIn , which he used to speak about creating meaningful experiences for young people before thanking the Razer team for their support and belief in what the FUSE Cup is building. Razer gear, which is used by esports pros around the world, as well as actual world champions, will now be in the hands of every finalist competing for the national title.\n\nThe controllers themselves come with 2.4GHz wireless technology that prevents lag, toggleable physical triggers and back paddles.\n\nThe partnership has two parts: finalists get Razer controllers for the State and National Rocket League Finals, which means players won’t have to bring their own pads to the biggest series of their school careers.\n\nSecondly, Razer is sponsoring the Student Leadership Award, a new category at the FUSE Australian School Esports Awards. It's aimed at pupils who make a positive contribution to their community and show leadership inside their school's esports program. It means the brand is also putting itself on a prize that has nothing to do with winning matches.\n\nThe FUSE Esports Festival sees itself as Australia's largest in-person school esports festival. It’s backed by the City of Gold Coast council, and it takes place at Southern Cross University.",
-    "first_seen": "2026-10-26T14:41:03Z"
-  },
-  {
-    "title": "Fortnite Mastery Monday Start Time and Bonuses for October 26",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/fortnite/fortnite-mastery-monday-start-time-and-bonuses-for-october-26/",
-    "published": "2026-10-26T11:40:46Z",
-    "game": "fortnite",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Fortnite Champion Series",
-      "tag": "FNCS",
-      "color": "#a855f7",
-      "bg": "#2e084d"
-    },
-    "content": "Fortnite Mastery Monday returns today, October 26, 2026, and starts at 6:00 AM PT / 9:00 AM ET. The weekly event lasts 24 hours and ends at the same time on Tuesday, October 27. Players get double Sprite XP and double Sprite Dust from extractions. This is also the final Mastery Monday of Chapter 7 Season 4, which ends on Saturday, October 31.\n\nBelow, you will find regional start times and the full bonus list. It also explains how Sprite Mastery works.\n\nFortnite Mastery Monday begins at 6:00 AM PT / 9:00 AM ET on Monday, October 26, 2026. The event runs for 24 hours. The bonuses end at 6:00 AM PT / 9:00 AM ET on Tuesday, October 27.\n\nDuring this window, players earn double Sprite XP and double Sprite Dust from extractions. Legendary and Mythic Sprites also appear more often. Cheat codes show up more frequently, and Daily Quests give extra Portable Extractors.\n\nThat gives players a full day to level up their Fortnite Chapter 7 Season 4 Sprites and unlock Mastery rewards. Players still leveling One Wish Willow and Honey, along with their Trick or Treat Sprite variants, can use the extra Sprite XP.\n\nThe event starts on Monday afternoon in the UK and Central Europe. It starts on Monday night in Japan and South Korea. Players in Sydney, Melbourne, and New Zealand get the bonuses early on Tuesday morning because of the time difference.",
     "first_seen": "2026-10-26T14:41:03Z"
   },
   {
