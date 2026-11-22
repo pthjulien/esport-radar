@@ -1,5 +1,56 @@
 [
   {
+    "title": "DETONATE complete roster with Austin LAN duo, corn",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/80147/detonate-complete-roster-with-austin-lan-duo-corn",
+    "published": "2026-11-22T00:50:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "corn will be a stand-in as the team seek a long-term fifth.",
+    "first_seen": "2026-11-22T02:57:30Z"
+  },
+  {
+    "title": "Brace For Impact announce $2,500 league set to run in North America next year",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/80146/brace-for-impact-announce-2500-league-set-to-run-in-north-america-next-year",
+    "published": "2026-11-21T23:45:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "The league will be B4I's largest event to date.",
+    "first_seen": "2026-11-22T02:57:30Z"
+  },
+  {
+    "title": "Former Liquid AWPer ultimate splits with Betlic",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/80145/former-liquid-awper-ultimate-splits-with-betlic",
+    "published": "2026-11-21T23:19:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "The AWPer is to be replaced with Brain47.",
+    "first_seen": "2026-11-22T02:57:30Z"
+  },
+  {
     "title": "Fortnite Solo Reload FNCS 2026: Results and leaderboard",
     "source": "Esports.gg",
     "url": "https://esports.gg/guides/fortnite/fortnite-solo-reload-fncs-2026/",
@@ -2255,57 +2306,6 @@
       "bg": "#382003"
     },
     "content": "",
-    "first_seen": "2026-11-18T20:14:42Z"
-  },
-  {
-    "title": "Huya Turns Its First Operating Profit Since 2022 as Game Publishing Outgrows Live Streaming",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/business/huya-q3-2026-results-operating-profit/",
-    "published": "2026-11-18T18:08:27Z",
-    "game": "val",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Huya has posted its first operating profit in four years, as the Chinese game streaming platform leans harder on game publishing and in-game item sales to make up for a shrinking live streaming business. The NYSE-listed company reported operating income of RMB15.2 million (US$2.3 million) for the third quarter of 2026, against an operating loss of RMB14.3 million a year earlier. Acting chief executive Junhong Huang said operating income “turned positive for the first time since the third quarter of 2022”.\n\nThe results , released on 17 November for the quarter to 30 September, show a company in the middle of a shift. Total net revenues rose 3.8% to RMB1,752.8 million (US$261.4 million), but almost all of that growth came from outside live streaming. Net income attributable to Huya reached RMB29.3 million (US$4.4 million), up from RMB9.6 million in the same quarter last year.\n\nRevenue from game-related services, advertising and other sources jumped 21.3% to RMB644.7 million (US$96.2 million), and Huya said the rise was driven mainly by in-game item sales and advertising. That line now makes up about 37% of total revenue, up from roughly 31% a year ago. Live streaming revenue, still the larger business, slipped to RMB1,108.2 million (US$165.3 million) from RMB1,156.7 million, a fall of about 4.2%. In money terms, the non-streaming business added RMB113.1 million year on year, while live streaming lost RMB48.5 million.\n\nHuang pointed to game publishing as the main reason for the improvement. “Game publishing is becoming an increasingly important growth driver for our business,” he said, adding that Huya is advancing the release of The Legend of Swordman: Reunion and other titles. The company said it is drawing on what it learned from launching the mobile version of Goose Goose Duck. The release did not break out revenue for individual titles, and it did not give a launch date for The Legend of Swordman: Reunion.\n\nThe better revenue mix also helped Huya’s margins during the quarter. Gross profit rose 12.6% to RMB255.2 million (US$38.1 million), lifting gross margin to 14.6% from 13.4%. On a non-GAAP basis, operating income reached RMB30.5 million (US$4.6 million), which Huya said was its highest quarterly level since the third quarter of 2022. Non-GAAP net income attributable to Huya rose to RMB43.7 million (US$6.5 million), from RMB36.3 million a year earlier.\n\nHuya said live streaming revenue “continued to stabilize” compared with the previous quarter, but it is still lower than a year ago. Huya built its business on game and esports live streaming in China, so the live streaming line remains the core of the platform. The Q3 release does not give monthly active user numbers, so it offers no direct read on whether its audience is growing. Live streaming still brought in about 63% of revenue in the quarter, down from about 69% a year earlier.",
-    "first_seen": "2026-11-18T20:14:42Z"
-  },
-  {
-    "title": "Oppenheimer Sets GTA 6’s Bar at 20 Million Copies in Three Days as Take-Two Stock Jumps 7%",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/business/take-two-stock-oppenheimer-gta-6-20-million/",
-    "published": "2026-11-18T18:06:19Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Oppenheimer has reiterated its Outperform rating on Take-Two Interactive with a $280 price target, and its launch-week note sets a clear bar for Grand Theft Auto VI. The broker expects about 20 million copies sold and at least $1.85 billion in gross revenue in the game’s first three days, according to a summary of the note published by Investing.com . Take-Two shares were trading at $218.92 at 12:53pm ET on Wednesday, up 7.35% on the day, according to Google Finance .\n\nThat price leaves about 28% of upside to Oppenheimer’s target. The stock had fallen almost 12% over the previous week, according to the same report, and our earlier analysis of the rebound covers how the reviews turned that around. Trading volume had reached 6.8 million shares by early afternoon, roughly double the stock’s average daily volume of 3.34 million. The shares opened at $212.64, dipped as low as $201.66 and climbed to an intraday high of $221.83, giving Take-Two a market value of about $40.9 billion.\n\nThe note lays out four markers that investors can check against the launch as it happens. Oppenheimer expected an aggregate Metacritic score of 97 or higher and a Twitch peak of about 2 million viewers. Its sales tests are around 20 million units in three days and gross revenue of $1.85 billion or more over the same period. It also flagged cyberattacks on console networks as the main launch-day risk.\n\nTwo of those tests have already been passed. GTA VI holds a 99 Metascore from 147 critic reviews, which our reviews roundup tracked as the embargo lifted, and that beats the 97 Oppenheimer set as its benchmark. On Twitch, the game’s category page passed 3 million concurrent viewers on 18 November, well above both the 2 million estimate and the 1.82 million peak the note cites for the gameplay reveal.\n\nThe sales tests will take longer to settle. Oppenheimer used a Sensor Tower estimate of 15.88 million pre-ordered units as a comparison point, and it said Take-Two could share its first sales figure as early as 20 November. A first-weekend update could follow on 23 November, which would give investors a direct read on the 20 million target.\n\nOppenheimer is not alone in staying bullish through the launch. After Take-Two’s second-quarter results earlier this month, DA Davidson kept a Buy rating with a $300 target, Piper Sandler held Overweight at $290 and BMO Capital stayed at Outperform with $285. TD Cowen kept its Buy rating at $284, while UBS cut its target from $300 to $295 and kept its Buy call. Our analysis earlier this week found an average TipRanks target of $290.50, close to where most of these brokers sit.",
-    "first_seen": "2026-11-18T20:14:42Z"
-  },
-  {
-    "title": "Metizport secure RUSH:Brno playoffs berth with tight win over Phantom",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/80048/metizport-secure-rushbrno-playoffs-berth-with-tight-win-over-phantom",
-    "published": "2026-11-18T17:55:00Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "Metizport stayed alive at the Czech event.",
     "first_seen": "2026-11-18T20:14:42Z"
   },
   {
