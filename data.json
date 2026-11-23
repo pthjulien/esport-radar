@@ -1,5 +1,56 @@
 [
   {
+    "title": "ENVY finish second at Tipsport RUSH Brno behind SINNERS",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/80165/envy-finish-second-at-tipsport-rush-brno-behind-sinners",
+    "published": "2026-11-22T22:06:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "The French team suffers an unfortunate reverse sweep.",
+    "first_seen": "2026-11-23T00:39:55Z"
+  },
+  {
+    "title": "Halftime voice chat will remain in FACEIT matches",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/80164/halftime-voice-chat-will-remain-in-faceit-matches",
+    "published": "2026-11-22T21:23:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "",
+    "first_seen": "2026-11-23T00:39:55Z"
+  },
+  {
+    "title": "Fortnite Solo Reload FNCS 2026: Results and leaderboard",
+    "source": "Esports.gg",
+    "url": "https://esports.gg/guides/fortnite/fortnite-solo-reload-fncs-2026/",
+    "published": "2026-11-22T21:17:39Z",
+    "game": "fortnite",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Fortnite Champion Series",
+      "tag": "FNCS",
+      "color": "#a855f7",
+      "bg": "#2e084d"
+    },
+    "content": "The final Fortnite Champion Series (FNCS) of 2026 concludes this weekend with the Solo Reload version. Forty players across all regions will compete for a share of over $500,000 before Fortnite gears up for Chapter 8 and whatever the future holds.\n\nThis article provides the results across all regions for the 2026 Solo Reload FNCS!",
+    "first_seen": "2026-11-21T22:56:36Z"
+  },
+  {
     "title": "Grand ménage en LEC : 16 joueurs ne seront pas de retour en 2027",
     "source": "E.SPORT.FR",
     "url": "https://e.sport.fr/transferts/grand-menage-en-lec-16-joueurs-ne-seront-pas-de-retour-en-2027-777395.shtm",
@@ -51,23 +102,6 @@
     "logo": null,
     "content": "Paris sera au cœur de l’esport mobile en 2027. Les prochains championnats du monde de Brawl Stars se dérouleront dans la capitale française, une annonce importante pour une discipline qui continue de gagner en visibilité. L’édition 2026 se tient actuellement au Japon, dans une enceinte pouvant accueillir plus de 10 000 spectateurs. Un signe de l’ampleur prise par la compétition, particulièrement populaire en Asie, où l’esport mobile occupe déjà une place majeure.\n\nCette arrivée en France pourrait représenter une opportunité intéressante pour les organisations françaises, encore relativement discrètes sur la scène compétitive de Brawl Stars. Plusieurs grands noms de l’esport international sont déjà engagés sur le jeu, notamment Natus Vincere, Team Heretics, FUT Esports, ZETA DIVISION ou encore Crazy Raccoon. Avec un championnat du monde organisé à domicile, de nouvelles structures pourraient être tentées de rejoindre l’aventure pour profiter de l’engouement autour de l’événement.\n\nEn parallèle, Supercell a annoncé l’extension de son programme de clubs partenaires, destiné à renforcer les liens entre l’éditeur et les organisations esportives. Les structures concernées peuvent notamment bénéficier d’un partage des revenus générés par les cosmétiques en jeu, ainsi que de contenus exclusifs à leurs couleurs, comme des émoticônes, sprays et icônes. Le dispositif prévoit également une meilleure visibilité officielle et des échanges privilégiés avec Supercell sur le développement de la scène compétitive.\n\nAutre avantage important : les clubs partenaires peuvent, sous certaines conditions, conserver leurs points et leurs places qualificatives même en cas de changement d’effectif. De quoi apporter davantage de stabilité aux projets sportifs et rendre l’investissement plus intéressant sur le long terme. À l’approche des Worlds 2027 à Paris, ces nouvelles perspectives pourraient convaincre plusieurs organisations françaises de tenter leur chance sur Brawl Stars, sans nécessairement engager les budgets considérables exigés par certaines autres disciplines. Reste à savoir si cette occasion permettra à la scène tricolore de franchir un nouveau cap.\n\nParis, WE'RE COMING The 2027 Brawl Stars World Finals will take place in Paris, France #BSE27 pic.twitter.com/ZFH4i2fyqQ",
     "first_seen": "2026-11-22T19:16:52Z"
-  },
-  {
-    "title": "Fortnite Solo Reload FNCS 2026: Results and leaderboard",
-    "source": "Esports.gg",
-    "url": "https://esports.gg/guides/fortnite/fortnite-solo-reload-fncs-2026/",
-    "published": "2026-11-22T15:56:51Z",
-    "game": "fortnite",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Fortnite Champion Series",
-      "tag": "FNCS",
-      "color": "#a855f7",
-      "bg": "#2e084d"
-    },
-    "content": "The final Fortnite Champion Series (FNCS) of 2026 concludes this weekend with the Solo Reload version. Forty players across all regions will compete for a share of over $500,000 before Fortnite gears up for Chapter 8 and whatever the future holds.\n\nThis article provides the results across all regions for the 2026 Solo Reload FNCS!",
-    "first_seen": "2026-11-21T22:56:36Z"
   },
   {
     "title": "LEC : Vitality boucle son roster avec Gakgos",
@@ -2268,40 +2302,6 @@
     },
     "content": "PlayStation Network went down for thousands of players on 18 November, hours before Grand Theft Auto VI unlocked worldwide. Users reported sign in failures, server connection errors and a “services are busy” message as they tried to get online ahead of the launch. Sony did not confirm an outage, and its status page showed all services running for most of the disruption.\n\nThe problems eased later on Wednesday, and the PlayStation status page later showed every service as green. Players who still cannot connect can try a few simple fixes before launching the game.\n\nPSN is back up after the 18 November disruption, and the official PlayStation Network status page lists all services as working. Outage reports on Downdetector passed 4,000 at the peak on Wednesday afternoon US time, with login and server connection problems the most common complaints. Reports began falling soon after, and the number dropped sharply by Wednesday evening in Europe.\n\nSony did not post an official explanation. The timing pointed to heavy traffic, as players across the world signed in, downloaded the required system update and pre loaded GTA 6 on the eve of release.\n\nGTA 6 needs a PS5 system software update before it can be played, and Sony released it the day before launch. Millions of players downloading that update at the same time as their game files put extra load on the network. The game reportedly needs PS5 firmware 14.22 , and PlayStation told players on X that the update had to be installed before playing.\n\nThe rush grew further as GTA 6 went live region by region at midnight local time. Players outside New Zealand also tried the New Zealand trick to play GTA 6 early , which sends more sign ins to the network than a normal launch day.",
     "first_seen": "2026-11-19T02:25:24Z"
-  },
-  {
-    "title": "GTA 6 Camera Guide: How to Take Selfies, Change Filters and Use Photo Mode",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/gta-6/gta-6-camera-guide-selfies-filters-photo-mode/",
-    "published": "2026-11-18T20:08:03Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Grand Theft Auto VI gives players two ways to capture Leonida: a camera app on Jason and Lucia’s in game phones and a full photo mode in the pause menu. The phone camera handles quick shots and selfies with poses and expressions, while photo mode offers detailed controls for lighting, focus and effects.\n\nNeither tool is available from the first second of the game. Photo mode opens up during Lucia’s prologue, and the phone camera follows shortly after, once players take control of Jason.\n\nThe phone camera unlocks after Lucia’s prologue, when the story switches to Jason. The camera app sits on the phone’s home screen alongside apps such as Messages and Scooter Bros.\n\nThe rear camera includes a flash toggle, a 3×3 grid, zoom up to 5x and up to 17 filters. Photos can be viewed afterwards through the Gallery option inside the camera app.\n\nPlayers switch to selfie mode by choosing the Selfie option in the camera app, which flips the view to the front camera. The selfie view adds three new controls on top of the photo and flash buttons.\n\nChoosing Rear Camera switches the view back to normal photos. Jason and Lucia have separate phones, and the number of poses and expressions confirmed so far applies to Jason.",
-    "first_seen": "2026-11-18T20:14:42Z"
-  },
-  {
-    "title": "cmtry returns to FUT bench after four matches",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/80053/cmtry-returns-to-fut-bench-after-four-matches",
-    "published": "2026-11-18T20:00:00Z",
-    "game": "cs2",
-    "category": "official",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "",
-    "first_seen": "2026-11-18T20:14:42Z"
   },
   {
     "title": "Epic Takes Legal Action Against a Rocket League Cheat Seller, Bans Them From Every Epic Game",
