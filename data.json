@@ -1,5 +1,408 @@
 [
   {
+    "title": "Anthropic Briefly Lost Its $1 Trillion Value, Then Closed Back Above It",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/business/anthropic-1-trillion-market-cap-shares-ipo-gaming/",
+    "published": "2026-11-26T14:40:28Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "A widely shared post on X on 25 November declared that Anthropic “is no longer worth $1 trillion”, less than a week after the company behind Claude made its stock market debut. The claim was true for part of Wednesday’s trading session, when the shares fell as low as $73.85. They then recovered to close at $82.79, which values the company at about $1.11 trillion using the share count in its final prospectus.\n\nUS stock markets are closed on 26 November for Thanksgiving, so that Wednesday close is the latest price. The swing still matters, because Anthropic has now closed below its $83 offering price twice in a row. For gaming, it is also the first real market test of a company whose models are already being used to build games, run AI squadmates and port old titles.\n\nAnthropic priced its shares at $83 in a final prospectus dated 18 November, and they began trading on Nasdaq under the ticker ANT the next day. The offering raised $81.34 billion before costs, and a separate $26 billion private placement brought in Google, Nvidia, AMD, Broadcom, Micron, Microsoft and TSMC as investors at the same price. The stock opened at $111.50, touched $115.10 and closed its first day at $97.17.\n\nThe slide began within days of the debut, during a wider sell-off in technology stocks. The shares closed at $81.90 on 24 November, down 6.5 per cent and below the offering price for the first time. On 25 November they dropped to $73.85 at their low, about 11 per cent under $83 and 36 per cent below the debut high. A late recovery then left them at $82.79, according to Google Finance data.\n\nAnalysts quoted by City AM blamed poor timing amid a wider sell-off in technology stocks, and said the underwriters could not hold the price after exercising their option to buy extra shares on 20 November. Investors are also weighing a lock-up release that reportedly lets up to 303 million shares be sold from 15 December. Yahoo Finance reported that chief executive Dario Amodei and president Daniela Amodei each sold about $280 million of shares in the IPO, at the offering price. Anthropic has not commented on the share price.\n\nDifferent outlets have put very different values on the same share price, so TalkEsport worked the numbers out from Anthropic’s own filing. The prospectus lists 7.73 billion Class A shares, including the underwriters’ extra shares, and 5.64 billion Class N shares after the offering. That makes about 13.37 billion shares in total, which puts the $1 trillion line at roughly $74.81 a share.",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "GTA 6 PC Port Running on 25 FPS Hits Russian Torrent Sites",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/gta-6/gta-6-pc-port-russian-torrent-sites-cgbj-fps/",
+    "published": "2026-11-26T14:31:18Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "An unofficial PC version of GTA 6 has started circulating on Russian torrent sites, a week after the game launched on PS5 and Xbox Series X and S. Several Russian outlets reported on 26 November that a build said to come from a port project called CGBJ had been posted for download. Posts on X claim it runs at 25 to 30 frames per second, but nothing about the release is official, and the claims have not been independently tested.\n\nOne X post describing the build said the port had “officially” reached the torrent sites, which gives the wrong impression. Rockstar has not announced a PC version of GTA VI, and the official GTA VI site still lists the game for PS5 and Xbox Series X and S only. Every PC build in circulation depends on files taken from the Xbox version of the game.\n\nRussian sports outlet Championat reported that a user posted the first build of the port to torrent trackers on 26 November. That was three days after hacking group Cyberleek leaked the executable needed to launch the game, according to the same report. Mail.ru’s Hi-Tech section reported the same release and said the CGBJ project’s GitHub repository disappeared less than an hour after it went public. TalkEsport has not downloaded the files and will not link to them.\n\nThe port builds on a leaked Xbox Series build that has been spreading since Cyberleek claimed the leak on 20 November. Within days, modders were saying the game was already booting on PC , and dozens of separate projects started racing to make it playable. A fan-run tracker now lists 39 such projects, according to a technical write-up on the Russian tech community site Habr.\n\nThe requirements quoted for the CGBJ build are steep. Mail.ru listed a Ryzen 5 3600 or Core i5-10400 processor, 32GB of RAM, a graphics card with 16GB of video memory and 209GB of SSD space. The size alone shows the download is the full game rather than a small patch, which matters for the legal questions around it.\n\nThe 25 to 30 frames per second figure comes from the projects themselves and the fan tracker that follows them. That tracker reports an average of about 25 frames per second in normal play and close to 30 indoors and in cutscenes. German outlet PC Games Hardware reported lower developer measurements, with a median of 17 to 18 frames per second.",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "PGL Major Singapore 2026: Can Team Liquid and 100 Thieves Challenge the CS2 Favorites After FaZe’s Exit?",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/cs2/pgl-major-singapore-2026-faze-liquid-100-thieves-favorites/",
+    "published": "2026-11-26T14:24:24Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "https://www.talkesport.com/wp-content/uploads/faze-clan-twistzz-pgl-major-singapore-2026-1024x683.webp",
+    "logo": null,
+    "content": "The Counter-Strike 2 calendar has reached its biggest event of the second half of 2026, with the PGL Major Singapore bringing 32 teams together from 24 November to 13 December. The tournament has a prize pool of $1.25 million, and after three days of Stage 1 it has already produced its first big casualty.\n\nTeams such as Team Vitality, MOUZ and Team Spirit are considered to be the main contenders, but there are also several organizations looking to disrupt their plans. FaZe Clan, Team Liquid and 100 Thieves all began their campaigns in Stage 1, in accordance with the Swiss format, hoping to earn a place in the later rounds. Three days in, those three campaigns have gone in very different directions: Liquid are through to Stage 2, 100 Thieves are still alive at 2-2, and FaZe are on their way home.\n\nAccording to experts and recent results, the clear favorite is Team Vitality. Their back-to-back Major titles in 2025 established them as the team to beat, while ZywOo and ropz provide the kind of individual quality that can decide matches against almost any opponent.\n\nMOUZ are another serious contender. They actually lead the 2 November Valve Regional Standings with 1,960 points, narrowly ahead of Vitality’s 1,922. The team is especially dangerous in longer series, as it is able to maintain the quality of its performance and has a great team structure.\n\nTeam Spirit also deserves attention, especially with donk and sh1ro capable of taking over games through individual performances. Meanwhile, FURIA brings an aggressive approach and considerable firepower. It is also important to note that because of the format of this tournament, the favorites start their competition at Stage 3, which allows them to prepare and strategize while Stage 1 sorts out the rest of the field.\n\nThe Major’s global audience also shows how closely gaming and digital finance now overlap, with more fans buying games, skins and subscriptions with cryptocurrencies like Bitcoin and Ethereum. Readers who want to understand that side of the ecosystem can find crypto news, market explainers and beginner guides at CryptoManiaks .",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "AnyPS5 Passes 61,000 GitHub Stars as GTA 6 Fans Look for a Way Onto PC",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/gta-6/anyps5-github-ps5-games-pc-gta-6-gta-5/",
+    "published": "2026-11-26T14:12:11Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "AnyPS5, an open-source project that converts PlayStation 5 games into native Windows and Linux programs, has become one of the most-watched repositories on GitHub in the week GTA 6 arrived on consoles. GitHub itself drew attention to it on 26 November, saying the project had passed 58,000 stars since its August launch. By the afternoon of the same day, the repository showed about 61,700 stars, roughly 6,000 forks and more than 1,100 contributors.\n\nThe surge is easy to explain, because GTA 6 is only available on PS5 and Xbox Series X and S. Rockstar has not announced a PC version, so many PC players are watching any project that promises to move console games onto their machines. The project’s own records show it is nowhere near running GTA 6, however, and even GTA 5 is still rough.\n\nGTA 6 is finally here, sparking one of the biggest weeks in gaming and open source on GitHub. The repo AnyPS5 has passed 58K stars since its August launch, rewriting PS5 executables to run on Windows and Linux. Does changing where games run cross a legal line? Share your take.… pic.twitter.com/WY7i9pg1G0\n\nAnyPS5 describes itself as a relinker rather than an emulator. It takes a PS5 game’s executable and converts it into the target system’s native format, then links it against its own reimplementations of the PS5’s system libraries. There is no separate runtime process imitating the console, which is the approach used by traditional emulators.\n\nThe project says it does not include or distribute any copyrighted software, firmware, keys or Sony libraries. Its documentation also says the tool does not extract or decrypt game files, and that it needs an executable that has already been decrypted. PS5 games are encrypted on the console, and a claimed game dump on firmware 14.22 this month showed how much effort goes into getting files off it.\n\nThe scale of the effort is unusual for a project of this kind. The repository passed 51,000 commits on 26 November and had about 2,400 open pull requests at the same time. It has a set of rules written specifically for AI coding agents, and every pull request has to state whether AI tools were used to make it.",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "9z CEO Says CS2 Pros Are Discussing a Boycott of the Next Major",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/cs2/cs2-major-boycott-9z-frankkaster-buenos-aires-2027/",
+    "published": "2026-11-26T14:09:03Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "Professional Counter-Strike players are discussing a possible boycott of the next Major, according to Francisco “Frankkaster” Postiglione, the chief executive of Argentine organisation 9z. He made the claim on X on 26 November, during the PGL Major Singapore, after saying that the money teams earn from Majors no longer covers the cost of the staff they send. No player, team or players’ group has confirmed any plan publicly, so at this stage it is talk reported by one team owner rather than an organised action.\n\nFrankkaster’s first post went up at 01:54 UTC, hours before 9z played their final match of the event. Writing in Spanish, he said the Major situation was bordering on disastrous, because teams could not even cover the travel costs of the staff who support players and create content. His comments add a team owner’s voice to a complaint that has been building across the scene for most of the season.\n\nLo del major ya rosa lo nefasto, no llegas ni a cubrir al personal que viaja para asistir jugadores y crear contenido\n\nThe boycott claim came in a reply rather than in his original post. At 02:27 UTC, an X user named Alfonsina asked whether it was true that players wanted to organise and stay away from the next Major, adding a one-word call for them to unionise. Frankkaster answered at 04:39 UTC, and his reply is the only direct evidence so far that such a discussion exists.\n\nIn that reply, he wrote that “it’s happening”, and said the Argentina Major would be the event to suffer, which angered him most of all. He did not say which players or teams were involved, how many of them backed the idea, or whether anything had been put to Valve or the organisers. Skin-trading accounts on X then spread the exchange in English, describing it as a report that pros were discussing a boycott.\n\nEsta ocurriendo y la va a ligar el major de argentina, eso es lo que mas bronca da",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "Gentle Mates : Vatira raconte les coulisses de la création de la superteam avec zen et Atow",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/news/gentle-mates-vatira-raconte-les-coulisses-de-la-creation-de-la-superteam-avec-zen-et-atow-777650.shtm",
+    "published": "2026-11-26T14:00:00Z",
+    "game": "rl",
+    "category": "news",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/09/a7cec5da945fd90aa699daa3cba17d9bbe867d2b-1620x1080-1-1024x683.webp",
+    "logo": null,
+    "content": "Présenté officiellement aux supporters de Gentle Mates mercredi soir lors de la traditionnelle Keynote du club, Axel « Vatira » Touret s’est longuement confié à Sheep Esports sur son choix de rejoindre M8. Après quatre années riches en émotions sous les couleurs de la Karmine Corp, le quadruple vainqueur de Major ressentait le besoin de tourner la page. La réputation de Gentle Mates, sa communauté et les infrastructures du club, notamment sa Gaming House, ont pesé dans la balance.\n\n« Pour moi, c’était la fin d’un cycle. […] Ça a été très difficile parce que j’ai passé pratiquement toute ma carrière là-bas. J’y ai remporté tous mes grands titres et participé à tellement d’événements avec les supporters. J’aime cette organisation, donc oui, ça a été difficile » , a confié Vatira, qui retient notamment son sacre au Major de Paris en mai dernier comme son plus beau souvenir à la Karmine Corp.\n\nLe roster THANOS est là ! pic.twitter.com/HZHuWfvAex\n\nSi les trois grandes structures françaises se sont disputé les signatures de Vatira, zen et Atow durant l’intersaison, les trois joueurs étaient déterminés à évoluer ensemble, quitte à se passer d’une organisation. « Il n’y avait pas vraiment de plan B. Si nous n’avions pas pu monter cette équipe au sein d’une structure, nous l’aurions simplement fait sans structure. Nous voulions absolument jouer ensemble parce que nous savons que nous pouvons être la meilleure équipe. […] Nous aurions formé ce roster quoi qu’il arrive » , a révélé le Français.\n\nDéjà proches en dehors du jeu, les trois joueurs n’ont visiblement pas rencontré de grandes difficultés à trouver leurs automatismes. Vatira avait notamment eu l’occasion d’évoluer avec zen lors de la FIFAe World Cup, tandis qu’Atow et l’ancien prodige de Vitality ont remporté ensemble les premiers championnats du monde de 2v2 en septembre dernier. Une complicité qui s’est rapidement traduite par un premier trophée lors de la Coupe de France, remportée par Gentle Mates en novembre.\n\nMalgré son immense palmarès, Vatira court toujours après un premier titre de champion du monde. Et c’est précisément pour décrocher cette couronne que les trois monstres de la scène francophone ont décidé d’unir leurs forces. « Évidemment, nous voulons aussi remporter d’autres tournois, mais nous sommes tous ici pour gagner les championnats du monde. C’est ce dont les gens se souviendront » , a affirmé le nouveau joueur de Gentle Mates, désireux de marquer l’histoire du club.",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "Liquid outlast Imperial in overtime to clinch Stage 2",
+    "source": "Pley.gg",
+    "url": "https://pley.gg/cs2/liquid-outlast-imperial-in-overtime-to-clinch-stage-2/",
+    "published": "2026-11-26T13:43:39Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "https://pley.gg/app/uploads/2026/10/flag-bg.png",
+    "logo": null,
+    "content": "Imperial lost their own Cache pick for the second day running, this time in the Major’s first overtime.\n\nTeam Liquid are in Stage 2 of the PGL Major Singapore 2026 after a 2-0 win over Imperial Esports (Anubis 13-7, Cache 16-13) that needed the first overtime of the tournament to finish. They go through at 3-1, a day after NIP held them to 11 rounds over two maps. Imperial drop to 2-2.\n\nSHADES OF 2019 📈 pic.twitter.com/zW98m12QSj\n\nNeither team got to play the map it trusted most. Liquid removed Nuke, where Imperial had won 85% of their maps over the last three months and beaten 100 Thieves 13-11 on Tuesday, and Imperial took out Inferno in return. Liquid picked Anubis, a map JT and EliGE were early adopters of in their Complexity days. Imperial went back to Cache, the pick they had lost 13-9 to FlyQuest on Wednesday after leading 6-2, and Mirage was left as the decider.\n\nLiquid were 5-1 up on Anubis before Imperial found any rhythm. The turn came from a round Imperial should not have won: they walked into a plant with four seconds left, decenty covered the bomb and all three of them survived the 3v3. A run of T-side rounds followed, and decenty’s triple on B in the 11th put them 6-5 ahead.\n\nmalbsMd took it straight back. With Imperial slipping off the box in the last round of the half, he peeked wide for three kills and 6-6.",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "PGL Major Singapour : le fiasco de FaZe Clan et s1mple…",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/resultats/pgl-major-singapour-le-fiasco-de-faze-clan-et-s1mple-777644.shtm",
+    "published": "2026-11-26T13:00:00Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/11/Its-do-or-die-now-for-s1mple-and-co-😔📸-@brchocs-esports-counterstrike-cs2-1024x684.jpg",
+    "logo": null,
+    "content": "Le dernier Major de l’année 2026 tourne au cauchemar pour FaZe Clan. Engagée dès le premier tour de la compétition, la formation internationale n’aura remporté qu’une seule rencontre en trois jours. Battus d’entrée par Wildcard (9-13), dupreeh et ses coéquipiers avaient pourtant parfaitement réagi en écrasant GOSH (13-3), avant de rechuter face à PARIVISION (10-13). Dos au mur ce jeudi matin, FaZe n’est pas parvenu à sauver sa peau face à HEROIC.\n\nMalgré une belle réaction sur Ancient, la formation internationale s’est inclinée en trois cartes (1-2), plombée notamment par ses difficultés en attaque sur Mirage et Nuke. Même frozen, meilleur joueur de son équipe sur l’ensemble de la série, n’a pas réussi à inverser la tendance sur la carte décisive. Éliminé avec un bilan d’une victoire pour trois défaites, FaZe termine à la 28-30e place du Major de Singapour. Une bien triste conclusion à une saison particulièrement décevante pour l’organisation.\n\nOut of the Major pic.twitter.com/2Ya2ydpZqW\n\nLa désillusion est encore plus grande pour GOSH, nom sous lequel évolue BC.Game Esports à Singapour pour se conformer à la législation locale sur les jeux d’argent. Malgré la présence de deux anciens champions de Major, Oleksandr « s1mple » Kostyliev et Emil « Magisk » Reif, la formation internationale a complètement manqué son rendez-vous. Balayée par Team Liquid (1-13) puis FaZe Clan (3-13) lors de la première journée, elle jouait déjà sa survie mercredi face aux Mongols de Chinggis Warriors.\n\nAlors qu’ils menaient 11-6 sur Ancient, s1mple et ses coéquipiers ont encaissé sept rounds consécutifs pour finalement s’incliner (11-13). Malgré une prestation exceptionnelle de Senzu sur Dust2 (13-6), avec 2.51 de rating, GOSH a définitivement rendu les armes sur Nuke (10-13). Un terrible fiasco pour ce projet ambitieux, qui quitte Singapour sur un bilan de trois défaites et une seule carte remportée. Avant même l’entrée en lice des grands favoris de la compétition, plusieurs des plus grandes légendes de Counter-Strike sont donc déjà sur le chemin du retour.\n\nSHOCKING: s1mple's team GOSH are ELIMINATED from the Singapore Major > They finish 0-3 (!!) > Only won 1 map in their entire run > s1mple's return to a CS Major was a disaster And they ruin everyone's Pickems in the process pic.twitter.com/ZwJJ8RrJrc",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "Gentle Mates Sign Boaster and Alfajer for VCT 2027, Confirm Rainbow Six Siege Entry",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/valorant/gentle-mates-boaster-alfajer-vct-2027-rainbow-six-siege/",
+    "published": "2026-11-26T12:29:58Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Gentle Mates",
+      "tag": "M8",
+      "color": "#f472b6",
+      "bg": "#3d082b"
+    },
+    "content": "Gentle Mates have signed Jake “Boaster” Howlett to lead their VALORANT roster for VCT EMEA 2027 and confirmed their entry into Rainbow Six Siege esports. The French organisation revealed both moves during its 2027 Keynote stream on 25 November 2026. Boaster joins with his Fnatic teammate Emir “Alfajer” Ali Beder, ending a Fnatic run of nearly six years.\n\nThe Keynote also confirmed that Gentle Mates will host Call of Duty League (CDL) Major 1 2027 at the Plenitude Arena in Paris from 12 to 14 February.\n\nGentle Mates posted the full five player lineup on X after the stream. Former Sentinels head coach Adam “kaplan” Kaplan leads the team from the bench.\n\nKozzy is a 16 year old Romanian duelist, which makes him the youngest player on the roster. The lineup mixes two of EMEA’s most experienced players with younger talent, and Boaster takes over as in game leader.\n\nGentle Mates hold a VCT partner slot for the 2027 and 2028 seasons, and 2027 is their first year in the programme. About a month ago, the club released all five players from its 2026 roster, marteen, starxo, Minny, Proxh and H1ber, along with head coach Jiri “KUNDIKUNDI” Honkala and assistant coach Erim “Mavera” Sasal.\n\nAs a partner team, Gentle Mates get an automatic place in VCT EMEA 2027 Kickoff. The rebuild is one of the biggest moves of an offseason that has also seen TenZ sign with T1 for VCT Pacific 2027 and Vitality promote Scutt to head coach . Fnatic now has to replace both its captain and Alfajer, after a 2026 season in which several big names were among the teams that missed VALORANT Champions 2026 .",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "100 Thieves send 9z home 2-1 after rain’s Dust2 revival",
+    "source": "Pley.gg",
+    "url": "https://pley.gg/cs2/100-thieves-send-9z-home-2-1-after-rains-dust2-revival/",
+    "published": "2026-11-26T11:55:11Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "https://pley.gg/app/uploads/2026/10/flag-no.png",
+    "logo": null,
+    "content": "Nuke was rain’s worst map of the Major. Dust2 was his best.\n\nOn Nuke, rain finished with 29.4 ADR, five kills and a team that had just lost 13-5 with elimination one map away. On Dust2, he went 26-8. 100 Thieves came back to beat 9z 2-1 (Nuke 5-13, Dust2 13-6, Ancient 13-5), their first Bo3 win at a Major, and stay alive at the PGL Major Singapore 2026 in the do-or-die 2-2 pool. 9z leave Singapore with a 1-3 record.\n\n100 Thieves’ Counter-Strike team confirmed it a few minutes after the last round.\n\nWE LIVE TO FIGHT ANOTHER DAY #100TR GG @9zTeam pic.twitter.com/rAlFCpGiT4\n\nNuke was 9z’s choice, and on paper a strange one: they had won 27% of their Nuke maps over the last three months. It did not show. They rushed top side in the pistol round, converted the next one, and HUASOPEEK cleared A with four kills in the fourth. 100 Thieves did not win a round until the fifth, and from there 9z kept catching their CT players rotating the wrong way. HUASOPEEK went 13-6 on the T side, and 9z led 8-4 at the half.\n\nThey won the second pistol as well, and when 100 Thieves forced and planted to make it 9-5, luchov answered with three kills on a Five-SeveN.",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "How To Fix The GTA VI Weather Bug and Bring Back Rain",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/gta-6/gta-6-weather-bug-fix/",
+    "published": "2026-11-26T11:52:36Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "The GTA 6 weather bug keeps Leonida stuck on clear skies for long stretches, and players on PS5 and Xbox Series X|S still report it. Rockstar released update 01.002.002 on November 23 to fix weather that does not change for extended periods. Many players say the problem remains. A manual workaround is now spreading.\n\nThis guide covers the steps for both consoles, what the patch changed, and what to expect after you try the fix.\n\nGTA 6 launched on November 19, 2026, for PS5 and Xbox Series X|S. Soon after, players said rain and storms rarely appeared. Weather did change for some of them, but far less often than intended, and some conditions lasted too long.\n\nRockstar responded with update 01.002.002 . Its patch notes say the update fixed an issue that stopped weather from changing for extended periods. Some players still see the same problem after installing it.\n\nClearing the system cache is the workaround players now use. Rockstar also provides its own support steps for clearing the Xbox cache.\n\nCache clearing does not remove your saves or inventory. On Xbox, Rockstar says the steps reset brightness and language settings.",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "FaZe Knocked Out of PGL Major Singapore With a 1-3 Record",
+    "source": "The Loadout",
+    "url": "https://theloadout.com/faze-knocked-out-of-pgl-major-singapore-with-a-1-3-record",
+    "published": "2026-11-26T11:33:15Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "https://theloadout.com/wp-content/uploads/2026/11/faze-knocked-out-of-pgl-major-singapore-with-a-1-3-record.jpg",
+    "logo": null,
+    "content": "FaZe are out of PGL Major Singapore after losing 1-2 to HEROIC in Stage One, finishing 1-3 in 28th to 30th place. It is the organization's weakest Major result since they went winless at IEM Rio 2022.\n\nFaZe's run at PGL Major Singapore ended in Stage One. HEROIC beat them 2-1 in the elimination match, which left the organization on a 1-3 record and in 28th to 30th place. It is FaZe's weakest Major showing since they went winless at IEM Rio 2022.\n\nHEROIC controlled the opening map. They won Mirage 13-3 and gave FaZe very little to work with.\n\nAncient gave FaZe a brief reason for hope. FaZe led 7-5 after their CT half and survived a tight second half to take it 13-11. That forced a deciding map.\n\nNuke went the other way. HEROIC opened 9-3 on their CT side and closed it out 13-4, which sent FaZe home.\n\nFaZe's only victory in Singapore came against GOSH, who play under the BC.Game name. GOSH had their own struggles and went home winless after three losses the day before. FaZe had opened their event with a loss to Wildcard.",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "Delta Force Metal Gear Solid Collab: Release Date and Rewards",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/delta-force-metal-gear-solid-collab/",
+    "published": "2026-11-26T11:27:10Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "The Delta Force Metal Gear Solid collab starts on November 27, 2026, during Season Aurora. Team Jade confirmed the date in an official Steam post on November 25. The event adds a Naked Snake appearance for Nox and a free legendary SR-3M skin. The update rolls out on November 26 and 27 with no downtime. The collab runs until December 31. Team Jade first planned it for December 2025, then postponed it.\n\nRead on for the release date and every reward you can earn.\n\nThe Delta Force Metal Gear Solid collab goes live on Friday, November 27, 2026. Team Jade announced the date in a Steam post titled “The Wait Is Over.”\n\nThe update arrives over November 26 and 27. Team Jade says gameplay and matchmaking will not be affected. Players with an outdated client must update to the latest version before they can log in.\n\nNaked Snake arrives as an appearance for Nox, an Assault operator. Players can try for it in a prize pool that runs until December 31. The free legendary SR-3M appearance comes from the Collab Legendary Gift event, which ends on December 27.\n\nThe announcement lists 5 Metal Gear events. Two more Operations events start on the same day. Here is the full schedule:",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "Live PMGC 2026 Points Table for Gauntlet Day 1: Check PMGC Standings",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/mobile-gaming/bgmi/live-pmgc-2026-points-table-for-gauntlet-day-1-check-pmgc-standings/",
+    "published": "2026-11-26T11:21:58Z",
+    "game": "val",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "PMGC 2026 points table for the Gauntlet stage Day 1 is here. We are updating the PMGC standings in real time after each match. A total of six matches will be played today, November 26, from 5:30 PM IST to 9:30 PM IST. 16 teams, including Team Soul, NS RedForce, Aurora, 4Thrives Esports, and more, will compete in this stage for the six Grand Final spots. Check out the PMGC 2026 Gauntlet Day 1 points table below.\n\nPMGC 2026 Gauntlet Stage will take place on 26 and 27 November, where 16 teams compete in a total of 12 matches (Six games each day). The top 6 teams in the overall standings after all 12 games will qualify for the Grand Finals, while the remaining teams move to the Group Stage.\n\nFans can enjoy all matches of the PUBG Mobile Global Championship 2026 on the official YouTube channel of PUBG Mobile Esports in multiple languages.",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "PVISION win their worst map to sweep Lynn Vision into Stage 2",
+    "source": "Pley.gg",
+    "url": "https://pley.gg/cs2/pvision-win-their-worst-map-to-sweep-lynn-vision-into-stage-2/",
+    "published": "2026-11-26T11:05:43Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "https://pley.gg/app/uploads/2026/10/flag-ru.png",
+    "logo": null,
+    "content": "Dust2 had been PVISION’s weakest map for three months.\n\nIn the last three months, PARIVISION had won two of their 10 maps on Dust2. The 11th went their way 13-10, against the team that picked it, as PVISION swept Lynn Vision 2-0 (Ancient 13-7, Dust2 13-10) to reach Stage 2 of the PGL Major Singapore 2026 with a 3-1 record. Lynn Vision, who had won 79% of their 14 Dust2 maps in the same period, go into Friday’s 2-2 matches instead.\n\nPGL confirmed the result minutes after the last round.\n\nPVISION are through to Stage 2 of the PGL Major Singapore 2026 🇸🇬 A 2-0 over @Lynnvision_ in the qualification match seals a 3-1 finish. Lynn Vision drop to 2-2 and will have to fight again for their spot. #PGLMajor pic.twitter.com/fasMI1TN8F\n\nPVISION’s own map pick started like a formality. Lynn Vision won the pistol round, PVISION took the force-buy straight back through a HObbit double with a Tec-9 and led 5-1. Then their slow, default-heavy T side ran into its usual danger. In the seventh round they ran down the clock, never got the bomb down in time and lost the round, and Jame lost his AWP with it.\n\nThat opened the door for Lynn Vision’s best spell of the morning. With PVISION on armour and Tec-9s in back-to-back rounds, Westmelon lined up a triple kill on B, EmiliaQAQ followed with two clean kills of his own, and Lynn Vision won five of the last six rounds of the half to level it at 6-6. Westmelon finished their CT half 12-9 with 132.4 ADR.",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "LCS : Zven lâche FlyQuest pour OpTic Gaming",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/transferts/lcs-zven-lache-flyquest-pour-optic-gaming-777589.shtm",
+    "published": "2026-11-26T11:00:00Z",
+    "game": "lol",
+    "category": "news",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/11/cloud9-apa-zven-depart-lol-2026-1024x576.webp",
+    "logo": null,
+    "content": "Le mercato nord-américain vient de connaître un rebondissement pour le moins inattendu. Selon les informations de Sheep Esports , Jesper « Zven » Svenningsen aurait décidé de revenir sur son accord verbal avec FlyQuest pour s’engager auprès d’OpTic Gaming. L’AD Carry danois de 29 ans avait pourtant donné son feu vert à FlyQuest à la mi-novembre, poussant la structure à mettre un terme à ses recherches pour ce poste. Mais l’arrivée tardive d’OpTic Gaming sur le marché des transferts aurait finalement changé la donne, le vétéran ayant accepté une nouvelle offre dans la soirée de mardi.\n\nCe revirement place FlyQuest dans une situation particulièrement délicate, alors que la majorité des AD Carry évoluant en LCS ont déjà trouvé leur point de chute pour 2027. Son ancien titulaire, Massu, devrait notamment poursuivre sa carrière chez Shopify Rebellion. La structure nord-américaine, qui comptait aligner Zamudo, Yukino, Hwichan, Zven et Cryogen, doit donc reprendre ses recherches à un stade déjà bien avancé du mercato. Une rupture d’accord verbal à l’initiative d’un joueur reste extrêmement rare au plus haut niveau de la scène compétitive.\n\nAprès six années passées chez Cloud9 en deux passages distincts, Zven devrait donc ouvrir un nouveau chapitre de sa carrière. Finaliste du Winter Split et demi-finaliste du Spring Split des LCS en 2026, le Danois avait été écarté du cinq titulaire à l’approche du Summer Split, au même titre qu’APA, à la suite des résultats décevants de Cloud9. Après plusieurs mois éloigné de la compétition, l’ancien joueur de G2 Esports s’apprête ainsi à retrouver une place de titulaire dans le championnat nord-américain.\n\nDe retour en LCS à la place de Dignitas, OpTic Gaming semble vouloir miser sur un mélange de jeunesse et d’expérience pour son nouveau projet. La structure aurait déjà trouvé des accords avec le jungler KryRa et le midlaner Toasty, deux jeunes talents désireux de s’imposer dans l’élite nord-américaine. Avec Zven, OpTic s’offrirait un joueur particulièrement expérimenté, capable d’encadrer ses jeunes recrues et d’endosser un rôle de leader au sein de cette nouvelle formation.\n\n? Christian « KryRa » Rahaian Victor Alexander « Toasty » Chea Jesper « Zven » Svenningsen ?\n\n[SOURCES] In an unexpected turn of events, AD Carry Zven is set to join OpTic Gaming for #LCS 2027 after breaking his verbal agreement with FlyQuest More details in report by @LCS_Eevee , @LEC_Wooloo & @anonimotum https://t.co/CGsz8qMqW8",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "PGL Major Singapour : Imperial – Team Liquid en direct",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/live/pgl-major-singapour-imperial-team-liquid-en-direct-777558.shtm",
+    "published": "2026-11-26T10:50:00Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/10/MalbsMd_at_BLAST_Open_Spring_2026-1024x683.jpg",
+    "logo": null,
+    "content": "Pour suivre le match Imperial – Team Liquid en direct, rendez-vous sur le lien ci-dessous :",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "PGL Major Singapour : Wildcard – Chinggis Warriors en direct",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/live/pgl-major-singapour-wildcard-chinggis-warriors-en-direct-777561.shtm",
+    "published": "2026-11-26T10:45:00Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/11/Cool4st_at_BLAST_Austin_Major_2025.jpg",
+    "logo": null,
+    "content": "Pour suivre le match Wildcard – Chinggis Warriors en direct, rendez-vous sur le lien ci-dessous :",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "Counter-Strike 2 Debut for Almost Nuts Arrives With a Ready-Made US Lineup",
+    "source": "The Loadout",
+    "url": "https://theloadout.com/counter-strike-2-debut-for-almost-nuts-arrives-with-a-ready-made-us-lineup",
+    "published": "2026-11-26T10:25:06Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "https://theloadout.com/wp-content/uploads/2026/11/almost-nuts-cs2-debut-roster.jpg",
+    "logo": null,
+    "content": "Rocket League org Almost Nuts has entered Counter-Strike 2 by signing the five-player my life be like roster before its ESEA playoff run.\n\nAlmost Nuts, a North American organization that competed in Rocket League from 2021 to 2025, has entered Counter-Strike 2 by signing the five-player my life be like roster. It's the organization's first step into competitive Counter-Strike .\n\nThe signing landed one day before the lineup's opening match in the ESEA Advanced Season 59 playoffs. The players now compete under the Almost Nuts banner instead of as an orgless team. Their next match is set for Saturday, Nov. 28.\n\nAlmost Nuts spent four years in Rocket League before this move. The Counter-Strike 2 roster marks a new direction for the brand. The organization announced it on X on Nov. 24 with a welcome message to the Nuthouse. The post also carried the hashtag #FearTheNut and tagged each of the five players.\n\n@1lukecs @alula1001 @ethex1242 @taggy555 @weezaXO\n\n- Almost Nuts (@AlmostNutsGG) November 24, 2026",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "ara set to join FULL SENSE for 2027, Sheep Esports reports",
+    "source": "Pley.gg",
+    "url": "https://pley.gg/valorant/ara-set-to-join-full-sense-for-2027-sheep-esports-reports/",
+    "published": "2026-11-26T10:14:00Z",
+    "game": "cs2",
+    "category": "official",
+    "image": "https://pley.gg/app/uploads/2026/11/flag-th.png",
+    "logo": null,
+    "content": "The Romanian duelist would join a Thai core that re-signed four players in two days.\n\nEduard-George “ara” Hanceriuc has reached a verbal agreement with FULL SENSE for the 2027 VCT Pacific season, sources told Sheep Esports on 25 November. The 21-year-old would line up with seph1roth, killua, JitboyS and Leviathan, who have all re-signed with the Thai club this week, and Sheep reports that Savva “Kr1stal” Fedorov is expected to join as in-game leader. Neither FULL SENSE nor ara has confirmed the move.\n\nara has been without a team since GIANTX parted ways with him, Flickless and westside on 4 November. Sheep calls it one of the most unexpected moves of the off-season.\n\nGIANTX signed ara from UCAM Esports in April 2025, during VCT EMEA Stage 1, together with Flickless. Their first full stage together ended in second place in Stage 2, which sent GIANTX to Valorant Champions in Paris, where they reached the top eight before losing to NRG and Team Heretics.\n\n2026 went the other way. GIANTX’s best VCT result was seventh to eighth in EMEA Kickoff, and they went out of Stage 2 in the Play-Ins.\n\nFULL SENSE are a Thai organisation that took over Talon’s place in VCT Pacific in December 2025, and Riot kept them as a partner team for 2027 and 2028. Their first season peaked in Pacific Stage 1, where they finished second and qualified for Masters London.",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "FaZe Crash Out of the Singapore Major at 1-3",
+    "source": "TalkEsport",
+    "url": "https://www.talkesport.com/news/cs2/faze-eliminated-pgl-major-singapore-2026-stage-1-heroic/",
+    "published": "2026-11-26T09:45:23Z",
+    "game": "val",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "VALORANT Champions Tour",
+      "tag": "VCT",
+      "color": "#ff4655",
+      "bg": "#3d0a14"
+    },
+    "content": "FaZe Clan are out of the PGL Major Singapore 2026 after HEROIC beat them 2-1 in a Stage 1 elimination series on 26 November. The defeat left FaZe with a 1-3 record in the opening Swiss stage, which places them 28th to 30th at the 32-team Major. PGL confirmed the exit on X at 08:42 UTC, moments after HEROIC closed out the deciding map on Nuke.\n\nIt is FaZe’s worst record at a Major since IEM Rio 2022, where the defending champions went 0-3 in the Legends Stage and finished 15th to 16th. This time the team never left the first stage, playing all four of its matches before the Major had reached its fourth day. FaZe started in Stage 1 because they were 20th in Valve’s global standings of 2 November , too low for a later invite on the Singapore Major schedule.\n\nFaZe's run at the PGL Major Singapore 2026 ends here @heroicgg survive the 2-1 thriller to move to 2-2 and keep their Major alive. @FaZeEsports exit the tournament with a 1-3 record. #PGLMajor pic.twitter.com/wK4XIkNo96\n\nHEROIC against FaZe opened the third day as one of three elimination series on PGL’s Day 3 schedule , with the winner staying alive and the loser going home. FaZe picked Mirage for the first map and lost it 13-3, falling one map from elimination inside the first hour. They answered on HEROIC’s pick of Ancient, winning it 13-11, and the team’s account quickly posted that FaZe still had life .\n\nNuke, the map left over after both sides made their bans, ended the series in one direction. HEROIC won it 13-3, the same score as the opener, and FaZe managed only six rounds across the two maps they lost. HEROIC, who sat 18th in the same Valve standings, wasted little time on X and pointed FaZe towards the airport in a post minutes after the win.\n\nIt is not the first time HEROIC have ended a FaZe Major either, as they also beat FaZe 2-1 in the quarterfinals of the 2023 Paris Major. HEROIC’s lineup of Brollan, MartinezSa, nilo, Chr1zN and susp now moves to 2-2 and plays again on 27 November for a place in Stage 2. FaZe fielded frozen, Twistzz, jcobbb, Neityu and JBOEN, with Twistzz calling the team since the departure of karrigan.",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "XANTARES CS2 settings 2026: crosshair, sensitivity and gear",
+    "source": "Pley.gg",
+    "url": "https://pley.gg/cs2/xantares-cs2-settings/",
+    "published": "2026-11-26T09:34:52Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "https://pley.gg/app/uploads/2026/11/pley-gaming-desk-setup.jpg",
+    "logo": null,
+    "content": "XANTARES plays CS2 on 400 DPI and 2.3 sensitivity with a wide green crosshair on 1024×768 stretched. Here are his current settings, his crosshair and the gear on his desk.\n\nİsmailcan “ XANTARES ” Dörtkardeş aims through a thin green cross with a gap wide enough to frame a head. The Aurora Gaming rifler starts the PGL Major Singapore in Stage 3 on 2 December. The sensitivity, crosshair, viewmodel and keybinds below are from his game config as it was published on 1 October 2026, and ProSettings listed the same numbers on 4 November 2026. The gear is his setup as ProSettings listed it that day.\n\nTap a dot on the desk to see each product.\n\nThe desk photo is an illustration. As an Amazon Associate we earn from qualifying purchases.\n\nValve changed how crosshairs work in CS2 in September 2026, so set this one by hand in the crosshair menu. His config and his matches at IEM Beijing in early November show the same shape: a thin, static green cross with long lines, a wide gap and no dot.\n\nXANTARES uses 400 DPI and 2.3 in-game sensitivity. Multiply the two and you get his eDPI of 920, which is the number to compare between players.",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "Less could start 2027 on KRÜ’s bench as MIBR pause talks",
+    "source": "Pley.gg",
+    "url": "https://pley.gg/valorant/less-could-start-2027-on-krus-bench-as-mibr-pause-talks/",
+    "published": "2026-11-26T09:31:00Z",
+    "game": "cs2",
+    "category": "official",
+    "image": "https://pley.gg/app/uploads/2026/10/flag-cl-valorant.png",
+    "logo": null,
+    "content": "KRÜ have told MIBR there is no deal to be made.\n\nMIBR have paused their talks with KRÜ Esports over Felipe “Less” Basso after the Argentine club told them it will not sell him, THESPIKE Brasil reported on 25 November. MIBR will only return to the table if KRÜ change their mind. Less is under contract with KRÜ until the end of 2027, so he now risks starting the 2027 VCT season on the bench.\n\nAccording to the report, there are internal disagreements between KRÜ and Less, and the club is prepared to keep him on the bench as a form of punishment. Less, for his part, does not want to play for KRÜ again. MIBR declined to comment when THESPIKE Brasil asked, and KRÜ did not respond.\n\nLess said yes to MIBR on 13 November, as we reported at the time . The verbal agreement still stands, but without a deal between the two clubs it cannot be completed.\n\nLess has not commented on the talks, but on the evening of 25 November, in his first post on X since 5 November, he wrote in Portuguese: “Eu so quero jogar vei”, which translates as “I just want to play, man”. THESPIKE Brasil links the post to KRÜ’s refusal to sell him.\n\nEu so quero jogar vei😭😭😭 Dxa o primo jogar",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "Falcons va écarter karrigan, NiKo prêt à prendre les commandes ?",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/transferts/falcons-va-ecarter-karrigan-niko-pret-a-prendre-les-commandes-777585.shtm",
+    "published": "2026-11-26T09:00:00Z",
+    "game": "cs2",
+    "category": "news",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/11/nxZZtNau0qo8BZw-wP3r5i-1024x683.jpg",
+    "logo": null,
+    "content": "C’est une petite bombe à quelques jours de l’entrée en lice de Team Falcons au PGL Major de Singapour. Selon les informations dévoilées par le Français Sébastien « KRL » Perez, confirmées dans la foulée par HLTV , Finn « karrigan » Andersen devrait perdre sa place de titulaire à l’issue du tournoi. Nikola « NiKo » Kovač prendrait alors les commandes de la formation saoudienne à partir de 2027.\n\nArrivé en avril dernier, karrigan avait pourtant rapidement trouvé la recette du succès avec Falcons. Après deux finales au PGL Astana et aux CS Asia Championships, le Danois avait mené ses troupes jusqu’au sacre à l’IEM Cologne Major en juin, permettant notamment à NiKo de décrocher le premier Major de sa carrière. Mais la dynamique s’est depuis complètement inversée. Falcons n’a disputé aucune finale depuis la pause estivale, tandis que karrigan affiche un inquiétant rating moyen de 0,76 en 115 maps sous ses nouvelles couleurs.\n\nÀ 29 ans, NiKo s’apprête ainsi à donner un nouveau tournant à sa carrière. Le Bosnien n’a jamais caché son intérêt pour le rôle de leader in-game, qu’il a déjà occupé chez FaZe Clan en 2019, justement après le départ de karrigan. Il avait également endossé cette responsabilité chez G2 Esports lors de l’épopée victorieuse de l’IEM Dallas 2024. Reste désormais à savoir si l’une des meilleures gâchettes de l’histoire de Counter-Strike parviendra à s’imposer durablement dans ce rôle.\n\nEn attendant, NiKo et karrigan auront une dernière occasion de briller ensemble à Singapour. Les champions du monde en titre feront leur entrée dans la compétition le 2 décembre, directement lors du Stage 3, avec l’ambition de conserver leur couronne. Un ultime défi pour le légendaire capitaine danois, alors que l’identité de son potentiel remplaçant au sein du cinq majeur reste encore inconnue.\n\nSources: NiKo set to take over as Falcons’ in-game leader after the Singapore Major. karrigan to be moved to the bench. pic.twitter.com/bH2KRHeNU1",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "s1mple’s last series draws 526K, Singapore Major’s peak so far",
+    "source": "Pley.gg",
+    "url": "https://pley.gg/cs2/s1mples-last-series-draws-526k-singapore-majors-peak-so-far/",
+    "published": "2026-11-26T08:50:37Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "GOSH have been in the most-watched match on both days.\n\n526,834 viewers were watching at the peak of day two of the PGL Major Singapore 2026 , Esports Charts reported on 25 November, and the peak came during the match that sent s1mple home. Chinggis Warriors’ 2-1 win over GOSH was the most-watched match of the day.\n\nThat is 71,345 more than day one’s peak of 455,489, a rise of 15.7%, and 115,113 more than the biggest match of the opening day, FaZe against GOSH.\n\nGOSH vs @Chinggiswarrior most popular match of #PGLMajor Singapore Day 2 – 526K Peak Viewers TOP-5 matches after 2 game days👇 https://t.co/vhCsEpbGnC pic.twitter.com/6s2edr98EZ\n\nGOSH have now been part of the most-watched match on both days. On day one they also played in two of the three biggest matches: 411,721 for the 13-3 loss to FaZe on Mirage and 292,155 for the 13-1 loss to Liquid on Nuke, as we covered yesterday .\n\nThe audience kept growing while the results did not. GOSH won one map in Singapore, Dust2 13-6 in the elimination series, before Chinggis Warriors took Nuke 13-10 and ended s1mple’s first Major since Austin at 0-3.",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "HEROIC end FaZe’s Major with two 13-3 maps",
+    "source": "Pley.gg",
+    "url": "https://pley.gg/cs2/heroic-end-faze-major-two-13-3-maps/",
+    "published": "2026-11-26T08:50:16Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "https://pley.gg/app/uploads/2026/10/flag-se-valorant.png",
+    "logo": null,
+    "content": "FaZe won Ancient in between. It bought them one more map.\n\nGoing into the match, HEROIC had a habit of letting games slip. They had led Imperial 6-1 and M80 4-1 in their two Bo1 defeats in Singapore and lost both. Against FaZe Clan , with elimination on the line, they won two maps by ten rounds each. HEROIC took Mirage, FaZe’s own pick, 13-3, dropped Ancient 11-13 and closed the series 13-3 on Nuke, sending FaZe out of the PGL Major Singapore 2026 in Stage 1 with a 1-3 record. HEROIC are now 2-2, with one more Bo3 on Friday between them and Stage 2.\n\nONE STEP AWAY FROM STAGE 2. Ancient didn't happen 😛 pic.twitter.com/RGFdCj7laG\n\nFaZe picked Mirage for a reason. Over the last three months it had been their best map, won 73% of the time, against 42% for HEROIC. They took the pistol round and the second, with frozen saving the latter by stepping out of Palace on his own. After that they won one more round all map.\n\nsusp turned it. He kept his AK alive through a lost round and held B with it in the third, and from there HEROIC’s defence shut FaZe out of mid. Brollan , who joined from MOUZ and had a 0.53 rating in the opening defeat to Imperial, won the early duels and finished Mirage 13-8. The round that summed it up came at 5-2: frozen had three kills and the bomb was ticking on A, but Chr1zN closed the gap and defused with almost nothing left on the timer. In the 11th susp held A main alone against three attackers and let the clock run out.\n\nsneaky susp saves the day ☀️ pic.twitter.com/HKTgYSnZDx",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "Eternal Fire reverse sweep M80 to reach Stage 2",
+    "source": "Pley.gg",
+    "url": "https://pley.gg/cs2/eternal-fire-reverse-sweep-m80-to-reach-stage-2/",
+    "published": "2026-11-26T08:44:12Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "https://pley.gg/app/uploads/2026/10/flag-ro.png",
+    "logo": null,
+    "content": "Kvem went from 7-15 on Dust2 to 33-14 over the next two maps.\n\nSix rounds on their own map pick, then 26 rounds to seven on the next two. Eternal Fire lost Dust2 13-6 to M80 and came back to win Anubis 13-3 and Cache 13-4, a 2-1 reverse sweep that puts them in Stage 2 of the PGL Major Singapore 2026 at 3-1. M80 drop to 2-2 and play once more on Friday for the last places in the next stage.\n\nEternal Fire confirmed it a few minutes after the final round.\n\nSTAGE 2 CONFIRMED! 🔥 M80 karşısında elde ettiğimiz zaferle PGL Major Singapore'da Stage 2'ye yükseliyoruz. #modundayız | #forEF pic.twitter.com/KEGJu8rDKO\n\nEternal Fire picked Dust2, a map they had won 67% of the time over the last three months against 50% for M80, and it went wrong from the pistol round. Josh “JBa” Barutt took four kills as they ran out of long, and two more fast long takes were shut down soon after. Elias “s1n” Stein, M80’s in-game leader, was 12-1 at the half as M80 led 10-2.\n\nKvem had the worst of it. He was 0-9 at one stage of the first half and finished 7-15, and soulfly ended 4-15. Swisher’s flanks closed the map 13-6, and s1n finished 17-5 with 102.5 ADR.",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "PGL Major Singapour : Lynn Vision – PARIVISION en direct",
+    "source": "E.SPORT.FR",
+    "url": "https://e.sport.fr/live/pgl-major-singapour-lynn-vision-parivision-en-direct-777557.shtm",
+    "published": "2026-11-26T08:20:00Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "https://e.sport.fr/wp-content/uploads/2026/11/Starry_at_IEM_Cologne_2026.jpg",
+    "logo": null,
+    "content": "Pour suivre le match Lynn Vision – PARIVISION en direct, rendez-vous sur le lien ci-dessous :",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
+    "title": "Fnatic open Valorant rebuild with marteen, who set a kill record against them",
+    "source": "Esports Insider",
+    "url": "https://esportsinsider.com/2026/11/fnatic-open-valorant-rebuild-with-marteen-who-set-a-kill-record-against-them",
+    "published": "2026-11-26T07:18:20Z",
+    "game": "val",
+    "category": "news",
+    "image": "",
+    "logo": {
+      "title": "Fnatic",
+      "tag": "FNC",
+      "color": "#fb923c",
+      "bg": "#3d1602"
+    },
+    "content": "Fnatic have signed Czech duelist Martin 'marteen' Pátek from Gentle Mates as their first new player for VCT EMEA 2027. The London club are rebuilding after missing Champions for the first time in the team's history.\n\nThe London club’s new duelist is a player who hurt them badly in 2026. Colin ‘CoJo’ Johnson is listed as manager of the rebuilt roster.\n\nThe move still has one step left. Pley.gg listed the signing as still awaiting approval from Riot Games. The link is not new. Word of a verbal agreement between marteen and Fnatic emerged on 24 September. That was about a month before Gentle Mates released their whole roster.\n\nFnatic have already seen what the duelist can do. Gentle Mates came out on top when the two sides met at the 2026 EMEA Kickoff. That win sent Gentle Mates to Masters Santiago.\n\nHe led several stat categories in Santiago. Gentle Mates still went out 1–2 to AG and finished joint seventh to eighth. That result earned the team $35,000.\n\nThe rest of Gentle Mates’ year was quieter. The team failed to qualify for Masters London or Champions Shanghai. Marteen still finished VCT EMEA Stage 2 as the team’s top-rated player, with a rating of 1.23. Signing a player who stood out in a non-qualifying side suggests Fnatic are building around individual firepower.",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
     "title": "PMGC 2026 Gauntlet Day 1: Match Timings, Teams, Format, Streaming, and More",
     "source": "TalkEsport",
     "url": "https://www.talkesport.com/mobile-gaming/bgmi/pmgc-2026-gauntlet-day-1-match-timings-teams-format-streaming-and-more/",
@@ -208,6 +611,23 @@
     "first_seen": "2026-11-25T22:16:05Z"
   },
   {
+    "title": "GOSH (BC.Game) bomb out of what could be s1mple's last Major",
+    "source": "Dust2",
+    "url": "https://www.dust2.us/news/80288/gosh-bcgame-bomb-out-of-what-could-be-s1mples-last-major",
+    "published": "2026-11-25T18:56:00Z",
+    "game": "cs2",
+    "category": "tournament",
+    "image": "",
+    "logo": {
+      "title": "Counter-Strike 2",
+      "tag": "CS2",
+      "color": "#f59e0b",
+      "bg": "#382003"
+    },
+    "content": "",
+    "first_seen": "2026-11-26T14:52:02Z"
+  },
+  {
     "title": "When is Season 1 Reloaded in Modern Warfare 4? Answered",
     "source": "Esports.gg",
     "url": "https://esports.gg/guides/call-of-duty/when-is-season-1-reloaded-in-modern-warfare-4-answered/",
@@ -276,6 +696,18 @@
     "logo": null,
     "content": "Kiwoom DRX serait sur le point de frapper un grand coup sur le marché des transferts. Selon les informations du journaliste Yoon Min-seop, du quotidien sud-coréen Kookmin Ilbo , la structure aurait trouvé un accord avec Park « Viper » Do-hyeon et Lee « Scout » Ye-chan pour la saison 2027 de la LCK. Après seulement une année passée chez Bilibili Gaming, l’AD Carry sud-coréen devrait donc quitter la Chine, malgré les efforts déployés par les dirigeants de BLG pour conserver leur champion du monde.\n\nViper sort pourtant d’une saison exceptionnelle sous les couleurs de la formation chinoise, avec deux titres en LPL, un sacre au First Stand, une finale du MSI et surtout un deuxième titre de champion du monde. Le Sud-Coréen a notamment participé à l’élimination des quatre représentants de la LCK lors des derniers Worlds, conclus par une victoire face à Gen.G (3-1) en grande finale. Chez DRX, il retrouverait un visage bien connu en la personne de Scout, avec lequel il avait remporté son premier titre mondial en 2021 sous les couleurs d’EDward Gaming.\n\nDe retour en Corée du Sud après neuf années passées en Chine, Scout a quant à lui vécu une saison bien plus compliquée chez Nongshim RedForce. Le MVP de la finale des Worlds 2021 n’a pas réussi à qualifier son équipe pour les playoffs de la LCK, terminant à la huitième place du championnat. Libre depuis l’expiration de son contrat le 17 novembre dernier, le midlaner pourrait désormais relancer sa carrière aux côtés de son ancien partenaire, quatre ans après la fin de leur collaboration chez EDG.\n\nNeuvième de la LCK en 2026 avec un bilan de sept victoires pour dix-neuf défaites, DRX a décidé de repartir de zéro en se séparant de l’intégralité de son cinq titulaire. En plus de Viper et Scout, la structure sud-coréenne devrait également s’attacher les services de Choi « Lucid » Yong-hyeok, vainqueur de l’Esports World Cup et quart de finaliste des Worlds cette année avec Dplus KIA. Si ces trois arrivées se confirment, DRX pourrait bien devenir l’une des grandes attractions de la prochaine saison de LCK, avec l’ambition de retrouver enfin les sommets.\n\n? Choi « Lucid » Yong-hyeok Lee « Scout » Ye-chan Park « Viper » Do-hyeon ?\n\nNEW: Scout and Viper are set to play together again at KRX for the 2027 #LCK season the duo won #Worlds2021 together with EDG Kukmin Ilbo reports both have joined KRX Can they run it back? Predict here: https://t.co/jRL9d8LILP pic.twitter.com/sa6A4joBWq",
     "first_seen": "2026-11-25T22:16:05Z"
+  },
+  {
+    "title": "KT Rolster Lock In Raptor, Taeyoon and Kellin for 2027 LCK",
+    "source": "The Loadout",
+    "url": "https://theloadout.com/kt-rolster-lock-in-raptor-taeyoon-kellin-2027-lck",
+    "published": "2026-11-25T16:10:05Z",
+    "game": "lol",
+    "category": "news",
+    "image": "https://theloadout.com/wp-content/uploads/2026/11/kt-rolster-lock-in-raptor-taeyoon-kellin-2027-lck.jpg",
+    "logo": null,
+    "content": "KT Rolster have finalized their roster for the 2027 LCK season. PerfecT and Bdd stay in the solo lanes, while Raptor, Taeyoon and Kellin arrive from BNK FEARX to fill the jungle and bot lane.\n\nKT Rolster have finalized their roster for the 2027 LCK season. PerfecT and Bdd stay in the solo lanes, while Raptor, Taeyoon and Kellin arrive from BNK FEARX to fill the jungle and bot lane.\n\nJeon Eo-jin, known as Raptor, takes the jungle spot. Kim Tae-yoon (Taeyoon) plays AD Carry and Kim Hyeong-gyu (Kellin) plays support. All three played for BNK FEARX in 2026, and the bot lane pair arrives as an established duo.\n\nKT moved early. The organization locked in its targets before the wider LCK offseason started to shuffle players between teams.\n\nLee Seung-min (PerfecT) re-signed in the top lane. Gwak Bo-sung (Bdd) re-signed in the mid lane. Both extended their deals before the offseason began.\n\nPerfecT is 22 and starts his fourth full LCK season with KT. Bdd is 27 and was named LCK Player of the Year for 2025. He now has three new teammates and wants to return to the top of the league.",
+    "first_seen": "2026-11-26T14:52:02Z"
   },
   {
     "title": "VCT EMEA Kickoff : le Jour 1 en direct avec Mandatory et Joblife",
@@ -686,18 +1118,6 @@
     "first_seen": "2026-11-25T12:24:04Z"
   },
   {
-    "title": "PGL Major Singapour : PARIVISION – FaZe Clan en direct",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/live/pgl-major-singapour-parivision-faze-clan-en-direct-777479.shtm",
-    "published": "2026-11-25T06:50:00Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/05/pic-20260119-2048x1152-2737271088-1024x576.jpeg",
-    "logo": null,
-    "content": "Pour suivre le match PARIVISION – FaZe Clan en direct, rendez-vous sur le lien ci-dessous :",
-    "first_seen": "2026-11-25T12:24:04Z"
-  },
-  {
     "title": "Fake GTA 6 PC Downloads Are Spreading Malware After the Biggest Port Project Vanished",
     "source": "TalkEsport",
     "url": "https://www.talkesport.com/gta-6/gta-6-pc-fake-downloads-malware-project-leonida-shut-down/",
@@ -729,30 +1149,6 @@
       "bg": "#3d0a14"
     },
     "content": "Grand Theft Auto VI runs more smoothly on Xbox Series X than on a standard PS5, according to Digital Foundry’s comparison of every console version. The two consoles share the same core settings and a very similar image, but the PS5 drops more frames, particularly when players are driving at speed through Vice City. The best version of all is on PS5 Pro, while the Xbox Series S is the one Digital Foundry found hardest to recommend.\n\nThe result has drawn attention because Sony has been the face of the game’s marketing, and PlayStation has called GTA VI the biggest launch in its history. More than 39 million players have played it on PS5 since launch, as our PlayStation launch record report covers, so the base console’s performance matters to a huge audience. Every version targets 30 frames per second, as our report on the Xbox 60fps glitch explains, so small dips below that target are easy to feel.\n\nDigital Foundry found that the Xbox Series X and the base PS5 both output a softer image at around 1440p, with matching key settings. In some areas the Series X has small resolution advantages and slightly higher-quality visuals, though it also shows occasional blurriness and some missing shadows. Overall, Digital Foundry said the game “acquits itself quite well” on Microsoft’s most powerful console.\n\nThe bigger difference is in frame rate rather than image quality. “In typical play, both of them hit 30 FPS or don’t fall far below,” Digital Foundry said, but the PS5 dips more often than its rival. During fast driving, Digital Foundry said, “PS5 seems substantially worse off in this respect”, although chases and explosions can still pull the Series X below its target too.\n\nThat gap will surprise many players, since PlayStation has handled much of the game’s marketing. It is also a reminder that the two machines are close in power, and that small differences in how a game handles heavy scenes can decide which version feels steadier. On paper, the Series X has the stronger graphics chip, rated at about 12 teraflops against roughly 10.3 for the PS5, while the PS5 has the faster storage drive. Busy driving sequences lean heavily on the graphics chip, which may help explain where the Xbox pulls ahead. Rockstar has already released updates since launch, as our guide to update 01.002.002 covers, and future patches could narrow the difference.\n\nThe PS5 Pro version stands clear of the rest. Digital Foundry described its image as “4K-like”, with solid frame rates and ray-traced shadows that give a noticeable upgrade over the other consoles. It called the Pro version “the best option available”, which will reassure players who bought Sony’s most expensive console with this game in mind. The Pro launched in November 2024 as Sony’s upgraded PS5, with a stronger graphics chip and better ray tracing, and GTA VI is exactly the kind of game it was built to show off.",
-    "first_seen": "2026-11-25T12:24:04Z"
-  },
-  {
-    "title": "PGL Major Singapour : Wildcard – Lynn Vision en direct",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/live/pgl-major-singapour-wildcard-lynn-vision-en-direct-777483.shtm",
-    "published": "2026-11-25T06:45:00Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "https://e.sport.fr/wp-content/uploads/2025/03/UJfCgBZy9xAZEL-jd2qACb-1024x683.jpg",
-    "logo": null,
-    "content": "Pour suivre le match Wildcard – Lynn Vision en direct, rendez-vous sur le lien ci-dessous :",
-    "first_seen": "2026-11-25T12:24:04Z"
-  },
-  {
-    "title": "PGL Major Singapour : Eternal Fire – 100 Thieves en direct",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/live/pgl-major-singapour-eternal-fire-100-thieves-en-direct-777482.shtm",
-    "published": "2026-11-25T05:45:00Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/11/Dev1ce_at_Roman_Imperium_Cup_V.jpg",
-    "logo": null,
-    "content": "Pour suivre le match Eternal Fire – 100 Thieves en direct, rendez-vous sur le lien ci-dessous :",
     "first_seen": "2026-11-25T12:24:04Z"
   },
   {
@@ -882,23 +1278,6 @@
     },
     "content": "First person in my bloodline to watch a Jame save in Minecraft.",
     "first_seen": "2026-11-25T02:05:57Z"
-  },
-  {
-    "title": "Wildcard begin PGL Major Singapore with FaZe win, loss in NA derby to Liquid",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/80252/wildcard-begin-pgl-major-singapore-with-faze-win-loss-in-na-derby-to-liquid",
-    "published": "2026-11-24T22:48:00Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "",
-    "first_seen": "2026-11-26T04:49:00Z"
   },
   {
     "title": "T1 Beat Crazy Raccoon 4-1 to Win the OWCS Asia Finals",
@@ -1933,360 +2312,6 @@
     "first_seen": "2026-11-23T21:02:08Z"
   },
   {
-    "title": "LCK : Dplus KIA au complet avec Delight",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/transferts/lck-dplus-kia-au-complet-avec-delight-777423.shtm",
-    "published": "2026-11-23T13:00:00Z",
-    "game": "lol",
-    "category": "news",
-    "image": "https://e.sport.fr/wp-content/uploads/2025/11/Delight-1024x576.jpg",
-    "logo": null,
-    "content": "Dplus KIA tient sa dernière recrue ! Après trois saisons passées chez Hanwha Life Esports, Yu « Delight » Hwan-jung rejoint officiellement l’organisation sud-coréenne pour 2027. Le support de 24 ans retrouvera deux anciens coéquipiers : Doran, avec qui il avait évolué chez Gen.G, et Kanavi, qu’il côtoyait encore cette année chez HLE. Trois renforts expérimentés qui viennent considérablement renforcer une équipe déjà capable de rivaliser avec les meilleures formations de Corée du Sud.\n\nAvec cette signature, Dplus KIA dispose désormais de son cinq de départ pour la prochaine saison. Delight formera une nouvelle botlane avec Smash, tandis que ShowMaker conservera son poste sur la midlane. Après une année 2026 encourageante, marquée par un sacre à l’Esports World Cup et un retour aux Worlds, l’organisation a décidé de renouveler trois postes pour franchir un nouveau cap. L’objectif sera notamment de retrouver les sommets de la LCK et de confirmer son retour parmi les grandes puissances internationales.\n\nDelight arrive avec un palmarès particulièrement solide. Passé par BRION et Gen.G, le Sud-Coréen s’est imposé comme l’un des supports les plus réputés de sa région sous les couleurs de Hanwha Life. Aux côtés de Viper, il a notamment remporté le Summer Split 2024, la LCK Cup 2025 et le premier First Stand de l’histoire. En 2026, malgré un début de saison catastrophique, HLE a réussi à renverser la situation pour décrocher le titre au Mid-Season Invitational, en dominant Bilibili Gaming (3-2) lors de la grande finale.\n\nLa fin de saison a toutefois été plus difficile pour Delight et ses coéquipiers, battus par Gen.G en finale de la saison de LCK avant de quitter les Worlds dès le Swiss Stage, éliminés par BLG. Le support tentera désormais de retrouver les sommets avec Dplus KIA, dont le roster 2027 affiche de sérieux arguments : Doran, Kanavi, ShowMaker, Smash et Delight. Avec trois recrues de premier plan et plusieurs joueurs habitués aux grandes échéances internationales, l’organisation pourrait bien venir bousculer la hiérarchie coréenne la saison prochaine.\n\nChoi « Doran » Hyeon-jun Seo « Kanavi » Jin-hyeok Heo « ShowMaker » Su Shin « Smash » Geum-jae Yoo « Delight » Hwan-joong\n\n𝑾𝒆𝒍𝒄𝒐𝒎𝒆 𝒕𝒐 𝑫𝒑𝒍𝒖𝒔 𝑲𝒊𝒂, 𝑫𝒆𝒍𝒊𝒈𝒉𝒕. 2027년 Dplus Kia의 새로운 서포터 'Delight' 유환중 선수를 소개합니다. 협곡에서 보여준 플레이와, 쌓아온 우승 경험을 바탕으로 Smash 선수와 함께 강력한 시너지를 만들어 갈 예정입니다. 새로운 환경에서도 자신의 가치를 보여줄… pic.twitter.com/2EaOTH159f",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "Trace Esports outlines rebuild with CHICHOO, nobody, Nicc",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/793834/trace-esports-outlines-rebuild-with-chichoo-nobody-nicc",
-    "published": "2026-11-23T12:56:14Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "A dazzling three-man signing class for Trace.",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "GTA 6 60 FPS Glitch on Xbox: How It Works and the Catch",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/gta-6/gta-6-60-fps-glitch-xbox-series-x/",
-    "published": "2026-11-23T12:55:35Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "The GTA 6 60 FPS glitch lets Xbox Series X players unlock the game’s 30 FPS cap through the console’s Quick Resume feature. Reddit user Meowwie64 shared the method, which needs a 120Hz display and a few changes to the refresh rate. The trick comes with problems. Frame rates sit closer to 40 FPS than 60 FPS in normal play, and gameplay animations run much faster than intended. Rockstar Games has not added an official 60 FPS mode.\n\nBelow are the exact steps and the drawbacks reported so far.\n\nGTA 6 runs with a 30 FPS target on PS5 and Xbox Series X|S. The game launched on Xbox Series X|S on November 19, 2026.\n\nMeowwie64 posted the workaround on Reddit . The player said the method comes from an odd glitch in the Xbox Quick Resume feature, and it does not involve editing any game files. The post lists Game Version 01.002.001 as the tested build. The player was unsure whether it still works on later versions.\n\nThe original post covers the Xbox Series X. The player could not test the Series S. Later footage shared by Fuzion Xbox Testing shows the glitch running on both the Series X and the Series S.\n\nYou need an Xbox Series X and a display that supports 120Hz. Follow these steps:",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "SOL: enchant Episode 2 opens Hellond with guild-summoned bosses on Nov. 25",
-    "source": "Esports.gg",
-    "url": "https://esports.gg/news/sol-enchant/sol-enchant-episode-2-hellond/",
-    "published": "2026-11-23T12:39:20Z",
-    "game": "lol",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "League of Legends Pro",
-      "tag": "LOL",
-      "color": "#c89b3c",
-      "bg": "#2e2104"
-    },
-    "content": "SOL: enchant's Episode 2 update later this week adds the Hellond region and a Lancer-only Class Change, along with the game's first new server, Infinity. Developers laid out the thinking behind the major update in an interview with Inven Global. It’s the biggest patch since late August and arrives on Wednesday.\n\nThe interview featured Director Gyeong-myeong Kang, Planning Team Lead Jae-ho Hwang, and Business Division Director Jang-hwan Kim. The biggest change for anyone who’s been playing the game for a few months is a boss system that no longer runs on a fixed clock.\n\nHellond is set in a magic city, though all that’s available at launch is its entrance, with the team opting for a phased rollout. Kang said broader playable areas and more content will follow soon. How different is it to the existing Caltheon region? The monsters are said to be tough, there are new progression targets, while extra quests are designed to educate players on the region's lore. Essentially, you’ll do more than just hunt monsters.\n\nKang said the team wanted a clean break from the old map. \"We wanted players to feel from the moment they step into Hellond that they have arrived somewhere completely different from Caltheon.\"\n\nHwang added that the Episode 2 title, Infinity, reflects hopes that growth and challenge continue without end.\n\nEarlier bosses in SOL: enchant spawned at set times, which meant raiding on the clock, something that Hellond changes. Kang explained that \"Hellond allows guild members to directly summon bosses and challenge them together whenever they choose.\"",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "Rare Atom’s ChildKing admits drinking before qualifier semi-final",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/cs2/rare-atoms-childking-admits-drinking-before-qualifier-semi-final/",
-    "published": "2026-11-23T12:26:00Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "The rifler apologised after a night out, a late wake-up call and a public row with teammate kaze.\n\nPeng “ChildKing” Junhao has admitted he got drunk the night before the semi-final of the eXTREMESLAND 2026 Chinese Qualifier and has apologised to his teammates, Cybersport.ru and Sports.ru report, citing posts from the players on social media.\n\nAccording to both outlets, the 26-year-old went to karaoke with friends after the quarter-final on 14 November, drank until he blacked out and forgot about the next day’s match. He only woke when teammates called him. ChildKing asked for a replacement, but the tournament rules did not allow one.\n\n👀 A rather unusual situation has unfolded in the Chinese Counter-Strike scene over the past few days! Rare Atom's ChildKing admitted that he went out drinking and doing karaoke with friends before the EXTREMESLAND China Qualifier semifinals, got so drunk that he blacked out,… pic.twitter.com/FvmofpotRv\n\nHe played anyway. The Rare Atom lineup, entered under the name 147, beat Pressure Monsters 2-1 on 15 November before losing the grand final 2-1 to Nora Gaming.\n\nThe row broke out over the final map. Sports.ru reports that at 9-9 on Ancient, with Rare Atom ahead in a 5v3, ChildKing went for the site without waiting for his team and the round was lost. When teammates questioned the play, he left TeamSpeak.",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "CS2 Singapore Major 2026 Starts Today: Stage 1 Teams, Schedule, and Where to Watch",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/cs2/cs2-singapore-major-2026-stage-1-schedule/",
-    "published": "2026-11-23T12:20:58Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "As we stand less than a day away from the start of the CS2 Singapore Major 2026 Stage 1 , anticipation within the community is at an all-time high. The teams are gearing up to battle it out on LAN for a shot at securing their Stage 2 spot and a chance at a share of the $1,250,000 prize pool.\n\nFor the unaware, the CS2 Singapore Major 2026 Stage 1 will kick off on Monday, November 23, 2026 , at roughly 8:00 PM PST . The first stage of the event will see sixteen elite CS2 teams go head-to-head in a Swiss-system format, where three wins will secure advancement to Stage 2, while three losses mean elimination from the event.\n\nAll matches will be played as best-of-1s, with the exception of the advancement and elimination matches, which will be best-of-3s. When the dust settles on November 27, the top eight teams will move on to Stage 2, where they will be joined by eight directly invited teams. Everyone else will be heading home.\n\nHere’s everything you need to know about the CS2 Singapore Major 2026 Stage 1, including all the participating teams, schedule, and where to watch the event.\n\nCS2 Singapore Major 2026 Stage 1 will feature the following sixteen teams fighting for a Stage 2 spot:\n\nHere’s the Round 1 schedule for the CS2 Singapore Major 2026 Stage 1:",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "zekken departs MIBR in offseason of exits",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/793828/zekken-departs-mibr-in-offseason-of-exits",
-    "published": "2026-11-23T12:17:49Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "A superstar hits the market as a free agent.",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "GTA 6 Update 01.002.002 Size, Rollout Status, and More",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/gta-6/gta-6-update-01-002-002-size-rollout/",
-    "published": "2026-11-23T12:16:21Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "GTA 6 update 01.002.002 is rolling out now on PS5 and Xbox, and it is the first patch since the game launched on November 19. Rockstar Games is releasing it in phases worldwide. A dataminer reported that 33% of players can already download it. The update is 603 MB on PS5 and 1.6 GB on Xbox. Rockstar has not published official patch notes yet.\n\nThis article explains the update size, the rollout, the version history, and the status of the GTA 6 patch notes.\n\nRockstar started rolling out GTA 6 update 01.002.002 on November 23, 2026. It is the first update since the game’s release, which came 4 days earlier.\n\nAccording to dataminer, the size is 603 MB. It added that nobody has confirmed whether that figure applies to both platforms.\n\nGTA 6 – Update 01.002.002 33% of Users : Now Available. 66% of Users : in 3h All Users : in 6h Update Size : 603 MB pic.twitter.com/bQ2frBuBfd\n\nThe download size is 603.8 MB on PS5 and 1.6 GB on Xbox. That means Xbox players need to free up more space for this patch.",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "Elvish Yadav and Jonathan Gaming Fans Clash on X",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/elvish-yadav-and-jonathan-gaming-fans-clash-on-x/",
-    "published": "2026-11-23T11:54:18Z",
-    "game": "val",
-    "category": "news",
-    "image": "https://www.talkesport.com/wp-content/uploads/Elvish-Yadav-in-Mamaearth-Ad-1024x576.webp",
-    "logo": null,
-    "content": "In another surprising development in the GodLike Esports vs Team Apex Gaming saga, Elvish Yadav and Jonathan Gaming fans have found themselves in a clash on X. The clash started in the aftermath of the rumour suggesting Elvish Yadav could join GodLike Esports as a co-owner took the community by the storm.\n\nAs the GodLike x Elvish Yadav rumour started gaining traction, a post comparing the brand value of both influencers further fuelled the clash. Fans of both creators rushed to support their favourite.\n\nWhat fuelled the clash was a post by a user that compared the brand value both influencers bring in. The post stated that Jonathan was associated with brands like Red Bull, Kick, Realme, OnePlus, Samsung, Rooter, and more. On the other hand, Elvish Yadav is associated with brands like Dream11, 1xBet, etc., which are gambling apps. At the end, the post read that Jonathan has built his name through gaming, esports, and mainstream tech brands, whereas Elvish Yadav has built his name through entertainment and reality TV.\n\nOne important point to note is that Elvish Yadav has partnered with multiple more brands than what the post has stated. He has also worked with brands like Mamaearth, OZiva, Plix, Bella Vita Luxury, and more.\n\nFans started flaming on this post to support their influencer. Elvish Yadav fans did not take this comparison lightly at all. Many replied with warnings, asking not to mess with them, some mocked the comparison and pointed towards the struggles he has overcome in his journey. On the other hand, Jonathan Gaming supporters stood by the post, arguing that his credentials come from esports.\n\nThe timing has also added fuel to the fire. Jonathan left GodLike Esports in April 2026 and launched Team Apex Gaming, and the ongoing dispute between him and GodLike owner Kronten has kept the community on edge for weeks.",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "NAVI take largest share of ESL’s 2026 club incentive",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/cs2/navi-take-largest-share-of-esls-2026-club-incentive/",
-    "published": "2026-11-23T11:48:21Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "G2 Esports",
-      "tag": "G2",
-      "color": "#ef4444",
-      "bg": "#380606"
-    },
-    "content": "NAVI qualified for $460,000 from ESL with FURIA and G2 trailing behind.\n\nESL has announced the results of the 2026 annual club incentive, which financially rewards organizations at the end of the year for participating at ESL events. The total prize pool was set to $3,150,000, split up based on the number of events attended by the organizations and the average concurrent viewership they manage at said events. This cash prize is separate from the already existing club incentives organizations such as NAVI and Vitality get for choosing to attend ESL events.\n\nAfter all was said and done at ESL events in 2026, NAVI ended up with the biggest piece of the pie (17% of it) by attending the most ESL events (tied with Legacy at seven) and having the highest concurrent viewership out of all 30 participating organizations at these tournaments.\n\nNAVI managed to earn $466,521 from ESL, while FURIA and G2 trailed behind with $314,188 and $264,852, respectively. The full table can be found through this blogpost .\n\nESL saw fit to remind the community in their blogpost that Spirit forfeited a projected share of $420,550 (which would have been the second-highest share) of club incentives due to skipping three or more ESL events during the year. Spirit’s choice to attend PGL Astana instead of IEM Atlanta impacted the total year-end earnings, as they were reduced from $3,150,000 in total to $2,729,450 due to Spirit’s withdrawal.\n\nESL announced that next year would include $11,450,000 in potential earnings from “Total Winnings, Annual Club Incentive and the ESL Grand Slam”.",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "RRQ let Kushy test the market after Stage 2 benching",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/valorant/rrq-let-kushy-test-the-market-after-stage-2-benching/",
-    "published": "2026-11-23T11:45:41Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "The initiator who helped RRQ to their first VCT title is still in talks with the club.\n\nRex Regum Qeon have allowed initiator Bryan “Kushy” Carlos Setiawan to explore his options, VLR reports. The Indonesian is now on RRQ’s inactive roster, but the two sides are still talking.\n\n“I’m still in discussions with RRQ, but I’m also open to exploring other opportunities for the upcoming season,” Kushy said. He is looking for a spot as an initiator, second duelist or sentinel, and is open to all regions.\n\nLFT I'm still in discussions with @teamrrqofficial , but I'm also open to exploring other opportunities for the upcoming season. – Roles: Initiators, Second Duelist(Flash), Sentinels – Open to offers from all regions – Fluent in English I'm highly motivated to compete at the…\n\nRRQ signed him from Alter Ego in October 2024, and the move paid off quickly. In 2025 they beat Gen.G 3-1 in the Pacific Stage 1 grand final for the club’s first VCT title and a first international appearance at Masters Toronto. They then lost the Stage 2 grand final 3-1 to Paper Rex and went out in the group stage at Champions Paris.\n\n2026 was harder. RRQ lost three straight Bo5s to finish fourth in Pacific Kickoff, then went 4-1 in the Stage 1 group stage before leaving the playoffs in 5th-6th place. Kushy added the second duelist role for Stage 2 but played only two of RRQ’s seven matches, both defeats. He was benched after the opener, returned when illness hit the squad and was benched again for the rest of the stage.",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "Rex Regum Qeon allows Kushy to explore options",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/793823/rex-regum-qeon-allows-kushy-to-explore-options",
-    "published": "2026-11-23T11:14:10Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "After finishing his sophomore campaign with RRQ, Kushy looks set to leave the Indonesian outfit.",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "Cloud9 Rebuild Top and Bot Lanes for 2027 LCS Season in League of Legends",
-    "source": "The Loadout",
-    "url": "https://theloadout.com/cloud9-rebuild-top-and-bot-lanes-for-2027-lcs-season",
-    "published": "2026-11-23T11:08:44Z",
-    "game": "lol",
-    "category": "news",
-    "image": "https://theloadout.com/wp-content/uploads/2026/11/cloud9-rebuild-top-and-bot-lanes-for-2027-lcs-season.jpg",
-    "logo": null,
-    "content": "Cloud9 sign Frog, Yeon and CoreJJ for the 2027 LCS in League of Legends, while Blaber and Loki stay after a third trophyless season.\n\nCloud9 have finalized their League of Legends roster for the 2027 LCS season, replacing three starters and keeping two. Lee \"Frog\" Min-hoi joins in the top lane, while Team Liquid's longtime bot lane of Sean \"Yeon\" Sung and Jo \"CoreJJ\" Yong-in arrives together.\n\nJungler Robert \"Blaber\" Huang and midlaner Lee \"Loki\" Sang-min stay in place. Coach Christian \"IWillDominate\" Rivera, who has led the team since November 2025, also remains. The changes follow a third straight season without a trophy, capped by a 2026 Worlds Play-In exit. Cloud9 lost to Karmine Corp and FURIA and became the first team eliminated.\n\nThree starters leave: toplaner Park \"Thanatos\" Seung-gyu, AD Carry Edward \"Tactical\" Ra and support Philippe \"Vulcan\" Laflamme. All three were under contract. Thanatos and Tactical were signed through 2028, Vulcan through 2029, and Vulcan had agreed to an extension on Oct. 22, according to the Global Contract Database.\n\nPer reports, Vulcan is set to join Shopify Rebellion. Tactical was allowed to explore other options in early November, and Shopify Rebellion showed interest, but he had no team for 2027 at the time of those reports. Other reports say Thanatos is returning to Korea to join BNK FearX.\n\nJesper \"Zven\" Svenningsen, who spent the Summer Split on the bench, was nearing the end of his contract. He's now set to sign with FlyQuest.",
-    "first_seen": "2026-11-24T17:19:31Z"
-  },
-  {
-    "title": "Comment GTA 6 a explosé le record de League of Legends sur Twitch",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/chiffres/comment-gta-6-a-explose-le-record-de-league-of-legends-sur-twitch-777409.shtm",
-    "published": "2026-11-23T11:00:00Z",
-    "game": "lol",
-    "category": "news",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/11/95943974-1024x683.webp",
-    "logo": null,
-    "content": "Treize ans après la sortie de GTA 5, l’attente était immense. Et les chiffres ont rapidement confirmé le phénomène. Lancé en novembre 2026, Grand Theft Auto VI a rassemblé plus de 7,9 millions de spectateurs simultanés sur l’ensemble des plateformes de streaming, selon les données de Streams Charts . Sur Twitch, le jeu aurait atteint un pic d’environ 3,3 millions de spectateurs, dépassant ainsi le précédent record de la catégorie League of Legends. Une performance d’autant plus impressionnante que le MOBA de Riot Games domine régulièrement les audiences grâce à ses grandes compétitions internationales, notamment les Worlds.\n\nMais comment expliquer un tel succès ? D’abord par l’attente exceptionnelle entourant le nouveau titre de Rockstar Games, plus d’une décennie après le précédent opus. Ensuite, par la mobilisation massive des créateurs de contenu, qui se sont précipités sur le jeu pour faire découvrir Vice City à leurs communautés. Certains streamers ont même voyagé jusqu’en Nouvelle-Zélande pour profiter du lancement avant les joueurs nord-américains. Entre premières découvertes, réactions en direct et curiosité des spectateurs, GTA 6 est rapidement devenu un événement collectif dépassant largement les frontières du jeu vidéo.\n\nL’impact de GTA 6 ne s’est pas limité à Twitch. Le jeu a également attiré des millions de spectateurs sur YouTube et Kick, confirmant une mobilisation exceptionnelle à l’échelle mondiale. Toujours d’après Streams Charts , le temps de visionnage global sur Twitch aurait même progressé de 61 % sur la période étudiée par rapport aux deux jours précédant le lancement. Une véritable démonstration de force pour Rockstar, dont le nouveau titre a momentanément éclipsé les habituels poids lourds du streaming, des jeux compétitifs aux grandes compétitions esportives.\n\nReste maintenant à savoir si cet engouement pourra durer. Contrairement à League of Legends, qui bénéficie d’un calendrier compétitif structuré et de rendez-vous internationaux réguliers, GTA 6 devra renouveler l’intérêt des spectateurs grâce à son contenu et à ses futures activités en ligne. Le développement éventuel d’une scène roleplay pourrait notamment prolonger sa popularité pendant plusieurs années, comme ce fut le cas avec GTA 5. En attendant, Rockstar Games a déjà réussi un exploit retentissant : faire trembler les records d’audience de l’esport mondial avec le simple lancement d’un jeu vidéo.\n\nGTA 6 EST EN TRAIN D’ÉCRIRE L’HISTOIRE DU JEU VIDÉO ! Le jeu le mieux noté de tous les temps avec un score de 99/100. Le jeu le plus précommandé de l’histoire avec 24,5 millions d’exemplaires vendus en moins de 24 heures. 3,8 milliards de dollars générés en moins de… pic.twitter.com/aJpBEdSfSX",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "MIBR GC allows bstrdd to explore options",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/793822/mibr-gc-allows-bstrdd-to-explore-options",
-    "published": "2026-11-23T10:38:06Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "After a year and a half with MIBR GC, bstrdd looks set to leave.",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "PGL Major Singapore trophy design leaked",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/cs2/pgl-major-singapore-trophy-design-leaked/",
-    "published": "2026-11-23T10:30:07Z",
-    "game": "cs2",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "HEROIC posted a set of commemorative pins provided to them by PGL, which seemed to include the design of the Major trophy.\n\nOne of the participating teams in Stage 1 of the PGL Singapore Major, HEROIC, seems to have leaked the design of the event’s trophy before the organizer could make a formal presentation for it.\n\nHEROIC, former Major finalist organization, made a post on X with a set of five pins they received from PGL, including one that seems to be a design of the Major trophy. The post was accompanied by a textual statement that they had facetiously “robbed PGL”, while they may have preemptively leaked the design of the Major trophy.\n\nThe design of the trophy is a cup formed by adjacent curving shards, similar to the designs of the cups for PGL Astana, PGL Bucharest, and other events run by the tournament organizer in CS2. Notably different is the presence of a red accent on half of the shards, which distiguishes the motif of the Major in Singapore from other events that PGL have run in the past.",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "GIANTX announces first roster of post-partnership era",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/793817/giantx-announces-first-roster-of-post-partnership-era",
-    "published": "2026-11-23T10:14:14Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "A new era of GIANTX starts with a group of five Tier 2 journeymen.",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "FACEIT keep half-time voice chat for Season 10",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/cs2/faceit-keep-half-time-voice-chat-for-season-10/",
-    "published": "2026-11-23T10:13:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "The feature began as a one-week test in August and is now a standard part of matchmaking.\n\nFACEIT will keep half-time voice chat between teams when Season 10 starts on 9 December, the platform announced on X on 22 November. The decision also covers future seasons.\n\nHalf-time voice chat started as a test in Season 9. After monitoring reports and community feedback, we will keep it as a standard part of FACEIT matchmaking. Season 10 starts December 09. https://t.co/qfvOsqDKau pic.twitter.com/u2VtNfmuhJ\n\nFACEIT said the call came after “monitoring reports and community feedback”.\n\nPlayers who do not want to hear the other team can opt out. Entering `cl_mute_enemy_team 1` in the console mutes opponents.\n\nThe feature returned through a community vote in July, when 79% of 106,647 votes backed it. Our report at the time covered the original test, which ran from 5 to 12 August at the start of Season 9. Valve removed half-time and end-of-match voice between teams from CS:GO in October 2015.",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "Dplus announces new peri-led roster with Estrella, Hermes, flora, Wolverine",
-    "source": "VLR.gg",
-    "url": "https://www.vlr.gg/793815/dplus-announces-new-peri-led-roster-with-estrella-hermes-flora-wolverine",
-    "published": "2026-11-23T09:28:39Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "Three return in an offseason rebuild for Dplus.",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "DN’s Arran claims false ban as LCQ sends eight to Sapporo",
-    "source": "Pley.gg",
-    "url": "https://pley.gg/apex-legends/dns-arran-claims-false-ban-as-lcq-sends-eight-to-sapporo/",
-    "published": "2026-11-23T09:12:53Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "Four regions and 160 teams produced the last eight names for the ALGS Year 6 Championship, and a disputed ban in EMEA.\n\nEight of the 160 teams in the ALGS Last Chance Qualifiers will play the Year 6 Championship in Sapporo from 28 to 31 January 2027. Each region sent two teams: Team WaR and TLN Pirates from EMEA, FFS and SLG from the Americas, NOEZ FOXX and ALTERNATIVE from APAC North, and Daylight Savings and CPR from APAC South.\n\nThe margins were small. World Wide, the top seed in the Americas, missed out by 3 points, and three of the four regional winners were not leading before the match that won them the title. Only two of the eight teams directly below the Championship Points cut made it through: Team WaR and Daylight Savings.\n\nThe finals used the Match Point format, so a team on 50 points or more takes first place by winning a match. That is why Team WaR rank above TLN Pirates with 19 fewer points.\n\nThe main dispute of the weekend came from the EMEA final. Arran, who plays for DN, claimed on X that he was wrongly banned during the first match.\n\ngot false banned game 1 of lcq finals, 3000 games on eec playing newcastle for nothing, dogshit anti cheat ruined our chances at lan",
-    "first_seen": "2026-11-23T21:02:08Z"
-  },
-  {
-    "title": "PMGC 2026 Gauntlet Stage: Dates, Teams, Format, Streaming, and More",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/news/pubgm/pmgc-2026-gauntlet-stage-dates-teams-format-streaming-and-more/",
-    "published": "2026-11-23T08:09:45Z",
-    "game": "val",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "The biggest tournament of the PUBG Mobile esports cycle, the PUBG Mobile Global Championship (PMGC) 2026 set to kick off on 26 November in Istanbul, Turkey. The Gauntlet stage will be played on 26 and 27 November, with 16 teams, including names like India’s Team Soul, Aurora, NS RedForce, 4Thrives Esports, and more, competing for the Grand Finals spots. Check out the PMGC 2026 Gauntlet Stage dates, teams, format, where to watch, and more details.\n\nPMGC 2026 Gauntlet Stage will take place on 26 and 27 November, where 16 teams compete in a total of 12 matches (Six games each day). The top 6 teams in the overall standings after all 12 games will qualify for the Grand Finals, while the remaining teams move to the Group Stage.\n\nHowever, there is no elimination in the stage, but it’s going to be an important stage for all the teams competing. The top 6 teams will directly qualify for the Grand Finals, while the rest of the teams will have to take a tough path through the Group Stage.\n\nIndian team, Team Soul, will also play in this stage. Fans have very high hopes from this squad, including players like Nakul, Goblin, Legit, Joker, and Thunder. The team won two official BGMI tournaments this year, including Battlegrounds Mobile India Series (BGIS) and BGMI Showdown (BMSD). However, their coach, Ayogi, will not be able to travel with the team to Turkey due to passport issues. So this could be a disadvantage for them.\n\nTeam Soul will face some prominent teams in this stage, including the unstoppable NS RedForce from South Korea, Aurora Gaming from Mongolia, PMGO 2026 Season 1 Champions 4Thrives Esports from Pakistan, World Cup champions S2G Esports from Turkey, and more. So this is not going to be easy for Team Soul.\n\nFans can enjoy all matches of the PUBG Mobile Global Championship 2026 on the official YouTube channel of PUBG Mobile Esports in multiple languages.",
-    "first_seen": "2026-11-23T08:46:14Z"
-  },
-  {
-    "title": "QoR sweep Maryville to reach VCT Americas Kickoff North America playoffs after opening loss",
-    "source": "Esports Insider",
-    "url": "https://esportsinsider.com/2026/11/qor-sweep-maryville-university-for-second-straight-win-at-vct-americas-kickoff",
-    "published": "2026-11-23T07:13:19Z",
-    "game": "val",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "QoR's 2-0 win over Maryville University completed a recovery from an opening defeat at the VCT Americas Kickoff North America qualifiers. A Kickoff place and a Red Bull Home Ground spot both stay within QoR's reach as a result.\n\nThe line-up of ExpMoe, calamity, vanitas, yearn and dynamic was one of eight teams Riot Games invited directly to the North America Qualifier Playoffs. Cloud9, ENVY and two Shopify Rebellion line-ups were also on that list.\n\nBefore facing Maryville, QoR edged Shopify Rebellion Gold 2-1 in round two. In the Swiss stage, two wins sent a team through and two losses knocked it out. QoR sit 99th in the Elo power rankings, with a rating of 1590 and a 37-34 record across 71 rated matches.\n\nMaryville came through the second open qualifier, held from 12 to 15 November, which drew 512 teams. They finished in the top two of that bracket. They then opened this event by sweeping Shopify Rebellion Gold.\n\nA 0-2 loss to Cloud9 followed, and defeat by QoR left them with two losses. In the other round-three matches, Oafs beat SaD Esports, counterfeit beat FlyQuest and Wildcard beat Winthrop, each without dropping a map. The Elo table places Maryville 161st, with a rating of 1521 and a 6-7 record in 13 rated matches.\n\nThe playoffs are an eight-team double-elimination bracket. The winner takes North America’s direct place at the 2027 VCT Americas Kickoff in São Paulo. The runner-up goes to the Americas Last Chance Qualifier, also in São Paulo, on 17 and 18 December. That event is the last route into Kickoff. Eight partner teams are invited to Kickoff, and four places go to non-partner teams.",
-    "first_seen": "2026-11-23T08:46:14Z"
-  },
-  {
     "title": "RLCS : Seikoo, juicy et mtzr décrochent leur billet pour Londres",
     "source": "E.SPORT.FR",
     "url": "https://e.sport.fr/resultats/rlcs-seikoo-juicy-et-mtzr-decrochent-leur-billet-pour-londres-777407.shtm",
@@ -2297,74 +2322,6 @@
     "logo": null,
     "content": "Débuts presque parfaits pour le nouveau trio français de Geekay Esports ! Enzo « Seikoo » Grondein, Charles « juicy » Sabiani et Mathis « mtzr » Hoareau ont remporté ce dimanche les qualifications européennes du RLCS Club Kick-Off, en ne concédant qu’une seule manche sur l’ensemble de la compétition. Après un parcours sans faute lors des premières rencontres, les Français ont successivement dominé la Radosin Corp (4-0), composé de Radosin, ejby et Mozzarella, puis Ikkaku (4-1), l’équipe d’ExoTiiK, Rezears et yujin. En finale, ils n’ont laissé aucune chance à BIG Clan, balayé 4-0 pour valider leur qualification.\n\nLA GLACE DANS LES VEINES SEIKOOOOOO pic.twitter.com/MSOcu12wGd\n\nUne performance particulièrement encourageante pour cette nouvelle formation, construite autour de deux joueurs déjà habitués aux plus grandes scènes internationales. Ancien champion du monde, Seikoo sort d’une saison terminée sous les couleurs de Manchester City Esports, tandis que juicy avait notamment remporté le Major de Paris avec la Karmine Corp en 2026, avant d’atteindre les demi-finales des Worlds. À leurs côtés, mtzr confirme son statut de grand espoir de la scène française. Le jeune joueur de 19 ans, déjà présent chez Geekay la saison dernière, disputera à Londres la première LAN RLCS de sa carrière.\n\nPour Geekay Esports, ce succès représente une première étape importante après une intersaison ambitieuse. Malgré son absence parmi les clubs partenaires directement qualifiés pour le tournoi londonien, l’organisation saoudienne avait réussi à attirer Seikoo et juicy pour construire un effectif 100 % français. Le projet est également dirigé par Andy « Kassio » Landais, ancien entraîneur de Vitality, qui avait dans un premier temps annoncé son retrait du coaching professionnel. Geekay rejoint ainsi M80, NOT et PCS Stride parmi les quatre équipes qualifiées via les tournois régionaux.\n\nCette qualification laisse également plusieurs déçus sur le carreau. BIG, pourtant finaliste, manque son objectif, notamment pour Tox, qui échoue à atteindre une LAN RLCS pour la 19e fois. Même désillusion pour Ikkaku et l’ancien champion du monde ExoTiiK, qui manquera son premier événement international RLCS depuis les Worlds 2021-2022. À l’inverse, Seikoo, juicy et mtzr lancent idéalement leur nouvelle aventure et pourront désormais se mesurer aux meilleures formations de la planète lors du Club Kick-Off de Londres, en décembre.\n\nLES 24 ÉQUIPES QUALIFIÉES POUR LE #RLCS CLUB KICK-OFF ! 8 équipes EU 6 équipes NA 3 équipes MENA 3 équipes SAM 2 équipes OCE 1 équipe APAC 1 équipe SSA Londres, Royaume-Uni | du 9 au 13 Décembre Qui est votre favori ? pic.twitter.com/0ofHWAo97f",
     "first_seen": "2026-11-23T08:46:14Z"
-  },
-  {
-    "title": "CEGC 2026 Last Chance: All Playing Teams",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/mobile-gaming/bgmi/cegc-2026-last-chance-all-playing-teams/",
-    "published": "2026-11-23T06:06:44Z",
-    "game": "val",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "The Lower Bracket stage of Chennai Esports Global Championship 2026 (CEGC 2026) concluded last night. With it, the first set of eight teams have been eliminated from the tournament and final eight teams have been seeded to the Last Chance stage.\n\nCEGC 2026 Last Chance will start on 27th November and conclude on 29th November. Sixteen teams, six from Upper Bracket and six from Lower Bracket, will fight in the Last Chance stage. It will feature 16 teams competing across 18 matches over three days. All teams will look to secure a place among the top seven teams in the overall standings to qualify for the Grand Finals. The remaining nine teams will be eliminated from CEGC 2026.\n\nFrom the Upper Bracket , the top eight teams directly qualified to the grand finals of CEGC 2026, whereas the bottom eight teams were seeded into the Last Chance stage. Following are the bottom eight teams that were seeded to the Last Chance stage:\n\nIn the Lower Bracket, the bottom eight teams were eliminated from the tournament. Notably, this marks the first elimination of CEGC 2026. The top eight teams advanced to the Last Chance stage. Following are the top eight teams that were seeded to the Last Chance stage:\n\nA post shared by Skyesports Gaming (@skyesportsgaming)\n\nWIth the conclusion of the Lower Bracket, CEGC 2026 witnessed the first set of eliminations. Fan favourite teams like Team Apex Gaming and Madkings couldn’t survive the competition. Following is the list of all eight teams whose journey in the tournament has ended:",
-    "first_seen": "2026-11-23T08:46:14Z"
-  },
-  {
-    "title": "FFWS 2026 Global Finals Knockout Stage Results and Qualified Teams",
-    "source": "TalkEsport",
-    "url": "https://www.talkesport.com/mobile-gaming/garena-free-fire/ffws-2026-global-finals-knockout-stage-results-and-qualified-teams/",
-    "published": "2026-11-23T03:35:44Z",
-    "game": "val",
-    "category": "tournament",
-    "image": "",
-    "logo": {
-      "title": "VALORANT Champions Tour",
-      "tag": "VCT",
-      "color": "#ff4655",
-      "bg": "#3d0a14"
-    },
-    "content": "The knockout stage of the FFWS 2026 Global Finals has been concluded in Thailand, with eight teams qualifying for the Grand Finals. The 12 teams move to the Last Chance stage, while the remaining teams have been eliminated from the tournament. Refer to the results below.\n\nThe Knockout Stage of the FFWS 2026 Global Finals was played from 6 to 22 November, with 24 teams participating. The matches were played in two phases. Phase 1 was all about seeding the teams in different pools for Phase 2. In Phase 2, the actual qualification was decided.\n\nThese 8 teams qualified through Phase 2, and now only the last four spots are remaining in the finals, which will be decided in the Last Chance Stage. P Esports and All Gamers Global secured their qualification by finishing in the top 2 on the Phase 2 Day 1 table. Fluxo W7M and LOUD topped the Day 2 standings similarly; LYON and Team Flash secured top 2 on Day 3; and GunDynasty and Buriram United Esports qualified for the Grand Finals by finishing in the top 2 on Day 4.\n\nRead More: Free Fire Advance Server Download for OB56 Update: Check Link and Steps\n\nThe Last Chance Stage will be played on 27 November, and the top 4 teams will qualify for the Grand Finals.\n\nThe Last Chance Stage features prominent teams like Bigetron by Vitality, Blue Cheese, GOW, Horaa Esports, LOS, ONIC Olympus, Resurrection Esports, RRQ Kazu, and Team Apex Gaming.",
-    "first_seen": "2026-11-23T08:46:14Z"
-  },
-  {
-    "title": "Overtake Sector pick up Peeping and ayy",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/80168/overtake-sector-pick-up-peeping-and-ayy",
-    "published": "2026-11-23T00:47:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "Its a homecoming of sorts for both incoming pieces as they reunite with old teammates on Overtake Sector.",
-    "first_seen": "2026-11-23T08:46:14Z"
-  },
-  {
-    "title": "ENVY finish second at Tipsport RUSH Brno behind SINNERS",
-    "source": "Dust2",
-    "url": "https://www.dust2.us/news/80165/envy-finish-second-at-tipsport-rush-brno-behind-sinners",
-    "published": "2026-11-22T22:06:00Z",
-    "game": "cs2",
-    "category": "news",
-    "image": "",
-    "logo": {
-      "title": "Counter-Strike 2",
-      "tag": "CS2",
-      "color": "#f59e0b",
-      "bg": "#382003"
-    },
-    "content": "The French team suffers an unfortunate reverse sweep.",
-    "first_seen": "2026-11-23T00:39:55Z"
   },
   {
     "title": "Fortnite Jam Tracks: Every Major Artist, Popular Song and How the Music System Works",
@@ -3371,17 +3328,5 @@
     "logo": null,
     "content": "Le mercato européen continue de s’agiter sur Rocket League. Selon les informations de Sheep Esports , Ninjas in Pyjamas devrait conserver Cristian « crr » Raigal et recruter Gaspar « stizzy » Andres, dont le contrat avec Vitality est arrivé à son terme. Les deux Espagnols, considérés parmi les meilleurs représentants de leur pays, pourraient ainsi évoluer ensemble pour la première fois sur le circuit RLCS. Ils devaient initialement représenter l’Espagne lors de l’Esports Nations Cup, finalement reportée à novembre 2027.\n\nPour NIP, ce rapprochement marquerait le début d’une nouvelle aventure après la séparation avec son précédent trio, composé de crr, Oaly et Joreuz. Une équipe qui avait pourtant réalisé une saison 2026 solide, avec cinq qualifications en LAN internationales et une troisième place à l’Esports World Cup. Son parcours s’était néanmoins terminé sur une déception aux championnats du monde, avec une élimination dès la phase de groupes et une 13-16e place finale. Invitée au RLCS Club Championship 2027, l’organisation souhaite désormais reconstruire un effectif capable de rivaliser avec les meilleures formations européennes.\n\nSi l’association entre crr et stizzy semble bien engagée, l’identité du troisième joueur reste encore incertaine. Joreuz était initialement pressenti pour compléter le trio, mais cette option aurait perdu du terrain ces derniers jours. Plusieurs jeunes talents sont désormais étudiés, notamment bibbaba, prozy et le Français Reyyn, spécialiste du duel en 1v1. Aucun accord n’a toutefois été annoncé pour ce dernier poste.\n\nLe staff pourrait également accueillir un visage bien connu de la scène européenne. ViolentPanda serait en discussions avancées avec Ninjas in Pyjamas pour devenir le nouvel entraîneur de l’équipe. Libéré par Shopify Rebellion le 14 octobre, le Néerlandais connaît déjà stizzy pour l’avoir accompagné chez Dignitas lors des saisons 2024 et 2025, avec notamment une finale au Major de Raleigh. Les négociations se poursuivent, mais aucun contrat n’aurait encore été finalisé.\n\nAprès une saison encourageante chez Vitality, malgré une élimination dans le top 12 des Worlds 2026, stizzy pourrait donc rebondir rapidement aux côtés de son compatriote crr. NIP espère finaliser son nouvel effectif avant le coup d’envoi du RLCS Club Championship, prévu en décembre à Londres. Dans un mercato européen particulièrement mouvementé, le duo espagnol pourrait constituer l’une des associations à suivre en 2027.\n\n[SOURCES] NIP is expected to sign Crr and Stizzy for the #RLCS Club Championship. A number of different players are still being considered for their third. @i_Eros_ reporting | @Michelin Read more about the organization's options for their third here …",
     "first_seen": "2026-10-18T10:22:30Z"
-  },
-  {
-    "title": "RLCS : NRG se sépare de ses champions du monde (off.)",
-    "source": "E.SPORT.FR",
-    "url": "https://e.sport.fr/transferts/rlcs-nrg-se-separe-de-ses-champions-du-monde-off-775655.shtm",
-    "published": "2026-10-17T12:00:00Z",
-    "game": "rl",
-    "category": "tournament",
-    "image": "https://e.sport.fr/wp-content/uploads/2026/09/NRG-aAa-1024x683.jpg",
-    "logo": null,
-    "content": "Une page majeure de l’histoire de Rocket League vient de se tourner. NRG a officiellement annoncé le départ de l’intégralité de son effectif champion du monde 2025, composé de Daniel, BeastMode et Atomic, ainsi que de son entraîneur Satthew. Une séparation particulièrement symbolique pour une équipe qui s’était imposée comme l’une des références de la scène nord-américaine au cours des trois dernières années.\n\nL’aventure avait débuté chez G2 Esports, avec les arrivées de Daniel et BeastMode en provenance de Version1. Aux côtés d’Atomic, les deux joueurs avaient rapidement trouvé leurs marques, remportant notamment le deuxième Major de la saison 2024 avant d’atteindre la finale des championnats du monde. Passé sous les couleurs de NRG en 2025, le trio avait finalement décroché le titre mondial en battant Team Falcons en grande finale, après avoir également accumulé six victoires en Regional Opens. La saison 2026 s’est toutefois révélée moins brillante, avec une dernière apparition aux Worlds conclue dans le top 6.\n\nSi les départs sont désormais officiels, les prochaines destinations des joueurs commencent également à se préciser. Selon les informations de Sheep Esports , Daniel et Atomic devraient poursuivre leur collaboration chez Shopify Rebellion, où ils retrouveraient Firstkiller. Satthew serait également attendu à la tête de ce nouveau projet, permettant à une partie du groupe champion du monde de rester réunie pour la saison 2027.\n\nDe son côté, BeastMode devrait rejoindre Gen.G Mobil1 Racing, aux côtés de Tawk et Chronic. Un changement particulièrement marquant puisqu’il s’agirait de sa première saison sans Daniel depuis avril 2023. Après trois années passées ensemble, les deux stars américaines pourraient donc désormais se retrouver adversaires sur le circuit RLCS.\n\nQuant à NRG, l’organisation ne compte pas abandonner Rocket League. Invitée parmi les vingt structures fondatrices du RLCS Club Championship 2027, elle préparerait déjà un nouvel effectif autour de 2Piece, Wahvey et frosty, avec le Français adam_baguette au poste d’entraîneur. Des discussions avancées qui restent néanmoins à officialiser.\n\nAtomic. BeastMode. Daniel. Satthew. A team forever enshrined in RLCS history, an unrivaled legacy left in their wake. Thank you, our World Champions. pic.twitter.com/6p0BLLQRoT",
-    "first_seen": "2026-10-17T12:07:34Z"
   }
 ]
